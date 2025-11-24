@@ -512,8 +512,10 @@
                     <div class="novel-cover">
                         <img src="${novel.cover_url}" alt="${novel.title}" loading="lazy">
                     </div>
-                    <h3>${novel.title}</h3>
-                    <div class="novel-chapters">${novel.chapters} chapters</div>
+                    <div class="novel-info">
+                        <h3>${novel.title}</h3>
+                        <div class="novel-chapters">${novel.chapters} chapters</div>
+                    </div>
                 </div>
             `).join('');
             
@@ -1150,13 +1152,13 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_3', [300, 250], 'div-gpt-ad-1762512271296-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_3', [300, 250], 'div-gpt-ad-1762512401294-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_4', [300, 250], 'div-gpt-ad-1762512425339-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_2', [300, 250], 'div-gpt-ad-1762512250124-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
         
@@ -1763,35 +1765,38 @@
         }
 
         .recommendation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
         .recommendation-card {
             background: var(--card-bg);
             border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
+            padding: 15px;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
         }
 
         .recommendation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-color);
         }
 
         .recommendation-card .novel-cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 8px;
         }
 
         .recommendation-card .novel-cover img {
@@ -1805,10 +1810,19 @@
             transform: scale(1.05);
         }
 
+        .recommendation-card .novel-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .recommendation-card h3 {
             color: var(--text-color);
-            font-size: 16px;
-            margin: 12px 15px 8px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1819,9 +1833,8 @@
 
         .recommendation-card .novel-chapters {
             color: var(--text-secondary);
-            font-size: 13px;
-            padding: 0 15px 15px 15px;
-            margin-top: auto;
+            font-size: 14px;
+            margin: 0;
         }
 
         .recommendation-actions {
@@ -2457,10 +2470,10 @@
                 <p>“No.”</p>
                 <p>“She was terrified,” Luc adds quietly.</p>
                 <p>Sebastian looks at Athena, confused. “You were scared?”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_3 -->
-                <div id='div-gpt-ad-1762512271296-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_3 -->
+                <div id='div-gpt-ad-1762512401294-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512271296-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512401294-0'); });
                   </script>
                 </div>
                 <p>“No,” Luc clarifies with a faint smile. “Seraphina was.”</p>
@@ -2469,10 +2482,10 @@
                 <p>&#39;Perhaps because Seraphina has lost her abilities,&#39; Titan murmurs. &#39;Athena may no longer see her as a threat.&#39;</p>
                 <p>“There were no others in the area. Sebastian and I swept the perimeter,” Luc informs the group. “No additional tracks. Just those three.”</p>
                 <p>“But there were no scents, either,” Athena adds. “There could have been more. We just didn’t detect them.”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_4 -->
-                <div id='div-gpt-ad-1762512425339-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
+                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512425339-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
                   </script>
                 </div>
                 <p>“So they’ve found a way to mask their scent completely? How?” Zachary asks.</p>
@@ -2493,10 +2506,10 @@
                 <p>“Why wait this long to act?” Athena asks. “Why wait until there are more Lycans here? Why wait at all?”</p>
                 <p>“Because he’s a fool!” Luc snaps, cleaning his gun. “He just needed someone to validate his grievances. My guess is Levi did exactly that. And now those three are dead. They got what they deserved.”</p>
                 <p>“Put that away!” I command sharply. Luc rolls his eyes but tucks the gun into his belt.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
-                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
+                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
                   </script>
                 </div>
                 <p>“What about the others? Any past issues with them?” Zachary asks Sebastian.</p>

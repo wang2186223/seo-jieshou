@@ -512,8 +512,10 @@
                     <div class="novel-cover">
                         <img src="${novel.cover_url}" alt="${novel.title}" loading="lazy">
                     </div>
-                    <h3>${novel.title}</h3>
-                    <div class="novel-chapters">${novel.chapters} chapters</div>
+                    <div class="novel-info">
+                        <h3>${novel.title}</h3>
+                        <div class="novel-chapters">${novel.chapters} chapters</div>
+                    </div>
                 </div>
             `).join('');
             
@@ -1150,15 +1152,15 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_1', [300, 250], 'div-gpt-ad-1762512227643-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_5', [300, 250], 'div-gpt-ad-1762512445879-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_4', [300, 250], 'div-gpt-ad-1762512425339-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_3', [300, 250], 'div-gpt-ad-1762512401294-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_5', [300, 250], 'div-gpt-ad-1762512322975-0').addService(googletag.pubads());
         
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
@@ -1763,35 +1765,38 @@
         }
 
         .recommendation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
         .recommendation-card {
             background: var(--card-bg);
             border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
+            padding: 15px;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
         }
 
         .recommendation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-color);
         }
 
         .recommendation-card .novel-cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 8px;
         }
 
         .recommendation-card .novel-cover img {
@@ -1805,10 +1810,19 @@
             transform: scale(1.05);
         }
 
+        .recommendation-card .novel-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .recommendation-card h3 {
             color: var(--text-color);
-            font-size: 16px;
-            margin: 12px 15px 8px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1819,9 +1833,8 @@
 
         .recommendation-card .novel-chapters {
             color: var(--text-secondary);
-            font-size: 13px;
-            padding: 0 15px 15px 15px;
-            margin-top: auto;
+            font-size: 14px;
+            margin: 0;
         }
 
         .recommendation-actions {
@@ -2454,47 +2467,47 @@
                 <p>“Athena, you were thrown into something vast. Beyond any of us. And you are more than capable. Your choice is yours alone.”</p>
                 <p>“What if it harms those around me? What if they can’t accept what I did?”</p>
                 <p>“Perhaps you must accept it first.” He shifted on the tree trunk; it looked uncomfortable for his large frame. “Never thought I’d be the one advising you.”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
-                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
-                  </script>
-                </div>
-                <p>I studied him. He seemed amused.</p>
-                <p>“Is that how you feel about Seraphina? You accepted she must die, so you’re at peace with it?”</p>
-                <p>“Yes. Zoe knew long before I did. Her own mother. I suppose I believed I could be the father she needed. But she only ever learned to care for herself.”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
-                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
-                  </script>
-                </div>
-                <p>‘Just like Julian,’ Nyx sighed. I felt her concern for me. But I didn’t regret the act. It was Isabella’s face stuck in my mind, twisting my thoughts. Like poisoning my parents all over again.</p>
-                <p>Caleb and I turned at the sound of footsteps. Alexander’s woody scent hit me, and my body went rigid. Caleb had come out before him. Alexander hadn’t followed me earlier. That only meant one thing. He was furious.</p>
-                <p>“I’ll leave you to it.” Caleb walked toward Alexander. He paused briefly, but I couldn’t hear their words.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_1 -->
-                <div id='div-gpt-ad-1762512227643-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512227643-0'); });
-                  </script>
-                </div>
-                <p>‘I feel his anger from here,’ I told Nyx. ‘He’s angry. Frustrated. Hurt. Because of me.’</p>
-                <p>I stayed perfectly still as he strode over. Even without his scent, I’d know his walk anywhere.</p>
-                <p>My body stayed locked against the tree, my chest aching with each pounding heartbeat. I kept my gaze down as he stopped before me. That old feeling of awaiting a scolding washed over me. He was the only one who could still make me feel that small. And yet he’d never once harmed me.</p>
                 <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_5 -->
                 <div id='div-gpt-ad-1762512445879-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512445879-0'); });
                   </script>
                 </div>
+                <p>I studied him. He seemed amused.</p>
+                <p>“Is that how you feel about Seraphina? You accepted she must die, so you’re at peace with it?”</p>
+                <p>“Yes. Zoe knew long before I did. Her own mother. I suppose I believed I could be the father she needed. But she only ever learned to care for herself.”</p>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
+                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
+                  </script>
+                </div>
+                <p>‘Just like Julian,’ Nyx sighed. I felt her concern for me. But I didn’t regret the act. It was Isabella’s face stuck in my mind, twisting my thoughts. Like poisoning my parents all over again.</p>
+                <p>Caleb and I turned at the sound of footsteps. Alexander’s woody scent hit me, and my body went rigid. Caleb had come out before him. Alexander hadn’t followed me earlier. That only meant one thing. He was furious.</p>
+                <p>“I’ll leave you to it.” Caleb walked toward Alexander. He paused briefly, but I couldn’t hear their words.</p>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
+                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
+                  </script>
+                </div>
+                <p>‘I feel his anger from here,’ I told Nyx. ‘He’s angry. Frustrated. Hurt. Because of me.’</p>
+                <p>I stayed perfectly still as he strode over. Even without his scent, I’d know his walk anywhere.</p>
+                <p>My body stayed locked against the tree, my chest aching with each pounding heartbeat. I kept my gaze down as he stopped before me. That old feeling of awaiting a scolding washed over me. He was the only one who could still make me feel that small. And yet he’d never once harmed me.</p>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_3 -->
+                <div id='div-gpt-ad-1762512401294-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512401294-0'); });
+                  </script>
+                </div>
                 <p>His hands locked around my wrists and yanked me to my feet. My eyes remained lowered until he tipped my chin up, forcing me to meet his brilliant crimson gaze.</p>
                 <p>“You should not have done that.”</p>
                 <p>I opened my mouth to argue.</p>
                 <p>“You weren’t ready. You should have let me end it.”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_4 -->
-                <div id='div-gpt-ad-1762512425339-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_5 -->
+                <div id='div-gpt-ad-1762512322975-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512425339-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512322975-0'); });
                   </script>
                 </div>
             </div>

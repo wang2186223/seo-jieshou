@@ -512,8 +512,10 @@
                     <div class="novel-cover">
                         <img src="${novel.cover_url}" alt="${novel.title}" loading="lazy">
                     </div>
-                    <h3>${novel.title}</h3>
-                    <div class="novel-chapters">${novel.chapters} chapters</div>
+                    <div class="novel-info">
+                        <h3>${novel.title}</h3>
+                        <div class="novel-chapters">${novel.chapters} chapters</div>
+                    </div>
                 </div>
             `).join('');
             
@@ -1150,15 +1152,15 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_4', [300, 250], 'div-gpt-ad-1762512425339-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_5', [300, 250], 'div-gpt-ad-1762512445879-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_5', [300, 250], 'div-gpt-ad-1762512322975-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_3', [300, 250], 'div-gpt-ad-1762512271296-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_1', [300, 250], 'div-gpt-ad-1762512227643-0').addService(googletag.pubads());
         
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
@@ -1763,35 +1765,38 @@
         }
 
         .recommendation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
         .recommendation-card {
             background: var(--card-bg);
             border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
+            padding: 15px;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
         }
 
         .recommendation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-color);
         }
 
         .recommendation-card .novel-cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 8px;
         }
 
         .recommendation-card .novel-cover img {
@@ -1805,10 +1810,19 @@
             transform: scale(1.05);
         }
 
+        .recommendation-card .novel-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .recommendation-card h3 {
             color: var(--text-color);
-            font-size: 16px;
-            margin: 12px 15px 8px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1819,9 +1833,8 @@
 
         .recommendation-card .novel-chapters {
             color: var(--text-secondary);
-            font-size: 13px;
-            padding: 0 15px 15px 15px;
-            margin-top: auto;
+            font-size: 14px;
+            margin: 0;
         }
 
         .recommendation-actions {
@@ -2462,10 +2475,10 @@
                 <p>His eyes shift to me. “You must remain calm.”</p>
                 <p>Isabella scrambles off the bed and shoves him hard in the arm. “Are you serious? You should know by now that telling a woman to stay calm has the exact opposite effect!”</p>
                 <p>He releases a heavy sigh. “Alexander is bringing Brianna here.”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
-                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
+                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
                   </script>
                 </div>
                 <p>My heart seemed to freeze solid in my chest. “Why… Why would he do that? You told him. You told him what she did to me. You said he verified it was the same woman. That she bore the same scar.”</p>
@@ -2479,10 +2492,10 @@
                 <p>“She cannot come here.” I whisper, my voice trembling.</p>
                 <p>“Okay. But please, get back into bed.” She turns her furious glare back to Sebastian. “Why in the goddess’s name would he bring her here?”</p>
                 <p>“He said he would explain everything upon his arrival.”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
-                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_4 -->
+                <div id='div-gpt-ad-1762512425339-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512425339-0'); });
                   </script>
                 </div>
                 <p>“I don’t understand.” I mutter, moving numbly as Isabella guides me. “He always swore he would kill anyone who ever hurt me. And now… he’s bringing her here. To my home. I’m pregnant!”</p>
@@ -2496,10 +2509,10 @@
                 <p>She nods and turns on the television. “Now, can we please watch this film I’ve been telling you about?”</p>
                 <p>“Why are we still proceeding with this?” I mutter as Isabella carefully walks with me toward the training grounds.</p>
                 <p>Music had been blaring for most of the afternoon. The entire pack already seemed to be in a festive mood, even though the celebration wasn&#39;t scheduled to start until sunset.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_4 -->
-                <div id='div-gpt-ad-1762512425339-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_5 -->
+                <div id='div-gpt-ad-1762512322975-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512425339-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512322975-0'); });
                   </script>
                 </div>
                 <p>“As I’ve said, the pack needs this. It was Alexander’s idea. It kept Ethan here a little longer and it gave my brothers the chance to locate Sophia.”</p>
@@ -2513,10 +2526,10 @@
                 <p>His dark grey eyes linger on me. “Several months is a considerable amount of time.”</p>
                 <p>“There is nothing I can do to change that!” I snap at him. Knowing what he had planned for Sophia made my blood boil. But his excessive interest was solely focused on the twins. More specifically, my unborn children.</p>
                 <p>“Hey, there you are!” Theodore jogs toward us. “Happy Birthday.”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_5 -->
-                <div id='div-gpt-ad-1762512445879-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_3 -->
+                <div id='div-gpt-ad-1762512271296-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512445879-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512271296-0'); });
                   </script>
                 </div>
                 <p>“I was under the impression this was a celebration for winning the war.” Ethan states.</p>
@@ -2531,10 +2544,10 @@
                 <p>“He hasn’t said a word about it. Not a single word. He would feel it, right? He would know his brother was killed.”</p>
                 <p>“Possibly. The bond is different when they belong to separate packs. There’s a chance he felt something. But there’s an equally strong chance he felt nothing at all. Why?”</p>
                 <p>“I believe it was a setup.” My eyes dart around to ensure we are alone. “He hasn’t mentioned his brother once. And his questions… He is utterly desperate to know if the twins are Lycans.”</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
-                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_1 -->
+                <div id='div-gpt-ad-1762512227643-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512227643-0'); });
                   </script>
                 </div>
             </div>

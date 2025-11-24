@@ -512,8 +512,10 @@
                     <div class="novel-cover">
                         <img src="${novel.cover_url}" alt="${novel.title}" loading="lazy">
                     </div>
-                    <h3>${novel.title}</h3>
-                    <div class="novel-chapters">${novel.chapters} chapters</div>
+                    <div class="novel-info">
+                        <h3>${novel.title}</h3>
+                        <div class="novel-chapters">${novel.chapters} chapters</div>
+                    </div>
                 </div>
             `).join('');
             
@@ -1150,15 +1152,15 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_1', [300, 250], 'div-gpt-ad-1762512227643-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_5', [300, 250], 'div-gpt-ad-1762512322975-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_2', [300, 250], 'div-gpt-ad-1762512250124-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_3', [300, 250], 'div-gpt-ad-1762512401294-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_4', [300, 250], 'div-gpt-ad-1762512425339-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_5', [300, 250], 'div-gpt-ad-1762512445879-0').addService(googletag.pubads());
         
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
@@ -1763,35 +1765,38 @@
         }
 
         .recommendation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
         .recommendation-card {
             background: var(--card-bg);
             border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
+            padding: 15px;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
         }
 
         .recommendation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-color);
         }
 
         .recommendation-card .novel-cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 8px;
         }
 
         .recommendation-card .novel-cover img {
@@ -1805,10 +1810,19 @@
             transform: scale(1.05);
         }
 
+        .recommendation-card .novel-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .recommendation-card h3 {
             color: var(--text-color);
-            font-size: 16px;
-            margin: 12px 15px 8px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1819,9 +1833,8 @@
 
         .recommendation-card .novel-chapters {
             color: var(--text-secondary);
-            font-size: 13px;
-            padding: 0 15px 15px 15px;
-            margin-top: auto;
+            font-size: 14px;
+            margin: 0;
         }
 
         .recommendation-actions {
@@ -2455,40 +2468,40 @@
                 <p>I couldn&#39;t help but wonder what her Lycan&#39;s ultimate plan was. Turn her Rogue and then what? She&#39;d be incapable of leadership, unless she convinced others to turn Rogue. The world would be doomed.</p>
                 <p>&#34;She hasn&#39;t been with you long, has she?&#34; I needed more information.</p>
                 <p>&#34;Before my pregnancy.&#34; Her frown deepens. &#34;Less than two years. Why does that matter?&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_1 -->
-                <div id='div-gpt-ad-1762512227643-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
+                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512227643-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
                   </script>
                 </div>
                 <p>&#34;And you&#39;re twenty-three now?&#34;</p>
                 <p>&#34;Yes, why? What does my age have to do with anything?&#34;</p>
                 <p>Her Lycan has had years to simmer, trying to break through. It must be furious that it took so long to communicate with Athena. The truth is, they&#39;re always present. They just can&#39;t break through until the host matures. In Athena&#39;s case, it took even longer. &#34;Just filling in the gaps.&#34; I murmur quietly.</p>
                 <p>&#34;Well?&#34; She asks me, her big blue eyes pleading. &#34;Please tell me it&#39;s possible!&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
-                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
+                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
                   </script>
                 </div>
                 <p>I shake my head. It&#39;s not something I&#39;ve ever encountered in all my Hunter knowledge. But then her Bloodline is exceptionally rare too. I&#39;ll have to ask that surfer boy about the book supposedly written by her ancestor. Maybe there are more clues about her nature.</p>
                 <p>&#34;So it will happen. Eventually, I&#39;ll become the very thing I despise.&#34; Her face falls, tears glistening in her eyes.</p>
                 <p>I expected Zachary to reassure her that we&#39;d find a solution. But even he remains silent, considering if her prediction might be true.</p>
                 <p>The blackness of her soul continues retreating until it&#39;s barely visible at the edges again. I knew her Lycan could hear every word I said, which is why I hadn&#39;t discussed what Nyx was doing to her. I didn&#39;t want to give her Lycan any ideas, and I really didn&#39;t want to have to put Athena down to stop her.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_5 -->
-                <div id='div-gpt-ad-1762512322975-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_3 -->
+                <div id='div-gpt-ad-1762512401294-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512322975-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512401294-0'); });
                   </script>
                 </div>
                 <p>I wouldn&#39;t get my answers if she died. I wouldn&#39;t be able to prepare Charlotte for the future Lycan Alphas she&#39;ll need to confront.</p>
                 <p>&#34;So what can she do?&#34; Zachary asks me.</p>
                 <p>&#34;I thought you didn&#39;t believe me.&#34; I raise an eyebrow at him.</p>
                 <p>&#34;Not about everything, but I can&#39;t deny your knowledge about Lycans.&#34; He mutters grudgingly. I could tell it cost him to admit that. Even if he looked like he wanted to punch me the entire time.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_2 -->
-                <div id='div-gpt-ad-1762512250124-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_4 -->
+                <div id='div-gpt-ad-1762512425339-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512250124-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512425339-0'); });
                   </script>
                 </div>
                 <p>&#34;I need to review my family&#39;s records.&#34; I mutter, thinking there might be something I overlooked.</p>
@@ -2497,10 +2510,10 @@
                 <p>&#34;Stay with her.&#34; I add as they prepare to leave. If she was going to turn Rogue, everyone needed to be prepared.</p>
                 <p>Everyone thinks standard Rogues are dangerous, but dealing with one that has a bloodline like hers would be something entirely different.</p>
                 <p>As they head toward wherever her sons are being kept, I return to the training hall. Alexander is still speaking with the Lycans while Sebastian and Theodore chat with some pups.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
-                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_5 -->
+                <div id='div-gpt-ad-1762512445879-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512445879-0'); });
                   </script>
                 </div>
             </div>

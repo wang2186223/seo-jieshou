@@ -512,8 +512,10 @@
                     <div class="novel-cover">
                         <img src="${novel.cover_url}" alt="${novel.title}" loading="lazy">
                     </div>
-                    <h3>${novel.title}</h3>
-                    <div class="novel-chapters">${novel.chapters} chapters</div>
+                    <div class="novel-info">
+                        <h3>${novel.title}</h3>
+                        <div class="novel-chapters">${novel.chapters} chapters</div>
+                    </div>
                 </div>
             `).join('');
             
@@ -1150,15 +1152,15 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_3', [300, 250], 'div-gpt-ad-1762512271296-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_1', [300, 250], 'div-gpt-ad-1762512227643-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_5', [300, 250], 'div-gpt-ad-1762512322975-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_5', [300, 250], 'div-gpt-ad-1762512445879-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_3', [300, 250], 'div-gpt-ad-1762512401294-0').addService(googletag.pubads());
         
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
@@ -1763,35 +1765,38 @@
         }
 
         .recommendation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
         .recommendation-card {
             background: var(--card-bg);
             border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
+            padding: 15px;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
         }
 
         .recommendation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-color);
         }
 
         .recommendation-card .novel-cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 8px;
         }
 
         .recommendation-card .novel-cover img {
@@ -1805,10 +1810,19 @@
             transform: scale(1.05);
         }
 
+        .recommendation-card .novel-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .recommendation-card h3 {
             color: var(--text-color);
-            font-size: 16px;
-            margin: 12px 15px 8px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1819,9 +1833,8 @@
 
         .recommendation-card .novel-chapters {
             color: var(--text-secondary);
-            font-size: 13px;
-            padding: 0 15px 15px 15px;
-            margin-top: auto;
+            font-size: 14px;
+            margin: 0;
         }
 
         .recommendation-actions {
@@ -2458,10 +2471,10 @@
                 <p>Her jaw drops, confusion replacing her anger. &#34;From your first mate?&#34;</p>
                 <p>&#34;No.&#34; I consider explaining further, but her temper is already flaring. She&#39;d gone from zero to furious just smelling Evelyn on me.</p>
                 <p>She frowns and takes a step back, raising her hands defensively. &#34;I can&#39;t... I can&#39;t handle this.&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
-                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_3 -->
+                <div id='div-gpt-ad-1762512271296-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512271296-0'); });
                   </script>
                 </div>
                 <p>&#34;That&#39;s what happens when you jump to conclusions. You know nothing about me, yet you&#39;ve already decided how I should behave.&#34;</p>
@@ -2471,10 +2484,10 @@
                 <p>&#34;Jasmine, this is Charlotte.&#34;</p>
                 <p>&#34;Your daughter?&#34; she stammers.</p>
                 <p>&#34;Yes.&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
-                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
+                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
                   </script>
                 </div>
                 <p>Charlotte holds up two fingers proudly. &#34;Two dads!&#34; she announces. Though she spends significantly more time with me than Luc.</p>
@@ -2484,10 +2497,10 @@
                 <p>&#34;There&#39;s someone inside.&#34;</p>
                 <p>&#34;Okay.&#34; Charlotte smiles slightly. &#34;She won&#39;t hurt me! Promise.&#34;</p>
                 <p>I set her down, surprised she&#39;s more wary of the Wolf before us than the Lycan inside. She gives Jasmine one final look before slipping past me.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_5 -->
-                <div id='div-gpt-ad-1762512322975-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
+                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512322975-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
                   </script>
                 </div>
                 <p>&#34;What was that about?&#34; Jasmine asks.</p>
@@ -2497,10 +2510,10 @@
                 <p>&#34;That&#39;s not what I meant.&#34;</p>
                 <p>&#34;Isn&#39;t it? You&#39;ve done the same to me. The difference is, my daughter can see your soul. There&#39;s no hiding from that—that&#39;s why she didn&#39;t need to speak to you.&#34;</p>
                 <p>I turn toward the house, done with this conversation.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_5 -->
-                <div id='div-gpt-ad-1762512445879-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_1 -->
+                <div id='div-gpt-ad-1762512227643-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512445879-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512227643-0'); });
                   </script>
                 </div>
                 <p>&#34;You&#39;re just walking away?&#34; Jasmine asks.</p>
@@ -2512,10 +2525,10 @@
                 <p>Walking through the kitchen to the lounge, I find Charlotte already on her stomach, doodling on paper. Evelyn sits on the sofa wearing one of my black tees knotted at her hip and a pair of my shorts. The drawstring is pulled so tight it hangs past the shorts&#39; hem.</p>
                 <p>&#34;I&#39;m sorry,&#34; Evelyn murmurs as I take a seat. &#34;I didn&#39;t mean to cause trouble. I can find another place to stay.&#34;</p>
                 <p>&#34;This was entirely her doing. You have nothing to apologize for.&#34; She studies me with her grey eyes and nods. &#34;Charlotte, what did you see when you looked at Jasmine?&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_3 -->
-                <div id='div-gpt-ad-1762512401294-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
+                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512401294-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
                   </script>
                 </div>
             </div>

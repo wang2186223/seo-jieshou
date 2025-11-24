@@ -512,8 +512,10 @@
                     <div class="novel-cover">
                         <img src="${novel.cover_url}" alt="${novel.title}" loading="lazy">
                     </div>
-                    <h3>${novel.title}</h3>
-                    <div class="novel-chapters">${novel.chapters} chapters</div>
+                    <div class="novel-info">
+                        <h3>${novel.title}</h3>
+                        <div class="novel-chapters">${novel.chapters} chapters</div>
+                    </div>
                 </div>
             `).join('');
             
@@ -1150,15 +1152,15 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_3', [300, 250], 'div-gpt-ad-1762512401294-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_5', [300, 250], 'div-gpt-ad-1762512445879-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_1', [300, 250], 'div-gpt-ad-1762512227643-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_3', [300, 250], 'div-gpt-ad-1762512271296-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
         
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
@@ -1763,35 +1765,38 @@
         }
 
         .recommendation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
         .recommendation-card {
             background: var(--card-bg);
             border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
+            padding: 15px;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
         }
 
         .recommendation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-color);
         }
 
         .recommendation-card .novel-cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 8px;
         }
 
         .recommendation-card .novel-cover img {
@@ -1805,10 +1810,19 @@
             transform: scale(1.05);
         }
 
+        .recommendation-card .novel-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .recommendation-card h3 {
             color: var(--text-color);
-            font-size: 16px;
-            margin: 12px 15px 8px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1819,9 +1833,8 @@
 
         .recommendation-card .novel-chapters {
             color: var(--text-secondary);
-            font-size: 13px;
-            padding: 0 15px 15px 15px;
-            margin-top: auto;
+            font-size: 14px;
+            margin: 0;
         }
 
         .recommendation-actions {
@@ -2454,37 +2467,37 @@
                 <p>The door handle turned suddenly. My eyes flew open. One of my brothers stood on the stairs, staring down at me. I couldn’t tell which one—they both had the same blonde curls framing their faces.</p>
                 <p>&#34;You look like a boy,&#34; he spat, his voice full of disgust. I guessed it was Liam, the slightly older one. Caleb had mentioned him earlier when he came to the office. He’d said something about a meeting regarding him this morning. Now I understood why there were issues.</p>
                 <p>My hands instinctively went to my shorn hair. His brown eyes were wide as he watched me. The corners of his mouth turned up in a smug grin. He was proud of himself for thinking he’d upset me.</p>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_3 -->
+                <div id='div-gpt-ad-1762512401294-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512401294-0'); });
+                  </script>
+                </div>
+                <p>&#34;It’s what happens when you’re naughty,&#34; I told him flatly.</p>
+                <p>&#34;Then you shouldn’t have gotten caught,&#34; he shot back before darting back up the steps and slamming the door shut. I heard his quick footsteps fade, followed by muffled conversation with our mother. I couldn’t make out the words.</p>
+                <p>A few minutes later, my door opened again. I remained seated on the bed, watching as my mother slowly descended the stairs. Her hair was pulled back into a tight bun, a few strands of white visible against the jet black. A deep green dress hugged her frame. For someone who’d had four children, she didn’t look it. Her body was in better shape than mine. Only the soft wrinkles around her eyes gave away her age.</p>
                 <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
                 <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
                   </script>
                 </div>
-                <p>&#34;It’s what happens when you’re naughty,&#34; I told him flatly.</p>
-                <p>&#34;Then you shouldn’t have gotten caught,&#34; he shot back before darting back up the steps and slamming the door shut. I heard his quick footsteps fade, followed by muffled conversation with our mother. I couldn’t make out the words.</p>
-                <p>A few minutes later, my door opened again. I remained seated on the bed, watching as my mother slowly descended the stairs. Her hair was pulled back into a tight bun, a few strands of white visible against the jet black. A deep green dress hugged her frame. For someone who’d had four children, she didn’t look it. Her body was in better shape than mine. Only the soft wrinkles around her eyes gave away her age.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_5 -->
-                <div id='div-gpt-ad-1762512445879-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512445879-0'); });
-                  </script>
-                </div>
                 <p>&#34;What did you say to Liam?&#34; she asked softly.</p>
                 <p>Of course he’d run to her. &#34;He said I looked like a boy because of this,&#34; I said, pointing to my head. &#34;I just told him it’s what happens when you’re naughty.&#34;</p>
                 <p>She placed her hands on her hips. &#34;You can’t say things like that to a seven-year-old.&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
-                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_1 -->
+                <div id='div-gpt-ad-1762512227643-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512227643-0'); });
                   </script>
                 </div>
                 <p>&#34;Maybe he needs to hear it. I know Caleb went to meet with the Alpha about Kim. There’s only one reason he’d need to do that.&#34;</p>
                 <p>Her lips pressed into a thin line. She knew I was right.</p>
                 <p>&#34;Please be careful what you say around the boys. I don’t want any more trouble than necessary.&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_1 -->
-                <div id='div-gpt-ad-1762512227643-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_3 -->
+                <div id='div-gpt-ad-1762512271296-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512227643-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512271296-0'); });
                   </script>
                 </div>
                 <p>&#34;Mom, you and Caleb are already tasked with watching me. What more trouble could you possibly have?&#34;</p>
@@ -2494,10 +2507,10 @@
                 <p>&#34;I’m okay.&#34;</p>
                 <p>&#34;I’ll tell you what I tell the boys. It’s not negotiable.&#34;</p>
                 <p>I followed her up the wooden stairs and into the dining room. She gestured toward a chair beside my youngest brother. He hadn’t met me yet. He dropped his spoon into his bowl and stared at me with dazzling blue eyes. He was a miniature version of Caleb, but with the same blonde curls as Liam. Caleb must have been blonde before he went bald.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
-                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
+                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
                   </script>
                 </div>
             </div>

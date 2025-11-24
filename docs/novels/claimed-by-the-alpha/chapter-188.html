@@ -512,8 +512,10 @@
                     <div class="novel-cover">
                         <img src="${novel.cover_url}" alt="${novel.title}" loading="lazy">
                     </div>
-                    <h3>${novel.title}</h3>
-                    <div class="novel-chapters">${novel.chapters} chapters</div>
+                    <div class="novel-info">
+                        <h3>${novel.title}</h3>
+                        <div class="novel-chapters">${novel.chapters} chapters</div>
+                    </div>
                 </div>
             `).join('');
             
@@ -1150,13 +1152,13 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_1', [300, 250], 'div-gpt-ad-1762512227643-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_5', [300, 250], 'div-gpt-ad-1762512322975-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_5', [300, 250], 'div-gpt-ad-1762512445879-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_3', [300, 250], 'div-gpt-ad-1762512271296-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_2', [300, 250], 'div-gpt-ad-1762512250124-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_3', [300, 250], 'div-gpt-ad-1762512401294-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
         
@@ -1763,35 +1765,38 @@
         }
 
         .recommendation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
         .recommendation-card {
             background: var(--card-bg);
             border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
+            padding: 15px;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
         }
 
         .recommendation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-color);
         }
 
         .recommendation-card .novel-cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 8px;
         }
 
         .recommendation-card .novel-cover img {
@@ -1805,10 +1810,19 @@
             transform: scale(1.05);
         }
 
+        .recommendation-card .novel-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .recommendation-card h3 {
             color: var(--text-color);
-            font-size: 16px;
-            margin: 12px 15px 8px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1819,9 +1833,8 @@
 
         .recommendation-card .novel-chapters {
             color: var(--text-secondary);
-            font-size: 13px;
-            padding: 0 15px 15px 15px;
-            margin-top: auto;
+            font-size: 14px;
+            margin: 0;
         }
 
         .recommendation-actions {
@@ -2454,37 +2467,37 @@
                 <p>For years, Victoria and Dominic had kept me imprisoned within four walls. My world had shrunk to the backyard, until I finally tasted near-complete freedom.</p>
                 <p>Now, I would give anything to feel real grass under my bare feet. To bask in sunlight without constant surveillance. But until Zachary sends word, I&#39;m forbidden from leaving Alexander&#39;s sight. The artificial turf of the training grounds would have to suffice.</p>
                 <p>I understood it was for my protection. For the twins&#39; safety. But every fiber of my being screamed to break free, to escape this suffocating... entrapment.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_1 -->
-                <div id='div-gpt-ad-1762512227643-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512227643-0'); });
-                  </script>
-                </div>
-                <p>Alexander knew. He would reassure me in that calm, steady tone, reminding me this was temporary. Necessary. Promising I could still do most things—as long as he could see me. But to me, this &#34;best thing&#34; felt like losing my sanity piece by piece. If I had any left at this point.</p>
-                <p>It wasn&#39;t just about safety. It was about monitoring me. Ensuring I didn&#39;t become the monster I feared most.</p>
-                <p>&#34;Where would you like me, Alpha?&#34; Brianna beams at Alexander. I desperately want to wipe that artificial smile off her face. It reeks of forced pleasantry. I&#39;d bet anything she possesses a spectacular resting bitch face behind closed doors. I haven&#39;t seen it yet, but my instincts scream it&#39;s there.</p>
                 <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
                 <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
                   </script>
                 </div>
+                <p>Alexander knew. He would reassure me in that calm, steady tone, reminding me this was temporary. Necessary. Promising I could still do most things—as long as he could see me. But to me, this &#34;best thing&#34; felt like losing my sanity piece by piece. If I had any left at this point.</p>
+                <p>It wasn&#39;t just about safety. It was about monitoring me. Ensuring I didn&#39;t become the monster I feared most.</p>
+                <p>&#34;Where would you like me, Alpha?&#34; Brianna beams at Alexander. I desperately want to wipe that artificial smile off her face. It reeks of forced pleasantry. I&#39;d bet anything she possesses a spectacular resting bitch face behind closed doors. I haven&#39;t seen it yet, but my instincts scream it&#39;s there.</p>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_5 -->
+                <div id='div-gpt-ad-1762512445879-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512445879-0'); });
+                  </script>
+                </div>
                 <p>Alexander directs her toward a group of seasoned guards. He&#39;d already mentioned wanting to assess her capabilities. I questioned why—I was living proof of what she could do. I&#39;d felt her power firsthand when she set her mind to it, and that was right after her turning.</p>
                 <p>What could she achieve with years of training?</p>
                 <p>&#34;It&#39;s prudent to know everyone&#39;s capabilities. We may need to utilize them. Or prepare against them.&#34; Alexander winks at me.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_5 -->
-                <div id='div-gpt-ad-1762512322975-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_2 -->
+                <div id='div-gpt-ad-1762512250124-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512322975-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512250124-0'); });
                   </script>
                 </div>
                 <p>I glance up, but his crimson eyes remain fixed on the sparring groups. Does he secretly distrust Brianna too?</p>
                 <p>Nyx murmurs, beginning to voice her opinion. I tell her to be silent. It&#39;s easier without her commentary; this way, I can focus on restraining the monster within.</p>
                 <p>I lower myself onto the grass, observing the combatants. Training had been off-limits since my pregnancy was confirmed. Not that formal training ever mattered when I was fighting for survival. I simply shifted and obliterated threats within seconds. Tearing out hearts, just as Gabriel did to Sophia.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_3 -->
-                <div id='div-gpt-ad-1762512271296-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_3 -->
+                <div id='div-gpt-ad-1762512401294-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512271296-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512401294-0'); });
                   </script>
                 </div>
                 <p>Was that a Rogue trait? Targeting the heart? Or was it simply the most efficient method? Then again, Rogues often toy with their prey. The heart wouldn&#39;t be their first target.</p>

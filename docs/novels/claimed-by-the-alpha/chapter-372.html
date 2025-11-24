@@ -512,8 +512,10 @@
                     <div class="novel-cover">
                         <img src="${novel.cover_url}" alt="${novel.title}" loading="lazy">
                     </div>
-                    <h3>${novel.title}</h3>
-                    <div class="novel-chapters">${novel.chapters} chapters</div>
+                    <div class="novel-info">
+                        <h3>${novel.title}</h3>
+                        <div class="novel-chapters">${novel.chapters} chapters</div>
+                    </div>
                 </div>
             `).join('');
             
@@ -1150,15 +1152,15 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_3', [300, 250], 'div-gpt-ad-1762512401294-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_1', [300, 250], 'div-gpt-ad-1762512227643-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_2', [300, 250], 'div-gpt-ad-1762512377774-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_5', [300, 250], 'div-gpt-ad-1762512322975-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_1', [300, 250], 'div-gpt-ad-1762512358316-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_in_article_5', [300, 250], 'div-gpt-ad-1762512445879-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Netlink/freekingbook.com/banner_4', [300, 250], 'div-gpt-ad-1762512298630-0').addService(googletag.pubads());
         
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
@@ -1763,35 +1765,38 @@
         }
 
         .recommendation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
             margin-bottom: 25px;
         }
 
         .recommendation-card {
             background: var(--card-bg);
             border-radius: 12px;
-            overflow: hidden;
-            text-align: center;
+            padding: 15px;
             transition: all 0.3s ease;
             cursor: pointer;
             border: 2px solid transparent;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
         }
 
         .recommendation-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-color);
         }
 
         .recommendation-card .novel-cover {
-            width: 100%;
-            aspect-ratio: 3 / 4;
+            width: 150px;
+            height: 150px;
+            flex-shrink: 0;
             overflow: hidden;
             background: #f0f0f0;
+            border-radius: 8px;
         }
 
         .recommendation-card .novel-cover img {
@@ -1805,10 +1810,19 @@
             transform: scale(1.05);
         }
 
+        .recommendation-card .novel-info {
+            flex: 1;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
         .recommendation-card h3 {
             color: var(--text-color);
-            font-size: 16px;
-            margin: 12px 15px 8px 15px;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1819,9 +1833,8 @@
 
         .recommendation-card .novel-chapters {
             color: var(--text-secondary);
-            font-size: 13px;
-            padding: 0 15px 15px 15px;
-            margin-top: auto;
+            font-size: 14px;
+            margin: 0;
         }
 
         .recommendation-actions {
@@ -2455,40 +2468,40 @@
                 <p>&#34;I told you parts of it too. It changed nothing! Knowing my suffering didn&#39;t alter your feelings. It didn&#39;t change what you thought I deserved. Or what you believed you deserved. Only now, after losing everything, you claim change.&#34; She knew it all yet was prepared to destroy me, a half-sister she never cared to know.</p>
                 <p>Her eyes flicked up to meet mine. &#34;You are the Alpha.&#34;</p>
                 <p>Nyx snorted in disdain. &#39;She acts oblivious. That was always her goal.&#39;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
-                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
+                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
                   </script>
                 </div>
                 <p>&#34;I...&#34; She paused for several heartbeats. &#34;It&#39;s a bitter truth to accept. But I&#39;ve learned I&#39;m not that person anymore. Everything hurts. Everything is different. I am changed, though I know you don&#39;t believe it.&#34;</p>
                 <p>&#34;You&#39;re right. I don&#39;t.&#34;</p>
                 <p>She sighed heavily. &#34;Maybe this was always my fate. Payback for the pain I caused. Punishment for Julian. For you. For everything.&#34; A hollow laugh escaped her. &#34;There&#39;s always someone worse.&#34;</p>
                 <p>They both had said that. Seraphina and Evelyn. &#34;Who told you that?&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_3 -->
-                <div id='div-gpt-ad-1762512401294-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512401294-0'); });
-                  </script>
-                </div>
-                <p>&#34;Levi.&#34; she muttered. &#34;The night he took me, or after. He was making a point, outsmarting me. Not that it&#39;s difficult anymore.&#34; Her brows furrowed. &#34;You can link him, right?&#34;</p>
-                <p>I stared, weighing how much to reveal.</p>
-                <p>&#34;Because he&#39;s a Lycan?&#34; she pressed. &#34;You link all Lycans. I heard your call for everyone to come. So you must link him and Evelyn if she&#39;s truly Lycan.&#34;</p>
-                <p>&#39;Don&#39;t tell her. She doesn&#39;t need to know.&#39; Nyx warned.</p>
                 <!-- /22796784223/Netlink/freekingbook.com/banner_1 -->
                 <div id='div-gpt-ad-1762512227643-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512227643-0'); });
                   </script>
                 </div>
+                <p>&#34;Levi.&#34; she muttered. &#34;The night he took me, or after. He was making a point, outsmarting me. Not that it&#39;s difficult anymore.&#34; Her brows furrowed. &#34;You can link him, right?&#34;</p>
+                <p>I stared, weighing how much to reveal.</p>
+                <p>&#34;Because he&#39;s a Lycan?&#34; she pressed. &#34;You link all Lycans. I heard your call for everyone to come. So you must link him and Evelyn if she&#39;s truly Lycan.&#34;</p>
+                <p>&#39;Don&#39;t tell her. She doesn&#39;t need to know.&#39; Nyx warned.</p>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_5 -->
+                <div id='div-gpt-ad-1762512322975-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512322975-0'); });
+                  </script>
+                </div>
                 <p>&#34;Unless you can&#39;t.&#34; Seraphina murmured. &#34;But that&#39;s impossible. I heard you. Zachary must have. Brianna linked you. My mother and stepfather heard your call.&#34;</p>
                 <p>&#34;I had a connection to Levi. I check everyone who arrives.&#34; I revealed, earning a groan from Nyx. &#34;But it&#39;s gone. Evelyn&#39;s too. Luc thinks they work with a Witch. A powerful one who severed their connection to me.&#34;</p>
                 <p>&#34;Witches don&#39;t work with Lycans. They work with Wolves, never Lycans.&#34; Seraphina stated. &#34;Look, I&#39;m useless physically now. But I possess knowledge about Lycans. Knowledge you might lack.&#34;</p>
                 <p>&#34;A Witch worked with our father.&#34; I countered.</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_2 -->
-                <div id='div-gpt-ad-1762512377774-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_5 -->
+                <div id='div-gpt-ad-1762512445879-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512377774-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512445879-0'); });
                   </script>
                 </div>
                 <p>&#34;Don&#39;t...&#34; she began, her eyes locking with mine. A small crinkle formed on her forehead. &#34;You were bound as a child.&#34;</p>
@@ -2496,10 +2509,10 @@
                 <p>&#39;Tread carefully.&#39; Nyx cautioned.</p>
                 <p>&#39;I am.&#39;</p>
                 <p>&#34;I never saw Witches in the prison. At least, I don&#39;t think so. I wouldn&#39;t know how to identify one.&#34; She shrugged. &#34;But there were women. &#39;Nurses,&#39; Levi called them. They weren&#39;t. They brought food, water, changed IV bags, escorted us to showers. They never spoke. Always looked entranced. Like automatons.&#34;</p>
-                <!-- /22796784223/Netlink/freekingbook.com/banner_in_article_1 -->
-                <div id='div-gpt-ad-1762512358316-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Netlink/freekingbook.com/banner_4 -->
+                <div id='div-gpt-ad-1762512298630-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512358316-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512298630-0'); });
                   </script>
                 </div>
             </div>

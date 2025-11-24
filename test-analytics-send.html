@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试统计上报</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #357ae8;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            display: none;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <h1>统计上报测试工具</h1>
+    
+    <div class="test-section">
+        <h2>1. 测试页面访问统计</h2>
+        <p>发送测试数据到 Google Sheets</p>
+        <button onclick="testPageVisit()">发送测试数据</button>
+        <div id="result1" class="result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. 查看发送的数据</h2>
+        <pre id="dataPreview" style="background: #f5f5f5; padding: 10px; border-radius: 4px;"></pre>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. 检查清单</h2>
+        <ul>
+            <li>✅ 部署 ID: AKfycby5rSLlbnLTaiUw8iZhL753GORbALCp6bmuUWbYdPjeY3Qb7ae4qNLmHVWLyMSzeIL3</li>
+            <li>✅ Google Sheets ID: 1DuqfVn3ImSQ2t4KC6XFs1ZdgxXf4mPikTO1dZGSu6TQ</li>
+            <li>📂 需要检查"网站统计数据"文件夹是否存在</li>
+            <li>📄 需要检查今天的表格 (adx-freeking-2025-11-24) 是否创建</li>
+        </ul>
+    </div>
+
+    <script>
+    function testPageVisit() {
+        const data = {
+            eventType: 'page_visit',
+            page: 'https://novel.arkmoremoney.com/test',
+            userAgent: navigator.userAgent,
+            userIP: '192.168.1.1',
+            chapterCount: 5,
+            adCount: 3,
+            failedAdCount: 1
+        };
+        
+        // 显示发送的数据
+        document.getElementById('dataPreview').textContent = JSON.stringify(data, null, 2);
+        
+        const resultDiv = document.getElementById('result1');
+        resultDiv.style.display = 'block';
+        resultDiv.className = 'result';
+        resultDiv.textContent = '正在发送数据...';
+        
+        fetch('https://script.google.com/macros/s/AKfycby5rSLlbnLTaiUw8iZhL753GORbALCp6bmuUWbYdPjeY3Qb7ae4qNLmHVWLyMSzeIL3/exec', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        })
+        .then(() => {
+            resultDiv.className = 'result success';
+            resultDiv.innerHTML = `
+                <strong>✅ 发送成功！</strong><br>
+                由于使用 no-cors 模式，无法获取响应内容。<br>
+                请到 Google Sheets 检查数据是否已记录：<br>
+                <a href="https://docs.google.com/spreadsheets/d/1DuqfVn3ImSQ2t4KC6XFs1ZdgxXf4mPikTO1dZGSu6TQ/edit" target="_blank">
+                    打开主表格
+                </a>
+            `;
+        })
+        .catch(error => {
+            resultDiv.className = 'result error';
+            resultDiv.innerHTML = `
+                <strong>❌ 发送失败！</strong><br>
+                错误信息: ${error.message}
+            `;
+        });
+    }
+    </script>
+</body>
+</html>

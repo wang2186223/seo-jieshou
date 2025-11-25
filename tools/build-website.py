@@ -227,16 +227,16 @@ class WebsiteBuilder:
             
             # 定义所有10个广告单元
             all_ad_units = [
-                {'id': 1, 'slot_id': 'div-gpt-ad-1762512227643-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_1'},
-                {'id': 2, 'slot_id': 'div-gpt-ad-1762512250124-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_2'},
-                {'id': 3, 'slot_id': 'div-gpt-ad-1762512271296-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_3'},
-                {'id': 4, 'slot_id': 'div-gpt-ad-1762512298630-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_4'},
-                {'id': 5, 'slot_id': 'div-gpt-ad-1762512322975-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_5'},
-                {'id': 6, 'slot_id': 'div-gpt-ad-1762512358316-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_in_article_1'},
-                {'id': 7, 'slot_id': 'div-gpt-ad-1762512377774-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_in_article_2'},
-                {'id': 8, 'slot_id': 'div-gpt-ad-1762512401294-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_in_article_3'},
-                {'id': 9, 'slot_id': 'div-gpt-ad-1762512425339-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_in_article_4'},
-                {'id': 10, 'slot_id': 'div-gpt-ad-1762512445879-0', 'path': '/22796784223/Netlink/freekingbook.com/banner_in_article_5'},
+                {'id': 1, 'slot_id': 'div-gpt-ad-1762512532725-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_1'},
+                {'id': 2, 'slot_id': 'div-gpt-ad-1762512552289-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_2'},
+                {'id': 3, 'slot_id': 'div-gpt-ad-1762512574447-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_3'},
+                {'id': 4, 'slot_id': 'div-gpt-ad-1762512596217-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_4'},
+                {'id': 5, 'slot_id': 'div-gpt-ad-1762512620087-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_5'},
+                {'id': 6, 'slot_id': 'div-gpt-ad-1762512640602-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_1'},
+                {'id': 7, 'slot_id': 'div-gpt-ad-1762512662360-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_2'},
+                {'id': 8, 'slot_id': 'div-gpt-ad-1762512679598-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_3'},
+                {'id': 9, 'slot_id': 'div-gpt-ad-1762512698165-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_4'},
+                {'id': 10, 'slot_id': 'div-gpt-ad-1762512717723-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_5'},
             ]
             
             # 从10个广告单元中随机选择5个（每个页面都不同）

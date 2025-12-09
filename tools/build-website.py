@@ -225,18 +225,18 @@ class WebsiteBuilder:
                     'url': f"/novels/{novel_data['slug']}/chapter-{ch['number']}"
                 })
             
-            # 定义所有10个广告单元
+            # 定义所有10个广告单元（新的aj1047.online格式）
             all_ad_units = [
-                {'id': 1, 'slot_id': 'div-gpt-ad-1762512532725-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_1'},
-                {'id': 2, 'slot_id': 'div-gpt-ad-1762512552289-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_2'},
-                {'id': 3, 'slot_id': 'div-gpt-ad-1762512574447-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_3'},
-                {'id': 4, 'slot_id': 'div-gpt-ad-1762512596217-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_4'},
-                {'id': 5, 'slot_id': 'div-gpt-ad-1762512620087-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_5'},
-                {'id': 6, 'slot_id': 'div-gpt-ad-1762512640602-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_1'},
-                {'id': 7, 'slot_id': 'div-gpt-ad-1762512662360-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_2'},
-                {'id': 8, 'slot_id': 'div-gpt-ad-1762512679598-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_3'},
-                {'id': 9, 'slot_id': 'div-gpt-ad-1762512698165-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_4'},
-                {'id': 10, 'slot_id': 'div-gpt-ad-1762512717723-0', 'path': '/22796784223/Netlink/arkmoremoney.com/banner_in_article_5'},
+                {'id': 1, 'data_key': 'c651d999796ed9329d49daca31964dc3'},
+                {'id': 2, 'data_key': '294ce81fcfc9fd30ba91b1c3a88f64a9'},
+                {'id': 3, 'data_key': '55b92dd50204072470d4a7cbc6d2dfb4'},
+                {'id': 4, 'data_key': 'daf3374e6c4dacfe7b183f7fb2c7bc79'},
+                {'id': 5, 'data_key': '2f3125acc828fb3f81a8274ade539c96'},
+                {'id': 6, 'data_key': 'b70bb0b847e131d97ff98c07c8b6bccf'},
+                {'id': 7, 'data_key': 'c6b21f1ece356f17ca8a82d55a3c99e9'},
+                {'id': 8, 'data_key': 'd3f948eeb430e99a64e0b8a3b1227ccf'},
+                {'id': 9, 'data_key': '75fbb10ead33745463ebc8dd3ec16d59'},
+                {'id': 10, 'data_key': 'fedd319bfa339f52b0d034886296e912'},
             ]
             
             # 从10个广告单元中随机选择5个（每个页面都不同）

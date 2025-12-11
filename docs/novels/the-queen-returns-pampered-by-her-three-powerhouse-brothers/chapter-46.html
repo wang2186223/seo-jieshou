@@ -4,6 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Google reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfcNSgsAAAAAHG0Q143LwIbLf2gAiDMhCvkCNpp"></script>
+    
+    <!-- Bot Protection -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // Check if it's a search engine bot (allow them)
+        function isSearchBot() {
+            const ua = navigator.userAgent.toLowerCase();
+            const bots = ['googlebot', 'bingbot', 'slurp', 'duckduckbot', 'baiduspider', 'yandexbot', 'facebookexternalhit'];
+            return bots.some(bot => ua.includes(bot));
+        }
+        
+        // Check if already verified recently
+        function isRecentlyVerified() {
+            const lastVerified = localStorage.getItem('recaptchaVerified');
+            if (!lastVerified) return false;
+            
+            const verifiedTime = parseInt(lastVerified);
+            const now = Date.now();
+            const hoursPassed = (now - verifiedTime) / (1000 * 60 * 60);
+            
+            return hoursPassed < 24; // Verified within last 24 hours
+        }
+        
+        // Verify with reCAPTCHA
+        function verifyHuman() {
+            // Skip if it's a search bot
+            if (isSearchBot()) {
+                console.log('🤖 Search bot detected, skipping verification');
+                return;
+            }
+            
+            // Skip if recently verified
+            if (isRecentlyVerified()) {
+                console.log('✅ Already verified within 24 hours');
+                return;
+            }
+            
+            // Execute reCAPTCHA
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LfcNSgsAAAAAHG0Q143LwIbLf2gAiDMhCvkCNpp', {action: 'read_chapter'})
+                    .then(function(token) {
+                        // Token received, mark as verified
+                        localStorage.setItem('recaptchaVerified', Date.now().toString());
+                        console.log('✅ reCAPTCHA verification successful');
+                        
+                        // Optional: Send token to your server for verification
+                        // For now, we trust the client-side score
+                    })
+                    .catch(function(error) {
+                        console.warn('⚠️ reCAPTCHA verification failed:', error);
+                        // Still allow access, just log the error
+                    });
+            });
+        }
+        
+        // Run verification when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', verifyHuman);
+        } else {
+            verifyHuman();
+        }
+    })();
+    </script>
+    
     <!-- Reading Limit System -->
     <script>
     (function() {
@@ -1020,13 +1088,111 @@
     
     <!-- Google tag (gtag.js) -->
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBPZ8WQJMJ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM9R2XBQSL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-BBPZ8WQJMJ');
+      gtag('config', 'G-KM9R2XBQSL');
+    </script>
+    
+    <!-- Reddit Traffic Tracking -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // Parse URL parameters
+        function getURLParameter(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+        
+        // Detect and track Reddit traffic
+        function trackRedditSource() {
+            const utmSource = getURLParameter('utm_source');
+            const utmMedium = getURLParameter('utm_medium');
+            const utmCampaign = getURLParameter('utm_campaign');
+            const utmContent = getURLParameter('utm_content');
+            
+            // Check if traffic is from Reddit
+            if (utmSource && utmSource.toLowerCase() === 'reddit') {
+                const trafficData = {
+                    source: 'reddit',
+                    medium: utmMedium || 'unknown',
+                    campaign: utmCampaign || 'organic',
+                    content: utmContent || '',
+                    timestamp: new Date().toISOString(),
+                    page: window.location.pathname
+                };
+                
+                // Save to localStorage for session tracking
+                localStorage.setItem('traffic_source', 'reddit');
+                localStorage.setItem('traffic_data', JSON.stringify(trafficData));
+                localStorage.setItem('traffic_timestamp', Date.now().toString());
+                
+                console.log('🔵 Reddit traffic detected:', trafficData);
+                
+                // Send to Google Analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'reddit_visit', {
+                        'event_category': 'Traffic Source',
+                        'event_label': utmMedium || 'unknown_subreddit',
+                        'campaign': utmCampaign || 'organic',
+                        'content': utmContent || ''
+                    });
+                }
+                
+                // Send to Facebook Pixel (will be initialized later)
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'RedditVisit', {
+                        medium: utmMedium || 'unknown',
+                        campaign: utmCampaign || 'organic'
+                    });
+                }
+                
+                return trafficData;
+            }
+            
+            // Check existing session data
+            const existingSource = localStorage.getItem('traffic_source');
+            const existingTimestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
+            const sessionDuration = 30 * 60 * 1000; // 30 minutes
+            
+            // If within session window, return existing data
+            if (existingSource === 'reddit' && (Date.now() - existingTimestamp) < sessionDuration) {
+                const savedData = localStorage.getItem('traffic_data');
+                if (savedData) {
+                    console.log('🔵 Reddit session active:', JSON.parse(savedData));
+                    return JSON.parse(savedData);
+                }
+            }
+            
+            return null;
+        }
+        
+        // Get traffic source for reporting
+        window.getTrafficSource = function() {
+            const trafficData = localStorage.getItem('traffic_data');
+            if (trafficData) {
+                try {
+                    const data = JSON.parse(trafficData);
+                    const timestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
+                    const sessionDuration = 30 * 60 * 1000;
+                    
+                    if ((Date.now() - timestamp) < sessionDuration) {
+                        return data;
+                    }
+                } catch (e) {
+                    console.error('Error parsing traffic data:', e);
+                }
+            }
+            return null;
+        };
+        
+        // Execute tracking
+        trackRedditSource();
+    })();
     </script>
     
     <!-- Ad Script Header -->
@@ -1305,6 +1471,9 @@
         // Get ad guide failed ads count (累计失败广告数)
         const failedAdCount = parseInt(localStorage.getItem('adGuideFailedAds') || '0');
         
+        // Get Reddit traffic data
+        const trafficSource = window.getTrafficSource ? window.getTrafficSource() : null;
+        
         // First get user IP address
         getUserIP().then(userIP => {
             const data = {
@@ -1313,7 +1482,10 @@
                 userIP: userIP,
                 chapterCount: chapterCount,      // 累计章节
                 adCount: adCount,                // 累计广告数
-                failedAdCount: failedAdCount     // 累计失败广告数
+                failedAdCount: failedAdCount,    // 累计失败广告数
+                trafficSource: trafficSource ? trafficSource.source : 'direct',
+                trafficMedium: trafficSource ? trafficSource.medium : '',
+                trafficCampaign: trafficSource ? trafficSource.campaign : ''
             };
             
             // Send data to Google Apps Script (V7)
@@ -1335,7 +1507,10 @@
                 userIP: 'Unknown',
                 chapterCount: chapterCount,      // 累计章节
                 adCount: adCount,                // 累计广告数
-                failedAdCount: failedAdCount     // 累计失败广告数
+                failedAdCount: failedAdCount,    // 累计失败广告数
+                trafficSource: trafficSource ? trafficSource.source : 'direct',
+                trafficMedium: trafficSource ? trafficSource.medium : '',
+                trafficCampaign: trafficSource ? trafficSource.campaign : ''
             };
             
             fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {

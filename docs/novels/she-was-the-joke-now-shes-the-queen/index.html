@@ -26,13 +26,93 @@
     
     <!-- Google tag (gtag.js) -->
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBPZ8WQJMJ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KM9R2XBQSL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-BBPZ8WQJMJ');
+      gtag('config', 'G-KM9R2XBQSL');
+    </script>
+    
+    <!-- Reddit Traffic Tracking -->
+    <script>
+    (function() {
+        'use strict';
+        
+        function getURLParameter(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+        
+        function trackRedditSource() {
+            const utmSource = getURLParameter('utm_source');
+            const utmMedium = getURLParameter('utm_medium');
+            const utmCampaign = getURLParameter('utm_campaign');
+            const utmContent = getURLParameter('utm_content');
+            
+            if (utmSource && utmSource.toLowerCase() === 'reddit') {
+                const trafficData = {
+                    source: 'reddit',
+                    medium: utmMedium || 'unknown',
+                    campaign: utmCampaign || 'organic',
+                    content: utmContent || '',
+                    timestamp: new Date().toISOString(),
+                    page: window.location.pathname
+                };
+                
+                localStorage.setItem('traffic_source', 'reddit');
+                localStorage.setItem('traffic_data', JSON.stringify(trafficData));
+                localStorage.setItem('traffic_timestamp', Date.now().toString());
+                
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'reddit_visit', {
+                        'event_category': 'Traffic Source',
+                        'event_label': utmMedium || 'unknown_subreddit',
+                        'campaign': utmCampaign || 'organic'
+                    });
+                }
+                
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'RedditVisit', {
+                        medium: utmMedium || 'unknown',
+                        campaign: utmCampaign || 'organic'
+                    });
+                }
+                
+                return trafficData;
+            }
+            
+            const existingSource = localStorage.getItem('traffic_source');
+            const existingTimestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
+            const sessionDuration = 30 * 60 * 1000;
+            
+            if (existingSource === 'reddit' && (Date.now() - existingTimestamp) < sessionDuration) {
+                const savedData = localStorage.getItem('traffic_data');
+                if (savedData) return JSON.parse(savedData);
+            }
+            
+            return null;
+        }
+        
+        window.getTrafficSource = function() {
+            const trafficData = localStorage.getItem('traffic_data');
+            if (trafficData) {
+                try {
+                    const data = JSON.parse(trafficData);
+                    const timestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
+                    const sessionDuration = 30 * 60 * 1000;
+                    
+                    if ((Date.now() - timestamp) < sessionDuration) {
+                        return data;
+                    }
+                } catch (e) {}
+            }
+            return null;
+        };
+        
+        trackRedditSource();
+    })();
     </script>
     
     <!-- Google Publisher Tag (GPT) -->
@@ -837,9 +917,9 @@
                 
                 <div class="book-meta">
                     
-                    <div class="meta-item">Romance</div>
-                    
                     <div class="meta-item">Fantasy</div>
+                    
+                    <div class="meta-item">Romance</div>
                     
                     
                     <div class="meta-item">4.5 ★★★★★</div>

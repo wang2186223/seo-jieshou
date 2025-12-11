@@ -12,7 +12,7 @@
         // ===== Configuration =====
         const CONFIG = {
             COOLDOWN_HOURS: 3,
-            CHAPTER_LIMIT_BASE: 120,  // 120, 240, 360...
+            CHAPTER_LIMIT_BASE: 300,  // 300, 600, 900...
         };
         
         // ===== Utility Functions =====
@@ -541,7 +541,7 @@
         // ===== Configuration =====
         const CONFIG = {
             COOLDOWN_HOURS: 5,
-            CHECK_INTERVAL_BASE: 30,     // Base check interval: 30, 60, 90...
+            CHECK_INTERVAL_BASE: 300,     // Base check interval: 300, 600, 900...
             RATIO_THRESHOLD: 1.1,        // Trigger when: failed × 1.1 >= success
         };
         
@@ -556,10 +556,10 @@
         }
         
         /**
-         * Get check interval - always 30
+         * Get check interval - always 300
          */
         function getCheckInterval() {
-            return CONFIG.CHECK_INTERVAL_BASE; // Always 30
+            return CONFIG.CHECK_INTERVAL_BASE; // Always 300
         }
         
         /**
@@ -774,7 +774,7 @@
         
         /**
          * Check and update failed ad count with dynamic ratio checking
-         * Checks every 30 failed ads (30, 60, 90, 120...)
+         * Checks every 300 failed ads (300, 600, 900, 1200...)
          */
         function checkFailedAdLimit() {
             // If already in cooldown, skip check to prevent duplicate triggers
@@ -787,15 +787,15 @@
             const failedAds = parseInt(localStorage.getItem('adGuideFailedAds') || '0');
             const successAds = parseInt(localStorage.getItem('adGuideTotalSeen') || '0');
             const lastChecked = parseInt(localStorage.getItem('adProtectionLastChecked') || '0');
-            const checkInterval = CONFIG.CHECK_INTERVAL_BASE; // Always 30
+            const checkInterval = CONFIG.CHECK_INTERVAL_BASE; // Always 300
             
-            // Calculate current check point (30, 60, 90, 120...)
+            // Calculate current check point (300, 600, 900, 1200...)
             // Use floor to get the latest crossed checkpoint
             const currentCheckPoint = Math.floor(failedAds / checkInterval) * checkInterval;
             
             // Check if we crossed a new checkpoint
-            // Allow delay: if failedAds is 31 or 32, currentCheckPoint will be 30
-            // and it will trigger if lastChecked < 30
+            // Allow delay: if failedAds is 301 or 302, currentCheckPoint will be 300
+            // and it will trigger if lastChecked < 300
             if (currentCheckPoint > lastChecked && currentCheckPoint > 0) {
                 // Update lastChecked to current checkpoint to prevent duplicate checks
                 localStorage.setItem('adProtectionLastChecked', currentCheckPoint.toString());

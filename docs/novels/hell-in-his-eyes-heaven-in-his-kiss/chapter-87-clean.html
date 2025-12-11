@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 87 - Hell In His Eyes, Heaven In His Kiss | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBPZ8WQJMJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BBPZ8WQJMJ');
+    </script>
+    
+    <!-- Ad Script Header -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '3902941096613787');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3902941096613787&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: var(--bg-color);
+            border-right: 1px solid var(--border-color);
+            z-index: 200;
+            overflow-y: auto;
+            padding: 20px;
+            transition: left 0.3s ease;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 199;
+            display: none;
+        }
+
+        .sidebar-overlay.open {
+            display: block;
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .chapter-list {
+            list-style: none;
+        }
+
+        .chapter-item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+        }
+
+        .chapter-item.active a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            .sidebar {
+                width: 85%;
+                left: -85%;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <button class="btn" id="toc-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 87</h1>
+            <div class="content font-medium">
+                <p>Chapter87 He Was The One</p>
+                <!-- Reward Video Ad (Chapter 3, 6, 9, 12...) -->
+                <ins class="3b35b82f" data-key="df317c9d2cab3f10cde939a00b761822"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- Ad Unit 1 -->
+                <ins class="3b35b82f" data-key="c651d999796ed9329d49daca31964dc3"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Miriam shot Loretta a sly, conspiratorial glance, and Loretta instantly caught on, turning toward Wesley.&#34;Whoever that person is, Gabriela must really like them. Wesley, who do you think she&#39;s giving the scarf to?&#34;</p>
+                <p>Wesley&#39;s face stayed composed, but the subtle curl of his fingers at his side betrayed him, his knuckles whitening under the strain.</p>
+                <p>His voice was cool, almost bored. &#34;How the hell am1supposed to know that?&#34;</p>
+                <p>Loretta&#39;s brow creased as she exchanged a puzzled look with Miriam.</p>
+                <p>Why the sudden frost? Just earlier, while they were decorating the villa, there&#39;d been a flicker of connection.</p>
+                <p>Miriam, ever the strategist, flicked her gaze at Loretta in a silent warning not to push him.</p>
+                <p>If the scarf didn&#39;t draw him out, she still had a far more cunning play up her sleeve.</p>
+                <p>Meanwhile, Brenden lingered nearby, his ears pricked, drinking in every word.</p>
+                <p>Every muscle in his body throbbed, his legs so sore he could barely stand, yet Brenden&#39;s towering narcissism refused to take a second off.</p>
+                <p>Oh no! Was Gabriela actually considering giving the scarf to him?</p>
+                <p>And if she did, what then? Accept it? Refuse?</p>
+                <p>They had agreed to cut ties, to walk past each other like strangers.</p>
+                <p>Why couldn&#39;t she just let that be? She was hopelessly taken with him, and it complicated everything between them.</p>
+                <p>Brenden let out an exasperated sigh, muttering complaints under his breath. Wesley heard every word, his face an unreadable mask.</p>
+                <p>So, still self-absorbed. Clearly, one trainer hadn&#39;t been enough for Brenden.</p>
+                <p>Wesley was planning on bringing another.</p>
+                <p>When Gabriela finally stepped into the dining room,her gaze collided with Wesley&#39;s, his eyes burning with restrained fury. A pang of unease tugged at her.She knew how valuable his time was, and yet here she was, making him wait. Perhaps she really had been pushing her luck.</p>
+                <p>Gabriela couldn&#39;t bear to meet Wesley&#39;s gaze any longer. As soon as she turned her head, there was Brenden, slouched over the dining table, one hand braced against his waist, looking thoroughly pitiful.</p>
+                <p>The sight stirred a strange mix of satisfaction, tinged with sympathy.</p>
+                <p>What was the point of hurting each other like this?She really should find a moment to talk to Brenden. That night still haunted her with regret. Still, she clung to the belief that time could mend even the deepest rifts.</p>
+                <p>If Brenden would just let her go, maybe then, given enough time, she could forget what happened between them.</p>
+                <!-- Ad Unit 2 -->
+                <ins class="3b35b82f" data-key="294ce81fcfc9fd30ba91b1c3a88f64a9"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Determined to ignore Wesley&#39;s simmering stare,Gabriela focused on her meal, eating quickly.</p>
+                <p>Afterward, the moment she was waiting for arrived-a chance to pull Brenden aside and speak with him privately.</p>
+                <p>To the left of the manor lay a still pond, a jagged mass of artificial rock guarding its edge.</p>
+                <p>Brenden,desperate to avoid Loretta roping him into yet another round of exercise that afternoon, slipped behind the stone, hiding like a fugitive.</p>
+                <p>After an hour and a half of brutal leg stretches that morning, his knees no longer remembered how to bend.Slumping against the cold rock, he let out a sharp hiss of pain.</p>
+                <p>So this was what happened when a woman didn&#39;t get the man she wanted. The outcome was absolutely terrifying.</p>
+                <p>Still, the moment Gabriela&#39;s delicate features floated into his mind, the irritation drained away.</p>
+                <p>Fine. No more pushing her buttons.</p>
+                <p>Rubbing at his aching knees, he made up his mind that once the New Year season was over, he&#39;d head back to his own place-putting much-needed distance between them.</p>
+                <p>He was mid-thought when Gabriela&#39;s voice suddenly drifted over. &#34;Mr. Saunders?&#34;</p>
+                <p>He jolted upright in alarm and instantly regretted it.Pain tore through his knee like it had been struck with an iron rod. His face twisted, but he still managed to throw up a hand.</p>
+                <p>&#34;Don&#39;t come here!&#34; he barked. Gabriela froze mid-step.</p>
+                <p>Since she wanted this talk to go well, she decided to lead with sincerity. From a cautious three meters away, she said loudly, &#34;I&#39;m sorry about this morning...&#34;</p>
+                <p>&#34;Stop.&#34; The moment her face came into view,Brenden&#39;s pulse kicked up. He tore his gaze away,unwilling to risk looking at her too long. &#34;We agreed yesterday, no more contact. Nothing more than strangers, even if we cross paths again.&#34;</p>
+                <p>Gabriela froze. &#34;Are you serious?&#34;</p>
+                <p>Would this be the final verdict, or would he change his mind by evening? Maybe she should record it for proof.</p>
+                <p>His expression didn&#39;t budge. &#34;Of course I&#39;m serious.You should leave. No more little stunts to get my attention. We&#39;re not suited for each other. Best to go our separate ways.&#34;</p>
+                <p>Gabriela understood his words perfectly, yet a stubborn doubt lingered, making it impossible for her to truly believe him.</p>
+                <p>Her stillness, the faint shadow of hurt in her eyes,made Brenden&#39;s resolve waver for a heartbeat. But he was a man who stuck to his decisions once made.</p>
+                <p>&#34;You need to leave now. And never come looking for me alone again. Oh, and don&#39;t give me anything,either.&#34;</p>
+                <p>Gabriela blinked, stunned all over again.</p>
+                <!-- Ad Unit 3 -->
+                <ins class="3b35b82f" data-key="55b92dd50204072470d4a7cbc6d2dfb4"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>She had no intention of giving him anything.She only wanted to retrieve what was hers.</p>
+                <p>When Gabriela&#39;s lips parted to speak, Brenden cut her off with a pained look. &#34;Why are you still standing there?&#34;</p>
+                <p>From his tone and the weariness in his eyes, it didn&#39;t seem like an act. He truly wanted no part in any connection with her.</p>
+                <p>For now, she decided to believe him. Turning away, she returned to her room and resumed knitting the scarf.</p>
+                <p>Loretta had been urging her to finish it, though Gabriela still didn&#39;t understand why.</p>
+                <p>From behind, Brenden watched her go. Her slender back stirred an unexpected pang in him, a flicker of sentimentality he didn&#39;t care to examine.</p>
+                <p>He snapped out of it, giving himself a sharp slap.</p>
+                <p>Gabriela was a good woman, yes, but there was still a gulf between them, one that couldn&#39;t be crossed.</p>
+                <p>Meanwhile, Gabriela kept to Loretta&#39;s request,finishing the last stitches on the scarf.</p>
+                <p>Loretta&#39;s face lit up the moment the scarf was in her hands. &#34;Gabriela, your craftsmanship is incredible.Even the expensive scarves in boutique windows can&#39;t compare.&#34;</p>
+                <p>Gabriela flushed at the praise. &#34;Actually, it&#39;s my first time knitting. I&#39;m really not that skilled yet.&#34;Turning away, she returned to her room and resumed knitting the scarf.</p>
+                <p>Loretta had been urging her to finish it, though Gabriela still didn&#39;t understand why.</p>
+                <p>From behind, Brenden watched her go. Her slender back stirred an unexpected pang in him, a flicker of sentimentality he didn&#39;t care to examine.</p>
+                <p>He snapped out of it, giving himself a sharp slap.</p>
+                <p>Gabriela was a good woman, yes, but there was still a gulf between them, one that couldn&#39;t be crossed.</p>
+                <p>Meanwhile, Gabriela kept to Loretta&#39;s request,finishing the last stitches on the scarf.</p>
+                <p>Loretta&#39;s face lit up the moment the scarf was in her hands. &#34;Gabriela, your craftsmanship is incredible.Even the expensive scarves in boutique windows can&#39;t compare.&#34;</p>
+                <p>Gabriela flushed at the praise. &#34;Actually, it&#39;s my first time knitting. I&#39;m really not that skilled yet.&#34; &#34;It&#39;s already wonderful,&#34; Miriam chimed in, then added casually, &#34;Gabriela, would you mind giving this one to Mrs. Larson?&#34;</p>
+                <p>Gabriela smiled. &#34;Of course not.&#34;</p>
+                <p>Aside from Farley, Loretta and Miriam were the people closest to her.</p>
+                <p>Even if Loretta asked for ten scarves, she&#39;d knit every last one.</p>
+                <!-- Ad Unit 4 -->
+                <ins class="3b35b82f" data-key="daf3374e6c4dacfe7b183f7fb2c7bc79"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>No sooner had Loretta taken the scarf than she shooed Gabriela toward her room. &#34;You&#39;ve had a long day. Get some rest in your room.&#34;</p>
+                <p>The swiftness of her dismissal made Gabriela pause.But what could Loretta possibly be scheming against an ordinary, unpaid cook like her?</p>
+                <p>Choosing not to press, Gabriela returned to her room.</p>
+                <p>The moment she was out of sight, Loretta snatched up the scarf  and hurried off to find Wesley. All afternoon, Wesley&#39;s mind had been elsewhere,his attention slipping despite the book in his hands.</p>
+                <p>When the door opened to reveal Loretta, a faint flicker of disappointment crossed his eyes, so fleeting he didn&#39;t notice it himself.</p>
+                <p>What exactly had he been expecting?</p>
+                <p>Loretta stepped inside without preamble, holding the neatly folded scarf.</p>
+                <p>Wesley&#39;s fingers stilled mid-turn of a page. After a pause, he closed the book and asked with deliberate casualness, &#34;What&#39;s this?&#34;</p>
+                <p>&#34;It&#39;s from Gabriela,&#34; Loretta said, lowering her voice as if sharing a secret. &#34;She made it herself. Knitted it stitch by stitch. Then she came to me and practically begged me to make sure it reached you.&#34;</p>
+                <p>The corners of Wesley&#39;s mouth lifted, almost imperceptibly.</p>
+                <p>So, she&#39;d gone to the trouble of knitting a scarf for him. He fought back the grin threatening to give him away,settling instead for a lazy sneer. &#34;Then why didn&#39;t she give it to me herself?&#34;</p>
+                <p>&#34;She&#39;s probably too shy,&#34; Loretta replied. &#34;Not everyone shares your indifference to romance-while you&#39;ve never had a girlfriend, your cousin&#39;s exes outnumber fingers on both hands.&#34; Her glare could have cut glass. &#34;Well? Are you taking it or not?&#34;</p>
+                <p>Wesley had half a mind to roll his eyes straight into the back of his head.</p>
+                <p>The scarf seemed just an excuse. Loretta&#39;s real mission was clearly to lecture him.</p>
+                <p>With a resigned sigh, Wesley reached out. &#34;Alright,fine.I&#39;Il take it.&#34;</p>
+                <p>Loretta&#39;s eyes narrowed, her tone sharp. &#34;You should wear it today. And, I&#39;m warning you. Don&#39;t you dare pull that bored, disdainful face of yours.&#34;</p>
+                <p>That caught him off guard.</p>
+                <p>What on earth had Gabriela done to win Loretta over so completely?</p>
+                <p>He gave a defeated nod. &#34;Alright, alright. I&#39;ll play along.&#34;</p>
+                <p>Loretta pressed the scarf into his hand.</p>
+                <p>It was wonderfully made, warm, soft, and somehow disarming.</p>
+                <p>Wesley lowered his gaze to the white yarn, each stitch neat and deliberate, not a single hint of haste or carelessness.</p>
+                <p>It happened to be a shade he liked very much.</p>
+                <p>And in that quiet moment, he knew he wasn&#39;t just anyone in Gabriela&#39;s heart-he was the one.</p>
+                <!-- Ad Unit 5 -->
+                <ins class="3b35b82f" data-key="2f3125acc828fb3f81a8274ade539c96"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-86" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-88" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Table of Contents</h2>
+            <button class="btn" id="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="chapter-list">
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-1">Chapter 1</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-2">Chapter 2</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-3">Chapter 3</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-4">Chapter 4</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-5">Chapter 5</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-6">Chapter 6</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-7">Chapter 7</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-8">Chapter 8</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-9">Chapter 9</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-10">Chapter 10</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-11">Chapter 11</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-12">Chapter 12</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-13">Chapter 13</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-14">Chapter 14</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-15">Chapter 15</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-16">Chapter 16</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-17">Chapter 17</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-18">Chapter 18</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-19">Chapter 19</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-20">Chapter 20</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-21">Chapter 21</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-22">Chapter 22</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-23">Chapter 23</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-24">Chapter 24</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-25">Chapter 25</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-26">Chapter 26</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-27">Chapter 27</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-28">Chapter 28</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-29">Chapter 29</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-30">Chapter 30</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-31">Chapter 31</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-32">Chapter 32</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-33">Chapter 33</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-34">Chapter 34</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-35">Chapter 35</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-36">Chapter 36</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-37">Chapter 37</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-38">Chapter 38</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-39">Chapter 39</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-40">Chapter 40</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-41">Chapter 41</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-42">Chapter 42</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-43">Chapter 43</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-44">Chapter 44</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-45">Chapter 45</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-46">Chapter 46</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-47">Chapter 47</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-48">Chapter 48</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-49">Chapter 49</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-50">Chapter 50</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-51">Chapter 51</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-52">Chapter 52</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-53">Chapter 53</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-54">Chapter 54</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-55">Chapter 55</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-56">Chapter 56</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-57">Chapter 57</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-58">Chapter 58</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-59">Chapter 59</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-60">Chapter 60</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-61">Chapter 61</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-62">Chapter 62</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-63">Chapter 63</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-64">Chapter 64</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-65">Chapter 65</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-66">Chapter 66</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-67">Chapter 67</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-68">Chapter 68</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-69">Chapter 69</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-70">Chapter 70</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-71">Chapter 71</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-72">Chapter 72</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-73">Chapter 73</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-74">Chapter 74</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-75">Chapter 75</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-76">Chapter 76</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-77">Chapter 77</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-78">Chapter 78</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-79">Chapter 79</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-80">Chapter 80</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-81">Chapter 81</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-82">Chapter 82</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-83">Chapter 83</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-84">Chapter 84</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-85">Chapter 85</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-86">Chapter 86</a>
+            </li>
+            
+            <li class="chapter-item active">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-87">Chapter 87</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-88">Chapter 88</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-89">Chapter 89</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-90">Chapter 90</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-91">Chapter 91</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-92">Chapter 92</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-93">Chapter 93</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-94">Chapter 94</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-95">Chapter 95</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-96">Chapter 96</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-97">Chapter 97</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-98">Chapter 98</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-99">Chapter 99</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/hell-in-his-eyes-heaven-in-his-kiss/chapter-100">Chapter 100</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const tocBtn = document.getElementById('toc-btn');
+        const backBtn = document.getElementById('back-btn');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Sidebar Toggle
+        if (tocBtn) {
+            tocBtn.addEventListener('click', () => {
+                sidebar.classList.add('open');
+                sidebarOverlay.classList.add('open');
+            });
+        }
+
+        const closeSidebarFunc = () => {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        };
+
+        if (closeSidebar) {
+            closeSidebar.addEventListener('click', closeSidebarFunc);
+        }
+        
+        if (sidebarOverlay) {
+            sidebarOverlay.addEventListener('click', closeSidebarFunc);
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            } else if (e.key === 'Escape') {
+                closeSidebarFunc();
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'Hell In His Eyes, Heaven In His Kiss',
+                url: '/novels/hell-in-his-eyes-heaven-in-his-kiss/',
+                cover_url: '/covers/hell-in-his-eyes-heaven-in-his-kiss-书籍封面.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 87
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

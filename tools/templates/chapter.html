@@ -4,118 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- AB Version Detection & Redirect System -->
-    <script>
-    (function() {
-        'use strict';
-        
-        // List of tracking parameters that indicate user came from ads
-        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
-        const STORAGE_KEY = 'has_tracking_params';
-        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
-        const EXPIRY_HOURS = 720; // 30 days expiration (30 * 24)
-        
-        /**
-         * Check if URL has any tracking parameters
-         */
-        function hasTrackingParams() {
-            try {
-                const urlParams = new URLSearchParams(window.location.search);
-                for (let param of TRACKING_PARAMS) {
-                    if (urlParams.has(param)) {
-                        return true;
-                    }
-                }
-            } catch (e) {
-                console.error('Failed to parse URL parameters:', e);
-            }
-            return false;
-        }
-        
-        /**
-         * Check localStorage for tracking parameter history
-         */
-        function hasStoredTrackingParams() {
-            try {
-                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
-                if (expiryTime && Date.now() < parseInt(expiryTime)) {
-                    const stored = localStorage.getItem(STORAGE_KEY);
-                    return stored === 'true';
-                }
-            } catch (e) {
-                console.error('Failed to read localStorage:', e);
-            }
-            return false;
-        }
-        
-        /**
-         * Save tracking parameter existence to localStorage
-         */
-        function saveTrackingParamStatus() {
-            try {
-                localStorage.setItem(STORAGE_KEY, 'true');
-                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
-                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
-            } catch (e) {
-                console.error('Failed to save to localStorage:', e);
-            }
-        }
-        
-        /**
-         * Redirect to clean version (without ads)
-         */
-        function redirectToCleanVersion() {
-            // Get current path and construct clean version URL
-            const currentPath = window.location.pathname;
-            
-            // Handle both cases: with and without .html extension
-            let cleanPath;
-            if (currentPath.endsWith('.html')) {
-                // Replace .html with -clean.html
-                cleanPath = currentPath.replace(/\.html$/, '-clean.html');
-            } else {
-                // Add -clean.html suffix
-                cleanPath = currentPath + '-clean.html';
-            }
-            
-            // Keep query string and hash if exists
-            const search = window.location.search || '';
-            const hash = window.location.hash || '';
-            
-            // Perform redirect
-            window.location.replace(cleanPath + search + hash);
-        }
-        
-        /**
-         * Initialize version detection
-         */
-        function initVersionDetection() {
-            // Check if current URL has tracking parameters
-            const hasParams = hasTrackingParams();
-            
-            // If URL has tracking parameters, save to localStorage
-            if (hasParams) {
-                saveTrackingParamStatus();
-                // User has tracking params, show ad version (no redirect needed)
-                return;
-            }
-            
-            // Check if localStorage has tracking parameter history
-            const hasStored = hasStoredTrackingParams();
-            
-            // If both URL and localStorage don't have tracking params
-            // Redirect to clean version
-            if (!hasParams && !hasStored) {
-                redirectToCleanVersion();
-            }
-            // Otherwise, user has stored tracking params, show ad version
-        }
-        
-        // Execute detection immediately (before page loads)
-        initVersionDetection();
-    })();
-    </script>
-    
     <!-- Reading Limit System -->
     <script>
     (function() {
@@ -973,7 +861,7 @@
                 }
                 
                 // 上报到 Google Sheets
-                const scriptUrl = 'https://script.google.com/macros/s/AKfycby-u3H40iNpvijJc6d7KYhiOkDD0cwRKFmzRI0ryvreTril3hkRusIE2L00IU9f1voz/exec';
+                const scriptUrl = 'https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec';
                 
                 fetch(scriptUrl, {
                     method: 'POST',
@@ -1429,7 +1317,7 @@
             };
             
             // Send data to Google Apps Script (V7)
-            fetch('https://script.google.com/macros/s/AKfycby-u3H40iNpvijJc6d7KYhiOkDD0cwRKFmzRI0ryvreTril3hkRusIE2L00IU9f1voz/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -1450,7 +1338,7 @@
                 failedAdCount: failedAdCount     // 累计失败广告数
             };
             
-            fetch('https://script.google.com/macros/s/AKfycby-u3H40iNpvijJc6d7KYhiOkDD0cwRKFmzRI0ryvreTril3hkRusIE2L00IU9f1voz/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -1504,7 +1392,7 @@
         'use strict';
         
         const CONFIG = {
-            scriptUrl: 'https://script.google.com/macros/s/AKfycby-u3H40iNpvijJc6d7KYhiOkDD0cwRKFmzRI0ryvreTril3hkRusIE2L00IU9f1voz/exec',
+            scriptUrl: 'https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec',
             returnWindow: 50000,  // 50秒返回窗口
             storageKey: 'ad_total_clicks',
             debugMode: true
@@ -1517,11 +1405,11 @@
         // 检查广告是否存在
         function checkAds() {
             const checkInterval = setInterval(() => {
-                // 支持Google Publisher Tag广告
-                const gptAds = document.querySelectorAll('[id^="div-gpt-ad-"]');
-                if (gptAds.length > 0) {
+                // 支持Google AdSense广告
+                const adsenseAds = document.querySelectorAll('ins.adsbygoogle');
+                if (adsenseAds.length > 0) {
                     hasAds = true;
-                    if (CONFIG.debugMode) console.log('[AdClick] ✅ 找到GPT广告');
+                    if (CONFIG.debugMode) console.log('[AdClick] ✅ 找到AdSense广告');
                     clearInterval(checkInterval);
                 }
             }, 500);
@@ -1553,9 +1441,9 @@
             const totalClicks = incrementClicks();
             const stayDuration = Math.round((Date.now() - pageLoadTime) / 1000);
             
-            // 优先获取GPT广告信息
-            const firstAd = document.querySelector('[id^="div-gpt-ad-"]');
-            const adSlot = firstAd ? firstAd.id : 'unknown';
+            // 获取AdSense广告信息
+            const firstAd = document.querySelector('ins.adsbygoogle');
+            const adSlot = firstAd ? (firstAd.dataset.adSlot || 'adsense') : 'unknown';
             const adPosition = firstAd ? Math.round(firstAd.getBoundingClientRect().top + window.scrollY) : 0;
             
             const data = {
@@ -2436,35 +2324,75 @@
                 
                 {%- for paragraph in paragraphs %}
                 <p>{{ paragraph }}</p>
-                {%- if loop.index == 1 and show_reward_video %}
-                <!-- Reward Video Ad (Chapter 3, 6, 9, 12...) -->
-                <ins class="3b35b82f" data-key="{{ reward_video_data_key }}"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
-                {%- endif %}
                 {%- if loop.index == ad_position_1 %}
-                <!-- Ad Unit 1 -->
-                <ins class="3b35b82f" data-key="{{ selected_ad_units[0].data_key }}"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- Ad Unit 1: banner1 -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5350074826167160"
+                     crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5350074826167160"
+                     data-ad-slot="5449108118"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
                 {%- endif %}
                 {%- if loop.index == ad_position_2 %}
-                <!-- Ad Unit 2 -->
-                <ins class="3b35b82f" data-key="{{ selected_ad_units[1].data_key }}"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- Ad Unit 2: banner2 -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5350074826167160"
+                     crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5350074826167160"
+                     data-ad-slot="4327705932"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
                 {%- endif %}
                 {%- if loop.index == ad_position_3 %}
-                <!-- Ad Unit 3 -->
-                <ins class="3b35b82f" data-key="{{ selected_ad_units[2].data_key }}"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- Ad Unit 3: banner3 -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5350074826167160"
+                     crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5350074826167160"
+                     data-ad-slot="5373194296"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
                 {%- endif %}
                 {%- if loop.index == ad_position_4 %}
-                <!-- Ad Unit 4 -->
-                <ins class="3b35b82f" data-key="{{ selected_ad_units[3].data_key }}"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- Ad Unit 4: banner4 -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5350074826167160"
+                     crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5350074826167160"
+                     data-ad-slot="2747030954"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
                 {%- endif %}
                 {%- if loop.index == ad_position_5 %}
-                <!-- Ad Unit 5 -->
-                <ins class="3b35b82f" data-key="{{ selected_ad_units[4].data_key }}"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- Ad Unit 5: banner1 (repeat) -->
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5350074826167160"
+                     crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5350074826167160"
+                     data-ad-slot="5449108118"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
                 {%- endif %}
                 {%- endfor %}
             </div>
@@ -2701,12 +2629,12 @@
                 }
                 
                 // Key Point 1: Guide Trigger Mechanism
-                this.MIN_INITIAL_ADS = 1; // Minimum ads for first trigger (only used on very first visit)
-                this.MAX_INITIAL_ADS = 15; // Maximum ads for first trigger (only used on very first visit)
-                this.MIN_RANDOM_ADS = 15; // Minimum random ads for next trigger
-                this.MAX_RANDOM_ADS = 90; // Maximum random ads for next trigger
-                this.TRIGGER_PROBABILITY = 0.80; // 80% trigger probability
-                this.MAX_TRIGGERS_BEFORE_LONG_COOLDOWN = 3; // Enter long cooldown after 3 accumulated triggers
+                this.MIN_INITIAL_ADS = 500; // Minimum ads for first trigger (only used on very first visit)
+                this.MAX_INITIAL_ADS = 1000; // Maximum ads for first trigger (only used on very first visit)
+                this.MIN_RANDOM_ADS = 500; // Minimum random ads for next trigger
+                this.MAX_RANDOM_ADS = 1000; // Maximum random ads for next trigger
+                this.TRIGGER_PROBABILITY = 0.01; // 1% trigger probability
+                this.MAX_TRIGGERS_BEFORE_LONG_COOLDOWN = 1; // Enter long cooldown after 1 accumulated triggers
                 this.LONG_COOLDOWN_HOURS = 7; // Long cooldown 7 hours
                 this.INACTIVITY_RESET_MINUTES = 60; // Auto reset after 60 minutes of inactivity
                 
@@ -2964,9 +2892,8 @@
 
             startAdMonitoring() {
                 const checkForAds = () => {
-                    // Monitor all ad slots - support new aj1047.online format
-                    // Use attribute selector to avoid CSS selector issues with numeric class names
-                    const adElements = document.querySelectorAll('ins[data-key]');
+                    // Monitor AdSense ad containers
+                    const adElements = document.querySelectorAll('ins.adsbygoogle');
                     adElements.forEach(ad => {
                         if (!ad.dataset.guideMonitored) {
                             ad.dataset.guideMonitored = 'true';
@@ -2993,7 +2920,7 @@
                 const rect = adElement.getBoundingClientRect();
                 const isValidHeight = rect.height > 100 && rect.height <= 650;
                 
-                // Update ad fill detection logic - support new aj1047.online format
+                // Update ad fill detection logic - support AdSense format
                 let isFilled = false;
                 
                 // Check if there is a valid iframe (height > 0)
@@ -3003,15 +2930,15 @@
                     isFilled = iframeRect.height > 0;
                 }
                 
-                // If no iframe, check other fill indicators including new format
+                // If no iframe, check other fill indicators for AdSense
                 if (!isFilled) {
                     isFilled = adElement.dataset.adStatus === 'filled' || 
+                              adElement.dataset.adsbygoogleStatus === 'done' ||
                               adElement.innerHTML.includes('googleads') ||
-                              adElement.innerHTML.includes('aj1047.online') ||
                               (adElement.querySelector('[data-google-container-id]') !== null && 
                                adElement.querySelector('iframe[title="3rd party ad content"]') !== null) ||
                               adElement.innerHTML.includes('data-load-complete="true"') ||
-                              (adElement.hasAttribute('data-key') && adElement.innerHTML.length > 0);
+                              (adElement.classList.contains('adsbygoogle') && adElement.innerHTML.length > 100);
                 }
 
                 // Mark as processed to avoid double counting
@@ -3325,7 +3252,7 @@
                     
                     console.log('Ad Guide: Reporting event data', data);
                     
-                    fetch('https://script.google.com/macros/s/AKfycby-u3H40iNpvijJc6d7KYhiOkDD0cwRKFmzRI0ryvreTril3hkRusIE2L00IU9f1voz/exec', {
+                    fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
                         method: 'POST',
                         mode: 'no-cors',
                         headers: {
@@ -3356,7 +3283,7 @@
                     
                     console.log('Ad Guide: Reporting event data (IP retrieval failed)', data);
                     
-                    fetch('https://script.google.com/macros/s/AKfycby-u3H40iNpvijJc6d7KYhiOkDD0cwRKFmzRI0ryvreTril3hkRusIE2L00IU9f1voz/exec', {
+                    fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
                         method: 'POST',
                         mode: 'no-cors',
                         headers: {

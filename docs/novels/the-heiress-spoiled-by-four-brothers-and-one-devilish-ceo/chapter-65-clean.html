@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 63 - The Heiress Spoiled by Four Brothers and One Devilish CEO | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBPZ8WQJMJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BBPZ8WQJMJ');
+    </script>
+    
+    <!-- Ad Script Header -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '3902941096613787');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3902941096613787&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: var(--bg-color);
+            border-right: 1px solid var(--border-color);
+            z-index: 200;
+            overflow-y: auto;
+            padding: 20px;
+            transition: left 0.3s ease;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 199;
+            display: none;
+        }
+
+        .sidebar-overlay.open {
+            display: block;
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .chapter-list {
+            list-style: none;
+        }
+
+        .chapter-item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+        }
+
+        .chapter-item.active a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            .sidebar {
+                width: 85%;
+                left: -85%;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <button class="btn" id="toc-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 63</h1>
+            <div class="content font-medium">
+                <p>When they got to room 908, Paul Evans, the head of the vice squad, flashed his badge. &#34;We got a tip-off.Someone&#39;s selling sex in here.&#34;</p>
+                <!-- Ad Unit 1 -->
+                <ins class="3b35b82f" data-key="c651d999796ed9329d49daca31964dc3"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Paul frowned as he spotted one of the restrained men.&#34;You again? Didn&#39;t you just get out? Trying to land yourself back inside?&#34;</p>
+                <p>The sleazy guy grinned, showing his yellowed teeth.&#34;We just gota call about some free girl, so, you know.&#34;</p>
+                <p>Paul waved dismissively. &#34;Take them all.&#34;</p>
+                <p>Cops moved in fast, cuffing the two guys and hauling them out.</p>
+                <p>A female officer yanked the bed sheet and threw it over Molly. Desperate and panicked, Molly clung to the officer like a lifeline.</p>
+                <p>The cop, clearly disgusted, slapped her-hard.Molly snapped out of it a bit and burst into tears. &#34;Why&#39;d you hit me!&#34;</p>
+                <p>Without answering, the cop grabbed her and dragged her out.</p>
+                <p>Just then, a faint voice called out from the wardrobe.&#34;Help.someone help.&#34;</p>
+                <p>Paul slid the door open and found a hotel maid tied up and stuffed inside. Her hands were bound, and she was curled up, trembling.</p>
+                <p>Once she was freed, she started sobbing uncontrollably. Paul motioned, and a young officer gently led her away.</p>
+                <p>The hotel manager guided Paul to room 907 next.What they saw inside stunned even the seasoned cops.</p>
+                <p>Natalie was sprawled across the bed, eyes glazed, a lazy smile on her face-as if she was thoroughly enjoying whatever the three bulky men had been doing.</p>
+                <p>The moment the police came in, the men freaked out and scrambled to get dressed.</p>
+                <p>Meanwhile, Nancy had justrushed to the 9th floor after hearing the commotion. She pushed through the gathered crowd outside room 907.</p>
+                <p>That&#39;s when she saw Molly stumbling out of room 908,wrapped in a crumpled sheet, her face beet red.Nancy&#39;s heart sank.</p>
+                <p>She shoved her way into room 907 and froze when she saw her daughter, butt-naked and sprawled in a compromising pose.</p>
+                <p>Furious, she flew into the room, punched the men trying to zip up, and yanked her daughter off the bed.</p>
+                <!-- Ad Unit 2 -->
+                <ins class="3b35b82f" data-key="294ce81fcfc9fd30ba91b1c3a88f64a9"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>&#34;No! Leave me! I&#39;m so lonely!&#34; Natalie slurred.</p>
+                <p>Nancy stared in horror. Was this really the daughter she raised? Outraged, she smacked her hard. &#34;Natalie! Wake the hell up! What did they give you?! Tell me-who did this?!&#34;</p>
+                <p>Paul stepped in and grabbed Nancy&#39;s wrist. &#34;That&#39;s enough. We got a report about prostitution happening here. She needs to come in for questioning.&#34;</p>
+                <p>Another policewoman picked up the still-loopy Natalie, wrapped her in a sheet, and walked her out.</p>
+                <p>Nancy shoved Paul off and shouted, &#34;I&#39;m filing charges against them for rape!&#34;</p>
+                <p>Paul&#39;s gaze turned cold. &#34;We&#39;ll get to the truth. But anyone messing with public morals won&#39;t be walking away scot-free. Take them all.&#34;</p>
+                <p>And just like that, what was supposed to be a quiet birthday celebration turned into one big circus.</p>
+                <p>At the precinct&#39;s homicide unit.</p>
+                <p>Captain Ryan reviewed the surveillance footage and realized the first person who tried to stop the crime was none other than Megan-wife of Tristan.</p>
+                <p>He glanced at his watch. It was already 9:30 p.m.</p>
+                <p>An officer beside him said, &#34;Think Mr. Reid&#39;s still up this late?&#34;</p>
+                <p>Ryan sighed. &#34;Getting him here is easy. Sending him away without pissing him off? Not so much. He&#39;s probably relaxing in bed with his wife right now. You want to call them in, be my guest, just don&#39;t expect this department to survive the blowback.&#34; The officer twitched his lips. &#34;Fair point. So now what?&#34;</p>
+                <p>Ryan quickly typed out a message and sent it to Tristan: [Boss, mind dropping by the station tomorrow with your wife? She clearly knew someone was going after Bernard, so she must have some evidence.Bring it all,okay?]</p>
+                <p>He turned back to the officer. &#34;Did forensics finish the report?&#34;</p>
+                <p>&#34;Not yet.&#34;</p>
+                <p>Just then, the door opened.</p>
+                <p>The female forensic expert stepped in, handing Ryan the results. &#34;The liquid in the syringe was venom from an Inland Taipan&#39;s viper. Deadly stuff-just three grams could kill over a hundred adults.&#34;Ryan furrowed his brow. &#34;What&#39;s the update on that suspect?&#34;</p>
+                <!-- Ad Unit 3 -->
+                <ins class="3b35b82f" data-key="55b92dd50204072470d4a7cbc6d2dfb4"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>The forensic specialist smirked, &#34;Well, poor guy took a laser blast right to the crown jewels. Judging by the method, I&#39;d say it was a woman who did it.&#34;</p>
+                <p>Ryan turned his laptop around and hit play on a video.</p>
+                <p>The female forensic expert blinked, stunned. &#34;Wait,what...What the heck is that?!&#34;</p>
+                <p>Ryan grinned. &#34;A self-aware robot dog that sold out its owner to save its own skin.&#34;</p>
+                <p>The woman&#39;s eyes sparkled. &#34;That is so cute! l seriously want one. Imagine not needing to do anything yourself if some creep jumps you.&#34;</p>
+                <p>One of the officers nearby had his forehead full of metaphorical sweat. &#34;Yeah, take that thing out and half the guys in the city&#39;ll end up neutered.&#34;</p>
+                <p>Crossing her arms, the forensic expert said coolly,&#34;Well, guys like that don&#39;t deserve to keep them anyway.&#34;</p>
+                <p>While they were joking around, Paul walked in.</p>
+                <p>&#34;We just got a report-someone&#39;s accusing Megan of committing rape,&#34; he announced.</p>
+                <p>Ryan let out a quiet scoff. &#34;She really had a full schedule last night, huh? But if you&#39;re smart, you&#39;lI sit on it till morning.&#34;</p>
+                <p>Paul looked at him curiously. &#34;What do you mean?&#34;</p>
+                <p>The forensic expert clicked on the video. &#34;This woman stopped a murder last night. The suspect&#39;s already in custody, and we&#39;re still gathering all the evidence. But,you know, we&#39;re talking about Mr. Reid here.&#34;</p>
+                <p>Paul snorted. &#34;Mr. Reid or not, she&#39;ll be summoned like everyone else! You realize how wild that incident at the Empire Hotel was? It&#39;s already blowing up online.Uncensored videos everywhere, and we can&#39;t take them down fast enough.&#34;</p>
+                <p>His voice turned sharper. &#34;What, are you all scared of him? Pathetic.&#34;</p>
+                <p>And with that, Paul turned and stormed out.</p>
+                <p>A squad officer approaching himn said, &#34;Captain, that mother-Nancy-she&#39;s raising hell again. Wants us to arrest Megan right now. Should we go?&#34; Paul smacked the guy lightly on the head. &#34;You take everything she says at face value? Think, man. Those two women are still basically out of it. We&#39;ll deal with this tomorrow.&#34;</p>
+                <p>The officer rubbed his head, muttering, &#34;Didn&#39;t you just say we were gonna roll over to the Reid estate with the forensics guys? Talk about flipping sides.&#34;</p>
+                <!-- Ad Unit 4 -->
+                <ins class="3b35b82f" data-key="daf3374e6c4dacfe7b183f7fb2c7bc79"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Early the next morning.</p>
+                <p>Tristan arrived at the station with Megan.</p>
+                <p>Inside the interrogation room, Ryan personally met with them and had an officer bring two cups of hot coffee.</p>
+                <p>He smiled politely. &#34;Didn&#39;t want to bother you two so late last night.&#34;</p>
+                <p>Tristan sat there with his legs gracefully crossed,his gaze distant and chilly. &#34;Even if you sent the whole department, we wouldn&#39;t have come.&#34;</p>
+                <p>Ryan clicked his tongue. &#34;Come on, little sister-in-law&#39;s here-cut me some slack.&#34;</p>
+                <p>Tristan&#39;s voice was flat. &#34;Then stop pretending we&#39;re all buddies when you want a favor.&#34;</p>
+                <p>Ryan muttered under his breath, calling him a cold-hearted jerk.</p>
+                <p>Megan calmly took a USB stick from her bag, sliding it across to Ryan. &#34;This has everything on Molly and Wyatt.&#34;</p>
+                <p>&#34;From Chloe&#39;s abduction to the attempted murder of  my grandfather, Bernard-it was all orchestrated by them.&#34;</p>
+                <p>&#34;While Wyatt was in the hospital, he learned that Daniel&#39;s daughter had leukemia. So he and Molly hired goons to kidnap the girl and use her to blackmail Daniel. They knocked him out and dragged Chloe to the Elite Club, planning for five men to abuse her.&#34;</p>
+                <p>&#34;Then they hired a hacker codenamed &#39;Wings&#39; to overwrite the city traffic data and erase Daniel&#39;s trail.And when he reappeared,they ordered his daughter to be killed.&#34;</p>
+                <p>&#34;Cameron will bring in four witnesses.&#34;</p>
+                <p>After listening, Ryan turned to the officer taking notes.&#34;Got it all down?&#34;</p>
+                <p>The officer nodded.</p>
+                <p>Ryan asked, &#34;How did you get their call recordings in the first place?&#34;</p>
+                <p>Before Megan could answer, Tristan cut in. &#34;After Chloe&#39;s incident,I suspected those two. Had someone plant a tracker and recording device on their phones -just in case.&#34;</p>
+                <p>Right then, someone unexpected walked through the door.</p>
+                <!-- Ad Unit 5 -->
+                <ins class="3b35b82f" data-key="2f3125acc828fb3f81a8274ade539c96"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-64" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-66" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Table of Contents</h2>
+            <button class="btn" id="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="chapter-list">
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-1">Chapter 1</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-2">Chapter 2</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-3">Chapter 3</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-4">Chapter 4</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-5">Chapter 5</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-6">Chapter 6</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-7">Chapter 7</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-8">Chapter 8</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-9">Chapter 9</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-10">Chapter 10</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-11">Chapter 11</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-12">Chapter 12</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-13">Chapter 13</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-14">Chapter 14</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-15">Chapter 15</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-16">Chapter 15</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-17">Chapter 16</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-18">Chapter 17</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-19">Chapter 18</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-20">Chapter 19</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-21">Chapter 20</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-22">Chapter 21</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-23">Chapter 22</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-24">Chapter 23</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-25">Chapter 24</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-26">Chapter 25</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-27">Chapter 26</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-28">Chapter 27</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-29">Chapter 28</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-30">Chapter 29</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-31">Chapter 30</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-32">Chapter 31</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-33">Chapter 32</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-34">Chapter 33</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-35">Chapter 34</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-36">Chapter 35</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-37">Chapter 36</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-38">Chapter 37</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-39">Chapter 38</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-40">Chapter 39</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-41">Chapter 39</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-42">Chapter 40</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-43">Chapter 41</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-44">Chapter 42</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-45">Chapter 43</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-46">Chapter 44</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-47">Chapter 45</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-48">Chapter 46</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-49">Chapter 47</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-50">Chapter 48</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-51">Chapter 49</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-52">Chapter 50</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-53">Chapter 51</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-54">Chapter 52</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-55">Chapter 53</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-56">Chapter 54</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-57">Chapter 55</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-58">Chapter 56</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-59">Chapter 57</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-60">Chapter 58</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-61">Chapter 59</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-62">Chapter 60</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-63">Chapter 61</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-64">Chapter 62</a>
+            </li>
+            
+            <li class="chapter-item active">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-65">Chapter 63</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-66">Chapter 64</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-67">Chapter 65</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-68">Chapter 66</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-69">Chapter 67</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-70">Chapter 68</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-71">Chapter 69</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-72">Chapter 70</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-73">Chapter 71</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-74">Chapter 72</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-75">Chapter 73</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-76">Chapter 74</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-77">Chapter 75</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-78">Chapter 76</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-79">Chapter 77</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-80">Chapter 78</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-81">Chapter 79</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-82">Chapter 80</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-83">Chapter 81</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-84">Chapter 82</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-85">Chapter 83</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-86">Chapter 84</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-87">Chapter 85</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-88">Chapter 86</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-89">Chapter 87</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-90">Chapter 88</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-91">Chapter 89</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-92">Chapter 90</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-93">Chapter 91</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-94">Chapter 92</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-95">Chapter 93</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-96">Chapter 94</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-97">Chapter 95</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-98">Chapter 96</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-99">Chapter 97</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-100">Chapter 98</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-101">Chapter 99</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/chapter-102">Chapter 100</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const tocBtn = document.getElementById('toc-btn');
+        const backBtn = document.getElementById('back-btn');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Sidebar Toggle
+        if (tocBtn) {
+            tocBtn.addEventListener('click', () => {
+                sidebar.classList.add('open');
+                sidebarOverlay.classList.add('open');
+            });
+        }
+
+        const closeSidebarFunc = () => {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        };
+
+        if (closeSidebar) {
+            closeSidebar.addEventListener('click', closeSidebarFunc);
+        }
+        
+        if (sidebarOverlay) {
+            sidebarOverlay.addEventListener('click', closeSidebarFunc);
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            } else if (e.key === 'Escape') {
+                closeSidebarFunc();
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'The Heiress Spoiled by Four Brothers and One Devilish CEO',
+                url: '/novels/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo/',
+                cover_url: '/covers/the-heiress-spoiled-by-four-brothers-and-one-devilish-ceo-书籍封面.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 65
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

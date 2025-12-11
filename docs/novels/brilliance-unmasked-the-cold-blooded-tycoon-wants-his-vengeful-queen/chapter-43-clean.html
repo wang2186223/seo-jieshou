@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 43 - Brilliance Unmasked： The Cold-Blooded Tycoon Wants His Vengeful Queen | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBPZ8WQJMJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BBPZ8WQJMJ');
+    </script>
+    
+    <!-- Ad Script Header -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '3902941096613787');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3902941096613787&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: var(--bg-color);
+            border-right: 1px solid var(--border-color);
+            z-index: 200;
+            overflow-y: auto;
+            padding: 20px;
+            transition: left 0.3s ease;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 199;
+            display: none;
+        }
+
+        .sidebar-overlay.open {
+            display: block;
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .chapter-list {
+            list-style: none;
+        }
+
+        .chapter-item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+        }
+
+        .chapter-item.active a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            .sidebar {
+                width: 85%;
+                left: -85%;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <button class="btn" id="toc-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 43</h1>
+            <div class="content font-medium">
+                <p>Khloe&#39;s followers snatched up the scattered papers, their curiosity piqued by the unexpected drama.</p>
+                <!-- Ad Unit 1 -->
+                <ins class="3b35b82f" data-key="c651d999796ed9329d49daca31964dc3"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>The documents revealed the shocking truth-detailed records of everything Meagan had secretly sold from within the villa&#39;s walls over the years.</p>
+                <p>Arabella had witnessed these transactions all along but remained silent, dismissing the stolen items as insignificant.</p>
+                <p>She did the math and found that Meagan had quietly liquidated possessions worth millions.</p>
+                <p>&#34;Oh my gosh, that&#39;s an astronomical amount of money!&#34;</p>
+                <p>&#34;Their family must be swimming in wealth!&#34;</p>
+                <p>&#34;Obviously! This happens to be one of the most prestigious neighborhoods in Griridge... Wait,what&#39;s happening here, Koko? Did your family actually sell that much valuable stuff?&#34;</p>
+                <p>Khloe studied the damning records, desperately</p>
+                <p>wanting to mount a defense but finding herself speechless. She clenched her teeth against the rising fury and forced out the words, &#34;That money went toward supporting you and Daisy! Even if you wave those papers around, it won&#39;t change anything!&#34;</p>
+                <p>&#34;Then you can easily show us the receipts for what you supposedly spent on me and Daisy,right?&#34; Arabella&#39;s smile turned glacial.</p>
+                <p>Meagan&#39;s lips quivered uncontrollably.</p>
+                <p>Arabella stepped closer, her presence commanding. &#34;Can&#39;t produce them, can you?Because the food at home arrived fresh from the farm every single day, and all the clothes Daisy and I wore came as gifts from luxury brands.Before my parents departed, they ensured we lacked nothing. You entered our home, savored the finest services money could buy, and never spent a single penny of your own!&#34;</p>
+                <!-- Ad Unit 2 -->
+                <ins class="3b35b82f" data-key="294ce81fcfc9fd30ba91b1c3a88f64a9"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>A collective gasp rippled through the assembled crowd.</p>
+                <p>The followers stared at Khloe and Meagan,completely stunned by this revelation.</p>
+                <p>Meagan stubbornly attempted to salvage her</p>
+                <p>position. &#34;But when you girls fell ill, I was the one who nursed you back to health-&#34;</p>
+                <p>&#34;We maintained a private physician on retainer.I don&#39;t recall you providing any care whatsoever,&#34;Arabella interrupted, her voice cutting through the air like a blade. Her lips twisted into a frigid smile. &#34;Previously, I held my tongue because you&#39;re my aunt. I knew you were stealing and selling our belongings, but I allowed it to continue.Since you insist on creating this public spectacle,I&#39;m granting you one week to return every stolen dollar. Otherwise, prepare yourself for legal action.&#34;</p>
+                <p>A shadow of dread crossed Meagan&#39;s features.Arabella continued relentlessly, &#34;And don&#39;t imagine you can escape consequences just because years have passed. Our villa&#39;s security system stores footage for seventy years.&#34;</p>
+                <p>Meagan&#39;s vision blurred, and she swayed dangerously close to collapse.</p>
+                <p>Khloe struggled to draw breath.</p>
+                <p>Damn Arabella! She truly represented their most formidable obstacle.</p>
+                <p>Khloe,despite her seething anger, noticed the</p>
+                <p>followers&#39; expressions shifting dramatically.&#34;Mom, is this actually true?&#34; she demanded,her voice breaking. &#34;I believed we were the ones covering all the expenses!&#34;</p>
+                <!-- Ad Unit 3 -->
+                <ins class="3b35b82f" data-key="55b92dd50204072470d4a7cbc6d2dfb4"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Khloe stared at Meagan in complete disbelief,rage blazing across her features. &#34;I can&#39;t believe you even deceived me!&#34;</p>
+                <p>Meagan opened her mouth but found herself voiceless. Seeing the followers watching intently behind Khloe, she had no alternative but to stammer, &#34;I... I never intended to mislead you.l just wanted to secure the house so our family could live in comfort.&#34;</p>
+                <p>&#34;I&#39;d rather live without such tainted money!&#34;Khloe declared sorrowfully, then turned to address the followers directly. &#34;I&#39;m deeply sorry.I had no knowledge of the truth!&#34;</p>
+                <p>The followers, who had initially burned with anger,witnessed Khloe&#39;s genuine remorse and couldn&#39;t bring themselves to condemn her. &#34;It&#39;s not your fault,Koko. You&#39;re a victim in this situation too.&#34;</p>
+                <p>Arabella scoffed, fixing Meagan wih a withering stare, and spoke softly. &#34;Your family&#39;s truly remarkable-you&#39;ll sacrifice each other whenever it serves your purposes. Aunt Meagan, I&#39;m giving</p>
+                <p>you exactly one week. Remember to contact me regarding the money&#39;s return.&#34;</p>
+                <p>With those final words, Arabella departed alongside Gracie.</p>
+                <p>Gracie insisted on treating Arabella to dinner,where she listened intently as Arabella recounted the years of betrayal and manipulation.</p>
+                <p>Gracie&#39;s fury ignited. &#34;Meagan&#39;s absolutely a despicable woman, treating you and Daisy so cruelly! It&#39;s completely unforgivable. But | was foolish as well. I should have recognized she wouldn&#39;t possess the kindness to genuinely care for you two.&#34;</p>
+                <p>Guilt consumed Gracie entirely.</p>
+                <p>Arabella detected the authentic concern radiating from Gracie&#39;s eyes, and for a fleeting moment,she felt disoriented. She hadn&#39;t anticipated a neighbor caring so deeply about their welfare.Feeling somewhat uncomfortable, she replied,&#34;Everything&#39;s manageable now. I just feel sorry for Daisy.&#34;</p>
+                <!-- Ad Unit 4 -->
+                <ins class="3b35b82f" data-key="daf3374e6c4dacfe7b183f7fb2c7bc79"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>&#34;If I&#39;d remained in the country during those years,I never would have allowed your aunt to torment her so mercilessly.&#34;</p>
+                <p>Gracie&#39;s eyes blazed with profound regret as she continued, &#34;Your father stood apart as genuinely exceptional within that family. Meagan and the other relatives are all thoroughly duplicitous, but he possessed true honesty and remarkable kindness.&#34;</p>
+                <p>Suddenly, Arabella&#39;s mind seized upon something Meagan had deliberately mentioned earlier.Her grandfather had raised her father from childhood.</p>
+                <p>She retained few memories of her grandfather since he passed away shortly after her birth.</p>
+                <p>But then, why would Meagan reference that detail so intentionally?</p>
+                <p>Could it possibly mean that her father wasn&#39;t actually born a Stanley?</p>
+                <p>Arabella&#39;s eyes narrowed as a profound sense of loss washed over her consciousness. Still, it hardly mattered anymore. Her parents had vanished from this world.</p>
+                <p>&#34;You and Daisy are genuinely good girls. Now that I&#39;ve come back, if you ever require assistance,simply reach out to me. Let&#39;s exchange our contact information.&#34;</p>
+                <p>Gracie and Arabella swapped their details with</p>
+                <p>practiced efficiency.</p>
+                <p>A moment later, Arabella&#39;s phone chimed with an incoming transfer of two hundred thousand dollars. She frantically attempted to return the substantial sum, but Gracie remained adamant and said, &#34;Your father provided my family with immeasurable help over the years. Please accept this and use it to properly care for Daisy, won&#39;t you? If you refuse, it&#39;ll signal that you don&#39;t wish to maintain our connection.&#34;</p>
+                <p>Witnessing Gracie&#39;s unwavering determination,Arabella found herself with no alternative but to accept the generous gesture. &#34;Thank you so much,Mrs.Pearson.&#34;</p>
+                <p>Gracie&#39;s face illuminated with a deeply gratified smile.</p>
+                <p>But precisely at that moment, her phone erupted with an urgent ring. Gracie&#39;s expression transformed drastically as she absorbed the caller&#39;s words, and when she finally ended the call, she spoke with barely contained urgency.&#34;Something critical has emerged. I may not be able to continue our dinner together after all.&#34;</p>
+                <!-- Ad Unit 5 -->
+                <ins class="3b35b82f" data-key="2f3125acc828fb3f81a8274ade539c96"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-42" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-44" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Table of Contents</h2>
+            <button class="btn" id="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="chapter-list">
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-1">Chapter 1</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-2">Chapter 2</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-3">Chapter 3</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-4">Chapter 4</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-5">Chapter 5</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-6">Chapter 6</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-7">Chapter 7</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-8">Chapter 8</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-9">Chapter 9</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-10">Chapter 10</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-11">Chapter 11</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-12">Chapter 12</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-13">Chapter 13</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-14">Chapter 14</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-15">Chapter 15</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-16">Chapter 16</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-17">Chapter 17</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-18">Chapter 18</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-19">Chapter 19</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-20">Chapter 20</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-21">Chapter 21</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-22">Chapter 22</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-23">Chapter 23</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-24">Chapter 24</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-25">Chapter 25</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-26">Chapter 26</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-27">Chapter 27</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-28">Chapter 28</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-29">Chapter 29</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-30">Chapter 30</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-31">Chapter 31</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-32">Chapter 32</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-33">Chapter 33</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-34">Chapter 34</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-35">Chapter 35</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-36">Chapter 36</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-37">Chapter 37</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-38">Chapter 38</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-39">Chapter 39</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-40">Chapter 40</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-41">Chapter 41</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-42">Chapter 42</a>
+            </li>
+            
+            <li class="chapter-item active">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-43">Chapter 43</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-44">Chapter 44</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-45">Chapter 45</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-46">Chapter 46</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-47">Chapter 47</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-48">Chapter 48</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-49">Chapter 49</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-50">Chapter 50</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-51">Chapter 51</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-52">Chapter 52</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-53">Chapter 53</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-54">Chapter 54</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-55">Chapter 55</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-56">Chapter 56</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-57">Chapter 57</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-58">Chapter 58</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-59">Chapter 59</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-60">Chapter 60</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-61">Chapter 60</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-62">Chapter 62</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-63">Chapter 63</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-64">Chapter 64</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-65">Chapter 65</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-66">Chapter 66</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-67">Chapter 67</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-68">Chapter 68</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-69">Chapter 69</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-70">Chapter 70</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-71">Chapter 71</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-72">Chapter 72</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-73">Chapter 73</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-74">Chapter 74</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-75">Chapter 75</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-76">Chapter 76</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-77">Chapter 77</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-78">Chapter 78</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-79">Chapter 79</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-80">Chapter 80</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-81">Chapter 81</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-82">Chapter 82</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-83">Chapter 83</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-84">Chapter 84</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-85">Chapter 85</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-86">Chapter 86</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-87">Chapter 87</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-88">Chapter 88</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-89">Chapter 89</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-90">Chapter 90</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-91">Chapter 91</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-92">Chapter 92</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-93">Chapter 93</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-94">Chapter 94</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-95">Chapter 95</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-96">Chapter 96</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-97">Chapter 97</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-98">Chapter 98</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-99">Chapter 99</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/chapter-100">Chapter 100</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const tocBtn = document.getElementById('toc-btn');
+        const backBtn = document.getElementById('back-btn');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Sidebar Toggle
+        if (tocBtn) {
+            tocBtn.addEventListener('click', () => {
+                sidebar.classList.add('open');
+                sidebarOverlay.classList.add('open');
+            });
+        }
+
+        const closeSidebarFunc = () => {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        };
+
+        if (closeSidebar) {
+            closeSidebar.addEventListener('click', closeSidebarFunc);
+        }
+        
+        if (sidebarOverlay) {
+            sidebarOverlay.addEventListener('click', closeSidebarFunc);
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            } else if (e.key === 'Escape') {
+                closeSidebarFunc();
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'Brilliance Unmasked： The Cold-Blooded Tycoon Wants His Vengeful Queen',
+                url: '/novels/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen/',
+                cover_url: '/covers/brilliance-unmasked-the-cold-blooded-tycoon-wants-his-vengeful-queen-ScreenShot_2025-11-27_104240_384.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 43
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

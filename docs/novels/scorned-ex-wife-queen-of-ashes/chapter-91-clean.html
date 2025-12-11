@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 86 - SCORNED EX WIFE  Queen Of Ashes | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBPZ8WQJMJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BBPZ8WQJMJ');
+    </script>
+    
+    <!-- Ad Script Header -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '3902941096613787');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3902941096613787&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: var(--bg-color);
+            border-right: 1px solid var(--border-color);
+            z-index: 200;
+            overflow-y: auto;
+            padding: 20px;
+            transition: left 0.3s ease;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 199;
+            display: none;
+        }
+
+        .sidebar-overlay.open {
+            display: block;
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .chapter-list {
+            list-style: none;
+        }
+
+        .chapter-item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+        }
+
+        .chapter-item.active a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            .sidebar {
+                width: 85%;
+                left: -85%;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/scorned-ex-wife-queen-of-ashes/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <button class="btn" id="toc-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 86</h1>
+            <div class="content font-medium">
+                <p>Camille woke to her phone&#39;s insistent buzz. Seventeen missed calls. Forty-two texts. Hundreds of news alerts.</p>
+                <!-- Ad Unit 1 -->
+                <ins class="3b35b82f" data-key="c651d999796ed9329d49daca31964dc3"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Her stomach tightened as she read the first notification: &#34;BREAKING: Kane Heiress Mental Health Crisis Exposed.&#34;</p>
+                <p>The Daily Chronicle headline screamed across her screen: &#34;CAMILLE LEWIS: THE DISTURBING TRUTH BEHIND THE REVENGE PLOT.&#34;</p>
+                <p>Below it, a photo of Rose looking vulnerable and tearful, alongside an image of Camille from the Phoenix Gala, her expression caught in a moment that appeared almost manic.</p>
+                <p>She scrolled down, each paragraph hitting her like a physical blow:</p>
+                <p>&#34;Anonymous sources close to the Lewis family have revealed a decades-long history of mental health concerns regarding Camille Lewis. Medical records suggest diagnoses of paranoid delusions and persecution complex dating back to her teenage years.&#34;</p>
+                <p>&#34;These conditions reportedly worsened after her marriage to Stefan Rodriguez, culminating in violent outbursts and fabricated accusations against her adopted sister,Rose Lewis.&#34;</p>
+                <p>&#34;The dramatic &#39;resurrection&#39; and accusations at the recent Kane Industries gala appear to be the culmination of a carefully constructed delusion, enabled by Victoria Kane.&#34;</p>
+                <p>Camille&#39;s phone rang. Victoria.</p>
+                <p>&#34;Have you seen it?&#34; Victoria&#39;s voice cut through without greeting.</p>
+                <p>&#34;I&#39;m looking at it now,&#34; Camille fought to keep her voice steady. &#34;How is this possible? These are complete lies. They claim to have medical records...&#34;</p>
+                <p>&#34;Fabricated, obviously. They&#39;ve planted stories in every major outlet. It&#39;s coordinated and professional.&#34;</p>
+                <p>Camille opened her laptop. The story was everywhere, news sites, social media, television. Each outlet added its own spin, but the core narrative remained: Camille Lewis had always been unstable. Rose was the true victim. Victoria Kane had exploited a mentally ill woman for corporate revenge.</p>
+                <p>&#34;They&#39;ve included photos from my childhood,&#34; Camille&#39;s voice cracked. &#34;Photos only my parents would have had.&#34;</p>
+                <p>There she was at thirteen, looking sullen, the caption reading &#34;Early signs of isolation and paranoia.&#34;</p>
+                <p>Another image showed her arguing with Rose.... &#34;Violent confrontation before witnesses.&#34;</p>
+                <p>&#34;This is Rose,&#34; Camille whispered. &#34;It has to be.&#34;</p>
+                <p>&#34;With help,&#34; Victoria added grimly. &#34;This level of media saturation requires resources.&#34;</p>
+                <p>Camille read comments beneath the articles. The public had already chosen sides:</p>
+                <p>&#34;Always thought something was off about that whole revenge story.&#34;</p>
+                <!-- Ad Unit 2 -->
+                <ins class="3b35b82f" data-key="294ce81fcfc9fd30ba91b1c3a88f64a9"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>&#34;Poor Rose! Imagine living with someone that unstable.&#34;</p>
+                <p>&#34;Kane Industries stock dropping. Would YOU trust a mentally ill woman to run a billion-dollar company?&#34;</p>
+                <p>Alexander texted: &#34;I&#39;m on my way over. Don&#39;t talk to anyone. We&#39;ll handle this.&#34;</p>
+                <p>Camille was too busy scrolling through a supposed &#34;exclusive interview&#34; with a former classmate who claimed she had exhibited &#34;disturbing behavior&#34; in college.</p>
+                <p>&#34;None of this is true,&#34; she whispered. &#34;I never even had therapy until after the parking garage attack.&#34;</p>
+                <p>&#34;Truth is irrelevant in today&#39;s media environment,&#34; Victoria said. &#34;This is about narrative control.&#34;</p>
+                <p>The doorbell rang. Camille jumped, still in her nightclothes.</p>
+                <p>&#34;Ms. Kane?&#34; Her housekeeper called. &#34;There are reporters outside the gates.&#34;</p>
+                <p>&#34;Tell them Ms. Kane has no comment,&#34; Victoria instructed through the phone. &#34;And activate privacy protocol &#34;What&#39;s protocol seven?&#34; Camille asked.</p>
+                <p>&#34;Lockdown procedures.Additional security, communications blackout except for secure lines. This is a calculated attack, Camille. Not just character assassination, they&#39;re trying to destabilize Kane Industries through you.&#34;</p>
+                <p>Camille&#39;s television switched on automatically, tuned to financial news: &#34;....stock opening down twelve percent on reports questioning the mental fitness of Kane&#39;s heir apparent. Analysts suggest this could impact the upcoming Phoenix Grid project launch.&#34;</p>
+                <p>She muted it but couldn&#39;t look away from the scrolling ticker showing Kane Industries&#39; stock falling inreal time.</p>
+                <p>&#34;They&#39;re hitting us from every angle,&#34; Victoria observed. &#34;Personal reputation, company valuation, project viability.&#34;</p>
+                <p>Camille&#39;s phone lit up with more notifications about her supposed mental instability.</p>
+                <p>&#34;They&#39;re saying l&#39;ve been institutionalized multiple times,&#34; she told Victoria, her voice hollow. &#34;That I attacked Rose physically before disappearing.&#34;</p>
+                <p>&#34;Don&#39;t engage with any of it. This is exactly what they want, to throw you off balance, make you react emotionally.&#34;</p>
+                <p>A financial alert popped up: &#34;Analysts questioning stability of Phoenix Grid project leadership as Kane Industries heir faces mental health allegations.&#34;</p>
+                <p>&#34;They&#39;re targeting the project. How would Rose even know about the technical details of Phoenix Grid?&#34;</p>
+                <p>A heavy silence fell on Victoria&#39;s end.</p>
+                <!-- Ad Unit 3 -->
+                <ins class="3b35b82f" data-key="55b92dd50204072470d4a7cbc6d2dfb4"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>&#34;Victoria?&#34;</p>
+                <p>&#34;We have a leak,&#34; Victoria said finally. &#34;Someone inside Kane Industries is feeding information to Rose.&#34;</p>
+                <p>The doorbell rang again.</p>
+                <p>&#34;Ms. Kane! Mr. Pierce is here.&#34;</p>
+                <p>Camille took five minutes to dress, brush her hair, and apply minimal makeup. When she opened her bedroom door, Alexander stood in her living room, speaking urgently with Victoria on his phone.</p>
+                <p>&#34;Our communications team is tracking the source,&#34; he said.sophisticated, multiple points of origin,carefully timed releases.&#34;</p>
+                <p>&#34;It&#39;s Rose,&#34; Camille said flatly.</p>
+                <p>&#34;Rose with considerable resources behind her,&#34; Alexander corrected. &#34;The technical analysis alone....&#34;</p>
+                <p>&#34;Technical analysis?&#34;</p>
+                <p>&#34;There&#39;s a piece in the Journal questioning the Phoenix Grid technology. Highly technical, citing &#39;anonymous engineers&#39; who claim the integration systems are fundamentally flawed.&#34;</p>
+                <p>&#34;Turn on the television,&#34; Alexander said suddenly.</p>
+                <p>Camille unmuted to find Rose on screen, looking pale and composed.</p>
+                <p>&#34;I&#39;ve stayed silent too long,&#34; Rose was saying, her voice gentle with practiced sorrow. &#34;I wanted to protect my sister, even after everything. Mental illness isn&#39;t something to be ashamed of, but when it leads to destructive behavior...&#34;</p>
+                <p>&#34;You maintained your silence even when Camille Lewis publicly accused you of attempting to have her killed,&#34; the interviewer noted.</p>
+                <p>Rose dabbed at her eyes. &#34;What would you have me do? Publicly call my own sister delusional? Our family has tried for years to get her the help she needs. When she disappearedd, we were devastated. We thought she&#39;d...&#34; She trailed off.</p>
+                <p>&#34;Taken her own life?&#34; the interviewer supplied.</p>
+                <p>Rose nodded, her expression a masterpiece of concerned grief.&#34;Her doctors had warned us about self- harm tendencies.&#34;</p>
+                <p>&#34;Turn it off,&#34; Camille whispered.</p>
+                <p>Alexander switched off the television.&#34;We need to respond immediately.&#34;</p>
+                <!-- Ad Unit 4 -->
+                <ins class="3b35b82f" data-key="daf3374e6c4dacfe7b183f7fb2c7bc79"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Victoria&#39;s voice emerged from the speakerphone.&#34;We need to be strategic. A full-frontal denial looks defensive.&#34;</p>
+                <p>&#34;I want to confront her,&#34; Camille said, fists clenched.</p>
+                <p>&#34;That&#39;s exactly what she wants,&#34; Victoria countered. &#34;You, emotional and defensive, playing into the unstable narrative.&#34;</p>
+                <p>Camille&#39;s news feed refreshed: &#34;Lewis Family to Break Silence, Parents of Troubled Heiress Will Address Daughter&#39;s &#39;Painful History&#39; in Exclusive Interview Tomorrow.&#34;</p>
+                <p>The phone slipped from Camille&#39;s hand. Her parents. Would they actually participate in this charade?</p>
+                <p>&#34;This is psychological warfare,&#34; Alexander said. &#34;They&#39;re trying to isolate you.&#34;</p>
+                <p>&#34;It&#39;s working,&#34; Camille whispered. Through the window, she could see the growing media presence.... vans with satellite dishes, reporters with microphones, all trained on her home like weapons.</p>
+                <p>&#34;The board is calling an emergency meeting,&#34; Victoria announced. &#34;Alexander, stay with Camille. Work on a statement.&#34;</p>
+                <p>After Victoria disconnected, silence filled the room.</p>
+                <p>&#34;How?&#34; Camille finally asked. &#34;How did she do this? Make me the villain of my own story?&#34;</p>
+                <p>Alexander stood beside her. &#34;By exploiting the same human tendency that allowed her to manipulate you for years,people&#39;s willingness to believe the worst when it&#39;s presented as revealing hidden truth.&#34;</p>
+                <p>&#34;And now everyone thinks I&#39;m crazy. That I invented the whole thing.&#34;</p>
+                <p>&#34;Not everyone,&#34; Alexander said quietly. &#34;Not me. Not Victoria. Not anyone who knows the real you.&#34;</p>
+                <p>&#34;But the Phoenix Grid.... they&#39;re attacking the project too.&#34;</p>
+                <p>&#34;Because they know it matters to you. This isn&#39;t just Rose being vengeful. This is coordinated.&#34;</p>
+                <p>As he stepped away, Camille turned back to the window, watching the reporters. She had survived Rose&#39;s attempt to kill her once before. She had rebuilt herself, transformed her pain into power.</p>
+                <p>She could do it again.</p>
+                <p>But doubt had been planted. How many more attacks could she withstand? How many people would believe these lies? And if Rose succeeded in destroying the Phoenix Grid before it launched...</p>
+                <p>Outside, a reporter looked up directly at her window, pointing. Others followed, cameras lifting. Camille stepped back, but not before seeing several flashes.</p>
+                <p>Tomorrow&#39;s headlines already writing themselves in her mind: &#34;Kane Heiress Watches From Shadows As Scandal Grows.&#34;</p>
+                <p>She closed her eyes, summoning the strength Victoria had helped her build.</p>
+                <!-- Ad Unit 5 -->
+                <ins class="3b35b82f" data-key="2f3125acc828fb3f81a8274ade539c96"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-90" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-92" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Table of Contents</h2>
+            <button class="btn" id="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="chapter-list">
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-1">Chapter 1</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-2">Chapter 2</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-3">Chapter 3</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-4">Chapter 4</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-5">Chapter 5</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-6">Chapter 6</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-7">Chapter 7</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-8">Chapter 8</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-9">Chapter 9</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-10">Chapter 10</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-11">Chapter 11</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-12">Chapter 12</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-13">Chapter 13</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-14">Chapter 14</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-15">Chapter 15</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-16">Chapter 16</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-17">Chapter 16</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-18">Chapter 17</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-19">Chapter 18</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-20">Chapter 19</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-21">Chapter 20</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-22">Chapter 21</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-23">Chapter 22</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-24">Chapter 23</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-25">Chapter 24</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-26">Chapter 25</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-27">Chapter 26</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-28">Chapter 27</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-29">Chapter 28</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-30">Chapter 29</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-31">Chapter 30</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-32">Chapter 31</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-33">Chapter 32</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-34">Chapter 33</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-35">Chapter 34</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-36">Chapter 35</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-37">Chapter 36</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-38">Chapter 37</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-39">Chapter 38</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-40">Chapter 39</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-41">Chapter 40</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-42">Chapter 41</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-43">Chapter 42</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-44">Chapter 43</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-45">Chapter 44</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-46">Chapter 45</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-47">Chapter 46</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-48">Chapter 47</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-49">Chapter 48</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-50">Chapter 49</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-51">Chapter 50</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-52">Chapter 51</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-53">Chapter 52</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-54">Chapter 53</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-55">Chapter 54</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-56">Chapter 55</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-57">Chapter 56</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-58">Chapter 57</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-59">Chapter 58</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-60">Chapter 59</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-61">Chapter 60</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-62">Chapter 61</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-63">Chapter 62</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-64">Chapter 63</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-65">Chapter 64</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-66">Chapter 65</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-67">Chapter 66</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-68">Chapter 68</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-69">Chapter 67</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-70">Chapter 68</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-71">Chapter 69</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-72">Chapter 70</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-73">Chapter 71</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-74">Chapter 72</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-75">Chapter 73</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-76">Chapter 74</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-77">Chapter 77</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-78">Chapter 75</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-79">Chapter 79</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-80">Chapter 76</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-81">Chapter 77</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-82">Chapter 78</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-83">Chapter 79</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-84">Chapter 80</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-85">Chapter 81</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-86">Chapter 82</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-87">Chapter 83</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-88">Chapter 88</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-89">Chapter 84</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-90">Chapter 85</a>
+            </li>
+            
+            <li class="chapter-item active">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-91">Chapter 86</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-92">Chapter 87</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-93">Chapter 88</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-94">Chapter 89</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-95">Chapter 90</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-96">Chapter 91</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-97">Chapter 92</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-98">Chapter 93</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-99">Chapter 94</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-100">Chapter 95</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-101">Chapter 96</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-102">Chapter 97</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-103">Chapter 98</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-104">Chapter 99</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/scorned-ex-wife-queen-of-ashes/chapter-105">Chapter 100</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const tocBtn = document.getElementById('toc-btn');
+        const backBtn = document.getElementById('back-btn');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Sidebar Toggle
+        if (tocBtn) {
+            tocBtn.addEventListener('click', () => {
+                sidebar.classList.add('open');
+                sidebarOverlay.classList.add('open');
+            });
+        }
+
+        const closeSidebarFunc = () => {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        };
+
+        if (closeSidebar) {
+            closeSidebar.addEventListener('click', closeSidebarFunc);
+        }
+        
+        if (sidebarOverlay) {
+            sidebarOverlay.addEventListener('click', closeSidebarFunc);
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            } else if (e.key === 'Escape') {
+                closeSidebarFunc();
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'SCORNED EX WIFE  Queen Of Ashes',
+                url: '/novels/scorned-ex-wife-queen-of-ashes/',
+                cover_url: '/covers/scorned-ex-wife-queen-of-ashes-封面.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 91
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

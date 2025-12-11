@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 2 - I Slapped My Fiancé-Then Married His Billionaire Nemesis | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BBPZ8WQJMJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BBPZ8WQJMJ');
+    </script>
+    
+    <!-- Ad Script Header -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '3902941096613787');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=3902941096613787&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: var(--bg-color);
+            border-right: 1px solid var(--border-color);
+            z-index: 200;
+            overflow-y: auto;
+            padding: 20px;
+            transition: left 0.3s ease;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 199;
+            display: none;
+        }
+
+        .sidebar-overlay.open {
+            display: block;
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .chapter-list {
+            list-style: none;
+        }
+
+        .chapter-item {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .chapter-item a {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+        }
+
+        .chapter-item.active a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            .sidebar {
+                width: 85%;
+                left: -85%;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <button class="btn" id="toc-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 2</h1>
+            <div class="content font-medium">
+                <p>For the next forty-eight hours, I became one with my bed.</p>
+                <!-- Ad Unit 1 -->
+                <ins class="3b35b82f" data-key="c651d999796ed9329d49daca31964dc3"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>No calls. No outside world. Just me, a pile of blankets,and the crushing weight of humiliation.</p>
+                <p>That slap from Rhys wasn&#39;t just a blow to the face. In so many ways, it was a slap across my entire life-one steeped in desperation, delusion, and pathetic longing.It forced me awake. It made me look back on everything I&#39;d ever done to make him notice me,everything I&#39;d done for a fantasy called &#34;us&#34; that had never truly existed.</p>
+                <p>God,where do l even begin?</p>
+                <p>Like the time he casually mentioned he liked girls with smooth, silky hair. That night, I ordered three bottles of the shampoo he&#39;d once praised. My scalp broke out in hives. I smiled through the pain and said, &#34;It&#39;s fine-some allergic reactions are worth it.&#34;</p>
+                <p>Or when he told me he was too busy with work to grab dinner, so I stayed up learning howv to bake and brought him a box of pastries in the rain. He didn&#39;t even open the door-just had the receptionist tell me,&#34;Don&#39;t bother next time. I don&#39;t like sweets.&#34;</p>
+                <p>Then there was that night at his friend&#39;s dinner party.I forced down oysters-my most hated food-just to seem &#34;graceful and agreeable.&#34; I spent the entire night crouched over a toilet, writhing in pain until 3 a.m.He didn&#39;t ask if I was ok&lt;ay. He laughed and said, &#34;Can&#39;t even handle seafood? That&#39;s just dramatic.&#34;</p>
+                <p>But the worst?</p>
+                <p>That time he quoted a line from The Godfather he liked. I stayed up all night reading film essays just to casually drop the quote at a party. I got it wrong. He corrected me in front of everyone, sneering, &#34;Don&#39;t pretend to like things you clearly don&#39;t understand.&#34;</p>
+                <p>And I laughed. I laughed and said, &#34;You&#39;ve got such a good memory.&#34;</p>
+                <p>What a joke. I never realized I was never the person he wanted.</p>
+                <p>He never really saw me. To him, I was nothing more than a low-rent version of the &#34;perfect and untouchable&#34; Catherine. A cheap stand-in.</p>
+                <p>I wasn&#39;t her, but I could offer him the faint illusion of having her again. That was all I was good for.</p>
+                <p>I buried my face in the pillow and laughed until I shook.Not because it was funny-but because the pain had gone too deep for tears.</p>
+                <p>Thankfully, after my parents delivered their final ultimatum two days ago, they hadn&#39;t contacted me again.</p>
+                <p>A small part of me wondered-did Rhys intervene? Did he finally realize what he&#39;d done?</p>
+                <p>Suddenly, the doorbell rang.</p>
+                <p>And it didn&#39;t stop ringing.</p>
+                <p>For a full five minutes.</p>
+                <p>I groaned into my pillow. Oh god. Social interaction.</p>
+                <p>Dragging my exhausted body to the door, I opened it.</p>
+                <p>Yvaine Carlisle-my best friend and the only person who had the legal right to yell at me-stood on the other side, hands on hips. Then her eyes landed on my face.</p>
+                <p>Her expression froze. The light in her eyes dimmed.&#34;What the hell happened to you?&#34;</p>
+                <p>&#34;I&#39;m fine,&#34; | said,trying to sound casual. She wasn&#39;t buying it.</p>
+                <p>She reached out, gently tucking a strand of hair behind my ear. Her jaw clenched.</p>
+                <!-- Ad Unit 2 -->
+                <ins class="3b35b82f" data-key="294ce81fcfc9fd30ba91b1c3a88f64a9"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Then-silence.</p>
+                <p>Not the awkward kind. The dangerous kind.The kind that comes right before something explodes</p>
+                <p>&#34;Who hit you?&#34;</p>
+                <p>&#34;Come inside,&#34; I muttered quickly, trying not to draw the neighbors&#39; attention. That would be mortifying.</p>
+                <p>Yvaine didn&#39;t move. She gripped my arm and spoke through gritted teeth. &#34;Mira. Who.Hit.You?&#34;</p>
+                <p>As soon as the door clicked shut, I collapsed into her arms. My face buried in her sweater, and within seconds, the fabric was soaked.</p>
+                <p>She didn&#39;t flinch. She just held me, her hand moving in calm, soothing circles across my back.</p>
+                <p>I didn&#39;t know how long I cried. Long enough for my throat to burn and my nose to turn bright red like Rudolph. Eventually, I managed to force out a single word.</p>
+                <p>&#34;Rhys.&#34;</p>
+                <p>Yvaine didn&#39;t move.</p>
+                <p>Everyone in Skyline City knew that name. Rhys Granger wasn&#39;t the kind of man who needed to throw punches to destroy someone. One phone call to the right person, and your life would be over. Reputation,money,status-he had it all.</p>
+                <p>Every move he made was deliberate, timed to perfection-like the ticking of a Rolex. When he chose to go to war, he was a nobleman wielding cruelty like fine art, probably with a glass of aged Scotch in hand.</p>
+                <p>People called him arrogant. No one ever called him violent.</p>
+                <p>That&#39;s why, when Yvaine processed what I&#39;d just said,I could practically hear the gears in her brain screaming in protest.</p>
+                <p>&#34;No way,&#34; she muttered under her breath, as if denying it out loud might somehow make it untrue. &#34;Rhys?Your Rhys? He couldn&#39;t have...&#34;</p>
+                <p>I got it. I really did. Rhys was supposed to be the gentleman. The golden boy. The flawless, elegant,</p>
+                <p>untouchable good guy.</p>
+                <p>&#34;It was him,&#34; I said quietly</p>
+                <p>She exhaled sharply, then started rubbing my back again, this time slower. &#34;Tell me what happened.&#34;</p>
+                <p>I swallowed. &#34;I was at his place. l, uh... accidentally broke a mug.&#34;</p>
+                <p>Her entire body tensed. &#34;Just a mug?&#34;</p>
+                <p>I nodded.</p>
+                <p>Silence. Then she clenched her jaw and said, &#34;I swear to God, if you tell me it was some priceless, hand-crafted,one-of-a-kind family heirloom-&#34;</p>
+                <p>&#34;It was Catherine&#39;s mug.&#34;</p>
+                <!-- Ad Unit 3 -->
+                <ins class="3b35b82f" data-key="55b92dd50204072470d4a7cbc6d2dfb4"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>Yvaine&#39;s hand froze mid-pat.</p>
+                <p>Everything shifted. One second, she was my concerned best friend. The next, she was a woman plotting murder.</p>
+                <p>I grabbed her wrist before she could get ahold of something worse. &#34;It&#39;s over between Rhys and me.&#34;</p>
+                <p>&#34;Really?&#34;</p>
+                <p>&#34;Really. Even if the earth split in two and Skyline City sank into the ocean, I wouldn&#39;t marry him.&#34;</p>
+                <p>That stopped her from storming out to commit homicide.</p>
+                <p>&#34;Catherine. That venomous snake-&#34; Yvaine spat the name like it physically hurt her. &#34;She&#39;s not even here anymore and she&#39;s still managing to wreck your life!</p>
+                <p>And your parents? They just stand there watching! I swear, they could watch her light your house on fire and they&#39;d hand her the matches. It&#39;s unbelievable!&#34;</p>
+                <p>I felt like a balloon someone had just popped-deflated,exhausted.That all-too-familiar ache settled deep in my chest. I knew some parents would always love their firstborn more. And there was nothing l could do about it.</p>
+                <p>&#34;I&#39;m sorry, Mira.&#34;</p>
+                <p>Yvaine sat down beside me and gave my head a firm push toward her shoulder. I pulled away and managed a weak smile. &#34;Actually, I think it&#39;s a good thing. At least I found out,what kind of man he is before we got married. Better now than after the vows, right?&#34;</p>
+                <p>She let out a long sigh, her eyes softening. &#34;Mira,you know no matter what happens, I&#39;ve got your back.&#34;</p>
+                <p>Right then, my stomach growled loud enough to interrupt the moment. Loudly.</p>
+                <p>Like a magician, Yvaine reached behind her and pulled out a takeout bag, giving me a look that practically screamed: I knew you&#39;d be like this.</p>
+                <p>I wanted to hug her, but I was too busy eating like a ravenous little goblin.</p>
+                <p>After dinner, she pushed me into the bedroom and went off to clean up. I lay on the bed, staring at the ceiling, drained and overwhelmed.What now?</p>
+                <p>Through the half-open door,I heard her on the phone.</p>
+                <p>I didn&#39;t catch every word, but the ones I did hear..were iconic.</p>
+                <p>&#34;A pile of shit.&#34;</p>
+                <p>&#34;Total fucking psycho.&#34;</p>
+                <p>&#34;Oh, you think that&#39;s bad? Wait till I tell you what this violent bastard actually did-&#34;</p>
+                <p>She was probably talking to Zane Hasterton. And unlike Rhys, Zane would never raise a hand to her.</p>
+                <p>The way Yvaine so instantly, so fiercely chose me-without hesitation, without question-made my throat tighten. She believed me. No one else did. But she did.</p>
+                <p>This wasn&#39;t something she did lightly. Rhys&#39;s family sat at the very top of the food chain-untouchable.And I had no doubt her parents wouldn&#39;t be thrilled to see her go up against them.</p>
+                <!-- Ad Unit 4 -->
+                <ins class="3b35b82f" data-key="daf3374e6c4dacfe7b183f7fb2c7bc79"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <p>I curled deeper under the blanket and let out a slow breath.</p>
+                <p>Why couldn&#39;t my parents love me like that?</p>
+                <p>Ever since their favorite daughter Houdini&#39;d her way out of their master plan, I became Plan B. But that didn&#39;t mean they forgave my existence.</p>
+                <p>Let&#39;s be honest: the only reason they&#39;d stopped actively berating me was because I got engaged to Rhys. That little arrangement somehow elevated me from &#34;irreparable family disgrace&#34; tootential saving grace.&#34;</p>
+                <p>Part of the reason I agreed to the engagement-and know how pathetic this sounds-was because | thought maybe I could finally get something Catherine had: a sliver of parental affection. A crumb of approval.</p>
+                <p>But now that the engagement was off?</p>
+                <p>I was disposable again.</p>
+                <p>Last I heard, they were boxing up my things, ready to ship me off to some remote jungle where I&#39;d spend the rest of my life befriending anacondas and repenting for my sins.</p>
+                <p>They were absolutely capable of that.</p>
+                <p>I groaned into my pillow. What the hell do I do now?</p>
+                <p>Unless... I married,someone more powerful than Rhys.</p>
+                <p>The idea was so ridiculous I snorted. Right. Because billionaires are just wandering around Skyline City hoping to marry a 23-year-old orphan with no patience for their bullshit.</p>
+                <p>And yet-</p>
+                <p>A face flashed in my mind.</p>
+                <p>Three days ago. My new neighbor.</p>
+                <p>I remembered, quite inappropriately, thinking l wouldn&#39;t mind being alone with him in his apartment where he could do all sorts of rated-R things to me.</p>
+                <p>I shook my head, quickly banishing the thought.I didn&#39;t even know his name. Just that he had the kind of aura that could slice a person in half.</p>
+                <p>No. Way too dangerous.</p>
+                <p>I groaned again.</p>
+                <p>If I hadn&#39;t broken that stupid mug, everything might&#39;ve been okay.</p>
+                <p>But it wasn&#39;t. And it&#39;s not. And there&#39;s no going back.</p>
+                <p>Fuck! Why am I the one trying to fix this when I wasn&#39;t even the one who messed it up?! I sat up-and bam,the door burst open.</p>
+                <p>Yvaine marched in. &#34;Sleep is just going to make you feel worse. We&#39;re getting up, and we&#39;re going to find a dick worth loving-one that&#39;s better than Rhys&#39;s.&#34;</p>
+                <p>WHAT?!</p>
+                <p>While I gaped, she had already changed me into a new outfit.</p>
+                <p>Just like that, we were off to Skyline City&#39;s most exclusive club-members only.</p>
+                <!-- Ad Unit 5 -->
+                <ins class="3b35b82f" data-key="2f3125acc828fb3f81a8274ade539c96"></ins>
+                <script async src="https://aj1047.online/194c03ba.js"></script>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-1" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-3" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Table of Contents</h2>
+            <button class="btn" id="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="chapter-list">
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-1">Chapter 1</a>
+            </li>
+            
+            <li class="chapter-item active">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-2">Chapter 2</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-3">Chapter 3</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-4">Chapter 4</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-5">Chapter 5</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-6">Chapter 6</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-7">Chapter 7</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-8">Chapter 8</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-9">Chapter 9</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-10">Chapter 10</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-11">Chapter 11</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-12">Chapter 12</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-13">Chapter 13</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-14">Chapter 14</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-15">Chapter 15</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-16">Chapter 16</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-17">Chapter 17</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-18">Chapter 18</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-19">Chapter 19</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-20">Chapter 20</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-21">Chapter 21</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-22">Chapter 22</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-23">Chapter 23</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-24">Chapter 24</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-25">Chapter 25</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-26">Chapter 26</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-27">Chapter 27</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-28">Chapter 28</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-29">Chapter 29</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-30">Chapter 30</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-31">Chapter 31</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-32">Chapter 32</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-33">Chapter 33</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-34">Chapter 34</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-35">Chapter 35</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-36">Chapter 36</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-37">Chapter 37</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-38">Chapter 38</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-39">Chapter 39</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-40">Chapter 40</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-41">Chapter 41</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-42">Chapter 42</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-43">Chapter 43</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-44">Chapter 44</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-45">Chapter 45</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-46">Chapter 46</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-47">Chapter 47</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-48">Chapter 48</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-49">Chapter 49</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-50">Chapter 50</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-51">Chapter 51</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-52">Chapter 52</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-53">Chapter 53</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-54">Chapter 54</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-55">Chapter 55</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-56">Chapter 56</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-57">Chapter 57</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-58">Chapter 58</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-59">Chapter 59</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-60">Chapter 60</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-61">Chapter 61</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-62">Chapter 62</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-63">Chapter 63</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-64">Chapter 64</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-65">Chapter 64</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-66">Chapter 65</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-67">Chapter 66</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-68">Chapter 67</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-69">Chapter 68</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-70">Chapter 69</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-71">Chapter 69</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-72">Chapter 70</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-73">Chapter 71</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-74">Chapter 72</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-75">Chapter 73</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-76">Chapter 74</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-77">Chapter 75</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-78">Chapter 76</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-79">Chapter 77</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-80">Chapter 78</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-81">Chapter 79</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-82">Chapter 80</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-83">Chapter 81</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-84">Chapter 82</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-85">Chapter 83</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-86">Chapter 84</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-87">Chapter 85</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-88">Chapter 86</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-89">Chapter 87</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-90">Chapter 88</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-91">Chapter 89</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-92">Chapter 90</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-93">Chapter 91</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-94">Chapter 92</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-95">Chapter 93</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-96">Chapter 94</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-97">Chapter 95</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-98">Chapter 96</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-99">Chapter 97</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-100">Chapter 98</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-101">Chapter 99</a>
+            </li>
+            
+            <li class="chapter-item ">
+                <a href="/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/chapter-102">Chapter 100</a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const tocBtn = document.getElementById('toc-btn');
+        const backBtn = document.getElementById('back-btn');
+        const closeSidebar = document.getElementById('close-sidebar');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Sidebar Toggle
+        if (tocBtn) {
+            tocBtn.addEventListener('click', () => {
+                sidebar.classList.add('open');
+                sidebarOverlay.classList.add('open');
+            });
+        }
+
+        const closeSidebarFunc = () => {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        };
+
+        if (closeSidebar) {
+            closeSidebar.addEventListener('click', closeSidebarFunc);
+        }
+        
+        if (sidebarOverlay) {
+            sidebarOverlay.addEventListener('click', closeSidebarFunc);
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            } else if (e.key === 'Escape') {
+                closeSidebarFunc();
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'I Slapped My Fiancé-Then Married His Billionaire Nemesis',
+                url: '/novels/i-slapped-my-fiance-then-married-his-billionaire-nemesis/',
+                cover_url: '/covers/i-slapped-my-fiance-then-married-his-billionaire-nemesis-封面.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 2
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

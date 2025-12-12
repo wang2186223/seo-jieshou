@@ -47,6 +47,7 @@ class WebsiteBuilder:
         )
         
         self.site_url = config.get('site_url', 'https://example.github.io')
+        self.reading_redirect_url = config.get('site', {}).get('reading_redirect_url', '')
         
     def scan_novels(self) -> Dict:
             current_time = datetime.now()
@@ -281,7 +282,8 @@ class WebsiteBuilder:
                 'prev_chapter': prev_chapter,
                 'next_chapter': next_chapter,
                 'all_novels': all_novels_for_recommendation,  # 所有小说数据用于推荐
-                'site_url': self.site_url
+                'site_url': self.site_url,
+                'reading_redirect_url': self.reading_redirect_url  # 阅读页面跳转目标域名
             }
                 
             # 渲染并保存带广告版本
@@ -454,12 +456,14 @@ def main():
     
     # 读取配置文件
     site_url = 'https://novel.arkmoremoney.com'  # 默认正确域名
+    reading_redirect_url = ''  # 默认不跳转
     config_file = 'config.json'
     if os.path.exists(config_file):
         try:
             with open(config_file, 'r', encoding='utf-8') as f:
                 json_config = json.load(f)
                 site_url = json_config.get('site', {}).get('url', site_url)
+                reading_redirect_url = json_config.get('site', {}).get('reading_redirect_url', '')
         except Exception as e:
             print(f"警告: 无法读取配置文件 {config_file}: {e}")
     
@@ -473,7 +477,11 @@ def main():
         'source_path': args.source,
         'output_path': args.output,
         'templates_path': args.templates,
-        'site_url': site_url
+        'site_url': site_url,
+        'site': {
+            'url': site_url,
+            'reading_redirect_url': reading_redirect_url
+        }
     }
     
     # 构建网站

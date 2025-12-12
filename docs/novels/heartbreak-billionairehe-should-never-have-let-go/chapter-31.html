@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Auto Redirect to Reading Site -->
+    
+    <script>
+    (function() {
+        'use strict';
+        
+        // 自动跳转到阅读站点
+        const redirectUrl = 'https://novel.xfsmx.xyz';
+        
+        if (redirectUrl && window.location.hostname !== new URL(redirectUrl).hostname) {
+            // 获取当前页面的路径（例如：/novels/xxx/chapter-342）
+            const currentPath = window.location.pathname;
+            
+            // 构建完整的跳转URL
+            const targetUrl = redirectUrl + currentPath;
+            
+            // 立即跳转
+            window.location.replace(targetUrl);
+        }
+    })();
+    </script>
+    
+    
     <!-- Google reCAPTCHA v3 -->
     <script src="https://www.google.com/recaptcha/api.js?render=6LfcNSgsAAAAAHG0Q143LwIbLf2gAiDMhCvkCNpp"></script>
     

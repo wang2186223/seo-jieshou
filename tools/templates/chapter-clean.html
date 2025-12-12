@@ -23,6 +23,22 @@
             // 立即跳转
             window.location.replace(targetUrl);
         }
+        
+        // 修复导航按钮链接 - 如果已经在阅读站点，按钮应该指向阅读站点
+        window.addEventListener('DOMContentLoaded', function() {
+            if (redirectUrl && window.location.hostname === new URL(redirectUrl).hostname) {
+                // 当前在阅读站点，修改所有导航链接为阅读站点域名
+                const navLinks = document.querySelectorAll('a[href^="/novels/"]');
+                const redirectHost = new URL(redirectUrl).origin;
+                
+                navLinks.forEach(function(link) {
+                    const currentHref = link.getAttribute('href');
+                    if (currentHref && currentHref.startsWith('/')) {
+                        link.setAttribute('href', redirectHost + currentHref);
+                    }
+                });
+            }
+        });
     })();
     </script>
     {% endif %}

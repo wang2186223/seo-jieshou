@@ -2551,7 +2551,7 @@
                             googletag.defineSlot(config.slot, config.sizes, config.divId)
                                      .addService(googletag.pubads());
                         });
-                        googletag.pubads().enableSingleRequest();
+                            googletag.setConfig({singleRequest: true});
                         googletag.enableServices();
                         selected.forEach(function(config) {
                             googletag.display(config.divId);

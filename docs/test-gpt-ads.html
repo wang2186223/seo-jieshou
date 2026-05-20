@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPT Ad Debug Test</title>
+
+  <!-- GPT Script (same as chapter.html) -->
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+
+  <style>
+    body { font-family: monospace; padding: 20px; background: #f5f5f5; }
+    h2 { color: #333; }
+    .status { padding: 8px 12px; margin: 6px 0; border-radius: 4px; font-size: 14px; }
+    .ok  { background: #d4edda; color: #155724; border-left: 4px solid #28a745; }
+    .err { background: #f8d7da; color: #721c24; border-left: 4px solid #dc3545; }
+    .info{ background: #d1ecf1; color: #0c5460; border-left: 4px solid #17a2b8; }
+    .warn{ background: #fff3cd; color: #856404; border-left: 4px solid #ffc107; }
+    .ad-slot { 
+      background: #fff; border: 2px dashed #aaa; margin: 16px 0; padding: 10px; 
+      text-align: center; min-height: 260px; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+    }
+    .ad-slot label { font-size: 12px; color: #888; margin-bottom: 8px; display:block; }
+    #log { margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+<h2>Ynmedia / GAM Ad Debug Test</h2>
+<p style="color:#666; font-size:13px;">
+  当前域名: <strong id="current-domain">-</strong> &nbsp;|&nbsp; 
+  广告域名: <strong>novelvibe.top</strong> &nbsp;|&nbsp;
+  域名匹配: <strong id="domain-match">-</strong>
+</p>
+
+<div id="log"></div>
+
+<hr>
+<h3>广告位测试（固定用 Banner_1 ~ Banner_3）</h3>
+
+<!-- 3 test slots -->
+<div class="ad-slot">
+  <label>Banner_1 slot: /22796784223/Ynmedia/novelvibe.top/Banner_1</label>
+  <div id="div-gpt-ad-test-1" style="min-width:300px; min-height:250px; display:inline-block;"></div>
+</div>
+
+<div class="ad-slot">
+  <label>Banner_2 slot: /22796784223/Ynmedia/novelvibe.top/Banner_2</label>
+  <div id="div-gpt-ad-test-2" style="min-width:300px; min-height:250px; display:inline-block;"></div>
+</div>
+
+<div class="ad-slot">
+  <label>Banner_3 slot: /22796784223/Ynmedia/novelvibe.top/Banner_3</label>
+  <div id="div-gpt-ad-test-3" style="min-width:300px; min-height:250px; display:inline-block;"></div>
+</div>
+
+<script>
+(function() {
+  var log = document.getElementById('log');
+  function addLog(msg, type) {
+    var el = document.createElement('div');
+    el.className = 'status ' + (type || 'info');
+    el.textContent = new Date().toLocaleTimeString() + ' — ' + msg;
+    log.appendChild(el);
+    console.log('[AdTest]', msg);
+  }
+
+  // 1. Domain check
+  var domain = window.location.hostname;
+  document.getElementById('current-domain').textContent = domain;
+  var isCorrectDomain = domain === 'www.novelvibe.top' || domain === 'novelvibe.top';
+  document.getElementById('domain-match').textContent = isCorrectDomain ? '✅ 匹配' : '❌ 不匹配（广告可能不投放）';
+  if (!isCorrectDomain) {
+    addLog('⚠️ 当前域名是 "' + domain + '"，广告位注册在 novelvibe.top。GAM 可能拒绝在此域名投放广告。', 'warn');
+  } else {
+    addLog('✅ 域名匹配 novelvibe.top，广告应可正常投放', 'ok');
+  }
+
+  // 2. Check GPT script
+  addLog('正在等待 GPT 脚本加载...', 'info');
+
+  window.googletag = window.googletag || {cmd: []};
+
+  // 3. Listen for GPT events
+  googletag.cmd.push(function() {
+    addLog('✅ GPT 脚本已加载，googletag 可用', 'ok');
+
+    // Listen for slot render events
+    googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+      var slotId = event.slot.getSlotElementId();
+      if (event.isEmpty) {
+        addLog('❌ 广告位 [' + slotId + '] 返回空（无广告填充）— 可能是域名不匹配或无广告库存', 'err');
+      } else {
+        addLog('✅ 广告位 [' + slotId + '] 渲染成功！广告主: ' + (event.advertiserId || '未知'), 'ok');
+      }
+    });
+
+    googletag.pubads().addEventListener('impressionViewable', function(event) {
+      addLog('✅ 广告可视曝光: ' + event.slot.getSlotElementId(), 'ok');
+    });
+
+    // 4. Define test slots
+    try {
+      var slot1 = googletag.defineSlot('/22796784223/Ynmedia/novelvibe.top/Banner_1', [[336,280],[300,250]], 'div-gpt-ad-test-1');
+      var slot2 = googletag.defineSlot('/22796784223/Ynmedia/novelvibe.top/Banner_2', [[300,250],[336,280]], 'div-gpt-ad-test-2');
+      var slot3 = googletag.defineSlot('/22796784223/Ynmedia/novelvibe.top/Banner_3', [[300,250],[336,280]], 'div-gpt-ad-test-3');
+
+      if (slot1 && slot2 && slot3) {
+        addLog('✅ 3个广告位 defineSlot 成功', 'ok');
+        slot1.addService(googletag.pubads());
+        slot2.addService(googletag.pubads());
+        slot3.addService(googletag.pubads());
+      } else {
+        addLog('❌ defineSlot 失败（返回 null）— 可能 divId 重复或 div 不存在', 'err');
+      }
+
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+      addLog('✅ enableSingleRequest + enableServices 成功', 'ok');
+
+      googletag.display('div-gpt-ad-test-1');
+      googletag.display('div-gpt-ad-test-2');
+      googletag.display('div-gpt-ad-test-3');
+      addLog('✅ display() 调用完毕，等待服务器响应...', 'info');
+
+    } catch(e) {
+      addLog('❌ 广告初始化异常: ' + e.message, 'err');
+    }
+  });
+
+  // Timeout check
+  setTimeout(function() {
+    var slots = document.querySelectorAll('[id^="div-gpt-ad-test-"]');
+    var filled = 0;
+    slots.forEach(function(el) {
+      if (el.querySelector('iframe')) filled++;
+    });
+    if (filled === 0) {
+      addLog('⏱ 5秒超时：0个广告位有iframe，广告未加载。检查网络或域名限制。', 'warn');
+    } else {
+      addLog('⏱ 5秒检查：' + filled + '/3 个广告位有iframe', filled === 3 ? 'ok' : 'warn');
+    }
+  }, 5000);
+
+})();
+</script>
+
+</body>
+</html>

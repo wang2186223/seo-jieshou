@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 201 - Billionaire Single Mother Strikes Back | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TFKEB1Q55"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1TFKEB1Q55');
+    </script>
+    
+    <!-- Google Publisher Tag (GPT) -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        // Define ad slots for the chapter page
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_1', [300, 250], 'div-gpt-ad-1762511964282-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_2', [300, 250], 'div-gpt-ad-1762511986518-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_3', [300, 250], 'div-gpt-ad-1762512008111-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_4', [300, 250], 'div-gpt-ad-1762512031919-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_5', [300, 250], 'div-gpt-ad-1762512054239-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '9481513911889537');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/billionaire-single-mother-strikes-back/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <a href="/novels/billionaire-single-mother-strikes-back/" class="btn" id="toc-btn" title="Back to Book Details">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 201</h1>
+            <div class="content font-medium">
+                <p>The following two weeks became a media feeding frenzy.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_1 -->
+                <div id='div-gpt-ad-1762511964282-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511964282-0'); });
+                  </script>
+                </div>
+                <p>Every detail of the upcoming wedding was dissected and analyzed.</p>
+                <p>From the design of the engagement rings to the choice of wedding gown designers.</p>
+                <p>The selected five-star hotel venue. The floral arrangements. The guest list.</p>
+                <p>Nothing was spared from public scrutiny.</p>
+                <p>One bride was the nation&#39;s wealthiest heiress. The groom was universally hailed as the &#39;Ideal National Husband,&#39; a devastatingly handsome business titan.</p>
+                <p>Their union was the most anticipated social event of the decade.</p>
+                <p>Amidst this whirlwind, Victoria Kensington&#39;s private social media account quietly began trending.</p>
+                <p>She had posted roughly twenty videos on a new profile.</p>
+                <p>Each clip was meticulously crafted, rich with subtext and meaning.</p>
+                <p>Some showed her single-handedly organizing a cluttered, neglected space, transforming chaos into a minimalist sanctuary.</p>
+                <p>Others featured her gardening, hands deep in soil, planting organic vegetables.</p>
+                <p>There were videos of her visiting impoverished rural communities, working alongside local women harvesting crops.</p>
+                <p>She performed every task herself.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_2 -->
+                <div id='div-gpt-ad-1762511986518-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511986518-0'); });
+                  </script>
+                </div>
+                <p>Her clothing was simple, unassuming, often plain linen and cotton.</p>
+                <p>She appeared entirely without makeup, her face bare, projecting an image of genuine, girl-next-door innocence.</p>
+                <p>Within a month, her follower count skyrocketed to seventy million.</p>
+                <p>&#39;My Fairy Victoria&#39; became the top trending hashtag. Her account exploded in popularity.</p>
+                <p>Comments flooded every post.</p>
+                <p>[I can&#39;t believe this is Victoria Kensington! She seems so humble and genuine!]</p>
+                <p>[This is nothing like those other celebrities who stage everything for attention. She&#39;s actually doing real work with her own hands!]</p>
+                <p>[Look at her face, glistening with honest sweat. This feels completely authentic. There&#39;s no way this is faked.]</p>
+                <p>[She&#39;s only doing this because her scandal ruined her career! This is just a calculated PR move to rebrand herself!]</p>
+                <p>[Oh, shut up. If you think it&#39;s so easy to fake, why don&#39;t you go try it for a month straight?]</p>
+                <p>[She&#39;s clearly remorseful. Why keep attacking her? Does destroying her life bring you joy?]</p>
+                <p>The court of public opinion had shifted.</p>
+                <p>Skeptics were quickly drowned out by a wave of supportive defenders.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_3 -->
+                <div id='div-gpt-ad-1762512008111-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512008111-0'); });
+                  </script>
+                </div>
+                <p>Victoria&#39;s public persona was successfully reborn. She had shed the skin of the manipulative socialite.</p>
+                <p>She was now the pristine, relatable, &#39;earth-goddess&#39; fairy.</p>
+                <p>Time accelerated, bringing them to the eve of the grand ceremony.</p>
+                <p>Eleanor Kensington personally went to collect Victoria from her retreat.</p>
+                <p>They also summoned Isabella Montgomery back to the family manor to finalize wedding arrangements.</p>
+                <p>Alexander Whitmore had been Isabella&#39;s designated chauffeur for weeks.</p>
+                <p>She always returned to Rosewood Manor each night, carefully concealing her cohabitation with Nathaniel Blackwood.</p>
+                <p>Alexander watched her in the rearview mirror.</p>
+                <p>Despite their increased proximity this past month, she never sat in the passenger seat.</p>
+                <p>She never initiated physical contact. Not even a casual brush of hands.</p>
+                <p>A simmering frustration gnawed at him.</p>
+                <p>&#34;Tomorrow is the wedding,&#34; he finally said, breaking the tense silence. &#34;The entire elite of high society will be watching. Are you absolutely certain you&#39;re prepared?&#34;</p>
+                <p>Isabella gave a noncommittal hum from the back seat, her eyes closed.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_4 -->
+                <div id='div-gpt-ad-1762512031919-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512031919-0'); });
+                  </script>
+                </div>
+                <p>He detested her cold, detached demeanor.</p>
+                <p>She was the one who had begged for this marriage. She had demanded a spectacular, public wedding.</p>
+                <p>She had no right to act so aloof and superior around him.</p>
+                <p>He swallowed his irritation. Just one more day.</p>
+                <p>Tomorrow night, she would be his. She would be pleading beneath him. She would learn her place.</p>
+                <p>The car arrived at the grand Montgomery Manor.</p>
+                <p>Alexander exited and moved to open her door, extending his hand in a performative gesture of chivalry. He needed to maintain appearances in front of her family.</p>
+                <p>Isabella hesitated briefly.</p>
+                <p>Then her gaze caught a familiar silhouette through the living room window.</p>
+                <p>A subtle, knowing smile touched her lips.</p>
+                <p>She accepted his arm, looping hers through his in a formal, detached manner, the kind seen at galas between business partners. It conveyed zero affection.</p>
+                <p>Yet, it was enough.</p>
+                <p>Inside the opulent living room, Victoria held court.</p>
+                <p>She was the center of a concerned family huddle.</p>
+                <p>&#34;Victoria, my dear, you promised you would take care of yourself,&#34; Eleanor fretted, her voice thick with maternal worry. &#34;Look at these calluses on your hands! And that faint scar on your cheek! You are a Montgomery heiress! How could you subject yourself to such hardship?&#34;</p>
+                <p>Richard Montgomery&#39;s face was a mask of paternal anguish. &#34;We have cherished you since the day you came to us. I&#39;ve always handled you like the most precious porcelain. The thought of you alone in some remote village, doing manual labor... it breaks my heart. Did you even consider how this would make your mother and I feel?&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_5 -->
+                <div id='div-gpt-ad-1762512054239-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512054239-0'); });
+                  </script>
+                </div>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/billionaire-single-mother-strikes-back/chapter-199" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/billionaire-single-mother-strikes-back/chapter-201" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'Billionaire Single Mother Strikes Back',
+                url: '/novels/billionaire-single-mother-strikes-back/',
+                cover_url: '/covers/billionaire-single-mother-strikes-back-ScreenShot_2025-12-08_095951_743.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 200
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

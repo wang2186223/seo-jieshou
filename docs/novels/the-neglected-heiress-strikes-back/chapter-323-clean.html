@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 323 - The Neglected Heiress Strikes Back | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TFKEB1Q55"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1TFKEB1Q55');
+    </script>
+    
+    <!-- Google Publisher Tag (GPT) -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        // Define ad slots for the chapter page
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_1', [300, 250], 'div-gpt-ad-1762511964282-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_2', [300, 250], 'div-gpt-ad-1762511986518-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_3', [300, 250], 'div-gpt-ad-1762512008111-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_4', [300, 250], 'div-gpt-ad-1762512031919-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_5', [300, 250], 'div-gpt-ad-1762512054239-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '9481513911889537');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/the-neglected-heiress-strikes-back/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <a href="/novels/the-neglected-heiress-strikes-back/" class="btn" id="toc-btn" title="Back to Book Details">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 323</h1>
+            <div class="content font-medium">
+                <p>Hamilton&#39;s eyes widened in shock at Evadne&#39;s words, his face paling as he stared at her in disbelief.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_1 -->
+                <div id='div-gpt-ad-1762511964282-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511964282-0'); });
+                  </script>
+                </div>
+                <p>&#34;Chaos erupted out of nowhere. A thug lunged at us. I was shielding Myra and couldn&#39;t react in time. The attacker was skilled—even our bodyguards couldn&#39;t stop him.&#34;</p>
+                <p>Evadne&#39;s voice trembled as she recalled how Thaddeus had thrown himself in front of her, taking the brutal blow meant for her head. Tears welled in her eyes, her throat tight. &#34;At the last second, Thaddeus pushed me out of the way. If he hadn&#39;t, I&#39;d be the one on that operating table right now. Grandpa, this is my fault. I was too slow. Punish me. Scold me. I owe him everything.&#34;</p>
+                <p>Emeric&#39;s heart ached at the sight of his proud daughter humbling herself for the sake of the Abernathy heir. &#34;Evadne.&#34;</p>
+                <p>&#34;My foolish girl, why must you be so reckless?&#34;</p>
+                <p>Tears glistened in Hamilton&#39;s eyes as he pulled Evadne into his arms. &#34;Whether it&#39;s you or Thaddeus lying there, my heart would shatter. But if it were you? I wouldn&#39;t survive it.&#34;</p>
+                <p>&#34;Grandpa.&#34; Emotion clogged Evadne&#39;s throat, her fingers clutching his sleeves.</p>
+                <p>&#34;Listen to me, child. Thaddeus chose to take that hit for you. Don&#39;t you dare blame yourself.&#34;</p>
+                <p>Hamilton stroked her hair, his weathered face softening. &#34;That bastard broke your heart for three years. If this is his karma, then so be it! Let him suffer—maybe it&#39;ll knock some sense into that thick skull of his!&#34;</p>
+                <p>Evadne knew her grandfather was putting on a brave front.</p>
+                <p>Hamilton had watched Thaddeus grow up. How could he not be devastated?</p>
+                <p>&#34;Mr. Frederic!&#34;</p>
+                <p>Mr. Murray rushed over, his expression grim. &#34;Mr. Frederic and his wife have arrived.&#34;</p>
+                <p>Hamilton&#39;s face darkened. &#34;I thought we agreed not to inform them yet?&#34;</p>
+                <p>&#34;I followed your orders, sir, but news like this spreads fast.&#34;</p>
+                <p>Before Mr. Murray could finish, a commotion erupted down the hall.</p>
+                <p>&#34;Thaddeus! Where is my son?&#34; Frederic&#39;s voice boomed as he stormed toward them.</p>
+                <p>He rarely showed concern for his second son, but now, hearing that Thaddeus had been struck in the head with an iron rod, he was frantic, his usually composed demeanor shattered.</p>
+                <p>Elspeth, seeing Frederic&#39;s sudden protectiveness over his illegitimate child, seethed internally. Still, she forced a look of distress and joined in the shouting. &#34;Thaddeus! Where is he?&#34;</p>
+                <p>Even Glynnis cringed at the theatrics, rolling her eyes behind her stepmother&#39;s back.</p>
+                <p>&#34;Enough! Are you trying to summon the dead?&#34;</p>
+                <p>Supported by Evadne and Mr. Murray, Hamilton rose to his feet, his glare sharpening at the sight of Frederic and Elspeth. His blood pressure spiked, irritation flaring.</p>
+                <p>&#34;Father! How is Thaddeus?&#34; Frederic demanded.</p>
+                <p>Hamilton exhaled sharply. &#34;He&#39;s still in surgery. Your shouting won&#39;t help. Sit down and wait like the rest of us.&#34;</p>
+                <p>&#34;Chairman Emeric!&#34; Frederic whirled on Emeric, his voice venomous. &#34;I heard my son is in this state because he was protecting your daughter. Explain this!&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_2 -->
+                <div id='div-gpt-ad-1762511986518-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511986518-0'); });
+                  </script>
+                </div>
+                <p>If not for his reputation, Frederic would have already grabbed Emeric by the collar.</p>
+                <p>Cassius stepped between them, his tone firm but calm. &#34;Mr. Frederic, let&#39;s discuss this rationally.&#34;</p>
+                <p>&#34;Rationally? If it were your brother lying there, would you be rational?&#34; Frederic snarled, his fury directed squarely at the Ashbournes.</p>
+                <p>Ever since Thaddeus divorced Evadne, his family had been plagued with misfortune. And now, because of her, his son&#39;s life hung in the balance.</p>
+                <p>How could he stay calm?</p>
+                <p>Elspeth smirked inwardly, relishing the chaos.</p>
+                <p>She had only meant to ruin Myra. But Thaddeus had thrown himself into the line of fire for Evadne.</p>
+                <p>If he wanted to die, she wouldn&#39;t stop him.</p>
+                <p>&#34;Mr. Frederic, I understand your anger. But right now, Thaddeus is fighting for his life. Your outbursts won&#39;t change that.&#34;</p>
+                <p>Emeric kept his voice steady, though frustration simmered beneath the surface. &#34;Ashbourne Group Hospital, in partnership with Bright Medical, is the top facility in the country. Your son is receiving the best care possible. He will pull through.&#34;</p>
+                <p>Hamilton scoffed. Best? Abernathy Medical was just as advanced.</p>
+                <p>Emeric always had to boast.</p>
+                <p>Just then, the operating room doors swung open.</p>
+                <p>Two of the nation&#39;s leading neurosurgeons stepped out, their expressions grave.</p>
+                <p>Evadne&#39;s heart clenched.</p>
+                <p>She wanted to rush forward, but fear rooted her in place.</p>
+                <p>&#34;Doctors! How is my grandson?&#34;</p>
+                <p>Frederic helped Hamilton forward, the older man&#39;s legs trembling. Evadne&#39;s chest ached at the sight.</p>
+                <p>&#34;Mr. Thaddeus&#39;s condition is critical. He&#39;s not out of danger yet.&#34; The doctor&#39;s tone was heavy.</p>
+                <p>The words hit like a sledgehammer. Hamilton swayed, his face draining of color.</p>
+                <p>Frederic paled. &#34;How... how is this possible?&#34;</p>
+                <p>&#34;If this were a first-time injury, treatment would be straightforward. But our scans revealed an old trauma—a blood clot in his brain that was never fully resolved.&#34;</p>
+                <p>&#34;An old injury?&#34;</p>
+                <p>Hamilton looked stricken. &#34;My grandson has lived a life of privilege. Who would dare hurt him?&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_3 -->
+                <div id='div-gpt-ad-1762512008111-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512008111-0'); });
+                  </script>
+                </div>
+                <p>A memory slammed into Evadne—her time as Thaddeus&#39;s wife, treating his chronic headaches with acupuncture. He&#39;d always brushed off her questions, refusing to speak of it.</p>
+                <p>Had this happened during his years in Zenithia? Was this the source of his pain?</p>
+                <p>&#34;The clot has shifted, pressing against his brain. Without immediate removal, he risks brain death.&#34;</p>
+                <p>The Abernathy family reeled.</p>
+                <p>Frederic&#39;s knees buckled while Hamilton clung to his son, looking seconds from collapse.</p>
+                <p>&#34;My poor Thaddeus! He&#39;s so young!&#34; Elspeth wailed, crocodile tears streaming as she rounded on Evadne. &#34;Evadne, all he did was divorce you! He never mistreated you in those three years. Why can&#39;t you let him go? He skipped my birthday to celebrate Myra&#39;s with your family. He was fine when he left, and now he&#39;s on death&#39;s door! Are you trying to kill him?&#34;</p>
+                <p>&#34;Elspeth, watch your tongue!&#34;</p>
+                <p>Cassius, usually unflappable, stepped forward, his voice icy. &#34;In their marriage, Thaddeus was the one who wronged my sister. The Abernathys know exactly how she suffered. We&#39;re all concerned for Thaddeus, but don&#39;t you dare twist this to vilify Evadne. One more word, and I won&#39;t be responsible for my actions.&#34;</p>
+                <p>Emeric stood silently behind Evadne, his presence a shield.</p>
+                <p>Elspeth shivered but pressed on, knowing Frederic&#39;s rage was on her side. &#34;Am I wrong? Since Thaddeus got involved with your sister, has anything good happened? She&#39;s a curse!&#34;</p>
+                <p>&#34;You&#39;re the one who&#39;s cursed! My grandson is the fool chasing after Evadne. Shut your mouth!&#34; Hamilton wheezed, still defending his beloved granddaughter.</p>
+                <p>Elspeth&#39;s face twisted, colors flickering like a broken neon sign.</p>
+                <p>&#34;Doctor, what&#39;s the next step? How do we save my son?&#34; Frederic ignored the drama, his focus solely on Thaddeus.</p>
+                <p>His eldest son was already a ghost of a man. He couldn&#39;t lose his heir.</p>
+                <p>The doctor wiped his brow. &#34;Mr. Thaddeus needs an emergency craniotomy.&#34;</p>
+                <p>Silence.</p>
+                <p>&#34;Do it. Whatever it takes to save him,&#34; Hamilton ordered.</p>
+                <p>&#34;The problem is, we don&#39;t have a surgeon qualified for this procedure on-site.&#34;</p>
+                <p>Frederic whirled on Emeric. &#34;Chairman Emeric! You boasted about your hospital&#39;s capabilities! What now?&#34;</p>
+                <p>Emeric&#39;s jaw tightened.</p>
+                <p>&#34;We do have someone.&#34;</p>
+                <p>Evadne stepped forward, her voice steady. &#34;I&#39;ll perform the surgery.&#34;</p>
+                <p>Shock rippled through the room—even Emeric and Cassius stared.</p>
+                <p>They knew Evadne had medical training from her time with Doctors Without Borders.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_4 -->
+                <div id='div-gpt-ad-1762512031919-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512031919-0'); });
+                  </script>
+                </div>
+                <p>But this wasn&#39;t a field dressing. This was brain surgery.</p>
+                <p>&#34;What did you say?&#34; Frederic gaped.</p>
+                <p>&#34;Evadne, you can do this?&#34; Hamilton&#39;s eyes lit with hope.</p>
+                <p>&#34;Yes, Grandpa.&#34;</p>
+                <p>She squeezed his hand, forcing a smile. &#34;Trust me. I&#39;ll bring him back to you.&#34;</p>
+                <p>&#34;That&#39;s a bold claim. What if you fail?&#34; Glynnis sneered.</p>
+                <p>Evadne&#39;s gaze turned arctic. &#34;If I fail, you can have my head as compensation.&#34;</p>
+                <p>The room fell silent.</p>
+                <p>Cassius winced. Gruesome.</p>
+                <p>Jareth only learned of Thaddeus&#39;s condition upon arriving at the hospital.</p>
+                <p>&#34;Mari, there&#39;s been an incident with your brother. I&#39;ll take you home first. Rest, and don&#39;t wait up for me.&#34;</p>
+                <p>He carefully helped Mari into the coat Lily brought, bundling her against the chill. His touch was tender, his voice soothing. To spare her worry, he downplayed Thaddeus&#39;s condition.</p>
+                <p>&#34;What happened to Thaddeus?&#34;</p>
+                <p>Mari was perceptive. Despite Jareth&#39;s calm, she sensed the gravity. &#34;Jareth, don&#39;t hide this from me. Tell me!&#34;</p>
+                <p>&#34;Go home and sleep. When you wake, I&#39;ll explain.&#34;</p>
+                <p>He pulled her close, his lips brushing hers in a soft kiss.</p>
+                <p>Lily discreetly looked away.</p>
+                <p>&#34;Let&#39;s go.&#34;</p>
+                <p>Jareth&#39;s eyes crinkled with warmth as he took Mari&#39;s hand, leading her out.</p>
+                <p>Their world had narrowed to just each other, the air between them sweet with unspoken affection.</p>
+                <p>&#34;Jareth!&#34;</p>
+                <p>A sharp voice cut through the moment.</p>
+                <p>Jareth stiffened, his head snapping up in shock.</p>
+                <p>&#34;Mother? What are you doing here?&#34;</p>
+                <p>A few paces away, emerging from a sleek black car, stood Mrs. Jareth—and Edith.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_5 -->
+                <div id='div-gpt-ad-1762512054239-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512054239-0'); });
+                  </script>
+                </div>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/the-neglected-heiress-strikes-back/chapter-322" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/the-neglected-heiress-strikes-back/chapter-324" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'The Neglected Heiress Strikes Back',
+                url: '/novels/the-neglected-heiress-strikes-back/',
+                cover_url: '/covers/the-neglected-heiress-strikes-back-ScreenShot_2026-01-24_123501_431.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 323
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

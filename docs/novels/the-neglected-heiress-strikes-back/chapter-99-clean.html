@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 99 - The Neglected Heiress Strikes Back | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TFKEB1Q55"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1TFKEB1Q55');
+    </script>
+    
+    <!-- Google Publisher Tag (GPT) -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        // Define ad slots for the chapter page
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_1', [300, 250], 'div-gpt-ad-1762511964282-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_2', [300, 250], 'div-gpt-ad-1762511986518-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_3', [300, 250], 'div-gpt-ad-1762512008111-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_4', [300, 250], 'div-gpt-ad-1762512031919-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_5', [300, 250], 'div-gpt-ad-1762512054239-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '9481513911889537');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/the-neglected-heiress-strikes-back/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <a href="/novels/the-neglected-heiress-strikes-back/" class="btn" id="toc-btn" title="Back to Book Details">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 99</h1>
+            <div class="content font-medium">
+                <p>Isabella Sinclair finally unveiled her gift for Mr. Dubois.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_1 -->
+                <div id='div-gpt-ad-1762511964282-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511964282-0'); });
+                  </script>
+                </div>
+                <p>When the legendary Medici Throne was revealed, every antique collector in the room gasped in awe.</p>
+                <p>&#34;Good heavens! That&#39;s an authentic masterpiece!&#34;</p>
+                <p>&#34;I&#39;m completely mesmerized! If only I could examine it up close!&#34;</p>
+                <p>&#34;Among all the presents Mr. Dubois received today, aside from the Stradivarius from Mr. Prescott, this throne is undoubtedly the most priceless!&#34;</p>
+                <p>&#34;Who exactly is this Ms. Sinclair? Dropping serious cash on rare antiquities like it&#39;s nothing? Seems Mr. Prescott&#39;s ex-wife wasn&#39;t exactly struggling!&#34; Nathan Prescott&#39;s pulse quickened as his gaze locked onto Isabella.</p>
+                <p>He never anticipated she&#39;d gift Mr. Dubois the 10-million-dollar artifact she&#39;d acquired at the Vanderbilt auction.</p>
+                <p>Clearly, the Vanderbilt Group treated her like royalty.</p>
+                <p>But her next words nearly made him choke.</p>
+                <p>&#34;Mr. Dubois, this is a joint gift from President Vanderbilt and myself. Wishing you boundless health and happiness.&#34; Isabella&#39;s eyes sparkled with genuine warmth as she offered her congratulations.</p>
+                <p>Alexander Kingsley gave a respectful bow, his voice smooth as velvet. &#34;Mr. Dubois, may your days be filled with joy and your years with prosperity.&#34;</p>
+                <p>Standing side by side, they radiated elegance and sophistication - a picture-perfect couple.</p>
+                <p>Nathan felt his heart hammer against his ribs. He discreetly pressed a hand to his chest, terrified someone might notice.</p>
+                <p>&#34;This is far too generous! I&#39;m deeply touched!&#34; Mr. Dubois exclaimed, though added, &#34;Isabella, anything from you would have delighted me. Mr. Kingsley, your kindness overwhelms me.&#34;</p>
+                <p>Alexander chuckled. &#34;We simply wanted to select something worthy of your celebration.&#34;</p>
+                <p>&#34;Mr. Dubois, you must accept it.&#34; Victoria Sterling sneered. &#34;Though how convenient - letting someone else foot the bill while taking all the credit. Ms. Sinclair certainly knows how to economize.&#34;</p>
+                <p>Isabella arched a brow. &#34;I wouldn&#39;t dream of claiming undue credit, which is why I prepared a personal gift as well. Though it pales beside President Vanderbilt&#39;s offering.&#34;</p>
+                <p>Victoria&#39;s eyes bulged. This woman had a backup present?</p>
+                <p>&#34;Really? Isabella, show me at once!&#34; Mr. Dubois&#39; face lit up like a child&#39;s on Christmas morning.</p>
+                <p>A mischievous glint flashed in Isabella&#39;s eyes as she clapped her hands.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_2 -->
+                <div id='div-gpt-ad-1762511986518-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511986518-0'); });
+                  </script>
+                </div>
+                <p>Moments later, Daniel Carter entered, impeccably dressed, cradling an ornate case.</p>
+                <p>Inside rested a breathtaking landscape carved from rare gemstones - so lifelike the mountains seemed to breathe!</p>
+                <p>&#34;Magnificent!&#34; The crowd murmured in awe.</p>
+                <p>The exquisite craftsmanship captivated both Nathan and Sebastian. The skill required for such precision was staggering!</p>
+                <p>&#34;My word!&#34; Mr. Dubois&#39; hands trembled as he pointed. &#34;Is this Moreau&#39;s Eternal Dawn? Isabella, however did you acquire this?&#34;</p>
+                <p>Moreau?! The legendary French sculptor whose works were nearly impossible to obtain?</p>
+                <p>&#34;You flatter me, Mr. Dubois. I could never obtain Master Moreau&#39;s Eternal Dawn.&#34; Isabella ducked her head shyly, cheeks pinkening. &#34;This is my humble imitation: Fleeting Dawn. I devoted weeks to it, though it falls far short of the original.&#34;</p>
+                <p>The room erupted in astonished whispers.</p>
+                <p>Practice?! That was master-level artistry!</p>
+                <p>Only the most skilled hands could etch such intricate scenes into solid stone. From a distance, one might mistake it for Moreau&#39;s genuine work!</p>
+                <p>Who was this remarkable woman? Could she be Moreau&#39;s protégé?</p>
+                <p>Admiring gazes followed Isabella everywhere.</p>
+                <p>Only Cassandra and Victoria looked like they&#39;d swallowed lemons.</p>
+                <p>Since leaving the Prescott family, this woman had transformed completely. She kept outmaneuvering them at every turn!</p>
+                <p>&#34;Isabella, my dear, you&#39;re absolutely extraordinary!&#34; Mr. Dubois clasped her hands, beaming.</p>
+                <p>&#34;To have such a wife would be any man&#39;s dream,&#34; Sebastian murmured, watching her intently.</p>
+                <p>Nathan shot him an icy glare, his expression frostier than a winter storm.</p>
+                <p>Seeing Isabella basking in everyone&#39;s admiration, he realized how vast the gulf between their worlds had become - yet he&#39;d once been her husband!</p>
+                <p>Shock, fury, resentment - emotions tangled like thorned vines around Nathan&#39;s heart.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_3 -->
+                <div id='div-gpt-ad-1762512008111-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512008111-0'); });
+                  </script>
+                </div>
+                <p>He&#39;d been deceived again by this infuriating woman!</p>
+                <p>The celebration continued amidst laughter and lively conversation.</p>
+                <p>Excusing herself to freshen up, Isabella left Mr. Dubois&#39; side.</p>
+                <p>En route, she reflected on Cassandra and Victoria&#39;s pathetic attempts to embarrass her. Amusing, really.</p>
+                <p>For all their experience, they still underestimated her.</p>
+                <p>She&#39;d anticipated their every move, but they&#39;d forgotten one crucial factor: Mr. Dubois&#39; genuine affection for her.</p>
+                <p>Love was an impenetrable fortress no scheme could breach.</p>
+                <p>Isabella knew Alexander couldn&#39;t present the Medici Throne alone, so she&#39;d spent weeks carving her personal gift.</p>
+                <p>Her exceptional skill stemmed from childhood years observing Master Laurent transform raw stone into art.</p>
+                <p>In that sense, Moreau was her artistic grandfather.</p>
+                <p>The winding corridor confused first-time visitors. Isabella soon found herself disoriented.</p>
+                <p>Just then, a plump tabby sauntered past.</p>
+                <p>&#34;Hello there, little one,&#34; she cooed, her mood lifting instantly. Laughing, she gave chase.</p>
+                <p>Her traditional gown restricted movement, and her heels slipped on the polished marble. She lurched forward dangerously.</p>
+                <p>Straight toward a staircase!</p>
+                <p>&#34;Ah!&#34;</p>
+                <p>Eyes squeezed shut, she braced for impact.</p>
+                <p>Suddenly, strong arms encircled her from behind.</p>
+                <p>The secure embrace instantly calmed her racing heart.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_4 -->
+                <div id='div-gpt-ad-1762512031919-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512031919-0'); });
+                  </script>
+                </div>
+                <p>Then she felt herself being gently lifted against a familiar, solid chest.</p>
+                <p>&#34;Meow!&#34;</p>
+                <p>Perched on a decorative urn, the cat regarded her before vanishing.</p>
+                <p>Isabella slowly opened her eyes but didn&#39;t turn around, steadying her breathing.</p>
+                <p>Nathan could feel every curve of her back pressed against him.</p>
+                <p>His pulse accelerated dangerously.</p>
+                <p>&#34;Release me. Planning to hold me indefinitely?&#34; Isabella bit her lip, struggling.</p>
+                <p>Nathan&#39;s gaze darkened. His hand lingered at her waist before reluctantly letting go.</p>
+                <p>&#34;Don&#39;t flatter yourself. I merely prevented your fall,&#34; he said icily.</p>
+                <p>&#34;Don&#39;t expect gratitude.&#34; Isabella steadied herself against a pillar, turning to glare. &#34;I&#39;d rather break bones than endure your touch.&#34;</p>
+                <p>The setting sun gilded her striking features.</p>
+                <p>&#34;I took advantage?&#34; Nathan&#39;s lips curled into a smirk. &#34;If I wanted that, would I have waited until now?&#34;</p>
+                <p>&#34;Nathan!&#34; Her eyes flashed dangerously.</p>
+                <p>&#34;Weren&#39;t you the one begging for my attention before?&#34; His gaze turned arctic. &#34;The divorce hasn&#39;t erased our history.&#34;</p>
+                <p>From the moment she&#39;d arrived, she&#39;d been shaking his world. If this continued, he&#39;d need medical attention.</p>
+                <p>Isabella&#39;s mood plummeted. Humiliation burned through her.</p>
+                <p>&#34;So what now? Regretting what you threw away?&#34;</p>
+                <p>&#34;Isabella—&#34;</p>
+                <p>&#34;Mr. Prescott, that ship has sailed. What I once offered freely, you rejected. Now? Too late!&#34;</p>
+                <p>Nathan&#39;s eyes burned crimson. He seized her wrist, slamming her against the pillar!</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_5 -->
+                <div id='div-gpt-ad-1762512054239-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512054239-0'); });
+                  </script>
+                </div>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/the-neglected-heiress-strikes-back/chapter-98" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/the-neglected-heiress-strikes-back/chapter-100" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'The Neglected Heiress Strikes Back',
+                url: '/novels/the-neglected-heiress-strikes-back/',
+                cover_url: '/covers/the-neglected-heiress-strikes-back-ScreenShot_2026-01-24_123501_431.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 99
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

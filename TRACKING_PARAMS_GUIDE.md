@@ -8,12 +8,12 @@
 
 **问题**：用户从 Facebook 广告点击进入网站时，URL 包含追踪参数：
 ```
-https://novel.arkmoremoney.com/novels/heartbreak-billionairehe-should-never-have-let-go?fbclid=IwZXh0bgNhZW0...&utm_source=fb&utm_medium=paid
+https://re.cankalp.com/novels/heartbreak-billionairehe-should-never-have-let-go?fbclid=IwZXh0bgNhZW0...&utm_source=fb&utm_medium=paid
 ```
 
 但当用户点击"下一章"或其他链接时，这些参数丢失：
 ```
-https://novel.arkmoremoney.com/novels/heartbreak-billionairehe-should-never-have-let-go/chapter-2
+https://re.cankalp.com/novels/heartbreak-billionairehe-should-never-have-let-go/chapter-2
 ```
 
 导致 Google AdSense 将流量归类为"其他"而非"Facebook"。
@@ -46,7 +46,7 @@ https://novel.arkmoremoney.com/novels/heartbreak-billionairehe-should-never-have
 
 1. **用户点击 Facebook 广告**
    ```
-   原始链接: https://novel.arkmoremoney.com/novels/novel-name?fbclid=ABC123&utm_source=fb
+   原始链接: https://re.cankalp.com/novels/novel-name?fbclid=ABC123&utm_source=fb
    ```
 
 2. **系统自动保存参数**
@@ -74,7 +74,7 @@ https://novel.arkmoremoney.com/novels/heartbreak-billionairehe-should-never-have
 
 2. **用户点击新的 Facebook 广告**
    ```
-   新链接: https://novel.arkmoremoney.com/novels/another-novel?fbclid=NEW456&utm_source=fb&utm_campaign=spring2025
+   新链接: https://re.cankalp.com/novels/another-novel?fbclid=NEW456&utm_source=fb&utm_campaign=spring2025
    ```
 
 3. **系统更新存储（新参数优先）**
@@ -91,7 +91,7 @@ https://novel.arkmoremoney.com/novels/heartbreak-billionairehe-should-never-have
 
 1. **用户直接输入网址**
    ```
-   访问: https://novel.arkmoremoney.com/
+   访问: https://re.cankalp.com/
    ```
 
 2. **系统检查存储**

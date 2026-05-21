@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 267 - The Neglected Heiress Strikes Back | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TFKEB1Q55"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1TFKEB1Q55');
+    </script>
+    
+    <!-- Google Publisher Tag (GPT) -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        // Define ad slots for the chapter page
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_1', [300, 250], 'div-gpt-ad-1762511964282-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_2', [300, 250], 'div-gpt-ad-1762511986518-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_3', [300, 250], 'div-gpt-ad-1762512008111-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_4', [300, 250], 'div-gpt-ad-1762512031919-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_5', [300, 250], 'div-gpt-ad-1762512054239-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '9481513911889537');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/the-neglected-heiress-strikes-back/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <a href="/novels/the-neglected-heiress-strikes-back/" class="btn" id="toc-btn" title="Back to Book Details">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 267</h1>
+            <div class="content font-medium">
+                <p>The tension in the car was suffocating.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_1 -->
+                <div id='div-gpt-ad-1762511964282-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511964282-0'); });
+                  </script>
+                </div>
+                <p>Three pairs of wide eyes stared in shock—even Adrian, who was driving, nearly lost control of the wheel.</p>
+                <p>&#34;Serena, what did you just say?&#34; Dominic, usually composed, looked equally stunned.</p>
+                <p>&#34;Damien says he regrets divorcing me. He wants another chance. This time, he plans to court me properly.&#34;</p>
+                <p>Serena lifted her delicate chin, her almond-shaped eyes locking onto Dominic. &#34;Dominic, what does this mean? Is he confessing his feelings?&#34;</p>
+                <p>Blake and Adrian blurted out simultaneously, &#34;No question about it!&#34;</p>
+                <p>Then, as if sharing one mind, they added in unison, &#34;The audacity!&#34;</p>
+                <p>Dominic blinked, his brows furrowing slightly.</p>
+                <p>&#34;Dominic, can you believe it? The man who shattered our future now wants to win me back with empty promises.&#34; Serena forced a bitter smile. Once, this would have made her weep with joy.</p>
+                <p>Now, all she felt was confusion.</p>
+                <p>It was like a childhood toy she&#39;d desperately wanted but never received. Years later, even if she got a better version, the magic was gone. Why would Damien even want her now?</p>
+                <p>She&#39;d given him everything, and he&#39;d thrown it all away.</p>
+                <p>Now that she stood against him, humiliating him at every turn—why would he?</p>
+                <p>&#34;Love that comes too late is worse than weeds. Damien&#39;s so-called confession is nothing but garbage!&#34; Blake gritted his teeth, his hatred palpable.</p>
+                <p>&#34;Exactly. What was he thinking before?&#34; Adrian tightened his grip on the steering wheel, his voice low.</p>
+                <p>&#34;Serena, you gave him your all when you married him. Have you forgotten the pain once the wounds healed? Now that you&#39;re the heiress of the Sinclair fortune, adored by everyone, at the peak of your beauty and success—he&#39;s jealous. He regrets. He thinks he was blind before, so now he wants you back to feed his disgusting ego!&#34; Blake&#39;s handsome face twisted with fury as he spat out the words.</p>
+                <p>&#34;I wouldn&#39;t call it ego.&#34; Serena rolled her eyes. &#34;But you&#39;re right, Blake. He probably finds me more intriguing now. After all, it wasn’t until I reclaimed my Sinclair name that he even looked at me twice.&#34;</p>
+                <p>&#34;Ugh, men are all the same—chasing novelty and thrill.&#34; Adrian couldn&#39;t hold back his anger. &#34;He got tired of sweet, innocent Cassandra, and now he&#39;s into your fire. He just changed his taste. Yesterday it was dirt, today it&#39;s durian. Today he says he wants you—tomorrow, who knows?&#34;</p>
+                <p>Blake nodded sharply. &#34;Once a cheater, always a cheater!&#34;</p>
+                <p>Serena arched a brow. &#34;I get that dirt refers to Cassandra. But durian? Explain that one.&#34;</p>
+                <p>Adrian coughed awkwardly. &#34;Miss Serena, it was just a metaphor.&#34;</p>
+                <p>&#34;Nothing wrong with durian. It&#39;s the king of fruits—fits your personality perfectly,&#34; Dominic chimed in casually.</p>
+                <p>&#34;But durians are spiky and stink!&#34;</p>
+                <p>&#34;The inside is soft, sweet, and fragrant.&#34; Dominic grinned, brushing his fingertip against her nose. &#34;Kinda like you.&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_2 -->
+                <div id='div-gpt-ad-1762511986518-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511986518-0'); });
+                  </script>
+                </div>
+                <p>&#34;Humph!&#34; Serena turned away, pretending to be annoyed—though the effect was more adorable than anything.</p>
+                <p>&#34;Serena, no matter what, don’t fall for Damien again! Men like him don’t change!&#34; Blake pleaded, terrified she might relapse.</p>
+                <p>&#34;I’m an exception, Mr. Blake,&#34; Adrian weakly defended himself.</p>
+                <p>&#34;Count me in,&#34; Dominic added quickly.</p>
+                <p>&#34;Right, right, the Sinclair men are different,&#34; Blake hurriedly corrected himself.</p>
+                <p>&#34;Well, not all of them. There’s always one dragging us down,&#34; Serena teased, crossing her slender legs.</p>
+                <p>The three men exchanged glances, the same name flashing in their minds simultaneously:</p>
+                <p>William!</p>
+                <p>&#34;Absolutely not!&#34;</p>
+                <p>Vivienne, upon hearing Serena’s request to help Damien, flushed with anger.</p>
+                <p>This stepmother, who usually indulged Serena, flat-out refused to treat him.</p>
+                <p>&#34;Vivienne, just hear me out,&#34; Serena said helplessly.</p>
+                <p>&#34;There’s nothing to discuss.&#34; Vivienne waved her hand dismissively, her voice icy. &#34;I remember everything Damien did to you—so do Arabella and Sophia. Isn’t he the CEO of Abernathy Group? Let them figure it out!&#34;</p>
+                <p>&#34;Vivienne—&#34;</p>
+                <p>&#34;Oh, right. He’s surrounded by women. Why aren’t they mourning their beloved?&#34; Vivienne’s words were venomous, as if she wanted to tear Damien apart with her teeth.</p>
+                <p>&#34;Vivienne, Damien is despicable, but this time, he saved me.&#34; Serena pulled Vivienne onto the couch, sounding more like the adult in the room.</p>
+                <p>Vivienne frowned. &#34;What do you mean?&#34;</p>
+                <p>Serena explained in detail how she’d gone to rescue someone on Misty Mountain, how she’d gotten into danger, how Damien had saved her—and how he’d been injured in the process.</p>
+                <p>By the time she finished, Vivienne’s hand, clutched in Serena’s, had turned cold with fear.</p>
+                <p>&#34;Serena, you reckless girl! If I were your mother, I’d lock you up and give you a good spanking! How could you be so reckless?!&#34;</p>
+                <p>&#34;Only Dominic, Blake, and Adrian know. William is completely in the dark.&#34; Serena pressed a finger to her lips, lowering her voice. &#34;You have to promise to keep this a secret. If William finds out, his blood pressure will skyrocket.&#34;</p>
+                <p>&#34;I don’t feel like covering for you anymore. Over the past three years of your messy history with Damien, we’ve had to clean up so much—we might as well have a classified dossier on you!&#34; Vivienne tapped Serena’s forehead lightly. &#34;I should tell your father and let him deal with you!&#34;</p>
+                <p>&#34;It won’t help. William can’t control me even if he tries.&#34; Serena grinned, looking utterly pleased with herself.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_3 -->
+                <div id='div-gpt-ad-1762512008111-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512008111-0'); });
+                  </script>
+                </div>
+                <p>After more heartfelt persuasion, Vivienne finally relented.</p>
+                <p>&#34;Serena, tell me the truth. Do you still have feelings for him?&#34; Vivienne’s voice softened with concern.</p>
+                <p>&#34;No.&#34; Serena’s answer was firm. &#34;I’m not a pig, and I won’t jump back into the pigpen. I just don’t like owing anyone.&#34;</p>
+                <p>There was a brief flicker of unease, but it passed quickly.</p>
+                <p>&#34;Good. If you ever think of getting back with him, you won’t have a home to return to.&#34; Vivienne gave her a chilling look. &#34;What will you choose—your family or that jerk?&#34;</p>
+                <p>Serena rubbed her goosebump-covered arms nervously.</p>
+                <p>&#34;Serena! Vivienne!&#34; Sophia knocked and entered. &#34;The dresses for Arabella’s birthday party are here. Come help pick one out! I don’t understand women’s fashion—I wore jeans to my own wedding.&#34;</p>
+                <p>&#34;Coming!&#34; Serena, eager to escape Vivienne’s interrogation, quickly dragged her along.</p>
+                <p>The three women hurried to Arabella’s room.</p>
+                <p>Rows of dazzling evening gowns, all limited edition and haute couture, lined the racks—a feast for the eyes!</p>
+                <p>Custom-made heels, studded with diamonds, were arranged on the floor. The extravagance was staggering.</p>
+                <p>Any other woman would have squealed in delight. The diamonds alone could buy a mansion.</p>
+                <p>But Arabella, dressed in a simple lavender sweater, sat on the couch, looking troubled.</p>
+                <p>&#34;Arabella, what’s wrong? Your birthday’s coming up. Why so gloomy?&#34; Serena sat beside her, wrapping an arm around her.</p>
+                <p>&#34;Serena, please talk to your father for me. Cancel the party.&#34; Arabella sighed. &#34;I’ve been begging him for weeks. A quiet family dinner at home would be enough. I don’t like crowds, and entertaining guests is exhausting. But William won’t listen. What do I do?&#34;</p>
+                <p>&#34;Wow, Arabella, you’re really showing off!&#34; Sophia teased.</p>
+                <p>&#34;You sound a little bratty!&#34; Vivienne joined in, arm around Sophia’s waist.</p>
+                <p>Serena’s heart ached.</p>
+                <p>Growing up, Arabella had always kept a low profile to spare Serena’s feelings. The only time she was visible was in the kitchen, preparing meals.</p>
+                <p>Back then, Serena, too young to understand, had seen Arabella as her mother’s rival. To protect her mother’s memory, she’d caused chaos, even accusing Arabella of terrible things.</p>
+                <p>She’d thought these women had no self-respect, clinging to William despite his marriage.</p>
+                <p>It wasn’t until later, when Dominic told her the truth, that she understood.</p>
+                <p>Years ago, when her mother was dying of lupus, Arabella had donated bone marrow without hesitation.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_4 -->
+                <div id='div-gpt-ad-1762512031919-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512031919-0'); });
+                  </script>
+                </div>
+                <p>Medical technology then wasn’t what it was now. The procedure was risky, and Arabella had suffered chronic pain ever since.</p>
+                <p>Though her mother had still passed away, Arabella had given her an extra year—a year more with Serena.</p>
+                <p>Later, when Serena lost her baby with Damien, it was Arabella who stayed by her side, caring for her like a mother.</p>
+                <p>Slowly, Serena’s resentment faded.</p>
+                <p>How could she hate someone who’d been nothing but kind for twenty years? Even her mother hadn’t—why should she?</p>
+                <p>&#34;Arabella, let’s do what William wants.&#34; Serena held Arabella’s arm like a daughter, smiling gently. &#34;It’s not just his idea—it’s mine too. In twenty years, you’ve never had a proper birthday. I’ve always felt guilty about that.&#34;</p>
+                <p>&#34;Silly girl, what are you talking about?&#34; Arabella looked shocked. &#34;I chose not to celebrate. It had nothing to do with you!&#34;</p>
+                <p>&#34;Then, will you grant me this wish? Let us throw you a party, okay?&#34;</p>
+                <p>&#34;Arabella! Look at Serena! Just go with it!&#34; Vivienne and Sophia coaxed.</p>
+                <p>Finally, Arabella gave in and began selecting a dress.</p>
+                <p>&#34;None of these are good enough.&#34; Serena crossed her arms, critically eyeing the expensive gowns. &#34;So tacky. William has terrible taste. Clearly, he didn’t inherit my style.&#34;</p>
+                <p>&#34;They’re fine, Serena,&#34; Arabella said quickly.</p>
+                <p>&#34;No, they’re not.&#34; Serena shook her head, her eyes gleaming. &#34;If you’re wearing a dress, it should be one-of-a-kind, designed by the best. Arabella, have you heard of Elara?&#34;</p>
+                <p>&#34;Elara?&#34; Vivienne and Arabella gasped.</p>
+                <p>Only Sophia, the tomboy, looked puzzled—though the name sounded familiar.</p>
+                <p>&#34;I’ve invited her to design your birthday dress. What do you think?&#34; Serena’s smile was radiant.</p>
+                <p>&#34;Serena, are you serious? Elara? The Elara?&#34; Vivienne stared in disbelief.</p>
+                <p>&#34;Is there another Elara in the world?&#34; Serena retorted.</p>
+                <p>&#34;William once tried to commission Elara for Arabella, but he couldn’t even get a meeting. Serena, how do you have that kind of connection?&#34;</p>
+                <p>A secretive smile tugged at Serena’s lips.</p>
+                <p>William would never guess that Elara had been right under his nose all along—the little girl he’d raised!</p>
+                <p>&#34;Of course. Elara and I go way back. She owes me a favor.&#34; Serena pulled Arabella into a hug. &#34;Arabella, on that day, you’ll wear jewelry by Elara, a gown by Elara, and you’ll outshine everyone. Let them see the grace of the former queen once more.&#34;</p>
+                <p>&#34;Serena...&#34; Arabella’s eyes welled up.</p>
+                <p>&#34;Don’t worry. That day, you’ll be the woman every other woman envies.&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_5 -->
+                <div id='div-gpt-ad-1762512054239-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512054239-0'); });
+                  </script>
+                </div>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/the-neglected-heiress-strikes-back/chapter-266" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/the-neglected-heiress-strikes-back/chapter-268" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'The Neglected Heiress Strikes Back',
+                url: '/novels/the-neglected-heiress-strikes-back/',
+                cover_url: '/covers/the-neglected-heiress-strikes-back-ScreenShot_2026-01-24_123501_431.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 267
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

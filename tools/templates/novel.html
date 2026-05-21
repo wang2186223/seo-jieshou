@@ -1,116 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset=    // Natural 72-hour event    // Track PageView with 72-hour prevention
-    if (shouldTrackEvent('PageView_Novel')) {
-        fbq('track', 'PageView');
-        console.log('Facebook事件已发送: PageView (小说介绍页浏览)');
-    } else {
-        console.log('Facebook事件已跳过: PageView_Novel (本72小时内已发送)');
-    }ng prevention (resets every 3 days)
-    function shouldTrackEvent(eventName) {
-        const now = new Date();
-        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
-        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
-        const storageKey = `fb_event_${eventName}`;
-        const lastTrackedPeriod = localStorage.getItem(storageKey);
-        
-        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
-            localStorage.setItem(storageKey, currentPeriod.toString());
-            return true;
-        }
-        
-        return false;
-    }meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if novel.title %}{{ novel.title }} - NovelVibe{% else %}Book Details - NovelVibe{% endif %}</title>
+    
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RVRCET07"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-62HR245J7Y"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-L2RVRCET07');
-    </script>
-    
-    <!-- Reddit Traffic Tracking -->
-    <script>
-    (function() {
-        'use strict';
-        
-        function getURLParameter(name) {
-            const params = new URLSearchParams(window.location.search);
-            return params.get(name);
-        }
-        
-        function trackRedditSource() {
-            const utmSource = getURLParameter('utm_source');
-            const utmMedium = getURLParameter('utm_medium');
-            const utmCampaign = getURLParameter('utm_campaign');
-            const utmContent = getURLParameter('utm_content');
-            
-            if (utmSource && utmSource.toLowerCase() === 'reddit') {
-                const trafficData = {
-                    source: 'reddit',
-                    medium: utmMedium || 'unknown',
-                    campaign: utmCampaign || 'organic',
-                    content: utmContent || '',
-                    timestamp: new Date().toISOString(),
-                    page: window.location.pathname
-                };
-                
-                localStorage.setItem('traffic_source', 'reddit');
-                localStorage.setItem('traffic_data', JSON.stringify(trafficData));
-                localStorage.setItem('traffic_timestamp', Date.now().toString());
-                
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'reddit_visit', {
-                        'event_category': 'Traffic Source',
-                        'event_label': utmMedium || 'unknown_subreddit',
-                        'campaign': utmCampaign || 'organic'
-                    });
-                }
-                
-                if (typeof fbq !== 'undefined') {
-                    fbq('trackCustom', 'RedditVisit', {
-                        medium: utmMedium || 'unknown',
-                        campaign: utmCampaign || 'organic'
-                    });
-                }
-                
-                return trafficData;
-            }
-            
-            const existingSource = localStorage.getItem('traffic_source');
-            const existingTimestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
-            const sessionDuration = 30 * 60 * 1000;
-            
-            if (existingSource === 'reddit' && (Date.now() - existingTimestamp) < sessionDuration) {
-                const savedData = localStorage.getItem('traffic_data');
-                if (savedData) return JSON.parse(savedData);
-            }
-            
-            return null;
-        }
-        
-        window.getTrafficSource = function() {
-            const trafficData = localStorage.getItem('traffic_data');
-            if (trafficData) {
-                try {
-                    const data = JSON.parse(trafficData);
-                    const timestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
-                    const sessionDuration = 30 * 60 * 1000;
-                    
-                    if ((Date.now() - timestamp) < sessionDuration) {
-                        return data;
-                    }
-                } catch (e) {}
-            }
-            return null;
-        };
-        
-        trackRedditSource();
-    })();
+      gtag('config', 'G-62HR245J7Y');
     </script>
     
     <!-- Google Publisher Tag (GPT) -->
@@ -345,7 +257,7 @@
             };
             
             // 发送数据到 Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -364,7 +276,7 @@
                 userIP: 'Unknown'
             };
             
-            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {

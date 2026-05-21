@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -24,94 +34,15 @@
     </script>
     
     <title>{% if page_title %}{{ page_title }}{% else %}NovelVibe - Free Novels for Women{% endif %}</title>
+    
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RVRCET07"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-62HR245J7Y"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-L2RVRCET07');
-    </script>
-    
-    <!-- Reddit Traffic Tracking -->
-    <script>
-    (function() {
-        'use strict';
-        
-        function getURLParameter(name) {
-            const params = new URLSearchParams(window.location.search);
-            return params.get(name);
-        }
-        
-        function trackRedditSource() {
-            const utmSource = getURLParameter('utm_source');
-            const utmMedium = getURLParameter('utm_medium');
-            const utmCampaign = getURLParameter('utm_campaign');
-            const utmContent = getURLParameter('utm_content');
-            
-            if (utmSource && utmSource.toLowerCase() === 'reddit') {
-                const trafficData = {
-                    source: 'reddit',
-                    medium: utmMedium || 'unknown',
-                    campaign: utmCampaign || 'organic',
-                    content: utmContent || '',
-                    timestamp: new Date().toISOString(),
-                    page: window.location.pathname
-                };
-                
-                localStorage.setItem('traffic_source', 'reddit');
-                localStorage.setItem('traffic_data', JSON.stringify(trafficData));
-                localStorage.setItem('traffic_timestamp', Date.now().toString());
-                
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'reddit_visit', {
-                        'event_category': 'Traffic Source',
-                        'event_label': utmMedium || 'unknown_subreddit',
-                        'campaign': utmCampaign || 'organic'
-                    });
-                }
-                
-                if (typeof fbq !== 'undefined') {
-                    fbq('trackCustom', 'RedditVisit', {
-                        medium: utmMedium || 'unknown',
-                        campaign: utmCampaign || 'organic'
-                    });
-                }
-                
-                return trafficData;
-            }
-            
-            const existingSource = localStorage.getItem('traffic_source');
-            const existingTimestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
-            const sessionDuration = 30 * 60 * 1000;
-            
-            if (existingSource === 'reddit' && (Date.now() - existingTimestamp) < sessionDuration) {
-                const savedData = localStorage.getItem('traffic_data');
-                if (savedData) return JSON.parse(savedData);
-            }
-            
-            return null;
-        }
-        
-        window.getTrafficSource = function() {
-            const trafficData = localStorage.getItem('traffic_data');
-            if (trafficData) {
-                try {
-                    const data = JSON.parse(trafficData);
-                    const timestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
-                    const sessionDuration = 30 * 60 * 1000;
-                    
-                    if ((Date.now() - timestamp) < sessionDuration) {
-                        return data;
-                    }
-                } catch (e) {}
-            }
-            return null;
-        };
-        
-        trackRedditSource();
-    })();
+      gtag('config', 'G-62HR245J7Y');
     </script>
     
     <!-- Google Publisher Tag (GPT) -->
@@ -166,6 +97,221 @@
     src="https://www.facebook.com/tr?id=1355356909503023&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
+    
+    <!-- Facebook 参数检测跳转逻辑 -->
+    <script>
+    (function() {
+        'use strict';
+        
+        /**
+         * 检测是否有 Facebook 投放参数
+         */
+        function hasFacebookParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const storedParams = localStorage.getItem('tracking_params');
+            
+            // 检查当前URL是否有 fbclid
+            if (urlParams.has('fbclid')) {
+                return true;
+            }
+            
+            // 检查是否有 utm_source=facebook
+            if (urlParams.get('utm_source') === 'facebook' || 
+                urlParams.get('utm_source') === 'fb' ||
+                urlParams.get('utm_source') === 'ig' ||
+                urlParams.get('utm_source') === 'instagram') {
+                return true;
+            }
+            
+            // 检查本地存储中是否有保存的 FB 参数
+            if (storedParams) {
+                try {
+                    const params = JSON.parse(storedParams);
+                    if (params.fbclid || params.utm_source === 'facebook') {
+                        return true;
+                    }
+                } catch (e) {
+                    console.error('解析存储参数失败:', e);
+                }
+            }
+            
+            return false;
+        }
+        
+        /**
+         * 跳转到简化版首页
+         */
+        function redirectToCleanVersion() {
+            console.log('检测到非FB用户，跳转到简化版首页');
+            window.location.href = '/index-clean.html';
+        }
+        
+        // 执行检测和跳转
+        if (!hasFacebookParams()) {
+            redirectToCleanVersion();
+        } else {
+            console.log('检测到FB投放用户，保持在完整首页');
+        }
+    })();
+    </script>
+    <!-- End Facebook 参数检测跳转逻辑 -->
+    
+    <!-- 浏览器环境检测系统 -->
+    <script>
+    (function() {
+        'use strict';
+        
+        /**
+         * 浏览器环境检测器
+         */
+        const BrowserDetector = {
+            /**
+             * 检测是否为 Facebook 应用内浏览器
+             */
+            isFacebookBrowser: function() {
+                const ua = navigator.userAgent;
+                // Facebook App 安卓版: FBAN, FBAV
+                // Facebook App iOS版: FBIOS
+                // Facebook 内置浏览器: FB_IAB, FBAV
+                return /FBAN|FBAV|FBIOS|FB_IAB/i.test(ua);
+            },
+            
+            /**
+             * 检测是否为 Instagram 应用内浏览器
+             */
+            isInstagramBrowser: function() {
+                const ua = navigator.userAgent;
+                return /Instagram/i.test(ua);
+            },
+            
+            /**
+             * 检测是否来自 Facebook 广告（有 fbclid 参数）
+             */
+            isFromFacebookAd: function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.has('fbclid');
+            },
+            
+            /**
+             * 获取详细的浏览器信息
+             */
+            getDetailedInfo: function() {
+                const ua = navigator.userAgent;
+                const urlParams = new URLSearchParams(window.location.search);
+                
+                return {
+                    // 基本信息
+                    userAgent: ua,
+                    isMobile: /Mobile|Android|iPhone/i.test(ua),
+                    isTablet: /iPad|Tablet/i.test(ua),
+                    
+                    // Facebook 相关
+                    isFacebookBrowser: this.isFacebookBrowser(),
+                    isInstagramBrowser: this.isInstagramBrowser(),
+                    hasFbclid: this.isFromFacebookAd(),
+                    fbclid: urlParams.get('fbclid') || null,
+                    
+                    // 平台信息
+                    isAndroid: /Android/i.test(ua),
+                    isIOS: /iPhone|iPad|iPod/i.test(ua),
+                    
+                    // 其他社交媒体
+                    isTwitterBrowser: /Twitter/i.test(ua),
+                    isLinkedInBrowser: /LinkedIn/i.test(ua),
+                    
+                    // UTM 参数
+                    utmSource: urlParams.get('utm_source') || null,
+                    utmMedium: urlParams.get('utm_medium') || null,
+                    utmCampaign: urlParams.get('utm_campaign') || null,
+                    
+                    // 时间戳
+                    detectedAt: new Date().toISOString()
+                };
+            },
+            
+            /**
+             * 保存浏览器环境信息到 localStorage
+             */
+            saveEnvironmentInfo: function() {
+                const info = this.getDetailedInfo();
+                try {
+                    localStorage.setItem('browser_environment', JSON.stringify(info));
+                    console.log('浏览器环境信息已保存:', info);
+                } catch (e) {
+                    console.error('保存浏览器环境信息失败:', e);
+                }
+                return info;
+            },
+            
+            /**
+             * 获取保存的环境信息
+             */
+            getSavedEnvironmentInfo: function() {
+                try {
+                    const saved = localStorage.getItem('browser_environment');
+                    if (saved) {
+                        return JSON.parse(saved);
+                    }
+                } catch (e) {
+                    console.error('读取浏览器环境信息失败:', e);
+                }
+                return null;
+            },
+            
+            /**
+             * 判断是否为 Facebook 投放用户
+             */
+            isFacebookAdUser: function() {
+                const current = this.getDetailedInfo();
+                const saved = this.getSavedEnvironmentInfo();
+                
+                // 当前有 fbclid 或者之前保存过 fbclid
+                return current.hasFbclid || 
+                       current.isFacebookBrowser || 
+                       (saved && (saved.hasFbclid || saved.isFacebookBrowser));
+            },
+            
+            /**
+             * 初始化检测系统
+             */
+            init: function() {
+                const info = this.saveEnvironmentInfo();
+                
+                // 添加标识类到 body
+                if (info.isFacebookBrowser) {
+                    document.body.classList.add('fb-browser');
+                }
+                if (info.isInstagramBrowser) {
+                    document.body.classList.add('ig-browser');
+                }
+                if (info.hasFbclid) {
+                    document.body.classList.add('fb-ad-user');
+                }
+                if (this.isFacebookAdUser()) {
+                    document.body.classList.add('fb-user');
+                }
+                
+                // 输出检测结果
+                console.log('=== 浏览器环境检测 ===');
+                console.log('Facebook 浏览器:', info.isFacebookBrowser);
+                console.log('Instagram 浏览器:', info.isInstagramBrowser);
+                console.log('来自 FB 广告:', info.hasFbclid);
+                console.log('FB 投放用户:', this.isFacebookAdUser());
+                console.log('====================');
+                
+                return info;
+            }
+        };
+        
+        // 立即执行检测
+        const environmentInfo = BrowserDetector.init();
+        
+        // 将检测器暴露到全局作用域，方便调试
+        window.BrowserDetector = BrowserDetector;
+        window.environmentInfo = environmentInfo;
+    })();
+    </script>
+    <!-- End 浏览器环境检测系统 -->
     
     <!-- 追踪参数保持系统 -->
     <script>
@@ -337,21 +483,16 @@
     // 页面访问数据收集
     function sendPageVisit() {
         // 先获取用户IP地址
-        const trafficSource = window.getTrafficSource ? window.getTrafficSource() : null;
-        
         getUserIP().then(userIP => {
             const data = {
                 page: window.location.href,
                 userAgent: navigator.userAgent,
                 referrer: document.referrer || 'direct',
-                userIP: userIP,
-                trafficSource: trafficSource ? trafficSource.source : 'direct',
-                trafficMedium: trafficSource ? trafficSource.medium : '',
-                trafficCampaign: trafficSource ? trafficSource.campaign : ''
+                userIP: userIP
             };
             
             // 发送数据到 Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -367,13 +508,10 @@
                 page: window.location.href,
                 userAgent: navigator.userAgent,
                 referrer: document.referrer || 'direct',
-                userIP: 'Unknown',
-                trafficSource: trafficSource ? trafficSource.source : 'direct',
-                trafficMedium: trafficSource ? trafficSource.medium : '',
-                trafficCampaign: trafficSource ? trafficSource.campaign : ''
+                userIP: 'Unknown'
             };
             
-            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {

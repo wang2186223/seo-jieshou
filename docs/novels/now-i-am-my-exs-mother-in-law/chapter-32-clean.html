@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 31 - Now, I Am My Ex&#39;s Mother-In-Law  | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TFKEB1Q55"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1TFKEB1Q55');
+    </script>
+    
+    <!-- Google Publisher Tag (GPT) -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        // Define ad slots for the chapter page
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_1', [300, 250], 'div-gpt-ad-1762511964282-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_2', [300, 250], 'div-gpt-ad-1762511986518-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_3', [300, 250], 'div-gpt-ad-1762512008111-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_4', [300, 250], 'div-gpt-ad-1762512031919-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_5', [300, 250], 'div-gpt-ad-1762512054239-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '9481513911889537');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/now-i-am-my-exs-mother-in-law/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <a href="/novels/now-i-am-my-exs-mother-in-law/" class="btn" id="toc-btn" title="Back to Book Details">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 31</h1>
+            <div class="content font-medium">
+                <p>The morning sun cast golden rays through the curtains, stirring Lillian from her restless sleep. She groaned, rubbing her temples as the remnants of last night’s confrontation with Donovan replayed in her mind. His betrayal still stung like a fresh wound, but she refused to let it break her.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_1 -->
+                <div id='div-gpt-ad-1762511964282-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511964282-0'); });
+                  </script>
+                </div>
+                <p>Downstairs, the scent of freshly brewed coffee and warm pastries filled the air. Lucien, the flirtatious head chef, had outdone himself again. Lillian forced a smile as she entered the dining room, where Sebastian sat with Oliver, who was enthusiastically recounting his latest school adventure.</p>
+                <p>&#34;Morning,&#34; Lillian murmured, sliding into her seat.</p>
+                <p>Sebastian’s piercing gaze flicked to her, assessing. &#34;You look exhausted.&#34;</p>
+                <p>She shrugged. &#34;Didn’t sleep well.&#34;</p>
+                <p>Oliver, oblivious to the tension, grinned. &#34;Papa says we’re going to the lake house this weekend! Can you come too, Lillian?&#34;</p>
+                <p>Before she could answer, Sebastian spoke. &#34;She has training.&#34;</p>
+                <p>Lillian stiffened. &#34;Actually, I don’t. Marcus cleared my schedule.&#34;</p>
+                <p>A flicker of surprise crossed Sebastian’s face, but he quickly masked it. &#34;Then I suppose you’re free to join us.&#34;</p>
+                <p>The way he said it—so indifferent—made her chest tighten. Was he still angry about last night? Or was this just another power play?</p>
+                <p>Beatrice burst into the room, her phone clutched in her hand. &#34;You won’t believe what just happened!&#34;</p>
+                <p>Lillian arched a brow. &#34;What?&#34;</p>
+                <p>&#34;Evelyn posted a picture with Donovan at some fancy gala. The caption? ‘Fated and flawless.’&#34; Beatrice rolled her eyes. &#34;As if anyone buys that.&#34;</p>
+                <p>Lillian’s stomach twisted, but she refused to let it show. &#34;Good for them.&#34;</p>
+                <p>Sebastian’s jaw clenched. &#34;Ignore it. They’re not worth your energy.&#34;</p>
+                <p>She met his gaze, surprised by the intensity in his eyes. Was that… protectiveness?</p>
+                <p>Before she could dwell on it, Theodore entered, his expression grave. &#34;Sir, we have a situation. Alpha Harrison’s pack is making moves near our eastern border.&#34;</p>
+                <p>Sebastian stood abruptly. &#34;Gather the gammas. We’ll handle this now.&#34;</p>
+                <p>Lillian rose as well. &#34;I’m coming.&#34;</p>
+                <p>Sebastian hesitated, then nodded. &#34;Fine. But stay close.&#34;</p>
+                <p>As they strode out, Beatrice grabbed Lillian’s arm. &#34;Be careful.&#34;</p>
+                <p>Lillian squeezed her hand. &#34;Always.&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_2 -->
+                <div id='div-gpt-ad-1762511986518-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511986518-0'); });
+                  </script>
+                </div>
+                <p>Outside, the pack was already mobilizing. Marcus briefed them quickly—Harrison’s wolves had been spotted trespassing, likely testing their defenses.</p>
+                <p>Sebastian turned to Lillian. &#34;Stick with Julian. Don’t engage unless necessary.&#34;</p>
+                <p>She bristled at the order but nodded.</p>
+                <p>The forest was eerily quiet as they moved in. Then—a rustle. A snarl.</p>
+                <p>Harrison’s wolves emerged from the shadows, their eyes gleaming with challenge.</p>
+                <p>Sebastian stepped forward, his voice a deadly calm. &#34;You’re on Blackwood territory. Leave. Now.&#34;</p>
+                <p>The rival alpha smirked. &#34;Or what?&#34;</p>
+                <p>Before Sebastian could respond, a blur of fur lunged from the trees—straight for Lillian.</p>
+                <p>Instinct took over. She shifted mid-air, meeting the attack with claws and teeth.</p>
+                <p>The fight was brutal, but she held her own. When the dust settled, the trespassers were retreating, their alpha’s pride wounded.</p>
+                <p>Sebastian approached her, his gaze unreadable. &#34;You didn’t follow orders.&#34;</p>
+                <p>Lillian lifted her chin. &#34;I didn’t need to.&#34;</p>
+                <p>For a heartbeat, silence stretched between them. Then, the ghost of a smile touched his lips. &#34;No. You didn’t.&#34;</p>
+                <p>As they walked back, Lillian realized something had shifted. The tension between them wasn’t just anger or frustration anymore.</p>
+                <p>It was something far more dangerous.</p>
+                <p>And she wasn’t sure she wanted to resist it.</p>
+                <p>Third Person POV</p>
+                <p>Donovan&#39;s phone buzzed against the polished mahogany bar. He swirled the amber liquid in his glass before taking a slow sip, then signaled the bartender for another refill. The ice clinked as he exhaled sharply before answering.</p>
+                <p>&#34;You better not be wasting my time,&#34; he said, skipping any greeting.</p>
+                <p>On the other end, his subordinate hesitated before speaking. &#34;Lillian wasn’t fired. She convinced Oliver to finish his assignments despite the leaked videos. Even Theodore tried appealing to Alpha Sebastian, but it didn’t work. She’s... persuasive.&#34;</p>
+                <p>Donovan’s grip tightened around his glass. The bartender slid a fresh drink toward him, and he tossed back half of it in one go. &#34;What about the school? Did you handle it?&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_3 -->
+                <div id='div-gpt-ad-1762512008111-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512008111-0'); });
+                  </script>
+                </div>
+                <p>&#34;Yes,&#34; the subordinate replied quickly. &#34;I paid off one of her professors—Sinclair. He’ll plant evidence to get her expelled.&#34;</p>
+                <p>A smirk curled Donovan’s lips. &#34;Good. At least that’s one problem solved.&#34;</p>
+                <p>&#34;There’s more,&#34; the man added. &#34;I reached out to one of her enemies at school—Cassandra. She’s digging up dirt on Lillian. Anything useful, I’ll pass along. Could be leverage.&#34;</p>
+                <p>&#34;Excellent.&#34; Donovan’s voice dripped with satisfaction. &#34;Keep me updated.&#34;</p>
+                <p>&#34;Will do, boss.&#34; The line went dead.</p>
+                <p>Donovan leaned back, swirling his whiskey as a dark smile spread across his face. Soon, everything would fall into place. He’d marry Victoria, claim the Alpha title, and make Lillian his—whether she wanted it or not.</p>
+                <p>Lillian’s POV</p>
+                <p>&#34;I look like I’m here for a board meeting, not a gala,&#34; I muttered, tugging at the hem of my fitted black skirt. My blouse was crisp, professional, but compared to the sea of glittering gowns and tailored suits around me, I might as well have been wearing pajamas.</p>
+                <p>The reception hall had been transformed into something out of a fairy tale—crystal chandeliers, cascading floral arrangements, and waiters weaving through the crowd with silver trays. The award ceremony was about to start, and my stomach twisted at the thought. Winning meant a full scholarship—freedom from tuition worries next year.</p>
+                <p>I turned to Beatrice, who was scanning the room with wide eyes. &#34;Why is everyone dressed like they’re meeting royalty?&#34;</p>
+                <p>She shot me an incredulous look. &#34;You didn’t hear? Sebastian Blackwood might actually show up tonight. He’s invited every year but never comes. Rumor has it he personally confirmed with Headmaster Wellington this time.&#34; She lowered her voice. &#34;Half these girls would sell their souls just to breathe the same air as him.&#34;</p>
+                <p>My chest tightened at the mention of Sebastian. Of course, I knew he was invited annually, but the idea of him actually being here sent an unexpected jolt through me.</p>
+                <p>Then the whispers began.</p>
+                <p>A hush fell over the crowd as the grand doors swung open.</p>
+                <p>And there he was.</p>
+                <p>Sebastian Blackwood, in the flesh, his presence commanding the room like a storm rolling in.</p>
+                <p>Every head turned. Every breath hitched.</p>
+                <p>Including mine.</p>
+                <p>The stage was elegantly set with a row of chairs, each bearing a nameplate that gleamed under the soft lighting. My seat was right in the center, positioned beside Cassandra’s. A few other distinguished guests had already taken their places on either side of us, waiting with poised anticipation for the ceremony to begin.</p>
+                <p>Then, the grand doors swung open.</p>
+                <p>A hush fell over the room as the Silver Crescent Gamma warriors filed in, their presence commanding immediate attention. At their center stood a figure who radiated power—Sebastian Blackwood, the Lycan chairman himself.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_4 -->
+                <div id='div-gpt-ad-1762512031919-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512031919-0'); });
+                  </script>
+                </div>
+                <p>Sebastian strode into the hall with the effortless confidence of a man who owned every space he entered. His entourage moved in perfect sync, their disciplined steps echoing through the now-silent reception hall. My breath caught as my gaze locked onto him, standing tall amidst his warriors.</p>
+                <p>The moment he appeared, the whispers began—giggles, gasps, and hushed admiration from the girls around the room.</p>
+                <p>&#34;Oh my goddess,&#34; Beatrice murmured beside me, her voice barely above a whisper. &#34;He actually came.&#34;</p>
+                <p>&#34;I’m just as shocked,&#34; I admitted, unable to tear my eyes away as Sebastian took his seat in the front row, his piercing gaze scanning the room.</p>
+                <p>Beatrice nudged me playfully, a mischievous grin tugging at her lips. &#34;If only they knew you were the one who almost ended up in his bed last weekend. The entire school would lose their minds.&#34;</p>
+                <p>I elbowed her sharply, but my cheeks burned at the memory.</p>
+                <p>The ceremony was about to begin—but with Sebastian here, I already knew this night wouldn’t be ordinary.</p>
+                <p>The morning sun cast golden streaks across the lavish bedroom as Lillian stirred awake. She blinked against the light, momentarily disoriented by the unfamiliar silk sheets beneath her fingertips. Then it all came rushing back - the mating ceremony, the intoxicating scent of Sebastian Blackwood, the way his strong arms had carried her to this very bed last night.</p>
+                <p>A delicious shiver ran down her spine as she recalled the possessive gleam in his dark eyes when he&#39;d finally claimed her as his mate. The memory made her toes curl beneath the sheets.</p>
+                <p>&#34;You&#39;re awake.&#34; The deep rumble came from the doorway, making her heart skip a beat. Sebastian leaned against the frame, his muscular form barely contained by the crisp white shirt he wore. The top buttons were undone, revealing a tantalizing glimpse of his sculpted chest.</p>
+                <p>Lillian instinctively pulled the sheets higher, suddenly self-conscious. &#34;Good morning,&#34; she murmured, her voice still thick with sleep.</p>
+                <p>Sebastian&#39;s lips curved into that devastating smirk that always made her knees weak. &#34;Sleep well, little wolf?&#34;</p>
+                <p>She could feel the heat rising in her cheeks. &#34;I... um...&#34;</p>
+                <p>Before she could form a coherent response, Sebastian crossed the room in three long strides. He perched on the edge of the bed, his large hand reaching out to tuck a stray curl behind her ear. The simple touch sent electric currents dancing across her skin.</p>
+                <p>&#34;Don&#39;t be shy now,&#34; he teased, his thumb tracing the mark he&#39;d left on her neck. &#34;After last night, I thought we were past formalities.&#34;</p>
+                <p>Lillian swallowed hard, her pulse fluttering beneath his fingertips. Every nerve in her body was acutely aware of his proximity, of the intoxicating mix of sandalwood and musk that was uniquely Sebastian.</p>
+                <p>&#34;I&#39;m just... adjusting,&#34; she admitted, meeting his gaze. The intensity in his dark eyes made her breath catch.</p>
+                <p>Sebastian leaned closer, his warm breath ghosting over her lips. &#34;Then let me help you adjust faster,&#34; he murmured before capturing her mouth in a searing kiss that left no doubt about his claim.</p>
+                <p>When they finally broke apart, both breathing heavily, Sebastian rested his forehead against hers. &#34;Breakfast is waiting downstairs,&#34; he said, his voice rough with barely restrained desire. &#34;But I&#39;d much rather stay here and feast on you.&#34;</p>
+                <p>Lillian&#39;s stomach chose that moment to growl loudly, making them both laugh. Sebastian pressed one last kiss to her forehead before standing. &#34;Come down when you&#39;re ready. Oliver has been asking for you all morning.&#34;</p>
+                <p>As he turned to leave, Lillian called after him, &#34;Sebastian?&#34; When he glanced back, she gave him a shy smile. &#34;Thank you... for last night.&#34;</p>
+                <p>The look he gave her then - full of heat and promise - made her toes curl all over again. &#34;Oh darling,&#34; he said, his voice dropping to that low, dangerous register that did things to her insides. &#34;Last night was just the beginning.&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_5 -->
+                <div id='div-gpt-ad-1762512054239-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512054239-0'); });
+                  </script>
+                </div>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/now-i-am-my-exs-mother-in-law/chapter-31" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/now-i-am-my-exs-mother-in-law/chapter-33" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'Now, I Am My Ex&#39;s Mother-In-Law ',
+                url: '/novels/now-i-am-my-exs-mother-in-law/',
+                cover_url: '/covers/now-i-am-my-exs-mother-in-law-ScreenShot_2025-12-08_100128_438.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 32
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

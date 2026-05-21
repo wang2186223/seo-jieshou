@@ -1,53 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Google AdSense Auto Ads -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5956919578181050"
-     crossorigin="anonymous"></script>
-    
-    <!-- Auto Redirect to Reading Site -->
-    
-    <script>
-    (function() {
-        'use strict';
-        
-        // 自动跳转到阅读站点
-        const redirectUrl = 'https://www.2opennovel.xyz';
-        
-        if (redirectUrl && window.location.hostname !== new URL(redirectUrl).hostname) {
-            // 获取当前页面的路径（例如：/novels/xxx/chapter-342）
-            const currentPath = window.location.pathname;
-            
-            // 构建完整的跳转URL
-            const targetUrl = redirectUrl + currentPath;
-            
-            // 立即跳转
-            window.location.replace(targetUrl);
-        }
-        
-        // 修复导航按钮链接 - 如果已经在阅读站点，按钮应该指向阅读站点
-        window.addEventListener('DOMContentLoaded', function() {
-            if (redirectUrl && window.location.hostname === new URL(redirectUrl).hostname) {
-                // 当前在阅读站点，修改所有导航链接为阅读站点域名
-                const navLinks = document.querySelectorAll('a[href^="/novels/"]');
-                const redirectHost = new URL(redirectUrl).origin;
-                
-                navLinks.forEach(function(link) {
-                    const currentHref = link.getAttribute('href');
-                    if (currentHref && currentHref.startsWith('/')) {
-                        link.setAttribute('href', redirectHost + currentHref);
-                    }
-                });
-            }
-        });
-    })();
-    </script>
-    
-    
-    <!-- Disable Console Output -->
+        <!-- Disable Console Output -->
     <script>
     (function() {
         'use strict';
@@ -67,98 +34,32 @@
     </script>
     
     <title>Chapter 5 - Heaven Sent Her, Hell Obeyed Her | NovelVibe</title>
+    
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2RVRCET07"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TFKEB1Q55"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-L2RVRCET07');
+      gtag('config', 'G-1TFKEB1Q55');
     </script>
     
-    <!-- Reddit Traffic Tracking -->
-    <script>
-    (function() {
-        'use strict';
-        
-        function getURLParameter(name) {
-            const params = new URLSearchParams(window.location.search);
-            return params.get(name);
-        }
-        
-        function trackRedditSource() {
-            const utmSource = getURLParameter('utm_source');
-            const utmMedium = getURLParameter('utm_medium');
-            const utmCampaign = getURLParameter('utm_campaign');
-            const utmContent = getURLParameter('utm_content');
-            
-            if (utmSource && utmSource.toLowerCase() === 'reddit') {
-                const trafficData = {
-                    source: 'reddit',
-                    medium: utmMedium || 'unknown',
-                    campaign: utmCampaign || 'organic',
-                    content: utmContent || '',
-                    timestamp: new Date().toISOString(),
-                    page: window.location.pathname
-                };
-                
-                localStorage.setItem('traffic_source', 'reddit');
-                localStorage.setItem('traffic_data', JSON.stringify(trafficData));
-                localStorage.setItem('traffic_timestamp', Date.now().toString());
-                
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'reddit_visit', {
-                        'event_category': 'Traffic Source',
-                        'event_label': utmMedium || 'unknown_subreddit',
-                        'campaign': utmCampaign || 'organic'
-                    });
-                }
-                
-                if (typeof fbq !== 'undefined') {
-                    fbq('trackCustom', 'RedditVisit', {
-                        medium: utmMedium || 'unknown',
-                        campaign: utmCampaign || 'organic'
-                    });
-                }
-                
-                return trafficData;
-            }
-            
-            const existingSource = localStorage.getItem('traffic_source');
-            const existingTimestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
-            const sessionDuration = 30 * 60 * 1000;
-            
-            if (existingSource === 'reddit' && (Date.now() - existingTimestamp) < sessionDuration) {
-                const savedData = localStorage.getItem('traffic_data');
-                if (savedData) return JSON.parse(savedData);
-            }
-            
-            return null;
-        }
-        
-        window.getTrafficSource = function() {
-            const trafficData = localStorage.getItem('traffic_data');
-            if (trafficData) {
-                try {
-                    const data = JSON.parse(trafficData);
-                    const timestamp = parseInt(localStorage.getItem('traffic_timestamp') || '0');
-                    const sessionDuration = 30 * 60 * 1000;
-                    
-                    if ((Date.now() - timestamp) < sessionDuration) {
-                        return data;
-                    }
-                } catch (e) {}
-            }
-            return null;
-        };
-        
-        trackRedditSource();
-    })();
-    </script>
-    
-    <!-- Ad Script Header -->
+    <!-- Google Publisher Tag (GPT) -->
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        // Define ad slots for the chapter page
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_1', [300, 250], 'div-gpt-ad-1762511964282-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_2', [300, 250], 'div-gpt-ad-1762511986518-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_3', [300, 250], 'div-gpt-ad-1762512008111-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_4', [300, 250], 'div-gpt-ad-1762512031919-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_5', [300, 250], 'div-gpt-ad-1762512054239-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
     
     <!-- Facebook Pixel Code -->
     <script>
@@ -171,7 +72,7 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '3902941096613787');
+    fbq('init', '9481513911889537');
     
     // Natural 72-hour event tracking prevention (resets every 3 days)
     function shouldTrackEvent(eventName) {
@@ -238,7 +139,7 @@
     });
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=3902941096613787&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
     
@@ -420,7 +321,7 @@
             };
             
             // Send data to Google Apps Script (V7)
-            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -438,7 +339,7 @@
                 userIP: 'Unknown'
             };
             
-            fetch('https://script.google.com/macros/s/AKfycbwPaVwgI4NXDckdMv-jw5rA3kgUMldVF4IK3YBaIv90jRTAuuuexPmY2Xy4wiB6f3cK/exec', {
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
                 method: 'POST',
                 mode: 'no-cors',
                 headers: {
@@ -687,73 +588,6 @@
             gap: 15px;
         }
 
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: -300px;
-            width: 300px;
-            height: 100%;
-            background-color: var(--bg-color);
-            border-right: 1px solid var(--border-color);
-            z-index: 200;
-            overflow-y: auto;
-            padding: 20px;
-            transition: left 0.3s ease;
-        }
-
-        .sidebar.open {
-            left: 0;
-        }
-
-        .sidebar-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 199;
-            display: none;
-        }
-
-        .sidebar-overlay.open {
-            display: block;
-        }
-
-        .sidebar-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .sidebar-title {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .chapter-list {
-            list-style: none;
-        }
-
-        .chapter-item {
-            padding: 12px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .chapter-item a {
-            color: var(--text-color);
-            text-decoration: none;
-            display: block;
-        }
-
-        .chapter-item.active a {
-            color: var(--primary-color);
-            font-weight: 600;
-        }
-
         .font-small {
             font-size: 16px;
         }
@@ -783,11 +617,6 @@
                 padding: 10px 15px;
                 font-size: 14px;
             }
-            
-            .sidebar {
-                width: 85%;
-                left: -85%;
-            }
         }
     </style>
     
@@ -808,9 +637,9 @@
                     <button class="btn" id="theme-btn">
                         <div class="theme-toggle"></div>
                     </button>
-                    <button class="btn" id="toc-btn">
+                    <a href="/novels/heaven-sent-her-hell-obeyed-her/" class="btn" id="toc-btn" title="Back to Book Details">
                         <i class="fas fa-bars"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -821,9 +650,12 @@
             <h1 class="chapter-title">Chapter 5</h1>
             <div class="content font-medium">
                 <p>The newcomer was Sean Murray-Stella&#39;s fifth son and a seasoned fighter known for his boxing skills.</p>
-                <!-- Ad Unit 1 -->
-                <ins class="3b35b82f" data-key="c651d999796ed9329d49daca31964dc3"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_1 -->
+                <div id='div-gpt-ad-1762511964282-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511964282-0'); });
+                  </script>
+                </div>
                 <p>Carl caught sight of him moving in on Eliana,and he dashed forward to block him. &#34;Sean! Stop right there!&#34;</p>
                 <p>Sean wasn&#39;t interested in hearing him out. In his mind, the only thing that mattered was taking down the person he believed had hurt his mother.</p>
                 <p>Carl tried to hold his ground, but Sean shoved him aside with a sharp push and swung his attack toward Eliana.</p>
@@ -837,9 +669,12 @@
                 <p>In a blink, Eliana had become nothing more than a streak of motion, her counterattack striking with flawless aim and enough force to slam Sean to the floor, holding him there without effort. Her speed and precision were nothing short of extraordinary.</p>
                 <p>The butler might have known nothing about fighting skills,but even he could tell that her skill left Sean far behind. Still, it didn&#39;t add up. How could she be this good?</p>
                 <p>Sean wasn&#39;t just anyone. He trained with the Fist Guild, a boxing circle celebrated for turning out fighters who could dismantle several opponents in one go. Every member of that guild carried a reputation for dominance in the ring.</p>
-                <!-- Ad Unit 2 -->
-                <ins class="3b35b82f" data-key="294ce81fcfc9fd30ba91b1c3a88f64a9"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_2 -->
+                <div id='div-gpt-ad-1762511986518-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511986518-0'); });
+                  </script>
+                </div>
                 <p>The thought crept into the butler&#39;s mind-was Eliana truly some girl from the countryside, or had they all been mistaken?</p>
                 <p>While the butler wrestled with his disbelief, Carl shook off his shock and hurried toward Eliana. &#34;Lia,are you hurt?&#34; he asked quickly.</p>
                 <p>Eliana gave a small shake of her headp her face unreadable.</p>
@@ -853,9 +688,12 @@
                 <p>She gave him a brief nod before returning to Stella&#39;s side, slipping back into her acupuncture work as though the clash had never happened.</p>
                 <p>Sean got to his feet with effort, his movements stiff. Carl&#39;s eyes flicked between the two of them before he asked, &#34;Sean, are you sure you&#39;re okay?&#34;</p>
                 <p>The truth was far from it. Sean&#39;s right arm hung useless, every twitch sending sharp jolts of pain through him.</p>
-                <!-- Ad Unit 3 -->
-                <ins class="3b35b82f" data-key="55b92dd50204072470d4a7cbc6d2dfb4"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_3 -->
+                <div id='div-gpt-ad-1762512008111-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512008111-0'); });
+                  </script>
+                </div>
                 <p>Even the smallest movement made it feel as though the bone might snap again.</p>
                 <p>Yet pride kept him from admitting any weakness.</p>
                 <p>Being a Fist Guild fighter, he couldn&#39;t stomach the thought of being brought down by a ggirl.</p>
@@ -869,9 +707,12 @@
                 <p>&#34;How wasI supposed to guess she was Lia? And are you absolutely sure she&#39;s the same person?&#34; Sean asked, his tone dripping with doubt.</p>
                 <p>&#34;I checked for myself. There&#39;s no mistake,&#34; said Carl with a steady nod.</p>
                 <p>The certainty in Carl&#39;s voice, paired with the jade pendant he presented, chipped away at Sean&#39;s disbelief.</p>
-                <!-- Ad Unit 4 -->
-                <ins class="3b35b82f" data-key="daf3374e6c4dacfe7b183f7fb2c7bc79"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_4 -->
+                <div id='div-gpt-ad-1762512031919-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512031919-0'); });
+                  </script>
+                </div>
                 <p>&#34;Alright,&#34; he muttered, still wincing, then asked why their mother had suddenly fainted.</p>
                 <p>Carl&#39;s face darkened at the question. &#34;Leyla&#39;s the reason.&#34;</p>
                 <p>Sean blinked in surprise. &#34;Leyla? What happened to her?&#34;</p>
@@ -887,9 +728,12 @@
                 <p>With his left hand, he seized Carl&#39;s collar, dragging him close. &#34;So this is about Lia, isn&#39;t it? She comes back, and suddenly Leyla&#39;s cut off? Don&#39;t feed me excuses. Even if times are rough, we&#39;re still capable of giving Leyla a decent life. She&#39;s grown up with us,Carl.How could you throw her away like this?&#34;</p>
                 <p>Carl let out a sharp, impatient huff. &#34;Like I&#39;ve said before-every single one of you is blind except me.&#34; Sean&#39;s brows drew tight as he replied, &#34;Quit talking nonsense. Go find Leyla and make things right. If you don&#39;t, don&#39;t blame me when I lay you out.&#34;</p>
                 <p>The glare Carl gave him was ice-cold. He shoved Sean back and snapped, &#34;You&#39;d raise your hand against your own brother over her? What hold does she have on you? CCan&#39;t you see what she really is?Remember asking why Mom collapsed? I&#39;ll spell it out for you. This wasn&#39;t my doing-Leyla made us sign that agreement. When our family ran into trouble,she wrote this herself to cut ties so we wouldn&#39;t ruin her marriage into the Clarke family. Mom collapsed from the anger!&#34;</p>
-                <!-- Ad Unit 5 -->
-                <ins class="3b35b82f" data-key="2f3125acc828fb3f81a8274ade539c96"></ins>
-                <script async src="https://aj1047.online/194c03ba.js"></script>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_5 -->
+                <div id='div-gpt-ad-1762512054239-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512054239-0'); });
+                  </script>
+                </div>
             </div>
             
             <div class="font-controls">
@@ -918,428 +762,9 @@
         </div>
     </footer>
 
-    <div class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <h2 class="sidebar-title">Table of Contents</h2>
-            <button class="btn" id="close-sidebar">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <ul class="chapter-list">
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-1">Chapter 1</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-2">Chapter 2</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-3">Chapter 3</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-4">Chapter 4</a>
-            </li>
-            
-            <li class="chapter-item active">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-5">Chapter 5</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-6">Chapter 6</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-7">Chapter 7</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-8">Chapter 8</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-9">Chapter 9</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-10">Chapter 10</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-11">Chapter 11</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-12">Chapter 12</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-13">Chapter 13</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-14">Chapter 14</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-15">Chapter 15</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-16">Chapter 16</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-17">Chapter 17</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-18">Chapter 18</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-19">Chapter 19</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-20">Chapter 20</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-21">Chapter 21</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-22">Chapter 22</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-23">Chapter 23</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-24">Chapter 24</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-25">Chapter 25</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-26">Chapter 26</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-27">Chapter 27</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-28">Chapter 28</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-29">Chapter 29</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-30">Chapter 30</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-31">Chapter 31</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-32">Chapter 32</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-33">Chapter 33</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-34">Chapter 34</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-35">Chapter 35</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-36">Chapter 36</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-37">Chapter 37</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-38">Chapter 38</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-39">Chapter 39</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-40">Chapter 40</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-41">Chapter 41</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-42">Chapter 42</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-43">Chapter 43</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-44">Chapter 44</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-45">Chapter 45</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-46">Chapter 46</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-47">Chapter 47</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-48">Chapter 48</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-49">Chapter 49</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-50">Chapter 50</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-51">Chapter 51</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-52">Chapter 52</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-53">Chapter 53</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-54">Chapter 54</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-55">Chapter 55</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-56">Chapter 56</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-57">Chapter 57</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-58">Chapter 58</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-59">Chapter 59</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-60">Chapter 60</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-61">Chapter 61</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-62">Chapter 62</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-63">Chapter 63</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-64">Chapter 64</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-65">Chapter 65</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-66">Chapter 66</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-67">Chapter 67</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-68">Chapter 68</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-69">Chapter 69</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-70">Chapter 70</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-71">Chapter 71</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-72">Chapter 72</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-73">Chapter 73</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-74">Chapter 74</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-75">Chapter 75</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-76">Chapter 76</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-77">Chapter 77</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-78">Chapter 78</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-79">Chapter 79</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-80">Chapter 80</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-81">Chapter 81</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-82">Chapter 82</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-83">Chapter 83</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-84">Chapter 84</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-85">Chapter 85</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-86">Chapter 86</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-87">Chapter 87</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-88">Chapter 88</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-89">Chapter 89</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-90">Chapter 90</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-91">Chapter 91</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-92">Chapter 92</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-93">Chapter 93</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-94">Chapter 94</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-95">Chapter 95</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-96">Chapter 96</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-97">Chapter 97</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-98">Chapter 98</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-99">Chapter 99</a>
-            </li>
-            
-            <li class="chapter-item ">
-                <a href="/novels/heaven-sent-her-hell-obeyed-her/chapter-100">Chapter 100</a>
-            </li>
-            
-        </ul>
-    </div>
-
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
-
     <script>
         // DOM Elements
         const themeBtn = document.getElementById('theme-btn');
-        const tocBtn = document.getElementById('toc-btn');
-        const backBtn = document.getElementById('back-btn');
-        const closeSidebar = document.getElementById('close-sidebar');
-        const sidebar = document.getElementById('sidebar');
-        const sidebarOverlay = document.getElementById('sidebar-overlay');
         const smallFontBtn = document.getElementById('small-font');
         const mediumFontBtn = document.getElementById('medium-font');
         const largeFontBtn = document.getElementById('large-font');
@@ -1358,27 +783,6 @@
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'dark') {
             document.body.classList.add('dark-mode');
-        }
-
-        // Sidebar Toggle
-        if (tocBtn) {
-            tocBtn.addEventListener('click', () => {
-                sidebar.classList.add('open');
-                sidebarOverlay.classList.add('open');
-            });
-        }
-
-        const closeSidebarFunc = () => {
-            sidebar.classList.remove('open');
-            sidebarOverlay.classList.remove('open');
-        };
-
-        if (closeSidebar) {
-            closeSidebar.addEventListener('click', closeSidebarFunc);
-        }
-        
-        if (sidebarOverlay) {
-            sidebarOverlay.addEventListener('click', closeSidebarFunc);
         }
 
         // Font Size Controls
@@ -1445,8 +849,6 @@
                 if (nextBtn && !nextBtn.disabled) {
                     window.location.href = nextBtn.href;
                 }
-            } else if (e.key === 'Escape') {
-                closeSidebarFunc();
             }
         });
 

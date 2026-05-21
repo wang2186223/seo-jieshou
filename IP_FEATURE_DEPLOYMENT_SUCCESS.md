@@ -39,9 +39,9 @@
 ```
 详细-2025-10-11 表格结构：
 A列：时间          (2025/10/11 14:30:45)
-B列：访问页面      (https://novel.arkmoremoney.com/novels/...)
+B列：访问页面      (https://re.cankalp.com/novels/...)
 C列：用户属性      (Mozilla/5.0 (iPhone; CPU iPhone...))
-D列：来源页面      (https://novel.arkmoremoney.com/...)
+D列：来源页面      (https://re.cankalp.com/...)
 E列：IP地址        (123.456.789.101) ← 新增
 ```
 
@@ -63,14 +63,14 @@ E列：IP地址        (123.456.789.101) ← 新增
 - **URL**: https://script.google.com/macros/s/AKfycbzYh7n5d5xHM5n4IYO1aZQBUjIDeJ0QfFJ6A8ja1O7PTnyIR1HG1I_83I33Y3Usg76O/exec
 
 ### 网站更新:
-- **域名**: https://novel.arkmoremoney.com
+- **域名**: https://re.cankalp.com
 - **修改页面**: 1875个文件已更新
 - **数据表格**: https://docs.google.com/spreadsheets/d/1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4/edit
 
 ## 🧪 立即测试验证
 
 ### 验证步骤：
-1. **访问网站**: https://novel.arkmoremoney.com
+1. **访问网站**: https://re.cankalp.com
 2. **浏览任意页面** (首页、小说页、章节页)
 3. **检查Google Sheets**: 打开您的数据表格
 4. **确认新功能**: 查看第5列是否显示IP地址
@@ -78,9 +78,9 @@ E列：IP地址        (123.456.789.101) ← 新增
 ### 预期结果示例：
 ```
 时间: 2025/10/11 14:30:45
-访问页面: https://novel.arkmoremoney.com/novels/my-rejected-mate-regrets/chapter-1.html
+访问页面: https://re.cankalp.com/novels/my-rejected-mate-regrets/chapter-1.html
 用户属性: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X)
-来源页面: https://novel.arkmoremoney.com/novels/my-rejected-mate-regrets/
+来源页面: https://re.cankalp.com/novels/my-rejected-mate-regrets/
 IP地址: 123.456.789.101 ← 新增数据
 ```
 

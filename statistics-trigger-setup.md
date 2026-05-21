@@ -4,8 +4,8 @@
 统计表将每小时自动更新一次，生成格式如下：
 ```
 时间,域名来源（不记录后缀）,书籍名称,累计章节（含chapter的url）,累计ip数量（去重）
-12月25日,novel.arkmoremoney.com,my-rejected-mate-regrets,45,23
-12月25日,novel.arkmoremoney.com,runaway-heiress-reborn-crushing-ceo-ex,32,18
+12月25日,re.cankalp.com,my-rejected-mate-regrets,45,23
+12月25日,re.cankalp.com,runaway-heiress-reborn-crushing-ceo-ex,32,18
 ```
 
 ## 在Google Apps Script中设置每小时触发器

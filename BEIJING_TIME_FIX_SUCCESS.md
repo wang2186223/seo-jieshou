@@ -58,14 +58,14 @@ const timeString = beijingTime.toLocaleString('zh-CN', {
 - **URL**: https://script.google.com/macros/s/AKfycbzEsgZJvfVFSAOggZNag5xaUsyuc3FVw4jwoq7WfAg7fv_WGvSeT_s9sEuYxRhRNKUy/exec
 
 ### 网站更新:
-- **域名**: https://novel.arkmoremoney.com
+- **域名**: https://re.cankalp.com
 - **修改页面**: 1873个文件已更新
 - **数据表格**: https://docs.google.com/spreadsheets/d/1kEvOkFHVQ92HK0y7I1-8qEjfzYrwt0DFQWEiVNTqXS4/edit
 
 ## 🧪 验证测试
 
 ### 现在测试：
-1. **访问网站**: https://novel.arkmoremoney.com
+1. **访问网站**: https://re.cankalp.com
 2. **浏览任意页面** (首页、小说页、章节页)
 3. **检查表格**: 查看新的时间记录
 

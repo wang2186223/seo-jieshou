@@ -1,19 +1,19 @@
 // Google Apps Script 代码 - 网站访问统计系统(每日独立表格版本)
-// 主控制表格 ID: 1cEMYvW2XSo28ejNGKDUT3EEJDrar_zYStIhNqToso0c
-// 部署ID: AKfycby-u3H40iNpvijJc6d7KYhiOkDD0cwRKFmzRI0ryvreTril3hkRusIE2L00IU9f1voz
-// 部署URL: https://script.google.com/macros/s/AKfycby-u3H40iNpvijJc6d7KYhiOkDD0cwRKFmzRI0ryvreTril3hkRusIE2L00IU9f1voz/exec
+// 主控制表格 ID: 1_aTtHxX7LmHTcY9BB5qECc4L8OSWHxNoDaqDuyda_xY
+// 部署ID: AKfycbwXBGv2e6k-7ABYVa-xb379BhB0m5DgLZ9YWjuvsl_5cFPW9aeQam22zsF0B8QWxuit4A
+// 部署URL: https://script.google.com/macros/s/AKfycbwXBGv2e6k-7ABYVa-xb379BhB0m5DgLZ9YWjuvsl_5cFPW9aeQam22zsF0B8QWxuit4A/exec
 // 
 // 架构说明：
 // - 主表格：用于控制台、统计汇总、表格索引
 // - 每日表格：每天自动创建新的独立表格，包含当天的详细数据和广告引导数据
-// - 表格命名：seo-2025-01-15
+// - 表格命名：adx-good-2025-01-15
 // - 文件夹：所有每日表格存放在"网站统计数据"文件夹中
 
 // ==================== 配置常量 ====================
 
-const MAIN_SPREADSHEET_ID = '1cEMYvW2XSo28ejNGKDUT3EEJDrar_zYStIhNqToso0c';
+const MAIN_SPREADSHEET_ID = '1_aTtHxX7LmHTcY9BB5qECc4L8OSWHxNoDaqDuyda_xY';
 const DATA_FOLDER_NAME = '网站统计数据';
-const SPREADSHEET_PREFIX = 'seo-';
+const SPREADSHEET_PREFIX = 'adx-good-';
 
 // ==================== 主入口函数 ====================
 
@@ -336,11 +336,12 @@ function handlePageVisitEvent(dailySpreadsheet, data) {
  * 处理广告引导事件
  */
 function handleAdGuideEvent(dailySpreadsheet, data) {
-  const adGuideSheet = dailySpreadsheet.getSheetByName('广告引导');
+  // 确保广告引导工作表存在
+  let adGuideSheet = dailySpreadsheet.getSheetByName('广告引导');
   
   if (!adGuideSheet) {
-    console.error('广告引导sheet不存在！');
-    return;
+    console.log('广告引导工作表不存在，正在创建...');
+    adGuideSheet = addAdGuideSheetToExisting(dailySpreadsheet);
   }
   
   const rowData = [
@@ -724,6 +725,41 @@ function addAdClickSheetToExisting(spreadsheet) {
   
   console.log('成功创建广告点击工作表');
   return adClickSheet;
+}
+
+/**
+ * 为现有的每日表格添加"广告引导"工作表（如果不存在）
+ */
+function addAdGuideSheetToExisting(spreadsheet) {
+  let adGuideSheet = spreadsheet.getSheetByName('广告引导');
+  
+  if (adGuideSheet) {
+    console.log('广告引导工作表已存在');
+    return adGuideSheet;
+  }
+  
+  // 创建新的广告引导工作表
+  adGuideSheet = spreadsheet.insertSheet('广告引导');
+  adGuideSheet.getRange(1, 1, 1, 10).setValues([
+    ['时间', '访问页面', '用户属性', 'IP地址', '累计广告数', '累计失败广告数', '当前页广告数', '触发次数', '最大触发次数', '事件时间戳']
+  ]);
+  
+  const adGuideHeader = adGuideSheet.getRange(1, 1, 1, 10);
+  adGuideHeader.setBackground('#FF6B6B').setFontColor('white').setFontWeight('bold');
+  
+  adGuideSheet.setColumnWidth(1, 150);
+  adGuideSheet.setColumnWidth(2, 300);
+  adGuideSheet.setColumnWidth(3, 200);
+  adGuideSheet.setColumnWidth(4, 120);
+  adGuideSheet.setColumnWidth(5, 100);  // 累计广告数
+  adGuideSheet.setColumnWidth(6, 120);  // 累计失败广告数
+  adGuideSheet.setColumnWidth(7, 120);  // 当前页广告数
+  adGuideSheet.setColumnWidth(8, 100);  // 触发次数
+  adGuideSheet.setColumnWidth(9, 120);  // 最大触发次数
+  adGuideSheet.setColumnWidth(10, 180); // 事件时间戳
+  
+  console.log('成功创建广告引导工作表');
+  return adGuideSheet;
 }
 
 /**

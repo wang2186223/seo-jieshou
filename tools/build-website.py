@@ -47,7 +47,6 @@ class WebsiteBuilder:
         )
         
         self.site_url = config.get('site_url', 'https://example.github.io')
-        self.reading_redirect_url = config.get('site', {}).get('reading_redirect_url', '')
         
     def scan_novels(self) -> Dict:
             current_time = datetime.now()
@@ -112,7 +111,7 @@ class WebsiteBuilder:
             
         # 生成小说相关页面
         for novel_id, novel_data in novels_to_build.items():
-            self.build_novel_pages(novel_data, novels)
+            self.build_novel_pages(novel_data)
             
         # 生成首页（总是重新生成）
         print("\n=== 第4步: 生成首页 ===")
@@ -129,7 +128,7 @@ class WebsiteBuilder:
         if novels_to_build:
             print(f"本次构建: {len(novels_to_build)} 本小说")
             
-    def build_novel_pages(self, novel_data: Dict, all_novels: Dict = None):
+    def build_novel_pages(self, novel_data: Dict):
         """构建单本小说的所有页面"""
         novel_slug = novel_data['slug']
         novel_dir = self.output_path / 'novels' / novel_slug
@@ -141,7 +140,7 @@ class WebsiteBuilder:
         self.build_novel_detail_page(novel_data, novel_dir)
         
         # 2. 生成所有章节页面
-        self.build_chapter_pages(novel_data, novel_dir, all_novels)
+        self.build_chapter_pages(novel_data, novel_dir)
         
     def build_novel_detail_page(self, novel_data: Dict, novel_dir: Path):
         """生成小说详情页"""
@@ -187,16 +186,13 @@ class WebsiteBuilder:
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(html_content)
             
-    def build_chapter_pages(self, novel_data: Dict, novel_dir: Path, all_novels: Dict = None):
+    def build_chapter_pages(self, novel_data: Dict, novel_dir: Path):
         """生成章节页面（包括带广告版本和clean版本）"""
         # 加载两个模板
         template_with_ads = self.env.get_template('chapter.html')
         template_clean = self.env.get_template('chapter-clean.html')
         
         chapters = novel_data['chapters']
-        
-        # 使用传入的 all_novels 或者空字典
-        novels = all_novels if all_novels is not None else {}
         
         for i, chapter in enumerate(chapters):
             # 准备导航数据
@@ -226,37 +222,22 @@ class WebsiteBuilder:
                     'url': f"/novels/{novel_data['slug']}/chapter-{ch['number']}"
                 })
             
-            # 定义所有10个广告单元（新的aj1047.online格式）
+            # 定义所有10个广告单元
             all_ad_units = [
-                {'id': 1, 'data_key': 'c651d999796ed9329d49daca31964dc3'},
-                {'id': 2, 'data_key': '294ce81fcfc9fd30ba91b1c3a88f64a9'},
-                {'id': 3, 'data_key': '55b92dd50204072470d4a7cbc6d2dfb4'},
-                {'id': 4, 'data_key': 'daf3374e6c4dacfe7b183f7fb2c7bc79'},
-                {'id': 5, 'data_key': '2f3125acc828fb3f81a8274ade539c96'},
-                {'id': 6, 'data_key': 'b70bb0b847e131d97ff98c07c8b6bccf'},
-                {'id': 7, 'data_key': 'c6b21f1ece356f17ca8a82d55a3c99e9'},
-                {'id': 8, 'data_key': 'd3f948eeb430e99a64e0b8a3b1227ccf'},
-                {'id': 9, 'data_key': '75fbb10ead33745463ebc8dd3ec16d59'},
-                {'id': 10, 'data_key': 'fedd319bfa339f52b0d034886296e912'},
+                {'id': 1, 'slot_id': 'div-gpt-ad-1779328919411-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_1'},
+                {'id': 2, 'slot_id': 'div-gpt-ad-1779328954263-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_2'},
+                {'id': 3, 'slot_id': 'div-gpt-ad-1779328981400-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_3'},
+                {'id': 4, 'slot_id': 'div-gpt-ad-1779329007724-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_4'},
+                {'id': 5, 'slot_id': 'div-gpt-ad-1779329037439-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_5'},
+                {'id': 6, 'slot_id': 'div-gpt-ad-1779329061479-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_6'},
+                {'id': 7, 'slot_id': 'div-gpt-ad-1779329088448-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_7'},
+                {'id': 8, 'slot_id': 'div-gpt-ad-1779329114356-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_8'},
+                {'id': 9, 'slot_id': 'div-gpt-ad-1779329143158-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_9'},
+                {'id': 10, 'slot_id': 'div-gpt-ad-1779329167448-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_10'},
             ]
             
-            # 从10个广告单元中随机选择5个（每个页面都不同）
-            selected_ad_units = random.sample(all_ad_units, 5)
-            
-            # 检查是否需要显示激励视频广告（每3章一次：3、6、9、12...）
-            chapter_number = chapter['number']
-            show_reward_video = (chapter_number % 3 == 0)
-            reward_video_data_key = 'df317c9d2cab3f10cde939a00b761822'
-            
-            # 准备所有小说数据用于推荐系统
-            all_novels_for_recommendation = []
-            for slug, other_novel in novels.items():
-                all_novels_for_recommendation.append({
-                    'title': other_novel['title'],
-                    'slug': slug,
-                    'url': f"/novels/{slug}/",
-                    'chapters': other_novel['total_chapters']
-                })
+            # 从10个广告单元中随机选择6个（每个页面都不同）
+            selected_ad_units = random.sample(all_ad_units, 6)
             
             # 准备渲染数据（两个版本使用相同的数据）
             render_data = {
@@ -272,18 +253,13 @@ class WebsiteBuilder:
                     'author': novel_data['author'],
                     'cover_url': self.get_cover_url(novel_data),
                     'url': f"/novels/{novel_data['slug']}/",
-                    'slug': novel_data['slug'],
                     'chapters': all_chapters,
                     'tags': novel_data['tags']
                 },
-                'selected_ad_units': selected_ad_units,  # 传递选中的5个广告单元完整信息
-                'show_reward_video': show_reward_video,  # 是否显示激励视频
-                'reward_video_data_key': reward_video_data_key,  # 激励视频data-key
+                'selected_ad_units': selected_ad_units,  # 传递选中的6个广告单元完整信息
                 'prev_chapter': prev_chapter,
                 'next_chapter': next_chapter,
-                'all_novels': all_novels_for_recommendation,  # 所有小说数据用于推荐
-                'site_url': self.site_url,
-                'reading_redirect_url': self.reading_redirect_url  # 阅读页面跳转目标域名
+                'site_url': self.site_url
             }
                 
             # 渲染并保存带广告版本
@@ -299,9 +275,7 @@ class WebsiteBuilder:
                 f.write(html_content_clean)
                 
     def build_homepage(self, novels: Dict):
-        """生成首页"""
-        template = self.env.get_template('index.html')
-        
+        """生成首页（包括完整版和简化版）"""
         # 准备小说数据
         novel_list = list(novels.values())
         
@@ -332,7 +306,8 @@ class WebsiteBuilder:
         # 准备所有小说数据用于推荐区域
         all_novels = self.prepare_novel_cards(novel_list)
         
-        # 渲染首页
+        # 1. 生成完整版首页（带FB检测跳转）
+        template = self.env.get_template('index.html')
         html_content = template.render(
             featured_novels=featured_novels,
             new_novels=new_novels,
@@ -343,10 +318,21 @@ class WebsiteBuilder:
             site_url=self.site_url
         )
         
-        # 保存首页
         output_file = self.output_path / 'index.html'
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(html_content)
+        print("✓ 生成完整版首页: index.html")
+        
+        # 2. 生成简化版首页（只有 Reading History）
+        template_clean = self.env.get_template('index-clean.html')
+        html_content_clean = template_clean.render(
+            site_url=self.site_url
+        )
+        
+        output_file_clean = self.output_path / 'index-clean.html'
+        with open(output_file_clean, 'w', encoding='utf-8') as f:
+            f.write(html_content_clean)
+        print("✓ 生成简化版首页: index-clean.html")
             
     def prepare_novel_cards(self, novels: List[Dict]) -> List[Dict]:
         """准备小说卡片数据"""
@@ -455,15 +441,13 @@ def main():
     args = parser.parse_args()
     
     # 读取配置文件
-    site_url = 'https://novel.arkmoremoney.com'  # 默认正确域名
-    reading_redirect_url = ''  # 默认不跳转
+    site_url = 'https://adx.myfreenovel.com'  # 默认正确域名
     config_file = 'config.json'
     if os.path.exists(config_file):
         try:
             with open(config_file, 'r', encoding='utf-8') as f:
                 json_config = json.load(f)
                 site_url = json_config.get('site', {}).get('url', site_url)
-                reading_redirect_url = json_config.get('site', {}).get('reading_redirect_url', '')
         except Exception as e:
             print(f"警告: 无法读取配置文件 {config_file}: {e}")
     
@@ -477,11 +461,7 @@ def main():
         'source_path': args.source,
         'output_path': args.output,
         'templates_path': args.templates,
-        'site_url': site_url,
-        'site': {
-            'url': site_url,
-            'reading_redirect_url': reading_redirect_url
-        }
+        'site_url': site_url
     }
     
     # 构建网站

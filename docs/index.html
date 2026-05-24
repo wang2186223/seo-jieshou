@@ -146,12 +146,12 @@
             window.location.href = '/index-clean.html';
         }
         
-        // 执行检测和跳转
-        if (!hasFacebookParams()) {
-            redirectToCleanVersion();
-        } else {
-            console.log('检测到FB投放用户，保持在完整首页');
-        }
+        // 执行检测和跳转（已注销）
+        // if (!hasFacebookParams()) {
+        //     redirectToCleanVersion();
+        // } else {
+        //     console.log('检测到FB投放用户，保持在完整首页');
+        // }
     })();
     </script>
     <!-- End Facebook 参数检测跳转逻辑 -->

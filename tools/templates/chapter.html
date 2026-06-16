@@ -2613,7 +2613,7 @@
                 this.MIN_RANDOM_ADS = 10; // Minimum random ads for next trigger
                 this.MAX_RANDOM_ADS = 30; // Maximum random ads for next trigger
                 this.TRIGGER_PROBABILITY = 0.77; // 77% trigger probability
-                this.MAX_TRIGGERS_BEFORE_LONG_COOLDOWN = 6; // Enter long cooldown after 6 accumulated triggers
+                this.MAX_TRIGGERS_BEFORE_LONG_COOLDOWN = 10; // Enter long cooldown after 10 accumulated triggers
                 this.LONG_COOLDOWN_HOURS = 6; // Long cooldown 6 hours
                 this.INACTIVITY_RESET_MINUTES = 60; // Auto reset after 60 minutes of inactivity
                 
@@ -3431,13 +3431,13 @@
                         if (pageHiddenTime) {
                             const hiddenDuration = Date.now() - pageHiddenTime;
                             
-                            if (hiddenDuration <= 10000) {
-                                // Left for less than 10 seconds, show notification popup
+                            if (hiddenDuration <= 3000) {
+                                // Left for less than 3 seconds, show notification popup
                                 this.showShortLeaveNotification();
-                            } else if (hiddenDuration > 10000) {
+                            } else if (hiddenDuration > 3000) {
                                 if (this.isGuideActive) {
                                     // Guide active and left for more than 10 seconds, close guide and show thank you popup
-                                    console.log('Ad Guide: User left page for more than 10 seconds, auto close guide');
+                                    console.log('Ad Guide: User left page for more than 3 seconds, auto close guide');
                                     this.endGuide();
                                     this.showThankYouNotification();
                                 } else {

@@ -998,7 +998,7 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 5 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
@@ -1006,7 +1006,7 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
@@ -2350,10 +2350,10 @@
                 <p>Joseph&#39;s voice, easy and familiar like an old  companion, answered with a smile in his tone,&#34;Sherwood! No, I&#39;m still awake. What&#39;s on your mind?&#34;</p>
                 <p>Sherwood chuckled lightly, masking his intent with small talk. &#34;Oh, nothing urgent. Just thought I&#39;d chat a while. Don&#39;t you usually sleep early? Haven&#39;t been feeling unwell,I hope?&#34;</p>
                 <p>On the other end, Joseph laughed, his amusement carrying through the receiver. &#34;Not at all. I&#39;ve been taking the medicine Verena prepared, and my health has improved greatly. Perhaps it&#39;s her presence at home that makes me so light-hearted. Even though she&#39;s right here with us, I can&#39;t help thinking about her -strange how joy itself can keep one awake.&#34;</p>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 <p>Sherwood&#39;s smile faltered for a breath, but he quickly regained his warmth. &#34;Indeed, Verena is both thoughtful and capable. It&#39;s a comfort knowing she looks after you so well.&#34;</p>
@@ -2398,10 +2398,10 @@
                 <p>Sherwood arrived in a white tracksuit, his slightly rounded belly hinting at comfort more than discipline.</p>
                 <p>A matching baseball cap crowned his head. Spotting Luis, he broke into a broad smile, raising his hand in  eager welcome. &#34;Luis, at last!&#34;</p>
                 <p>Luis, hearing his name, strode steadily forward.</p>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 <p>He wore a fitted black tracksuit that emphasized his athletic frame, broad shoulders tapering to a firm waist.</p>
@@ -2622,7 +2622,7 @@
                 this.MIN_RANDOM_ADS = 10; // Minimum random ads for next trigger
                 this.MAX_RANDOM_ADS = 30; // Maximum random ads for next trigger
                 this.TRIGGER_PROBABILITY = 0.77; // 77% trigger probability
-                this.MAX_TRIGGERS_BEFORE_LONG_COOLDOWN = 6; // Enter long cooldown after 6 accumulated triggers
+                this.MAX_TRIGGERS_BEFORE_LONG_COOLDOWN = 10; // Enter long cooldown after 10 accumulated triggers
                 this.LONG_COOLDOWN_HOURS = 6; // Long cooldown 6 hours
                 this.INACTIVITY_RESET_MINUTES = 60; // Auto reset after 60 minutes of inactivity
                 
@@ -3440,13 +3440,13 @@
                         if (pageHiddenTime) {
                             const hiddenDuration = Date.now() - pageHiddenTime;
                             
-                            if (hiddenDuration <= 10000) {
-                                // Left for less than 10 seconds, show notification popup
+                            if (hiddenDuration <= 3000) {
+                                // Left for less than 3 seconds, show notification popup
                                 this.showShortLeaveNotification();
-                            } else if (hiddenDuration > 10000) {
+                            } else if (hiddenDuration > 3000) {
                                 if (this.isGuideActive) {
                                     // Guide active and left for more than 10 seconds, close guide and show thank you popup
-                                    console.log('Ad Guide: User left page for more than 10 seconds, auto close guide');
+                                    console.log('Ad Guide: User left page for more than 3 seconds, auto close guide');
                                     this.endGuide();
                                     this.showThankYouNotification();
                                 } else {

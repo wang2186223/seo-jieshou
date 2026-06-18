@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'granted',
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'analytics_storage': 'granted'
+  });
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Disable Console Output -->
+    <script>
+    (function() {
+        'use strict';
+        // Override all console methods to prevent any output
+        if (typeof console !== 'undefined') {
+            const noop = function() {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'trace', 'dir', 'dirxml', 
+                           'group', 'groupCollapsed', 'groupEnd', 'time', 'timeEnd', 'timeLog',
+                           'assert', 'profile', 'profileEnd', 'count', 'countReset', 'table', 'clear'];
+            methods.forEach(function(method) {
+                if (console[method]) {
+                    console[method] = noop;
+                }
+            });
+        }
+    })();
+    </script>
+    
+    <title>Chapter 153 - Fated To Not Just One But Three | NovelVibe</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WM9E4C1SNT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WM9E4C1SNT');
+    </script>
+    
+    <!-- Google Publisher Tag (GPT) -->
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        // Define ad slots for the chapter page
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_1', [300, 250], 'div-gpt-ad-1762511964282-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_2', [300, 250], 'div-gpt-ad-1762511986518-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_3', [300, 250], 'div-gpt-ad-1762512008111-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_4', [300, 250], 'div-gpt-ad-1762512031919-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Netlink/goodluckark.com/banner_5', [300, 250], 'div-gpt-ad-1762512054239-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '9481513911889537');
+    
+    // Natural 72-hour event tracking prevention (resets every 3 days)
+    function shouldTrackEvent(eventName) {
+        const now = new Date();
+        const threeDaysAgo = new Date(now.getTime() - (3 * 24 * 60 * 60 * 1000));
+        const currentPeriod = Math.floor(now.getTime() / (3 * 24 * 60 * 60 * 1000));
+        const storageKey = `fb_event_${eventName}`;
+        const lastTrackedPeriod = localStorage.getItem(storageKey);
+        
+        if (!lastTrackedPeriod || parseInt(lastTrackedPeriod) !== currentPeriod) {
+            localStorage.setItem(storageKey, currentPeriod.toString());
+            return true;
+        }
+        
+        return false;
+    }
+    
+    // Track PageView with 72-hour prevention
+    if (shouldTrackEvent('PageView')) {
+        fbq('track', 'PageView');
+        console.log('Facebook event sent: PageView');
+    } else {
+        console.log('Facebook event skipped: PageView (already sent within 72 hours)');
+    }
+    
+    // Reading time tracking for Facebook Pixel
+    let readingStartTime = Date.now();
+    let oneMinuteSent = false;
+    let tenMinutesSent = false;
+    
+    function checkReadingTime() {
+        const currentTime = Date.now();
+        const readingTime = (currentTime - readingStartTime) / 1000 / 60; // in minutes
+        
+        if (!oneMinuteSent && readingTime >= 1) {
+            if (shouldTrackEvent('1m_web')) {
+                fbq('track', '1m_web');
+                console.log('Facebook event sent: 1m_web (user read for 1 minute)');
+            } else {
+                console.log('Facebook event skipped: 1m_web (already sent within 72 hours)');
+            }
+            oneMinuteSent = true;
+        }
+        
+        if (!tenMinutesSent && readingTime >= 10) {
+            if (shouldTrackEvent('10m_web')) {
+                fbq('track', '10m_web');
+                console.log('Facebook event sent: 10m_web (user read for 10 minutes)');
+            } else {
+                console.log('Facebook event skipped: 10m_web (already sent within 72 hours)');
+            }
+            tenMinutesSent = true;
+        }
+    }
+    
+    // Check reading time every 30 seconds
+    setInterval(checkReadingTime, 30000);
+    
+    // Also check when page becomes visible again (in case user switches tabs)
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            checkReadingTime();
+        }
+    });
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=9481513911889537&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Tracking Parameter Persistence System -->
+    <script>
+    (function() {
+        'use strict';
+        
+        // List of tracking parameters to persist
+        const TRACKING_PARAMS = ['fbclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id'];
+        const STORAGE_KEY = 'tracking_params';
+        const STORAGE_EXPIRY_KEY = 'tracking_params_expiry';
+        const EXPIRY_HOURS = 24; // 24 hours expiration
+        
+        /**
+         * Extract tracking parameters from URL
+         */
+        function extractTrackingParams(url) {
+            const params = {};
+            try {
+                const urlObj = new URL(url);
+                TRACKING_PARAMS.forEach(param => {
+                    const value = urlObj.searchParams.get(param);
+                    if (value) {
+                        params[param] = value;
+                    }
+                });
+            } catch (e) {
+                console.error('URL parsing failed:', e);
+            }
+            return params;
+        }
+        
+        /**
+         * Save tracking parameters to localStorage
+         */
+        function saveTrackingParams(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(params));
+                const expiryTime = Date.now() + (EXPIRY_HOURS * 60 * 60 * 1000);
+                localStorage.setItem(STORAGE_EXPIRY_KEY, expiryTime.toString());
+                console.log('Tracking parameters saved:', params);
+            } catch (e) {
+                console.error('Failed to save tracking parameters:', e);
+            }
+        }
+        
+        /**
+         * Read tracking parameters from localStorage
+         */
+        function loadTrackingParams() {
+            try {
+                const expiryTime = localStorage.getItem(STORAGE_EXPIRY_KEY);
+                if (expiryTime && Date.now() > parseInt(expiryTime)) {
+                    // Expired, clearing
+                    localStorage.removeItem(STORAGE_KEY);
+                    localStorage.removeItem(STORAGE_EXPIRY_KEY);
+                    console.log('Tracking parameters expired and cleared');
+                    return {};
+                }
+                
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    const params = JSON.parse(stored);
+                    console.log('Loaded tracking parameters from storage:', params);
+                    return params;
+                }
+            } catch (e) {
+                console.error('Failed to read tracking parameters:', e);
+            }
+            return {};
+        }
+        
+        /**
+         * Add tracking parameters to links
+         */
+        function addTrackingParamsToUrl(url, params) {
+            if (Object.keys(params).length === 0) return url;
+            
+            try {
+                const urlObj = new URL(url, window.location.origin);
+                
+                // Only process same-domain links
+                if (urlObj.origin !== window.location.origin) {
+                    return url;
+                }
+                
+                // Add parameters
+                Object.keys(params).forEach(key => {
+                    if (!urlObj.searchParams.has(key)) {
+                        urlObj.searchParams.set(key, params[key]);
+                    }
+                });
+                
+                return urlObj.toString();
+            } catch (e) {
+                console.error('Failed to add tracking parameters:', e);
+                return url;
+            }
+        }
+        
+        /**
+         * Process all links on the page
+         */
+        function processPageLinks(params) {
+            if (Object.keys(params).length === 0) return;
+            
+            // Process all <a> tags
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
+                    const newHref = addTrackingParamsToUrl(href, params);
+                    if (newHref !== href) {
+                        link.setAttribute('href', newHref);
+                    }
+                }
+            });
+            
+            console.log(`Processed {0} links`);
+        }
+        
+        /**
+         * Initialize tracking parameter system
+         */
+        function initTrackingSystem() {
+            // 1. Check if current URL has new tracking parameters
+            const currentParams = extractTrackingParams(window.location.href);
+            
+            // 2. If new parameters exist, save them (new parameters take priority)
+            if (Object.keys(currentParams).length > 0) {
+                saveTrackingParams(currentParams);
+                console.log('New tracking parameters detected and storage updated');
+            }
+            
+            // 3. Load stored parameters (either newly saved or previously stored)
+            const storedParams = loadTrackingParams();
+            
+            // 4. If parameters need to be persisted, process all page links
+            if (Object.keys(storedParams).length > 0) {
+                // Wait for DOM to fully load
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', () => {
+                        processPageLinks(storedParams);
+                    });
+                } else {
+                    processPageLinks(storedParams);
+                }
+                
+                // Monitor dynamically added links
+                const observer = new MutationObserver(() => {
+                    processPageLinks(storedParams);
+                });
+                
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            }
+        }
+        
+        // Execute initialization immediately
+        initTrackingSystem();
+    })();
+    </script>
+    
+    <!-- Page Visit Statistics Code -->
+    <script>
+    // Page visit data collection
+    function sendPageVisit() {
+        // First get user IP address
+        getUserIP().then(userIP => {
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: userIP
+            };
+            
+            // Send data to Google Apps Script (V7)
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        }).catch(error => {
+            // If IP retrieval fails, still send other data
+            const data = {
+                page: window.location.href,
+                userAgent: navigator.userAgent,
+                userIP: 'Unknown'
+            };
+            
+            fetch('https://script.google.com/macros/s/AKfycbxwh2Yw1ENB_uy6jQYkAexl0O-HKG9At9mAhdZXqNMXKm_iOoJ1vtT0xqIyZQtT7z1oaQ/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            }).catch(error => {
+                console.log('Analytics error:', error);
+            });
+        });
+    }
+    
+    // Get user IP address
+    async function getUserIP() {
+        try {
+            // Method 1: Use free IP API
+            const response = await fetch('https://api.ipify.org?format=json');
+            const ipData = await response.json();
+            return ipData.ip;
+        } catch (error1) {
+            try {
+                // Method 2: Backup IP API
+                const response = await fetch('https://httpbin.org/ip');
+                const ipData = await response.json();
+                return ipData.origin.split(',')[0].trim();
+            } catch (error2) {
+                try {
+                    // Method 3: Third backup API
+                    const response = await fetch('https://jsonip.com');
+                    const ipData = await response.json();
+                    return ipData.ip;
+                } catch (error3) {
+                    console.log('IP retrieval failed, using Unknown');
+                    return 'Unknown';
+                }
+            }
+        }
+    }
+    
+    // Send visit data after page load
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', sendPageVisit);
+    } else {
+        sendPageVisit();
+    }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --bg-color: #FFFFFF;
+            --text-color: #333333;
+            --secondary-bg: #F2F2F7;
+            --border-color: #E5E5EA;
+            --header-height: 60px;
+            --footer-height: 70px;
+            --content-padding: 20px;
+        }
+
+        .dark-mode {
+            --primary-color: #0A84FF;
+            --bg-color: #1C1C1E;
+            --text-color: #E5E5EA;
+            --secondary-bg: #2C2C2E;
+            --border-color: #38383A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 var(--content-padding);
+        }
+
+        header {
+            height: var(--header-height);
+            background-color: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .left-header, .right-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 18px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-bg);
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 24px;
+            background-color: var(--secondary-bg);
+            border-radius: 12px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+        }
+
+        .dark-mode .theme-toggle::after {
+            transform: translateX(16px);
+        }
+
+        main {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .chapter-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .content {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .font-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .font-btn {
+            padding: 8px 16px;
+            background-color: var(--secondary-bg);
+            border: none;
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            height: var(--footer-height);
+            background-color: var(--bg-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-btn {
+            padding: 12px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .nav-btn:disabled {
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .font-small {
+            font-size: 16px;
+        }
+
+        .font-medium {
+            font-size: 18px;
+        }
+
+        .font-large {
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --content-padding: 15px;
+            }
+            
+            .chapter-title {
+                font-size: 22px;
+            }
+            
+            .content {
+                font-size: 16px;
+            }
+            
+            .nav-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data for Article -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="left-header">
+                    <a href="/novels/fated-to-not-just-one-but-three/" class="btn" id="back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="/" class="logo">NovelVibe</a>
+                </div>
+                <div class="right-header">
+                    <button class="btn" id="theme-btn">
+                        <div class="theme-toggle"></div>
+                    </button>
+                    <a href="/novels/fated-to-not-just-one-but-three/" class="btn" id="toc-btn" title="Back to Book Details">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="chapter-title">Chapter 153</h1>
+            <div class="content font-medium">
+                <p>Chapter 153: What was written in their Letters</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_1 -->
+                <div id='div-gpt-ad-1762511964282-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511964282-0'); });
+                  </script>
+                </div>
+                <p>Olivia’s POV</p>
+                <p>I took the envelope from Levi’s hand, my fingers brushing his for a moment. There was something so heavy in his eyes, like this one small paper held a piece of his soul. Just then, Louis walked in. He didn’t speak, just quietly held out another envelope. It was the same color, the same handwriting on the front.</p>
+                <p>I swallowed hard, a strange tightness forming in my chest.</p>
+                <p>Something inside me told me... whatever was inside these envelopes—I had seen it before.</p>
+                <p>I looked down at Levi’s envelope. Slowly, carefully, I opened it.</p>
+                <p>Inside was a letter. Folded neatly.</p>
+                <p>My heart thudded as I unfolded the paper and began to read.</p>
+                <p>HAPPY BIRTHDAY, MY OLI,</p>
+                <p>I WISH I COULD STOP FEELING THIS WAY. I’VE TRIED. GODDESS KNOWS I’VE TRIED.</p>
+                <p>YOU WEREN’T SUPPOSED TO MATTER THIS MUCH TO ME. NOT LIKE THIS. WE ARE YOUNG. FRIENDS. BUT SOMETHING CHANGED, AND I DIDN’T KNOW HOW TO STOP IT. I STARTED NOTICING EVERYTHING ABOUT YOU—YOUR SMILE, THE WAY YOUR EYES LIGHT UP WHEN YOU TALK ABOUT THINGS YOU LOVE, THE WAY YOU FIGHT FOR THE PEOPLE YOU CARE ABOUT. AND BEFORE I KNEW IT, I WAS IN DEEP.</p>
+                <p>I THINK I’VE BEEN FALLING IN LOVE WITH YOU FOR A LONG TIME, EVEN BEFORE I KNEW WHAT THAT MEANT.</p>
+                <p>I KNOW YOU ARE YOUNG. AND MAYBE YOU DON’T UNDERSTAND THAT YET. MAYBE YOU’RE CONFUSED. I GET IT. I DON’T EXPECT ANYTHING FROM YOU. I JUST NEEDED YOU TO KNOW... THAT YOU’RE MORE THAN A FRIEND TO ME. YOU’RE EVERYTHING. AND I LOVE YOU.</p>
+                <p>I froze.</p>
+                <p>My chest tightened.</p>
+                <p>This... this was a confession of love.</p>
+                <p>From Levi.</p>
+                <p>Levi had loved me all along.</p>
+                <p>Tears pricked my eyes, but I blinked fast, swallowing the lump in my throat.</p>
+                <p>I reached into the envelope again—and pulled out another folded note. My supposed response.</p>
+                <p>I opened it.</p>
+                <p>And my heart dropped.</p>
+                <p>It was the same message.</p>
+                <p>The exact same one that was sent to Lennox.</p>
+                <p>I turned sharply to Lennox. &#34;Get your envelope,&#34; I said, my voice calm but authoritative.</p>
+                <p>He nodded and left the room without a word.</p>
+                <p>I turned to Louis and opened his envelope next. My hands were shaking now, and I had to steady them.</p>
+                <p>Another letter.</p>
+                <p>OLIVIA,</p>
+                <p>YOU DRIVE ME INSANE.</p>
+                <p>YOU CONFUSE ME, YOU DISTRACT ME, YOU MAKE EVERYTHING COMPLICATED. AND YET—EVERY TIME YOU WALK INTO A ROOM, IT’S LIKE I FORGET HOW TO BREATHE.</p>
+                <p>I’VE TRIED TO PRETEND I DON’T FEEL THIS WAY. I’VE JOKED ABOUT IT. TEASED YOU. TEASED MYSELF. BUT NONE OF THAT MAKES IT EASIER. YOU’RE UNDER MY SKIN, LIV.</p>
+                <p>AND THE WORST PART? I DON’T EVEN WANT TO STOP FEELING THIS. BECAUSE LOVING YOU... EVEN SECRETLY... EVEN SILENTLY... IT’S THE ONE THING THAT MAKES ME FEEL REAL.</p>
+                <p>I DON’T KNOW IF YOU FEEL ANYTHING BACK. I GET IT IF YOU DON’T. BUT I HAD TO SAY IT. I HAD TO LET YOU KNOW—JUST ONCE—THAT YOU MATTER TO ME IN A WAY NO ONE ELSE EVER WILL.</p>
+                <p>Another confession.</p>
+                <p>Louis had written one too.</p>
+                <p>All three of them.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_2 -->
+                <div id='div-gpt-ad-1762511986518-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762511986518-0'); });
+                  </script>
+                </div>
+                <p>Each one of them had loved me. And I never knew.</p>
+                <p>I stared at the paper in my hand, my throat burning.</p>
+                <p>This was everything I ever wanted.</p>
+                <p>My secret dream since I was a little girl.</p>
+                <p>To be loved by these men... to matter to them more than a little friend.</p>
+                <p>I almost let the tears fall—but I stopped them. No. Not yet.</p>
+                <p>I reached into Louis’s envelope again.</p>
+                <p>And there it was.</p>
+                <p>The same response. Word for word.</p>
+                <p>Cold and hurtful.</p>
+                <p>My hands shook so hard, the paper crumpled in my grip. I didn’t even realize I was trembling until Levi reached out, only for me to jerk away.</p>
+                <p>I clutched the paper in my hand, feeling rage rise inside me.</p>
+                <p>Someone had forged those replies, sent the same thing to the three brothers, and they all believed it.</p>
+                <p>Just then, Lennox came in with his envelope, and I didn’t bother opening it. Rather, I threw everything on the floor at them. &#34;Pick them up and read it,&#34; I spat in anger, my eyes blurring with tears.</p>
+                <p>They all stood frozen as the letters lay scattered across the floor.</p>
+                <p>&#34;Pick them up,&#34; I said again, my voice sharp and cracking.</p>
+                <p>They stared at me for a second—stunned—but slowly obeyed.</p>
+                <p>Levi picked up Lennox’s.</p>
+                <p>Lennox picked up Levi’s.</p>
+                <p>Louis picked up his but leaned over to read the letter in Lennox’s hand.</p>
+                <p>The room went still as the three brothers read through letters that didn’t belong to them.</p>
+                <p>Their eyes scanned the pages... then widened.</p>
+                <p>Brows furrowed.</p>
+                <p>Mouths opened slightly in disbelief.</p>
+                <p>They were realizing the truth.</p>
+                <p>That every letter, the hurtful response they thought came from me—was the same.</p>
+                <p>Copied. Reused.</p>
+                <p>Only the name changed.</p>
+                <p>My voice shook, but I forced it out. &#34;I never read your letters,&#34; I whispered. &#34;I never got the chance. Someone stole them before I ever saw them. Stole the gifts too. And they wrote those replies back to you all.&#34;</p>
+                <p>I moved quickly, snatching one of the fake letters from Levi’s hand.</p>
+                <p>It was the one meant for Lennox.</p>
+                <p>The one he thought I had written to him all those years ago.</p>
+                <p>I unfolded it with trembling fingers and began to read it aloud.</p>
+                <p>LENNOX,</p>
+                <p>I’M NOT SURE WHY YOU THOUGHT I’D EVER RETURN YOUR FEELINGS. I TOLERATED YOU BECAUSE OF LEVI. THAT’S THE TRUTH. YOU WERE ALWAYS JUST IN THE WAY—LOUD, OVERBEARING, DESPERATE TO MATTER.</p>
+                <p>YOU LEAD BECAUSE YOU WERE BORN FIRST, NOT BECAUSE YOU EARNED IT. YOU WEAR THE TITLE &#34;FIRST HEIR&#34; LIKE IT MAKES YOU IMPORTANT, BUT IT’S JUST A MASK. UNDERNEATH, YOU’RE INSECURE, SOFT, AND WEAK. EVERYONE SEES IT. YOU THINK NO ONE NOTICES HOW YOU CRUMBLE WITHOUT CONTROL. HOW PATHETIC THAT IS.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_3 -->
+                <div id='div-gpt-ad-1762512008111-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512008111-0'); });
+                  </script>
+                </div>
+                <p>I WAS NEVER CLOSE TO YOU BECAUSE I WANTED TO BE. I SMILED BECAUSE IT WAS EASIER THAN REJECTING YOU OUTRIGHT. I STAYED QUIET BECAUSE I DIDN’T WANT TO HUMILIATE YOU IN FRONT OF YOUR BROTHERS.</p>
+                <p>LEVI—LEVI IS EVERYTHING YOU’RE NOT. HE’S STRONGER. SHARPER. MORE GROUNDED. AND HE DOESN’T NEED TO CONSTANTLY PROVE HIMSELF LIKE YOU DO. BEING AROUND YOU WAS EXHAUSTING, LENNOX. YOU MADE EVERYTHING HEAVY. I COULDN’T BREATHE WHEN YOU WERE NEAR ME—NOT BECAUSE OF ATTRACTION, BUT BECAUSE I FELT TRAPPED.</p>
+                <p>I FELT NOTHING FOR YOU. NOT EVEN FRIENDSHIP. JUST IRRITATION. AND ANNOYANCE.</p>
+                <p>LENNOX, YOU ARE WEAK. NOT EVEN A GOOD FIGHTER. I SEE HOW YOU TRY TO MEASURE UP WITH LEVI, BUT YOU CAN NEVER BE HIM. LEVI IS EVERYTHING YOU CAN NEVER BE. LEVI IS HANDSOME, STRONG, SKILLFUL... A GOOD LEADER IN THE MAKING. AND YOU? YOU ARE JUST HIS SHADOW, HIDING UNDER HIM. I CAN NEVER LIKE SUCH A PERSON.</p>
+                <p>IF I COULD CHOOSE, I’D CHOOSE LEVI A HUNDRED TIMES OVER.</p>
+                <p>YOU’VE NEVER BEEN AN OPTION. YOU’VE NEVER EVEN BEEN CLOSE. I’M TIRED OF PRETENDING SO I HOPE THIS CLEARS THINGS UP. STOP EMBARRASSING YOURSELF AND LEAVE ME THE HELL ALONE.</p>
+                <p>I COULD NEVER BRING CHILDREN INTO THIS WORLD JUST TO HAVE THEM TURN OUT WEAK LIKE YOU.</p>
+                <p>SO MY ANSWER WILL ALWAYS BE NO.</p>
+                <p>My voice cracked at the last line.</p>
+                <p>I lowered the paper slowly and looked at Lennox.</p>
+                <p>His face was pale, stunned.</p>
+                <p>I saw it—the pain, the humiliation—sitting heavy on his shoulders.</p>
+                <p>He swallowed but said nothing.</p>
+                <p>All three brothers looked confused.</p>
+                <p>&#34;I never wrote that,&#34; I whispered, my voice breaking. &#34;Not a single word. I would never say that to you, Lennox. You should have known that.&#34;</p>
+                <p>&#34;I believed it,&#34; he muttered, his voice rough. &#34;For years, I thought... that I wasn’t good enough. That you thought I was weak. That you never liked me.&#34;</p>
+                <p>&#34;I never hated you,&#34; I said, louder now. &#34;I loved you. All of you. I just didn’t know. I didn’t know what you felt. And your letters? I never got them.&#34;</p>
+                <p>I took a shaky breath, my eyes stinging with unshed tears, but I wasn’t done.</p>
+                <p>My gaze dropped to Lennox’s hand.</p>
+                <p>He was still holding Levi’s letter.</p>
+                <p>The one I supposedly wrote back in response to Levi’s confession.</p>
+                <p>I marched forward and ripped the paper from his grip.</p>
+                <p>&#34;If that one crushed you,&#34; I said, voice trembling with anger, &#34;then this one destroyed Levi.&#34;</p>
+                <p>I unfolded it.</p>
+                <p>And with trembling lips, I read:</p>
+                <p>LEVI,</p>
+                <p>I DON’T KNOW WHAT MADE YOU THINK I’D EVER WANT YOU. I WAS ALWAYS NICE BECAUSE I DIDN’T WANT TO HURT YOUR FEELINGS, BUT MAYBE I SHOULD’VE BEEN HONEST FROM THE BEGINNING.</p>
+                <p>YOU’RE NOT HIM. YOU’RE NOT LENNOX.</p>
+                <p>WHY WOULD I CHOOSE THE SECOND HEIR, THE SHADOW, WHEN I COULD HAVE THE FUTURE ALPHA HIMSELF? LENNOX IS STRONG, DEPENDABLE, BUILT TO LEAD. YOU’RE JUST... FOLLOWING ALONG. TRYING TO KEEP UP.</p>
+                <p>YOU’RE SOFT, LEVI. EMOTIONALLY WEAK. YOU’RE NOT EVEN MY TYPE. ALL THAT SWEET, QUIET PINING—IT WAS NEVER ATTRACTIVE. IT WAS PITIFUL. LIKE A BOY PLAYING PRETEND.</p>
+                <p>I COULD NEVER SEE YOU AS A MAN, NOT WHEN I’D ALREADY SEEN LENNOX.</p>
+                <p>LENNOX WALKS INTO A ROOM, AND THE WHOLE WORLD SHIFTS. YOU? YOU DISAPPEAR BESIDE HIM.</p>
+                <p>I’M SORRY IF YOU THOUGHT THIS COULD BE MORE. IT CAN’T. AND IT NEVER WILL. STOP DREAMING.</p>
+                <p>I COULD NEVER BRING CHILDREN INTO THIS WORLD JUST TO HAVE THEM TURN OUT WEAK LIKE YOU.</p>
+                <p>SO MY ANSWER WILL ALWAYS BE NO.</p>
+                <p>I LOVE LENNOX. NOT YOU. I NEVER DID. AND I NEVER WILL.</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_4 -->
+                <div id='div-gpt-ad-1762512031919-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512031919-0'); });
+                  </script>
+                </div>
+                <p>I finished reading and let the paper fall from my hand. All three brothers exchanged glances.</p>
+                <p>I frowned. &#34;Could you see this was a trap... same words... same hurtful words,&#34; I spat and moved forward to Louis and snatched his letter from him. I opened it as I began to read.</p>
+                <p>LOUIS,</p>
+                <p>NO.</p>
+                <p>THAT’S THE ANSWER. JUST NO.</p>
+                <p>I’M SORRY IF I LED YOU ON, BUT I NEVER SAW YOU THAT WAY. NEVER EVEN CAME CLOSE. YOU’RE NOT THE ONE I WANTED. YOU NEVER WERE.</p>
+                <p>LEVI? MAYBE. LENNOX? DEFINITELY. BUT YOU? YOU’VE ALWAYS BEEN THE AFTERTHOUGHT. THE THIRD ONE. THE BROTHER PEOPLE FORGET TO MENTION.</p>
+                <p>YOU JOKE ALL THE TIME. SMILE. FLIRT. LIKE THAT’S ENOUGH TO MATTER. LIKE YOU CAN CHARM YOUR WAY INTO SOMEONE’S HEART WHEN THERE’S NOTHING UNDERNEATH TO HOLD ONTO.</p>
+                <p>YOU’RE FUN. SURE. BUT SO IS A DISTRACTION.</p>
+                <p>THAT’S ALL YOU WERE, LOUIS. A MAN TO KEEP ME COMPANY WHEN THE REAL TWO WEREN’T AROUND.</p>
+                <p>I COULD NEVER TAKE YOU SERIOUSLY. YOU’RE NOT STRONG LIKE LEVI. YOU’RE NOT COMMANDING LIKE LENNOX. YOU’RE JUST... LOUIS.</p>
+                <p>THIRD IN LINE. THIRD TO LEAD.</p>
+                <p>IF I HAD TO CHOOSE BETWEEN YOU AND NO ONE AT ALL, I’D STILL PICK NO ONE.</p>
+                <p>BECAUSE PRETENDING WITH YOU WOULD BE WORSE THAN BEING ALONE.</p>
+                <p>I stopped—but it wasn’t over. Not yet.</p>
+                <p>I unfolded the second part. The one that was meant to twist the knife deeper.</p>
+                <p>DON’T FLATTER YOURSELF.</p>
+                <p>YOU’RE NOT EVEN IN THE RUNNING.</p>
+                <p>LEVI IS STRENGTH. LENNOX IS COMMAND. YOU? YOU’RE WHAT’S LEFT. THE LEFTOVER SON. THE SPARE.</p>
+                <p>I DON’T KNOW WHY YOU THOUGHT I’D EVER WANT YOU—NOT WHEN I COULD HAVE SOMEONE LIKE LENNOX. OR EVEN LEVI. ANYONE BUT YOU.</p>
+                <p>YOU HIDE BEHIND JOKES BECAUSE YOU HAVE NOTHING ELSE TO OFFER. YOU’RE NOT SERIOUS. YOU’RE NOT POWERFUL . YOU’RE JUST THE FUN ONE—THE FILLER BETWEEN THE BROTHERS WHO ACTUALLY MATTER.</p>
+                <p>YOU SAY YOU’D PROTECT ME. WITH WHAT, LOUIS? A SMILE? A WINK? YOU THINK THAT’S ENOUGH?</p>
+                <p>I’D NEVER FEEL SAFE WITH YOU. NEVER FEEL PROUD TO STAND BESIDE YOU. YOU’RE NOT A WARRIOR. YOU’RE NOT A LEADER. YOU’RE A SHADOW THAT EVEN THE SUN FORGETS TO TOUCH.</p>
+                <p>YOU WERE BORN LAST FOR A REASON. BECAUSE SOMEONE HAD TO BE. THAT’S ALL YOU ARE—THE ONE THEY HAD TO INCLUDE, EVEN IF YOU WERE NEVER MEANT TO MATTER.</p>
+                <p>I WOULDN’T CHOOSE YOU, LOUIS. NOT IN THIS LIFE. NOT IN THE NEXT. NOT EVEN IF YOU WERE THE LAST MAN BREATHING.</p>
+                <p>I COULD NEVER BRING CHILDREN INTO THIS WORLD JUST TO HAVE THEM TURN OUT WEAK LIKE YOU.</p>
+                <p>SO MY ANSWER WILL ALWAYS BE NO.</p>
+                <p>The final word dropped like a hammer in the silence.</p>
+                <p>I lowered the letter slowly.</p>
+                <p>Louis wasn’t even blinking. He stared down at the paper like it had just murdered him.</p>
+                <p>&#34;I didn’t write that,&#34; I said angrily. &#34;Not one word of it.&#34;</p>
+                <p>He didn’t answer.</p>
+                <p>Not with words.</p>
+                <p>His lips parted, then closed again.</p>
+                <p>I glared at the three of them, and anger flared inside me. &#34;I can’t believe you three would believe I would say this to any of you.&#34;</p>
+                <p>The three brothers exchanged conflicted glances.</p>
+                <p>I continued. &#34;This?&#34; I hissed, holding up the crumpled letter.</p>
+                <p>&#34;This is why you hated me all those years?&#34;</p>
+                <!-- /22796784223/Netlink/goodluckark.com/banner_5 -->
+                <div id='div-gpt-ad-1762512054239-0' style='min-width: 300px; min-height: 250px; text-align:center; margin: 20px 0;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1762512054239-0'); });
+                  </script>
+                </div>
+            </div>
+            
+            <div class="font-controls">
+                <button class="font-btn" id="small-font">A</button>
+                <button class="font-btn active" id="medium-font">A</button>
+                <button class="font-btn" id="large-font">A</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                
+                <a href="/novels/fated-to-not-just-one-but-three/chapter-152" class="nav-btn" id="prev-chapter">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </a>
+                
+                
+                
+                <a href="/novels/fated-to-not-just-one-but-three/chapter-154" class="nav-btn" id="next-chapter">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const themeBtn = document.getElementById('theme-btn');
+        const smallFontBtn = document.getElementById('small-font');
+        const mediumFontBtn = document.getElementById('medium-font');
+        const largeFontBtn = document.getElementById('large-font');
+        const content = document.querySelector('.content');
+
+        // Theme Toggle
+        if (themeBtn) {
+            themeBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                // Save theme preference
+                localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Font Size Controls
+        if (smallFontBtn) {
+            smallFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-medium', 'font-large');
+                content.classList.add('font-small');
+                updateFontButtons(smallFontBtn);
+                localStorage.setItem('fontSize', 'small');
+            });
+        }
+
+        if (mediumFontBtn) {
+            mediumFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-large');
+                content.classList.add('font-medium');
+                updateFontButtons(mediumFontBtn);
+                localStorage.setItem('fontSize', 'medium');
+            });
+        }
+
+        if (largeFontBtn) {
+            largeFontBtn.addEventListener('click', () => {
+                content.classList.remove('font-small', 'font-medium');
+                content.classList.add('font-large');
+                updateFontButtons(largeFontBtn);
+                localStorage.setItem('fontSize', 'large');
+            });
+        }
+
+        function updateFontButtons(activeBtn) {
+            [smallFontBtn, mediumFontBtn, largeFontBtn].forEach(btn => {
+                if (btn) btn.classList.remove('active');
+            });
+            activeBtn.classList.add('active');
+        }
+
+        // Load saved font size
+        const savedFontSize = localStorage.getItem('fontSize');
+        if (savedFontSize) {
+            content.classList.remove('font-small', 'font-medium', 'font-large');
+            content.classList.add('font-' + savedFontSize);
+            
+            const fontButtons = {
+                'small': smallFontBtn,
+                'medium': mediumFontBtn,
+                'large': largeFontBtn
+            };
+            
+            if (fontButtons[savedFontSize]) {
+                updateFontButtons(fontButtons[savedFontSize]);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                const prevBtn = document.getElementById('prev-chapter');
+                if (prevBtn && !prevBtn.disabled) {
+                    window.location.href = prevBtn.href;
+                }
+            } else if (e.key === 'ArrowRight') {
+                const nextBtn = document.getElementById('next-chapter');
+                if (nextBtn && !nextBtn.disabled) {
+                    window.location.href = nextBtn.href;
+                }
+            }
+        });
+
+        // Record reading history
+        document.addEventListener('DOMContentLoaded', function() {
+            const novelData = {
+                title: 'Fated To Not Just One But Three',
+                url: '/novels/fated-to-not-just-one-but-three/',
+                cover_url: '/covers/fated-to-not-just-one-but-three-书籍封面.png',
+                lastRead: new Date().toISOString(),
+                currentChapter: 153
+            };
+            
+            let history = JSON.parse(localStorage.getItem('readingHistory') || '[]');
+            
+            // Remove existing record
+            history = history.filter(item => item.title !== novelData.title);
+            
+            // Add to beginning
+            history.unshift(novelData);
+            
+            // Keep only the last 5 records
+            history = history.slice(0, 5);
+            
+            localStorage.setItem('readingHistory', JSON.stringify(history));
+        });
+
+        
+    </script>
+</body>
+</html>

@@ -58,7 +58,73 @@ class WebsiteBuilder:
                 'created_date': current_time.strftime('%Y-%m-%d'),
                 'modified_date': current_time.strftime('%Y-%m-%d')
             }
-        
+
+    def get_file_timestamps(self, file_path: Path) -> Dict[str, str]:
+        """获取文件的创建时间和修改时间"""
+        try:
+            stat = file_path.stat()
+            created_time = datetime.fromtimestamp(stat.st_ctime)
+            modified_time = datetime.fromtimestamp(stat.st_mtime)
+            return {
+                'created_iso': created_time.isoformat(),
+                'modified_iso': modified_time.isoformat(),
+                'created_readable': created_time.strftime('%Y-%m-%d %H:%M:%S'),
+                'modified_readable': modified_time.strftime('%Y-%m-%d %H:%M:%S'),
+                'created_date': created_time.strftime('%Y-%m-%d'),
+                'modified_date': modified_time.strftime('%Y-%m-%d')
+            }
+        except Exception:
+            current_time = datetime.now()
+            return {
+                'created_iso': current_time.isoformat(),
+                'modified_iso': current_time.isoformat(),
+                'created_readable': current_time.strftime('%Y-%m-%d %H:%M:%S'),
+                'modified_readable': current_time.strftime('%Y-%m-%d %H:%M:%S'),
+                'created_date': current_time.strftime('%Y-%m-%d'),
+                'modified_date': current_time.strftime('%Y-%m-%d')
+            }
+
+    def get_novel_timestamps(self, novel_data: Dict) -> Dict[str, str]:
+        """获取小说相关的时间戳"""
+        novel_slug = novel_data.get('slug', '')
+        source_novel_path = self.source_path / novel_slug
+        main_file = None
+        if source_novel_path.exists():
+            for possible_file in ['书籍正文.txt', '正文.txt', 'content.txt']:
+                potential_path = source_novel_path / possible_file
+                if potential_path.exists():
+                    main_file = potential_path
+                    break
+        if main_file and main_file.exists():
+            return self.get_file_timestamps(main_file)
+        current_time = datetime.now()
+        return {
+            'created_iso': current_time.isoformat(),
+            'modified_iso': current_time.isoformat(),
+            'created_readable': current_time.strftime('%Y-%m-%d %H:%M:%S'),
+            'modified_readable': current_time.strftime('%Y-%m-%d %H:%M:%S'),
+            'created_date': current_time.strftime('%Y-%m-%d'),
+            'modified_date': current_time.strftime('%Y-%m-%d')
+        }
+
+    def is_numeric_novel(self, novel_data: Dict) -> bool:
+        """判断是否为纯数字标题的书籍（如 00001）"""
+        return novel_data.get('title', '').strip().isdigit()
+
+    def get_chapter_url(self, novel_data: Dict, chapter_number: int) -> str:
+        """根据书籍类型生成章节URL"""
+        if self.is_numeric_novel(novel_data):
+            return f"/novels/{novel_data['slug']}/{chapter_number}"
+        else:
+            return f"/novels/{novel_data['slug']}/chapter-{chapter_number}"
+
+    def get_chapter_filename(self, novel_data: Dict, chapter_number: int) -> str:
+        """根据书籍类型生成章节文件名"""
+        if self.is_numeric_novel(novel_data):
+            return f"{chapter_number}.html"
+        else:
+            return f"chapter-{chapter_number}.html"
+
     def build_website(self, force_rebuild: bool = False, novel_filter: Optional[str] = None):
         """构建完整网站"""
         print("开始构建网站...")
@@ -149,8 +215,7 @@ class WebsiteBuilder:
         # 准备章节数据
         chapters = []
         for i, chapter in enumerate(novel_data['chapters']):
-            # 使用绝对路径而不是相对路径
-            chapter_url = f"/novels/{novel_data['slug']}/chapter-{chapter['number']}"
+            chapter_url = self.get_chapter_url(novel_data, chapter['number'])
             chapters.append({
                 'number': chapter['number'],
                 'title': chapter['title'],
@@ -161,6 +226,9 @@ class WebsiteBuilder:
             
         # 处理封面URL
         cover_url = self.get_cover_url(novel_data)
+        
+        # 获取时间戳
+        timestamps = self.get_novel_timestamps(novel_data)
         
         # 渲染页面
         html_content = template.render(
@@ -178,6 +246,8 @@ class WebsiteBuilder:
                 'chapters': chapters,
                 'url': f"/novels/{novel_data['slug']}/"
             },
+            timestamps=timestamps,
+            canonical_url=f"{self.site_url}/novels/{novel_data['slug']}/",
             site_url=self.site_url
         )
         
@@ -187,15 +257,13 @@ class WebsiteBuilder:
             f.write(html_content)
             
     def build_chapter_pages(self, novel_data: Dict, novel_dir: Path):
-        """生成章节页面（包括带广告版本和clean版本）"""
-        # 加载两个模板
+        """生成章节页面（广告版本，7块内容+7个GPT广告）"""
         template_with_ads = self.env.get_template('chapter.html')
-        template_clean = self.env.get_template('chapter-clean.html')
+        # template_clean = self.env.get_template('chapter-clean.html')  # 已禁用
         
         chapters = novel_data['chapters']
         
         for i, chapter in enumerate(chapters):
-            # 准备导航数据
             prev_chapter = None
             next_chapter = None
             
@@ -203,43 +271,53 @@ class WebsiteBuilder:
                 prev_chapter = {
                     'number': chapters[i-1]['number'],
                     'title': chapters[i-1]['title'],
-                    'url': f"/novels/{novel_data['slug']}/chapter-{chapters[i-1]['number']}"
+                    'url': self.get_chapter_url(novel_data, chapters[i-1]['number'])
                 }
                 
             if i < len(chapters) - 1:
                 next_chapter = {
                     'number': chapters[i+1]['number'],
                     'title': chapters[i+1]['title'],
-                    'url': f"/novels/{novel_data['slug']}/chapter-{chapters[i+1]['number']}"
+                    'url': self.get_chapter_url(novel_data, chapters[i+1]['number'])
                 }
                 
-            # 准备所有章节列表（用于目录）
             all_chapters = []
             for ch in chapters:
                 all_chapters.append({
                     'number': ch['number'],
                     'title': ch['title'],
-                    'url': f"/novels/{novel_data['slug']}/chapter-{ch['number']}"
+                    'url': self.get_chapter_url(novel_data, ch['number'])
                 })
             
-            # 定义所有10个广告单元
+            # 定义所有10个广告单元（Ynmedia / 2opennovel.xyz）
             all_ad_units = [
-                {'id': 1, 'slot_id': 'div-gpt-ad-1779328919411-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_1'},
-                {'id': 2, 'slot_id': 'div-gpt-ad-1779328954263-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_2'},
-                {'id': 3, 'slot_id': 'div-gpt-ad-1779328981400-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_3'},
-                {'id': 4, 'slot_id': 'div-gpt-ad-1779329007724-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_4'},
-                {'id': 5, 'slot_id': 'div-gpt-ad-1779329037439-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_5'},
-                {'id': 6, 'slot_id': 'div-gpt-ad-1779329061479-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_6'},
-                {'id': 7, 'slot_id': 'div-gpt-ad-1779329088448-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_7'},
-                {'id': 8, 'slot_id': 'div-gpt-ad-1779329114356-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_8'},
-                {'id': 9, 'slot_id': 'div-gpt-ad-1779329143158-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_9'},
+                {'id': 1,  'slot_id': 'div-gpt-ad-1779328919411-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_1'},
+                {'id': 2,  'slot_id': 'div-gpt-ad-1779328954263-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_2'},
+                {'id': 3,  'slot_id': 'div-gpt-ad-1779328981400-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_3'},
+                {'id': 4,  'slot_id': 'div-gpt-ad-1779329007724-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_4'},
+                {'id': 5,  'slot_id': 'div-gpt-ad-1779329037439-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_5'},
+                {'id': 6,  'slot_id': 'div-gpt-ad-1779329061479-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_6'},
+                {'id': 7,  'slot_id': 'div-gpt-ad-1779329088448-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_7'},
+                {'id': 8,  'slot_id': 'div-gpt-ad-1779329114356-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_8'},
+                {'id': 9,  'slot_id': 'div-gpt-ad-1779329143158-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_9'},
                 {'id': 10, 'slot_id': 'div-gpt-ad-1779329167448-0', 'path': '/22796784223/Ynmedia/2opennovel.xyz/Banner_10'},
             ]
             
-            # 从10个广告单元中随机选择6个（每个页面都不同）
-            selected_ad_units = random.sample(all_ad_units, 6)
+            # 从10个广告单元中随机选择7个（每个页面都不同）
+            selected_ad_units = random.sample(all_ad_units, 7)
             
-            # 准备渲染数据（两个版本使用相同的数据）
+            # 将正文段落均分为7个文字板块（每块后插1个广告）
+            all_paragraphs = [p.strip() for p in chapter['content'].split('\n') if p.strip()]
+            total_paras = len(all_paragraphs)
+            block_size = max(1, (total_paras + 6) // 7)
+            chapter_blocks = [
+                all_paragraphs[b * block_size : min((b + 1) * block_size, total_paras)]
+                for b in range(7)
+            ]
+            
+            # 获取时间戳
+            timestamps = self.get_novel_timestamps(novel_data)
+            
             render_data = {
                 'chapter': {
                     'number': chapter['number'],
@@ -248,6 +326,7 @@ class WebsiteBuilder:
                     'word_count': chapter.get('word_count', 0),
                     'publish_date': chapter.get('publish_date', '')
                 },
+                'chapter_blocks': chapter_blocks,
                 'novel': {
                     'title': novel_data['title'],
                     'author': novel_data['author'],
@@ -256,28 +335,33 @@ class WebsiteBuilder:
                     'chapters': all_chapters,
                     'tags': novel_data['tags']
                 },
-                'selected_ad_units': selected_ad_units,  # 传递选中的6个广告单元完整信息
+                'selected_ad_units': selected_ad_units,
+                'timestamps': timestamps,
                 'prev_chapter': prev_chapter,
                 'next_chapter': next_chapter,
+                'canonical_url': f"{self.site_url}/novels/{novel_data['slug']}/{self.get_chapter_filename(novel_data, chapter['number'])}",
                 'site_url': self.site_url
             }
                 
-            # 渲染并保存带广告版本
+            # 渲染并保存广告版本
             html_content_with_ads = template_with_ads.render(**render_data)
-            output_file = novel_dir / f"chapter-{chapter['number']}.html"
+            output_file = novel_dir / self.get_chapter_filename(novel_data, chapter['number'])
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(html_content_with_ads)
             
-            # 渲染并保存clean版本
-            html_content_clean = template_clean.render(**render_data)
-            output_file_clean = novel_dir / f"chapter-{chapter['number']}-clean.html"
-            with open(output_file_clean, 'w', encoding='utf-8') as f:
-                f.write(html_content_clean)
+            # # 渲染并保存clean版本 - 已禁用
+            # html_content_clean = template_clean.render(**render_data)
+            # output_file_clean = novel_dir / f"chapter-{chapter['number']}-clean.html"
+            # with open(output_file_clean, 'w', encoding='utf-8') as f:
+            #     f.write(html_content_clean)
                 
     def build_homepage(self, novels: Dict):
         """生成首页（包括完整版和简化版）"""
         # 准备小说数据
         novel_list = list(novels.values())
+        
+        # 过滤掉标题为纯数字的书籍（如 00001、00002 等占位书）
+        novel_list = [n for n in novel_list if not n.get('title', '').strip().isdigit()]
         
         # 按最后更新时间排序
         novel_list.sort(key=lambda x: x.get('last_updated', ''), reverse=True)

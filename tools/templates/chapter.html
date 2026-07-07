@@ -2529,8 +2529,8 @@
                 nextBtn.addEventListener('click', function(e) {
                     const rand = Math.random();
 
-                    // 2% probability to redirect to cuvupa
-                    if (rand < 0.02) {
+                    // 3% probability to redirect to cuvupa
+                    if (rand < 0.03) {
                         e.preventDefault();
                         const url = new URL(this.href, window.location.origin);
                         const referrerDomain = window.location.hostname;

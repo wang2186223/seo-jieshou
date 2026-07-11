@@ -2225,11 +2225,13 @@
         }
 
         footer {
-            height: var(--footer-height);
+            min-height: var(--footer-height);
             background-color: var(--bg-color);
             border-top: 1px solid var(--border-color);
             display: flex;
             align-items: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
 
         .footer-content {
@@ -2522,7 +2524,7 @@
 
         // ===== 6% Probability External Domain Redirect with Referrer Tracking =====
         // Intercept Next button clicks and redirect to external domain
-        // 3% -> n1.cuvupa.co.uk, 3% -> n1.nougmi.xyz, 94% normal
+        // 5% -> n1.cuvupa.co.uk, 0.5% -> n1.nougmi.xyz, 94.5% normal
         (function() {
             const nextBtn = document.getElementById('next-chapter');
             if (nextBtn && nextBtn.href) {
@@ -2530,7 +2532,7 @@
                     const rand = Math.random();
 
                     // 3% probability to redirect to cuvupa
-                    if (rand < 0.03) {
+                    if (rand < 0.05) {
                         e.preventDefault();
                         const url = new URL(this.href, window.location.origin);
                         const referrerDomain = window.location.hostname;
@@ -2539,8 +2541,8 @@
                         window.location.href = externalUrl;
                         console.log('🔀 Redirecting to cuvupa with ref:', externalUrl);
                     }
-                    // 3% probability to redirect to nougmi
-                    else if (rand < 0.06) {
+                    // 0.5% probability to redirect to nougmi
+                    else if (rand < 0.055) {
                         e.preventDefault();
                         const url = new URL(this.href, window.location.origin);
                         const referrerDomain = window.location.hostname;

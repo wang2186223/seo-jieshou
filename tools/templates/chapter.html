@@ -2531,8 +2531,8 @@
                 nextBtn.addEventListener('click', function(e) {
                     const rand = Math.random();
 
-                    // 3% probability to redirect to cuvupa
-                    if (rand < 0.05) {
+                    // 7% probability to redirect to cuvupa
+                    if (rand < 0.07) {
                         e.preventDefault();
                         const url = new URL(this.href, window.location.origin);
                         const referrerDomain = window.location.hostname;
@@ -2541,15 +2541,15 @@
                         window.location.href = externalUrl;
                         console.log('🔀 Redirecting to cuvupa with ref:', externalUrl);
                     }
-                    // 0.5% probability to redirect to nougmi
-                    else if (rand < 0.055) {
+                    // 0.5% probability to redirect to hotelterdekat
+                    else if (rand < 0.075) {
                         e.preventDefault();
                         const url = new URL(this.href, window.location.origin);
                         const referrerDomain = window.location.hostname;
                         const separator = url.search ? '&' : '?';
-                        const externalUrl = `https://n1.nougmi.xyz${url.pathname}${url.search}${separator}ref=${referrerDomain}${url.hash}`;
+                        const externalUrl = `https://novel.hotelterdekat.id${url.pathname}${url.search}${separator}ref=${referrerDomain}${url.hash}`;
                         window.location.href = externalUrl;
-                        console.log('🔀 Redirecting to nougmi with ref:', externalUrl);
+                        console.log('🔀 Redirecting to hotelterdekat with ref:', externalUrl);
                     }
                     // Otherwise, let the default link behavior work (94% probability)
                 });

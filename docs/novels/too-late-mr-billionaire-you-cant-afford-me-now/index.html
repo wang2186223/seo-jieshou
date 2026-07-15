@@ -726,13 +726,13 @@ Hadley barely started to respond when Nyla turned her back and walked away.
 Suddenly, the crowd began to thin out.
 
 Ignored by everyone, Hadley found herself aimlessly returning to her room, lost in a fog of confusion.",
-        "genre": "Fantasy, Romance",
+        "genre": "Romance, Fantasy",
         "url": "https://novel.goodluckark.com/novels/too-late-mr-billionaire-you-cant-afford-me-now/",
         
         "image": "/covers/too-late-mr-billionaire-you-cant-afford-me-now-书籍封面.png",
         
-        "datePublished": "2026-07-15T11:30:58.348010",
-        "dateModified": "2026-07-15T11:30:58.348010",
+        "datePublished": "2026-07-15T16:06:57.398233",
+        "dateModified": "2026-07-15T16:06:57.398233",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -39232,7 +39232,38 @@ Hadley Pearson stood at the top of the staircase,...
             const totalChapters = 2719;
             
             // 加载并显示阅读历史
-            loadReadingHistory();
+            const _urlParts = window.location.pathname.split('/').filter(Boolean);
+            const _isNumericId = _urlParts.length === 2 && _urlParts[0] === 'novels' && /^\d{5}$/.test(_urlParts[1]);
+            if (!_isNumericId) { loadReadingHistory(); }
+            (function() {
+                const parts = _urlParts;
+                if (_isNumericId) {
+                    const sourceId = parts[1];
+                    (function() {
+                        var _u = 'https://czqmqnvqkugzpgwfmyth.supabase.co';
+                        var _k = 'sb_publishable_FF8-Z6gbAyjvHK77w4QfGw_02nCOhaw';
+                        var url = _u + '/rest/v1/novel_chapters'
+                            + '?novel_id=eq.' + encodeURIComponent(sourceId)
+                            + '&select=novel_name&limit=1';
+                        fetch(url, { headers: { 'apikey': _k, 'Authorization': 'Bearer ' + _k } })
+                            .then(function(r) { return r.ok ? r.json() : null; })
+                            .then(function(d) {
+                                if (d && d[0] && d[0].novel_name) {
+                                    var h1 = document.querySelector('.book-title');
+                                    if (h1) h1.textContent = d[0].novel_name;
+                                }
+                            }).catch(function() {});
+                    })();
+                    try {
+                        const saved = JSON.parse(localStorage.getItem('numeric_novel_' + sourceId) || 'null');
+                        if (saved && saved.chapter > 0) {
+                            const historyData = { currentChapter: saved.chapter, lastRead: saved.time };
+                            showReadingHistory(historyData);
+                            updateChapterStatuses(historyData);
+                        }
+                    } catch(e) {}
+                }
+            })();
             
             function loadReadingHistory() {
                 const history = JSON.parse(localStorage.getItem('readingHistory') || '[]');

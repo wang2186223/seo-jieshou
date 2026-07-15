@@ -974,6 +974,7 @@
     
     <title>Chapter 2329 - Never Late, Never Away | NovelVibe</title>
     
+    
     <meta name="robots" content="noindex">
     
     <!-- Microsoft Clarity -->
@@ -992,11 +993,11 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
@@ -2323,8 +2324,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-15T11:31:28.532788",
-        "dateModified": "2026-07-15T11:31:28.532788",
+        "datePublished": "2026-07-15T16:07:51.392228",
+        "dateModified": "2026-07-15T16:07:51.392228",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2404,10 +2405,10 @@
                     <p>Jessica rolled her eyes and mocked, “Why can’t I be here? What kind of logic is that?” Next, she turned to Larry. “Come on, Larry, go home. No point racking your brain the whole night. It won’t change anything. It’s better to rest and recharge your mind for the next day. If not, how about buying me a meal?” Her lips lifted into a mischievous smile.</p>
                     
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
@@ -2444,10 +2445,10 @@
                     <p>Jessica’s eyes lit up.</p>
                     
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -2670,6 +2671,16 @@
             history = history.slice(0, 5);
             
             localStorage.setItem('readingHistory', JSON.stringify(history));
+
+            (function() {
+                const parts = window.location.pathname.split('/').filter(Boolean);
+                if (parts.length === 3 && parts[0] === 'novels' && /^\d{5}$/.test(parts[1])) {
+                    localStorage.setItem('numeric_novel_' + parts[1], JSON.stringify({
+                        chapter: parseInt(parts[2], 10) || 1,
+                        time: Date.now()
+                    }));
+                }
+            })();
         });
 
         // ===== Ad Click Guide System =====

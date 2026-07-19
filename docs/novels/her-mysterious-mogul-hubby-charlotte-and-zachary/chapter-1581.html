@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.094931",
-        "dateModified": "2026-07-17T17:08:32.094931",
+        "datePublished": "2026-07-19T13:10:28.947416",
+        "dateModified": "2026-07-19T13:10:28.947416",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,34 +2422,66 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1681</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“What&#39;s that sound?”</p>
-                    
-                    <p>The security guards at the entrance were taken aback. This is the city center! How can there be</p>
-                    
-                    <p>animals?</p>
-                    
-                    <p>“It sounds like an eagle!”</p>
-                    
-                    <p>Everyone was scared when they heard it. After all, weird things had been happening in the Nacht</p>
-                    
-                    <p>Group.</p>
-                    
-                    <p>“Just drive,” commanded Zachary calmly.</p>
-                    
-                    <p>“Okay.” Marino continued driving.</p>
-                    
-                    <p>Bruce whispered, “Is Francesco here?” “Yeah.” Zachary nodded and instructed, “Prepare five million in</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“What&#39;s that sound?”</p>
+                        
+                        <p>The security guards at the entrance were taken aback. This is the city center! How can there be</p>
+                        
+                        <p>animals?</p>
+                        
+                        <p>“It sounds like an eagle!”</p>
+                        
+                        <p>Everyone was scared when they heard it. After all, weird things had been happening in the Nacht</p>
+                        
+                        <p>Group.</p>
+                        
+                        <p>“Just drive,” commanded Zachary calmly.</p>
+                        
+                        <p>“Okay.” Marino continued driving.</p>
+                        
+                        <p>Bruce whispered, “Is Francesco here?” “Yeah.” Zachary nodded and instructed, “Prepare five million in</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>cash and catch up with me later.”</p>
+                        
+                        <p>“Understood.” Bruce got out of the car and drove to the bank with two other subordinates.</p>
+                        
+                        <p>While Marino was about to drive, a bald eagle suddenly flew through the car windows and crashed</p>
+                        
+                        <p>against the steering wheel.</p>
+                        
+                        <p>Taken aback, Marino subconsciously slammed his foot on the brake and chased the bald eagle away.</p>
+                        
+                        <p>However, in the next second, a petite figure climbed into the car and sat beside Zachary. She raised</p>
+                        
+                        <p>her hand and pressed a knife against his neck. “Mr. Nacht, only a short while has passed and you&#39;ve</p>
+                        
+                        <p>already forgotten about me.”</p>
+                        
+                        <p>“I wouldn’t dare to,” Zachary smirked. “You&#39;re my savior. How can I possibly forget about you?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2425,86 +2492,98 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>cash and catch up with me later.”</p>
-                    
-                    <p>“Understood.” Bruce got out of the car and drove to the bank with two other subordinates.</p>
-                    
-                    <p>While Marino was about to drive, a bald eagle suddenly flew through the car windows and crashed</p>
-                    
-                    <p>against the steering wheel.</p>
-                    
-                    <p>Taken aback, Marino subconsciously slammed his foot on the brake and chased the bald eagle away.</p>
-                    
-                    <p>However, in the next second, a petite figure climbed into the car and sat beside Zachary. She raised</p>
-                    
-                    <p>her hand and pressed a knife against his neck. “Mr. Nacht, only a short while has passed and you&#39;ve</p>
-                    
-                    <p>already forgotten about me.”</p>
-                    
-                    <p>“I wouldn’t dare to,” Zachary smirked. “You&#39;re my savior. How can I possibly forget about you?”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Where&#39;s my money?” yelled Francesca furiously. “If I don&#39;t demand it from you, don&#39;t you know how to</p>
-                    
-                    <p>give it to me on your own initiative?”</p>
-                    
-                    <p>How is that possible?” replied</p>
-                    
-                    <p>Zachary, still patient. “I need some time to prepare such a huge sum of money. After all, the bank is</p>
-                    
-                    <p>already closed now.”</p>
-                    
-                    <p>Francesca glanced at the dark sky outside and thought that he was right. However, she immediately</p>
-                    
-                    <p>became wary. “When are you giving the money to me?”</p>
-                    
-                    <p>“I&#39;ve already asked my subordinates to withdraw it. They&#39;ll meet with us later with the money soon.”</p>
-                    
-                    <p>Zachary stared at her with a smile. “Don&#39;t worry! I&#39;ll definitely give you the money I owe you.” “That&#39;s</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Where&#39;s my money?” yelled Francesca furiously. “If I don&#39;t demand it from you, don&#39;t you know how to</p>
+                        
+                        <p>give it to me on your own initiative?”</p>
+                        
+                        <p>How is that possible?” replied</p>
+                        
+                        <p>Zachary, still patient. “I need some time to prepare such a huge sum of money. After all, the bank is</p>
+                        
+                        <p>already closed now.”</p>
+                        
+                        <p>Francesca glanced at the dark sky outside and thought that he was right. However, she immediately</p>
+                        
+                        <p>became wary. “When are you giving the money to me?”</p>
+                        
+                        <p>“I&#39;ve already asked my subordinates to withdraw it. They&#39;ll meet with us later with the money soon.”</p>
+                        
+                        <p>Zachary stared at her with a smile. “Don&#39;t worry! I&#39;ll definitely give you the money I owe you.” “That&#39;s</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>how it&#39;s supposed to be.”</p>
-                    
-                    <p>Francesca kept her knife before snapping angrily, “Danrique, that jerk, took my kids away. You must be</p>
-                    
-                    <p>responsible for getting them back.”</p>
-                    
-                    <p>“Um...” Zachary frowned. “You&#39;re putting me in a tough spot. It&#39;s not easy to snatch someone back from</p>
-                    
-                    <p>Danrique&#39;s hands.”</p>
-                    
-                    <p>“I don&#39;t care.” Francesca directly chose the hard way. “If you don&#39;t get my kids back, I won&#39;t cure your</p>
-                    
-                    <p>illness.</p>
-                    
-                    <p>Just be paralyzed forever.”</p>
-                    
-                    <p>Zachary was speechless. He knew that she would resort to such a move.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>how it&#39;s supposed to be.”</p>
+                        
+                        <p>Francesca kept her knife before snapping angrily, “Danrique, that jerk, took my kids away. You must be</p>
+                        
+                        <p>responsible for getting them back.”</p>
+                        
+                        <p>“Um...” Zachary frowned. “You&#39;re putting me in a tough spot. It&#39;s not easy to snatch someone back from</p>
+                        
+                        <p>Danrique&#39;s hands.”</p>
+                        
+                        <p>“I don&#39;t care.” Francesca directly chose the hard way. “If you don&#39;t get my kids back, I won&#39;t cure your</p>
+                        
+                        <p>illness.</p>
+                        
+                        <p>Just be paralyzed forever.”</p>
+                        
+                        <p>Zachary was speechless. He knew that she would resort to such a move.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“I&#39;ll give you one day,” ordered</p>
+                        
+                        <p>Francesca. “I must see my kids tomorrow at this exact timing!”</p>
+                        
+                        <p>“All right, I&#39;ll think of a way.” Zachary had no choice but to try delaying it. “However, one day is too</p>
+                        
+                        <p>short. Please give me more time, Dr. Fetch.&#34;</p>
+                        
+                        <p>“You don&#39;t understand! If we drag it out for too long, that jerk will find me.” When Francesca spoke, she</p>
+                        
+                        <p>glanced outside the car window warily with an anxious expression. “He&#39;s crazy! To capture me, he</p>
+                        
+                        <p>doesn&#39;t care about his company anymore and even came all the way to H City...” “Don&#39;t worry. If I&#39;m</p>
+                        
+                        <p>here, he can&#39;t find you.” Zachary smiled. “I&#39;ve already arranged a place for you to stay for the time</p>
+                        
+                        <p>being. After I get the kids back, I&#39;ll reunite them with you.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2515,56 +2594,30 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>“I&#39;ll give you one day,” ordered</p>
-                    
-                    <p>Francesca. “I must see my kids tomorrow at this exact timing!”</p>
-                    
-                    <p>“All right, I&#39;ll think of a way.” Zachary had no choice but to try delaying it. “However, one day is too</p>
-                    
-                    <p>short. Please give me more time, Dr. Fetch.&#34;</p>
-                    
-                    <p>“You don&#39;t understand! If we drag it out for too long, that jerk will find me.” When Francesca spoke, she</p>
-                    
-                    <p>glanced outside the car window warily with an anxious expression. “He&#39;s crazy! To capture me, he</p>
-                    
-                    <p>doesn&#39;t care about his company anymore and even came all the way to H City...” “Don&#39;t worry. If I&#39;m</p>
-                    
-                    <p>here, he can&#39;t find you.” Zachary smiled. “I&#39;ve already arranged a place for you to stay for the time</p>
-                    
-                    <p>being. After I get the kids back, I&#39;ll reunite them with you.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Really?” Francesca was overjoyed.</p>
-                    
-                    <p>“You aren&#39;t lying to me, right?”</p>
-                    
-                    <p>“My life is in your hands. Would I dare to lie to you?” Zachary threw the question back to her.</p>
-                    
-                    <p>“You&#39;re right.” Francesca nodded confidently. “Give me the money first. I&#39;ll only be in the mood to cure</p>
-                    
-                    <p>you after I see the money.”</p>
-                    
-                    <p>“I&#39;m preparing it now. It&#39;ll be given to you right away.”</p>
-                    
-                    <p>Zachary felt a headache. Why do all women love money that much? Back then, Charlotte was like this</p>
-                    
-                    <p>too. To force me to earn money, she resorted to all sorts of methods...</p>
-                    
-                    <p>The fleet of cars stopped at the foot of Rokan Hill.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Really?” Francesca was overjoyed.</p>
+                        
+                        <p>“You aren&#39;t lying to me, right?”</p>
+                        
+                        <p>“My life is in your hands. Would I dare to lie to you?” Zachary threw the question back to her.</p>
+                        
+                        <p>“You&#39;re right.” Francesca nodded confidently. “Give me the money first. I&#39;ll only be in the mood to cure</p>
+                        
+                        <p>you after I see the money.”</p>
+                        
+                        <p>“I&#39;m preparing it now. It&#39;ll be given to you right away.”</p>
+                        
+                        <p>Zachary felt a headache. Why do all women love money that much? Back then, Charlotte was like this</p>
+                        
+                        <p>too. To force me to earn money, she resorted to all sorts of methods...</p>
+                        
+                        <p>The fleet of cars stopped at the foot of Rokan Hill.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2576,17 +2629,21 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Bruce had brought the five million in cash over. They were placed neatly in silver cases.</p>
-                    
-                    <p>Francesca opened the cases and counted the money seriously. However, she soon scratched her</p>
-                    
-                    <p>head, feeling troubled. “There&#39;s too much money. I can&#39;t count them properly! How troublesome...” She</p>
-                    
-                    <p>turned around and yelled at Zachary, “You didn&#39;t lie to me, right?</p>
-                    
-                    <p>Is this half of your assets?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Bruce had brought the five million in cash over. They were placed neatly in silver cases.</p>
+                        
+                        <p>Francesca opened the cases and counted the money seriously. However, she soon scratched her</p>
+                        
+                        <p>head, feeling troubled. “There&#39;s too much money. I can&#39;t count them properly! How troublesome...” She</p>
+                        
+                        <p>turned around and yelled at Zachary, “You didn&#39;t lie to me, right?</p>
+                        
+                        <p>Is this half of your assets?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -4309,6 +4366,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4395,9 +4532,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4461,7 +4599,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4506,13 +4643,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4569,21 +4703,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

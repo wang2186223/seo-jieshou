@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:25.092526",
-        "dateModified": "2026-07-17T17:08:25.092526",
+        "datePublished": "2026-07-19T13:10:20.944260",
+        "dateModified": "2026-07-19T13:10:20.944260",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,24 +2422,46 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2134</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>As if it were no great matter, Eric spoke of how he had sent Elissa and Locke off to the Scott family’s remote private island. Still, Hadley understood that for most people, such a plan bordered on impossible.</p>
-                    
-                    <p>While Eric’s support had made a difference, it wasn’t the main issue. More than anything, the weight of having lied to Ernest was eating away at Eric. Sharing news of Addy’s condition with Elissa right now might drive her to drop everything and race back to Srixby.</p>
-                    
-                    <p>Should that happen, their efforts to help her escape would unravel, leaving Elissa vulnerable to Ernest once again, with no way out of his reach. Worse yet, Eric’s involvement would come to light, making it impossible for him to face Ernest afterward.</p>
-                    
-                    <p>Trust, once broken, would make it unthinkable for Ernest to forgive the two people he had relied on most—Eric and Hadley.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>As if it were no great matter, Eric spoke of how he had sent Elissa and Locke off to the Scott family’s remote private island. Still, Hadley understood that for most people, such a plan bordered on impossible.</p>
+                        
+                        <p>While Eric’s support had made a difference, it wasn’t the main issue. More than anything, the weight of having lied to Ernest was eating away at Eric. Sharing news of Addy’s condition with Elissa right now might drive her to drop everything and race back to Srixby.</p>
+                        
+                        <p>Should that happen, their efforts to help her escape would unravel, leaving Elissa vulnerable to Ernest once again, with no way out of his reach. Worse yet, Eric’s involvement would come to light, making it impossible for him to face Ernest afterward.</p>
+                        
+                        <p>Trust, once broken, would make it unthinkable for Ernest to forgive the two people he had relied on most—Eric and Hadley.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The idea haunted Hadley, and she feared it might forever damage the bond between Eric and Ernest.</p>
+                        
+                        <p>One look at her troubled expression told Eric everything he needed to know.</p>
+                        
+                        <p>Nothing escaped him; whatever crossed Hadley’s mind, he was already thinking as well. But even in that moment, Eric found a sense of comfort knowing Hadley cared about him, too. That reassurance meant the world to him. Any sacrifice felt worthwhile if it was for her sake.</p>
+                        
+                        <p>In a gentle voice, he said, “You don’t have to think about me. Whenever you’re ready, I can have someone inform Elissa right away…”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2415,56 +2472,20 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>The idea haunted Hadley, and she feared it might forever damage the bond between Eric and Ernest.</p>
-                    
-                    <p>One look at her troubled expression told Eric everything he needed to know.</p>
-                    
-                    <p>Nothing escaped him; whatever crossed Hadley’s mind, he was already thinking as well. But even in that moment, Eric found a sense of comfort knowing Hadley cared about him, too. That reassurance meant the world to him. Any sacrifice felt worthwhile if it was for her sake.</p>
-                    
-                    <p>In a gentle voice, he said, “You don’t have to think about me. Whenever you’re ready, I can have someone inform Elissa right away…”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="2">
-                    
-                    <p>“No, don’t!” A quick shake of Hadley’s head stopped him. Conflicted thoughts warred inside her. “Maybe things won’t turn out as badly as we fear.”</p>
-                    
-                    <p>Hearing her say that brought a gentle flutter of hope to Eric’s chest.</p>
-                    
-                    <p>“Let’s not worry just yet.” Eric reached out, smoothing her hair with care. “Maybe Addy will pull through. Whatever happens next, I trust your decision.”</p>
-                    
-                    <p>The best reads are at g?lnσνs?c?m</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>“Alright.” A quiet nod was Hadley’s answer, her heart filled with silent prayers for Addy’s recovery.</p>
-                    
-                    <p>Long after midnight, Linda remained wide awake, waiting for Ernest’s return. Minutes stretched into hours, yet dawn began to break without any sign of him. Not once that night did Ernest walk through the door.</p>
-                    
-                    <p>A gentle, humorless laugh escaped Linda; deep down, she had anticipated this outcome. Instead of dwelling on it, she maneuvered her wheelchair into the closet, heading for the cabinet tucked farthest away. After opening the door and sliding out a drawer, she reached behind the others and retrieved a hidden phone.</p>
-                    
-                    <p>Without hesitation, she scrolled through her contacts and placed a call. The phone barely rang before someone answered. No emotion crossed Linda’s face as she spoke in a low, cold tone. “It’s me…”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“No, don’t!” A quick shake of Hadley’s head stopped him. Conflicted thoughts warred inside her. “Maybe things won’t turn out as badly as we fear.”</p>
+                        
+                        <p>Hearing her say that brought a gentle flutter of hope to Eric’s chest.</p>
+                        
+                        <p>“Let’s not worry just yet.” Eric reached out, smoothing her hair with care. “Maybe Addy will pull through. Whatever happens next, I trust your decision.”</p>
+                        
+                        <p>The best reads are at g?lnσνs?c?m</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2475,41 +2496,73 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>The following morning.</p>
-                    
-                    <p>Around midday, Hadley wrapped up the shoot. After letting the assistant director and Lisa know, she gave Chelsey instructions to remain behind before heading out with Tamara.</p>
-                    
-                    <p>Waiting beyond the set’s gates, Eric had already arrived. Joy needed to see her doctor for a follow-up today.</p>
-                    
-                    <p>First, he had stopped by Jewel Avenue to pick up Joy, and then swung by for Hadley so the three of them could head to the hospital together.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Alright.” A quiet nod was Hadley’s answer, her heart filled with silent prayers for Addy’s recovery.</p>
+                        
+                        <p>Long after midnight, Linda remained wide awake, waiting for Ernest’s return. Minutes stretched into hours, yet dawn began to break without any sign of him. Not once that night did Ernest walk through the door.</p>
+                        
+                        <p>A gentle, humorless laugh escaped Linda; deep down, she had anticipated this outcome. Instead of dwelling on it, she maneuvered her wheelchair into the closet, heading for the cabinet tucked farthest away. After opening the door and sliding out a drawer, she reached behind the others and retrieved a hidden phone.</p>
+                        
+                        <p>Without hesitation, she scrolled through her contacts and placed a call. The phone barely rang before someone answered. No emotion crossed Linda’s face as she spoke in a low, cold tone. “It’s me…”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The following morning.</p>
+                        
+                        <p>Around midday, Hadley wrapped up the shoot. After letting the assistant director and Lisa know, she gave Chelsey instructions to remain behind before heading out with Tamara.</p>
+                        
+                        <p>Waiting beyond the set’s gates, Eric had already arrived. Joy needed to see her doctor for a follow-up today.</p>
+                        
+                        <p>First, he had stopped by Jewel Avenue to pick up Joy, and then swung by for Hadley so the three of them could head to the hospital together.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Good news greeted them at the appointment; Thurston smiled and said, “You’re making excellent progress. Joy, you’ve done so well.”</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
-                    <p>.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Good news greeted them at the appointment; Thurston smiled and said, “You’re making excellent progress. Joy, you’ve done so well.”</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                        <p>.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
@@ -4229,6 +4282,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4315,9 +4448,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4381,7 +4515,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4426,13 +4559,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4489,21 +4619,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

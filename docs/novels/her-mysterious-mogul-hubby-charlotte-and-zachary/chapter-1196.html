@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.628299",
-        "dateModified": "2026-07-17T17:08:31.628299",
+        "datePublished": "2026-07-19T13:10:28.264225",
+        "dateModified": "2026-07-19T13:10:28.264225",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,60 +2422,62 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1296</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“I hope my photo didn&#39;t disappoint you.”</p>
-                    
-                    <p>Charlotte knew Nancy must have done a detailed background check on her before meeting her.</p>
-                    
-                    <p>“I&#39;m sorry for being intrusive,” Nancy said with her head low, “I was really curious about you after</p>
-                    
-                    <p>meeting you at Pillere. I could not get my mind off the woman in the veil, so I asked my men to run a</p>
-                    
-                    <p>check. That&#39;s how I found out about you.”</p>
-                    
-                    <p>“There are only that few who know about my real identity,” Charlotte pointed out as she took a sip from</p>
-                    
-                    <p>her cup. “You must be really influential to get information about me that easily.”</p>
-                    
-                    <p>“Well...” Nancy looked uneasy. “They know I don&#39;t mean harm. I hope you don&#39;t blame them.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“I hope my photo didn&#39;t disappoint you.”</p>
+                        
+                        <p>Charlotte knew Nancy must have done a detailed background check on her before meeting her.</p>
+                        
+                        <p>“I&#39;m sorry for being intrusive,” Nancy said with her head low, “I was really curious about you after</p>
+                        
+                        <p>meeting you at Pillere. I could not get my mind off the woman in the veil, so I asked my men to run a</p>
+                        
+                        <p>check. That&#39;s how I found out about you.”</p>
+                        
+                        <p>“There are only that few who know about my real identity,” Charlotte pointed out as she took a sip from</p>
+                        
+                        <p>her cup. “You must be really influential to get information about me that easily.”</p>
+                        
+                        <p>“Well...” Nancy looked uneasy. “They know I don&#39;t mean harm. I hope you don&#39;t blame them.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Charlotte smiled and looked at her. “Why do you want to meet me?”</p>
-                    
-                    <p>Nancy took up her cup and drank. “I just want to make a new friend.”</p>
-                    
-                    <p>“You can be honest with me.” Charlotte looked at her watch.</p>
-                    
-                    <p>“I&#39;ll just cut to the chase since you&#39;re in a hurry.”</p>
-                    
-                    <p>Nancy put down her cup and gestured at her subordinate, who instantly came forward with a silver box.</p>
-                    
-                    <p>It was a document.</p>
-                    
-                    <p>“This is a document about F Nation&#39;s Gymnasium Project. Someone invited me to join this project to</p>
-                    
-                    <p>replace you,” Nancy said solemnly with a slight smile.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Charlotte smiled and looked at her. “Why do you want to meet me?”</p>
+                        
+                        <p>Nancy took up her cup and drank. “I just want to make a new friend.”</p>
+                        
+                        <p>“You can be honest with me.” Charlotte looked at her watch.</p>
+                        
+                        <p>“I&#39;ll just cut to the chase since you&#39;re in a hurry.”</p>
+                        
+                        <p>Nancy put down her cup and gestured at her subordinate, who instantly came forward with a silver box.</p>
+                        
+                        <p>It was a document.</p>
+                        
+                        <p>“This is a document about F Nation&#39;s Gymnasium Project. Someone invited me to join this project to</p>
+                        
+                        <p>replace you,” Nancy said solemnly with a slight smile.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2452,51 +2489,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>She took a look at Charlotte before she continued, “My family is looking into international ventures and</p>
-                    
-                    <p>I&#39;m interested in this project, but I&#39;m not interested in fighting with you over something like this, so I</p>
-                    
-                    <p>would like to know what you think about this.”</p>
-                    
-                    <p>Charlotte evaded Nancy&#39;s gaze and clenched her jaw. She knew Nancy was not just referring to the</p>
-                    
-                    <p>project. She was referring to Zachary as well.</p>
-                    
-                    <p>“Ms. Lindberg, I&#39;ll gladly decline this offer if you&#39;re still interested in this project, but if you&#39;re opting out,</p>
-                    
-                    <p>which is what they told me, then I&#39;ll consider joining.”</p>
-                    
-                    <p>Nancy poured Charlotte another cup of tea as she waited for her reply. “I will respect your decision, Ms.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Lindberg.”</p>
-                    
-                    <p>Charlotte fixed her eyes on the cup without answering. She knew full well what Nancy</p>
-                    
-                    <p>meant.</p>
-                    
-                    <p>Charlotte was able to read in between the lines and saw through Nancy. The project was not the real</p>
-                    
-                    <p>reason why she wanted to talk to Charlotte.</p>
-                    
-                    <p>This woman is indeed different from those I&#39;ve met before. She&#39;s clever and calm.</p>
-                    
-                    <p>“What do you think, Ms. Lindberg?”</p>
-                    
-                    <p>“I don&#39;t think it matters to you whether I continue on with the project or not.” Charlotte finally took up the</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She took a look at Charlotte before she continued, “My family is looking into international ventures and</p>
+                        
+                        <p>I&#39;m interested in this project, but I&#39;m not interested in fighting with you over something like this, so I</p>
+                        
+                        <p>would like to know what you think about this.”</p>
+                        
+                        <p>Charlotte evaded Nancy&#39;s gaze and clenched her jaw. She knew Nancy was not just referring to the</p>
+                        
+                        <p>project. She was referring to Zachary as well.</p>
+                        
+                        <p>“Ms. Lindberg, I&#39;ll gladly decline this offer if you&#39;re still interested in this project, but if you&#39;re opting out,</p>
+                        
+                        <p>which is what they told me, then I&#39;ll consider joining.”</p>
+                        
+                        <p>Nancy poured Charlotte another cup of tea as she waited for her reply. “I will respect your decision, Ms.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2507,79 +2520,123 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>cup. “What annoys me is that these people seem overenthusiastic in finding me a replacement.”</p>
-                    
-                    <p>Nancy stared at her for a second. She could not decipher what Charlotte was getting at.</p>
-                    
-                    <p>“You shouldn&#39;t be talking to me, Ms. Gold. You should be talking to the people who made you this offer.</p>
-                    
-                    <p>Besides, it&#39;s all about competing on a level field when it comes to business. There&#39;s no right or wrong.”</p>
-                    
-                    <p>“Competing on a level field?” Nancy was surprised. “Is this what you really think?”</p>
-                    
-                    <p>“Yes. I&#39;m unapologetic about fighting for the things that I deem as important. I like competing head-on in</p>
-                    
-                    <p>a fair and square manner instead of using underhanded ways, but if my opponents want to play dirty, I&#39;ll</p>
-                    
-                    <p>play by their rules.”</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Lindberg.”</p>
+                        
+                        <p>Charlotte fixed her eyes on the cup without answering. She knew full well what Nancy</p>
+                        
+                        <p>meant.</p>
+                        
+                        <p>Charlotte was able to read in between the lines and saw through Nancy. The project was not the real</p>
+                        
+                        <p>reason why she wanted to talk to Charlotte.</p>
+                        
+                        <p>This woman is indeed different from those I&#39;ve met before. She&#39;s clever and calm.</p>
+                        
+                        <p>“What do you think, Ms. Lindberg?”</p>
+                        
+                        <p>“I don&#39;t think it matters to you whether I continue on with the project or not.” Charlotte finally took up the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>cup. “What annoys me is that these people seem overenthusiastic in finding me a replacement.”</p>
+                        
+                        <p>Nancy stared at her for a second. She could not decipher what Charlotte was getting at.</p>
+                        
+                        <p>“You shouldn&#39;t be talking to me, Ms. Gold. You should be talking to the people who made you this offer.</p>
+                        
+                        <p>Besides, it&#39;s all about competing on a level field when it comes to business. There&#39;s no right or wrong.”</p>
+                        
+                        <p>“Competing on a level field?” Nancy was surprised. “Is this what you really think?”</p>
+                        
+                        <p>“Yes. I&#39;m unapologetic about fighting for the things that I deem as important. I like competing head-on in</p>
+                        
+                        <p>a fair and square manner instead of using underhanded ways, but if my opponents want to play dirty, I&#39;ll</p>
+                        
+                        <p>play by their rules.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Charlotte went straight to the point. Although she sounded calm as a cucumber, her words sounded</p>
-                    
-                    <p>deterrent.</p>
-                    
-                    <p>“Understood, Ms. Lindberg.” Nancy smiled with a confident nod. “You really impress me. You have my</p>
-                    
-                    <p>word. I like a fair competition too. No cheating and no hard feelings.”</p>
-                    
-                    <p>“Great.” Charlotte&#39;s brows arched in a pleasant surprise. “All the best, Ms. Gold.”</p>
-                    
-                    <p>With that said, she put down her cup and motioned to leave. “Thanks for your treat. We should meet up</p>
-                    
-                    <p>over some beer the next time.</p>
-                    
-                    <p>Its on me.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Charlotte went straight to the point. Although she sounded calm as a cucumber, her words sounded</p>
+                        
+                        <p>deterrent.</p>
+                        
+                        <p>“Understood, Ms. Lindberg.” Nancy smiled with a confident nod. “You really impress me. You have my</p>
+                        
+                        <p>word. I like a fair competition too. No cheating and no hard feelings.”</p>
+                        
+                        <p>“Great.” Charlotte&#39;s brows arched in a pleasant surprise. “All the best, Ms. Gold.”</p>
+                        
+                        <p>With that said, she put down her cup and motioned to leave. “Thanks for your treat. We should meet up</p>
+                        
+                        <p>over some beer the next time.</p>
+                        
+                        <p>Its on me.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“I&#39;m looking forward to that. Let me see you out.” Nancy stood up.</p>
-                    
-                    <p>“Don&#39;t bother. I&#39;ll see you next time.” Charlotte turned and left.</p>
-                    
-                    <p>Nancy sat back down in her window seat as she watched Charlotte leave. She felt things were going to</p>
-                    
-                    <p>take an interesting and unexpected turn.</p>
-                    
-                    <p>Behind her, her subordinate came up and reported, “Ms. Gold, that&#39;s Mr. Nacht&#39;s car.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“I&#39;m looking forward to that. Let me see you out.” Nancy stood up.</p>
+                        
+                        <p>“Don&#39;t bother. I&#39;ll see you next time.” Charlotte turned and left.</p>
+                        
+                        <p>Nancy sat back down in her window seat as she watched Charlotte leave. She felt things were going to</p>
+                        
+                        <p>take an interesting and unexpected turn.</p>
+                        
+                        <p>Behind her, her subordinate came up and reported, “Ms. Gold, that&#39;s Mr. Nacht&#39;s car.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4297,6 +4354,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4383,9 +4520,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4449,7 +4587,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4494,13 +4631,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4557,21 +4691,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

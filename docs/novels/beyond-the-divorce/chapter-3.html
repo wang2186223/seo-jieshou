@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:26.506194",
-        "dateModified": "2026-07-17T17:08:26.506194",
+        "datePublished": "2026-07-19T13:10:22.214315",
+        "dateModified": "2026-07-19T13:10:22.214315",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,48 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 3</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter3</p>
-                    
-                    <p>Anxiety</p>
-                    
-                    <p>“Two days ago? Where?” I asked, feeling a little anxious.</p>
-                    
-                    <p>Ivanna noticed my reaction and retorted, “What’s with that look?”</p>
-                    
-                    <p>“Where did you see him?” I couldn’t care less about bantering with her and continued pressing for answers.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter3</p>
+                        
+                        <p>Anxiety</p>
+                        
+                        <p>“Two days ago? Where?” I asked, feeling a little anxious.</p>
+                        
+                        <p>Ivanna noticed my reaction and retorted, “What’s with that look?”</p>
+                        
+                        <p>“Where did you see him?” I couldn’t care less about bantering with her and continued pressing for answers.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>However, Ivanna’s phone started ringing. She glanced at the screen and hushed me before leaning into her chair and answering the call. After a few sentences, she straightened up, glanced at me, and said, “What?! I’ll be right there!”</p>
-                    
-                    <p>Immediately after, she closed her laptop and stuffed it into her bag. “I have to go. Let’s meet up again another time!”</p>
-                    
-                    <p>“Wait… You…” I had more questions, but she ignored me and left.</p>
-                    
-                    <p>She said she saw Matthew two days ago, but he was supposed to be on his business trip in Canta then. Where did she see him? Was she at Canta for a trip as well?</p>
-                    
-                    <p>I shrunk back into the seat silently. I was helpless, but a strange sense of fear filled my heart. The TikTok video kept playing in my mind, but I wasn’t sure if it was Matthew.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>However, Ivanna’s phone started ringing. She glanced at the screen and hushed me before leaning into her chair and answering the call. After a few sentences, she straightened up, glanced at me, and said, “What?! I’ll be right there!”</p>
+                        
+                        <p>Immediately after, she closed her laptop and stuffed it into her bag. “I have to go. Let’s meet up again another time!”</p>
+                        
+                        <p>“Wait… You…” I had more questions, but she ignored me and left.</p>
+                        
+                        <p>She said she saw Matthew two days ago, but he was supposed to be on his business trip in Canta then. Where did she see him? Was she at Canta for a trip as well?</p>
+                        
+                        <p>I shrunk back into the seat silently. I was helpless, but a strange sense of fear filled my heart. The TikTok video kept playing in my mind, but I wasn’t sure if it was Matthew.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2440,83 +2477,99 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Was he lying to me? Did he not go to Canta at all? Is he having an affair?</p>
-                    
-                    <p>I sat alone in the cafe with my mind in turmoil. Despite the warm sunlight shining on me, I couldn’t stop shivering. I wondered what I should do if Matthew had an affair and what would happen to Ava.</p>
-                    
-                    <p>I was so absent-minded the whole day that I forgot to pick Ava up. Fortunately, Matthew returned early today. Seeing that I had forgotten to pick Ava up, he quickly comforted me and left for kindergarten.</p>
-                    
-                    <p>Once he left, I forced myself to get up and started cooking. Before Matthew returned with our daughter, Melanie walked in unexpectedly. She had a key to our place and treated it as her own home.</p>
-                    
-                    <p>Although I disliked this, Matthew indulged her. When she saw me in the kitchen, she put down her bag and came over. She leaned against the door and asked, “Why are you cooking? Where’s my brother?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Was he lying to me? Did he not go to Canta at all? Is he having an affair?</p>
+                        
+                        <p>I sat alone in the cafe with my mind in turmoil. Despite the warm sunlight shining on me, I couldn’t stop shivering. I wondered what I should do if Matthew had an affair and what would happen to Ava.</p>
+                        
+                        <p>I was so absent-minded the whole day that I forgot to pick Ava up. Fortunately, Matthew returned early today. Seeing that I had forgotten to pick Ava up, he quickly comforted me and left for kindergarten.</p>
+                        
+                        <p>Once he left, I forced myself to get up and started cooking. Before Matthew returned with our daughter, Melanie walked in unexpectedly. She had a key to our place and treated it as her own home.</p>
+                        
+                        <p>Although I disliked this, Matthew indulged her. When she saw me in the kitchen, she put down her bag and came over. She leaned against the door and asked, “Why are you cooking? Where’s my brother?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>I was washing the vegetables as I replied, “He went to pick Ava up.”</p>
-                    
-                    <p>“It’s already late, and he’s only going to pick her up now?” Melanie’s tone carried a hint of reproach. She always acted pampered and arrogant, as if she was the boss of the house.</p>
-                    
-                    <p>Her attitude toward me, her sister-in-law, was also unpredictable. However, I had grown accustomed to her behavior over the years. After all, she was Matthew’s sister, and I had no choice but to accept the good and bad of marrying him.</p>
-                    
-                    <p>“Do we have squid at home? I want some calamari!” She asked casually.</p>
-                    
-                    <p>I gestured toward the fridge. “Look in there. Your brother probably bought some.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>I was washing the vegetables as I replied, “He went to pick Ava up.”</p>
+                        
+                        <p>“It’s already late, and he’s only going to pick her up now?” Melanie’s tone carried a hint of reproach. She always acted pampered and arrogant, as if she was the boss of the house.</p>
+                        
+                        <p>Her attitude toward me, her sister-in-law, was also unpredictable. However, I had grown accustomed to her behavior over the years. After all, she was Matthew’s sister, and I had no choice but to accept the good and bad of marrying him.</p>
+                        
+                        <p>“Do we have squid at home? I want some calamari!” She asked casually.</p>
+                        
+                        <p>I gestured toward the fridge. “Look in there. Your brother probably bought some.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Just then, Ava’s tender voice echoed from the doorway. “Mommy, I’m back! Why did you forget to pick me up today?” She ran up to me, looking at me with her head tilted.</p>
-                    
-                    <p>Although I felt guilty, I smiled and pinched her nose with my wet hands. “I was busy. I promise I won’t forget my baby next time.”</p>
-                    
-                    <p>Matthew came in with our daughter’s little backpack and looked at us dotingly. Meanwhile, Melanie approached the doorway and greeted him, “Matt!”</p>
-                    
-                    <p>“Why are you here?” Matthew asked as he put down his things and removed his coat. Then he entered the kitchen and wrapped his arms around me. The next second, he removed my apron and put it on himself. “I got this, honey. You can go play with Ava.”</p>
-                    
-                    <p>Melanie stared at her brother and sarcastically remarked, “My brother is such a good husband. I want to find someone like him in the future!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Just then, Ava’s tender voice echoed from the doorway. “Mommy, I’m back! Why did you forget to pick me up today?” She ran up to me, looking at me with her head tilted.</p>
+                        
+                        <p>Although I felt guilty, I smiled and pinched her nose with my wet hands. “I was busy. I promise I won’t forget my baby next time.”</p>
+                        
+                        <p>Matthew came in with our daughter’s little backpack and looked at us dotingly. Meanwhile, Melanie approached the doorway and greeted him, “Matt!”</p>
+                        
+                        <p>“Why are you here?” Matthew asked as he put down his things and removed his coat. Then he entered the kitchen and wrapped his arms around me. The next second, he removed my apron and put it on himself. “I got this, honey. You can go play with Ava.”</p>
+                        
+                        <p>Melanie stared at her brother and sarcastically remarked, “My brother is such a good husband. I want to find someone like him in the future!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Matthew snapped, “Leave the kitchen and stop causing trouble. Just wait for the meal to be ready.”</p>
-                    
-                    <p>“I don’t want to. I’ll help you!” Melanie spoke playfully, then squeezed into the kitchen. “I want to experience being a supportive wife!”</p>
-                    
-                    <p>I sighed at her words and thought she was shameless. How could she dream about finding someone like her brother when she was just a good-for-nothing who lazed around all day? It’d be a curse for whoever married her.</p>
-                    
-                    <p>I was already annoyed, but seeing Melanie amplified it. She was a grown woman who constantly pestered her brother. I knew she was only sucking up to Matthew to ask for money again.</p>
-                    
-                    <p>The Murphys had lived in poor conditions in their earlier years. Matthew’s parents worked odd jobs everywhere, while Melanie often fell sick and needed tentative care. Life was challenging for them back then, and Matthew felt helpless.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Matthew snapped, “Leave the kitchen and stop causing trouble. Just wait for the meal to be ready.”</p>
+                        
+                        <p>“I don’t want to. I’ll help you!” Melanie spoke playfully, then squeezed into the kitchen. “I want to experience being a supportive wife!”</p>
+                        
+                        <p>I sighed at her words and thought she was shameless. How could she dream about finding someone like her brother when she was just a good-for-nothing who lazed around all day? It’d be a curse for whoever married her.</p>
+                        
+                        <p>I was already annoyed, but seeing Melanie amplified it. She was a grown woman who constantly pestered her brother. I knew she was only sucking up to Matthew to ask for money again.</p>
+                        
+                        <p>The Murphys had lived in poor conditions in their earlier years. Matthew’s parents worked odd jobs everywhere, while Melanie often fell sick and needed tentative care. Life was challenging for them back then, and Matthew felt helpless.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2528,18 +2581,22 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>However, Matthew and his family’s lives changed drastically when my company kicked off. In a way, Matthew and I supported a big family, especially Melanie.</p>
-                    
-                    <p>She always asked for money as if we were supposed to give it to her. She was practically a parasite yet unapologetic and still dared to be carefree. I was genuinely speechless.</p>
-                    
-                    <p>I took my daughter’s hand and left the kitchen. If Melanie was out of sight, she was out of mind. Just then, my phone rang, and when I looked, it was Ivanna.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>However, Matthew and his family’s lives changed drastically when my company kicked off. In a way, Matthew and I supported a big family, especially Melanie.</p>
+                        
+                        <p>She always asked for money as if we were supposed to give it to her. She was practically a parasite yet unapologetic and still dared to be carefree. I was genuinely speechless.</p>
+                        
+                        <p>I took my daughter’s hand and left the kitchen. If Melanie was out of sight, she was out of mind. Just then, my phone rang, and when I looked, it was Ivanna.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4257,6 +4314,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4343,9 +4480,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4409,7 +4547,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4454,13 +4591,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4517,21 +4651,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

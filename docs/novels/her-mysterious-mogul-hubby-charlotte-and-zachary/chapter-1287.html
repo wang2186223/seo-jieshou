@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.738957",
-        "dateModified": "2026-07-17T17:08:31.738957",
+        "datePublished": "2026-07-19T13:10:28.457565",
+        "dateModified": "2026-07-19T13:10:28.457565",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,34 +2422,32 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1387</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Zachary continued to be in and out of sleep for the rest of the day. Whenever he woke up, he&#39;d only ask</p>
-                    
-                    <p>for the time and the well-being of his children and Charlotte before going back to sleep again.</p>
-                    
-                    <p>Because of that, he hadn’t eaten anything except for the sips of water when he took his medicine.</p>
-                    
-                    <p>It was past nine at night when Zachary roused from his sleep and once again asked if Charlotte had</p>
-                    
-                    <p>returned.</p>
-                    
-                    <p>Ben remained calm and collected as he replied, “Lupine informed me that they&#39;d be staying at Mount</p>
-                    
-                    <p>Phoenix for a couple more days. Ms. Lindberg was very worried about your injuries and even asked me</p>
-                    
-                    <p>how you were doing. I assured her that you&#39;re all right and recovering well—&#34;</p>
-                    
-                    <p>“No. Don&#39;t tell her about my condition,”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Zachary continued to be in and out of sleep for the rest of the day. Whenever he woke up, he&#39;d only ask</p>
+                        
+                        <p>for the time and the well-being of his children and Charlotte before going back to sleep again.</p>
+                        
+                        <p>Because of that, he hadn’t eaten anything except for the sips of water when he took his medicine.</p>
+                        
+                        <p>It was past nine at night when Zachary roused from his sleep and once again asked if Charlotte had</p>
+                        
+                        <p>returned.</p>
+                        
+                        <p>Ben remained calm and collected as he replied, “Lupine informed me that they&#39;d be staying at Mount</p>
+                        
+                        <p>Phoenix for a couple more days. Ms. Lindberg was very worried about your injuries and even asked me</p>
+                        
+                        <p>how you were doing. I assured her that you&#39;re all right and recovering well—&#34;</p>
+                        
+                        <p>“No. Don&#39;t tell her about my condition,”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2426,115 +2459,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Zachary firmly instructed.</p>
-                    
-                    <p>“Okay, okay, I got it.”</p>
-                    
-                    <p>Fortunately, Ben knew the right words to say so it wouldn&#39;t arouse Zachary&#39;s suspicions. It also helped</p>
-                    
-                    <p>that Zachary was too out of sorts to detect Ben&#39;s lies.</p>
-                    
-                    <p>“Don&#39;t call too much either, or Charlotte will suspect something...” Zachary mumbled, his eyes getting</p>
-                    
-                    <p>heavier by the second. “Remember to inform me when she&#39;s back.”</p>
-                    
-                    <p>“I know. Stop worrying and go to sleep,” Ben said as he adjusted the blanket.</p>
-                    
-                    <p>Zachary ended up sleeping for more than twenty hours, but even then, he still looked exhausted.</p>
-                    
-                    <p>Despite that, there was no denying that his condition was gradually improving, thus proving that Dr.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Wright&#39;s operation was a success.</p>
-                    
-                    <p>Ben, however, hadn&#39;t slept a wink in two nights. Although everyone begged him to take a nap, he just</p>
-                    
-                    <p>couldn&#39;t lay his worries to rest and insisted on staying up to</p>
-                    
-                    <p>watch over Zachary.</p>
-                    
-                    <p>On top of that, he&#39;d call Cain every two hours to ask about Charlotte and Lupine&#39;s whereabouts.</p>
-                    
-                    <p>Unfortunately, the search for them was still underway, and Cain could offer no further updates.</p>
-                    
-                    <p>As such, Ben decided to deploy a few people to Phoenix City.</p>
-                    
-                    <p>Charlotte, Lupine, please be all right!</p>
-                    
-                    <p>Time continued to pass by, and it was early morning when Zachary finally woke from his deep slumber.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Not only did he look a lot more energetic, but he also clamored for Hanna&#39;s beef Stroganoff.</p>
-                    
-                    <p>Naturally, Ben was more than happy to accede to his request.</p>
-                    
-                    <p>Just like Ben, Hanna had been so worried about Zachary&#39;s safety that she hadn&#39;t had a good night&#39;s</p>
-                    
-                    <p>sleep. When she heard that he was craving her food, she shed happy tears and rushed off to cook.</p>
-                    
-                    <p>Zachary sat up in bed with Ben&#39;s help and</p>
-                    
-                    <p>stretched his limbs. “Wow. How long have I been sleeping? My body feels like it&#39;s falling apart.”</p>
-                    
-                    <p>“You&#39;ve slept for almost two days,” Ben replied with a chuckle. “But everything&#39;s fine now. You look like</p>
-                    
-                    <p>you&#39;re in good spirits.”</p>
-                    
-                    <p>“Yes, I feel full of energy too,” Zachary muttered as he rubbed the sleep out of his eyes. “Fill the tub for</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>me. I&#39;m going to take a nice, long bath before I knock everyone out with my odor.”</p>
-                    
-                    <p>“Hahaha, will do!”</p>
-                    
-                    <p>As Ben hurried off to the bathroom, Zachary retrieved his phone from under the pillow. Alas, all he saw</p>
-                    
-                    <p>were concerned text messages from Nancy. With nary a call or text from Charlotte, he couldn&#39;t help but</p>
-                    
-                    <p>feel a pang of disappointment.</p>
-                    
-                    <p>Oh, forget it. Charlotte has always been like that. I shouldn&#39;t be so calculative.</p>
-                    
-                    <p>He called Charlotte immediately after, only to find out that her phone was switched off.</p>
-                    
-                    <p>Could she be on her way back in the private jet? Is that why she had to turn her phone off?</p>
-                    
-                    <p>“Mr. Nacht, your bath is ready,” Ben announced while walking out of the bathroom.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Zachary firmly instructed.</p>
+                        
+                        <p>“Okay, okay, I got it.”</p>
+                        
+                        <p>Fortunately, Ben knew the right words to say so it wouldn&#39;t arouse Zachary&#39;s suspicions. It also helped</p>
+                        
+                        <p>that Zachary was too out of sorts to detect Ben&#39;s lies.</p>
+                        
+                        <p>“Don&#39;t call too much either, or Charlotte will suspect something...” Zachary mumbled, his eyes getting</p>
+                        
+                        <p>heavier by the second. “Remember to inform me when she&#39;s back.”</p>
+                        
+                        <p>“I know. Stop worrying and go to sleep,” Ben said as he adjusted the blanket.</p>
+                        
+                        <p>Zachary ended up sleeping for more than twenty hours, but even then, he still looked exhausted.</p>
+                        
+                        <p>Despite that, there was no denying that his condition was gradually improving, thus proving that Dr.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2545,26 +2492,30 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>“Has Lupine called you?” Zachary suddenly asked.</p>
-                    
-                    <p>“Yes, she just did. They&#39;re still up in the mountains...</p>
-                    
-                    <p>Ben went on with his carefully fabricated lie, but the more he said, the more he realized Zachary&#39;s</p>
-                    
-                    <p>expression had changed.</p>
-                    
-                    <p>“Mr. Nacht, I—”</p>
-                    
-                    <p>“Idiot!” Zachary thundered as he kicked</p>
-                    
-                    <p>Ben to the floor. “How dare you lie to me!”</p>
-                    
-                    <p>Now that Zachary was awake and lucid, Ben could no longer pull the wool over</p>
-                    
-                    <p>his eyes.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Wright&#39;s operation was a success.</p>
+                        
+                        <p>Ben, however, hadn&#39;t slept a wink in two nights. Although everyone begged him to take a nap, he just</p>
+                        
+                        <p>couldn&#39;t lay his worries to rest and insisted on staying up to</p>
+                        
+                        <p>watch over Zachary.</p>
+                        
+                        <p>On top of that, he&#39;d call Cain every two hours to ask about Charlotte and Lupine&#39;s whereabouts.</p>
+                        
+                        <p>Unfortunately, the search for them was still underway, and Cain could offer no further updates.</p>
+                        
+                        <p>As such, Ben decided to deploy a few people to Phoenix City.</p>
+                        
+                        <p>Charlotte, Lupine, please be all right!</p>
+                        
+                        <p>Time continued to pass by, and it was early morning when Zachary finally woke from his deep slumber.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2575,16 +2526,122 @@
                 
                 
                 
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Not only did he look a lot more energetic, but he also clamored for Hanna&#39;s beef Stroganoff.</p>
+                        
+                        <p>Naturally, Ben was more than happy to accede to his request.</p>
+                        
+                        <p>Just like Ben, Hanna had been so worried about Zachary&#39;s safety that she hadn&#39;t had a good night&#39;s</p>
+                        
+                        <p>sleep. When she heard that he was craving her food, she shed happy tears and rushed off to cook.</p>
+                        
+                        <p>Zachary sat up in bed with Ben&#39;s help and</p>
+                        
+                        <p>stretched his limbs. “Wow. How long have I been sleeping? My body feels like it&#39;s falling apart.”</p>
+                        
+                        <p>“You&#39;ve slept for almost two days,” Ben replied with a chuckle. “But everything&#39;s fine now. You look like</p>
+                        
+                        <p>you&#39;re in good spirits.”</p>
+                        
+                        <p>“Yes, I feel full of energy too,” Zachary muttered as he rubbed the sleep out of his eyes. “Fill the tub for</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>me. I&#39;m going to take a nice, long bath before I knock everyone out with my odor.”</p>
+                        
+                        <p>“Hahaha, will do!”</p>
+                        
+                        <p>As Ben hurried off to the bathroom, Zachary retrieved his phone from under the pillow. Alas, all he saw</p>
+                        
+                        <p>were concerned text messages from Nancy. With nary a call or text from Charlotte, he couldn&#39;t help but</p>
+                        
+                        <p>feel a pang of disappointment.</p>
+                        
+                        <p>Oh, forget it. Charlotte has always been like that. I shouldn&#39;t be so calculative.</p>
+                        
+                        <p>He called Charlotte immediately after, only to find out that her phone was switched off.</p>
+                        
+                        <p>Could she be on her way back in the private jet? Is that why she had to turn her phone off?</p>
+                        
+                        <p>“Mr. Nacht, your bath is ready,” Ben announced while walking out of the bathroom.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Has Lupine called you?” Zachary suddenly asked.</p>
+                        
+                        <p>“Yes, she just did. They&#39;re still up in the mountains...</p>
+                        
+                        <p>Ben went on with his carefully fabricated lie, but the more he said, the more he realized Zachary&#39;s</p>
+                        
+                        <p>expression had changed.</p>
+                        
+                        <p>“Mr. Nacht, I—”</p>
+                        
+                        <p>“Idiot!” Zachary thundered as he kicked</p>
+                        
+                        <p>Ben to the floor. “How dare you lie to me!”</p>
+                        
+                        <p>Now that Zachary was awake and lucid, Ben could no longer pull the wool over</p>
+                        
+                        <p>his eyes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Mr. Nacht, I—&#34;</p>
-                    
-                    <p>“Tell me the truth!” Zachary demanded, rage pulsing through his veins.</p>
-                    
-                    <p>Under such circumstances, Ben had no choice but to come clean with Zachary. “We&#39;ve lost contact with</p>
-                    
-                    <p>Ms. Lindberg since last night...”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Mr. Nacht, I—&#34;</p>
+                        
+                        <p>“Tell me the truth!” Zachary demanded, rage pulsing through his veins.</p>
+                        
+                        <p>Under such circumstances, Ben had no choice but to come clean with Zachary. “We&#39;ve lost contact with</p>
+                        
+                        <p>Ms. Lindberg since last night...”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -4307,6 +4364,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4393,9 +4530,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4459,7 +4597,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4504,13 +4641,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4567,21 +4701,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

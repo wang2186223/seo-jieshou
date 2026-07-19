@@ -997,18 +997,17 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.088921",
-        "dateModified": "2026-07-17T17:08:31.088921",
+        "datePublished": "2026-07-19T13:10:27.296096",
+        "dateModified": "2026-07-19T13:10:27.296096",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,32 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 861</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Charlotte glanced over. A green parrot was flying behind the car, its wings fluttering quickly while it</p>
-                    
-                    <p>glanced around.</p>
-                    
-                    <p>It looked dumb and weak, completely unlike her ferocious eagle.</p>
-                    
-                    <p>However, for some reason, Charlotte felt a strange feeling of familiarity with that parrot.</p>
-                    
-                    <p>“Why is there a parrot here?” asked Morgan suspiciously. “There are only two families in Rokan Hill.</p>
-                    
-                    <p>Could it be...”</p>
-                    
-                    <p>“We saw this parrot at the hospital the other time.” Lupine recognized it at first glance. “It&#39;s the pet of</p>
-                    
-                    <p>the Nacth family&#39;s children.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Charlotte glanced over. A green parrot was flying behind the car, its wings fluttering quickly while it</p>
+                        
+                        <p>glanced around.</p>
+                        
+                        <p>It looked dumb and weak, completely unlike her ferocious eagle.</p>
+                        
+                        <p>However, for some reason, Charlotte felt a strange feeling of familiarity with that parrot.</p>
+                        
+                        <p>“Why is there a parrot here?” asked Morgan suspiciously. “There are only two families in Rokan Hill.</p>
+                        
+                        <p>Could it be...”</p>
+                        
+                        <p>“We saw this parrot at the hospital the other time.” Lupine recognized it at first glance. “It&#39;s the pet of</p>
+                        
+                        <p>the Nacth family&#39;s children.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2424,23 +2457,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Charlotte&#39;s expression changed instantly as she quickly pushed the car door open and got out.</p>
-                    
-                    <p>“Let&#39;s see if the children have come!”</p>
-                    
-                    <p>“Understood.” Lupine and the other bodyguards started searching the area.</p>
-                    
-                    <p>“Mommy!” When the little parrot discovered Charlotte, it immediately became excited. Flapping its</p>
-                    
-                    <p>wings, it kept shrieking, “Mommy!</p>
-                    
-                    <p>Mommy! Mommy!”</p>
-                    
-                    <p>Then, it flew over and landed on Charlotte&#39;s shoulder. Rubbing its furry head against her cheek</p>
-                    
-                    <p>affectionately, it mumbled, “Mommy, I miss you...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Charlotte&#39;s expression changed instantly as she quickly pushed the car door open and got out.</p>
+                        
+                        <p>“Let&#39;s see if the children have come!”</p>
+                        
+                        <p>“Understood.” Lupine and the other bodyguards started searching the area.</p>
+                        
+                        <p>“Mommy!” When the little parrot discovered Charlotte, it immediately became excited. Flapping its</p>
+                        
+                        <p>wings, it kept shrieking, “Mommy!</p>
+                        
+                        <p>Mommy! Mommy!”</p>
+                        
+                        <p>Then, it flew over and landed on Charlotte&#39;s shoulder. Rubbing its furry head against her cheek</p>
+                        
+                        <p>affectionately, it mumbled, “Mommy, I miss you...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2452,107 +2489,59 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>It sounded like someone lamenting how much he missed his family.</p>
-                    
-                    <p>Charlotte&#39;s heart melted. She reached her hand out and stroked Little Fifi&#39;s feathers. A familial feeling</p>
-                    
-                    <p>started to surface within her.</p>
-                    
-                    <p>“This parrot has such sentience!” Morgan could not help but praise.</p>
-                    
-                    <p>At the same time, Robbie was sprinting toward her excitedly. As he ran, he could hear Little Fifi&#39;s voice</p>
-                    
-                    <p>coming from his phone&#39;s surveillance system. “Mommy! Mommy!”</p>
-                    
-                    <p>He immediately stopped in his tracks. Still panting, he opened the surveillance system and took a look.</p>
-                    
-                    <p>As expected, he managed to see his mother, whom he had missed dearly, from Little Fifi&#39;s view.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>It sounded like someone lamenting how much he missed his family.</p>
+                        
+                        <p>Charlotte&#39;s heart melted. She reached her hand out and stroked Little Fifi&#39;s feathers. A familial feeling</p>
+                        
+                        <p>started to surface within her.</p>
+                        
+                        <p>“This parrot has such sentience!” Morgan could not help but praise.</p>
+                        
+                        <p>At the same time, Robbie was sprinting toward her excitedly. As he ran, he could hear Little Fifi&#39;s voice</p>
+                        
+                        <p>coming from his phone&#39;s surveillance system. “Mommy! Mommy!”</p>
+                        
+                        <p>He immediately stopped in his tracks. Still panting, he opened the surveillance system and took a look.</p>
+                        
+                        <p>As expected, he managed to see his mother, whom he had missed dearly, from Little Fifi&#39;s view.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Mommy!” Robbie was excited. Mommy&#39;s really at Northridge!</p>
-                    
-                    <p>Charlotte heard his voice coming out of the surveillance device on Little Fifi&#39;s head. She trembled while</p>
-                    
-                    <p>her heart pounded rapidly against her chest...</p>
-                    
-                    <p>“What&#39;s that sound?” Morgan moved closer to hear it. “There&#39;s a mini surveillance device on the</p>
-                    
-                    <p>parrot&#39;s body! Who installed it?”</p>
-                    
-                    <p>“Robbie! Robbie!” shrieked Little Fifi excitedly as it flapped its wings.</p>
-                    
-                    <p>Charlotte was filled with excitement. Her child&#39;s voice revived the motherly instincts that had been</p>
-                    
-                    <p>concealed deep within her. It was an instinct that was embedded within her.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>“It&#39;s Mr. Robinson, who barged in the previous time.” Lupine understood immediately. “He is talking to</p>
-                    
-                    <p>us and running here right now.”</p>
-                    
-                    <p>As she spoke, she passed the laptop to Charlotte.</p>
-                    
-                    <p>Robbie had just entered the surveillance parameters and was running over excitedly.</p>
-                    
-                    <p>“Mr. Robinson is simply too smart.” Morgan was delighted. “He actually discovered where Ms.</p>
-                    
-                    <p>Lindberg is staying and even came here!”</p>
-                    
-                    <p>“Do you want to meet him, Ms. Lindberg?” asked Lupine softly.</p>
-                    
-                    <p>Charlotte was slightly hesitant. To be honest, before the truth was uncovered, she did not plan on</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>meeting her children so early. She did not expect that her children would look for her first.</p>
-                    
-                    <p>“Mommy, I&#39;m Robbie! Don&#39;t hide from me. Let me I&#34;</p>
-                    
-                    <p>see you!</p>
-                    
-                    <p>Robbie&#39;s voice sounded from the surveillance device, sounding like he was on the verge of tears. His</p>
-                    
-                    <p>voice was charged with anxious longing.</p>
-                    
-                    <p>He was afraid that her mother would leave again. By the time he reached there, all he could see was</p>
-                    
-                    <p>the isolated villa.</p>
-                    
-                    <p>Charlotte was moved. Just when she was about to speak...</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Mommy!” Robbie was excited. Mommy&#39;s really at Northridge!</p>
+                        
+                        <p>Charlotte heard his voice coming out of the surveillance device on Little Fifi&#39;s head. She trembled while</p>
+                        
+                        <p>her heart pounded rapidly against her chest...</p>
+                        
+                        <p>“What&#39;s that sound?” Morgan moved closer to hear it. “There&#39;s a mini surveillance device on the</p>
+                        
+                        <p>parrot&#39;s body! Who installed it?”</p>
+                        
+                        <p>“Robbie! Robbie!” shrieked Little Fifi excitedly as it flapped its wings.</p>
+                        
+                        <p>Charlotte was filled with excitement. Her child&#39;s voice revived the motherly instincts that had been</p>
+                        
+                        <p>concealed deep within her. It was an instinct that was embedded within her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2563,27 +2552,95 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>“Argh!”</p>
-                    
-                    <p>Suddenly, a child&#39;s fearful shriek sounded from the surveillance device.</p>
-                    
-                    <p>At the same time, the surveillance video on the laptop revealed a tall man clad in black suddenly</p>
-                    
-                    <p>rushed over and kidnapped Robbie.</p>
-                    
-                    <p>When he screamed in fear, the man slapped a hand over his mouth and shoved him into a car.</p>
-                    
-                    <p>There were three modified black cars, which were filled with men in black. Two women seemed to be in</p>
-                    
-                    <p>their company as well.</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“It&#39;s Mr. Robinson, who barged in the previous time.” Lupine understood immediately. “He is talking to</p>
+                        
+                        <p>us and running here right now.”</p>
+                        
+                        <p>As she spoke, she passed the laptop to Charlotte.</p>
+                        
+                        <p>Robbie had just entered the surveillance parameters and was running over excitedly.</p>
+                        
+                        <p>“Mr. Robinson is simply too smart.” Morgan was delighted. “He actually discovered where Ms.</p>
+                        
+                        <p>Lindberg is staying and even came here!”</p>
+                        
+                        <p>“Do you want to meet him, Ms. Lindberg?” asked Lupine softly.</p>
+                        
+                        <p>Charlotte was slightly hesitant. To be honest, before the truth was uncovered, she did not plan on</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>meeting her children so early. She did not expect that her children would look for her first.</p>
+                        
+                        <p>“Mommy, I&#39;m Robbie! Don&#39;t hide from me. Let me I&#34;</p>
+                        
+                        <p>see you!</p>
+                        
+                        <p>Robbie&#39;s voice sounded from the surveillance device, sounding like he was on the verge of tears. His</p>
+                        
+                        <p>voice was charged with anxious longing.</p>
+                        
+                        <p>He was afraid that her mother would leave again. By the time he reached there, all he could see was</p>
+                        
+                        <p>the isolated villa.</p>
+                        
+                        <p>Charlotte was moved. Just when she was about to speak...</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Argh!”</p>
+                        
+                        <p>Suddenly, a child&#39;s fearful shriek sounded from the surveillance device.</p>
+                        
+                        <p>At the same time, the surveillance video on the laptop revealed a tall man clad in black suddenly</p>
+                        
+                        <p>rushed over and kidnapped Robbie.</p>
+                        
+                        <p>When he screamed in fear, the man slapped a hand over his mouth and shoved him into a car.</p>
+                        
+                        <p>There were three modified black cars, which were filled with men in black. Two women seemed to be in</p>
+                        
+                        <p>their company as well.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
@@ -4301,6 +4358,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4387,9 +4524,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4453,7 +4591,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4498,13 +4635,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4561,21 +4695,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

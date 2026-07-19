@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2387,34 +2422,66 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 269</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>It wasn&#39;t that she refused to answer—his invasive proximity made her skin crawl.</p>
-                    
-                    <p>Only after exiting the hotel lobby and confirming he hadn&#39;t followed did she exhale in relief.</p>
-                    
-                    <p>What kind of interview was this?</p>
-                    
-                    <p>More like a stalker&#39;s pursuit.</p>
-                    
-                    <p>She pulled up the email and dragged his resume straight to the trash.</p>
-                    
-                    <p>......</p>
-                    
-                    <p>In her living room, Evelyn finalized broadcast details for Winston Strauss&#39;s exclusive interview with the news station.</p>
-                    
-                    <p>&#34;Don&#39;t worry, Ms. Sinclair. Your segment is the grand finale...&#34;</p>
-                    
-                    <p>&#34;We&#39;ll monitor live comments in real-time...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>It wasn&#39;t that she refused to answer—his invasive proximity made her skin crawl.</p>
+                        
+                        <p>Only after exiting the hotel lobby and confirming he hadn&#39;t followed did she exhale in relief.</p>
+                        
+                        <p>What kind of interview was this?</p>
+                        
+                        <p>More like a stalker&#39;s pursuit.</p>
+                        
+                        <p>She pulled up the email and dragged his resume straight to the trash.</p>
+                        
+                        <p>......</p>
+                        
+                        <p>In her living room, Evelyn finalized broadcast details for Winston Strauss&#39;s exclusive interview with the news station.</p>
+                        
+                        <p>&#34;Don&#39;t worry, Ms. Sinclair. Your segment is the grand finale...&#34;</p>
+                        
+                        <p>&#34;We&#39;ll monitor live comments in real-time...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;You must attend tomorrow&#39;s taping...&#34;</p>
+                        
+                        <p>Hanging up, she stared absently at her phone.</p>
+                        
+                        <p>Her fan group chat lay dormant except for the occasional admin clearing spam posts.</p>
+                        
+                        <p>She&#39;d specifically instructed them not to promote tomorrow&#39;s interview.</p>
+                        
+                        <p>As a journalist, she wanted no part of fandom theatrics.</p>
+                        
+                        <p>But neither would she hide like before.</p>
+                        
+                        <p>Horizon Media&#39;s transfer to the video department had unexpectedly aligned with her goals.</p>
+                        
+                        <p>In this era, newsmakers must step into the spotlight.</p>
+                        
+                        <p>Ding—</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2425,86 +2492,64 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>&#34;You must attend tomorrow&#39;s taping...&#34;</p>
-                    
-                    <p>Hanging up, she stared absently at her phone.</p>
-                    
-                    <p>Her fan group chat lay dormant except for the occasional admin clearing spam posts.</p>
-                    
-                    <p>She&#39;d specifically instructed them not to promote tomorrow&#39;s interview.</p>
-                    
-                    <p>As a journalist, she wanted no part of fandom theatrics.</p>
-                    
-                    <p>But neither would she hide like before.</p>
-                    
-                    <p>Horizon Media&#39;s transfer to the video department had unexpectedly aligned with her goals.</p>
-                    
-                    <p>In this era, newsmakers must step into the spotlight.</p>
-                    
-                    <p>Ding—</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="2">
-                    
-                    <p>Her phone erupted with vibrations.</p>
-                    
-                    <p>999+ unread messages.</p>
-                    
-                    <p>Martha Nash and Iris Cooper&#39;s icons blinked simultaneously.</p>
-                    
-                    <p>Before she could tap a notification, Martha&#39;s call blasted through.</p>
-                    
-                    <p>&#34;What&#39;s going on with you and Alexander Kingsley?&#34; Martha&#39;s voice crackled with urgency.</p>
-                    
-                    <p>Evelyn&#39;s pulse spiked.</p>
-                    
-                    <p>Had Iris slipped up?</p>
-                    
-                    <p>&#34;What do you mean?&#34; She kept her tone steady.</p>
-                    
-                    <p>&#34;It&#39;s trending! Explosively!&#34; Martha&#39;s words tumbled out. &#34;Someone claims they photographed you two meeting secretly at a hotel—and that you&#39;re pregnant!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Her phone erupted with vibrations.</p>
+                        
+                        <p>999+ unread messages.</p>
+                        
+                        <p>Martha Nash and Iris Cooper&#39;s icons blinked simultaneously.</p>
+                        
+                        <p>Before she could tap a notification, Martha&#39;s call blasted through.</p>
+                        
+                        <p>&#34;What&#39;s going on with you and Alexander Kingsley?&#34; Martha&#39;s voice crackled with urgency.</p>
+                        
+                        <p>Evelyn&#39;s pulse spiked.</p>
+                        
+                        <p>Had Iris slipped up?</p>
+                        
+                        <p>&#34;What do you mean?&#34; She kept her tone steady.</p>
+                        
+                        <p>&#34;It&#39;s trending! Explosively!&#34; Martha&#39;s words tumbled out. &#34;Someone claims they photographed you two meeting secretly at a hotel—and that you&#39;re pregnant!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Evelyn nearly confirmed the pregnancy outright.</p>
-                    
-                    <p>But she hadn&#39;t seen Alexander in days.</p>
-                    
-                    <p>&#34;I was at a hotel today—for work.&#34; She frowned. &#34;Who&#39;s spreading this?&#34;</p>
-                    
-                    <p>Iris&#39;s call beeped through mid-sentence.</p>
-                    
-                    <p>&#34;Congratulations!&#34; Iris&#39;s voice trembled with excitement. &#34;You&#39;re finally public!&#34;</p>
-                    
-                    <p>A vein throbbed at Evelyn&#39;s temple.</p>
-                    
-                    <p>She didn&#39;t need to check the trending list to know—</p>
-                    
-                    <p>Someone was orchestrating a storm.</p>
-                    
-                    <p>Evelyn&#39;s fingers froze mid-scroll. The photo on her phone screen burned her retinas.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Evelyn nearly confirmed the pregnancy outright.</p>
+                        
+                        <p>But she hadn&#39;t seen Alexander in days.</p>
+                        
+                        <p>&#34;I was at a hotel today—for work.&#34; She frowned. &#34;Who&#39;s spreading this?&#34;</p>
+                        
+                        <p>Iris&#39;s call beeped through mid-sentence.</p>
+                        
+                        <p>&#34;Congratulations!&#34; Iris&#39;s voice trembled with excitement. &#34;You&#39;re finally public!&#34;</p>
+                        
+                        <p>A vein throbbed at Evelyn&#39;s temple.</p>
+                        
+                        <p>She didn&#39;t need to check the trending list to know—</p>
+                        
+                        <p>Someone was orchestrating a storm.</p>
+                        
+                        <p>Evelyn&#39;s fingers froze mid-scroll. The photo on her phone screen burned her retinas.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2516,78 +2561,90 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;That&#39;s not me in the picture.&#34; Her voice could frost glass.</p>
-                    
-                    <p>Iris stammered through the phone, &#34;But the fan groups are exploding. They&#39;re saying you and Mr. Kingsley—&#34;</p>
-                    
-                    <p>&#34;I was interviewing candidates at the hotel today.&#34; Evelyn cut her off. &#34;The conference room was under renovation.&#34;</p>
-                    
-                    <p>A sharp inhale. &#34;Then... the man in the photo—&#34;</p>
-                    
-                    <p>&#34;One of the interviewees.&#34; Evelyn&#39;s eyes narrowed. &#34;This was a setup.&#34;</p>
-                    
-                    <p>Silence crackled over the line.</p>
-                    
-                    <p>&#34;Iris?&#34; Evelyn tapped the desk. &#34;Don&#39;t tell me you&#39;ve already posted in the—&#34;</p>
-                    
-                    <p>&#34;No! Absolutely not!&#34; Iris&#39;s voice shook. &#34;It&#39;s just... your tone sounds exactly like that account in the group chat...&#34;</p>
-                    
-                    <p>Evelyn chuckled. &#34;No matter how thick the disguise, I&#39;d recognize you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;That&#39;s not me in the picture.&#34; Her voice could frost glass.</p>
+                        
+                        <p>Iris stammered through the phone, &#34;But the fan groups are exploding. They&#39;re saying you and Mr. Kingsley—&#34;</p>
+                        
+                        <p>&#34;I was interviewing candidates at the hotel today.&#34; Evelyn cut her off. &#34;The conference room was under renovation.&#34;</p>
+                        
+                        <p>A sharp inhale. &#34;Then... the man in the photo—&#34;</p>
+                        
+                        <p>&#34;One of the interviewees.&#34; Evelyn&#39;s eyes narrowed. &#34;This was a setup.&#34;</p>
+                        
+                        <p>Silence crackled over the line.</p>
+                        
+                        <p>&#34;Iris?&#34; Evelyn tapped the desk. &#34;Don&#39;t tell me you&#39;ve already posted in the—&#34;</p>
+                        
+                        <p>&#34;No! Absolutely not!&#34; Iris&#39;s voice shook. &#34;It&#39;s just... your tone sounds exactly like that account in the group chat...&#34;</p>
+                        
+                        <p>Evelyn chuckled. &#34;No matter how thick the disguise, I&#39;d recognize you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Iris nearly dropped her phone.</p>
-                    
-                    <p>After hanging up, Evelyn opened the trending page.</p>
-                    
-                    <p>A flood of paparazzi shots—her back entering a hotel room, a stranger&#39;s profile following close behind, grainy footage of an &#34;intimate embrace&#34; in the hallway.</p>
-                    
-                    <p>The elevator photo was the most laughable.</p>
-                    
-                    <p>A man adjusting his tie, deliberately cropped to mimic a waist-encircling gesture.</p>
-                    
-                    <p>Evelyn&#39;s lips curled.</p>
-                    
-                    <p>The man&#39;s build did vaguely resemble Alexander&#39;s.</p>
-                    
-                    <p>But she&#39;d memorized Alexander&#39;s presence down to his molecular structure. A thousand doppelgängers couldn&#39;t fool her.</p>
-                    
-                    <p>Her phone vibrated.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Iris nearly dropped her phone.</p>
+                        
+                        <p>After hanging up, Evelyn opened the trending page.</p>
+                        
+                        <p>A flood of paparazzi shots—her back entering a hotel room, a stranger&#39;s profile following close behind, grainy footage of an &#34;intimate embrace&#34; in the hallway.</p>
+                        
+                        <p>The elevator photo was the most laughable.</p>
+                        
+                        <p>A man adjusting his tie, deliberately cropped to mimic a waist-encircling gesture.</p>
+                        
+                        <p>Evelyn&#39;s lips curled.</p>
+                        
+                        <p>The man&#39;s build did vaguely resemble Alexander&#39;s.</p>
+                        
+                        <p>But she&#39;d memorized Alexander&#39;s presence down to his molecular structure. A thousand doppelgängers couldn&#39;t fool her.</p>
+                        
+                        <p>Her phone vibrated.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>[SHOCKING! Evelyn Sinclair Sleeping Her Way to the Top Using Kingsley Lawsuit!]</p>
-                    
-                    <p>The comment section resembled a shark feeding frenzy.</p>
-                    
-                    <p>Isabella&#39;s fans swarmed like blood-crazed piranhas:</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>[SHOCKING! Evelyn Sinclair Sleeping Her Way to the Top Using Kingsley Lawsuit!]</p>
+                        
+                        <p>The comment section resembled a shark feeding frenzy.</p>
+                        
+                        <p>Isabella&#39;s fans swarmed like blood-crazed piranhas:</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4305,6 +4362,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4391,9 +4528,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4457,7 +4595,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4502,13 +4639,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4565,21 +4699,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:27.623870",
-        "dateModified": "2026-07-17T17:08:27.623870",
+        "datePublished": "2026-07-19T13:10:23.409815",
+        "dateModified": "2026-07-19T13:10:23.409815",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,44 +2422,46 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1026</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1026</p>
-                    
-                    <p>&#34;But remember, you have to play your part to the fullest! Let him know that you&#39;ve been forced into a corner. In the end, show your magnanimity in front of your grandfather. Only take what&#39;s rightfully yours and completely cut ties with them.&#34;</p>
-                    
-                    <p>&#34;So, you&#39;re saying to cut ties with the Myers family completely?&#34; Fred remarked.</p>
-                    
-                    <p>&#34;Because what you want is that inconspicuous little factory. He won&#39;t refuse. The key is to make him sign a contract, ensuring that this small factory has no connection whatsoever with them. Be decisive.&#34; I shared my general idea with him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1026</p>
+                        
+                        <p>&#34;But remember, you have to play your part to the fullest! Let him know that you&#39;ve been forced into a corner. In the end, show your magnanimity in front of your grandfather. Only take what&#39;s rightfully yours and completely cut ties with them.&#34;</p>
+                        
+                        <p>&#34;So, you&#39;re saying to cut ties with the Myers family completely?&#34; Fred remarked.</p>
+                        
+                        <p>&#34;Because what you want is that inconspicuous little factory. He won&#39;t refuse. The key is to make him sign a contract, ensuring that this small factory has no connection whatsoever with them. Be decisive.&#34; I shared my general idea with him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;During this time, straighten out your thoughts and arrange these matters. Here, you only need a trustworthy person to help you handle things. I think when it comes to splitting the shares, he won&#39;t even bother about this small factory here. You can build up strength and resources here.&#34;</p>
-                    
-                    <p>&#34;You mean, give him an empty shell?&#34; Fred caught up with my thoughts.</p>
-                    
-                    <p>I nodded. &#34;Once the timing is right, you can take back control in the capital.&#34;</p>
-                    
-                    <p>I reassured him, &#34;Starting development here isn&#39;t hard, especially with my support. You can bring in excellent personnel while quietly transferring top talent from the capital. However, be quick and decisive. Resolve it in one go, or else there&#39;s no guarantee of success.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;During this time, straighten out your thoughts and arrange these matters. Here, you only need a trustworthy person to help you handle things. I think when it comes to splitting the shares, he won&#39;t even bother about this small factory here. You can build up strength and resources here.&#34;</p>
+                        
+                        <p>&#34;You mean, give him an empty shell?&#34; Fred caught up with my thoughts.</p>
+                        
+                        <p>I nodded. &#34;Once the timing is right, you can take back control in the capital.&#34;</p>
+                        
+                        <p>I reassured him, &#34;Starting development here isn&#39;t hard, especially with my support. You can bring in excellent personnel while quietly transferring top talent from the capital. However, be quick and decisive. Resolve it in one go, or else there&#39;s no guarantee of success.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2436,15 +2473,67 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>I pointed out the drawbacks here.</p>
-                    
-                    <p>&#34;What you do must appear as if you&#39;ve exhausted all kindness, and you want nothing to do with the Myers family. Remember, Urban Builders&#39;s name must not be tarnished. I believe he&#39;s eager to distance himself from you and kick you out of the Myers family completely.</p>
-                    
-                    <p>&#34;This won&#39;t be a problem at all. He&#39;ll accept it since it&#39;s related to you. It means nothing to him. Just like how I did with Hartz Construction back then.&#34;</p>
-                    
-                    <p>His eyes suddenly lit up as he fell into thought. After a while, he nodded thoughtfully.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I pointed out the drawbacks here.</p>
+                        
+                        <p>&#34;What you do must appear as if you&#39;ve exhausted all kindness, and you want nothing to do with the Myers family. Remember, Urban Builders&#39;s name must not be tarnished. I believe he&#39;s eager to distance himself from you and kick you out of the Myers family completely.</p>
+                        
+                        <p>&#34;This won&#39;t be a problem at all. He&#39;ll accept it since it&#39;s related to you. It means nothing to him. Just like how I did with Hartz Construction back then.&#34;</p>
+                        
+                        <p>His eyes suddenly lit up as he fell into thought. After a while, he nodded thoughtfully.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Chloe, your idea is excellent. I&#39;ll carefully consider the details. If I decide to go through with it, I&#39;ll have to trouble you to pave the way for me here.&#34;</p>
+                        
+                        <p>He looked at me, concerned about the suitability of this place.</p>
+                        
+                        <p>&#34;It&#39;s not a problem. What you saw just now is the highest level in Bourdamun. I can negotiate for you. You&#39;re among the first to want to set up a factory here. Who knows? You might even get some good</p>
+                        
+                        <p>Ov</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>investment policies. You have the right timing, location, and people.&#34;</p>
+                        
+                        <p>My words enlightened Fred. He became excited, slapping his hands on the table.</p>
+                        
+                        <p>&#34;Chloe, you&#39;re truly my benefactor! You saved me five years ago, and now you&#39;ve saved me again. I am truly grateful.&#34;</p>
+                        
+                        <p>&#34;Hey... Don&#39;t say such things. We can all work together to do something ambitious. That&#39;s the ultimate goal. Why bother entangling yourself with this scoundrel endlessly?&#34; &#34;You&#39;re right. He has already affected my development,&#34; Fred affirmed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2455,56 +2544,20 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Chloe, your idea is excellent. I&#39;ll carefully consider the details. If I decide to go through with it, I&#39;ll have to trouble you to pave the way for me here.&#34;</p>
-                    
-                    <p>He looked at me, concerned about the suitability of this place.</p>
-                    
-                    <p>&#34;It&#39;s not a problem. What you saw just now is the highest level in Bourdamun. I can negotiate for you. You&#39;re among the first to want to set up a factory here. Who knows? You might even get some good</p>
-                    
-                    <p>Ov</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>investment policies. You have the right timing, location, and people.&#34;</p>
-                    
-                    <p>My words enlightened Fred. He became excited, slapping his hands on the table.</p>
-                    
-                    <p>&#34;Chloe, you&#39;re truly my benefactor! You saved me five years ago, and now you&#39;ve saved me again. I am truly grateful.&#34;</p>
-                    
-                    <p>&#34;Hey... Don&#39;t say such things. We can all work together to do something ambitious. That&#39;s the ultimate goal. Why bother entangling yourself with this scoundrel endlessly?&#34; &#34;You&#39;re right. He has already affected my development,&#34; Fred affirmed.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;I&#39;m going to say something offensive. Someone like Hugo should be sent in for rehabilitation but you don&#39;t have the heart for that. You&#39;re hesitant, so this is the next best option. If you soften your stance again, you&#39;re asking for trouble,&#34; I said firmly.</p>
-                    
-                    <p>&#34;Forget about him, Fred. If your internal conflicts persist, I&#39;ll have to switch suppliers. There&#39;s no doubt about that. This is why I insisted you come to Foswood for an on-site inspection. I have high hopes for Urban Builders, but your current internal strife has me worried.&#34;</p>
-                    
-                    <p>I made my point clear.</p>
-                    
-                    <p>&#34;No, Chloe. This time, I won&#39;t hesitate anymore. He&#39;ll be locked up sooner or later, but I don&#39;t want to dirty my hands. After all, my father is still around.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;I&#39;m going to say something offensive. Someone like Hugo should be sent in for rehabilitation but you don&#39;t have the heart for that. You&#39;re hesitant, so this is the next best option. If you soften your stance again, you&#39;re asking for trouble,&#34; I said firmly.</p>
+                        
+                        <p>&#34;Forget about him, Fred. If your internal conflicts persist, I&#39;ll have to switch suppliers. There&#39;s no doubt about that. This is why I insisted you come to Foswood for an on-site inspection. I have high hopes for Urban Builders, but your current internal strife has me worried.&#34;</p>
+                        
+                        <p>I made my point clear.</p>
+                        
+                        <p>&#34;No, Chloe. This time, I won&#39;t hesitate anymore. He&#39;ll be locked up sooner or later, but I don&#39;t want to dirty my hands. After all, my father is still around.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2516,18 +2569,22 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I nodded. It seemed he wasn&#39;t ruthless enough yet. Just as he said, maybe it was because his father was still around.</p>
-                    
-                    <p>&#34;But if you handle this well, I guarantee you&#39;ll have both fame and fortune,&#34; I encouraged.</p>
-                    
-                    <p>The reason I comforted Fred wasn&#39;t just to help him. I also wanted to settle the score for what happened five years ago.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I nodded. It seemed he wasn&#39;t ruthless enough yet. Just as he said, maybe it was because his father was still around.</p>
+                        
+                        <p>&#34;But if you handle this well, I guarantee you&#39;ll have both fame and fortune,&#34; I encouraged.</p>
+                        
+                        <p>The reason I comforted Fred wasn&#39;t just to help him. I also wanted to settle the score for what happened five years ago.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
@@ -4245,6 +4302,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4331,9 +4468,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4397,7 +4535,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4442,13 +4579,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4505,21 +4639,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

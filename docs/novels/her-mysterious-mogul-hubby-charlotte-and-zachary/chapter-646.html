@@ -993,9 +993,7 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
@@ -1003,12 +1001,13 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:30.947725",
-        "dateModified": "2026-07-17T17:08:30.947725",
+        "datePublished": "2026-07-19T13:10:26.989163",
+        "dateModified": "2026-07-19T13:10:26.989163",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,94 +2422,66 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 746</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Listening to these tittle-tattles rendered Bruce in relief. I told you so. These two men are more like a</p>
-                    
-                    <p>couple than Louis and Charlotte.</p>
-                    
-                    <p>Zachary glowered upon hearing the whisperings. This gossip happened to back Bruce&#39;s suggestive</p>
-                    
-                    <p>remark earlier.</p>
-                    
-                    <p>&#34;Goodness! What are they talking about?” Louis was so embarrassed that his cheeks flushed.</p>
-                    
-                    <p>&#34;They actually thought that you and I...&#34;</p>
-                    
-                    <p>He pointed at Zachary and then at himself. Right after that, he covered his face bashfully.</p>
-                    
-                    <p>Zachary couldn&#39;t help but roll his eyes. Ugh... this is just great. How typical of you to use such</p>
-                    
-                    <p>exaggerated body language.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Listening to these tittle-tattles rendered Bruce in relief. I told you so. These two men are more like a</p>
+                        
+                        <p>couple than Louis and Charlotte.</p>
+                        
+                        <p>Zachary glowered upon hearing the whisperings. This gossip happened to back Bruce&#39;s suggestive</p>
+                        
+                        <p>remark earlier.</p>
+                        
+                        <p>&#34;Goodness! What are they talking about?” Louis was so embarrassed that his cheeks flushed.</p>
+                        
+                        <p>&#34;They actually thought that you and I...&#34;</p>
+                        
+                        <p>He pointed at Zachary and then at himself. Right after that, he covered his face bashfully.</p>
+                        
+                        <p>Zachary couldn&#39;t help but roll his eyes. Ugh... this is just great. How typical of you to use such</p>
+                        
+                        <p>exaggerated body language.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Louis!” Charlotte called out.</p>
-                    
-                    <p>&#34;Here!&#34; Louis was just about to rush to her side, but Zachary held him back. Tense, Louis tried to push</p>
-                    
-                    <p>Zachary away. &#34;Hey, let go of me. Everyone is thinking that there&#39;s something fishy going on between</p>
-                    
-                    <p>the two of us, and yet, you&#39;re still holding my hand. We&#39;re never going to be able to clarify this.&#34;</p>
-                    
-                    <p>&#34;You trust her instead of me?&#34; Zachary asked with his furrowed eyebrows.</p>
-                    
-                    <p>&#34;No...&#34; Louis was hesitant to make a choice, so he returned, &#34;Well, you can stay and dine with us.</p>
-                    
-                    <p>Whatever there is, let&#39;s leave it until after the meal, alright?&#34;</p>
-                    
-                    <p>&#34;Okay!&#34; Zachary released his grip on Louis.</p>
-                    
-                    <p>The three of them took their seats, with Zachary and Louis sitting on one side while Charlotte sat on the</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>other side.</p>
-                    
-                    <p>The restaurant was still abuzz with the murmurs and chatters of the onlookers.</p>
-                    
-                    <p>Tentatively, Louis asked, &#34;Charlotte, can I sit with you?&#34;</p>
-                    
-                    <p>&#34;Sure.&#34; Charlotte agreed heartily.</p>
-                    
-                    <p>Immediately, Louis changed his seat to the other side and sat next to Charlotte.</p>
-                    
-                    <p>His movement was so swift that it seemed like he was running away from some sort of threat.</p>
-                    
-                    <p>Meanwhile, Zachary shot him daggers and took the menu handed over by the restaurant manager. He</p>
-                    
-                    <p>quickly ordered a bottle of wine and then passed the menu to Louis.</p>
-                    
-                    <p>&#39;Tve pre-ordered the meals for Charlotte and myself.&#34; Louis added as he took the menu over, &#34;Are you</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Louis!” Charlotte called out.</p>
+                        
+                        <p>&#34;Here!&#34; Louis was just about to rush to her side, but Zachary held him back. Tense, Louis tried to push</p>
+                        
+                        <p>Zachary away. &#34;Hey, let go of me. Everyone is thinking that there&#39;s something fishy going on between</p>
+                        
+                        <p>the two of us, and yet, you&#39;re still holding my hand. We&#39;re never going to be able to clarify this.&#34;</p>
+                        
+                        <p>&#34;You trust her instead of me?&#34; Zachary asked with his furrowed eyebrows.</p>
+                        
+                        <p>&#34;No...&#34; Louis was hesitant to make a choice, so he returned, &#34;Well, you can stay and dine with us.</p>
+                        
+                        <p>Whatever there is, let&#39;s leave it until after the meal, alright?&#34;</p>
+                        
+                        <p>&#34;Okay!&#34; Zachary released his grip on Louis.</p>
+                        
+                        <p>The three of them took their seats, with Zachary and Louis sitting on one side while Charlotte sat on the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2485,26 +2492,30 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>sure you don&#39;t want anything?&#34;</p>
-                    
-                    <p>&#39;Tve had dinner.&#34; Zachary raised his glass and took a sip.</p>
-                    
-                    <p>&#34;Then why are you here?&#34; Charlotte raised her eyebrows and glared at Zachary surlily.</p>
-                    
-                    <p>Zachary shot an indifferent glance at her but didn&#39;t say anything.</p>
-                    
-                    <p>&#34;Charlotte, don&#39;t be like that...&#34; Louis quickly defended Zachary, &#34;Zachary is my best friend!&#34;</p>
-                    
-                    <p>&#34;Then what about me?&#34; Charlotte asked purposefully.</p>
-                    
-                    <p>&#34;You...&#34; Louis was a little nervous as he continued, &#34;You&#39;re my favorite girl.&#34;</p>
-                    
-                    <p>&#34;I see!&#34; Charlotte raised a glass of red wine and asked Louis, &#34;If this were a glass of poison and in</p>
-                    
-                    <p>between him and me, one of us had to drink it so that the other could survive, how would you</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>other side.</p>
+                        
+                        <p>The restaurant was still abuzz with the murmurs and chatters of the onlookers.</p>
+                        
+                        <p>Tentatively, Louis asked, &#34;Charlotte, can I sit with you?&#34;</p>
+                        
+                        <p>&#34;Sure.&#34; Charlotte agreed heartily.</p>
+                        
+                        <p>Immediately, Louis changed his seat to the other side and sat next to Charlotte.</p>
+                        
+                        <p>His movement was so swift that it seemed like he was running away from some sort of threat.</p>
+                        
+                        <p>Meanwhile, Zachary shot him daggers and took the menu handed over by the restaurant manager. He</p>
+                        
+                        <p>quickly ordered a bottle of wine and then passed the menu to Louis.</p>
+                        
+                        <p>&#39;Tve pre-ordered the meals for Charlotte and myself.&#34; Louis added as he took the menu over, &#34;Are you</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2515,26 +2526,30 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>decide?&#34;</p>
-                    
-                    <p>&#34;I...&#34; Louis was in a distressing predicament and couldn&#39;t make a choice.</p>
-                    
-                    <p>Right then, Zachary took the glass from Charlotte directly and downed everything in one gulp.</p>
-                    
-                    <p>Both Charlotte and Louis were utterly stunned.</p>
-                    
-                    <p>Charlotte&#39;s expression turned inexplicably complicated, and she frowned, glancing at Zachary...</p>
-                    
-                    <p>Louis was astounded at first, and then, he was sensibly touched.</p>
-                    
-                    <p>Zachary put down the glass and looked up at Charlotte. &#34;Are you satisfied now?&#34;</p>
-                    
-                    <p>&#34;What do you mean?&#34; Charlotte was plainly puzzled.</p>
-                    
-                    <p>&#34;I won&#39;t let you be in danger again...&#34; Zachary splurted out, but he diverted hastily, &#34;Women are made</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>sure you don&#39;t want anything?&#34;</p>
+                        
+                        <p>&#39;Tve had dinner.&#34; Zachary raised his glass and took a sip.</p>
+                        
+                        <p>&#34;Then why are you here?&#34; Charlotte raised her eyebrows and glared at Zachary surlily.</p>
+                        
+                        <p>Zachary shot an indifferent glance at her but didn&#39;t say anything.</p>
+                        
+                        <p>&#34;Charlotte, don&#39;t be like that...&#34; Louis quickly defended Zachary, &#34;Zachary is my best friend!&#34;</p>
+                        
+                        <p>&#34;Then what about me?&#34; Charlotte asked purposefully.</p>
+                        
+                        <p>&#34;You...&#34; Louis was a little nervous as he continued, &#34;You&#39;re my favorite girl.&#34;</p>
+                        
+                        <p>&#34;I see!&#34; Charlotte raised a glass of red wine and asked Louis, &#34;If this were a glass of poison and in</p>
+                        
+                        <p>between him and me, one of us had to drink it so that the other could survive, how would you</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2545,55 +2560,97 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>to be protected. Hence, it is men&#39;s duty to be gentlemen.&#34;</p>
-                    
-                    <p>&#34;That&#39;s right! Well said, Zachary!&#34;</p>
-                    
-                    <p>Louis couldn&#39;t stop complimenting him and cast him a grateful look in appreciation of Zachary giving</p>
-                    
-                    <p>him an out.</p>
-                    
-                    <p>&#34;You must understand that it was supposed to be a glass of poison. You&#39;d die for taking it.&#34; Charlotte</p>
-                    
-                    <p>gave him a displeased stare. &#34;Did you really pay attention to what I said?&#34;</p>
-                    
-                    <p>&#34;Yes, I did.&#34; Zachary looked at her with a deep gaze and answered in an earnest manner, &#34;I&#39;d rather die</p>
-                    
-                    <p>myself than to let you die, okay?&#34;</p>
-                    
-                    <p>A sudden brief chill came over Charlotte, and for some reason, she was a little moved upon hearing</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>decide?&#34;</p>
+                        
+                        <p>&#34;I...&#34; Louis was in a distressing predicament and couldn&#39;t make a choice.</p>
+                        
+                        <p>Right then, Zachary took the glass from Charlotte directly and downed everything in one gulp.</p>
+                        
+                        <p>Both Charlotte and Louis were utterly stunned.</p>
+                        
+                        <p>Charlotte&#39;s expression turned inexplicably complicated, and she frowned, glancing at Zachary...</p>
+                        
+                        <p>Louis was astounded at first, and then, he was sensibly touched.</p>
+                        
+                        <p>Zachary put down the glass and looked up at Charlotte. &#34;Are you satisfied now?&#34;</p>
+                        
+                        <p>&#34;What do you mean?&#34; Charlotte was plainly puzzled.</p>
+                        
+                        <p>&#34;I won&#39;t let you be in danger again...&#34; Zachary splurted out, but he diverted hastily, &#34;Women are made</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>to be protected. Hence, it is men&#39;s duty to be gentlemen.&#34;</p>
+                        
+                        <p>&#34;That&#39;s right! Well said, Zachary!&#34;</p>
+                        
+                        <p>Louis couldn&#39;t stop complimenting him and cast him a grateful look in appreciation of Zachary giving</p>
+                        
+                        <p>him an out.</p>
+                        
+                        <p>&#34;You must understand that it was supposed to be a glass of poison. You&#39;d die for taking it.&#34; Charlotte</p>
+                        
+                        <p>gave him a displeased stare. &#34;Did you really pay attention to what I said?&#34;</p>
+                        
+                        <p>&#34;Yes, I did.&#34; Zachary looked at her with a deep gaze and answered in an earnest manner, &#34;I&#39;d rather die</p>
+                        
+                        <p>myself than to let you die, okay?&#34;</p>
+                        
+                        <p>A sudden brief chill came over Charlotte, and for some reason, she was a little moved upon hearing</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>those words.</p>
-                    
-                    <p>It was as if she had been waiting a long time just to hear these words...</p>
-                    
-                    <p>&#34;Zachary, you...&#34; Louis was baffled as he looked at Zachary. &#34;Wh-What did you say?&#34;</p>
-                    
-                    <p>&#34;That should solve your problem.&#34; Zachary was quick-witted as he added promptly, &#34;So what do you</p>
-                    
-                    <p>think about this friend in me?&#34;</p>
-                    
-                    <p>&#34;What a great friend you are!&#34; Louis nodded his head repetitively.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>those words.</p>
+                        
+                        <p>It was as if she had been waiting a long time just to hear these words...</p>
+                        
+                        <p>&#34;Zachary, you...&#34; Louis was baffled as he looked at Zachary. &#34;Wh-What did you say?&#34;</p>
+                        
+                        <p>&#34;That should solve your problem.&#34; Zachary was quick-witted as he added promptly, &#34;So what do you</p>
+                        
+                        <p>think about this friend in me?&#34;</p>
+                        
+                        <p>&#34;What a great friend you are!&#34; Louis nodded his head repetitively.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
@@ -4311,6 +4368,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4397,9 +4534,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4463,7 +4601,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4508,13 +4645,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4571,21 +4705,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

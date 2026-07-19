@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.208363",
-        "dateModified": "2026-07-17T17:08:29.208363",
+        "datePublished": "2026-07-19T13:10:25.020009",
+        "dateModified": "2026-07-19T13:10:25.020009",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,28 +2422,26 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 968</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“All right.” Shane nodded slightly.</p>
-                    
-                    <p>Then, he put down his phone and asked Natalie, “What&#39;s your plan now?”</p>
-                    
-                    <p>“Let&#39;s head back and see him,” she said as she massaged her temples.</p>
-                    
-                    <p>I should still go and see him.</p>
-                    
-                    <p>“Okay. I&#39;ll book a ticket home,” Shane said.</p>
-                    
-                    <p>“Then I&#39;ll go let Jared know.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“All right.” Shane nodded slightly.</p>
+                        
+                        <p>Then, he put down his phone and asked Natalie, “What&#39;s your plan now?”</p>
+                        
+                        <p>“Let&#39;s head back and see him,” she said as she massaged her temples.</p>
+                        
+                        <p>I should still go and see him.</p>
+                        
+                        <p>“Okay. I&#39;ll book a ticket home,” Shane said.</p>
+                        
+                        <p>“Then I&#39;ll go let Jared know.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2420,19 +2453,51 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>With that said, Natalie left the study and went out to call her brother.</p>
-                    
-                    <p>That night, Shane and Natalie boarded the plane home with the children.</p>
-                    
-                    <p>Silas notified them that Harrison was out of danger when they finally landed. The hospital found out that he was poisoned, but Silas didn&#39;t allow the hospital to let Harrison know about it.</p>
-                    
-                    <p>As such, the older man was still clueless about the actual reason he had collapsed. He thought that it was all because of his old age.</p>
-                    
-                    <p>Meanwhile, Susan was left on edge the moment Harrison was sent to the hospital, worried that they would find out that he had been poisoned.</p>
-                    
-                    <p>She had hoped that he would die at home the moment she decided to poison him. That way, Harrison wouldn&#39;t be sent to the hospital, and no one would find out that he had died from being poisoned. She could then avoid being suspected of his death.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>With that said, Natalie left the study and went out to call her brother.</p>
+                        
+                        <p>That night, Shane and Natalie boarded the plane home with the children.</p>
+                        
+                        <p>Silas notified them that Harrison was out of danger when they finally landed. The hospital found out that he was poisoned, but Silas didn&#39;t allow the hospital to let Harrison know about it.</p>
+                        
+                        <p>As such, the older man was still clueless about the actual reason he had collapsed. He thought that it was all because of his old age.</p>
+                        
+                        <p>Meanwhile, Susan was left on edge the moment Harrison was sent to the hospital, worried that they would find out that he had been poisoned.</p>
+                        
+                        <p>She had hoped that he would die at home the moment she decided to poison him. That way, Harrison wouldn&#39;t be sent to the hospital, and no one would find out that he had died from being poisoned. She could then avoid being suspected of his death.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Yet, unexpectedly, Harrison had collapsed outside and was sent to the hospital.</p>
+                        
+                        <p>She almost lost her soul when she received the call from the hospital.</p>
+                        
+                        <p>Luckily, they didn&#39;t mention anything about being poisoned. All they said to her was that he had collapsed due to his old age.</p>
+                        
+                        <p>Susan heaved a sigh of relief upon hearing that. At the same time, she also looked down on the hospital.</p>
+                        
+                        <p>She once thought that the doctors were really capable.</p>
+                        
+                        <p>Well, it seems like that&#39;s not it at all. There&#39;s nothing wrong with letting Harrison stay at the hospital since they weren&#39;t able to find out that he was poisoned. This saves me the energy of getting him home. He wouldn&#39;t have to die in the villa too. It&#39;s going to stink up the place otherwise.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2443,20 +2508,24 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>Yet, unexpectedly, Harrison had collapsed outside and was sent to the hospital.</p>
-                    
-                    <p>She almost lost her soul when she received the call from the hospital.</p>
-                    
-                    <p>Luckily, they didn&#39;t mention anything about being poisoned. All they said to her was that he had collapsed due to his old age.</p>
-                    
-                    <p>Susan heaved a sigh of relief upon hearing that. At the same time, she also looked down on the hospital.</p>
-                    
-                    <p>She once thought that the doctors were really capable.</p>
-                    
-                    <p>Well, it seems like that&#39;s not it at all. There&#39;s nothing wrong with letting Harrison stay at the hospital since they weren&#39;t able to find out that he was poisoned. This saves me the energy of getting him home. He wouldn&#39;t have to die in the villa too. It&#39;s going to stink up the place otherwise.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>After all, the villa was going to be Warren, Donald, and her home in the future.</p>
+                        
+                        <p>In the midst of her happy thoughts, someone knocked on the door.</p>
+                        
+                        <p>“Who is it?” Susan asked unhappily.</p>
+                        
+                        <p>Harrison opened his eyes. His body was extremely weak, and his voice could barely be heard as he said, “Go and open the door.”</p>
+                        
+                        <p>Though she didn&#39;t really want to, Susan still got up and went to open it.</p>
+                        
+                        <p>She was stunned when she saw the family of four standing outside. “It&#39;s you guys?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2467,20 +2536,24 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>After all, the villa was going to be Warren, Donald, and her home in the future.</p>
-                    
-                    <p>In the midst of her happy thoughts, someone knocked on the door.</p>
-                    
-                    <p>“Who is it?” Susan asked unhappily.</p>
-                    
-                    <p>Harrison opened his eyes. His body was extremely weak, and his voice could barely be heard as he said, “Go and open the door.”</p>
-                    
-                    <p>Though she didn&#39;t really want to, Susan still got up and went to open it.</p>
-                    
-                    <p>She was stunned when she saw the family of four standing outside. “It&#39;s you guys?”</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>It was none other than Natalie, Shane, and their children outside.</p>
+                        
+                        <p>“What are you guys doing here?” Susan tightened her grip on the door&#39;s handle as she eyed the family warily.</p>
+                        
+                        <p>Shane didn&#39;t answer. He refused to do so.</p>
+                        
+                        <p>Natalie looked behind the woman and asked, “Where&#39;s Dad?”</p>
+                        
+                        <p>Hearing that, Susan rolled her eyes and said sarcastically, “Wow. &#39;Where&#39;s Dad?&#39; What&#39;s wrong? Are you here to fake how filial you really are now that you&#39;ve heard that your dad&#39;s in the hospital?”</p>
+                        
+                        <p>“Get out of my way!” Natalie didn&#39;t want to waste her breath on her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2491,44 +2564,24 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>It was none other than Natalie, Shane, and their children outside.</p>
-                    
-                    <p>“What are you guys doing here?” Susan tightened her grip on the door&#39;s handle as she eyed the family warily.</p>
-                    
-                    <p>Shane didn&#39;t answer. He refused to do so.</p>
-                    
-                    <p>Natalie looked behind the woman and asked, “Where&#39;s Dad?”</p>
-                    
-                    <p>Hearing that, Susan rolled her eyes and said sarcastically, “Wow. &#39;Where&#39;s Dad?&#39; What&#39;s wrong? Are you here to fake how filial you really are now that you&#39;ve heard that your dad&#39;s in the hospital?”</p>
-                    
-                    <p>“Get out of my way!” Natalie didn&#39;t want to waste her breath on her.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="5">
-                    
-                    <p>The older woman puffed out her chest as she said, “Well, I&#39;m not going to. What are you going to do about it?”</p>
-                    
-                    <p>Natalie narrowed her eyes upon hearing that.</p>
-                    
-                    <p>Just as she was about to push Susan away, Harrison&#39;s weak voice was heard. “Who is it?”</p>
-                    
-                    <p>“It&#39;s me,” she replied.</p>
-                    
-                    <p>Harrison froze for a moment before saying quickly, “It&#39;s Nat? Come on in.”</p>
-                    
-                    <p>After this experience, he realized that he might not be able to walk anymore and that there wasn&#39;t much time left for him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The older woman puffed out her chest as she said, “Well, I&#39;m not going to. What are you going to do about it?”</p>
+                        
+                        <p>Natalie narrowed her eyes upon hearing that.</p>
+                        
+                        <p>Just as she was about to push Susan away, Harrison&#39;s weak voice was heard. “Who is it?”</p>
+                        
+                        <p>“It&#39;s me,” she replied.</p>
+                        
+                        <p>Harrison froze for a moment before saying quickly, “It&#39;s Nat? Come on in.”</p>
+                        
+                        <p>After this experience, he realized that he might not be able to walk anymore and that there wasn&#39;t much time left for him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2540,22 +2593,26 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Perhaps a human would become less cruel and start to reminisce about their old times when their last moments were nearing.</p>
-                    
-                    <p>When he was being rescued earlier, he had dreamt about the time when the four of them were a happy family.</p>
-                    
-                    <p>Yulia wasn&#39;t as forceful back then, and she was always very caring toward Harrison. Natalie and Jared used to look up to them too. It was a time where he was truly blessed and happy.</p>
-                    
-                    <p>However, with Susan and Jasmine sowing discord and sabotaging them, Yulia started to get on his nerves. He also started to hate Natalie and Jared. It was why he had decided to chase the brother and sister out of his house.</p>
-                    
-                    <p>But now, he was full of remorse for what he did. He was close to death, and he hoped that his children would return to his side. Harrison wanted to feel the happiness of being surrounded by them, and he hoped that they would forgive him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Perhaps a human would become less cruel and start to reminisce about their old times when their last moments were nearing.</p>
+                        
+                        <p>When he was being rescued earlier, he had dreamt about the time when the four of them were a happy family.</p>
+                        
+                        <p>Yulia wasn&#39;t as forceful back then, and she was always very caring toward Harrison. Natalie and Jared used to look up to them too. It was a time where he was truly blessed and happy.</p>
+                        
+                        <p>However, with Susan and Jasmine sowing discord and sabotaging them, Yulia started to get on his nerves. He also started to hate Natalie and Jared. It was why he had decided to chase the brother and sister out of his house.</p>
+                        
+                        <p>But now, he was full of remorse for what he did. He was close to death, and he hoped that his children would return to his side. Harrison wanted to feel the happiness of being surrounded by them, and he hoped that they would forgive him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4273,6 +4330,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4359,9 +4496,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4425,7 +4563,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4470,13 +4607,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4533,21 +4667,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

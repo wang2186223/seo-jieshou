@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:37.816971",
-        "dateModified": "2026-07-17T17:08:37.816971",
+        "datePublished": "2026-07-19T13:10:34.363469",
+        "dateModified": "2026-07-19T13:10:34.363469",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,76 +2422,82 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2331</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 2331</p>
-                    
-                    <p>Huh? Let nature take its course? One could only hope for success if one took action. No action meant no hope.</p>
-                    
-                    <p>“Have you ever thought of reconciling? After all, both of you went through so much together. You shouldn’t separate because of some misunderstandings,” Dustin inquired.</p>
-                    
-                    <p>He wanted Joan to realize he could be her protector and give her a future she deserved.</p>
-                    
-                    <p>“Let’s drop that topic. Here, have more food. You’ve worked hard recently.” She took a slice of pepperoni pizza and placed it on his plate.</p>
-                    
-                    <p>Her thoughtfulness moved him. It had been some time since Joan opened up to him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 2331</p>
+                        
+                        <p>Huh? Let nature take its course? One could only hope for success if one took action. No action meant no hope.</p>
+                        
+                        <p>“Have you ever thought of reconciling? After all, both of you went through so much together. You shouldn’t separate because of some misunderstandings,” Dustin inquired.</p>
+                        
+                        <p>He wanted Joan to realize he could be her protector and give her a future she deserved.</p>
+                        
+                        <p>“Let’s drop that topic. Here, have more food. You’ve worked hard recently.” She took a slice of pepperoni pizza and placed it on his plate.</p>
+                        
+                        <p>Her thoughtfulness moved him. It had been some time since Joan opened up to him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Despite that, she saw it as a normal interaction between friends.</p>
-                    
-                    <p>“Let’s dive in!”</p>
-                    
-                    <p>As usual, Jessica was drunk. She was trying to pick a fight with Caspian.</p>
-                    
-                    <p>“More wine! Quick!” she demanded.</p>
-                    
-                    <p>“You’re such an embarrassment. It’s time to bring you back,” Caspian said.</p>
-                    
-                    <p>“Back where? My parents are not around, so what’s the point of heading home?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Despite that, she saw it as a normal interaction between friends.</p>
+                        
+                        <p>“Let’s dive in!”</p>
+                        
+                        <p>As usual, Jessica was drunk. She was trying to pick a fight with Caspian.</p>
+                        
+                        <p>“More wine! Quick!” she demanded.</p>
+                        
+                        <p>“You’re such an embarrassment. It’s time to bring you back,” Caspian said.</p>
+                        
+                        <p>“Back where? My parents are not around, so what’s the point of heading home?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>He stared at Jessica and felt his heart ached.</p>
-                    
-                    <p>“It’s okay, I’m here. Don’t worry.” Caspian stroked her hair.</p>
-                    
-                    <p>“Stop nagging and give me more wine! I want more!” she shouted and tried to grab his glass.</p>
-                    
-                    <p>“Jessica. It’s time to go back!”</p>
-                    
-                    <p>It annoyed him when women tried to drink, especially Jessica, who kept crossing his boundaries. Even though he had romantic feelings towards her, he would never break his principles.</p>
-                    
-                    <p>“Caspian, you’re so overbearing! Why won’t you let me drink?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>He stared at Jessica and felt his heart ached.</p>
+                        
+                        <p>“It’s okay, I’m here. Don’t worry.” Caspian stroked her hair.</p>
+                        
+                        <p>“Stop nagging and give me more wine! I want more!” she shouted and tried to grab his glass.</p>
+                        
+                        <p>“Jessica. It’s time to go back!”</p>
+                        
+                        <p>It annoyed him when women tried to drink, especially Jessica, who kept crossing his boundaries. Even though he had romantic feelings towards her, he would never break his principles.</p>
+                        
+                        <p>“Caspian, you’re so overbearing! Why won’t you let me drink?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2468,72 +2509,84 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Because I like you!”</p>
-                    
-                    <p>The room went silent as they stared at each other, unsure of what to say next. Meanwhile, Larry was deep in his own thoughts at the window and was clueless about what was happening.</p>
-                    
-                    <p>“Give it to me!” Jessica continued.</p>
-                    
-                    <p>Smash!</p>
-                    
-                    <p>Caspian snatched her glass away and threw it on the floor.</p>
-                    
-                    <p>The atmosphere in the room turned awkward.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Because I like you!”</p>
+                        
+                        <p>The room went silent as they stared at each other, unsure of what to say next. Meanwhile, Larry was deep in his own thoughts at the window and was clueless about what was happening.</p>
+                        
+                        <p>“Give it to me!” Jessica continued.</p>
+                        
+                        <p>Smash!</p>
+                        
+                        <p>Caspian snatched her glass away and threw it on the floor.</p>
+                        
+                        <p>The atmosphere in the room turned awkward.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“Let’s go!” He helped her up.</p>
-                    
-                    <p>“Let’s go, Larry. We have to leave before she acts up again.”</p>
-                    
-                    <p>Larry spoke little throughout the meal. When he heard Caspian, he stood up immediately and opened the door.</p>
-                    
-                    <p>The sight of Dustin and Joan greeted him. They were walking side by side like a sweet couple. Caspian cast them a contemptuous gaze from behind Larry.</p>
-                    
-                    <p>“Larry, let’s go.”</p>
-                    
-                    <p>“Don’t touch me!” Jessica exclaimed in anger.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“Let’s go!” He helped her up.</p>
+                        
+                        <p>“Let’s go, Larry. We have to leave before she acts up again.”</p>
+                        
+                        <p>Larry spoke little throughout the meal. When he heard Caspian, he stood up immediately and opened the door.</p>
+                        
+                        <p>The sight of Dustin and Joan greeted him. They were walking side by side like a sweet couple. Caspian cast them a contemptuous gaze from behind Larry.</p>
+                        
+                        <p>“Larry, let’s go.”</p>
+                        
+                        <p>“Don’t touch me!” Jessica exclaimed in anger.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Joan halted, turned at the familiar voice, and saw Larry watching her.</p>
-                    
-                    <p>Dustin, on the other hand, was glaring murderously at the latter.</p>
-                    
-                    <p>Larry, just agree with the divorce! There’s no point in struggling. Dustin clenched his fists.</p>
-                    
-                    <p>“Huh? Isn’t that Joan?” Jessica pointed at her.</p>
-                    
-                    <p>Caspian stopped her from getting near Joan in case Jessica picked a fight with her.</p>
-                    
-                    <p>Joan was surprised by what she saw.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Joan halted, turned at the familiar voice, and saw Larry watching her.</p>
+                        
+                        <p>Dustin, on the other hand, was glaring murderously at the latter.</p>
+                        
+                        <p>Larry, just agree with the divorce! There’s no point in struggling. Dustin clenched his fists.</p>
+                        
+                        <p>“Huh? Isn’t that Joan?” Jessica pointed at her.</p>
+                        
+                        <p>Caspian stopped her from getting near Joan in case Jessica picked a fight with her.</p>
+                        
+                        <p>Joan was surprised by what she saw.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4253,6 +4306,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4339,9 +4472,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4405,7 +4539,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4450,13 +4583,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4513,21 +4643,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

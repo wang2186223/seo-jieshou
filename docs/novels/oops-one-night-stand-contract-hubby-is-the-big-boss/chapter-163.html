@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:20.749115",
-        "dateModified": "2026-07-17T17:08:20.749115",
+        "datePublished": "2026-07-19T13:10:17.371104",
+        "dateModified": "2026-07-19T13:10:17.371104",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,142 +2422,48 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 163</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Hearing Finn Carter&#39;s inner thoughts, Aria Stewart knew she had lost again.</p>
-                    
-                    <p>His meaning of &#34;big&#34; certainly wasn&#39;t about age.</p>
-                    
-                    <p>Her heart instantly sank into an icy abyss.</p>
-                    
-                    <p>She didn&#39;t care about Finn Carter.</p>
-                    
-                    <p>Losing to her younger sister Luna Stewart once more just made her feel utterly hopeless about her own life.</p>
-                    
-                    <p>&#34;Old Master, may I speak with Miss Qingxuan alone?&#34; Finn Carter suddenly turned to look at Luna Stewart, his tone calm.</p>
-                    
-                    <p>The Old Master Lin understood, thinking Finn Carter had made his choice in this manner.</p>
-                    
-                    <p>&#34;Fine, as you wish.&#34;</p>
-                    
-                    <p>When Finn Carter and Luna Stewart walked out the door, Aria Stewart finally couldn&#39;t hold on any longer.</p>
-                    
-                    <p>She slowly crouched down.</p>
-                    
-                    <p>Old Master Lin looked at his granddaughter with a pained heart, but didn&#39;t know how to comfort her.</p>
-                    
-                    <p>He could only sigh helplessly.</p>
-                    
-                    <p>......</p>
-                    
-                    <p>Finn Carter and Luna Stewart walked all the way to the sanitarium garden.</p>
-                    
-                    <p>Luna Stewart kept holding Finn Carter&#39;s arm the entire time, smiling radiantly.</p>
-                    
-                    <p>&#34;Miss Lin, your sister can&#39;t see us anymore.&#34; Finn Carter stopped walking and spoke plainly.</p>
-                    
-                    <p>Luna Stewart was startled.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>She gave a charming, silky-eyed laugh. &#34;Isn&#39;t holding you comfortable? Your words say no, but your body says yes!&#34;</p>
-                    
-                    <p>Finn Carter was no fool.</p>
-                    
-                    <p>He had long seen the terrible relationship between the two sisters.</p>
-                    
-                    <p>He wasn&#39;t narcissistic enough to think Luna Stewart had fallen for him at first sight.</p>
-                    
-                    <p>She was clearly using him to provoke her sister.</p>
-                    
-                    <p>Finn Carter smiled.</p>
-                    
-                    <p>He suddenly reached out and tore off the earring from Luna Stewart&#39;s left ear.</p>
-                    
-                    <p>&#34;What are you doing!&#34; Luna Stewart&#39;s face instantly changed.</p>
-                    
-                    <p>She covered her ear and scolded angrily. &#34;This is a rare sapphire! Selling you wouldn&#39;t cover the cost! Give it back to me now! Did you really think a girl like me would be interested in a poor security guard like you?!&#34;</p>
-                    
-                    <p>Finn Carter glanced at her calmly.</p>
-                    
-                    <p>He slapped her rounded bottom. &#34;Quiet down!&#34;</p>
-                    
-                    <p>Instantly, waves rippled.</p>
-                    
-                    <p>So springy, so soft!</p>
-                    
-                    <p>&#34;Ah!&#34; Luna Stewart cried out softly, both embarrassed and furious. &#34;Bastard! How dare you hit me......&#34;</p>
-                    
-                    <p>Finn Carter ignored her.</p>
-                    
-                    <p>He pinched the sapphire between his thumb and middle finger and gave a light squeeze.</p>
-                    
-                    <p>&#34;Crack!&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>The gemstone split into two halves with a crisp sound.</p>
-                    
-                    <p>Just as Luna Stewart was about to erupt, she saw Finn Carter pick up a tiny device from the fragments.</p>
-                    
-                    <p>&#34;What is this?&#34; Luna Stewart asked in surprise.</p>
-                    
-                    <p>&#34;A listening device.&#34; Finn Carter said gravely. &#34;RK800, the latest model.&#34;</p>
-                    
-                    <p>&#34;A listening device?!&#34; Luna Stewart covered her mouth, her beautiful face pale with fright. &#34;How could......&#34;</p>
-                    
-                    <p>&#34;Check who gave you these earrings.&#34; Finn Carter said coolly.</p>
-                    
-                    <p>Luna Stewart&#39;s body trembled. &#34;It was him......&#34;</p>
-                    
-                    <p>Before she could recover, a wisp of golden flame suddenly emerged from Finn Carter&#39;s palm.</p>
-                    
-                    <p>With a sizzling sound, the listening device turned to ashes, scattering with the wind.</p>
-                    
-                    <p>&#34;You...... you......&#34; Luna Stewart pointed at Finn Carter, speechless.</p>
-                    
-                    <p>This was simply not something an ordinary person could do!</p>
-                    
-                    <p>&#34;Helping you once out of respect for the Old Master.&#34; Finn Carter looked at her. &#34;Your sisterly issues have nothing to do with me. Don&#39;t use me as your pawn.&#34;</p>
-                    
-                    <p>After speaking, he turned and left.</p>
-                    
-                    <p>Leaving Luna Stewart standing frozen in place, nearly petrified.</p>
-                    
-                    <p>......</p>
-                    
-                    <p>In the driver&#39;s seat of the Lamborghini, Aria Stewart leaned over the steering wheel, crying silently.</p>
-                    
-                    <p>She felt utterly desperate and lonely.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Hearing Finn Carter&#39;s inner thoughts, Aria Stewart knew she had lost again.</p>
+                        
+                        <p>His meaning of &#34;big&#34; certainly wasn&#39;t about age.</p>
+                        
+                        <p>Her heart instantly sank into an icy abyss.</p>
+                        
+                        <p>She didn&#39;t care about Finn Carter.</p>
+                        
+                        <p>Losing to her younger sister Luna Stewart once more just made her feel utterly hopeless about her own life.</p>
+                        
+                        <p>&#34;Old Master, may I speak with Miss Qingxuan alone?&#34; Finn Carter suddenly turned to look at Luna Stewart, his tone calm.</p>
+                        
+                        <p>The Old Master Lin understood, thinking Finn Carter had made his choice in this manner.</p>
+                        
+                        <p>&#34;Fine, as you wish.&#34;</p>
+                        
+                        <p>When Finn Carter and Luna Stewart walked out the door, Aria Stewart finally couldn&#39;t hold on any longer.</p>
+                        
+                        <p>She slowly crouched down.</p>
+                        
+                        <p>Old Master Lin looked at his granddaughter with a pained heart, but didn&#39;t know how to comfort her.</p>
+                        
+                        <p>He could only sigh helplessly.</p>
+                        
+                        <p>......</p>
+                        
+                        <p>Finn Carter and Luna Stewart walked all the way to the sanitarium garden.</p>
+                        
+                        <p>Luna Stewart kept holding Finn Carter&#39;s arm the entire time, smiling radiantly.</p>
+                        
+                        <p>&#34;Miss Lin, your sister can&#39;t see us anymore.&#34; Finn Carter stopped walking and spoke plainly.</p>
+                        
+                        <p>Luna Stewart was startled.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2533,42 +2474,96 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>She had been crying for over an hour.</p>
-                    
-                    <p>To avoid worrying her grandfather, she could only hide in the car and cry secretly.</p>
-                    
-                    <p>Suddenly, the car door opened.</p>
-                    
-                    <p>Someone got into the passenger seat.</p>
-                    
-                    <p>Aria Stewart was startled.</p>
-                    
-                    <p>When she saw it was Finn Carter, she flew into a rage. &#34;Get out!&#34;</p>
-                    
-                    <p>Finn Carter didn&#39;t speak.</p>
-                    
-                    <p>He just looked at her quietly.</p>
-                    
-                    <p>Sigh... This poor older woman.</p>
-                    
-                    <p>From what her mother said, she&#39;s being forced into a business marriage.</p>
-                    
-                    <p>The company she built with her own hands will be taken away and given to her sister.</p>
-                    
-                    <p>That sister is no easy person either, constantly causing trouble for her.</p>
-                    
-                    <p>The only one who dotes on her, her grandfather, is making her marry a stranger.</p>
-                    
-                    <p>Sigh... Whatever. A live-in marriage it is.</p>
-                    
-                    <p>I&#39;ll be the live-in son-in-law for a couple days, then divorce later.</p>
-                    
-                    <p>Who told me I&#39;m soft-hearted and can&#39;t stand to see a woman cry!</p>
-                    
-                    <p>Hearing Finn Carter&#39;s inner thoughts, Aria Stewart was stunned.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>She gave a charming, silky-eyed laugh. &#34;Isn&#39;t holding you comfortable? Your words say no, but your body says yes!&#34;</p>
+                        
+                        <p>Finn Carter was no fool.</p>
+                        
+                        <p>He had long seen the terrible relationship between the two sisters.</p>
+                        
+                        <p>He wasn&#39;t narcissistic enough to think Luna Stewart had fallen for him at first sight.</p>
+                        
+                        <p>She was clearly using him to provoke her sister.</p>
+                        
+                        <p>Finn Carter smiled.</p>
+                        
+                        <p>He suddenly reached out and tore off the earring from Luna Stewart&#39;s left ear.</p>
+                        
+                        <p>&#34;What are you doing!&#34; Luna Stewart&#39;s face instantly changed.</p>
+                        
+                        <p>She covered her ear and scolded angrily. &#34;This is a rare sapphire! Selling you wouldn&#39;t cover the cost! Give it back to me now! Did you really think a girl like me would be interested in a poor security guard like you?!&#34;</p>
+                        
+                        <p>Finn Carter glanced at her calmly.</p>
+                        
+                        <p>He slapped her rounded bottom. &#34;Quiet down!&#34;</p>
+                        
+                        <p>Instantly, waves rippled.</p>
+                        
+                        <p>So springy, so soft!</p>
+                        
+                        <p>&#34;Ah!&#34; Luna Stewart cried out softly, both embarrassed and furious. &#34;Bastard! How dare you hit me......&#34;</p>
+                        
+                        <p>Finn Carter ignored her.</p>
+                        
+                        <p>He pinched the sapphire between his thumb and middle finger and gave a light squeeze.</p>
+                        
+                        <p>&#34;Crack!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The gemstone split into two halves with a crisp sound.</p>
+                        
+                        <p>Just as Luna Stewart was about to erupt, she saw Finn Carter pick up a tiny device from the fragments.</p>
+                        
+                        <p>&#34;What is this?&#34; Luna Stewart asked in surprise.</p>
+                        
+                        <p>&#34;A listening device.&#34; Finn Carter said gravely. &#34;RK800, the latest model.&#34;</p>
+                        
+                        <p>&#34;A listening device?!&#34; Luna Stewart covered her mouth, her beautiful face pale with fright. &#34;How could......&#34;</p>
+                        
+                        <p>&#34;Check who gave you these earrings.&#34; Finn Carter said coolly.</p>
+                        
+                        <p>Luna Stewart&#39;s body trembled. &#34;It was him......&#34;</p>
+                        
+                        <p>Before she could recover, a wisp of golden flame suddenly emerged from Finn Carter&#39;s palm.</p>
+                        
+                        <p>With a sizzling sound, the listening device turned to ashes, scattering with the wind.</p>
+                        
+                        <p>&#34;You...... you......&#34; Luna Stewart pointed at Finn Carter, speechless.</p>
+                        
+                        <p>This was simply not something an ordinary person could do!</p>
+                        
+                        <p>&#34;Helping you once out of respect for the Old Master.&#34; Finn Carter looked at her. &#34;Your sisterly issues have nothing to do with me. Don&#39;t use me as your pawn.&#34;</p>
+                        
+                        <p>After speaking, he turned and left.</p>
+                        
+                        <p>Leaving Luna Stewart standing frozen in place, nearly petrified.</p>
+                        
+                        <p>......</p>
+                        
+                        <p>In the driver&#39;s seat of the Lamborghini, Aria Stewart leaned over the steering wheel, crying silently.</p>
+                        
+                        <p>She felt utterly desperate and lonely.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2579,88 +2574,46 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>She never expected that in the end, it would be this security guard she looked down on who understood her grievances the most.</p>
-                    
-                    <p>This understanding became her final outlet for release.</p>
-                    
-                    <p>She could no longer hold back.</p>
-                    
-                    <p>She buried her face in the steering wheel and wept openly.</p>
-                    
-                    <p>&#34;Stop crying. The first milk tea of autumn, want some?&#34; Finn Carter handed over a paper bag.</p>
-                    
-                    <p>Aria Stewart lifted her head, tears streaming down her face like rain on pear blossoms.</p>
-                    
-                    <p>Her long eyelashes were wet with teardrops, a pitiful sight.</p>
-                    
-                    <p>She snatched the milk tea and stabbed the straw in.</p>
-                    
-                    <p>Coldly, she said, &#34;Didn&#39;t you choose Luna Stewart? Why come back to find me?&#34;</p>
-                    
-                    <p>&#34;When did I choose her?&#34; Finn Carter stretched lazily.</p>
-                    
-                    <p>&#34;Heh, she&#39;s bigger than me, more flirtatious than me, better at acting cute than me! Don&#39;t all you men love that!&#34; Aria Stewart sneered.</p>
-                    
-                    <p>&#34;What&#39;s the use of being big!&#34; Finn Carter blinked. &#34;Can she grow a twenty-plus millimeter lump like you? You&#39;re the impressive one!&#34;</p>
-                    
-                    <p>Aria Stewart nearly choked with anger, gritting her teeth.</p>
-                    
-                    <p>Thank you for the compliment!!</p>
-                    
-                    <p>The next moment, she suddenly realized.</p>
-                    
-                    <p>Finn Carter had slipped up!</p>
-                    
-                    <p>Earlier, she only said it was a friend with chest pain.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>She never mentioned a lump!</p>
-                    
-                    <p>You bastard, still dare to say you don&#39;t know medicine?!</p>
-                    
-                    <p>Fine, keep pretending!</p>
-                    
-                    <p>I&#39;ll make sure your true colors show one day!</p>
-                    
-                    <p>Aria Stewart bit down hard on the straw and took a fierce sip.</p>
-                    
-                    <p>&#34;Ugh... cough cough cough...&#34; The intensely bitter taste made her almost vomit.</p>
-                    
-                    <p>&#34;Finn Carter! Is this fit for human consumption?!&#34;</p>
-                    
-                    <p>Finn Carter closed his eyes to rest, casually saying, &#34;Drink it or don&#39;t. Don&#39;t regret it if you don&#39;t.&#34;</p>
-                    
-                    <p>Furious, Aria Stewart was about to throw it in his face when she heard his inner thoughts.</p>
-                    
-                    <p>Ungrateful old woman.</p>
-                    
-                    <p>I personally gathered the medicine.</p>
-                    
-                    <p>Used internal energy to brew it quickly for you.</p>
-                    
-                    <p>Personally delivered it to your hands.</p>
-                    
-                    <p>Is there anyone more professional providing full service than me?</p>
-                    
-                    <p>Don&#39;t drink it then.</p>
-                    
-                    <p>Keep your twenty-plus millimeter lump as a family heirloom.</p>
-                    
-                    <p>Aria Stewart fell silent.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She had been crying for over an hour.</p>
+                        
+                        <p>To avoid worrying her grandfather, she could only hide in the car and cry secretly.</p>
+                        
+                        <p>Suddenly, the car door opened.</p>
+                        
+                        <p>Someone got into the passenger seat.</p>
+                        
+                        <p>Aria Stewart was startled.</p>
+                        
+                        <p>When she saw it was Finn Carter, she flew into a rage. &#34;Get out!&#34;</p>
+                        
+                        <p>Finn Carter didn&#39;t speak.</p>
+                        
+                        <p>He just looked at her quietly.</p>
+                        
+                        <p>Sigh... This poor older woman.</p>
+                        
+                        <p>From what her mother said, she&#39;s being forced into a business marriage.</p>
+                        
+                        <p>The company she built with her own hands will be taken away and given to her sister.</p>
+                        
+                        <p>That sister is no easy person either, constantly causing trouble for her.</p>
+                        
+                        <p>The only one who dotes on her, her grandfather, is making her marry a stranger.</p>
+                        
+                        <p>Sigh... Whatever. A live-in marriage it is.</p>
+                        
+                        <p>I&#39;ll be the live-in son-in-law for a couple days, then divorce later.</p>
+                        
+                        <p>Who told me I&#39;m soft-hearted and can&#39;t stand to see a woman cry!</p>
+                        
+                        <p>Hearing Finn Carter&#39;s inner thoughts, Aria Stewart was stunned.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2671,39 +2624,143 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>She gripped the cup tightly, looking at Finn Carter with complex emotions.</p>
-                    
-                    <p>In her heart, she actually felt a trace of warmth she hadn&#39;t felt in a long time...</p>
-                    
-                    <p>She didn&#39;t speak again.</p>
-                    
-                    <p>Enduring the strong bitterness, she drank the &#34;milk tea&#34; sip by sip.</p>
-                    
-                    <p>&#34;Where to next?&#34; Aria Stewart suddenly asked.</p>
-                    
-                    <p>&#34;What kind of question is that.&#34; Finn Carter scoffed. &#34;I&#39;m your Lin family&#39;s live-in son-in-law. Where we go is up to you!&#34;</p>
-                    
-                    <p>The resentment in his tone was obvious.</p>
-                    
-                    <p>He clearly held a grudge about the live-in marriage.</p>
-                    
-                    <p>For some reason, seeing him so aggrieved made Aria Stewart feel a little happy.</p>
-                    
-                    <p>Just then, Aria Stewart&#39;s phone suddenly rang.</p>
-                    
-                    <p>&#34;President Lin, where are you? Zhao Chuanping is at the company. He says there&#39;s a problem with the land in the southern suburbs!&#34;</p>
-                    
-                    <p>Aria Stewart frowned. &#34;Understood. I&#39;ll be right back.&#34;</p>
-                    
-                    <p>After hanging up, she pondered for a moment. &#34;Come back to the company with me first.&#34;</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>She never expected that in the end, it would be this security guard she looked down on who understood her grievances the most.</p>
+                        
+                        <p>This understanding became her final outlet for release.</p>
+                        
+                        <p>She could no longer hold back.</p>
+                        
+                        <p>She buried her face in the steering wheel and wept openly.</p>
+                        
+                        <p>&#34;Stop crying. The first milk tea of autumn, want some?&#34; Finn Carter handed over a paper bag.</p>
+                        
+                        <p>Aria Stewart lifted her head, tears streaming down her face like rain on pear blossoms.</p>
+                        
+                        <p>Her long eyelashes were wet with teardrops, a pitiful sight.</p>
+                        
+                        <p>She snatched the milk tea and stabbed the straw in.</p>
+                        
+                        <p>Coldly, she said, &#34;Didn&#39;t you choose Luna Stewart? Why come back to find me?&#34;</p>
+                        
+                        <p>&#34;When did I choose her?&#34; Finn Carter stretched lazily.</p>
+                        
+                        <p>&#34;Heh, she&#39;s bigger than me, more flirtatious than me, better at acting cute than me! Don&#39;t all you men love that!&#34; Aria Stewart sneered.</p>
+                        
+                        <p>&#34;What&#39;s the use of being big!&#34; Finn Carter blinked. &#34;Can she grow a twenty-plus millimeter lump like you? You&#39;re the impressive one!&#34;</p>
+                        
+                        <p>Aria Stewart nearly choked with anger, gritting her teeth.</p>
+                        
+                        <p>Thank you for the compliment!!</p>
+                        
+                        <p>The next moment, she suddenly realized.</p>
+                        
+                        <p>Finn Carter had slipped up!</p>
+                        
+                        <p>Earlier, she only said it was a friend with chest pain.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She never mentioned a lump!</p>
+                        
+                        <p>You bastard, still dare to say you don&#39;t know medicine?!</p>
+                        
+                        <p>Fine, keep pretending!</p>
+                        
+                        <p>I&#39;ll make sure your true colors show one day!</p>
+                        
+                        <p>Aria Stewart bit down hard on the straw and took a fierce sip.</p>
+                        
+                        <p>&#34;Ugh... cough cough cough...&#34; The intensely bitter taste made her almost vomit.</p>
+                        
+                        <p>&#34;Finn Carter! Is this fit for human consumption?!&#34;</p>
+                        
+                        <p>Finn Carter closed his eyes to rest, casually saying, &#34;Drink it or don&#39;t. Don&#39;t regret it if you don&#39;t.&#34;</p>
+                        
+                        <p>Furious, Aria Stewart was about to throw it in his face when she heard his inner thoughts.</p>
+                        
+                        <p>Ungrateful old woman.</p>
+                        
+                        <p>I personally gathered the medicine.</p>
+                        
+                        <p>Used internal energy to brew it quickly for you.</p>
+                        
+                        <p>Personally delivered it to your hands.</p>
+                        
+                        <p>Is there anyone more professional providing full service than me?</p>
+                        
+                        <p>Don&#39;t drink it then.</p>
+                        
+                        <p>Keep your twenty-plus millimeter lump as a family heirloom.</p>
+                        
+                        <p>Aria Stewart fell silent.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She gripped the cup tightly, looking at Finn Carter with complex emotions.</p>
+                        
+                        <p>In her heart, she actually felt a trace of warmth she hadn&#39;t felt in a long time...</p>
+                        
+                        <p>She didn&#39;t speak again.</p>
+                        
+                        <p>Enduring the strong bitterness, she drank the &#34;milk tea&#34; sip by sip.</p>
+                        
+                        <p>&#34;Where to next?&#34; Aria Stewart suddenly asked.</p>
+                        
+                        <p>&#34;What kind of question is that.&#34; Finn Carter scoffed. &#34;I&#39;m your Lin family&#39;s live-in son-in-law. Where we go is up to you!&#34;</p>
+                        
+                        <p>The resentment in his tone was obvious.</p>
+                        
+                        <p>He clearly held a grudge about the live-in marriage.</p>
+                        
+                        <p>For some reason, seeing him so aggrieved made Aria Stewart feel a little happy.</p>
+                        
+                        <p>Just then, Aria Stewart&#39;s phone suddenly rang.</p>
+                        
+                        <p>&#34;President Lin, where are you? Zhao Chuanping is at the company. He says there&#39;s a problem with the land in the southern suburbs!&#34;</p>
+                        
+                        <p>Aria Stewart frowned. &#34;Understood. I&#39;ll be right back.&#34;</p>
+                        
+                        <p>After hanging up, she pondered for a moment. &#34;Come back to the company with me first.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
@@ -4421,6 +4478,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4507,9 +4644,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4573,7 +4711,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4618,13 +4755,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4681,21 +4815,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

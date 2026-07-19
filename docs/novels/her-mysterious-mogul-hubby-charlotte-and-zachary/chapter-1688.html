@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.224868",
-        "dateModified": "2026-07-17T17:08:32.224868",
+        "datePublished": "2026-07-19T13:10:29.096680",
+        "dateModified": "2026-07-19T13:10:29.096680",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,154 +2422,32 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1788</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;What should we do?&#34; Sean asked worriedly.</p>
-                    
-                    <p>&#34;Fetch me the blade!&#34; Francesca urged.</p>
-                    
-                    <p>&#34;I...&#34;</p>
-                    
-                    <p>&#34;Here, you can use this.&#34; Danrique handed her his crescent-shaped dagger as he continued, &#34;Don&#39;t</p>
-                    
-                    <p>worry. Just do whatever it is you need to do.&#34;</p>
-                    
-                    <p>He was so casual about it even though it was him who would be operated upon.</p>
-                    
-                    <p>Francesca got to her feet. &#34;I&#39;ll go prepare the anesthesia.&#34;</p>
-                    
-                    <p>&#34;No need for that. Just get it over with as quickly as possible!&#34; Danrique was getting a little impatient.</p>
-                    
-                    <p>&#34;It&#39;s going to be very painful. I will have to cut off all the necrotic tissue in the area-&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Shut up! Just do as I said!&#34; Danrique shouted while closing his eyes.</p>
-                    
-                    <p>&#39;Very well. You asked for it.&#34;</p>
-                    
-                    <p>Francesca then sat down beside the bathtub and began carving the necrotic flesh off Danrique&#39;s wound</p>
-                    
-                    <p>while Sean watched on in horror.</p>
-                    
-                    <p>Upon stealing a glance at Danrique, Francesca noticed that he was only frowning slightly and didn&#39;t</p>
-                    
-                    <p>seem to be in pain at all.</p>
-                    
-                    <p>The blood flowing out of the wound slowly dripped into the bathtub and stained the herbal concoction</p>
-                    
-                    <p>dark red.</p>
-                    
-                    <p>On top of that, the bathroom was also filled with the scent of the herbal concoction and the stench of</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>blood.</p>
-                    
-                    <p>Because Francesca was very decisive with her cuts, it didn&#39;t take her long to remove all of the necrotic</p>
-                    
-                    <p>tissue. “All right, I&#39;ll go wait outside. Put your pants back on and come on out. I&#39;ll treat your wound for</p>
-                    
-                    <p>you.&#34;</p>
-                    
-                    <p>She then washed her hands and left the bathroom.</p>
-                    
-                    <p>&#34;Mr. Lindberg! Are you okay? Does it hurt?&#34; Sean quickly closed the door and helped Danrique up.</p>
-                    
-                    <p>&#34;I&#39;m fine,&#34; Danrique replied calmly while climbing out of the bathtub.</p>
-                    
-                    <p>After wiping the herbal concoction off his body, he put on his pants and walked out of the bathroom.</p>
-                    
-                    <p>As the wound was still bleeding, his white pants were soon stained red.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Here, sit down!” Francesca ordered as she continued preparing the bandages and medication.</p>
-                    
-                    <p>Danrique sat down on the sofa and began wiping his hair with the towel.</p>
-                    
-                    <p>Sean came over and handed him a glass of water, but he refused it and said, &#34;I want vodka on the</p>
-                    
-                    <p>rocks!&#34;</p>
-                    
-                    <p>&#34;But...&#34;</p>
-                    
-                    <p>&#34;Let him have it. This next step is going to hurt a lot, so the booze will help numb some of the pain,&#34;</p>
-                    
-                    <p>Francesca said while disinfecting a silver needle.</p>
-                    
-                    <p>&#34;Dr. Felch, should we give him some painkillers or something?&#34; Sean asked anxiously as he poured</p>
-                    
-                    <p>Danrique a glass of vodka.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Francesca glanced at Danrique. &#34;Do you want any?&#34;</p>
-                    
-                    <p>&#34;That won&#39;t be necessary,&#34; Danrique replied while sipping on the vodka.</p>
-                    
-                    <p>&#34;I sure hope you&#39;re as tough as you sound. What you felt earlier in the bathroom was just the tip of the</p>
-                    
-                    <p>iceberg. The real agonizing pain begins when I apply the medication later. You&#39;d better prepare yourself</p>
-                    
-                    <p>for it!&#34; Francesca said with a smile.</p>
-                    
-                    <p>Danrique glared at her in annoyance. &#34;You talk too much, you know that?&#34;</p>
-                    
-                    <p>Francesca simply arched an eyebrow at him as she grabbed her medical kit and knelt down in front of</p>
-                    
-                    <p>him.</p>
-                    
-                    <p>&#34;I&#39;m going to apply the medication now, so brace yourself.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;What should we do?&#34; Sean asked worriedly.</p>
+                        
+                        <p>&#34;Fetch me the blade!&#34; Francesca urged.</p>
+                        
+                        <p>&#34;I...&#34;</p>
+                        
+                        <p>&#34;Here, you can use this.&#34; Danrique handed her his crescent-shaped dagger as he continued, &#34;Don&#39;t</p>
+                        
+                        <p>worry. Just do whatever it is you need to do.&#34;</p>
+                        
+                        <p>He was so casual about it even though it was him who would be operated upon.</p>
+                        
+                        <p>Francesca got to her feet. &#34;I&#39;ll go prepare the anesthesia.&#34;</p>
+                        
+                        <p>&#34;No need for that. Just get it over with as quickly as possible!&#34; Danrique was getting a little impatient.</p>
+                        
+                        <p>&#34;It&#39;s going to be very painful. I will have to cut off all the necrotic tissue in the area-&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2545,26 +2458,132 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Stop talking so much... Mmph...&#34;</p>
-                    
-                    <p>Danrique was halfway through his sentence when he groaned in pain and started trembling all over.</p>
-                    
-                    <p>Danrique thought to himself with his fists tightly clenched.</p>
-                    
-                    <p>He was in so much pain that his entire body tensed up, his veins bulged from his forehead, and his</p>
-                    
-                    <p>eyes became bloodshot.</p>
-                    
-                    <p>&#34;Mr. Lindberg! Be gentle, Dr. Belch!&#34; Sean was starting to panic. New chаpter av?ilable on</p>
-                    
-                    <p>Drаmanоvels.cом</p>
-                    
-                    <p>&#34;I can&#39;t.&#34;</p>
-                    
-                    <p>Francesca had gotten so used to life and death that she was completely unfazed.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Shut up! Just do as I said!&#34; Danrique shouted while closing his eyes.</p>
+                        
+                        <p>&#39;Very well. You asked for it.&#34;</p>
+                        
+                        <p>Francesca then sat down beside the bathtub and began carving the necrotic flesh off Danrique&#39;s wound</p>
+                        
+                        <p>while Sean watched on in horror.</p>
+                        
+                        <p>Upon stealing a glance at Danrique, Francesca noticed that he was only frowning slightly and didn&#39;t</p>
+                        
+                        <p>seem to be in pain at all.</p>
+                        
+                        <p>The blood flowing out of the wound slowly dripped into the bathtub and stained the herbal concoction</p>
+                        
+                        <p>dark red.</p>
+                        
+                        <p>On top of that, the bathroom was also filled with the scent of the herbal concoction and the stench of</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>blood.</p>
+                        
+                        <p>Because Francesca was very decisive with her cuts, it didn&#39;t take her long to remove all of the necrotic</p>
+                        
+                        <p>tissue. “All right, I&#39;ll go wait outside. Put your pants back on and come on out. I&#39;ll treat your wound for</p>
+                        
+                        <p>you.&#34;</p>
+                        
+                        <p>She then washed her hands and left the bathroom.</p>
+                        
+                        <p>&#34;Mr. Lindberg! Are you okay? Does it hurt?&#34; Sean quickly closed the door and helped Danrique up.</p>
+                        
+                        <p>&#34;I&#39;m fine,&#34; Danrique replied calmly while climbing out of the bathtub.</p>
+                        
+                        <p>After wiping the herbal concoction off his body, he put on his pants and walked out of the bathroom.</p>
+                        
+                        <p>As the wound was still bleeding, his white pants were soon stained red.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Here, sit down!” Francesca ordered as she continued preparing the bandages and medication.</p>
+                        
+                        <p>Danrique sat down on the sofa and began wiping his hair with the towel.</p>
+                        
+                        <p>Sean came over and handed him a glass of water, but he refused it and said, &#34;I want vodka on the</p>
+                        
+                        <p>rocks!&#34;</p>
+                        
+                        <p>&#34;But...&#34;</p>
+                        
+                        <p>&#34;Let him have it. This next step is going to hurt a lot, so the booze will help numb some of the pain,&#34;</p>
+                        
+                        <p>Francesca said while disinfecting a silver needle.</p>
+                        
+                        <p>&#34;Dr. Felch, should we give him some painkillers or something?&#34; Sean asked anxiously as he poured</p>
+                        
+                        <p>Danrique a glass of vodka.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Francesca glanced at Danrique. &#34;Do you want any?&#34;</p>
+                        
+                        <p>&#34;That won&#39;t be necessary,&#34; Danrique replied while sipping on the vodka.</p>
+                        
+                        <p>&#34;I sure hope you&#39;re as tough as you sound. What you felt earlier in the bathroom was just the tip of the</p>
+                        
+                        <p>iceberg. The real agonizing pain begins when I apply the medication later. You&#39;d better prepare yourself</p>
+                        
+                        <p>for it!&#34; Francesca said with a smile.</p>
+                        
+                        <p>Danrique glared at her in annoyance. &#34;You talk too much, you know that?&#34;</p>
+                        
+                        <p>Francesca simply arched an eyebrow at him as she grabbed her medical kit and knelt down in front of</p>
+                        
+                        <p>him.</p>
+                        
+                        <p>&#34;I&#39;m going to apply the medication now, so brace yourself.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2575,19 +2594,57 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>She quickly finished applying the medication and began bandaging Danrique&#39;s wound.</p>
-                    
-                    <p>Not used to having a woman get so close to him, Danrique frowned deeply and remained as still as a</p>
-                    
-                    <p>statue.</p>
-                    
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Stop talking so much... Mmph...&#34;</p>
+                        
+                        <p>Danrique was halfway through his sentence when he groaned in pain and started trembling all over.</p>
+                        
+                        <p>Danrique thought to himself with his fists tightly clenched.</p>
+                        
+                        <p>He was in so much pain that his entire body tensed up, his veins bulged from his forehead, and his</p>
+                        
+                        <p>eyes became bloodshot.</p>
+                        
+                        <p>&#34;Mr. Lindberg! Be gentle, Dr. Belch!&#34; Sean was starting to panic. New chаpter av?ilable on</p>
+                        
+                        <p>Drаmanоvels.cом</p>
+                        
+                        <p>&#34;I can&#39;t.&#34;</p>
+                        
+                        <p>Francesca had gotten so used to life and death that she was completely unfazed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She quickly finished applying the medication and began bandaging Danrique&#39;s wound.</p>
+                        
+                        <p>Not used to having a woman get so close to him, Danrique frowned deeply and remained as still as a</p>
+                        
+                        <p>statue.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
@@ -4305,6 +4362,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4391,9 +4528,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4457,7 +4595,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4502,13 +4639,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4565,21 +4699,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

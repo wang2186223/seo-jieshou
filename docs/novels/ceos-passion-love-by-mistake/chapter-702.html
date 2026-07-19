@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.930585",
-        "dateModified": "2026-07-17T17:08:28.930585",
+        "datePublished": "2026-07-19T13:10:24.750088",
+        "dateModified": "2026-07-19T13:10:24.750088",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,44 +2422,22 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 713</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>With Natalie&#39;s involvement in the death of his parents, Shane&#39;s relationship with her was destined to be irreparable; the intimacy of the past never again attainable.</p>
-                    
-                    <p>When Sam heard that Shane wasn&#39;t planning on investigating the matter, his heart settled back in his chest. But in the next moment, it leaped back to his throat.</p>
-                    
-                    <p>“I&#39;m not going to investigate my parents&#39; death, but I&#39;ll continue investigating Grandpa&#39;s suicide.” As soon as Shane said that, he pivoted and pinned his gaze on Sam. “Uncle Thompson, Grandpa committed suicide at Thompson residence, and you happened to be there when it happened. As such, you probably know something I don&#39;t. Is that not so?”</p>
-                    
-                    <p>“Of course not!” Sam hastily denied in a booming voice even as he guiltily averted his eyes. “Dad&#39;s suicide was very sudden. He didn&#39;t reveal any of his intentions before he committed suicide, so how could I possibly know anything?”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>“Oh, really?” Shane naturally didn&#39;t believe him, and his gaze remained riveted on him.</p>
-                    
-                    <p>His uncle became utterly perturbed by his stare. Afraid that he would crack under the pressure and give the game away, Sam promptly made up an excuse and fled the room.</p>
-                    
-                    <p>Shane didn&#39;t stop Sam from leaving, merely staring at his retreating figure with profound eyes. The hands in his pockets gradually clenched into fists.</p>
-                    
-                    <p>He could tell that his uncle was lying.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>With Natalie&#39;s involvement in the death of his parents, Shane&#39;s relationship with her was destined to be irreparable; the intimacy of the past never again attainable.</p>
+                        
+                        <p>When Sam heard that Shane wasn&#39;t planning on investigating the matter, his heart settled back in his chest. But in the next moment, it leaped back to his throat.</p>
+                        
+                        <p>“I&#39;m not going to investigate my parents&#39; death, but I&#39;ll continue investigating Grandpa&#39;s suicide.” As soon as Shane said that, he pivoted and pinned his gaze on Sam. “Uncle Thompson, Grandpa committed suicide at Thompson residence, and you happened to be there when it happened. As such, you probably know something I don&#39;t. Is that not so?”</p>
+                        
+                        <p>“Of course not!” Sam hastily denied in a booming voice even as he guiltily averted his eyes. “Dad&#39;s suicide was very sudden. He didn&#39;t reveal any of his intentions before he committed suicide, so how could I possibly know anything?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2435,56 +2448,20 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>Hmm... He must know why Grandpa committed suicide, but he&#39;s reluctant to tell me. And from his guilty expression, it seems that he&#39;s the reason for it! At that thought, a chilly aura emanated from him. No matter what the truth of the matter is, I&#39;ll definitely uncover it!</p>
-                    
-                    <p>Subsequently, Shane retracted his gaze and continued studying everything in the room.</p>
-                    
-                    <p>After staying inside for an hour or so, he finally exited the room, locking the door behind him.</p>
-                    
-                    <p>However, he didn&#39;t go downstairs and leave. Instead, he headed to David&#39;s room.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>David&#39;s room was no different from Shane&#39;s parents&#39; room. It had been left untouched ever since his death, so dust and cobwebs took up residence in the room.</p>
-                    
-                    <p>The only difference was that it was to a significantly lesser degree. Besides, there were distinct footprints and handprints all over the room.</p>
-                    
-                    <p>Well, well... Someone must have been here before me. As for who it was, it goes without saying — it was either Uncle Thompson or Sean. They probably came to seek for clues to the will, only to return empty-handed in the end.</p>
-                    
-                    <p>As that thought occurred to him, Shane sneered and walked over to David&#39;s desk.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Many books and documents remained on the desk, so he casually flipped through them. All of a sudden, his pupils constricted when he glimpsed a letter in one of the books that read: Dear Shane.</p>
-                    
-                    <p>“Is this... a letter from Grandpa to me?” he muttered incredulously.</p>
-                    
-                    <p>He then took the letter out, but he didn&#39;t open it. Instead, he studied the envelope.</p>
-                    
-                    <p>Not only was the envelope a tad yellowish, but the writing was also slightly faded, making it apparent that it had indeed been left a few years ago.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Oh, really?” Shane naturally didn&#39;t believe him, and his gaze remained riveted on him.</p>
+                        
+                        <p>His uncle became utterly perturbed by his stare. Afraid that he would crack under the pressure and give the game away, Sam promptly made up an excuse and fled the room.</p>
+                        
+                        <p>Shane didn&#39;t stop Sam from leaving, merely staring at his retreating figure with profound eyes. The hands in his pockets gradually clenched into fists.</p>
+                        
+                        <p>He could tell that his uncle was lying.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2495,16 +2472,68 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>So, this letter has indeed been left for me by Grandpa, yet he never told me about this.</p>
-                    
-                    <p>Having come to that conclusion, Shane swiftly opened the letter. It read: Shane, I&#39;ll be long gone by the time you read this letter. Don&#39;t be surprised, for my suicide is of my own volition. Therefore, don&#39;t investigate the truth behind my death. Honestly speaking, Shane, the people I&#39;ve wronged most in my entire life are your parents. I had no choice, so please forgive my selfishness. Your uncle and his family are incorrigible, but the former is still my son. At the end of the day, I couldn&#39;t bring myself to ruin them. As such, I chose to turn a blind eye to it all.</p>
-                    
-                    <p>“What does this mean?” Shane&#39;s profound eyes shone with puzzlement at that point of the letter.</p>
-                    
-                    <p>Why did Grandpa say that the people he wronged most were my parents? Also, why did he ask me to forgive his selfishness?</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Hmm... He must know why Grandpa committed suicide, but he&#39;s reluctant to tell me. And from his guilty expression, it seems that he&#39;s the reason for it! At that thought, a chilly aura emanated from him. No matter what the truth of the matter is, I&#39;ll definitely uncover it!</p>
+                        
+                        <p>Subsequently, Shane retracted his gaze and continued studying everything in the room.</p>
+                        
+                        <p>After staying inside for an hour or so, he finally exited the room, locking the door behind him.</p>
+                        
+                        <p>However, he didn&#39;t go downstairs and leave. Instead, he headed to David&#39;s room.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>David&#39;s room was no different from Shane&#39;s parents&#39; room. It had been left untouched ever since his death, so dust and cobwebs took up residence in the room.</p>
+                        
+                        <p>The only difference was that it was to a significantly lesser degree. Besides, there were distinct footprints and handprints all over the room.</p>
+                        
+                        <p>Well, well... Someone must have been here before me. As for who it was, it goes without saying — it was either Uncle Thompson or Sean. They probably came to seek for clues to the will, only to return empty-handed in the end.</p>
+                        
+                        <p>As that thought occurred to him, Shane sneered and walked over to David&#39;s desk.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Many books and documents remained on the desk, so he casually flipped through them. All of a sudden, his pupils constricted when he glimpsed a letter in one of the books that read: Dear Shane.</p>
+                        
+                        <p>“Is this... a letter from Grandpa to me?” he muttered incredulously.</p>
+                        
+                        <p>He then took the letter out, but he didn&#39;t open it. Instead, he studied the envelope.</p>
+                        
+                        <p>Not only was the envelope a tad yellowish, but the writing was also slightly faded, making it apparent that it had indeed been left a few years ago.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2515,17 +2544,45 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>His lips pressed into a tight line, for he could sense that the contents of the letter were no simple matter. It seemed to harbor a huge secret, but David had been so vague in the letter. Shane simply couldn&#39;t figure out what the secret was.</p>
-                    
-                    <p>Having no other recourse, he continued reading. But Shane, I love you. I know your uncle and his family might try to snatch Thompson Group from you after my death, so I left you a will. In the will is the evidence of the crime they committed. If they live their lives without bothering you, I hope you&#39;ll let them off the hook.</p>
-                    
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>So, this letter has indeed been left for me by Grandpa, yet he never told me about this.</p>
+                        
+                        <p>Having come to that conclusion, Shane swiftly opened the letter. It read: Shane, I&#39;ll be long gone by the time you read this letter. Don&#39;t be surprised, for my suicide is of my own volition. Therefore, don&#39;t investigate the truth behind my death. Honestly speaking, Shane, the people I&#39;ve wronged most in my entire life are your parents. I had no choice, so please forgive my selfishness. Your uncle and his family are incorrigible, but the former is still my son. At the end of the day, I couldn&#39;t bring myself to ruin them. As such, I chose to turn a blind eye to it all.</p>
+                        
+                        <p>“What does this mean?” Shane&#39;s profound eyes shone with puzzlement at that point of the letter.</p>
+                        
+                        <p>Why did Grandpa say that the people he wronged most were my parents? Also, why did he ask me to forgive his selfishness?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>His lips pressed into a tight line, for he could sense that the contents of the letter were no simple matter. It seemed to harbor a huge secret, but David had been so vague in the letter. Shane simply couldn&#39;t figure out what the secret was.</p>
+                        
+                        <p>Having no other recourse, he continued reading. But Shane, I love you. I know your uncle and his family might try to snatch Thompson Group from you after my death, so I left you a will. In the will is the evidence of the crime they committed. If they live their lives without bothering you, I hope you&#39;ll let them off the hook.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4243,6 +4300,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4329,9 +4466,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4395,7 +4533,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4440,13 +4577,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4503,21 +4637,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

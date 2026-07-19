@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.230535",
-        "dateModified": "2026-07-17T17:08:29.230535",
+        "datePublished": "2026-07-19T13:10:25.042285",
+        "dateModified": "2026-07-19T13:10:25.042285",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,92 +2422,24 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 989</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“What happened afterward?” Natalie had her eyes closed and played the part of an attentive audience.</p>
-                    
-                    <p>“She often told me how well my parents treated her and how much she missed them. I slowly came to accept her as I thought she was really fond of them, and even felt grateful to her for being there to keep them company in my absence.”</p>
-                    
-                    <p>“Which was why you saved her when she met with an accident and never gave up on her in the ten years that she was in a vegetative state? Was that why you continued to be nice to her even after she came to?” Natalie said.</p>
-                    
-                    <p>Shane nodded. “That&#39;s right. It was entirely on my parents&#39; accord that I treated her well. Never could I have expected for her to be one of those responsible for causing their death. My generosity toward her turned out to be a joke. I even feel that I&#39;ve somehow let my parents down.”</p>
-                    
-                    <p>Natalie felt her man&#39;s self-reproach and guilt. That did not make her feel good either.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>She placed a hand on his chest. “It&#39;s not your fault as you couldn&#39;t have known any better, so I believe that Dad and Mom won&#39;t blame you for it. At worst, we can go visit them to apologize after we&#39;ve caught Jacqueline. I&#39;m sure they&#39;ll surely forgive you.”</p>
-                    
-                    <p>Shane ran his fingers through her soft curls. “Here&#39;s hoping.”</p>
-                    
-                    <p>They had not managed to locate Jacqueline and still had no idea where she could be after all this time.</p>
-                    
-                    <p>If left to her own devices, she could not possibly have managed to continue to elude them. Hence, he was convinced that someone must be assisting her from the sidelines.</p>
-                    
-                    <p>He had no inkling as to who that might be. It could not be the Gunns as they were already on their last legs and were, as such, unlikely to have any resources to spare toward any distant relations.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Whoever has been helping Jacqueline has to be someone else. The question was who? Was it Sean, or...</p>
-                    
-                    <p>It occurred to him that Sean and Jacqueline got in touch once when his relations were frosty with Natalie.</p>
-                    
-                    <p>He, therefore, suspected that there must be more to their meeting than Sean simply asking after Natalie. There had to be another angle to it.</p>
-                    
-                    <p>As for what that was, he had a good hunch about it. The answer to that rested with that video inside of his mailbox.</p>
-                    
-                    <p>That recording was filmed by Jacqueline, so she must be in possession of the original. Jacqueline had every intention of coming between Natalie and himself, as did Sean.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Therefore, there was a distinct possibility that those two might still be working together; Jacqueline handed the video over to Sean who, in turn, had it rerouted to him.</p>
-                    
-                    <p>Going by this line of logic, everything else seemed to fall into place.</p>
-                    
-                    <p>Wherever Jacqueline may be holed up, it was highly probable that it was Sean who made the arrangements. If Sean was involved, then perhaps Jacqueline might not even be inside J City anymore.</p>
-                    
-                    <p>The more Shane thought about it, the more severe his expression grew.</p>
-                    
-                    <p>Natalie was about to check in with him when her cell phone rang, so that conversation took a backseat. When she pulled out her phone, she found that it was a call from Jared.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“What happened afterward?” Natalie had her eyes closed and played the part of an attentive audience.</p>
+                        
+                        <p>“She often told me how well my parents treated her and how much she missed them. I slowly came to accept her as I thought she was really fond of them, and even felt grateful to her for being there to keep them company in my absence.”</p>
+                        
+                        <p>“Which was why you saved her when she met with an accident and never gave up on her in the ten years that she was in a vegetative state? Was that why you continued to be nice to her even after she came to?” Natalie said.</p>
+                        
+                        <p>Shane nodded. “That&#39;s right. It was entirely on my parents&#39; accord that I treated her well. Never could I have expected for her to be one of those responsible for causing their death. My generosity toward her turned out to be a joke. I even feel that I&#39;ve somehow let my parents down.”</p>
+                        
+                        <p>Natalie felt her man&#39;s self-reproach and guilt. That did not make her feel good either.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2483,18 +2450,22 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>“Jared?” said Natalie when she picked up.</p>
-                    
-                    <p>She heard Jared&#39;s kindliness come through from the other end. “Harrison has just got in touch with Susan, Nat.”</p>
-                    
-                    <p>“What?” Natalie narrowed her eyes. “Stay on the line.”</p>
-                    
-                    <p>She lowered her phone and looked toward Shane. “Is Warren still in Mr. Campbell&#39;s custody, Darling?”</p>
-                    
-                    <p>Shane nodded. “Yes.”</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>She placed a hand on his chest. “It&#39;s not your fault as you couldn&#39;t have known any better, so I believe that Dad and Mom won&#39;t blame you for it. At worst, we can go visit them to apologize after we&#39;ve caught Jacqueline. I&#39;m sure they&#39;ll surely forgive you.”</p>
+                        
+                        <p>Shane ran his fingers through her soft curls. “Here&#39;s hoping.”</p>
+                        
+                        <p>They had not managed to locate Jacqueline and still had no idea where she could be after all this time.</p>
+                        
+                        <p>If left to her own devices, she could not possibly have managed to continue to elude them. Hence, he was convinced that someone must be assisting her from the sidelines.</p>
+                        
+                        <p>He had no inkling as to who that might be. It could not be the Gunns as they were already on their last legs and were, as such, unlikely to have any resources to spare toward any distant relations.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2505,43 +2476,129 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>After Warren received Susan&#39;s call, he tried to run because he knew that the cat was out of the bag. That was how Silas&#39; men nabbed him.</p>
-                    
-                    <p>They were still holding him and yet to turn him over to the police, as they were still planning to do that in concert with Susan&#39;s capture.</p>
-                    
-                    <p>“What about Susan?” she asked again.</p>
-                    
-                    <p>In her eagerness to relay that rotten bit of business between Harrison and Susan, she almost forgot to inquire about Susan&#39;s whereabouts.</p>
-                    
-                    <p>“Still in J City. Susan and Harrison have arranged to meet up at the airport, but she doesn&#39;t know that Warren has been caught. She was in the opinion that he might have been delayed and has thus been waiting for him at a hotel,” replied Shane.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Whoever has been helping Jacqueline has to be someone else. The question was who? Was it Sean, or...</p>
+                        
+                        <p>It occurred to him that Sean and Jacqueline got in touch once when his relations were frosty with Natalie.</p>
+                        
+                        <p>He, therefore, suspected that there must be more to their meeting than Sean simply asking after Natalie. There had to be another angle to it.</p>
+                        
+                        <p>As for what that was, he had a good hunch about it. The answer to that rested with that video inside of his mailbox.</p>
+                        
+                        <p>That recording was filmed by Jacqueline, so she must be in possession of the original. Jacqueline had every intention of coming between Natalie and himself, as did Sean.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Therefore, there was a distinct possibility that those two might still be working together; Jacqueline handed the video over to Sean who, in turn, had it rerouted to him.</p>
+                        
+                        <p>Going by this line of logic, everything else seemed to fall into place.</p>
+                        
+                        <p>Wherever Jacqueline may be holed up, it was highly probable that it was Sean who made the arrangements. If Sean was involved, then perhaps Jacqueline might not even be inside J City anymore.</p>
+                        
+                        <p>The more Shane thought about it, the more severe his expression grew.</p>
+                        
+                        <p>Natalie was about to check in with him when her cell phone rang, so that conversation took a backseat. When she pulled out her phone, she found that it was a call from Jared.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“Jared?” said Natalie when she picked up.</p>
+                        
+                        <p>She heard Jared&#39;s kindliness come through from the other end. “Harrison has just got in touch with Susan, Nat.”</p>
+                        
+                        <p>“What?” Natalie narrowed her eyes. “Stay on the line.”</p>
+                        
+                        <p>She lowered her phone and looked toward Shane. “Is Warren still in Mr. Campbell&#39;s custody, Darling?”</p>
+                        
+                        <p>Shane nodded. “Yes.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>After Warren received Susan&#39;s call, he tried to run because he knew that the cat was out of the bag. That was how Silas&#39; men nabbed him.</p>
+                        
+                        <p>They were still holding him and yet to turn him over to the police, as they were still planning to do that in concert with Susan&#39;s capture.</p>
+                        
+                        <p>“What about Susan?” she asked again.</p>
+                        
+                        <p>In her eagerness to relay that rotten bit of business between Harrison and Susan, she almost forgot to inquire about Susan&#39;s whereabouts.</p>
+                        
+                        <p>“Still in J City. Susan and Harrison have arranged to meet up at the airport, but she doesn&#39;t know that Warren has been caught. She was in the opinion that he might have been delayed and has thus been waiting for him at a hotel,” replied Shane.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>The reason why he did not have Silas send anyone after Susan was because of Donald.</p>
-                    
-                    <p>If Susan was captured, who would be there to take care of the boy if he had suddenly taken ill?</p>
-                    
-                    <p>He was not going to have anyone take care of Donald because he was not his own kid.</p>
-                    
-                    <p>Besides, Susan did not have the influence of Jacqueline or Sean. She was not capable of slipping away under his nose, so he thought he might as well allow her to take care of the boy as he could always try to get her at a later time.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>The reason why he did not have Silas send anyone after Susan was because of Donald.</p>
+                        
+                        <p>If Susan was captured, who would be there to take care of the boy if he had suddenly taken ill?</p>
+                        
+                        <p>He was not going to have anyone take care of Donald because he was not his own kid.</p>
+                        
+                        <p>Besides, Susan did not have the influence of Jacqueline or Sean. She was not capable of slipping away under his nose, so he thought he might as well allow her to take care of the boy as he could always try to get her at a later time.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
@@ -4259,6 +4316,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4345,9 +4482,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4411,7 +4549,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4456,13 +4593,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4519,21 +4653,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

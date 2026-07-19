@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:27.958988",
-        "dateModified": "2026-07-17T17:08:27.958988",
+        "datePublished": "2026-07-19T13:10:23.729605",
+        "dateModified": "2026-07-19T13:10:23.729605",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,148 +2422,54 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1354</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1354</p>
-                    
-                    <p>Chapter 1352 Direct Protest</p>
-                    
-                    <p>?</p>
-                    
-                    <p>It was a call from Trinity.</p>
-                    
-                    <p>I felt excited and quickly answered, &#34;Trinity, where are you?&#34;</p>
-                    
-                    <p>&#34;I&#39;m at home.&#34; Her clear voice came through.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1354</p>
+                        
+                        <p>Chapter 1352 Direct Protest</p>
+                        
+                        <p>?</p>
+                        
+                        <p>It was a call from Trinity.</p>
+                        
+                        <p>I felt excited and quickly answered, &#34;Trinity, where are you?&#34;</p>
+                        
+                        <p>&#34;I&#39;m at home.&#34; Her clear voice came through.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;At home? At the Huffman family&#39;s residence? You&#39;re back?&#34; I asked eagerly.</p>
-                    
-                    <p>&#34;Yeah. Are you coming?&#34; she asked.</p>
-                    
-                    <p>&#34;I&#39;m coming!&#34; I replied. &#34;I just woke up. Wait for me, I&#39;ll be there soon, and we can talk.&#34;</p>
-                    
-                    <p>I hung up the phone and hastily got out of bed, almost stumbling in my hurry.</p>
-                    
-                    <p>Trinity was back! She truly was a mystery, appearing and disappearing without a trace. But when she returned, it was as if she had never left.</p>
-                    
-                    <p>I quickly freshened up and rushed out. I went to the study but didn&#39;t see Atlas, so I hurried downstairs.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>There was nobody in the hall, so he might not be home.</p>
-                    
-                    <p>As I was leaving, I bumped into my mom coming in from outside. Seeing me in a rush, she asked, &#34;You&#39;re awake. Where are you going? Have you eaten?&#34;</p>
-                    
-                    <p>&#34;Mom, I&#39;m in a hurry to go to the Huffman family&#39;s residence. Trinity is back! I haven&#39;t eaten yet, but I&#39;ll eat there. Where&#39;s Atlas?&#34; I said as I continued walking.</p>
-                    
-                    <p>&#34;He went out with Arnold early this morning.&#34; My mom followed behind me. &#34;Take a bite before you go. It&#39;ll only take a moment. I&#39;ve stewed some soup for you.&#34;</p>
-                    
-                    <p>&#34;Mom, I&#39;ll eat there anyway. Don&#39;t worry, I won&#39;t starve myself.&#34;</p>
-                    
-                    <p>I didn&#39;t even bother to greet the others who were drinking tea.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>But before I could get into the car, Ava noticed me and shouted, &#34;Mommy, where are you going?&#34;</p>
-                    
-                    <p>I suddenly stopped and looked at the two little ones playing over there. Ava ran toward me quickly, followed by Jenny, sticking close by her side. Her red dress stood out against the green lawn.</p>
-                    
-                    <p>When she reached me, she looked up at me expectantly and asked, &#34;Mommy, where are you going?&#34;</p>
-                    
-                    <p>&#34;Mommy is going to Grandpa Anson&#39;s house. You and Jenny stay here and play. Mommy will be back soon.&#34; I told her.</p>
-                    
-                    <p>She didn&#39;t buy it at all. Pouting, she said, &#34;You never keep your promises. You always say soon, and you even said you wouldn&#39;t go on a business trip and would stay with me, but you still went on a business trip for several days. You don&#39;t care about me at all!&#34;</p>
-                    
-                    <p>She started to complain, her eyes gradually welling with tears.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>I felt a little guilty. Since my mom and the others arrived, I had indeed been neglecting Ava, which inevitably led to her resentment.</p>
-                    
-                    <p>She stood there, stubbornly looking at me with her head held high.</p>
-                    
-                    <p>My mom quickly came over and comforted her, &#34;Ava, be good. Mommy has something to do at Grandpa Anson&#39;s house. She&#39;ll be back to play with you later. Comě</p>
-                    
-                    <p>inside with Grandma and have some</p>
-                    
-                    <p>delicious food now.&#34; Content</p>
-                    
-                    <p>&#34;I don&#39;t want to eat. You adults always deceive children!&#34; She burst into tears, feeling wronged.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>She seemed really upset and it broke my heart.</p>
-                    
-                    <p>After a moment&#39;s thought, I said to both of them, &#34;Alright, stop crying. Get in the car. Mommy will take you to Grandpa Anson&#39;s house.&#34;</p>
-                    
-                    <p>Ava immediately stopped crying and wiped her face. She looked at me with skepticism and asked, &#34;Really?&#34;</p>
-                    
-                    <p>&#34;Wash your face, stop crying, and then get in the car with Mommy,&#34; I said.</p>
-                    
-                    <p>She heard my command and</p>
-                    
-                    <p>immediately turned around and ran into the house. In no time, she came out, all wet. She then quickly climbed into the car, as if afraid I would change my mind.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;At home? At the Huffman family&#39;s residence? You&#39;re back?&#34; I asked eagerly.</p>
+                        
+                        <p>&#34;Yeah. Are you coming?&#34; she asked.</p>
+                        
+                        <p>&#34;I&#39;m coming!&#34; I replied. &#34;I just woke up. Wait for me, I&#39;ll be there soon, and we can talk.&#34;</p>
+                        
+                        <p>I hung up the phone and hastily got out of bed, almost stumbling in my hurry.</p>
+                        
+                        <p>Trinity was back! She truly was a mystery, appearing and disappearing without a trace. But when she returned, it was as if she had never left.</p>
+                        
+                        <p>I quickly freshened up and rushed out. I went to the study but didn&#39;t see Atlas, so I hurried downstairs.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2539,25 +2480,141 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>Jenny followed her into the car.</p>
-                    
-                    <p>I smiled at my mom and said, &#34;Alright, you can rest now. I&#39;ll take them with me. They haven&#39;t been to the Huffman family&#39;s residence yet so I&#39;ll show them around.&#34;</p>
-                    
-                    <p>After saying that, I got into the car and told them, &#34;Sit tight. Behave when we arrive at Grandpa Anson&#39;s house, okay?&#34;</p>
-                    
-                    <p>The two little ones nodded. Ava said, &#34;Mommy, I&#39;ll be very good. I&#39;ve been wanting to go to Grandpa Anson&#39;s house for a long time. He said he&#39;d be happy when I visit.&#34;</p>
-                    
-                    <p>I burst into laughter at her words.</p>
-                    
-                    <p>&#34;Alright, let&#39;s go.&#34; I started the car and headed straight for the Huffman family&#39;s residence.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>There was nobody in the hall, so he might not be home.</p>
+                        
+                        <p>As I was leaving, I bumped into my mom coming in from outside. Seeing me in a rush, she asked, &#34;You&#39;re awake. Where are you going? Have you eaten?&#34;</p>
+                        
+                        <p>&#34;Mom, I&#39;m in a hurry to go to the Huffman family&#39;s residence. Trinity is back! I haven&#39;t eaten yet, but I&#39;ll eat there. Where&#39;s Atlas?&#34; I said as I continued walking.</p>
+                        
+                        <p>&#34;He went out with Arnold early this morning.&#34; My mom followed behind me. &#34;Take a bite before you go. It&#39;ll only take a moment. I&#39;ve stewed some soup for you.&#34;</p>
+                        
+                        <p>&#34;Mom, I&#39;ll eat there anyway. Don&#39;t worry, I won&#39;t starve myself.&#34;</p>
+                        
+                        <p>I didn&#39;t even bother to greet the others who were drinking tea.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>But before I could get into the car, Ava noticed me and shouted, &#34;Mommy, where are you going?&#34;</p>
+                        
+                        <p>I suddenly stopped and looked at the two little ones playing over there. Ava ran toward me quickly, followed by Jenny, sticking close by her side. Her red dress stood out against the green lawn.</p>
+                        
+                        <p>When she reached me, she looked up at me expectantly and asked, &#34;Mommy, where are you going?&#34;</p>
+                        
+                        <p>&#34;Mommy is going to Grandpa Anson&#39;s house. You and Jenny stay here and play. Mommy will be back soon.&#34; I told her.</p>
+                        
+                        <p>She didn&#39;t buy it at all. Pouting, she said, &#34;You never keep your promises. You always say soon, and you even said you wouldn&#39;t go on a business trip and would stay with me, but you still went on a business trip for several days. You don&#39;t care about me at all!&#34;</p>
+                        
+                        <p>She started to complain, her eyes gradually welling with tears.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I felt a little guilty. Since my mom and the others arrived, I had indeed been neglecting Ava, which inevitably led to her resentment.</p>
+                        
+                        <p>She stood there, stubbornly looking at me with her head held high.</p>
+                        
+                        <p>My mom quickly came over and comforted her, &#34;Ava, be good. Mommy has something to do at Grandpa Anson&#39;s house. She&#39;ll be back to play with you later. Comě</p>
+                        
+                        <p>inside with Grandma and have some</p>
+                        
+                        <p>delicious food now.&#34; Content</p>
+                        
+                        <p>&#34;I don&#39;t want to eat. You adults always deceive children!&#34; She burst into tears, feeling wronged.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She seemed really upset and it broke my heart.</p>
+                        
+                        <p>After a moment&#39;s thought, I said to both of them, &#34;Alright, stop crying. Get in the car. Mommy will take you to Grandpa Anson&#39;s house.&#34;</p>
+                        
+                        <p>Ava immediately stopped crying and wiped her face. She looked at me with skepticism and asked, &#34;Really?&#34;</p>
+                        
+                        <p>&#34;Wash your face, stop crying, and then get in the car with Mommy,&#34; I said.</p>
+                        
+                        <p>She heard my command and</p>
+                        
+                        <p>immediately turned around and ran into the house. In no time, she came out, all wet. She then quickly climbed into the car, as if afraid I would change my mind.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Jenny followed her into the car.</p>
+                        
+                        <p>I smiled at my mom and said, &#34;Alright, you can rest now. I&#39;ll take them with me. They haven&#39;t been to the Huffman family&#39;s residence yet so I&#39;ll show them around.&#34;</p>
+                        
+                        <p>After saying that, I got into the car and told them, &#34;Sit tight. Behave when we arrive at Grandpa Anson&#39;s house, okay?&#34;</p>
+                        
+                        <p>The two little ones nodded. Ava said, &#34;Mommy, I&#39;ll be very good. I&#39;ve been wanting to go to Grandpa Anson&#39;s house for a long time. He said he&#39;d be happy when I visit.&#34;</p>
+                        
+                        <p>I burst into laughter at her words.</p>
+                        
+                        <p>&#34;Alright, let&#39;s go.&#34; I started the car and headed straight for the Huffman family&#39;s residence.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4275,6 +4332,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4361,9 +4498,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4427,7 +4565,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4472,13 +4609,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4535,21 +4669,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

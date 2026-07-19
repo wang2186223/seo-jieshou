@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2387,56 +2422,58 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 289</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;What exactly happened?&#34; Madeline paced anxiously. &#34;He finally comes home, and now this? God knows how he&#39;s been neglecting himself out there!&#34;</p>
-                    
-                    <p>She turned to interrogate Evelyn again when a phone ringtone cut through the tension.</p>
-                    
-                    <p>&#34;I need to take this.&#34; Evelyn glanced at the caller ID and stepped away.</p>
-                    
-                    <p>&#34;Evelyn, we&#39;ve located the man,&#34; Roman Young&#39;s hushed voice came through.</p>
-                    
-                    <p>&#34;Where?&#34; Evelyn tensed immediately.</p>
-                    
-                    <p>&#34;Lotus Avenue in the Mountain District. There&#39;s a conference hotel...&#34; Roman relayed quickly. &#34;I&#39;ll send the exact coordinates. Should I go first or—&#34;</p>
-                    
-                    <p>&#34;You go ahead.&#34; Evelyn didn&#39;t hesitate. &#34;Keep sharing your location. I&#39;ll be there as soon as possible.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;What exactly happened?&#34; Madeline paced anxiously. &#34;He finally comes home, and now this? God knows how he&#39;s been neglecting himself out there!&#34;</p>
+                        
+                        <p>She turned to interrogate Evelyn again when a phone ringtone cut through the tension.</p>
+                        
+                        <p>&#34;I need to take this.&#34; Evelyn glanced at the caller ID and stepped away.</p>
+                        
+                        <p>&#34;Evelyn, we&#39;ve located the man,&#34; Roman Young&#39;s hushed voice came through.</p>
+                        
+                        <p>&#34;Where?&#34; Evelyn tensed immediately.</p>
+                        
+                        <p>&#34;Lotus Avenue in the Mountain District. There&#39;s a conference hotel...&#34; Roman relayed quickly. &#34;I&#39;ll send the exact coordinates. Should I go first or—&#34;</p>
+                        
+                        <p>&#34;You go ahead.&#34; Evelyn didn&#39;t hesitate. &#34;Keep sharing your location. I&#39;ll be there as soon as possible.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Ending the call, Evelyn returned with an apologetic expression.</p>
-                    
-                    <p>&#34;There&#39;s an emergency at work. I need to handle it...&#34;</p>
-                    
-                    <p>&#34;Go, go.&#34; Eleanor waved her off.</p>
-                    
-                    <p>Patriarch Kingsley nodded. &#34;Shall I have your father-in-law drive you?&#34;</p>
-                    
-                    <p>&#34;Thank you, Father.&#34; Evelyn accepted gracefully before hurrying out.</p>
-                    
-                    <p>No sooner had she left than the doctor emerged. &#34;Lord Alex is awake. He&#39;s asking for Madam Sinclair.&#34;</p>
-                    
-                    <p>&#34;Tell him Evelyn had to leave for work!&#34; the Patriarch called over his shoulder as he rushed inside.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Ending the call, Evelyn returned with an apologetic expression.</p>
+                        
+                        <p>&#34;There&#39;s an emergency at work. I need to handle it...&#34;</p>
+                        
+                        <p>&#34;Go, go.&#34; Eleanor waved her off.</p>
+                        
+                        <p>Patriarch Kingsley nodded. &#34;Shall I have your father-in-law drive you?&#34;</p>
+                        
+                        <p>&#34;Thank you, Father.&#34; Evelyn accepted gracefully before hurrying out.</p>
+                        
+                        <p>No sooner had she left than the doctor emerged. &#34;Lord Alex is awake. He&#39;s asking for Madam Sinclair.&#34;</p>
+                        
+                        <p>&#34;Tell him Evelyn had to leave for work!&#34; the Patriarch called over his shoulder as he rushed inside.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2448,130 +2485,150 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Though his fever had broken, Alexander remained pale in the sickbed. His gaze swept the room before dimming noticeably.</p>
-                    
-                    <p>&#34;Evelyn had a work emergency. Your father drove her,&#34; Eleanor explained nervously.</p>
-                    
-                    <p>Alexander gave a quiet &#34;Hmm.&#34;</p>
-                    
-                    <p>Madeline&#39;s eyes flashed with frustration. &#34;I&#39;m calling her back right now!&#34;</p>
-                    
-                    <p>&#34;Nonsense!&#34; the Patriarch snapped.</p>
-                    
-                    <p>&#34;How is this nonsense?&#34; the matriarch exploded. &#34;Is she the only busy one in this family? With Alexander this ill, she still cares about work?&#34;</p>
-                    
-                    <p>Her anger escalated. &#34;Not that her work amounts to much—just endless scandals!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Though his fever had broken, Alexander remained pale in the sickbed. His gaze swept the room before dimming noticeably.</p>
+                        
+                        <p>&#34;Evelyn had a work emergency. Your father drove her,&#34; Eleanor explained nervously.</p>
+                        
+                        <p>Alexander gave a quiet &#34;Hmm.&#34;</p>
+                        
+                        <p>Madeline&#39;s eyes flashed with frustration. &#34;I&#39;m calling her back right now!&#34;</p>
+                        
+                        <p>&#34;Nonsense!&#34; the Patriarch snapped.</p>
+                        
+                        <p>&#34;How is this nonsense?&#34; the matriarch exploded. &#34;Is she the only busy one in this family? With Alexander this ill, she still cares about work?&#34;</p>
+                        
+                        <p>Her anger escalated. &#34;Not that her work amounts to much—just endless scandals!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Enough,&#34; the Patriarch scowled.</p>
-                    
-                    <p>Madeline turned on Eleanor. &#34;Am I not even allowed to speak now? Do I have no place in this house anymore?&#34;</p>
-                    
-                    <p>&#34;Mother, that&#39;s not what I meant—&#34; Eleanor forced a conciliatory smile.</p>
-                    
-                    <p>&#34;Enough.&#34; Alexander&#39;s hoarse voice cut through. &#34;I need quiet.&#34;</p>
-                    
-                    <p>Madeline froze before tears spilled over. &#34;You all find me tiresome, don&#39;t you? That Sinclair girl is the only precious one here now!&#34;</p>
-                    
-                    <p>She stormed out, wiping her eyes.</p>
-                    
-                    <p>&#34;Mother!&#34; Eleanor moved to follow but was stopped by the Patriarch. &#34;I&#39;ll go. You&#39;ll only bear the brunt of her temper.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Enough,&#34; the Patriarch scowled.</p>
+                        
+                        <p>Madeline turned on Eleanor. &#34;Am I not even allowed to speak now? Do I have no place in this house anymore?&#34;</p>
+                        
+                        <p>&#34;Mother, that&#39;s not what I meant—&#34; Eleanor forced a conciliatory smile.</p>
+                        
+                        <p>&#34;Enough.&#34; Alexander&#39;s hoarse voice cut through. &#34;I need quiet.&#34;</p>
+                        
+                        <p>Madeline froze before tears spilled over. &#34;You all find me tiresome, don&#39;t you? That Sinclair girl is the only precious one here now!&#34;</p>
+                        
+                        <p>She stormed out, wiping her eyes.</p>
+                        
+                        <p>&#34;Mother!&#34; Eleanor moved to follow but was stopped by the Patriarch. &#34;I&#39;ll go. You&#39;ll only bear the brunt of her temper.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Silence finally settled in the room.</p>
-                    
-                    <p>&#34;What exactly—&#34; Eleanor began at last.</p>
-                    
-                    <p>&#34;Happy now?&#34; Alexander&#39;s gaze was razor-sharp.</p>
-                    
-                    <p>Eleanor laughed bitterly. &#34;Happy? What mother would be happy seeing her son in this state?&#34;</p>
-                    
-                    <p>She turned on her heel. &#34;What&#39;s the use of you anyway!&#34;</p>
-                    
-                    <p>Alexander picked up his phone, checking call records. Despite his fever, he remembered an incoming call.</p>
-                    
-                    <p>Nathan Carter.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Silence finally settled in the room.</p>
+                        
+                        <p>&#34;What exactly—&#34; Eleanor began at last.</p>
+                        
+                        <p>&#34;Happy now?&#34; Alexander&#39;s gaze was razor-sharp.</p>
+                        
+                        <p>Eleanor laughed bitterly. &#34;Happy? What mother would be happy seeing her son in this state?&#34;</p>
+                        
+                        <p>She turned on her heel. &#34;What&#39;s the use of you anyway!&#34;</p>
+                        
+                        <p>Alexander picked up his phone, checking call records. Despite his fever, he remembered an incoming call.</p>
+                        
+                        <p>Nathan Carter.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>The line connected. &#34;Lord Alex, are you feeling better?&#34;</p>
-                    
-                    <p>&#34;What did you say earlier?&#34;</p>
-                    
-                    <p>&#34;Just reminding you about today&#39;s schedule...&#34; Nathan sounded confused.</p>
-                    
-                    <p>&#34;Who answered?&#34; Alexander got straight to the point.</p>
-                    
-                    <p>Nathan instantly understood.</p>
-                    
-                    <p>&#34;Young Madam,&#34; he answered respectfully.</p>
-                    
-                    <p>Alexander Kingsley&#39;s next words confirmed his suspicion. &#34;What did she say?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The line connected. &#34;Lord Alex, are you feeling better?&#34;</p>
+                        
+                        <p>&#34;What did you say earlier?&#34;</p>
+                        
+                        <p>&#34;Just reminding you about today&#39;s schedule...&#34; Nathan sounded confused.</p>
+                        
+                        <p>&#34;Who answered?&#34; Alexander got straight to the point.</p>
+                        
+                        <p>Nathan instantly understood.</p>
+                        
+                        <p>&#34;Young Madam,&#34; he answered respectfully.</p>
+                        
+                        <p>Alexander Kingsley&#39;s next words confirmed his suspicion. &#34;What did she say?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Young Madam mentioned you&#39;re ill and might need leave today. She said she&#39;d take care of you.&#34; Nathan repeated mechanically.</p>
-                    
-                    <p>A cold chuckle came through the phone, the hoarse voice sending chills down Nathan&#39;s spine.</p>
-                    
-                    <p>&#34;That last part—did you make it up?&#34;</p>
-                    
-                    <p>Nathan hesitated. &#34;...Not entirely.&#34;</p>
-                    
-                    <p>&#34;Her exact words.&#34; Alexander&#39;s tone darkened.</p>
-                    
-                    <p>Nathan dared not conceal the truth any longer. &#34;Young Madam said she&#39;d call a doctor.&#34;</p>
-                    
-                    <p>Alexander ignored this. &#34;Proceed as scheduled. I&#39;ll be there shortly.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Young Madam mentioned you&#39;re ill and might need leave today. She said she&#39;d take care of you.&#34; Nathan repeated mechanically.</p>
+                        
+                        <p>A cold chuckle came through the phone, the hoarse voice sending chills down Nathan&#39;s spine.</p>
+                        
+                        <p>&#34;That last part—did you make it up?&#34;</p>
+                        
+                        <p>Nathan hesitated. &#34;...Not entirely.&#34;</p>
+                        
+                        <p>&#34;Her exact words.&#34; Alexander&#39;s tone darkened.</p>
+                        
+                        <p>Nathan dared not conceal the truth any longer. &#34;Young Madam said she&#39;d call a doctor.&#34;</p>
+                        
+                        <p>Alexander ignored this. &#34;Proceed as scheduled. I&#39;ll be there shortly.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
@@ -4289,6 +4346,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4375,9 +4512,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4441,7 +4579,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4486,13 +4623,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4549,21 +4683,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

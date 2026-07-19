@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.667793",
-        "dateModified": "2026-07-17T17:08:28.667793",
+        "datePublished": "2026-07-19T13:10:24.477378",
+        "dateModified": "2026-07-19T13:10:24.477378",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,28 +2422,110 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 459</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Oh yes, I forgot to ask why you&#39;re here, Mr. Shane.” Natalie finally remembered this question, and she stared at him.</p>
-                    
-                    <p>After adjusting his cuffs, Shane replied, “I came over for an interview with a finance segment.”</p>
-                    
-                    <p>“Oh, I see.” Natalie nodded in understanding. Then, she shifted her gaze to the door. “The security has probably left, yes?”</p>
-                    
-                    <p>Instead of replying, Shane walked over to her. Under her baffled gaze, he abruptly bent down and grabbed the bottom of her dress before forcefully ripping it.</p>
-                    
-                    <p>In the next moment, the sound of fabric ripping rang out. Natalie was entirely stunned even as she felt a chill assailing her. A long time passed before she finally snapped back to her senses. Opening her mouth, she demanded, “What are you doing, Mr. Shane?”</p>
-                    
-                    <p>She gaped at the man in utter astonishment.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Oh yes, I forgot to ask why you&#39;re here, Mr. Shane.” Natalie finally remembered this question, and she stared at him.</p>
+                        
+                        <p>After adjusting his cuffs, Shane replied, “I came over for an interview with a finance segment.”</p>
+                        
+                        <p>“Oh, I see.” Natalie nodded in understanding. Then, she shifted her gaze to the door. “The security has probably left, yes?”</p>
+                        
+                        <p>Instead of replying, Shane walked over to her. Under her baffled gaze, he abruptly bent down and grabbed the bottom of her dress before forcefully ripping it.</p>
+                        
+                        <p>In the next moment, the sound of fabric ripping rang out. Natalie was entirely stunned even as she felt a chill assailing her. A long time passed before she finally snapped back to her senses. Opening her mouth, she demanded, “What are you doing, Mr. Shane?”</p>
+                        
+                        <p>She gaped at the man in utter astonishment.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Why did he tear my dress out of the blue?</p>
+                        
+                        <p>However, Shane didn&#39;t answer her. After throwing away the piece of white chiffon strip he&#39;d ripped off, he straightened. Then, he started unbuttoning his suit jacket.</p>
+                        
+                        <p>Upon seeing this, Natalie&#39;s petite face flamed at once, and she couldn&#39;t help backing toward the door.</p>
+                        
+                        <p>As her face turned increasingly flushed, she asserted in a shaky voice while retreating, “We&#39;re at the television station, and this is someone else&#39;s office, so please restrain yourself, Mr. Shane!”</p>
+                        
+                        <p>“Restrain myself?” Shane quirked an eyebrow. When he then spotted the twin spots of red on her cheeks, he knew that she had misunderstood. Nonetheless, he stalked toward her after having slipped off his jacket. “What will you do if I refuse to do so?”</p>
+                        
+                        <p>“I... I will...”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Before she&#39;d finished speaking, Shane whipped his jacket over her head and draped it over her shoulders.</p>
+                        
+                        <p>Startled, Natalie&#39;s gaze shifted between the jacket and him, seemingly at a loss as to what he was trying to do.</p>
+                        
+                        <p>Ruffling her hair, Shane explained, “While they didn&#39;t see your countenance when you made your escape earlier, they certainly saw your dress. If you don&#39;t make any changes to it, you&#39;ll definitely be made.”</p>
+                        
+                        <p>Upon hearing this, understanding instantly dawned upon Natalie.</p>
+                        
+                        <p>So, he didn&#39;t do all that because he wanted to force himself on me. Rather, it was to help me disguise my dressing!</p>
+                        
+                        <p>Her face turned as red as an overly ripe tomato at once. However, it wasn&#39;t because of shyness but mortification from her misguided thoughts.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>But this isn&#39;t entirely my fault! He&#39;s also partly at fault for not explaining things from the beginning!</p>
+                        
+                        <p>At the thought of this, Natalie again shot him a glare.</p>
+                        
+                        <p>Shane, however, arched an eyebrow. “What is it?”</p>
+                        
+                        <p>“Nothing.” Natalie shook her head. Then, she tied her hair up. “Let&#39;s go, Mr. Shane.”</p>
+                        
+                        <p>Unexpectedly, Shane stretched out a hand in front of her. “Let me check whether there&#39;s any security outside.”</p>
+                        
+                        <p>“Okay.” Natalie stopped in her tracks.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2419,92 +2536,24 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>Why did he tear my dress out of the blue?</p>
-                    
-                    <p>However, Shane didn&#39;t answer her. After throwing away the piece of white chiffon strip he&#39;d ripped off, he straightened. Then, he started unbuttoning his suit jacket.</p>
-                    
-                    <p>Upon seeing this, Natalie&#39;s petite face flamed at once, and she couldn&#39;t help backing toward the door.</p>
-                    
-                    <p>As her face turned increasingly flushed, she asserted in a shaky voice while retreating, “We&#39;re at the television station, and this is someone else&#39;s office, so please restrain yourself, Mr. Shane!”</p>
-                    
-                    <p>“Restrain myself?” Shane quirked an eyebrow. When he then spotted the twin spots of red on her cheeks, he knew that she had misunderstood. Nonetheless, he stalked toward her after having slipped off his jacket. “What will you do if I refuse to do so?”</p>
-                    
-                    <p>“I... I will...”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Before she&#39;d finished speaking, Shane whipped his jacket over her head and draped it over her shoulders.</p>
-                    
-                    <p>Startled, Natalie&#39;s gaze shifted between the jacket and him, seemingly at a loss as to what he was trying to do.</p>
-                    
-                    <p>Ruffling her hair, Shane explained, “While they didn&#39;t see your countenance when you made your escape earlier, they certainly saw your dress. If you don&#39;t make any changes to it, you&#39;ll definitely be made.”</p>
-                    
-                    <p>Upon hearing this, understanding instantly dawned upon Natalie.</p>
-                    
-                    <p>So, he didn&#39;t do all that because he wanted to force himself on me. Rather, it was to help me disguise my dressing!</p>
-                    
-                    <p>Her face turned as red as an overly ripe tomato at once. However, it wasn&#39;t because of shyness but mortification from her misguided thoughts.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>But this isn&#39;t entirely my fault! He&#39;s also partly at fault for not explaining things from the beginning!</p>
-                    
-                    <p>At the thought of this, Natalie again shot him a glare.</p>
-                    
-                    <p>Shane, however, arched an eyebrow. “What is it?”</p>
-                    
-                    <p>“Nothing.” Natalie shook her head. Then, she tied her hair up. “Let&#39;s go, Mr. Shane.”</p>
-                    
-                    <p>Unexpectedly, Shane stretched out a hand in front of her. “Let me check whether there&#39;s any security outside.”</p>
-                    
-                    <p>“Okay.” Natalie stopped in her tracks.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="4">
-                    
-                    <p>Thus, Shane opened the door and walked out, glancing up and down the corridor. After ascertaining that there was no security, he turned back and called out, “You can come out now.”</p>
-                    
-                    <p>Dipping her head a fraction, Natalie tightened the jacket around her and stepped out.</p>
-                    
-                    <p>In the next moment, Shane wrapped an arm around her shoulder.</p>
-                    
-                    <p>Natalie stiffened at once and was just about to speak when he cut her off, saying, “The employees here know me, so they&#39;ll only relax their guard when they see that we&#39;re on intimate terms.”</p>
-                    
-                    <p>After saying that, he forcibly kept his arm around her and left the television station.</p>
-                    
-                    <p>When they&#39;d gotten into the car, Natalie shrugged off the jacket and returned it to him. “Thank you, Mr. Shane.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Thus, Shane opened the door and walked out, glancing up and down the corridor. After ascertaining that there was no security, he turned back and called out, “You can come out now.”</p>
+                        
+                        <p>Dipping her head a fraction, Natalie tightened the jacket around her and stepped out.</p>
+                        
+                        <p>In the next moment, Shane wrapped an arm around her shoulder.</p>
+                        
+                        <p>Natalie stiffened at once and was just about to speak when he cut her off, saying, “The employees here know me, so they&#39;ll only relax their guard when they see that we&#39;re on intimate terms.”</p>
+                        
+                        <p>After saying that, he forcibly kept his arm around her and left the television station.</p>
+                        
+                        <p>When they&#39;d gotten into the car, Natalie shrugged off the jacket and returned it to him. “Thank you, Mr. Shane.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2516,40 +2565,48 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Shane took the jacket, but he didn&#39;t put it on. Instead, he draped it over her lap. “Your dress is too short, so use it as a cover. Silas will be joining us later.”</p>
-                    
-                    <p>He wouldn&#39;t mind her current state if it&#39;d only be the two of them in the car throughout the drive, but since Silas would be here in a while, he wouldn&#39;t allow him to feast his eyes on her thighs.</p>
-                    
-                    <p>As Natalie stared at the jacket that was draped over her lap, a sense of mirth welled up within her.</p>
-                    
-                    <p>Although my dress is indeed a tad short after he&#39;d ripped a strip off, it&#39;s not that short that I&#39;m flashing others.</p>
-                    
-                    <p>However, she found his insistence rather amusing, and a sense of warmth suffused her at his concern.</p>
-                    
-                    <p>Soon, Silas came. Pulling open the car door, he slipped into the passenger seat. When he turned around and glimpsed Natalie, he greeted her without the slightest hint of surprise. “Ms. Smith.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Shane took the jacket, but he didn&#39;t put it on. Instead, he draped it over her lap. “Your dress is too short, so use it as a cover. Silas will be joining us later.”</p>
+                        
+                        <p>He wouldn&#39;t mind her current state if it&#39;d only be the two of them in the car throughout the drive, but since Silas would be here in a while, he wouldn&#39;t allow him to feast his eyes on her thighs.</p>
+                        
+                        <p>As Natalie stared at the jacket that was draped over her lap, a sense of mirth welled up within her.</p>
+                        
+                        <p>Although my dress is indeed a tad short after he&#39;d ripped a strip off, it&#39;s not that short that I&#39;m flashing others.</p>
+                        
+                        <p>However, she found his insistence rather amusing, and a sense of warmth suffused her at his concern.</p>
+                        
+                        <p>Soon, Silas came. Pulling open the car door, he slipped into the passenger seat. When he turned around and glimpsed Natalie, he greeted her without the slightest hint of surprise. “Ms. Smith.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Natalie flashed him a smile in return. “Mr. Campbell.”</p>
-                    
-                    <p>Silas nodded in acknowledgment, then shifted his gaze to Shane. “It&#39;s done, Mr. Shane. I&#39;ve erased all traces of Ms. Smith from the security footage, so the television station&#39;s employees won&#39;t be able to find Ms. Smith.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Natalie flashed him a smile in return. “Mr. Campbell.”</p>
+                        
+                        <p>Silas nodded in acknowledgment, then shifted his gaze to Shane. “It&#39;s done, Mr. Shane. I&#39;ve erased all traces of Ms. Smith from the security footage, so the television station&#39;s employees won&#39;t be able to find Ms. Smith.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
@@ -4267,6 +4324,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4353,9 +4490,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4419,7 +4557,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4464,13 +4601,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4527,21 +4661,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

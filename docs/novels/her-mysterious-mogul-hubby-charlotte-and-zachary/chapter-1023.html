@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.421776",
-        "dateModified": "2026-07-17T17:08:31.421776",
+        "datePublished": "2026-07-19T13:10:27.841071",
+        "dateModified": "2026-07-19T13:10:27.841071",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,88 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1123</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Robbie knows five languages,” Charlotte explained with a smile. “He speaks Erihalean and</p>
-                    
-                    <p>Ferropenian better than I do.”</p>
-                    
-                    <p>“What?” Robert was stunned.</p>
-                    
-                    <p>“It&#39;s all right. The child&#39;s intelligence and emotional maturity is at the level of adults,” Danrique plainly</p>
-                    
-                    <p>explained. “He knows what we&#39;re talking about.”</p>
-                    
-                    <p>Robert scratched his nose awkwardly.</p>
-                    
-                    <p>“You have a good eye.” Danrique looked at Robbie in admiration. “The chef is indeed</p>
-                    
-                    <p>Chanaean.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>“Mmm-hmm. He&#39;s really good.” Robbie nodded in praise.</p>
-                    
-                    <p>“Feel free to come for dinner whenever you like.”</p>
-                    
-                    <p>Danrique adored Robbie and always spoke to him in a gentle tone.</p>
-                    
-                    <p>“Sure. Thanks, Uncle Dan.” Robbie smiled before continuing with his meal.</p>
-                    
-                    <p>“Robbie, what are you talking about?”</p>
-                    
-                    <p>Ellie looked at Robbie curiously as she didn&#39;t understand what they were saying.</p>
-                    
-                    <p>“We&#39;re talking about dinner...” Robbie filled Ellie in while speaking Chanaean.</p>
-                    
-                    <p>When Danrique finished the wine in his glass, he turned to Charlotte. “I have something on at night. Is it</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>all right with you to just give them an answer?”</p>
-                    
-                    <p>Charlotte stopped slicing her steak halfway as she knitted her eyebrows. Although she was reluctant to</p>
-                    
-                    <p>agree to it, she didn&#39;t dare reject the proposal in front of everyone.</p>
-                    
-                    <p>It would not only humiliate Robert, but also Danrique.</p>
-                    
-                    <p>After all, Danrique was the one who invited them over.</p>
-                    
-                    <p>Although he had stated that he wouldn&#39;t force Charlotte, his support for the marriage couldn&#39;t be any</p>
-                    
-                    <p>more obvious.</p>
-                    
-                    <p>“There&#39;s no hurry at all.” Sensing Charlotte&#39;s awkwardness, Louis helped her diffuse the situation. “Mr.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Robbie knows five languages,” Charlotte explained with a smile. “He speaks Erihalean and</p>
+                        
+                        <p>Ferropenian better than I do.”</p>
+                        
+                        <p>“What?” Robert was stunned.</p>
+                        
+                        <p>“It&#39;s all right. The child&#39;s intelligence and emotional maturity is at the level of adults,” Danrique plainly</p>
+                        
+                        <p>explained. “He knows what we&#39;re talking about.”</p>
+                        
+                        <p>Robert scratched his nose awkwardly.</p>
+                        
+                        <p>“You have a good eye.” Danrique looked at Robbie in admiration. “The chef is indeed</p>
+                        
+                        <p>Chanaean.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2479,80 +2456,28 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>Lindberg, if you are busy, we can talk about this tomorrow. After all, Dad and I will be staying a few</p>
-                    
-                    <p>days and won&#39;t be leaving so n soon.</p>
-                    
-                    <p>When Robert gave Louis a look to signal him to stop talking, Louis pretended not to see it.</p>
-                    
-                    <p>Robert was infuriated. It was obvious Danrique was putting pressure on Charlotte to be decisive.</p>
-                    
-                    <p>However, once Louis interjected, they had lost the initiative.</p>
-                    
-                    <p>“Why don&#39;t we go to the study now.” Charlotte put down her cutlery and asserted, “Given how important</p>
-                    
-                    <p>the matter is, I think it deserves</p>
-                    
-                    <p>d. . n</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>iscussion.</p>
-                    
-                    <p>“Of course.” Robert nodded in agreement before asking for Danrique&#39;s opinion. “Danrique, what do you</p>
-                    
-                    <p>think?”</p>
-                    
-                    <p>“All right then.” Danrique put down his wine glass and signaled with his hand. The next moment, Sean</p>
-                    
-                    <p>came forward and guided everyone to the study.</p>
-                    
-                    <p>“Robbie, Ellie, both of you continue with dinner.</p>
-                    
-                    <p>I&#39;ll be back in a while.” Charlotte tousled both their heads. “Stay here and behave!”</p>
-                    
-                    <p>“All right, Mommy.” Ellie nodded obediently.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>“Go on, Mommy.”</p>
-                    
-                    <p>Robbie didn&#39;t say anything further as he continued to eat.</p>
-                    
-                    <p>It wasn&#39;t until they left that a glint flashed in his eye.</p>
-                    
-                    <p>Ellie leaned over and asked. “Robbie, now?”</p>
-                    
-                    <p>“Shh...” Robbie shushed her with his eyebrows furrowed. He whispered, “Ellie, stop asking. Also, you&#39;re</p>
-                    
-                    <p>making it too obvious. The game is about acting. So, you have to behave naturally, all right?” “Mmm-</p>
-                    
-                    <p>hmm.” Ellie nodded and asked, “In that case, what should I do?”</p>
-                    
-                    <p>Just as she spoke, she covered her mouth and blushed.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Mmm-hmm. He&#39;s really good.” Robbie nodded in praise.</p>
+                        
+                        <p>“Feel free to come for dinner whenever you like.”</p>
+                        
+                        <p>Danrique adored Robbie and always spoke to him in a gentle tone.</p>
+                        
+                        <p>“Sure. Thanks, Uncle Dan.” Robbie smiled before continuing with his meal.</p>
+                        
+                        <p>“Robbie, what are you talking about?”</p>
+                        
+                        <p>Ellie looked at Robbie curiously as she didn&#39;t understand what they were saying.</p>
+                        
+                        <p>“We&#39;re talking about dinner...” Robbie filled Ellie in while speaking Chanaean.</p>
+                        
+                        <p>When Danrique finished the wine in his glass, he turned to Charlotte. “I have something on at night. Is it</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2563,29 +2488,161 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>After checking the surroundings, Robbie handed Ellie a white glucose tablet.</p>
-                    
-                    <p>Ellie put it into her mouth and chewed. She even commented with a giggle, “It&#39;s really sweet and</p>
-                    
-                    <p>delicious.”</p>
-                    
-                    <p>“From now on, watch what you say.” Robbie passed her doll to her.</p>
-                    
-                    <p>Ellie sat on the chair and played with it with an innocent expression.</p>
-                    
-                    <p>Robbie continued to slice the steak but had lost all appetite by then.</p>
-                    
-                    <p>The thought of Charlotte marrying someone else and breaking the family apart caused him to feel</p>
-                    
-                    <p>desperate.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>all right with you to just give them an answer?”</p>
+                        
+                        <p>Charlotte stopped slicing her steak halfway as she knitted her eyebrows. Although she was reluctant to</p>
+                        
+                        <p>agree to it, she didn&#39;t dare reject the proposal in front of everyone.</p>
+                        
+                        <p>It would not only humiliate Robert, but also Danrique.</p>
+                        
+                        <p>After all, Danrique was the one who invited them over.</p>
+                        
+                        <p>Although he had stated that he wouldn&#39;t force Charlotte, his support for the marriage couldn&#39;t be any</p>
+                        
+                        <p>more obvious.</p>
+                        
+                        <p>“There&#39;s no hurry at all.” Sensing Charlotte&#39;s awkwardness, Louis helped her diffuse the situation. “Mr.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Lindberg, if you are busy, we can talk about this tomorrow. After all, Dad and I will be staying a few</p>
+                        
+                        <p>days and won&#39;t be leaving so n soon.</p>
+                        
+                        <p>When Robert gave Louis a look to signal him to stop talking, Louis pretended not to see it.</p>
+                        
+                        <p>Robert was infuriated. It was obvious Danrique was putting pressure on Charlotte to be decisive.</p>
+                        
+                        <p>However, once Louis interjected, they had lost the initiative.</p>
+                        
+                        <p>“Why don&#39;t we go to the study now.” Charlotte put down her cutlery and asserted, “Given how important</p>
+                        
+                        <p>the matter is, I think it deserves</p>
+                        
+                        <p>d. . n</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>iscussion.</p>
+                        
+                        <p>“Of course.” Robert nodded in agreement before asking for Danrique&#39;s opinion. “Danrique, what do you</p>
+                        
+                        <p>think?”</p>
+                        
+                        <p>“All right then.” Danrique put down his wine glass and signaled with his hand. The next moment, Sean</p>
+                        
+                        <p>came forward and guided everyone to the study.</p>
+                        
+                        <p>“Robbie, Ellie, both of you continue with dinner.</p>
+                        
+                        <p>I&#39;ll be back in a while.” Charlotte tousled both their heads. “Stay here and behave!”</p>
+                        
+                        <p>“All right, Mommy.” Ellie nodded obediently.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Go on, Mommy.”</p>
+                        
+                        <p>Robbie didn&#39;t say anything further as he continued to eat.</p>
+                        
+                        <p>It wasn&#39;t until they left that a glint flashed in his eye.</p>
+                        
+                        <p>Ellie leaned over and asked. “Robbie, now?”</p>
+                        
+                        <p>“Shh...” Robbie shushed her with his eyebrows furrowed. He whispered, “Ellie, stop asking. Also, you&#39;re</p>
+                        
+                        <p>making it too obvious. The game is about acting. So, you have to behave naturally, all right?” “Mmm-</p>
+                        
+                        <p>hmm.” Ellie nodded and asked, “In that case, what should I do?”</p>
+                        
+                        <p>Just as she spoke, she covered her mouth and blushed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>After checking the surroundings, Robbie handed Ellie a white glucose tablet.</p>
+                        
+                        <p>Ellie put it into her mouth and chewed. She even commented with a giggle, “It&#39;s really sweet and</p>
+                        
+                        <p>delicious.”</p>
+                        
+                        <p>“From now on, watch what you say.” Robbie passed her doll to her.</p>
+                        
+                        <p>Ellie sat on the chair and played with it with an innocent expression.</p>
+                        
+                        <p>Robbie continued to slice the steak but had lost all appetite by then.</p>
+                        
+                        <p>The thought of Charlotte marrying someone else and breaking the family apart caused him to feel</p>
+                        
+                        <p>desperate.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
@@ -4303,6 +4360,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4389,9 +4526,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4455,7 +4593,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4500,13 +4637,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4563,21 +4697,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

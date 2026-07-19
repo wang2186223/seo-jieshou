@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.597842",
-        "dateModified": "2026-07-17T17:08:29.597842",
+        "datePublished": "2026-07-19T13:10:25.402656",
+        "dateModified": "2026-07-19T13:10:25.402656",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,28 +2422,54 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1339</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Okay.” Natalie nodded with a smile.</p>
-                    
-                    <p>“Come on. Let&#39;s go get something to eat,” Shane said.</p>
-                    
-                    <p>After finishing their meal, Natalie brought the two children to their room.</p>
-                    
-                    <p>Shane, on the other hand, disappeared into the study.</p>
-                    
-                    <p>He had spent the afternoon with Jackson at the crematorium which meant that he did not have the chance to finish his work. Hence, he had no choice but to work late into the night to get things done.</p>
-                    
-                    <p>Although he was busy with work, he did not forget his earlier promise to Natalie that he would contact the foreign hospital and enquire about Anders&#39; return to the country.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Okay.” Natalie nodded with a smile.</p>
+                        
+                        <p>“Come on. Let&#39;s go get something to eat,” Shane said.</p>
+                        
+                        <p>After finishing their meal, Natalie brought the two children to their room.</p>
+                        
+                        <p>Shane, on the other hand, disappeared into the study.</p>
+                        
+                        <p>He had spent the afternoon with Jackson at the crematorium which meant that he did not have the chance to finish his work. Hence, he had no choice but to work late into the night to get things done.</p>
+                        
+                        <p>Although he was busy with work, he did not forget his earlier promise to Natalie that he would contact the foreign hospital and enquire about Anders&#39; return to the country.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>At midnight, once Shane was done with his work, he returned to their bedroom and updated Natalie about his call.</p>
+                        
+                        <p>“So, can Anders come home?” Natalie clasped her hands together in excitement.</p>
+                        
+                        <p>Shane loosened his tie. “Of course, I&#39;ve already told you before that Anders can come home once he&#39;s at least seven months old. He&#39;s seven months old now, so he can come home!”</p>
+                        
+                        <p>“That&#39;s great!” Natalie started pacing the room excitedly.</p>
+                        
+                        <p>Suddenly, a thought occurred to her. She turned to look at Shane. “So, when exactly will Anders return to us? The procedure for his return must be complex, right?”</p>
+                        
+                        <p>“Yes, it&#39;ll be quite complicated, especially since Anders will need to have medical instruments brought along with him. Don&#39;t worry though, Silas will take care of it. We will arrange for him to be admitted to a local hospital. The foreign hospital has said that, although he can return to the country, he still can&#39;t</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2419,20 +2480,24 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>At midnight, once Shane was done with his work, he returned to their bedroom and updated Natalie about his call.</p>
-                    
-                    <p>“So, can Anders come home?” Natalie clasped her hands together in excitement.</p>
-                    
-                    <p>Shane loosened his tie. “Of course, I&#39;ve already told you before that Anders can come home once he&#39;s at least seven months old. He&#39;s seven months old now, so he can come home!”</p>
-                    
-                    <p>“That&#39;s great!” Natalie started pacing the room excitedly.</p>
-                    
-                    <p>Suddenly, a thought occurred to her. She turned to look at Shane. “So, when exactly will Anders return to us? The procedure for his return must be complex, right?”</p>
-                    
-                    <p>“Yes, it&#39;ll be quite complicated, especially since Anders will need to have medical instruments brought along with him. Don&#39;t worry though, Silas will take care of it. We will arrange for him to be admitted to a local hospital. The foreign hospital has said that, although he can return to the country, he still can&#39;t</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>come home yet. He still needs to be in an incubator in the hospital for another ten months before we can bring him home,” Shane said.</p>
+                        
+                        <p>Anders, who was already rather weak to start with, did not have a strong immune system yet because he was born three months premature.</p>
+                        
+                        <p>If he were to leave the incubator too early, there was a high risk of him being attacked by viruses and bacteria which could be fatal.</p>
+                        
+                        <p>As such, he could only be brought home from the hospital after he had reached full term and his immune system had strengthened. Even then, Shane and Natalie would have to take special care of him because he was a rather weak baby to start with.</p>
+                        
+                        <p>“I understand. I&#39;ll be happy as long as Anders can return to the country. Then, I&#39;ll be able to see him all the time,” Natalie said with a soft smile.</p>
+                        
+                        <p>Shane wrapped his arms around her gently. “Yes. Not only will you be able to see Anders every day, but in just a few months&#39; time, you&#39;ll be able to hold him every day too.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2443,68 +2508,52 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>come home yet. He still needs to be in an incubator in the hospital for another ten months before we can bring him home,” Shane said.</p>
-                    
-                    <p>Anders, who was already rather weak to start with, did not have a strong immune system yet because he was born three months premature.</p>
-                    
-                    <p>If he were to leave the incubator too early, there was a high risk of him being attacked by viruses and bacteria which could be fatal.</p>
-                    
-                    <p>As such, he could only be brought home from the hospital after he had reached full term and his immune system had strengthened. Even then, Shane and Natalie would have to take special care of him because he was a rather weak baby to start with.</p>
-                    
-                    <p>“I understand. I&#39;ll be happy as long as Anders can return to the country. Then, I&#39;ll be able to see him all the time,” Natalie said with a soft smile.</p>
-                    
-                    <p>Shane wrapped his arms around her gently. “Yes. Not only will you be able to see Anders every day, but in just a few months&#39; time, you&#39;ll be able to hold him every day too.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Yes, I will,” Natalie said, nodding her head firmly.</p>
-                    
-                    <p>“Okay then, time to sleep,” Shane said as he released Natalie from his embrace. He rubbed his temples gently.</p>
-                    
-                    <p>He had not had much sleep the night before because he had spent the entirety of the night working out.</p>
-                    
-                    <p>In addition, he had had a busy day. At that moment, Shane was beyond exhausted. He could barely keep his eyes open for another minute.</p>
-                    
-                    <p>Natalie noticed the exhaustion on Shane&#39;s face. She did not argue with him and went to lay down on the bed immediately.</p>
-                    
-                    <p>That night, the two of them did nothing else but sleep cuddled up in each other&#39;s arms.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Yes, I will,” Natalie said, nodding her head firmly.</p>
+                        
+                        <p>“Okay then, time to sleep,” Shane said as he released Natalie from his embrace. He rubbed his temples gently.</p>
+                        
+                        <p>He had not had much sleep the night before because he had spent the entirety of the night working out.</p>
+                        
+                        <p>In addition, he had had a busy day. At that moment, Shane was beyond exhausted. He could barely keep his eyes open for another minute.</p>
+                        
+                        <p>Natalie noticed the exhaustion on Shane&#39;s face. She did not argue with him and went to lay down on the bed immediately.</p>
+                        
+                        <p>That night, the two of them did nothing else but sleep cuddled up in each other&#39;s arms.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>The next morning, Shane was still fast asleep when Natalie woke up. It was rare for him to not rise early.</p>
-                    
-                    <p>He&#39;s probably very tired. That&#39;s why he&#39;s still sleeping.</p>
-                    
-                    <p>Natalie gazed at Shane&#39;s sleeping form. Her outstretched fingers traced his brows gently. However, she soon drew back her hand for fear of disturbing his sleep.</p>
-                    
-                    <p>Just as she was about to pull away, Shane&#39;s eyes flew open, and he quickly reached out to grab her wrist. “Are you going to run away after doing something naughty?”</p>
-                    
-                    <p>Natalie blushed and retorted in a rather guilty tone, “W-who&#39;s doing something naughty?”</p>
-                    
-                    <p>“Weren&#39;t you?” Shane asked with a little smirk. “Weren&#39;t you just touching me? Don&#39;t you know that you shouldn&#39;t simply touch a man in the morning?” Shane whispered hoarsely in her ear.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The next morning, Shane was still fast asleep when Natalie woke up. It was rare for him to not rise early.</p>
+                        
+                        <p>He&#39;s probably very tired. That&#39;s why he&#39;s still sleeping.</p>
+                        
+                        <p>Natalie gazed at Shane&#39;s sleeping form. Her outstretched fingers traced his brows gently. However, she soon drew back her hand for fear of disturbing his sleep.</p>
+                        
+                        <p>Just as she was about to pull away, Shane&#39;s eyes flew open, and he quickly reached out to grab her wrist. “Are you going to run away after doing something naughty?”</p>
+                        
+                        <p>Natalie blushed and retorted in a rather guilty tone, “W-who&#39;s doing something naughty?”</p>
+                        
+                        <p>“Weren&#39;t you?” Shane asked with a little smirk. “Weren&#39;t you just touching me? Don&#39;t you know that you shouldn&#39;t simply touch a man in the morning?” Shane whispered hoarsely in her ear.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2516,24 +2565,28 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Natalie heard the lust in his voice. Hearing the need in his voice, her heart began racing and her body tingled in response.</p>
-                    
-                    <p>She could not help melting her body against his. She avoided his eyes as she said, “I didn&#39;t know that.”</p>
-                    
-                    <p>Shane listened to her weak denial and laughed in a low voice. “It&#39;s fine if you didn&#39;t know it before, but now that you do. What are you going to do, honey?”</p>
-                    
-                    <p>“What should I do?” The corner of Natalie&#39;s lip lifted slyly.</p>
-                    
-                    <p>She knew very well what he wanted her to do, but she did not want to give in to him.</p>
-                    
-                    <p>“Alright. Now that you&#39;re awake, get up! I&#39;m going to wash up. I&#39;m hungry!” Natalie urged, nudging Shane gently.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Natalie heard the lust in his voice. Hearing the need in his voice, her heart began racing and her body tingled in response.</p>
+                        
+                        <p>She could not help melting her body against his. She avoided his eyes as she said, “I didn&#39;t know that.”</p>
+                        
+                        <p>Shane listened to her weak denial and laughed in a low voice. “It&#39;s fine if you didn&#39;t know it before, but now that you do. What are you going to do, honey?”</p>
+                        
+                        <p>“What should I do?” The corner of Natalie&#39;s lip lifted slyly.</p>
+                        
+                        <p>She knew very well what he wanted her to do, but she did not want to give in to him.</p>
+                        
+                        <p>“Alright. Now that you&#39;re awake, get up! I&#39;m going to wash up. I&#39;m hungry!” Natalie urged, nudging Shane gently.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4253,6 +4306,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4339,9 +4472,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4405,7 +4539,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4450,13 +4583,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4513,21 +4643,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.820335",
-        "dateModified": "2026-07-17T17:08:28.820335",
+        "datePublished": "2026-07-19T13:10:24.633323",
+        "dateModified": "2026-07-19T13:10:24.633323",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,30 +2422,58 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 607</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Connor snorted as acknowledgment.</p>
-                    
-                    <p>“Alright, you go back to your room and have fun.” Natalie patted him on the shoulder.</p>
-                    
-                    <p>Connor then went on to hold Sharon&#39;s hand who was eating an apple at the side and left scampering for their room.</p>
-                    
-                    <p>Shane didn&#39;t stay for too long upstairs, and very soon, he came down.</p>
-                    
-                    <p>Natalie looked at him. “Shane, is Ms. Graham okay?”</p>
-                    
-                    <p>“She&#39;s fine.” Shane took her hand and sat down with her.</p>
-                    
-                    <p>Natalie heaved a sigh. “I told Connor already, and he&#39;ll not argue with Ms. Graham anymore.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Connor snorted as acknowledgment.</p>
+                        
+                        <p>“Alright, you go back to your room and have fun.” Natalie patted him on the shoulder.</p>
+                        
+                        <p>Connor then went on to hold Sharon&#39;s hand who was eating an apple at the side and left scampering for their room.</p>
+                        
+                        <p>Shane didn&#39;t stay for too long upstairs, and very soon, he came down.</p>
+                        
+                        <p>Natalie looked at him. “Shane, is Ms. Graham okay?”</p>
+                        
+                        <p>“She&#39;s fine.” Shane took her hand and sat down with her.</p>
+                        
+                        <p>Natalie heaved a sigh. “I told Connor already, and he&#39;ll not argue with Ms. Graham anymore.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Shane responded with a brief hum. “I understand that you and the two children don&#39;t really welcome Jacqueline. Don&#39;t worry, she&#39;ll not stay here for too long. Mr. Gunn is aware that Jacqueline has been discharged from the hospital, and he&#39;ll take her in and let her stay there for a while.”</p>
+                        
+                        <p>“Mr. Gunn?” Natalie frowned in puzzlement. “Are Ms. Graham and Mr. Gunn related?”</p>
+                        
+                        <p>“Mr. Gunn is the maternal grandfather of Jacqueline&#39;s mother,” Shane stroke her wavy soft hair as he explained to her.</p>
+                        
+                        <p>Natalie nodded. “I see.”</p>
+                        
+                        <p>She didn&#39;t expect that Jacqueline was related to the bigshot at one time in J City who had retired.</p>
+                        
+                        <p>However, she still couldn&#39;t quite figure out why Jacqueline didn&#39;t return to the Gunn residence since Mr. Gunn was her maternal great-grandfather.</p>
+                        
+                        <p>“What are you thinking about?” seeing as Natalie sank into deep thoughts, Shane took a sip of water and asked.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2421,74 +2484,86 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>Shane responded with a brief hum. “I understand that you and the two children don&#39;t really welcome Jacqueline. Don&#39;t worry, she&#39;ll not stay here for too long. Mr. Gunn is aware that Jacqueline has been discharged from the hospital, and he&#39;ll take her in and let her stay there for a while.”</p>
-                    
-                    <p>“Mr. Gunn?” Natalie frowned in puzzlement. “Are Ms. Graham and Mr. Gunn related?”</p>
-                    
-                    <p>“Mr. Gunn is the maternal grandfather of Jacqueline&#39;s mother,” Shane stroke her wavy soft hair as he explained to her.</p>
-                    
-                    <p>Natalie nodded. “I see.”</p>
-                    
-                    <p>She didn&#39;t expect that Jacqueline was related to the bigshot at one time in J City who had retired.</p>
-                    
-                    <p>However, she still couldn&#39;t quite figure out why Jacqueline didn&#39;t return to the Gunn residence since Mr. Gunn was her maternal great-grandfather.</p>
-                    
-                    <p>“What are you thinking about?” seeing as Natalie sank into deep thoughts, Shane took a sip of water and asked.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="2">
-                    
-                    <p>Natalie snapped back to her senses and shook her head in response. “Nothing. I need to work on something at the studio.”</p>
-                    
-                    <p>“Alright.” Shane nodded.</p>
-                    
-                    <p>Natalie got up and walked upstairs.</p>
-                    
-                    <p>Her studio was on the second floor, and so was Jacqueline&#39;s room.</p>
-                    
-                    <p>When Natalie arrived on the second floor, she saw Jacqueline carrying a few gift bags out of her room.</p>
-                    
-                    <p>Jacqueline didn&#39;t expect to see Natalie there as well, so she was stunned for a moment before she smiled and said, “Ms. Smith, this is for you.”</p>
-                    
-                    <p>She handed one of the bags over to Natalie.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Natalie snapped back to her senses and shook her head in response. “Nothing. I need to work on something at the studio.”</p>
+                        
+                        <p>“Alright.” Shane nodded.</p>
+                        
+                        <p>Natalie got up and walked upstairs.</p>
+                        
+                        <p>Her studio was on the second floor, and so was Jacqueline&#39;s room.</p>
+                        
+                        <p>When Natalie arrived on the second floor, she saw Jacqueline carrying a few gift bags out of her room.</p>
+                        
+                        <p>Jacqueline didn&#39;t expect to see Natalie there as well, so she was stunned for a moment before she smiled and said, “Ms. Smith, this is for you.”</p>
+                        
+                        <p>She handed one of the bags over to Natalie.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Natalie shot a look at that but didn&#39;t take it.</p>
-                    
-                    <p>Seeing as such, Jacqueline shoved the bag into her hand. “Just take it, Ms. Smith. I can&#39;t just live here without returning a favor. These are some gifts I&#39;ve prepared for every one of you, and this one here is yours.”</p>
-                    
-                    <p>With that, Jacqueline carried the remaining bags, walked past Natalie, and went downstairs.</p>
-                    
-                    <p>Looking at her figure as she left and then at the bag in her own hand, Natalie bit her lower lip and pushed open the door to her studio.</p>
-                    
-                    <p>After she went in, she opened the gift bag and saw that it was a crystal mouse pendant.</p>
-                    
-                    <p>The glint in Natalie&#39;s eyes dimmed at once when she saw the pendant, and she let out a sardonic laugh.</p>
-                    
-                    <p>It was because that mouse was not at all endearing and adorable. Instead, it looked wretched and despicable, as it was Professor Ratigan who was the most infamous criminal in The Great Mouse Detective.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Natalie shot a look at that but didn&#39;t take it.</p>
+                        
+                        <p>Seeing as such, Jacqueline shoved the bag into her hand. “Just take it, Ms. Smith. I can&#39;t just live here without returning a favor. These are some gifts I&#39;ve prepared for every one of you, and this one here is yours.”</p>
+                        
+                        <p>With that, Jacqueline carried the remaining bags, walked past Natalie, and went downstairs.</p>
+                        
+                        <p>Looking at her figure as she left and then at the bag in her own hand, Natalie bit her lower lip and pushed open the door to her studio.</p>
+                        
+                        <p>After she went in, she opened the gift bag and saw that it was a crystal mouse pendant.</p>
+                        
+                        <p>The glint in Natalie&#39;s eyes dimmed at once when she saw the pendant, and she let out a sardonic laugh.</p>
+                        
+                        <p>It was because that mouse was not at all endearing and adorable. Instead, it looked wretched and despicable, as it was Professor Ratigan who was the most infamous criminal in The Great Mouse Detective.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Does Jacqueline give me this mouse in an attempt to imply that I&#39;ve stolen Shane from her, and now she&#39;s disgusting me with this?</p>
+                        
+                        <p>Thinking of that, Natalie closed the box with a cold glint in her eyes and threw it directly into the dustbin.</p>
+                        
+                        <p>Soon, it was time for dinner.</p>
+                        
+                        <p>Because of Jacqueline&#39;s presence, the two children didn&#39;t seem as animated as usual. They just ate in silence during dinner without saying a word.</p>
+                        
+                        <p>Natalie didn&#39;t know what to say either, so she remained quiet as well.</p>
+                        
+                        <p>The atmosphere was so gawky that the air in the spacious dining room turned very tense and depressing.</p>
+                        
+                        <p>In the end, it was Jacqueline who took the initiative to break the silence.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2499,48 +2574,26 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>Does Jacqueline give me this mouse in an attempt to imply that I&#39;ve stolen Shane from her, and now she&#39;s disgusting me with this?</p>
-                    
-                    <p>Thinking of that, Natalie closed the box with a cold glint in her eyes and threw it directly into the dustbin.</p>
-                    
-                    <p>Soon, it was time for dinner.</p>
-                    
-                    <p>Because of Jacqueline&#39;s presence, the two children didn&#39;t seem as animated as usual. They just ate in silence during dinner without saying a word.</p>
-                    
-                    <p>Natalie didn&#39;t know what to say either, so she remained quiet as well.</p>
-                    
-                    <p>The atmosphere was so gawky that the air in the spacious dining room turned very tense and depressing.</p>
-                    
-                    <p>In the end, it was Jacqueline who took the initiative to break the silence.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="5">
-                    
-                    <p>She gazed at Natalie&#39;s neck and asked, “Ms. Smith, didn&#39;t you wear the pendant I gave to you?”</p>
-                    
-                    <p>“I threw it.” Natalie took a spoonful of soup and answered in a straightforward manner.</p>
-                    
-                    <p>Mortified, Jacqueline pressed, “You threw it?”</p>
-                    
-                    <p>“That&#39;s right.” Natalie nodded.</p>
-                    
-                    <p>Jacqueline bit her lip, looking very upset. “Why? Is it because it was a gift from me?”</p>
-                    
-                    <p>Natalie set down her spoon and was about to say something.</p>
-                    
-                    <p>But before she could do that, Jacqueline added, “Ms. Smith, don&#39;t you think that you&#39;ve crossed the line? I meant good with the gift. How could you just throw it away?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She gazed at Natalie&#39;s neck and asked, “Ms. Smith, didn&#39;t you wear the pendant I gave to you?”</p>
+                        
+                        <p>“I threw it.” Natalie took a spoonful of soup and answered in a straightforward manner.</p>
+                        
+                        <p>Mortified, Jacqueline pressed, “You threw it?”</p>
+                        
+                        <p>“That&#39;s right.” Natalie nodded.</p>
+                        
+                        <p>Jacqueline bit her lip, looking very upset. “Why? Is it because it was a gift from me?”</p>
+                        
+                        <p>Natalie set down her spoon and was about to say something.</p>
+                        
+                        <p>But before she could do that, Jacqueline added, “Ms. Smith, don&#39;t you think that you&#39;ve crossed the line? I meant good with the gift. How could you just throw it away?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2552,16 +2605,20 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>In reply to her questioning, Natalie folded her arms and looked at her with a faint smile. “The gift is awful. Can&#39;t I throw it away?”</p>
-                    
-                    <p>“What gift is that?” Seeing that an argument broke out between the women, Shane finally spoke as he put down the fork and turned to Jacqueline.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>In reply to her questioning, Natalie folded her arms and looked at her with a faint smile. “The gift is awful. Can&#39;t I throw it away?”</p>
+                        
+                        <p>“What gift is that?” Seeing that an argument broke out between the women, Shane finally spoke as he put down the fork and turned to Jacqueline.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
@@ -4279,6 +4336,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4365,9 +4502,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4431,7 +4569,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4476,13 +4613,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4539,21 +4673,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

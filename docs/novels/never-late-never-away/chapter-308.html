@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:33.752170",
-        "dateModified": "2026-07-17T17:08:33.752170",
+        "datePublished": "2026-07-19T13:10:30.795031",
+        "dateModified": "2026-07-19T13:10:30.795031",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,100 +2422,138 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 308</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 308</p>
-                    
-                    <p>Sensing something was amiss, Finnick put his hand on her forehead and felt that it was burning hot.</p>
-                    
-                    <p>With no time to lose, he got Noah to send her home as quickly as he could and called the family doctor.</p>
-                    
-                    <p>After prescribing her some flu and fever medication, the doctor advised her to get some sleep.</p>
-                    
-                    <p>After she fell asleep, Finnick instructed Noah with a darkened expression, “Investigate what happened with Vivian’s pregnancy!”</p>
-                    
-                    <p>It wasn’t until the next day evening that Vivian finally awoke.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 308</p>
+                        
+                        <p>Sensing something was amiss, Finnick put his hand on her forehead and felt that it was burning hot.</p>
+                        
+                        <p>With no time to lose, he got Noah to send her home as quickly as he could and called the family doctor.</p>
+                        
+                        <p>After prescribing her some flu and fever medication, the doctor advised her to get some sleep.</p>
+                        
+                        <p>After she fell asleep, Finnick instructed Noah with a darkened expression, “Investigate what happened with Vivian’s pregnancy!”</p>
+                        
+                        <p>It wasn’t until the next day evening that Vivian finally awoke.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Finnick helped her up and fed her the medications prescribed by the doctor.</p>
-                    
-                    <p>Hanging her head, Vivian began to blame herself again.</p>
-                    
-                    <p>“I’m sorry, Finnick. I’m not pregnant and I have let everyone down.”</p>
-                    
-                    <p>Finnick sat beside her and hugged her while she was still covered in her blanket. He whispered, “Silly gal, it isn’t your fault. So there’s no reason to blame yourself. Getting pregnant has always been up to fate.”</p>
-                    
-                    <p>Although she still felt sad about it, she nodded at Finnick’s words as they did make sense after all.</p>
-                    
-                    <p>“Don’t worry, I’ll get to the bottom of this,” Finnick promised as he looked at her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Finnick helped her up and fed her the medications prescribed by the doctor.</p>
+                        
+                        <p>Hanging her head, Vivian began to blame herself again.</p>
+                        
+                        <p>“I’m sorry, Finnick. I’m not pregnant and I have let everyone down.”</p>
+                        
+                        <p>Finnick sat beside her and hugged her while she was still covered in her blanket. He whispered, “Silly gal, it isn’t your fault. So there’s no reason to blame yourself. Getting pregnant has always been up to fate.”</p>
+                        
+                        <p>Although she still felt sad about it, she nodded at Finnick’s words as they did make sense after all.</p>
+                        
+                        <p>“Don’t worry, I’ll get to the bottom of this,” Finnick promised as he looked at her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“But what about Grandpa and the others…” Vivian couldn’t control the guilt she was feeling when she thought about how Samuel was supposed to be enjoying his time with his great-grandchild. But now, he had to contend with disappointment after getting his hopes up.</p>
-                    
-                    <p>“I have told you, it’s not your fault.” Furrowing his eyebrows, Finnick held Vivian’s chin and forced her to look at himself. “Grandpa is someone reasonable. Once we get to the bottom of this, I’m sure he will understand and not hold it against you.”</p>
-                    
-                    <p>Finnick then kissed the tears on her cheeks one by one before licking them away. Finally, he planted his lips on hers as if to give her as much comfort as he could.</p>
-                    
-                    <p>Feeling reassured by Finnick, Vivian began to calm down. With her breathing slowing, she gradually fell back into sleep.</p>
-                    
-                    <p>After putting her down and tucking her in, he wheeled himself out to the living room.</p>
-                    
-                    <p>Noah had returned with the results of the investigations.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“But what about Grandpa and the others…” Vivian couldn’t control the guilt she was feeling when she thought about how Samuel was supposed to be enjoying his time with his great-grandchild. But now, he had to contend with disappointment after getting his hopes up.</p>
+                        
+                        <p>“I have told you, it’s not your fault.” Furrowing his eyebrows, Finnick held Vivian’s chin and forced her to look at himself. “Grandpa is someone reasonable. Once we get to the bottom of this, I’m sure he will understand and not hold it against you.”</p>
+                        
+                        <p>Finnick then kissed the tears on her cheeks one by one before licking them away. Finally, he planted his lips on hers as if to give her as much comfort as he could.</p>
+                        
+                        <p>Feeling reassured by Finnick, Vivian began to calm down. With her breathing slowing, she gradually fell back into sleep.</p>
+                        
+                        <p>After putting her down and tucking her in, he wheeled himself out to the living room.</p>
+                        
+                        <p>Noah had returned with the results of the investigations.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Mr. Norton.”</p>
-                    
-                    <p>“What have you found?” Finnick asked coldly.</p>
-                    
-                    <p>“I have got the answer. After checking with the Norton residence and Norton Hospital, they said that this was Ashley and Mark’s doing. They had switched the supplements that elder Mr. Norton had given Mrs. Norton, creating the illusion that she was pregnant. However, the drug used was a slow-acting poison. Long-term ingestion would affect Mrs. Norton’s ability to bear children. They had even conspired with the hospital to give her a fake pregnancy report.”</p>
-                    
-                    <p>After Noah had completed his report, Finnick was outraged and hated Ashley and Mark for their cruelty.</p>
-                    
-                    <p>“Very well.” Despite being furious, Finnick remained exceptionally calm as he tapped the armrest in a constant rhythm. “Noah.”</p>
-                    
-                    <p>“Yes.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Mr. Norton.”</p>
+                        
+                        <p>“What have you found?” Finnick asked coldly.</p>
+                        
+                        <p>“I have got the answer. After checking with the Norton residence and Norton Hospital, they said that this was Ashley and Mark’s doing. They had switched the supplements that elder Mr. Norton had given Mrs. Norton, creating the illusion that she was pregnant. However, the drug used was a slow-acting poison. Long-term ingestion would affect Mrs. Norton’s ability to bear children. They had even conspired with the hospital to give her a fake pregnancy report.”</p>
+                        
+                        <p>After Noah had completed his report, Finnick was outraged and hated Ashley and Mark for their cruelty.</p>
+                        
+                        <p>“Very well.” Despite being furious, Finnick remained exceptionally calm as he tapped the armrest in a constant rhythm. “Noah.”</p>
+                        
+                        <p>“Yes.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“Bring Ashley to the warehouse. I want to teach her a lesson.”</p>
+                        
+                        <p>When he saw Finnick’s expression, Noah immediately understood…</p>
+                        
+                        <p>Mr. Norton is outraged and won’t be held back by the debt he owed her anymore.</p>
+                        
+                        <p>Meanwhile, caught by surprise, Ashley was kidnapped and thrown into a basement.</p>
+                        
+                        <p>Filled with terror, she didn’t understand who would brazenly do this to her, until…</p>
+                        
+                        <p>Noah pushed Finnick on his wheelchair and appeared before her. As they approached her step by step, she felt as if the Devil himself was silently coming to claim her life.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2491,49 +2564,29 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>“Bring Ashley to the warehouse. I want to teach her a lesson.”</p>
-                    
-                    <p>When he saw Finnick’s expression, Noah immediately understood…</p>
-                    
-                    <p>Mr. Norton is outraged and won’t be held back by the debt he owed her anymore.</p>
-                    
-                    <p>Meanwhile, caught by surprise, Ashley was kidnapped and thrown into a basement.</p>
-                    
-                    <p>Filled with terror, she didn’t understand who would brazenly do this to her, until…</p>
-                    
-                    <p>Noah pushed Finnick on his wheelchair and appeared before her. As they approached her step by step, she felt as if the Devil himself was silently coming to claim her life.</p>
-                    
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Ashley began to feel an inexplicable panic. However, she knew she had to remain calm and find out what was going on. She shouldn’t show any weakness.</p>
+                        
+                        <p>“Finnick, why did you kidnap me?” She struggled. “How dare you do this to your savior?”</p>
+                        
+                        <p>Finnick ignored her question until he stopped his wheelchair in front of her. He got straight to the point. “Are you the person orchestrating Vivian’s pregnancy?”</p>
+                        
+                        <p>Ashley panicked but recovered her composure quickly. She replied, “So what if it was me. All I did was make her look like she was pregnant while causing her to lose her ability to have children. However, you can’t do anything to me because you owe me your life.’</p>
+                        
+                        <p>Ashley looked at Finnick in a haughty manner. She loved it when others resented her but couldn’t do anything about it.</p>
+                        
+                        <p>She enjoyed the rush that came with it. The rush of tormenting her enemies and that of revenge.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>Ashley began to feel an inexplicable panic. However, she knew she had to remain calm and find out what was going on. She shouldn’t show any weakness.</p>
-                    
-                    <p>“Finnick, why did you kidnap me?” She struggled. “How dare you do this to your savior?”</p>
-                    
-                    <p>Finnick ignored her question until he stopped his wheelchair in front of her. He got straight to the point. “Are you the person orchestrating Vivian’s pregnancy?”</p>
-                    
-                    <p>Ashley panicked but recovered her composure quickly. She replied, “So what if it was me. All I did was make her look like she was pregnant while causing her to lose her ability to have children. However, you can’t do anything to me because you owe me your life.’</p>
-                    
-                    <p>Ashley looked at Finnick in a haughty manner. She loved it when others resented her but couldn’t do anything about it.</p>
-                    
-                    <p>She enjoyed the rush that came with it. The rush of tormenting her enemies and that of revenge.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
@@ -4253,6 +4306,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4339,9 +4472,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4405,7 +4539,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4450,13 +4583,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4513,21 +4643,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

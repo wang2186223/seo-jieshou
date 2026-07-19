@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.441820",
-        "dateModified": "2026-07-17T17:08:31.441820",
+        "datePublished": "2026-07-19T13:10:27.866815",
+        "dateModified": "2026-07-19T13:10:27.866815",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,60 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1139</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>After returning to the castle, Robert looked for Danrique and informed him that Charlotte had already</p>
-                    
-                    <p>agreed to the wedding.</p>
-                    
-                    <p>Danrique did not look surprised at all. Instead, he nodded. “Okay. Good that she&#39;s thought it through.”</p>
-                    
-                    <p>“Since Charlotte has already agreed to the marriage, I&#39;ll prepare for it now.” Smiling, Robert said, “Do</p>
-                    
-                    <p>you have any thoughts about the wedding? I&#39;ll follow your suggestions.”</p>
-                    
-                    <p>“Since she&#39;s my cousin, she naturally needs to have a grand wedding,” said Danrique arrogantly. “I&#39;ll</p>
-                    
-                    <p>organize a wedding for her in Xendale. For the one in Pillere, you can have the final say and I won&#39;t</p>
-                    
-                    <p>intervene. However, I want to make something clear—I hope that no one will look down on her for</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>whatever reason. As my family, she must be shown equal respect and importance!” “Don&#39;t worry, you</p>
-                    
-                    <p>have my word on this,” promised Robert as he patted his chest. “It&#39;s the Laurent family&#39;s honor to have</p>
-                    
-                    <p>your cousin&#39;s hand in marriage. How can we possibly take her lightly?”</p>
-                    
-                    <p>“That&#39;s good.” Danrique nodded. “As for the other details, you can discuss with Sean directly if you</p>
-                    
-                    <p>need anything from our side. I need to go out for a while.”</p>
-                    
-                    <p>“There&#39;s another thing which I&#39;m not sure if I should tell you...” A troubled look crossed Robert&#39;s face.</p>
-                    
-                    <p>“What?”</p>
-                    
-                    <p>Danrique frowned, for he disliked it when others beat around the bush.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>After returning to the castle, Robert looked for Danrique and informed him that Charlotte had already</p>
+                        
+                        <p>agreed to the wedding.</p>
+                        
+                        <p>Danrique did not look surprised at all. Instead, he nodded. “Okay. Good that she&#39;s thought it through.”</p>
+                        
+                        <p>“Since Charlotte has already agreed to the marriage, I&#39;ll prepare for it now.” Smiling, Robert said, “Do</p>
+                        
+                        <p>you have any thoughts about the wedding? I&#39;ll follow your suggestions.”</p>
+                        
+                        <p>“Since she&#39;s my cousin, she naturally needs to have a grand wedding,” said Danrique arrogantly. “I&#39;ll</p>
+                        
+                        <p>organize a wedding for her in Xendale. For the one in Pillere, you can have the final say and I won&#39;t</p>
+                        
+                        <p>intervene. However, I want to make something clear—I hope that no one will look down on her for</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2451,52 +2456,92 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>“I met that child this morning. Indeed, he has inherited the best genes from the Nacht and Lindberg</p>
-                    
-                    <p>family. He&#39;s a total genius, with the intelligence and knowledge that the average person cannot even</p>
-                    
-                    <p>compare to. Furthermore, I could tell that his personality is quite aggressive and strong... Such an</p>
-                    
-                    <p>impressive child is the perfect candidate for an heir. Is Zachary really willing to let go of him? I&#39;m afraid</p>
-                    
-                    <p>that he&#39;ll crash the wedding and continue clinging to Charlotte. This concerns the reputation of the F</p>
-                    
-                    <p>Nation&#39;s royal family!”</p>
-                    
-                    <p>“Leave this to me.” Danrique&#39;s gaze was cold and haughty. “If he dares to create a ruckus during the</p>
-                    
-                    <p>wedding, I&#39;ll kill him!”</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>whatever reason. As my family, she must be shown equal respect and importance!” “Don&#39;t worry, you</p>
+                        
+                        <p>have my word on this,” promised Robert as he patted his chest. “It&#39;s the Laurent family&#39;s honor to have</p>
+                        
+                        <p>your cousin&#39;s hand in marriage. How can we possibly take her lightly?”</p>
+                        
+                        <p>“That&#39;s good.” Danrique nodded. “As for the other details, you can discuss with Sean directly if you</p>
+                        
+                        <p>need anything from our side. I need to go out for a while.”</p>
+                        
+                        <p>“There&#39;s another thing which I&#39;m not sure if I should tell you...” A troubled look crossed Robert&#39;s face.</p>
+                        
+                        <p>“What?”</p>
+                        
+                        <p>Danrique frowned, for he disliked it when others beat around the bush.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“I met that child this morning. Indeed, he has inherited the best genes from the Nacht and Lindberg</p>
+                        
+                        <p>family. He&#39;s a total genius, with the intelligence and knowledge that the average person cannot even</p>
+                        
+                        <p>compare to. Furthermore, I could tell that his personality is quite aggressive and strong... Such an</p>
+                        
+                        <p>impressive child is the perfect candidate for an heir. Is Zachary really willing to let go of him? I&#39;m afraid</p>
+                        
+                        <p>that he&#39;ll crash the wedding and continue clinging to Charlotte. This concerns the reputation of the F</p>
+                        
+                        <p>Nation&#39;s royal family!”</p>
+                        
+                        <p>“Leave this to me.” Danrique&#39;s gaze was cold and haughty. “If he dares to create a ruckus during the</p>
+                        
+                        <p>wedding, I&#39;ll kill him!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Well...” Robert panicked. “I know that the Lindberg and the Nacht families are enemies, but the royal</p>
-                    
-                    <p>family of F Nation is still on good terms with the Nachts. The queen is acquainted with him as well. If</p>
-                    
-                    <p>anything bad happens to him because of Louis&#39; wedding, I can&#39;t explain it to her.”</p>
-                    
-                    <p>“What are you trying to say?” Danrique was becoming impatient.</p>
-                    
-                    <p>After thinking about it, Robert asked tactfully, “What are your plans regarding that child?”</p>
-                    
-                    <p>“So you aren&#39;t worried about Zachary, but Robinson.” Danrique smirked coldly. “You&#39;re afraid that he&#39;ll</p>
-                    
-                    <p>threaten Louis and affect the next generation?”</p>
-                    
-                    <p>“Well...” Robert felt a bit awkward.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Well...” Robert panicked. “I know that the Lindberg and the Nacht families are enemies, but the royal</p>
+                        
+                        <p>family of F Nation is still on good terms with the Nachts. The queen is acquainted with him as well. If</p>
+                        
+                        <p>anything bad happens to him because of Louis&#39; wedding, I can&#39;t explain it to her.”</p>
+                        
+                        <p>“What are you trying to say?” Danrique was becoming impatient.</p>
+                        
+                        <p>After thinking about it, Robert asked tactfully, “What are your plans regarding that child?”</p>
+                        
+                        <p>“So you aren&#39;t worried about Zachary, but Robinson.” Danrique smirked coldly. “You&#39;re afraid that he&#39;ll</p>
+                        
+                        <p>threaten Louis and affect the next generation?”</p>
+                        
+                        <p>“Well...” Robert felt a bit awkward.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2508,72 +2553,84 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“That&#39;s understandable.” Danrique smiled. “After all, the Lindbergs&#39; and the Nachts&#39; blood flows in his</p>
-                    
-                    <p>veins. He has the Nacht family&#39;s intelligence, and possibly also the Lindberg family&#39;s mercilessness!”</p>
-                    
-                    <p>He spoke in a meaningful tone when he said that last sentence.</p>
-                    
-                    <p>Back then, Isabella had brought Danrique to the Lindberg family. After nurturing him for a few years, he</p>
-                    
-                    <p>had become much more capable.</p>
-                    
-                    <p>When he was sixteen years old, the Lindberg family was plunged into chaos due to the battle over the</p>
-                    
-                    <p>inheritance.</p>
-                    
-                    <p>He destroyed the entire family and became the heir of the Lindberg corporation!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“That&#39;s understandable.” Danrique smiled. “After all, the Lindbergs&#39; and the Nachts&#39; blood flows in his</p>
+                        
+                        <p>veins. He has the Nacht family&#39;s intelligence, and possibly also the Lindberg family&#39;s mercilessness!”</p>
+                        
+                        <p>He spoke in a meaningful tone when he said that last sentence.</p>
+                        
+                        <p>Back then, Isabella had brought Danrique to the Lindberg family. After nurturing him for a few years, he</p>
+                        
+                        <p>had become much more capable.</p>
+                        
+                        <p>When he was sixteen years old, the Lindberg family was plunged into chaos due to the battle over the</p>
+                        
+                        <p>inheritance.</p>
+                        
+                        <p>He destroyed the entire family and became the heir of the Lindberg corporation!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Back then, it was a snowy day as well. The metallic stench of blood wafted through the Lindberg</p>
-                    
-                    <p>family&#39;s castle, while the pristine and white snow outside had been dyed red...</p>
-                    
-                    <p>Wearing a coat, a sixteen-year-old youth strode out of the castle. Raising a sharp sword to the sky, he</p>
-                    
-                    <p>declared arrogantly that from then on, he was the master of the Lindberg Corporation!</p>
-                    
-                    <p>His face was filled with blood, while his white coat was speckled with swirls of bloodstains. His gaze</p>
-                    
-                    <p>was vicious, as if he was a devil who had risen right from the depths of hell.</p>
-                    
-                    <p>From then on, he was given the nickname &#39;The Grim Reaper&#39;.</p>
-                    
-                    <p>“Don&#39;t misunderstand, Mr. Lindberg. That&#39;s not what I mean!” Robert quickly explained, “I just think that</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Back then, it was a snowy day as well. The metallic stench of blood wafted through the Lindberg</p>
+                        
+                        <p>family&#39;s castle, while the pristine and white snow outside had been dyed red...</p>
+                        
+                        <p>Wearing a coat, a sixteen-year-old youth strode out of the castle. Raising a sharp sword to the sky, he</p>
+                        
+                        <p>declared arrogantly that from then on, he was the master of the Lindberg Corporation!</p>
+                        
+                        <p>His face was filled with blood, while his white coat was speckled with swirls of bloodstains. His gaze</p>
+                        
+                        <p>was vicious, as if he was a devil who had risen right from the depths of hell.</p>
+                        
+                        <p>From then on, he was given the nickname &#39;The Grim Reaper&#39;.</p>
+                        
+                        <p>“Don&#39;t misunderstand, Mr. Lindberg. That&#39;s not what I mean!” Robert quickly explained, “I just think that</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>the child is so smart that the Nacht family might want to snatch him back. So...”</p>
-                    
-                    <p>“What do you want to do?” Danrique asked. “Do you want Charlotte to give that child up? Huh?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>the child is so smart that the Nacht family might want to snatch him back. So...”</p>
+                        
+                        <p>“What do you want to do?” Danrique asked. “Do you want Charlotte to give that child up? Huh?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
@@ -4291,6 +4348,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4377,9 +4514,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4443,7 +4581,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4488,13 +4625,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4551,21 +4685,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

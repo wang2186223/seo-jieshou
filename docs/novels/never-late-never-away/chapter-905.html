@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:34.816343",
-        "dateModified": "2026-07-17T17:08:34.816343",
+        "datePublished": "2026-07-19T13:10:32.070118",
+        "dateModified": "2026-07-19T13:10:32.070118",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,56 +2422,58 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 905</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 905</p>
-                    
-                    <p>“Alright. After breakfast, we shall go to the amusement park.”</p>
-                    
-                    <p>Once she made that announcement, Larry immediately gobbled his food down.</p>
-                    
-                    <p>He finished his breakfast in no time. Shortly after, they headed to the biggest amusement park in the city.</p>
-                    
-                    <p>Back then, Vivian came to this amusement park with Finnick and had fun here. She knew her way around the park.</p>
-                    
-                    <p>“Mommy, I want this!”</p>
-                    
-                    <p>Larry spotted the helium balloons for sale nearby and asked Vivian to buy him one.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 905</p>
+                        
+                        <p>“Alright. After breakfast, we shall go to the amusement park.”</p>
+                        
+                        <p>Once she made that announcement, Larry immediately gobbled his food down.</p>
+                        
+                        <p>He finished his breakfast in no time. Shortly after, they headed to the biggest amusement park in the city.</p>
+                        
+                        <p>Back then, Vivian came to this amusement park with Finnick and had fun here. She knew her way around the park.</p>
+                        
+                        <p>“Mommy, I want this!”</p>
+                        
+                        <p>Larry spotted the helium balloons for sale nearby and asked Vivian to buy him one.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>It was rare for Larry to ask for something, so Vivian indulged to his request readily.</p>
-                    
-                    <p>“Sir, how much for one?” Vivian asked the balloon seller, who was a middle-aged man.</p>
-                    
-                    <p>The balloon seller and made the number five with his hand.</p>
-                    
-                    <p>Vivian told Larry to pick a balloon and paid for it.</p>
-                    
-                    <p>After picking a Doraemon balloon, Larry couldn’t stop grinning.</p>
-                    
-                    <p>Doraemon was Larry’s favorite cartoon character.</p>
-                    
-                    <p>Seeing how delighted Larry was, joy sparkled inside her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>It was rare for Larry to ask for something, so Vivian indulged to his request readily.</p>
+                        
+                        <p>“Sir, how much for one?” Vivian asked the balloon seller, who was a middle-aged man.</p>
+                        
+                        <p>The balloon seller and made the number five with his hand.</p>
+                        
+                        <p>Vivian told Larry to pick a balloon and paid for it.</p>
+                        
+                        <p>After picking a Doraemon balloon, Larry couldn’t stop grinning.</p>
+                        
+                        <p>Doraemon was Larry’s favorite cartoon character.</p>
+                        
+                        <p>Seeing how delighted Larry was, joy sparkled inside her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2448,21 +2485,85 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>However, Vivian soon spotted two people who were familiar to her.</p>
-                    
-                    <p>They were Noah and Ivana. “Mrs. Norton, Mr. Larry.”</p>
-                    
-                    <p>She was about to go to them when they came over and greeted her politely.</p>
-                    
-                    <p>“Fancy running into you at the amusement park,” Vivian teased when she saw them holding hands.</p>
-                    
-                    <p>“Are you here with your girlfriend?”</p>
-                    
-                    <p>At her question, Noah nodded shyly.</p>
-                    
-                    <p>Ivana replied warmly, “Yes, we’re here to have some fun.” She was the total opposite of the reserved Noah.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>However, Vivian soon spotted two people who were familiar to her.</p>
+                        
+                        <p>They were Noah and Ivana. “Mrs. Norton, Mr. Larry.”</p>
+                        
+                        <p>She was about to go to them when they came over and greeted her politely.</p>
+                        
+                        <p>“Fancy running into you at the amusement park,” Vivian teased when she saw them holding hands.</p>
+                        
+                        <p>“Are you here with your girlfriend?”</p>
+                        
+                        <p>At her question, Noah nodded shyly.</p>
+                        
+                        <p>Ivana replied warmly, “Yes, we’re here to have some fun.” She was the total opposite of the reserved Noah.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Alright. Have fun, then. Larry and I will be off!”</p>
+                        
+                        <p>They bade goodbye to each other and went on their separate ways.</p>
+                        
+                        <p>Previously, the news of Noah being saved reached Vivian’s ears. She even visited him in the hospital.</p>
+                        
+                        <p>Nevertheless, she didn’t expect that he would be touched by Ivana’s actions and ended up dating her.</p>
+                        
+                        <p>Ivana was an excellent choice. Also, her family owned that hospital.</p>
+                        
+                        <p>Noah might be an ordinary person, but he used to work for the Norton family.</p>
+                        
+                        <p>That was considered a huge feat.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Seeing how sweet that couple was, Vivian left them alone and decided to stay with Larry.</p>
+                        
+                        <p>After all, she was here to have fun with Larry instead of catching up with them.</p>
+                        
+                        <p>The moment Vivian left, Noah relaxed and started enjoying with Ivana.</p>
+                        
+                        <p>They had been together for almost two years. Back then, he was moved by Ivana’s sincerity and agreed to start a relationship with her.</p>
+                        
+                        <p>Indeed, Ivana was accomplished enough to touch Noah’s heart seeing how introverted he was.</p>
+                        
+                        <p>“Mommy, let’s ride the rollercoaster!” As Vivian was spacing out, Larry tugged on her sleeves and urged.</p>
+                        
+                        <p>“Sure!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2473,74 +2574,26 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>“Alright. Have fun, then. Larry and I will be off!”</p>
-                    
-                    <p>They bade goodbye to each other and went on their separate ways.</p>
-                    
-                    <p>Previously, the news of Noah being saved reached Vivian’s ears. She even visited him in the hospital.</p>
-                    
-                    <p>Nevertheless, she didn’t expect that he would be touched by Ivana’s actions and ended up dating her.</p>
-                    
-                    <p>Ivana was an excellent choice. Also, her family owned that hospital.</p>
-                    
-                    <p>Noah might be an ordinary person, but he used to work for the Norton family.</p>
-                    
-                    <p>That was considered a huge feat.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Seeing how sweet that couple was, Vivian left them alone and decided to stay with Larry.</p>
-                    
-                    <p>After all, she was here to have fun with Larry instead of catching up with them.</p>
-                    
-                    <p>The moment Vivian left, Noah relaxed and started enjoying with Ivana.</p>
-                    
-                    <p>They had been together for almost two years. Back then, he was moved by Ivana’s sincerity and agreed to start a relationship with her.</p>
-                    
-                    <p>Indeed, Ivana was accomplished enough to touch Noah’s heart seeing how introverted he was.</p>
-                    
-                    <p>“Mommy, let’s ride the rollercoaster!” As Vivian was spacing out, Larry tugged on her sleeves and urged.</p>
-                    
-                    <p>“Sure!”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="5">
-                    
-                    <p>Vivian led him to the rollercoaster. She was initially worried that he would be too little to enjoy the ride, but in the end, she realized he was far more bold than her.</p>
-                    
-                    <p>As far as Vivian was concerned, Finnick wasn’t a fan of rollercoasters. He’d end up puking his guts out after the rollercoaster ride. However, he’d still insist on joining her every time.</p>
-                    
-                    <p>When the ride came to an end, Vivian gave Larry a hug so he could calm down.</p>
-                    
-                    <p>After that, they went on milder rides which weren’t as exciting as the rollercoaster.</p>
-                    
-                    <p>At around 5 p.m., Vivian received a call from Finnick, who told her that he would be coming to join them later.</p>
-                    
-                    <p>Finnick arrived sooner than expected. When he showed up, Vivian and Larry were enjoying their ice- creams.</p>
-                    
-                    <p>He came over to them and said, “Larry, give me a bite of that.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Vivian led him to the rollercoaster. She was initially worried that he would be too little to enjoy the ride, but in the end, she realized he was far more bold than her.</p>
+                        
+                        <p>As far as Vivian was concerned, Finnick wasn’t a fan of rollercoasters. He’d end up puking his guts out after the rollercoaster ride. However, he’d still insist on joining her every time.</p>
+                        
+                        <p>When the ride came to an end, Vivian gave Larry a hug so he could calm down.</p>
+                        
+                        <p>After that, they went on milder rides which weren’t as exciting as the rollercoaster.</p>
+                        
+                        <p>At around 5 p.m., Vivian received a call from Finnick, who told her that he would be coming to join them later.</p>
+                        
+                        <p>Finnick arrived sooner than expected. When he showed up, Vivian and Larry were enjoying their ice- creams.</p>
+                        
+                        <p>He came over to them and said, “Larry, give me a bite of that.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2552,21 +2605,25 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Larry promptly offered him a bite of his food. It was the first time the little boy had ever fed his father something.</p>
-                    
-                    <p>Finnick ruffled Larry’s hair happily and took a seat beside him.</p>
-                    
-                    <p>“Won’t you go on the rides?”</p>
-                    
-                    <p>As Vivian and Larry were still engrossed in their ice-creams and showed no signs of going on the rides, Finnick was puzzled. He had come all the way here to have fun with them.</p>
-                    
-                    <p>“After finishing our ice creams, we’ll go on the Ferris wheel together.” Vivian had always wanted to go on the Ferris wheel as a family so they could always be together.</p>
-                    
-                    <p>Finnick nodded.</p>
-                    
-                    <p>Shortly after, they entered a gondola on the Ferris wheel while holding hands tightly. It was a heartwarming scene.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Larry promptly offered him a bite of his food. It was the first time the little boy had ever fed his father something.</p>
+                        
+                        <p>Finnick ruffled Larry’s hair happily and took a seat beside him.</p>
+                        
+                        <p>“Won’t you go on the rides?”</p>
+                        
+                        <p>As Vivian and Larry were still engrossed in their ice-creams and showed no signs of going on the rides, Finnick was puzzled. He had come all the way here to have fun with them.</p>
+                        
+                        <p>“After finishing our ice creams, we’ll go on the Ferris wheel together.” Vivian had always wanted to go on the Ferris wheel as a family so they could always be together.</p>
+                        
+                        <p>Finnick nodded.</p>
+                        
+                        <p>Shortly after, they entered a gondola on the Ferris wheel while holding hands tightly. It was a heartwarming scene.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -4289,6 +4346,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4375,9 +4512,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4441,7 +4579,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4486,13 +4623,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4549,21 +4683,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

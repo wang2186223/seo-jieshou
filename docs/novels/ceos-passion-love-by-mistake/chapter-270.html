@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.470447",
-        "dateModified": "2026-07-17T17:08:28.470447",
+        "datePublished": "2026-07-19T13:10:24.269880",
+        "dateModified": "2026-07-19T13:10:24.269880",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,114 +2422,24 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 272</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Susan opened her mouth in shock. She was at a complete loss for words.</p>
-                    
-                    <p>Indeed, that was what she had thought all along.</p>
-                    
-                    <p>Susan believed that Shane had dropped by the hospital so often because he wanted to know if Jasmine had woken up from her ‘coma’ yet.</p>
-                    
-                    <p>Natalie shrugged helplessly. “Well, I’m sorry to inform the both of you that you were wrong. Mr. Shane wasn’t there to see you. He was visiting Ms. Graham!”</p>
-                    
-                    <p>Yulia laughed at Susan and Jasmine, obviously reveling in their misery. “Oh, dear. What a disappointment for the both of you!”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>Jasmine’s hand trembled as it lay on the armrest of her wheelchair. She felt as though someone had emptied a bucket of ice-cold water on her.</p>
-                    
-                    <p>This was the first time she realized that Natalie wasn’t the only other woman by Shane’s side. He had a mysterious woman called Jacqueline too.</p>
-                    
-                    <p>“Jas...” Susan placed a hand on her daughter’s shoulder worriedly.</p>
-                    
-                    <p>Natalie put her hands on her knees and bent down slightly to meet Jasmine’s eyes. “Now, the both of you know why Mr. Shane would’ve canceled the engagement even without me around. Jasmine, you’re just a stand-in for Jacqueline, who helped discourage other girls who want to try their luck with him. Simply put, you’re just a pawn to Mr. Shane.”</p>
-                    
-                    <p>Jasmine was close to a mental breakdown. She grabbed at her own hair and pulled violently at it, her face contorted in rage. Jacqueline Graham, Jacqueline Graham...she repeated endlessly in her heart.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Natalie straightened up again. “Thus, there’s no use in you coming to look for me today!”</p>
-                    
-                    <p>“Who said there isn’t?” Jasmine looked up at her with bloodshot eyes, malice written all over her face. “Even if there wasn’t a Jacqueline, you still had a part to play in this! Shane might have wanted to call off our engagement, but he wouldn’t have done it now if you hadn’t come along! Hence, when all is said and done, everything is your fault!”</p>
-                    
-                    <p>Although Natalie told her that Shane’s true love was Jacqueline, Jasmine was quite clear on the fact that he was in love with Natalie as well. He might love Jacqueline more, but nonetheless, he still felt much affection for Natalie.</p>
-                    
-                    <p>Jasmine would never forgive Natalie because of this. She would find a way to make both Natalie and Jacqueline disappear from Shane’s life forever!</p>
-                    
-                    <p>“Gosh, you’re being so unreasonable!” Seeing the rancor in Jasmine’s eyes, Natalie frowned with distaste.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Yulia took her hand. “Don’t bother trying to talk sense into people like this. Let’s ignore them—we’re only wasting our time.”</p>
-                    
-                    <p>With that, Yulia slammed the door shut in Susan and Jasmine’s faces.</p>
-                    
-                    <p>As they expected, Susan and Jasmine continued to bang loudly on the door, screaming for them to open up.</p>
-                    
-                    <p>Yulia found the noise too annoying to bear. She took out her phone and made a call to the guardhouse, which promptly sent two security guards upstairs to force them to leave.</p>
-                    
-                    <p>There was a loud scuffle outside the door before everything returned to its peaceful normal again.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Yulia opened the door and peeked outside. When she saw that Susan and Jasmine had gone, she let out a sigh of relief and returned to the living room. “The two of them have issues!”</p>
-                    
-                    <p>Natalie was peeling an apple on the sofa. “They don’t have issues. They’re just two people who bully the weak but fear the strong,” she replied, smiling.</p>
-                    
-                    <p>Yulia nodded. “That’s right. However, I believe that they wanted to go and look for Jacqueline but knew that it would be completely useless. Hence, they chose to take their anger out on you instead. Come to think of it, I’m pretty glad that Jasmine ruined the engagement between you and Shane. If not, you would have been the stand-in in place of her!”</p>
-                    
-                    <p>Natalie’s eyes flashed briefly before returning to normal. She pushed the apple and the knife into Yulia’s hands. “Alright, Mom. Let’s not talk about this anymore. Why don’t you help me finish peeling this? I’ll go and see if the kids are awake.”</p>
-                    
-                    <p>“Alright, then.” Yulia waved her away.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Susan opened her mouth in shock. She was at a complete loss for words.</p>
+                        
+                        <p>Indeed, that was what she had thought all along.</p>
+                        
+                        <p>Susan believed that Shane had dropped by the hospital so often because he wanted to know if Jasmine had woken up from her ‘coma’ yet.</p>
+                        
+                        <p>Natalie shrugged helplessly. “Well, I’m sorry to inform the both of you that you were wrong. Mr. Shane wasn’t there to see you. He was visiting Ms. Graham!”</p>
+                        
+                        <p>Yulia laughed at Susan and Jasmine, obviously reveling in their misery. “Oh, dear. What a disappointment for the both of you!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2505,18 +2450,22 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>Natalie got up and made her way to the kids’ bedroom.</p>
-                    
-                    <p>When she entered the room, she found that the kids hadn’t woken up yet. Seeing that it was already pretty late, she woke them up and pressed a kiss to both their cheeks. After getting them changed, she took them by the hands and went into the bathroom to wash up.</p>
-                    
-                    <p>After they finished washing up and having breakfast, Natalie handed Sharon over to Yulia and asked her to send Sharon to kindergarten.</p>
-                    
-                    <p>After seeing them off, Natalie headed over to the studio with Connor.</p>
-                    
-                    <p>Connor’s arm hadn’t recovered fully, and he was wearing it in a cast. Natalie was worried that he might get injured again if he played around with the kids at the kindergarten, so she decided to give him a small holiday instead and bring him back when his injury healed.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Jasmine’s hand trembled as it lay on the armrest of her wheelchair. She felt as though someone had emptied a bucket of ice-cold water on her.</p>
+                        
+                        <p>This was the first time she realized that Natalie wasn’t the only other woman by Shane’s side. He had a mysterious woman called Jacqueline too.</p>
+                        
+                        <p>“Jas...” Susan placed a hand on her daughter’s shoulder worriedly.</p>
+                        
+                        <p>Natalie put her hands on her knees and bent down slightly to meet Jasmine’s eyes. “Now, the both of you know why Mr. Shane would’ve canceled the engagement even without me around. Jasmine, you’re just a stand-in for Jacqueline, who helped discourage other girls who want to try their luck with him. Simply put, you’re just a pawn to Mr. Shane.”</p>
+                        
+                        <p>Jasmine was close to a mental breakdown. She grabbed at her own hair and pulled violently at it, her face contorted in rage. Jacqueline Graham, Jacqueline Graham...she repeated endlessly in her heart.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2527,10 +2476,118 @@
                 
                 
                 
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Natalie straightened up again. “Thus, there’s no use in you coming to look for me today!”</p>
+                        
+                        <p>“Who said there isn’t?” Jasmine looked up at her with bloodshot eyes, malice written all over her face. “Even if there wasn’t a Jacqueline, you still had a part to play in this! Shane might have wanted to call off our engagement, but he wouldn’t have done it now if you hadn’t come along! Hence, when all is said and done, everything is your fault!”</p>
+                        
+                        <p>Although Natalie told her that Shane’s true love was Jacqueline, Jasmine was quite clear on the fact that he was in love with Natalie as well. He might love Jacqueline more, but nonetheless, he still felt much affection for Natalie.</p>
+                        
+                        <p>Jasmine would never forgive Natalie because of this. She would find a way to make both Natalie and Jacqueline disappear from Shane’s life forever!</p>
+                        
+                        <p>“Gosh, you’re being so unreasonable!” Seeing the rancor in Jasmine’s eyes, Natalie frowned with distaste.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Yulia took her hand. “Don’t bother trying to talk sense into people like this. Let’s ignore them—we’re only wasting our time.”</p>
+                        
+                        <p>With that, Yulia slammed the door shut in Susan and Jasmine’s faces.</p>
+                        
+                        <p>As they expected, Susan and Jasmine continued to bang loudly on the door, screaming for them to open up.</p>
+                        
+                        <p>Yulia found the noise too annoying to bear. She took out her phone and made a call to the guardhouse, which promptly sent two security guards upstairs to force them to leave.</p>
+                        
+                        <p>There was a loud scuffle outside the door before everything returned to its peaceful normal again.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Yulia opened the door and peeked outside. When she saw that Susan and Jasmine had gone, she let out a sigh of relief and returned to the living room. “The two of them have issues!”</p>
+                        
+                        <p>Natalie was peeling an apple on the sofa. “They don’t have issues. They’re just two people who bully the weak but fear the strong,” she replied, smiling.</p>
+                        
+                        <p>Yulia nodded. “That’s right. However, I believe that they wanted to go and look for Jacqueline but knew that it would be completely useless. Hence, they chose to take their anger out on you instead. Come to think of it, I’m pretty glad that Jasmine ruined the engagement between you and Shane. If not, you would have been the stand-in in place of her!”</p>
+                        
+                        <p>Natalie’s eyes flashed briefly before returning to normal. She pushed the apple and the knife into Yulia’s hands. “Alright, Mom. Let’s not talk about this anymore. Why don’t you help me finish peeling this? I’ll go and see if the kids are awake.”</p>
+                        
+                        <p>“Alright, then.” Yulia waved her away.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Natalie got up and made her way to the kids’ bedroom.</p>
+                        
+                        <p>When she entered the room, she found that the kids hadn’t woken up yet. Seeing that it was already pretty late, she woke them up and pressed a kiss to both their cheeks. After getting them changed, she took them by the hands and went into the bathroom to wash up.</p>
+                        
+                        <p>After they finished washing up and having breakfast, Natalie handed Sharon over to Yulia and asked her to send Sharon to kindergarten.</p>
+                        
+                        <p>After seeing them off, Natalie headed over to the studio with Connor.</p>
+                        
+                        <p>Connor’s arm hadn’t recovered fully, and he was wearing it in a cast. Natalie was worried that he might get injured again if he played around with the kids at the kindergarten, so she decided to give him a small holiday instead and bring him back when his injury healed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="6">
-                    
-                    <p>When she spotted Natalie entering the studio with Connor, Joyce hurried out from her office and said, “Nat, you’re here!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>When she spotted Natalie entering the studio with Connor, Joyce hurried out from her office and said, “Nat, you’re here!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -4253,6 +4310,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4339,9 +4476,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4405,7 +4543,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4450,13 +4587,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4513,21 +4647,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

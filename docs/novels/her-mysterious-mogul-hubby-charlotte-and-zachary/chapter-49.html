@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:30.197846",
-        "dateModified": "2026-07-17T17:08:30.197846",
+        "datePublished": "2026-07-19T13:10:26.091890",
+        "dateModified": "2026-07-19T13:10:26.091890",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,108 +2422,28 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 49</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;I’m sorry. I&#39;ve been calling over ten times, but her phone is switched off. I&#39;m still trying to call her,&#34; Ms.</p>
-                    
-                    <p>Longman nervously uttered. &#34;I&#39;ve just been transferred here, and I&#39;m not familiar with the students yet.</p>
-                    
-                    <p>But I&#39;ll give you my full cooperation.&#34;</p>
-                    
-                    <p>&#34;Mr. Nacht, can you show me the video?&#34; Lexie asked tentatively.</p>
-                    
-                    <p>Ben then handed her the phone.</p>
-                    
-                    <p>After looking at the video, Lexie remarked, &#34;This boy isn&#39;t Robbie; it&#39;s Jamie. Although they look</p>
-                    
-                    <p>identical, they carry themselves differently.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Jamie?&#34; Ben was stunned. &#34;Are they twins?&#34;</p>
-                    
-                    <p>&#34;They&#39;re triplets,&#34; Lexie explained. &#34;The oldest is Robbie, and the middle child is Jamie. These two look</p>
-                    
-                    <p>the same. The youngest is a girl called Ellie.&#34;</p>
-                    
-                    <p>&#34;Ellie should be the kid who came up our car chasing after the parrot the last time.&#34; Ben finally realized</p>
-                    
-                    <p>what was going on. &#34;I was wondering why both kids have parrots. They come from the same family.&#34;</p>
-                    
-                    <p>&#34;Hurry up and bring Jamie here,&#34; Ms. Longman instructed Lexie.</p>
-                    
-                    <p>&#34;Jamie&#39;s is in the field now. I’ll look for him right away.&#34; Lexie hurried out.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Ms. Longman then crouched down and patiently said to Robbie, &#34;Robbie, trust me. They&#39;re not bad</p>
-                    
-                    <p>guys. If you know where the chip is, just tell them, all right?&#34;</p>
-                    
-                    <p>Robbie was already hesitating by now. If the man in black really gave the chip to Jamie, that meant</p>
-                    
-                    <p>these people were not lying. If they were not lying, that meant they were not evil.</p>
-                    
-                    <p>&#34;Kid,&#34; Ben started. &#34;The blueprint for our company&#39;s new technology is in that chip, but the bad guy has</p>
-                    
-                    <p>stolen our chip. If we can&#39;t get it back, someone will use our blueprint. Not only will our company suffer</p>
-                    
-                    <p>a loss, but it&#39;ll also cause trouble in the public.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>&#34;All right.&#34; In the end, Robbie chose to believe them. He raised his head and uttered seriously, &#34;Fifi ate</p>
-                    
-                    <p>that chip, but it hasn&#39;t pooped it out yet. When it poops it out, I can give it back to you.&#34;</p>
-                    
-                    <p>&#34;What do you mean? Can you say that again?&#34; Ben urged. &#34;Who is Fifi?&#34;</p>
-                    
-                    <p>&#34;You&#39;re dumb. Fifi&#39;s our pet parrot.&#34;</p>
-                    
-                    <p>&#34;You&#39;re dumb. Fifi&#39;s our pet parrot.&#34;</p>
-                    
-                    <p>Those words were spoken at the same time, just in different places. Those were the words Jamie said</p>
-                    
-                    <p>to the man in black at a corner of the field.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;I’m sorry. I&#39;ve been calling over ten times, but her phone is switched off. I&#39;m still trying to call her,&#34; Ms.</p>
+                        
+                        <p>Longman nervously uttered. &#34;I&#39;ve just been transferred here, and I&#39;m not familiar with the students yet.</p>
+                        
+                        <p>But I&#39;ll give you my full cooperation.&#34;</p>
+                        
+                        <p>&#34;Mr. Nacht, can you show me the video?&#34; Lexie asked tentatively.</p>
+                        
+                        <p>Ben then handed her the phone.</p>
+                        
+                        <p>After looking at the video, Lexie remarked, &#34;This boy isn&#39;t Robbie; it&#39;s Jamie. Although they look</p>
+                        
+                        <p>identical, they carry themselves differently.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2499,75 +2454,177 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Do you mean your pet parrot ate the chip?&#34; The man&#39;s brows were knitted.</p>
-                    
-                    <p>&#34;That&#39;s right.&#34; Jamie nodded.</p>
-                    
-                    <p>Then, he continued in great detail. &#34;It lost its appetite after eating the chip, and it’s been depressed too.</p>
-                    
-                    <p>Moreover, it keeps plucking its own feathers. Mommy, Mrs. Berry, Robbie, Ellie, and I brought it to the</p>
-                    
-                    <p>vet, and the vet said it has indigestion. So, he gave Fifi some medication and said it&#39;ll be all fine once it</p>
-                    
-                    <p>poops. That’s why I&#39;m watching it poop every day. I wonder if it&#39;ll poop that golden thingy out.&#34;</p>
-                    
-                    <p>&#34;Well, has it poop it out?&#34; the man questioned.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Jamie?&#34; Ben was stunned. &#34;Are they twins?&#34;</p>
+                        
+                        <p>&#34;They&#39;re triplets,&#34; Lexie explained. &#34;The oldest is Robbie, and the middle child is Jamie. These two look</p>
+                        
+                        <p>the same. The youngest is a girl called Ellie.&#34;</p>
+                        
+                        <p>&#34;Ellie should be the kid who came up our car chasing after the parrot the last time.&#34; Ben finally realized</p>
+                        
+                        <p>what was going on. &#34;I was wondering why both kids have parrots. They come from the same family.&#34;</p>
+                        
+                        <p>&#34;Hurry up and bring Jamie here,&#34; Ms. Longman instructed Lexie.</p>
+                        
+                        <p>&#34;Jamie&#39;s is in the field now. I’ll look for him right away.&#34; Lexie hurried out.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Ms. Longman then crouched down and patiently said to Robbie, &#34;Robbie, trust me. They&#39;re not bad</p>
+                        
+                        <p>guys. If you know where the chip is, just tell them, all right?&#34;</p>
+                        
+                        <p>Robbie was already hesitating by now. If the man in black really gave the chip to Jamie, that meant</p>
+                        
+                        <p>these people were not lying. If they were not lying, that meant they were not evil.</p>
+                        
+                        <p>&#34;Kid,&#34; Ben started. &#34;The blueprint for our company&#39;s new technology is in that chip, but the bad guy has</p>
+                        
+                        <p>stolen our chip. If we can&#39;t get it back, someone will use our blueprint. Not only will our company suffer</p>
+                        
+                        <p>a loss, but it&#39;ll also cause trouble in the public.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;All right.&#34; In the end, Robbie chose to believe them. He raised his head and uttered seriously, &#34;Fifi ate</p>
+                        
+                        <p>that chip, but it hasn&#39;t pooped it out yet. When it poops it out, I can give it back to you.&#34;</p>
+                        
+                        <p>&#34;What do you mean? Can you say that again?&#34; Ben urged. &#34;Who is Fifi?&#34;</p>
+                        
+                        <p>&#34;You&#39;re dumb. Fifi&#39;s our pet parrot.&#34;</p>
+                        
+                        <p>&#34;You&#39;re dumb. Fifi&#39;s our pet parrot.&#34;</p>
+                        
+                        <p>Those words were spoken at the same time, just in different places. Those were the words Jamie said</p>
+                        
+                        <p>to the man in black at a corner of the field.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Do you mean your pet parrot ate the chip?&#34; The man&#39;s brows were knitted.</p>
+                        
+                        <p>&#34;That&#39;s right.&#34; Jamie nodded.</p>
+                        
+                        <p>Then, he continued in great detail. &#34;It lost its appetite after eating the chip, and it’s been depressed too.</p>
+                        
+                        <p>Moreover, it keeps plucking its own feathers. Mommy, Mrs. Berry, Robbie, Ellie, and I brought it to the</p>
+                        
+                        <p>vet, and the vet said it has indigestion. So, he gave Fifi some medication and said it&#39;ll be all fine once it</p>
+                        
+                        <p>poops. That’s why I&#39;m watching it poop every day. I wonder if it&#39;ll poop that golden thingy out.&#34;</p>
+                        
+                        <p>&#34;Well, has it poop it out?&#34; the man questioned.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Jamie took out a box from his bag and handed it to him. &#34;Take a look for yourself.&#34;</p>
-                    
-                    <p>The man then took it and opened the box. In it was a beautifully wrapped package.</p>
-                    
-                    <p>Delighted, he promptly tore the package...</p>
-                    
-                    <p>It was another layer beneath the first layer. Sweating buckets, he continued to tear through the layers</p>
-                    
-                    <p>until there were none left. When he pulled the last layer away, he found a pile of poop. What?</p>
-                    
-                    <p>&#34;This...&#34; The man stared at the pile of feces as the corner of his mouth twitched.</p>
-                    
-                    <p>&#34;I&#39;m scared it&#39;ll poop it out while I&#39;m not home, and Mrs. Berry will throw the poop and the golden thingy</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Jamie took out a box from his bag and handed it to him. &#34;Take a look for yourself.&#34;</p>
+                        
+                        <p>The man then took it and opened the box. In it was a beautifully wrapped package.</p>
+                        
+                        <p>Delighted, he promptly tore the package...</p>
+                        
+                        <p>It was another layer beneath the first layer. Sweating buckets, he continued to tear through the layers</p>
+                        
+                        <p>until there were none left. When he pulled the last layer away, he found a pile of poop. What?</p>
+                        
+                        <p>&#34;This...&#34; The man stared at the pile of feces as the corner of his mouth twitched.</p>
+                        
+                        <p>&#34;I&#39;m scared it&#39;ll poop it out while I&#39;m not home, and Mrs. Berry will throw the poop and the golden thingy</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>away, so I&#39;ve been wrapping its poop every morning. Then, I’ll check the poop when I&#39;m in school.&#34;</p>
-                    
-                    <p>As he spoke, Jamie grabbed a stick from under the tree and crouched down. He then started checking</p>
-                    
-                    <p>the pile of feces.</p>
-                    
-                    <p>&#34;Move aside. I’ll do it.&#34; Looking at Jamie&#39;s slow actions, the man snatched his twig and started stabbing</p>
-                    
-                    <p>the feces. In a few seconds, he broke the stick.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>away, so I&#39;ve been wrapping its poop every morning. Then, I’ll check the poop when I&#39;m in school.&#34;</p>
+                        
+                        <p>As he spoke, Jamie grabbed a stick from under the tree and crouched down. He then started checking</p>
+                        
+                        <p>the pile of feces.</p>
+                        
+                        <p>&#34;Move aside. I’ll do it.&#34; Looking at Jamie&#39;s slow actions, the man snatched his twig and started stabbing</p>
+                        
+                        <p>the feces. In a few seconds, he broke the stick.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
@@ -4285,6 +4342,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4371,9 +4508,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4437,7 +4575,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4482,13 +4619,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4545,21 +4679,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

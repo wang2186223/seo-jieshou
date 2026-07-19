@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:30.571670",
-        "dateModified": "2026-07-17T17:08:30.571670",
+        "datePublished": "2026-07-19T13:10:26.463602",
+        "dateModified": "2026-07-19T13:10:26.463602",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,88 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 354</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;Yeah? Didn&#39;t you say you wanted to teach me a lesson?&#34; Henry cocked his eyebrow coldly.</p>
-                    
-                    <p>&#34;No! I wouldn&#39;t dare to...&#34; Julia apologized immediately, &#34;Please forgive me for being ignorant...&#34;</p>
-                    
-                    <p>&#34;How did it go? Have you found out?&#34; Completely ignoring Julia, Henry turned to speak to Spencer.</p>
-                    
-                    <p>&#34;Yup. She&#39;s Julia Sterling from the Sterling Group,&#34; Spencer bowed and reported his findings.</p>
-                    
-                    <p>&#34;The Sterling Group is already a wreck. I can&#39;t believe she&#39;s still acting so arrogantly,&#34; Henry scorned</p>
-                    
-                    <p>before giving his orders. &#34;You should know what to do.&#34;</p>
-                    
-                    <p>&#34;Yes, Mr. Nacht.&#34; Spencer nodded.</p>
-                    
-                    <p>&#34;No... Please don&#39;t...&#34; Julia was so scared that her knees almost gave way, causing her to nearly fall to</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>the ground.</p>
-                    
-                    <p>Two of her bodyguards immediately stepped forward to support her while the woman cried, &#34;Mr. Nacht,</p>
-                    
-                    <p>please have mercy on us Sterlings. It&#39;s all my fault. You can punish me however you wish, and I&#39;m</p>
-                    
-                    <p>willing to accept it...&#34;</p>
-                    
-                    <p>&#34;She&#39;s so noisy,&#34; Henry commented with a frown.</p>
-                    
-                    <p>Spencer gestured to the Nacht family&#39;s bodyguards, who took Julia away at once.</p>
-                    
-                    <p>Quiet and peace ensued once again after the woman was gone.</p>
-                    
-                    <p>At the same time, Jamie and Ellie were utterly gobsmacked and were still stunned after a long while.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>As for Robbie, he had watched the entire scene unfold calmly with a twinkle in his eye.</p>
-                    
-                    <p>&#34;What&#39;s wrong, my darlings? Did Mr. Henry scare you?&#34; Henry squatted down to comfort the kids.</p>
-                    
-                    <p>&#34;Nope. Mr. Henry is protecting us,&#34; Jamie quickly regained his composure and replied excitedly. &#34;Mr.</p>
-                    
-                    <p>Henry, are you a king? Why is that fierce grandma so afraid of you?&#34;</p>
-                    
-                    <p>&#34;Hahaha...&#34; Henry laughed. &#34;Mr. Henry isn&#39;t a king, but if Jamie likes it, Mr. Henry can buy an island and</p>
-                    
-                    <p>become the king of that island. That way, Jamie would become the prince of that island.&#34;</p>
-                    
-                    <p>&#34;Really? Hooray!&#34; Jamie almost jumped up in excitement.</p>
-                    
-                    <p>&#34;Yay! Then I&#39;ll be the princess of that island!&#34; Ellie raised her chubby hands and continued, &#34;I wanna</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;Yeah? Didn&#39;t you say you wanted to teach me a lesson?&#34; Henry cocked his eyebrow coldly.</p>
+                        
+                        <p>&#34;No! I wouldn&#39;t dare to...&#34; Julia apologized immediately, &#34;Please forgive me for being ignorant...&#34;</p>
+                        
+                        <p>&#34;How did it go? Have you found out?&#34; Completely ignoring Julia, Henry turned to speak to Spencer.</p>
+                        
+                        <p>&#34;Yup. She&#39;s Julia Sterling from the Sterling Group,&#34; Spencer bowed and reported his findings.</p>
+                        
+                        <p>&#34;The Sterling Group is already a wreck. I can&#39;t believe she&#39;s still acting so arrogantly,&#34; Henry scorned</p>
+                        
+                        <p>before giving his orders. &#34;You should know what to do.&#34;</p>
+                        
+                        <p>&#34;Yes, Mr. Nacht.&#34; Spencer nodded.</p>
+                        
+                        <p>&#34;No... Please don&#39;t...&#34; Julia was so scared that her knees almost gave way, causing her to nearly fall to</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2479,52 +2456,124 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>live in a castle and ride on a white horse!&#34;</p>
-                    
-                    <p>&#34;Hahaha! Not a problem!&#34; Henry laughed heartily and turned around to look at Robbie. &#34;Robbie, how</p>
-                    
-                    <p>about you? What do you want?&#34;</p>
-                    
-                    <p>&#34;I want to have ultimate power,&#34; Robbie said faintly as he stared towards the direction of the entrance.</p>
-                    
-                    <p>&#34;I want to be like Mr. Henry and be respected by people everywhere I go. I also want to be feared by</p>
-                    
-                    <p>the bad guys so that I can protect Mommy and my siblings!&#34;</p>
-                    
-                    <p>&#34;Good boy!&#34; Henry was thrilled to hear that and embraced the boy. &#34;You&#39;re such a promising kid!&#34;</p>
-                    
-                    <p>At that moment, Henry was extremely emotional, and a mixture of feelings surged within his heart. &#34;Do</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>the ground.</p>
+                        
+                        <p>Two of her bodyguards immediately stepped forward to support her while the woman cried, &#34;Mr. Nacht,</p>
+                        
+                        <p>please have mercy on us Sterlings. It&#39;s all my fault. You can punish me however you wish, and I&#39;m</p>
+                        
+                        <p>willing to accept it...&#34;</p>
+                        
+                        <p>&#34;She&#39;s so noisy,&#34; Henry commented with a frown.</p>
+                        
+                        <p>Spencer gestured to the Nacht family&#39;s bodyguards, who took Julia away at once.</p>
+                        
+                        <p>Quiet and peace ensued once again after the woman was gone.</p>
+                        
+                        <p>At the same time, Jamie and Ellie were utterly gobsmacked and were still stunned after a long while.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>As for Robbie, he had watched the entire scene unfold calmly with a twinkle in his eye.</p>
+                        
+                        <p>&#34;What&#39;s wrong, my darlings? Did Mr. Henry scare you?&#34; Henry squatted down to comfort the kids.</p>
+                        
+                        <p>&#34;Nope. Mr. Henry is protecting us,&#34; Jamie quickly regained his composure and replied excitedly. &#34;Mr.</p>
+                        
+                        <p>Henry, are you a king? Why is that fierce grandma so afraid of you?&#34;</p>
+                        
+                        <p>&#34;Hahaha...&#34; Henry laughed. &#34;Mr. Henry isn&#39;t a king, but if Jamie likes it, Mr. Henry can buy an island and</p>
+                        
+                        <p>become the king of that island. That way, Jamie would become the prince of that island.&#34;</p>
+                        
+                        <p>&#34;Really? Hooray!&#34; Jamie almost jumped up in excitement.</p>
+                        
+                        <p>&#34;Yay! Then I&#39;ll be the princess of that island!&#34; Ellie raised her chubby hands and continued, &#34;I wanna</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>live in a castle and ride on a white horse!&#34;</p>
+                        
+                        <p>&#34;Hahaha! Not a problem!&#34; Henry laughed heartily and turned around to look at Robbie. &#34;Robbie, how</p>
+                        
+                        <p>about you? What do you want?&#34;</p>
+                        
+                        <p>&#34;I want to have ultimate power,&#34; Robbie said faintly as he stared towards the direction of the entrance.</p>
+                        
+                        <p>&#34;I want to be like Mr. Henry and be respected by people everywhere I go. I also want to be feared by</p>
+                        
+                        <p>the bad guys so that I can protect Mommy and my siblings!&#34;</p>
+                        
+                        <p>&#34;Good boy!&#34; Henry was thrilled to hear that and embraced the boy. &#34;You&#39;re such a promising kid!&#34;</p>
+                        
+                        <p>At that moment, Henry was extremely emotional, and a mixture of feelings surged within his heart. &#34;Do</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>you know that someone had said the same words to me before?&#34;</p>
-                    
-                    <p>&#34;Really? Who&#39;s that?&#34; Robbie asked curiously.</p>
-                    
-                    <p>&#34;My grandson.&#34; Henry was overcome with emotions as he said that. &#34;He told me that when he was just</p>
-                    
-                    <p>five years old. I was so excited then, thinking that the future of our Nacht family would be in good</p>
-                    
-                    <p>hands!&#34;</p>
-                    
-                    <p>Henry tousled Robbie&#39;s hair and let out a sigh. &#34;How wonderful would it be if the three of you are truly</p>
-                    
-                    <p>the heirs of our Nacht family.&#34;</p>
-                    
-                    <p>&#34;What heirs?&#34; Jamie was not focused on listening to Henry as he was just looking forward to playing.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>you know that someone had said the same words to me before?&#34;</p>
+                        
+                        <p>&#34;Really? Who&#39;s that?&#34; Robbie asked curiously.</p>
+                        
+                        <p>&#34;My grandson.&#34; Henry was overcome with emotions as he said that. &#34;He told me that when he was just</p>
+                        
+                        <p>five years old. I was so excited then, thinking that the future of our Nacht family would be in good</p>
+                        
+                        <p>hands!&#34;</p>
+                        
+                        <p>Henry tousled Robbie&#39;s hair and let out a sigh. &#34;How wonderful would it be if the three of you are truly</p>
+                        
+                        <p>the heirs of our Nacht family.&#34;</p>
+                        
+                        <p>&#34;What heirs?&#34; Jamie was not focused on listening to Henry as he was just looking forward to playing.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2536,52 +2585,60 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Mr. Henry, I wanna go over there and play.&#34;</p>
-                    
-                    <p>&#34;I saw ice-cream. I wanna have some ice-cream... u</p>
-                    
-                    <p>Ellie lifted the hem of her dress slightly and sprinted off with two bodyguards chasing after her.</p>
-                    
-                    <p>&#34;Ellie, wait for me!&#34; Jamie yelled after his sister while one bodyguard pushed his wheelchair.</p>
-                    
-                    <p>In the meantime, Robbie was the only one who was listening to Henry and asked in confusion, &#34;Mr.</p>
-                    
-                    <p>Henry, is your eldest grandson infertile?&#34;</p>
-                    
-                    <p>&#34;Pfft! Ahem! Ahem!&#34; Henry was amused at the child&#39;s question and did not know how to respond.</p>
-                    
-                    <p>No matter how smart Robbie was, he was still a kid and did not fully understand the concept of blood</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Mr. Henry, I wanna go over there and play.&#34;</p>
+                        
+                        <p>&#34;I saw ice-cream. I wanna have some ice-cream... u</p>
+                        
+                        <p>Ellie lifted the hem of her dress slightly and sprinted off with two bodyguards chasing after her.</p>
+                        
+                        <p>&#34;Ellie, wait for me!&#34; Jamie yelled after his sister while one bodyguard pushed his wheelchair.</p>
+                        
+                        <p>In the meantime, Robbie was the only one who was listening to Henry and asked in confusion, &#34;Mr.</p>
+                        
+                        <p>Henry, is your eldest grandson infertile?&#34;</p>
+                        
+                        <p>&#34;Pfft! Ahem! Ahem!&#34; Henry was amused at the child&#39;s question and did not know how to respond.</p>
+                        
+                        <p>No matter how smart Robbie was, he was still a kid and did not fully understand the concept of blood</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>relations. He simply thought that Henry&#39;s eldest grandson was unable to bear children, and that was</p>
-                    
-                    <p>why the old man was envious of others.</p>
-                    
-                    <p>It&#39;s so pitiful that Mr. Henry&#39;s eldest grandson is unable to have kids. No wonder that man has such a</p>
-                    
-                    <p>weird temper.</p>
-                    
-                    <p>&#34;It&#39;s OK. The three of us will be your grandchildren from now onward,&#34; Robbie said in an attempt to</p>
-                    
-                    <p>comfort Henry. &#34;Mr. Henry, let&#39;s go in together. I saw lots of delicious snacks.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>relations. He simply thought that Henry&#39;s eldest grandson was unable to bear children, and that was</p>
+                        
+                        <p>why the old man was envious of others.</p>
+                        
+                        <p>It&#39;s so pitiful that Mr. Henry&#39;s eldest grandson is unable to have kids. No wonder that man has such a</p>
+                        
+                        <p>weird temper.</p>
+                        
+                        <p>&#34;It&#39;s OK. The three of us will be your grandchildren from now onward,&#34; Robbie said in an attempt to</p>
+                        
+                        <p>comfort Henry. &#34;Mr. Henry, let&#39;s go in together. I saw lots of delicious snacks.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
@@ -4299,6 +4356,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4385,9 +4522,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4451,7 +4589,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4496,13 +4633,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4559,21 +4693,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

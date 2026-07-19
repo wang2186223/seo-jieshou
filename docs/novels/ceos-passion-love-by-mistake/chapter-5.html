@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.189857",
-        "dateModified": "2026-07-17T17:08:28.189857",
+        "datePublished": "2026-07-19T13:10:23.965736",
+        "dateModified": "2026-07-19T13:10:23.965736",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,60 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 5</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>As this was the first time this had happened to her, Natalie was rather panicked and afraid. Nevertheless, she was quick to calm down. First, she called the emergency services to send an ambulance over. Then, she contacted Joyce, wanting her to come over and take the children away.</p>
-                    
-                    <p>Ultimately, she did not want this accident to traumatize her children.</p>
-                    
-                    <p>Soon after that, Joyce arrived, and so did the ambulance.</p>
-                    
-                    <p>After stabilizing the man’s injuries, the male paramedic muttered to himself, “Huh... That’s weird. Why does this look like a stab wound?”</p>
-                    
-                    <p>Although Natalie heard the soft mumble, she was too busy worrying about her children than to think much of it.</p>
-                    
-                    <p>With that, she helped the paramedic carry the man onboard the ambulance.</p>
-                    
-                    <p>Under the lights of the ambulance, she finally got a good look at the man’s appearance.</p>
-                    
-                    <p>The man lying on the stretcher had a tall and slender build. His features were chiseled and well- defined, which was a very distinguished look. With a face like that, there was no way anybody would be able to mistake him for anyone else. Even in his unconscious state, he exuded a noble and elegant air.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>Her keen eyes noted the bloodstained royal blue suit he was clad in. It fit his body perfectly.</p>
-                    
-                    <p>Obviously, this was not a normal store-bought suit; it was a bespoke suit.</p>
-                    
-                    <p>In an instant, her heart sank to the bottom of her stomach at the observation.</p>
-                    
-                    <p>Arghhhh! I’m pretty sure he’s some rich kid from a wealthy family, and that’s just going to make this situation a whole lot more complicated. These rich people are always very snooty when it comes to compensation - just my luck! But then again... what is a man like him doing all the way out here in the countryside?</p>
-                    
-                    <p>Whenever the ambulance drove over the potholes on the uneven road, the jerky motion tugged on the man’s abdominal wound. Pressing his lips into a thin line, his brows were furrowed slightly as he gritted his teeth and bore with the pain. Despite that, not a single sound left his lips.</p>
-                    
-                    <p>Whenever the ambulance drove over the potholes on the uneven road, the jerky motion tugged on the man’s abdominal wound. Pressing his lips into a thin line, his brows were furrowed slightly as he gritted his teeth and bore with the pain. Despite that, not a single sound left his lips.</p>
-                    
-                    <p>Inexplicably, this reminded Natalie of her son’s stubborn personality.</p>
-                    
-                    <p>At the thought of Connor, she abruptly realized this man looked oddly similar to her son as well.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>As this was the first time this had happened to her, Natalie was rather panicked and afraid. Nevertheless, she was quick to calm down. First, she called the emergency services to send an ambulance over. Then, she contacted Joyce, wanting her to come over and take the children away.</p>
+                        
+                        <p>Ultimately, she did not want this accident to traumatize her children.</p>
+                        
+                        <p>Soon after that, Joyce arrived, and so did the ambulance.</p>
+                        
+                        <p>After stabilizing the man’s injuries, the male paramedic muttered to himself, “Huh... That’s weird. Why does this look like a stab wound?”</p>
+                        
+                        <p>Although Natalie heard the soft mumble, she was too busy worrying about her children than to think much of it.</p>
+                        
+                        <p>With that, she helped the paramedic carry the man onboard the ambulance.</p>
+                        
+                        <p>Under the lights of the ambulance, she finally got a good look at the man’s appearance.</p>
+                        
+                        <p>The man lying on the stretcher had a tall and slender build. His features were chiseled and well- defined, which was a very distinguished look. With a face like that, there was no way anybody would be able to mistake him for anyone else. Even in his unconscious state, he exuded a noble and elegant air.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2451,80 +2456,60 @@
                 
                 
                 
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Her keen eyes noted the bloodstained royal blue suit he was clad in. It fit his body perfectly.</p>
+                        
+                        <p>Obviously, this was not a normal store-bought suit; it was a bespoke suit.</p>
+                        
+                        <p>In an instant, her heart sank to the bottom of her stomach at the observation.</p>
+                        
+                        <p>Arghhhh! I’m pretty sure he’s some rich kid from a wealthy family, and that’s just going to make this situation a whole lot more complicated. These rich people are always very snooty when it comes to compensation - just my luck! But then again... what is a man like him doing all the way out here in the countryside?</p>
+                        
+                        <p>Whenever the ambulance drove over the potholes on the uneven road, the jerky motion tugged on the man’s abdominal wound. Pressing his lips into a thin line, his brows were furrowed slightly as he gritted his teeth and bore with the pain. Despite that, not a single sound left his lips.</p>
+                        
+                        <p>Whenever the ambulance drove over the potholes on the uneven road, the jerky motion tugged on the man’s abdominal wound. Pressing his lips into a thin line, his brows were furrowed slightly as he gritted his teeth and bore with the pain. Despite that, not a single sound left his lips.</p>
+                        
+                        <p>Inexplicably, this reminded Natalie of her son’s stubborn personality.</p>
+                        
+                        <p>At the thought of Connor, she abruptly realized this man looked oddly similar to her son as well.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="2">
-                    
-                    <p>The agony of his abdomen injury was probably getting to the man as huge droplets of sweat began to dot his forehead.</p>
-                    
-                    <p>At the sight of the injured man in distress, Natalie felt the guilt rising within her. Thus, she reached out, intending to wipe the sweat off him.</p>
-                    
-                    <p>The instant her fingers brushed against his skin, his hand snapped up to clamp down on her wrist.</p>
-                    
-                    <p>Jolting up in shock, she looked at the man, only to be met with his opened eyes.</p>
-                    
-                    <p>Yet, the moment their gazes locked on each other, he fell unconscious again.</p>
-                    
-                    <p>Unfortunately, his grip on her wrist did not loosen.</p>
-                    
-                    <p>She tried to wrench her hand free several times along the journey, but all her efforts were futile. In the end, she gave up because she did not want to injure him further by accidentally jostling him with her struggles. That would only make things worse for everyone.</p>
-                    
-                    <p>Thus, she had no choice but to be dragged along as they rushed toward the operating room. He did not let go of her even when the doctor was suturing his wounds.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>His persistence ond resolve shocked everyone oround, even the medicol stoff.</p>
-                    
-                    <p>As o motter of foct, some of them were wondering whot the relotionship between them wos. Whotever it wos, it wos definitely not o simple one.</p>
-                    
-                    <p>However, deep in her heort, Notolie knew the reoson for his stubborn refusol to let her go. He must be worried thot I’ll run owoy!</p>
-                    
-                    <p>Holf on hour loter, the doctor onnounced thot the mon wos free from further complicotions, ond his condition hod stobilized. He wos then sent to o normol hospitol word to recuperote.</p>
-                    
-                    <p>And finolly, the mon’s hond loosened its vice-like grip on her wrist.</p>
-                    
-                    <p>As soon os he let go, Notolie’s wrist wos throbbing with poin while her fingers hod gone numb. Thot wos o testoment to how much strength the mon hod been using to hold her.</p>
-                    
-                    <p>“Are you the potient’s fomily member? Pleose sign here.” A nurse come over with o form thot needed to be signed ond honded it to Notolie.</p>
-                    
-                    <p>“Um... I...”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Notolie troiled off. Originolly, she hod intended on denying she wos o fomily member. But she chonged her mind ofter costing o glonce ot the unconscious mon on the bed. With o heovy sigh, she picked up the pen ond signed the form.</p>
-                    
-                    <p>Looks like this is on me now.</p>
-                    
-                    <p>In the end, this wos oll her foult onywoy. She could not hide from her responsibility.</p>
-                    
-                    <p>Besides, there wos nothing on the mon thot could prove his identity. Thot olso meont there wos no woy of contocting his fomily.</p>
-                    
-                    <p>Worried obout his condition, she curled up on o wooden seot beside the bed. Eventuolly, she fell into o fitful sleep.</p>
-                    
-                    <p>His persistence and resolve shocked everyone around, even the medical staff.</p>
-                    
-                    <p>As a matter of fact, some of them were wondering what the relationship between them was. Whatever it was, it was definitely not a simple one.</p>
-                    
-                    <p>However, deep in her heart, Natalie knew the reason for his stubborn refusal to let her go. He must be worried that I’ll run away!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>The agony of his abdomen injury was probably getting to the man as huge droplets of sweat began to dot his forehead.</p>
+                        
+                        <p>At the sight of the injured man in distress, Natalie felt the guilt rising within her. Thus, she reached out, intending to wipe the sweat off him.</p>
+                        
+                        <p>The instant her fingers brushed against his skin, his hand snapped up to clamp down on her wrist.</p>
+                        
+                        <p>Jolting up in shock, she looked at the man, only to be met with his opened eyes.</p>
+                        
+                        <p>Yet, the moment their gazes locked on each other, he fell unconscious again.</p>
+                        
+                        <p>Unfortunately, his grip on her wrist did not loosen.</p>
+                        
+                        <p>She tried to wrench her hand free several times along the journey, but all her efforts were futile. In the end, she gave up because she did not want to injure him further by accidentally jostling him with her struggles. That would only make things worse for everyone.</p>
+                        
+                        <p>Thus, she had no choice but to be dragged along as they rushed toward the operating room. He did not let go of her even when the doctor was suturing his wounds.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2535,45 +2520,117 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>Half an hour later, the doctor announced that the man was free from further complications, and his condition had stabilized. He was then sent to a normal hospital ward to recuperate.</p>
-                    
-                    <p>And finally, the man’s hand loosened its vice-like grip on her wrist.</p>
-                    
-                    <p>As soon as he let go, Natalie’s wrist was throbbing with pain while her fingers had gone numb. That was a testament to how much strength the man had been using to hold her.</p>
-                    
-                    <p>“Are you the patient’s family member? Please sign here.” A nurse came over with a form that needed to be signed and handed it to Natalie.</p>
-                    
-                    <p>“Um... I...”</p>
-                    
-                    <p>Natalie trailed off. Originally, she had intended on denying she was a family member. But she changed her mind after casting a glance at the unconscious man on the bed. With a heavy sigh, she picked up the pen and signed the form.</p>
-                    
-                    <p>Looks like this is on me now.</p>
-                    
-                    <p>In the end, this was all her fault anyway. She could not hide from her responsibility.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>His persistence ond resolve shocked everyone oround, even the medicol stoff.</p>
+                        
+                        <p>As o motter of foct, some of them were wondering whot the relotionship between them wos. Whotever it wos, it wos definitely not o simple one.</p>
+                        
+                        <p>However, deep in her heort, Notolie knew the reoson for his stubborn refusol to let her go. He must be worried thot I’ll run owoy!</p>
+                        
+                        <p>Holf on hour loter, the doctor onnounced thot the mon wos free from further complicotions, ond his condition hod stobilized. He wos then sent to o normol hospitol word to recuperote.</p>
+                        
+                        <p>And finolly, the mon’s hond loosened its vice-like grip on her wrist.</p>
+                        
+                        <p>As soon os he let go, Notolie’s wrist wos throbbing with poin while her fingers hod gone numb. Thot wos o testoment to how much strength the mon hod been using to hold her.</p>
+                        
+                        <p>“Are you the potient’s fomily member? Pleose sign here.” A nurse come over with o form thot needed to be signed ond honded it to Notolie.</p>
+                        
+                        <p>“Um... I...”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Notolie troiled off. Originolly, she hod intended on denying she wos o fomily member. But she chonged her mind ofter costing o glonce ot the unconscious mon on the bed. With o heovy sigh, she picked up the pen ond signed the form.</p>
+                        
+                        <p>Looks like this is on me now.</p>
+                        
+                        <p>In the end, this wos oll her foult onywoy. She could not hide from her responsibility.</p>
+                        
+                        <p>Besides, there wos nothing on the mon thot could prove his identity. Thot olso meont there wos no woy of contocting his fomily.</p>
+                        
+                        <p>Worried obout his condition, she curled up on o wooden seot beside the bed. Eventuolly, she fell into o fitful sleep.</p>
+                        
+                        <p>His persistence and resolve shocked everyone around, even the medical staff.</p>
+                        
+                        <p>As a matter of fact, some of them were wondering what the relationship between them was. Whatever it was, it was definitely not a simple one.</p>
+                        
+                        <p>However, deep in her heart, Natalie knew the reason for his stubborn refusal to let her go. He must be worried that I’ll run away!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Half an hour later, the doctor announced that the man was free from further complications, and his condition had stabilized. He was then sent to a normal hospital ward to recuperate.</p>
+                        
+                        <p>And finally, the man’s hand loosened its vice-like grip on her wrist.</p>
+                        
+                        <p>As soon as he let go, Natalie’s wrist was throbbing with pain while her fingers had gone numb. That was a testament to how much strength the man had been using to hold her.</p>
+                        
+                        <p>“Are you the patient’s family member? Please sign here.” A nurse came over with a form that needed to be signed and handed it to Natalie.</p>
+                        
+                        <p>“Um... I...”</p>
+                        
+                        <p>Natalie trailed off. Originally, she had intended on denying she was a family member. But she changed her mind after casting a glance at the unconscious man on the bed. With a heavy sigh, she picked up the pen and signed the form.</p>
+                        
+                        <p>Looks like this is on me now.</p>
+                        
+                        <p>In the end, this was all her fault anyway. She could not hide from her responsibility.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Besides, there was nothing on the man that could prove his identity. That also meant there was no way of contacting his family.</p>
-                    
-                    <p>Worried about his condition, she curled up on a wooden seat beside the bed. Eventually, she fell into a fitful sleep.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Besides, there was nothing on the man that could prove his identity. That also meant there was no way of contacting his family.</p>
+                        
+                        <p>Worried about his condition, she curled up on a wooden seat beside the bed. Eventually, she fell into a fitful sleep.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
@@ -4291,6 +4348,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4377,9 +4514,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4443,7 +4581,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4488,13 +4625,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4551,21 +4685,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.354677",
-        "dateModified": "2026-07-17T17:08:28.354677",
+        "datePublished": "2026-07-19T13:10:24.143000",
+        "dateModified": "2026-07-19T13:10:24.143000",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,70 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 161</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“I’m here to seek justice for the things Susan did to me. What do you think should be done?” Natalie’s smile disappeared as her face turned stone cold once again.</p>
-                    
-                    <p>Harrison cleared his throat. “What do you want?”</p>
-                    
-                    <p>Natalie looked down and answered, “Give me twenty million, and we’ll call it even.”</p>
-                    
-                    <p>It was not that Natalie was kind or timid, but she knew that Harrison would do anything to protect Susan. Even with the evidence, she would be no match for her father.</p>
-                    
-                    <p>Harrison would side with Susan against his daughter even if he knew about his wife’s affair, for he would not want Natalie to spread the scandal. That was why Natalie decided to ask for money instead and wait for the right time to deal with Susan.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“I’m here to seek justice for the things Susan did to me. What do you think should be done?” Natalie’s smile disappeared as her face turned stone cold once again.</p>
+                        
+                        <p>Harrison cleared his throat. “What do you want?”</p>
+                        
+                        <p>Natalie looked down and answered, “Give me twenty million, and we’ll call it even.”</p>
+                        
+                        <p>It was not that Natalie was kind or timid, but she knew that Harrison would do anything to protect Susan. Even with the evidence, she would be no match for her father.</p>
+                        
+                        <p>Harrison would side with Susan against his daughter even if he knew about his wife’s affair, for he would not want Natalie to spread the scandal. That was why Natalie decided to ask for money instead and wait for the right time to deal with Susan.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Twenty million? Are you trying to rob us blind?” Susan slammed the table, and Harrison did not look pleased with the demand either.</p>
-                    
-                    <p>Natalie shrugged in response. “I think it’s only fair, given that you ruined my equipment and even tried to murder me. I could’ve just sent you to prison.”</p>
-                    
-                    <p>At that point, Natalie cheekily leaned closer to Susan. “There’s one more thing that you should know. Mr. Shane was with me the night of the robbery and last night too. That means you almost got him killed as well.”</p>
-                    
-                    <p>“What?” Susan felt as if her world had crumbled.</p>
-                    
-                    <p>Harrison, who was just as shocked, fell back into his chair like a rag doll.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>He could not even bother to wonder why Shane was with Natalie because his mind was occupied by the fact that Susan almost got Shane killed. It took a while before the man came back to his senses.</p>
-                    
-                    <p>“I’ll get you your twenty million,” promised Harrison with a bitter smile and weak gesture. It was as if he had suddenly lost years of vitality.</p>
-                    
-                    <p>The man had no choice but to agree with the demand because Natalie could ask for more if she asked for Shane’s help.</p>
-                    
-                    <p>Even if Shane decided not to get involved, with the evidence Natalie had, it would cost Harrison a lot more to protect Susan. Hence, he decided to pay his daughter and keep his loss to a minimum.</p>
-                    
-                    <p>“Good! This is my bank account.” Natalie placed a note that she had prepared in front of her father and asked deliberately, “You’re not going to be like Susan after transferring me the money, are you? No hard feelings, right?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Twenty million? Are you trying to rob us blind?” Susan slammed the table, and Harrison did not look pleased with the demand either.</p>
+                        
+                        <p>Natalie shrugged in response. “I think it’s only fair, given that you ruined my equipment and even tried to murder me. I could’ve just sent you to prison.”</p>
+                        
+                        <p>At that point, Natalie cheekily leaned closer to Susan. “There’s one more thing that you should know. Mr. Shane was with me the night of the robbery and last night too. That means you almost got him killed as well.”</p>
+                        
+                        <p>“What?” Susan felt as if her world had crumbled.</p>
+                        
+                        <p>Harrison, who was just as shocked, fell back into his chair like a rag doll.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2461,62 +2476,22 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>After hearing that, Harrison’s blood pressure instantly shot up. “Get out!” roared the man fiercely.</p>
-                    
-                    <p>“No problem!” Natalie waved goodbye and strolled out of the house.</p>
-                    
-                    <p>Susan bit her lower lip as she looked at her husband, “Harrison... “</p>
-                    
-                    <p>“Get out of my sight! Go and reflect on what you’ve done.” Harrison clutched his chest in pain.</p>
-                    
-                    <p>“Okay.” Although Susan nodded in response, she had nothing but hate for her stepdaughter on the inside.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>It’s all Natalie’s fault!</p>
-                    
-                    <p>I’ll make sure that b*tch is dead for good! She won’t be so lucky next time.</p>
-                    
-                    <p>Unbeknownst to Natalie, Susan only hated her even more instead of changing for the better. After leaving the Smiths, Natalie was on her way back to tell Joyce the good news when she spotted a familiar car, so she decided to check it out.</p>
-                    
-                    <p>Before she even reached the car, the driver seat window rolled down, revealing Shane’s handsome face.</p>
-                    
-                    <p>“Mr. Shane!” Natalie was pleasantly surprised to see the man, and he could tell.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>“Yup!”</p>
-                    
-                    <p>“Why are you here?” asked Natalie curiously.</p>
-                    
-                    <p>Shane rested his arm on the car door. “To pick you up.”</p>
-                    
-                    <p>“Me?” Natalie gave the man a puzzled look.</p>
-                    
-                    <p>Shane then nodded in response. “I heard from Joyce that you came here to the Smiths. I am worried that they might harm you, so I came too.”</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>He could not even bother to wonder why Shane was with Natalie because his mind was occupied by the fact that Susan almost got Shane killed. It took a while before the man came back to his senses.</p>
+                        
+                        <p>“I’ll get you your twenty million,” promised Harrison with a bitter smile and weak gesture. It was as if he had suddenly lost years of vitality.</p>
+                        
+                        <p>The man had no choice but to agree with the demand because Natalie could ask for more if she asked for Shane’s help.</p>
+                        
+                        <p>Even if Shane decided not to get involved, with the evidence Natalie had, it would cost Harrison a lot more to protect Susan. Hence, he decided to pay his daughter and keep his loss to a minimum.</p>
+                        
+                        <p>“Good! This is my bank account.” Natalie placed a note that she had prepared in front of her father and asked deliberately, “You’re not going to be like Susan after transferring me the money, are you? No hard feelings, right?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2527,19 +2502,101 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>It warmed Natalie’s heart to hear that. “I see. Don’t worry. They didn’t do anything to me.”</p>
-                    
-                    <p>“Good to know! Then get in the car. We have a lot to do! Today’s the last day for the models’ rehearsal, and the opening is tomorrow.” Shane opened the passenger door for her.</p>
-                    
-                    <p>Then, Natalie went around the car and got in unabashedly.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>After hearing that, Harrison’s blood pressure instantly shot up. “Get out!” roared the man fiercely.</p>
+                        
+                        <p>“No problem!” Natalie waved goodbye and strolled out of the house.</p>
+                        
+                        <p>Susan bit her lower lip as she looked at her husband, “Harrison... “</p>
+                        
+                        <p>“Get out of my sight! Go and reflect on what you’ve done.” Harrison clutched his chest in pain.</p>
+                        
+                        <p>“Okay.” Although Susan nodded in response, she had nothing but hate for her stepdaughter on the inside.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>It’s all Natalie’s fault!</p>
+                        
+                        <p>I’ll make sure that b*tch is dead for good! She won’t be so lucky next time.</p>
+                        
+                        <p>Unbeknownst to Natalie, Susan only hated her even more instead of changing for the better. After leaving the Smiths, Natalie was on her way back to tell Joyce the good news when she spotted a familiar car, so she decided to check it out.</p>
+                        
+                        <p>Before she even reached the car, the driver seat window rolled down, revealing Shane’s handsome face.</p>
+                        
+                        <p>“Mr. Shane!” Natalie was pleasantly surprised to see the man, and he could tell.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Yup!”</p>
+                        
+                        <p>“Why are you here?” asked Natalie curiously.</p>
+                        
+                        <p>Shane rested his arm on the car door. “To pick you up.”</p>
+                        
+                        <p>“Me?” Natalie gave the man a puzzled look.</p>
+                        
+                        <p>Shane then nodded in response. “I heard from Joyce that you came here to the Smiths. I am worried that they might harm you, so I came too.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>It warmed Natalie’s heart to hear that. “I see. Don’t worry. They didn’t do anything to me.”</p>
+                        
+                        <p>“Good to know! Then get in the car. We have a lot to do! Today’s the last day for the models’ rehearsal, and the opening is tomorrow.” Shane opened the passenger door for her.</p>
+                        
+                        <p>Then, Natalie went around the car and got in unabashedly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
@@ -4257,6 +4314,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4343,9 +4480,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4409,7 +4547,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4454,13 +4591,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4517,21 +4651,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,11 +993,7 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
@@ -1005,10 +1001,13 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.894960",
-        "dateModified": "2026-07-17T17:08:28.894960",
+        "datePublished": "2026-07-19T13:10:24.715359",
+        "dateModified": "2026-07-19T13:10:24.715359",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,108 +2422,58 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 679</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Downstairs, Sharon got up from Mrs. Wilson&#39;s embrace. Both her eyes were red and puffy from all the crying.</p>
-                    
-                    <p>That gave Mrs. Wilson a twinge, so she held her puny face up and blew some air to her eyes.</p>
-                    
-                    <p>Sharon sobbed as she asked, “Mrs. Wilson, Mommy will be fine, right?”</p>
-                    
-                    <p>“Yes, she&#39;ll be alright. Your daddy has gone to rescue her, so Sharon should just wait at home, alright?” Mrs. Wilson stroke Sharon&#39;s hair and comforted her.</p>
-                    
-                    <p>Sharon bit her lip in apprehension and returned, “But I&#39;m still worried.”</p>
-                    
-                    <p>“Don&#39;t worry.” Mrs. Wilson replied softly, “We have to have faith in your daddy. He will surely bring Mommy back.”</p>
-                    
-                    <p>Sharon nodded and acknowledged what Mrs. Wilson said.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Downstairs, Sharon got up from Mrs. Wilson&#39;s embrace. Both her eyes were red and puffy from all the crying.</p>
+                        
+                        <p>That gave Mrs. Wilson a twinge, so she held her puny face up and blew some air to her eyes.</p>
+                        
+                        <p>Sharon sobbed as she asked, “Mrs. Wilson, Mommy will be fine, right?”</p>
+                        
+                        <p>“Yes, she&#39;ll be alright. Your daddy has gone to rescue her, so Sharon should just wait at home, alright?” Mrs. Wilson stroke Sharon&#39;s hair and comforted her.</p>
+                        
+                        <p>Sharon bit her lip in apprehension and returned, “But I&#39;m still worried.”</p>
+                        
+                        <p>“Don&#39;t worry.” Mrs. Wilson replied softly, “We have to have faith in your daddy. He will surely bring Mommy back.”</p>
+                        
+                        <p>Sharon nodded and acknowledged what Mrs. Wilson said.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Mrs. Wilson added, “Are you tired? Let me take you back to your bedroom to rest, okay? Maybe when you wake up, Daddy and Mommy will be home then.”</p>
-                    
-                    <p>“No.” Sharon shook her head. “I don&#39;t want to sleep. I want to wait here.”</p>
-                    
-                    <p>“That&#39;s fine, too.” Knowing that Sharon couldn&#39;t get it off her mind, Mrs. Wilson didn&#39;t persist in persuading her. It&#39;s the weekend tomorrow after all. I shall just let her wait a little longer then.</p>
-                    
-                    <p>At the stairwell on the second floor, however, Jacqueline heard everything that Mrs. Wilson and Sharon said. Her fingers on the railing curled up tightly in excitement as a sparky glint glowed in her eyes.</p>
-                    
-                    <p>Something unpleasant happened to Natalie. That&#39;s why she still hasn&#39;t come home.</p>
-                    
-                    <p>This is great!</p>
-                    
-                    <p>It&#39;s just that I have totally no idea what happened.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Nevertheless, looking at the way that damn little girl was crying and the look of distress in that old woman&#39;s eyes, I&#39;m sure it isn&#39;t something simple.</p>
-                    
-                    <p>It would be best if Natalie never makes it home ever again.</p>
-                    
-                    <p>Jacqueline was bearing some vicious thoughts.</p>
-                    
-                    <p>In the study on the third floor, Connor was sitting in front of the computer with his fingers tapping on the keyboard incessantly. And as he typed, his tender little face grew increasingly somber.</p>
-                    
-                    <p>After around a minute, Connor finally stopped his typing motion. Both his hands clasped around each other, and his eyes reddened as tears welled up within them, almost overflowing.</p>
-                    
-                    <p>He took in a deep breath and snuffled, repressing his urge to cry as he reached out to the microphone at the side and spoke into it, “Daddy, I can&#39;t find Mommy.”</p>
-                    
-                    <p>“What do you mean?” Shane&#39;s gaze turned drastically sharp in an instant.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Connor answered chokingly, “Mommy&#39;s tracker has malfunctioned, and I can&#39;t track her location, boo hoo hoo...”</p>
-                    
-                    <p>At that moment, the child who had always been strong couldn&#39;t hold it anymore and burst out crying.</p>
-                    
-                    <p>Listening to the little boy&#39;s crying, Shane felt a twitch in his heart as well.</p>
-                    
-                    <p>He held the satellite phone tightly, suppressed his own disconcertment, and comforted the little boy as softly as he could, “Don&#39;t worry, I will find her. I promise I will!”</p>
-                    
-                    <p>“Really?” asked Connor.</p>
-                    
-                    <p>Shane acknowledged, “I promise. You stay home and look after your sister, alright?”</p>
-                    
-                    <p>“I got it, Daddy. You must find Mommy, you must do that!” Connor said repeatedly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Mrs. Wilson added, “Are you tired? Let me take you back to your bedroom to rest, okay? Maybe when you wake up, Daddy and Mommy will be home then.”</p>
+                        
+                        <p>“No.” Sharon shook her head. “I don&#39;t want to sleep. I want to wait here.”</p>
+                        
+                        <p>“That&#39;s fine, too.” Knowing that Sharon couldn&#39;t get it off her mind, Mrs. Wilson didn&#39;t persist in persuading her. It&#39;s the weekend tomorrow after all. I shall just let her wait a little longer then.</p>
+                        
+                        <p>At the stairwell on the second floor, however, Jacqueline heard everything that Mrs. Wilson and Sharon said. Her fingers on the railing curled up tightly in excitement as a sparky glint glowed in her eyes.</p>
+                        
+                        <p>Something unpleasant happened to Natalie. That&#39;s why she still hasn&#39;t come home.</p>
+                        
+                        <p>This is great!</p>
+                        
+                        <p>It&#39;s just that I have totally no idea what happened.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2499,22 +2484,26 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>Shane gave him his word.</p>
-                    
-                    <p>It would be best if Natalie never makes it home ever again.</p>
-                    
-                    <p>After ending the call, Shane set down the satellite phone.</p>
-                    
-                    <p>After ending the call, Shane set down the satellite phone.</p>
-                    
-                    <p>Silas came around carrying a glass of warm water and handed it to him. “Mr. Shane, has madam&#39;s location been tracked down?”</p>
-                    
-                    <p>“The tracker has malfunctioned,” Shane took a sip of the water as he took the glass over and replied in a husky voice.</p>
-                    
-                    <p>Silas&#39; heart sank at that.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Nevertheless, looking at the way that damn little girl was crying and the look of distress in that old woman&#39;s eyes, I&#39;m sure it isn&#39;t something simple.</p>
+                        
+                        <p>It would be best if Natalie never makes it home ever again.</p>
+                        
+                        <p>Jacqueline was bearing some vicious thoughts.</p>
+                        
+                        <p>In the study on the third floor, Connor was sitting in front of the computer with his fingers tapping on the keyboard incessantly. And as he typed, his tender little face grew increasingly somber.</p>
+                        
+                        <p>After around a minute, Connor finally stopped his typing motion. Both his hands clasped around each other, and his eyes reddened as tears welled up within them, almost overflowing.</p>
+                        
+                        <p>He took in a deep breath and snuffled, repressing his urge to cry as he reached out to the microphone at the side and spoke into it, “Daddy, I can&#39;t find Mommy.”</p>
+                        
+                        <p>“What do you mean?” Shane&#39;s gaze turned drastically sharp in an instant.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2525,22 +2514,26 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>If the tracker is damaged, that means we&#39;ll not be able to track madam&#39;s location.</p>
-                    
-                    <p>That&#39;s to say that it will be even more difficult to find madam next.</p>
-                    
-                    <p>“Mr. Shane, how about this? I&#39;ll summon a few more search and rescue teams over and intensify the search after the rain.” Silas looked at Shane.</p>
-                    
-                    <p>Shane agreed and gave him a nod.</p>
-                    
-                    <p>Since they couldn&#39;t locate her, that was the only option left.</p>
-                    
-                    <p>For the rest of the night, neither Shane nor Silas said anything else. They just sat quietly, listening to the rainfall outside the tent, without the slightest sleepiness.</p>
-                    
-                    <p>It wasn&#39;t until dawn the next day that the downpour stopped eventually.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Connor answered chokingly, “Mommy&#39;s tracker has malfunctioned, and I can&#39;t track her location, boo hoo hoo...”</p>
+                        
+                        <p>At that moment, the child who had always been strong couldn&#39;t hold it anymore and burst out crying.</p>
+                        
+                        <p>Listening to the little boy&#39;s crying, Shane felt a twitch in his heart as well.</p>
+                        
+                        <p>He held the satellite phone tightly, suppressed his own disconcertment, and comforted the little boy as softly as he could, “Don&#39;t worry, I will find her. I promise I will!”</p>
+                        
+                        <p>“Really?” asked Connor.</p>
+                        
+                        <p>Shane acknowledged, “I promise. You stay home and look after your sister, alright?”</p>
+                        
+                        <p>“I got it, Daddy. You must find Mommy, you must do that!” Connor said repeatedly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2551,21 +2544,85 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>Shane lifted the mesh at the opening of the tent and went out, putting on the necessary equipment before he called out to the other team members to enter the mountain again and continue their search.</p>
-                    
-                    <p>In the meantime, on the other side of the mountain, Natalie woke up again in the cave.</p>
-                    
-                    <p>This time round, she was awakened by the chill.</p>
-                    
-                    <p>The clothes on her were still drenched and hence, clung tightly to her body. It was freezing, and as a wind gushed through, she couldn&#39;t stop shivering.</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Shane gave him his word.</p>
+                        
+                        <p>It would be best if Natalie never makes it home ever again.</p>
+                        
+                        <p>After ending the call, Shane set down the satellite phone.</p>
+                        
+                        <p>After ending the call, Shane set down the satellite phone.</p>
+                        
+                        <p>Silas came around carrying a glass of warm water and handed it to him. “Mr. Shane, has madam&#39;s location been tracked down?”</p>
+                        
+                        <p>“The tracker has malfunctioned,” Shane took a sip of the water as he took the glass over and replied in a husky voice.</p>
+                        
+                        <p>Silas&#39; heart sank at that.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>If the tracker is damaged, that means we&#39;ll not be able to track madam&#39;s location.</p>
+                        
+                        <p>That&#39;s to say that it will be even more difficult to find madam next.</p>
+                        
+                        <p>“Mr. Shane, how about this? I&#39;ll summon a few more search and rescue teams over and intensify the search after the rain.” Silas looked at Shane.</p>
+                        
+                        <p>Shane agreed and gave him a nod.</p>
+                        
+                        <p>Since they couldn&#39;t locate her, that was the only option left.</p>
+                        
+                        <p>For the rest of the night, neither Shane nor Silas said anything else. They just sat quietly, listening to the rainfall outside the tent, without the slightest sleepiness.</p>
+                        
+                        <p>It wasn&#39;t until dawn the next day that the downpour stopped eventually.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Shane lifted the mesh at the opening of the tent and went out, putting on the necessary equipment before he called out to the other team members to enter the mountain again and continue their search.</p>
+                        
+                        <p>In the meantime, on the other side of the mountain, Natalie woke up again in the cave.</p>
+                        
+                        <p>This time round, she was awakened by the chill.</p>
+                        
+                        <p>The clothes on her were still drenched and hence, clung tightly to her body. It was freezing, and as a wind gushed through, she couldn&#39;t stop shivering.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4283,6 +4340,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4369,9 +4506,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4435,7 +4573,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4480,13 +4617,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4543,21 +4677,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

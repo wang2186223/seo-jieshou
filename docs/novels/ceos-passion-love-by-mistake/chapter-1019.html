@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.272063",
-        "dateModified": "2026-07-17T17:08:29.272063",
+        "datePublished": "2026-07-19T13:10:25.084027",
+        "dateModified": "2026-07-19T13:10:25.084027",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,28 +2422,54 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1030</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Natalie opened her mouth slightly before she decided against saying what she had planned on saying.</p>
-                    
-                    <p>Oh well. It&#39;s not good to leave this stuff behind anyway, even if they are of Shane&#39;s mom. He probably doesn&#39;t want something that Sean lusted over to be left behind.</p>
-                    
-                    <p>After all, it isn&#39;t as if Shane is hurting his actual mother by doing this.</p>
-                    
-                    <p>“Understood,” Silas said as he nodded.</p>
-                    
-                    <p>After Shane glared at the room around him, he looked down to hide the hatred in his eyes and turned to walk out.</p>
-                    
-                    <p>Natalie followed behind him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Natalie opened her mouth slightly before she decided against saying what she had planned on saying.</p>
+                        
+                        <p>Oh well. It&#39;s not good to leave this stuff behind anyway, even if they are of Shane&#39;s mom. He probably doesn&#39;t want something that Sean lusted over to be left behind.</p>
+                        
+                        <p>After all, it isn&#39;t as if Shane is hurting his actual mother by doing this.</p>
+                        
+                        <p>“Understood,” Silas said as he nodded.</p>
+                        
+                        <p>After Shane glared at the room around him, he looked down to hide the hatred in his eyes and turned to walk out.</p>
+                        
+                        <p>Natalie followed behind him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>They left the Thompson residence, and Shane remained silent the whole way home. Natalie drove while he read through the diary.</p>
+                        
+                        <p>She glanced at him cautiously, worried about whatever he was feeling right now. Despite her concern, she remained quiet.</p>
+                        
+                        <p>She knew he didn&#39;t need words of comfort right now.</p>
+                        
+                        <p>When they returned to Thompson villa, Shane locked himself in the study room alone.</p>
+                        
+                        <p>Mrs. Wilson came out of the kitchen with some sliced fruits and placed them in front of Natalie. “What happened to sir?”</p>
+                        
+                        <p>Natalie glanced upstairs and sighed. “So we went to the old Thompson house...”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2419,92 +2480,24 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>They left the Thompson residence, and Shane remained silent the whole way home. Natalie drove while he read through the diary.</p>
-                    
-                    <p>She glanced at him cautiously, worried about whatever he was feeling right now. Despite her concern, she remained quiet.</p>
-                    
-                    <p>She knew he didn&#39;t need words of comfort right now.</p>
-                    
-                    <p>When they returned to Thompson villa, Shane locked himself in the study room alone.</p>
-                    
-                    <p>Mrs. Wilson came out of the kitchen with some sliced fruits and placed them in front of Natalie. “What happened to sir?”</p>
-                    
-                    <p>Natalie glanced upstairs and sighed. “So we went to the old Thompson house...”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="2">
-                    
-                    <p>She told Mrs. Wilson everything that had happened.</p>
-                    
-                    <p>After she was done, Mrs. Wilson slapped her own thigh in anger. “I can&#39;t believe it! How dare Sean do such a shameless thing? That&#39;s his aunt, for God&#39;s sake! H-He deserves to be locked up!”</p>
-                    
-                    <p>“I agree,” Natalie muttered as she massaged her brows.</p>
-                    
-                    <p>Shameless was already a mild way to put it. It was a crime at this point.</p>
-                    
-                    <p>Based on what she had heard from Shane, Lindsay had treated Sean very well since he was a kid. She raised him almost as if he were her own son.</p>
-                    
-                    <p>If she knew that someone she treated as her own flesh and blood had started feeling such perverse feelings for her, would she regret treating him so well?</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Still, Natalie knew Lindsay couldn&#39;t have known.</p>
-                    
-                    <p>She had passed away eighteen years ago, and Sean had only been thirteen then. Based on his diary, he had only discovered his taboo feelings for her when he was fifteen.</p>
-                    
-                    <p>Hence, she probably never sensed anything.</p>
-                    
-                    <p>“I knew Sean was ridiculously shameless, but I didn&#39;t know it was this bad. I should have warned her not to treat him so well. It&#39;s my fault.” Mrs. Wilson sighed regretfully.</p>
-                    
-                    <p>Natalie turned to look at her. “Why was it your fault?”</p>
-                    
-                    <p>“Well, sir wasn&#39;t with Mrs. Thompson very often since he was a child. She missed him so much that she would cry over him, and it only stopped when Sean showed up. She replaced her sadness over sir with her newfound love for Sean, and I was happy seeing her happy. He was almost like a blessing for her at the time, so even if she started going a bit overboard with how well she was treating him, I never said a word,” Mrs. Wilson said with a bitter smile.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>If she had known then what she knew now, she would have done anything to stop Lindsay from getting too close to Sean.</p>
-                    
-                    <p>Natalie patted the back of Mrs. Wilson&#39;s hand gently and uttered, “Don&#39;t blame yourself, Mrs. Wilson. No one could have seen it coming back then. After all, Sean was more than twenty years younger than Lindsay. No one would have imagined him developing these feelings for her, anyway.”</p>
-                    
-                    <p>“That&#39;s true, but I just can&#39;t get over it. I could have prevented it, but...” Mrs. Wilson trailed off into a long sigh, pounding her own chest.</p>
-                    
-                    <p>Natalie looked down and fell into deep thought.</p>
-                    
-                    <p>She was wondering if it could have been a psychological issue since it wasn&#39;t normal for the then fifteen-year-old Sean to fall in love with his thirty-year-old aunt.</p>
-                    
-                    <p>She decided to ask Stanley about it, and the opportunity for that came soon enough.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She told Mrs. Wilson everything that had happened.</p>
+                        
+                        <p>After she was done, Mrs. Wilson slapped her own thigh in anger. “I can&#39;t believe it! How dare Sean do such a shameless thing? That&#39;s his aunt, for God&#39;s sake! H-He deserves to be locked up!”</p>
+                        
+                        <p>“I agree,” Natalie muttered as she massaged her brows.</p>
+                        
+                        <p>Shameless was already a mild way to put it. It was a crime at this point.</p>
+                        
+                        <p>Based on what she had heard from Shane, Lindsay had treated Sean very well since he was a kid. She raised him almost as if he were her own son.</p>
+                        
+                        <p>If she knew that someone she treated as her own flesh and blood had started feeling such perverse feelings for her, would she regret treating him so well?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2515,25 +2508,85 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>When Mrs. Wilson went upstairs to deliver some coffee to Shane, Natalie placed a quick call to Stanley.</p>
-                    
-                    <p>When Stanley saw the display name onscreen, he felt rather taken aback. “Nat? What&#39;s up?”</p>
-                    
-                    <p>Ever since she had found out about his feelings for her and also about his mental illness, she hadn&#39;t taken the initiative to call him.</p>
-                    
-                    <p>He was feeling quite happy at the unexpected call.</p>
-                    
-                    <p>His glasses flashed under the light, and the corner of his mouth lifted in an unsettling smile, but the voice with which he called Natalie remained as warm as ever.</p>
-                    
-                    <p>“I have a question for you, Stanley,” Natalie said as she chewed on her bottom lip.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Still, Natalie knew Lindsay couldn&#39;t have known.</p>
+                        
+                        <p>She had passed away eighteen years ago, and Sean had only been thirteen then. Based on his diary, he had only discovered his taboo feelings for her when he was fifteen.</p>
+                        
+                        <p>Hence, she probably never sensed anything.</p>
+                        
+                        <p>“I knew Sean was ridiculously shameless, but I didn&#39;t know it was this bad. I should have warned her not to treat him so well. It&#39;s my fault.” Mrs. Wilson sighed regretfully.</p>
+                        
+                        <p>Natalie turned to look at her. “Why was it your fault?”</p>
+                        
+                        <p>“Well, sir wasn&#39;t with Mrs. Thompson very often since he was a child. She missed him so much that she would cry over him, and it only stopped when Sean showed up. She replaced her sadness over sir with her newfound love for Sean, and I was happy seeing her happy. He was almost like a blessing for her at the time, so even if she started going a bit overboard with how well she was treating him, I never said a word,” Mrs. Wilson said with a bitter smile.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>If she had known then what she knew now, she would have done anything to stop Lindsay from getting too close to Sean.</p>
+                        
+                        <p>Natalie patted the back of Mrs. Wilson&#39;s hand gently and uttered, “Don&#39;t blame yourself, Mrs. Wilson. No one could have seen it coming back then. After all, Sean was more than twenty years younger than Lindsay. No one would have imagined him developing these feelings for her, anyway.”</p>
+                        
+                        <p>“That&#39;s true, but I just can&#39;t get over it. I could have prevented it, but...” Mrs. Wilson trailed off into a long sigh, pounding her own chest.</p>
+                        
+                        <p>Natalie looked down and fell into deep thought.</p>
+                        
+                        <p>She was wondering if it could have been a psychological issue since it wasn&#39;t normal for the then fifteen-year-old Sean to fall in love with his thirty-year-old aunt.</p>
+                        
+                        <p>She decided to ask Stanley about it, and the opportunity for that came soon enough.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>When Mrs. Wilson went upstairs to deliver some coffee to Shane, Natalie placed a quick call to Stanley.</p>
+                        
+                        <p>When Stanley saw the display name onscreen, he felt rather taken aback. “Nat? What&#39;s up?”</p>
+                        
+                        <p>Ever since she had found out about his feelings for her and also about his mental illness, she hadn&#39;t taken the initiative to call him.</p>
+                        
+                        <p>He was feeling quite happy at the unexpected call.</p>
+                        
+                        <p>His glasses flashed under the light, and the corner of his mouth lifted in an unsettling smile, but the voice with which he called Natalie remained as warm as ever.</p>
+                        
+                        <p>“I have a question for you, Stanley,” Natalie said as she chewed on her bottom lip.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
@@ -4253,6 +4306,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4339,9 +4472,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4405,7 +4539,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4450,13 +4583,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4513,21 +4643,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

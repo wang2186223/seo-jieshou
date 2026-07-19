@@ -997,18 +997,17 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:20.669858",
-        "dateModified": "2026-07-17T17:08:20.669858",
+        "datePublished": "2026-07-19T13:10:17.293846",
+        "dateModified": "2026-07-19T13:10:17.293846",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,32 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 42</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Grandma Margaret had been suffering from a rare disease for years.</p>
-                    
-                    <p>It not only required enormous medical expenses, but the more difficult issue was that only the top medical experts in the country could treat it.</p>
-                    
-                    <p>But Vivian Bennett and her grandmother were just ordinary people. They couldn&#39;t even get an appointment to see such specialists.</p>
-                    
-                    <p>William White had initially lured her back to the White family by promising to introduce her to these experts.</p>
-                    
-                    <p>Given Liam Sullivan&#39;s current power and status, if he was willing to help, her grandmother might actually be saved...</p>
-                    
-                    <p>This thought ignited a flicker of hope in Vivian&#39;s eyes.</p>
-                    
-                    <p>But Liam wanted her to be his woman for three months. Was he asking her to sell herself?</p>
-                    
-                    <p>Vivian had never considered selling her body.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Grandma Margaret had been suffering from a rare disease for years.</p>
+                        
+                        <p>It not only required enormous medical expenses, but the more difficult issue was that only the top medical experts in the country could treat it.</p>
+                        
+                        <p>But Vivian Bennett and her grandmother were just ordinary people. They couldn&#39;t even get an appointment to see such specialists.</p>
+                        
+                        <p>William White had initially lured her back to the White family by promising to introduce her to these experts.</p>
+                        
+                        <p>Given Liam Sullivan&#39;s current power and status, if he was willing to help, her grandmother might actually be saved...</p>
+                        
+                        <p>This thought ignited a flicker of hope in Vivian&#39;s eyes.</p>
+                        
+                        <p>But Liam wanted her to be his woman for three months. Was he asking her to sell herself?</p>
+                        
+                        <p>Vivian had never considered selling her body.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2424,23 +2457,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>She had never imagined becoming the mistress of a man like him.</p>
-                    
-                    <p>&#34;What if I refuse?&#34; Vivian frowned.</p>
-                    
-                    <p>Liam tightened his arms around her. His dark, unfathomable eyes locked onto hers. &#34;Then we get married tomorrow.&#34;</p>
-                    
-                    <p>Vivian&#39;s mouth twitched.</p>
-                    
-                    <p>What kind of choice was that?</p>
-                    
-                    <p>Agree, and be his woman for three months.</p>
-                    
-                    <p>Refuse, and marry him to be his woman for a lifetime.</p>
-                    
-                    <p>Either way, he had decided he wanted her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>She had never imagined becoming the mistress of a man like him.</p>
+                        
+                        <p>&#34;What if I refuse?&#34; Vivian frowned.</p>
+                        
+                        <p>Liam tightened his arms around her. His dark, unfathomable eyes locked onto hers. &#34;Then we get married tomorrow.&#34;</p>
+                        
+                        <p>Vivian&#39;s mouth twitched.</p>
+                        
+                        <p>What kind of choice was that?</p>
+                        
+                        <p>Agree, and be his woman for three months.</p>
+                        
+                        <p>Refuse, and marry him to be his woman for a lifetime.</p>
+                        
+                        <p>Either way, he had decided he wanted her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2452,51 +2489,59 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>It was only a difference in duration.</p>
-                    
-                    <p>He wasn&#39;t giving her any real choice at all.</p>
-                    
-                    <p>&#34;Why me?&#34; Vivian was puzzled.</p>
-                    
-                    <p>With Liam&#39;s qualifications, he could have any woman he wanted.</p>
-                    
-                    <p>Why did he specifically choose her?</p>
-                    
-                    <p>Liam&#39;s gaze was profound. An unconcealable desire churned in the depths of his eyes.</p>
-                    
-                    <p>He had only tasted her once, and it had left him utterly obsessed.</p>
-                    
-                    <p>He had been searching for her these past few months.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>It was only a difference in duration.</p>
+                        
+                        <p>He wasn&#39;t giving her any real choice at all.</p>
+                        
+                        <p>&#34;Why me?&#34; Vivian was puzzled.</p>
+                        
+                        <p>With Liam&#39;s qualifications, he could have any woman he wanted.</p>
+                        
+                        <p>Why did he specifically choose her?</p>
+                        
+                        <p>Liam&#39;s gaze was profound. An unconcealable desire churned in the depths of his eyes.</p>
+                        
+                        <p>He had only tasted her once, and it had left him utterly obsessed.</p>
+                        
+                        <p>He had been searching for her these past few months.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>The passion of that one night had left him craving more.</p>
-                    
-                    <p>His desire for her was far from satisfied.</p>
-                    
-                    <p>Before Liam could speak, the driver returned to the car after paying the bill.</p>
-                    
-                    <p>&#34;Sorry, Boss!&#34;</p>
-                    
-                    <p>The driver pulled open the door and was met with the intimate scene of Liam pinning Vivian against the seat.</p>
-                    
-                    <p>He hastily took a step back and apologized.</p>
-                    
-                    <p>Vivian&#39;s face instantly flushed crimson with embarrassment.</p>
-                    
-                    <p>Liam wrapped his arm around her waist and lifted her up from the backseat.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>The passion of that one night had left him craving more.</p>
+                        
+                        <p>His desire for her was far from satisfied.</p>
+                        
+                        <p>Before Liam could speak, the driver returned to the car after paying the bill.</p>
+                        
+                        <p>&#34;Sorry, Boss!&#34;</p>
+                        
+                        <p>The driver pulled open the door and was met with the intimate scene of Liam pinning Vivian against the seat.</p>
+                        
+                        <p>He hastily took a step back and apologized.</p>
+                        
+                        <p>Vivian&#39;s face instantly flushed crimson with embarrassment.</p>
+                        
+                        <p>Liam wrapped his arm around her waist and lifted her up from the backseat.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2508,78 +2553,90 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Vivian instinctively struggled, trying to move to the other side.</p>
-                    
-                    <p>Liam held her waist firmly, not allowing her to escape.</p>
-                    
-                    <p>He ordered the driver to get in and gave Vivian&#39;s residential address, Lakeside Manor.</p>
-                    
-                    <p>The car slowly pulled away.</p>
-                    
-                    <p>Throughout the journey, Liam kept Vivian tightly held in his arms.</p>
-                    
-                    <p>Vivian sat rigidly, feeling as if she were on pins and needles.</p>
-                    
-                    <p>She couldn&#39;t break free, so she had no choice but to let him hold her.</p>
-                    
-                    <p>An ambiguous atmosphere filled the car.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Vivian instinctively struggled, trying to move to the other side.</p>
+                        
+                        <p>Liam held her waist firmly, not allowing her to escape.</p>
+                        
+                        <p>He ordered the driver to get in and gave Vivian&#39;s residential address, Lakeside Manor.</p>
+                        
+                        <p>The car slowly pulled away.</p>
+                        
+                        <p>Throughout the journey, Liam kept Vivian tightly held in his arms.</p>
+                        
+                        <p>Vivian sat rigidly, feeling as if she were on pins and needles.</p>
+                        
+                        <p>She couldn&#39;t break free, so she had no choice but to let him hold her.</p>
+                        
+                        <p>An ambiguous atmosphere filled the car.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Finally, the limousine came to a stop at the entrance of Lakeside Manor.</p>
-                    
-                    <p>&#34;I&#39;m here,&#34; Vivian said urgently.</p>
-                    
-                    <p>She waited for Liam to release her.</p>
-                    
-                    <p>But Liam didn&#39;t move at all.</p>
-                    
-                    <p>&#34;Mr. Sullivan?&#34; Vivian looked up hesitantly.</p>
-                    
-                    <p>Liam suddenly lowered his head and captured her lips in a fierce kiss.</p>
-                    
-                    <p>His kiss was scorching and wild.</p>
-                    
-                    <p>It was a relentless, possessive claiming...</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Finally, the limousine came to a stop at the entrance of Lakeside Manor.</p>
+                        
+                        <p>&#34;I&#39;m here,&#34; Vivian said urgently.</p>
+                        
+                        <p>She waited for Liam to release her.</p>
+                        
+                        <p>But Liam didn&#39;t move at all.</p>
+                        
+                        <p>&#34;Mr. Sullivan?&#34; Vivian looked up hesitantly.</p>
+                        
+                        <p>Liam suddenly lowered his head and captured her lips in a fierce kiss.</p>
+                        
+                        <p>His kiss was scorching and wild.</p>
+                        
+                        <p>It was a relentless, possessive claiming...</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Vivian&#39;s eyes widened. She could barely breathe.</p>
-                    
-                    <p>It took her a moment to process what was happening.</p>
-                    
-                    <p>Liam was kissing her?</p>
-                    
-                    <p>&#34;Mmm...&#34; She struggled, trying to push against his solid chest.</p>
-                    
-                    <p>But he only kissed her more deeply.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Vivian&#39;s eyes widened. She could barely breathe.</p>
+                        
+                        <p>It took her a moment to process what was happening.</p>
+                        
+                        <p>Liam was kissing her?</p>
+                        
+                        <p>&#34;Mmm...&#34; She struggled, trying to push against his solid chest.</p>
+                        
+                        <p>But he only kissed her more deeply.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4297,6 +4354,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4383,9 +4520,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4449,7 +4587,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4494,13 +4631,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4557,21 +4691,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

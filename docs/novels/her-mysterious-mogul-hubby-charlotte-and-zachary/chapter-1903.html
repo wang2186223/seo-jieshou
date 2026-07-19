@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.482209",
-        "dateModified": "2026-07-17T17:08:32.482209",
+        "datePublished": "2026-07-19T13:10:29.390513",
+        "dateModified": "2026-07-19T13:10:29.390513",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,32 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2003</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Pffi!</p>
-                    
-                    <p>Sean could not hold himself back and burst into laughter.</p>
-                    
-                    <p>Upon receiving Danrique&#39;s death glare, Sean lowered his head, not daring to breathe out loud.</p>
-                    
-                    <p>Danrique&#39;s expression darkened at once. The Cece I had longed for seven years was a dog! A freaking</p>
-                    
-                    <p>dog!</p>
-                    
-                    <p>He was seething with rage at that moment.</p>
-                    
-                    <p>Francesca, how dare you fool me like that ?</p>
-                    
-                    <p>Memories from seven years ago flashed across Danrique&#39;s mind. When he was being chased by his</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Pffi!</p>
+                        
+                        <p>Sean could not hold himself back and burst into laughter.</p>
+                        
+                        <p>Upon receiving Danrique&#39;s death glare, Sean lowered his head, not daring to breathe out loud.</p>
+                        
+                        <p>Danrique&#39;s expression darkened at once. The Cece I had longed for seven years was a dog! A freaking</p>
+                        
+                        <p>dog!</p>
+                        
+                        <p>He was seething with rage at that moment.</p>
+                        
+                        <p>Francesca, how dare you fool me like that ?</p>
+                        
+                        <p>Memories from seven years ago flashed across Danrique&#39;s mind. When he was being chased by his</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2424,51 +2457,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>enemies, he fled to the mountains and was rescued by a young lady. She hid Danrique in the cabin</p>
-                    
-                    <p>where she took a respite from herding. Moreover, she also treated him and served him meals every</p>
-                    
-                    <p>day.</p>
-                    
-                    <p>Danrique developed an innocent crush on the young lady after they spent half a month together.</p>
-                    
-                    <p>However, she refused to tell him her name at first. One day, she told him after being annoyed by his</p>
-                    
-                    <p>pestering. “My name is Cece!”</p>
-                    
-                    <p>Nevertheless, Danrique did not have time to ask more questions as his enemies were breathing down</p>
-                    
-                    <p>his neck. To prevent dragging Cece into the matter, he fled in a hurry.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Alas, the two of them had lost contact since then. Nevertheless, Danrique still held on to that name</p>
-                    
-                    <p>dearly in his heart after many years had passed.</p>
-                    
-                    <p>After getting himself to safety, he sent people back to Mount Wisteria to search for Cece. Unfortunately,</p>
-                    
-                    <p>all the efforts to locate her were in vain.</p>
-                    
-                    <p>Perhaps Francesca and Dr. Felch moved to Mount Phoenix back then. Or maybe they were only</p>
-                    
-                    <p>temporarily staying in Mount Wisteria and that was why we couldn&#39;t find them. However, the most</p>
-                    
-                    <p>important right now is...</p>
-                    
-                    <p>Looking at the dog, Danrique felt a sense of familiarity.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>enemies, he fled to the mountains and was rescued by a young lady. She hid Danrique in the cabin</p>
+                        
+                        <p>where she took a respite from herding. Moreover, she also treated him and served him meals every</p>
+                        
+                        <p>day.</p>
+                        
+                        <p>Danrique developed an innocent crush on the young lady after they spent half a month together.</p>
+                        
+                        <p>However, she refused to tell him her name at first. One day, she told him after being annoyed by his</p>
+                        
+                        <p>pestering. “My name is Cece!”</p>
+                        
+                        <p>Nevertheless, Danrique did not have time to ask more questions as his enemies were breathing down</p>
+                        
+                        <p>his neck. To prevent dragging Cece into the matter, he fled in a hurry.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2479,24 +2488,60 @@
                 
                 
                 
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Alas, the two of them had lost contact since then. Nevertheless, Danrique still held on to that name</p>
+                        
+                        <p>dearly in his heart after many years had passed.</p>
+                        
+                        <p>After getting himself to safety, he sent people back to Mount Wisteria to search for Cece. Unfortunately,</p>
+                        
+                        <p>all the efforts to locate her were in vain.</p>
+                        
+                        <p>Perhaps Francesca and Dr. Felch moved to Mount Phoenix back then. Or maybe they were only</p>
+                        
+                        <p>temporarily staying in Mount Wisteria and that was why we couldn&#39;t find them. However, the most</p>
+                        
+                        <p>important right now is...</p>
+                        
+                        <p>Looking at the dog, Danrique felt a sense of familiarity.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="3">
-                    
-                    <p>The brown dog has a missing ear on one side. It&#39;s wearing a bell around the neck. Isn&#39;t it the same dog</p>
-                    
-                    <p>Francesca had seven years ago? I can&#39;t believe the puppy is all grown up now.</p>
-                    
-                    <p>When Danrique asked Francesca for her name that time, she smirked and looked at the dog beside</p>
-                    
-                    <p>her. “I&#39;m Cece,” she uttered. The dog also wagged its tail at her.</p>
-                    
-                    <p>Back then, he did not think much besides as Cece was a beautiful name.</p>
-                    
-                    <p>After thinking about it, Danrique felt like he had been tricked.</p>
-                    
-                    <p>Da*n it!</p>
-                    
-                    <p>A vortex of anger swirled inside Danrique. Nevertheless, there was nothing he could do at that</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>The brown dog has a missing ear on one side. It&#39;s wearing a bell around the neck. Isn&#39;t it the same dog</p>
+                        
+                        <p>Francesca had seven years ago? I can&#39;t believe the puppy is all grown up now.</p>
+                        
+                        <p>When Danrique asked Francesca for her name that time, she smirked and looked at the dog beside</p>
+                        
+                        <p>her. “I&#39;m Cece,” she uttered. The dog also wagged its tail at her.</p>
+                        
+                        <p>Back then, he did not think much besides as Cece was a beautiful name.</p>
+                        
+                        <p>After thinking about it, Danrique felt like he had been tricked.</p>
+                        
+                        <p>Da*n it!</p>
+                        
+                        <p>A vortex of anger swirled inside Danrique. Nevertheless, there was nothing he could do at that</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2508,78 +2553,90 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>moment. I can&#39;t possibly drag Francesca out of the hospital bed and punish her, can I?</p>
-                    
-                    <p>“Mr. Lindberg, Dr. Felch is getting off,” Sean reminded him from the side.</p>
-                    
-                    <p>Snapping back to reality, Danrique raised his head and looked at Dr.</p>
-                    
-                    <p>Felch, who was getting out of the car. He was followed by Sam while holding the dog, Cece.</p>
-                    
-                    <p>Cece bared its teeth and barked at Danrique. Upon receiving his stern glare, the dog became</p>
-                    
-                    <p>frightened and hastily hid behind Sam, wagging its tail timidly in silence.</p>
-                    
-                    <p>“Mr. Lindberg, you don&#39;t have to do this. She&#39;s still in the hospital. You should stay by her side,” said Dr.</p>
-                    
-                    <p>Felch.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>moment. I can&#39;t possibly drag Francesca out of the hospital bed and punish her, can I?</p>
+                        
+                        <p>“Mr. Lindberg, Dr. Felch is getting off,” Sean reminded him from the side.</p>
+                        
+                        <p>Snapping back to reality, Danrique raised his head and looked at Dr.</p>
+                        
+                        <p>Felch, who was getting out of the car. He was followed by Sam while holding the dog, Cece.</p>
+                        
+                        <p>Cece bared its teeth and barked at Danrique. Upon receiving his stern glare, the dog became</p>
+                        
+                        <p>frightened and hastily hid behind Sam, wagging its tail timidly in silence.</p>
+                        
+                        <p>“Mr. Lindberg, you don&#39;t have to do this. She&#39;s still in the hospital. You should stay by her side,” said Dr.</p>
+                        
+                        <p>Felch.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“It’s fine. She&#39;s no longer in danger. I came here because I wanted to tell you the news personally. She</p>
-                    
-                    <p>asked me to treat you with the same respect as my father. Therefore, I have to see you off in person,”</p>
-                    
-                    <p>Danrique said politely.</p>
-                    
-                    <p>Danrique also had a relative whom he respected, Isabella. He could understand Francesca&#39;s feelings</p>
-                    
-                    <p>toward Dr. Felch.</p>
-                    
-                    <p>As a result, he had to do that on Francesca&#39;s behalf.</p>
-                    
-                    <p>“All right.”</p>
-                    
-                    <p>“All right.” Nodding, Danrique helped him get into the car.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“It’s fine. She&#39;s no longer in danger. I came here because I wanted to tell you the news personally. She</p>
+                        
+                        <p>asked me to treat you with the same respect as my father. Therefore, I have to see you off in person,”</p>
+                        
+                        <p>Danrique said politely.</p>
+                        
+                        <p>Danrique also had a relative whom he respected, Isabella. He could understand Francesca&#39;s feelings</p>
+                        
+                        <p>toward Dr. Felch.</p>
+                        
+                        <p>As a result, he had to do that on Francesca&#39;s behalf.</p>
+                        
+                        <p>“All right.”</p>
+                        
+                        <p>“All right.” Nodding, Danrique helped him get into the car.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>After sitting down, Dr. Felch added, “She&#39;s weak. So, you must take care of her!”</p>
-                    
-                    <p>“Don&#39;t worry. I will take good care of her.” Read at</p>
-                    
-                    <p>Danrique did not mull over Dr.</p>
-                    
-                    <p>“Goodbye!”</p>
-                    
-                    <p>“Take care, Dr. Felch,” Danrique uttered loudly.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>After sitting down, Dr. Felch added, “She&#39;s weak. So, you must take care of her!”</p>
+                        
+                        <p>“Don&#39;t worry. I will take good care of her.” Read at</p>
+                        
+                        <p>Danrique did not mull over Dr.</p>
+                        
+                        <p>“Goodbye!”</p>
+                        
+                        <p>“Take care, Dr. Felch,” Danrique uttered loudly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4297,6 +4354,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4383,9 +4520,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4449,7 +4587,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4494,13 +4631,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4557,21 +4691,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

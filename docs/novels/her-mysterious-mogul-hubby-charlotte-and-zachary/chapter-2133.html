@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.760074",
-        "dateModified": "2026-07-17T17:08:32.760074",
+        "datePublished": "2026-07-19T13:10:29.674226",
+        "dateModified": "2026-07-19T13:10:29.674226",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,34 +2422,100 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2233</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Then, what should I do now?” asked Monica in a meek voice. “Should I just persuade Ms. Felch to</p>
-                    
-                    <p>take me with her?”</p>
-                    
-                    <p>“Are you out of your mind?” William was bereft of speech. He couldn&#39;t even be bothered to continue the</p>
-                    
-                    <p>meaningless conversation with Monica. “Let me think of something. You may leave.”</p>
-                    
-                    <p>“Your Highness...”</p>
-                    
-                    <p>Monica still had something else to say, yet a peek at William&#39;s irritated countenance was sufficient to</p>
-                    
-                    <p>compel her into lowering her gaze and backing away.</p>
-                    
-                    <p>She felt aggrieved, for she was a senior Interpol detective, after all. All she knew was carrying out</p>
-                    
-                    <p>investigations and apprehending criminals. She never had a knack for putting on a pretense.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Then, what should I do now?” asked Monica in a meek voice. “Should I just persuade Ms. Felch to</p>
+                        
+                        <p>take me with her?”</p>
+                        
+                        <p>“Are you out of your mind?” William was bereft of speech. He couldn&#39;t even be bothered to continue the</p>
+                        
+                        <p>meaningless conversation with Monica. “Let me think of something. You may leave.”</p>
+                        
+                        <p>“Your Highness...”</p>
+                        
+                        <p>Monica still had something else to say, yet a peek at William&#39;s irritated countenance was sufficient to</p>
+                        
+                        <p>compel her into lowering her gaze and backing away.</p>
+                        
+                        <p>She felt aggrieved, for she was a senior Interpol detective, after all. All she knew was carrying out</p>
+                        
+                        <p>investigations and apprehending criminals. She never had a knack for putting on a pretense.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Even so, she had given her all in completing every task that had been assigned to her.</p>
+                        
+                        <p>Meanwhile, Francesca was having nightmares the entire night. In her dreams, she could see that</p>
+                        
+                        <p>Danrique was in danger as he was pinned underneath a vehicle with his legs bathing in a pool of his</p>
+                        
+                        <p>own blood, seemingly on the verge of death.</p>
+                        
+                        <p>Anxious and concerned, she wanted to rush over and rescue him, but it was as though her feet were</p>
+                        
+                        <p>stuck in the ground, and they wouldn&#39;t budge no matter how hard she struggled.</p>
+                        
+                        <p>Right at that juncture, the vehicle exploded all of a sudden with a loud boom.</p>
+                        
+                        <p>With her eyes widened in disbelief, Francesca gaped at the scene as Danrique was engulfed in the</p>
+                        
+                        <p>roaring flames.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“No!”</p>
+                        
+                        <p>Francesca let out a frantic scream before sitting up in bed, sweating ever so profusely.</p>
+                        
+                        <p>Only after seeing the familiar room that she was in did she realize that she had been dreaming. Be that</p>
+                        
+                        <p>as it may, the sensation was so palpable that she had thought that it was real.</p>
+                        
+                        <p>She touched the pillow at the side, reminiscing the time they spent together before Danrique left as a</p>
+                        
+                        <p>throbbing pain assailed her.</p>
+                        
+                        <p>Subsequently, she checked her phone and was greeted by nothing but a text from Gordon that</p>
+                        
+                        <p>read: We haven&#39;t found him yet, Ms. Felch.</p>
+                        
+                        <p>Cradling her forehead, Francesca was utterly disappointed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2425,26 +2526,30 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>Even so, she had given her all in completing every task that had been assigned to her.</p>
-                    
-                    <p>Meanwhile, Francesca was having nightmares the entire night. In her dreams, she could see that</p>
-                    
-                    <p>Danrique was in danger as he was pinned underneath a vehicle with his legs bathing in a pool of his</p>
-                    
-                    <p>own blood, seemingly on the verge of death.</p>
-                    
-                    <p>Anxious and concerned, she wanted to rush over and rescue him, but it was as though her feet were</p>
-                    
-                    <p>stuck in the ground, and they wouldn&#39;t budge no matter how hard she struggled.</p>
-                    
-                    <p>Right at that juncture, the vehicle exploded all of a sudden with a loud boom.</p>
-                    
-                    <p>With her eyes widened in disbelief, Francesca gaped at the scene as Danrique was engulfed in the</p>
-                    
-                    <p>roaring flames.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Nevertheless, there was nothing she could do at the moment. With her mind abuzz with messy</p>
+                        
+                        <p>thoughts, she slept through several hours more until she was ultimately awakened by the chimes of her</p>
+                        
+                        <p>phone.</p>
+                        
+                        <p>“Francesca, I&#39;ve made the appointment. We&#39;ll meet at North Hotel at one o&#39;clock in the afternoon.”</p>
+                        
+                        <p>It turned out to be a call from the first lady.</p>
+                        
+                        <p>“Noted. I&#39;ll be there on the dot.”</p>
+                        
+                        <p>A glimmer of hope rose within Francesca as she glanced at the time. There were still another few hours</p>
+                        
+                        <p>to go. She couldn&#39;t wait for the time to arrive sooner so that she could finally gain more information</p>
+                        
+                        <p>regarding Danrique&#39;s whereabouts.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2455,26 +2560,30 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>“No!”</p>
-                    
-                    <p>Francesca let out a frantic scream before sitting up in bed, sweating ever so profusely.</p>
-                    
-                    <p>Only after seeing the familiar room that she was in did she realize that she had been dreaming. Be that</p>
-                    
-                    <p>as it may, the sensation was so palpable that she had thought that it was real.</p>
-                    
-                    <p>She touched the pillow at the side, reminiscing the time they spent together before Danrique left as a</p>
-                    
-                    <p>throbbing pain assailed her.</p>
-                    
-                    <p>Subsequently, she checked her phone and was greeted by nothing but a text from Gordon that</p>
-                    
-                    <p>read: We haven&#39;t found him yet, Ms. Felch.</p>
-                    
-                    <p>Cradling her forehead, Francesca was utterly disappointed.</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Knowing that Francesca was going to meet the first lady, Layla reminded, “You have been researching</p>
+                        
+                        <p>poison and drugs, haven&#39;t you? How about hidden weapons and booby traps? Bring some with you for</p>
+                        
+                        <p>self-defense.”</p>
+                        
+                        <p>“Those things are too conspicuous.” Francesca refused to heed Layla&#39;s advice as she added, “I can&#39;t</p>
+                        
+                        <p>simply put on a casual attire with a backpack to see the first lady, now, can I?”</p>
+                        
+                        <p>“Then, you—”</p>
+                        
+                        <p>“Rest assured, Ms. Layla. I&#39;m well-prepared.”</p>
+                        
+                        <p>As they spoke, Francesca asked Sloan to bring her to Danrique&#39;s laboratory. While she was there, she</p>
+                        
+                        <p>summoned Sam.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2485,86 +2594,30 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>Nevertheless, there was nothing she could do at the moment. With her mind abuzz with messy</p>
-                    
-                    <p>thoughts, she slept through several hours more until she was ultimately awakened by the chimes of her</p>
-                    
-                    <p>phone.</p>
-                    
-                    <p>“Francesca, I&#39;ve made the appointment. We&#39;ll meet at North Hotel at one o&#39;clock in the afternoon.”</p>
-                    
-                    <p>It turned out to be a call from the first lady.</p>
-                    
-                    <p>“Noted. I&#39;ll be there on the dot.”</p>
-                    
-                    <p>A glimmer of hope rose within Francesca as she glanced at the time. There were still another few hours</p>
-                    
-                    <p>to go. She couldn&#39;t wait for the time to arrive sooner so that she could finally gain more information</p>
-                    
-                    <p>regarding Danrique&#39;s whereabouts.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Knowing that Francesca was going to meet the first lady, Layla reminded, “You have been researching</p>
-                    
-                    <p>poison and drugs, haven&#39;t you? How about hidden weapons and booby traps? Bring some with you for</p>
-                    
-                    <p>self-defense.”</p>
-                    
-                    <p>“Those things are too conspicuous.” Francesca refused to heed Layla&#39;s advice as she added, “I can&#39;t</p>
-                    
-                    <p>simply put on a casual attire with a backpack to see the first lady, now, can I?”</p>
-                    
-                    <p>“Then, you—”</p>
-                    
-                    <p>“Rest assured, Ms. Layla. I&#39;m well-prepared.”</p>
-                    
-                    <p>As they spoke, Francesca asked Sloan to bring her to Danrique&#39;s laboratory. While she was there, she</p>
-                    
-                    <p>summoned Sam.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="5">
-                    
-                    <p>Sam still recognized Francesca. It bolted toward her the second it heard her whistling. Coiling itself</p>
-                    
-                    <p>around her wrist, it resembled a mesmerizing, shiny jade bracelet.</p>
-                    
-                    <p>“Look, Ms. Layla! This is my very own little bodyguard!” Holding Sam high up, Francesca went on, “It&#39;s</p>
-                    
-                    <p>the one that had bitten Chrono the last time!”</p>
-                    
-                    <p>“This little one must be extremely poisonous.” Seeing Sam up close like that, Layla felt a shiver run</p>
-                    
-                    <p>down her spine.</p>
-                    
-                    <p>“Don&#39;t you worry about a thing.” Francesca then checked the time and announced, “I must go now.”</p>
-                    
-                    <p>Sloan hurriedly trailed behind her. “I&#39;d like to escort you there, Ms. Felch, if I may.”</p>
-                    
-                    <p>However, Francesca turned him down. “You guys stay here and be on guard. Don&#39;t let anyone come</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Sam still recognized Francesca. It bolted toward her the second it heard her whistling. Coiling itself</p>
+                        
+                        <p>around her wrist, it resembled a mesmerizing, shiny jade bracelet.</p>
+                        
+                        <p>“Look, Ms. Layla! This is my very own little bodyguard!” Holding Sam high up, Francesca went on, “It&#39;s</p>
+                        
+                        <p>the one that had bitten Chrono the last time!”</p>
+                        
+                        <p>“This little one must be extremely poisonous.” Seeing Sam up close like that, Layla felt a shiver run</p>
+                        
+                        <p>down her spine.</p>
+                        
+                        <p>“Don&#39;t you worry about a thing.” Francesca then checked the time and announced, “I must go now.”</p>
+                        
+                        <p>Sloan hurriedly trailed behind her. “I&#39;d like to escort you there, Ms. Felch, if I may.”</p>
+                        
+                        <p>However, Francesca turned him down. “You guys stay here and be on guard. Don&#39;t let anyone come</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2576,26 +2629,30 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>and cause trouble. I won&#39;t be long.”</p>
-                    
-                    <p>“But your safety is also our priority.” Sloan became a nervous wreck on that note. “What if something</p>
-                    
-                    <p>bad happened to you? How am I going to explain it to Mr. Lindberg?” Co?tent оf</p>
-                    
-                    <p>“But—”</p>
-                    
-                    <p>“Ms. Felch, Ms. Felch...”</p>
-                    
-                    <p>Sloan continued to call out to her as he tried to chase after her. Sadly, his voice was drowned by the</p>
-                    
-                    <p>howling wind.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>and cause trouble. I won&#39;t be long.”</p>
+                        
+                        <p>“But your safety is also our priority.” Sloan became a nervous wreck on that note. “What if something</p>
+                        
+                        <p>bad happened to you? How am I going to explain it to Mr. Lindberg?” Co?tent оf</p>
+                        
+                        <p>“But—”</p>
+                        
+                        <p>“Ms. Felch, Ms. Felch...”</p>
+                        
+                        <p>Sloan continued to call out to her as he tried to chase after her. Sadly, his voice was drowned by the</p>
+                        
+                        <p>howling wind.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4313,6 +4370,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4399,9 +4536,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4465,7 +4603,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4510,13 +4647,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4573,21 +4707,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:26.152263",
-        "dateModified": "2026-07-17T17:08:26.152263",
+        "datePublished": "2026-07-19T13:10:21.838920",
+        "dateModified": "2026-07-19T13:10:21.838920",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,64 +2422,32 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 283</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>After a long pause, he muttered under his breath, &#34;Honestly, I can&#39;t tell if Sophia is torturing Ethan or if Ethan is torturing Sophia. These two—love and torment go hand in hand with them...&#34;</p>
-                    
-                    <p>Ah, whatever.</p>
-                    
-                    <p>Carried in Ethan&#39;s arms into the elevator, Sophia wrapped her arms around his neck and murmured softly, &#34;This... isn&#39;t so bad.&#34;</p>
-                    
-                    <p>Ethan arched a brow. &#34;What?&#34;</p>
-                    
-                    <p>Her cheeks were flushed from the confined space, warm against the cool skin of his neck—an oddly soothing contrast.</p>
-                    
-                    <p>She felt... content.</p>
-                    
-                    <p>And he? A little less cold.</p>
-                    
-                    <p>&#34;You weren&#39;t as cruel as I thought,&#34; she admitted quietly. &#34;You never forced me to entertain other men. And Lily... you let her go to kindergarten.&#34; A pause. &#34;I&#39;m grateful for that.&#34;</p>
-                    
-                    <p>Ethan stiffened.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>He nearly set her down right then, pinching her waist instead as he growled, &#34;In the six years I&#39;ve known you, when have you ever seen me treat a woman like this? You spent three years calling me heartless, and now you&#39;re still—&#34;</p>
-                    
-                    <p>But before he could finish, the elevator doors slid open.</p>
-                    
-                    <p>Standing right outside, wide-eyed, was Lily.</p>
-                    
-                    <p>&#34;Wow!&#34; The little girl gasped, staring at the &#34;mean man&#34; holding her mother. She didn&#39;t even protest.</p>
-                    
-                    <p>&#34;Is Mommy asleep?&#34; Lily asked, tilting her head.</p>
-                    
-                    <p>&#34;Put me down—now!&#34; Sophia hissed, face burning at being caught like this.</p>
-                    
-                    <p>&#34;Mommy! You&#39;re awake!&#34; Lily stretched on her tiptoes, trying to see better. Ethan immediately lowered Sophia to the ground.</p>
-                    
-                    <p>&#34;Mommy, guess what? Kindergarten was so fun today! It&#39;s way bigger than my old one, but...&#34; Her excitement dimmed slightly.</p>
-                    
-                    <p>&#34;What&#39;s wrong, sweetheart?&#34; Sophia knelt to meet her daughter&#39;s eyes.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>After a long pause, he muttered under his breath, &#34;Honestly, I can&#39;t tell if Sophia is torturing Ethan or if Ethan is torturing Sophia. These two—love and torment go hand in hand with them...&#34;</p>
+                        
+                        <p>Ah, whatever.</p>
+                        
+                        <p>Carried in Ethan&#39;s arms into the elevator, Sophia wrapped her arms around his neck and murmured softly, &#34;This... isn&#39;t so bad.&#34;</p>
+                        
+                        <p>Ethan arched a brow. &#34;What?&#34;</p>
+                        
+                        <p>Her cheeks were flushed from the confined space, warm against the cool skin of his neck—an oddly soothing contrast.</p>
+                        
+                        <p>She felt... content.</p>
+                        
+                        <p>And he? A little less cold.</p>
+                        
+                        <p>&#34;You weren&#39;t as cruel as I thought,&#34; she admitted quietly. &#34;You never forced me to entertain other men. And Lily... you let her go to kindergarten.&#34; A pause. &#34;I&#39;m grateful for that.&#34;</p>
+                        
+                        <p>Ethan stiffened.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2455,86 +2458,132 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>&#34;I don&#39;t know anyone there. No friends yet.&#34; Lily pouted.</p>
-                    
-                    <p>&#34;That&#39;s okay, baby. You&#39;ll make friends soon,&#34; Sophia reassured her gently.</p>
-                    
-                    <p>Lily nodded. &#34;Can I bring treats tomorrow? To share? Maybe then they&#39;ll talk to me.&#34;</p>
-                    
-                    <p>At four and a half, in a new environment, the loneliness was palpable.</p>
-                    
-                    <p>For a child, sharing food was the easiest way to break the ice.</p>
-                    
-                    <p>Yet even this small request twisted Sophia&#39;s heart.</p>
-                    
-                    <p>Every cent she had was seized by Ethan to &#34;repay debts.&#34; She was penniless.</p>
-                    
-                    <p>Swallowing the bitterness, Sophia forced a smile. &#34;Sweetheart, we... can&#39;t afford gifts right now.&#34;</p>
-                    
-                    <p>Maybe never. But she couldn&#39;t say that.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>He nearly set her down right then, pinching her waist instead as he growled, &#34;In the six years I&#39;ve known you, when have you ever seen me treat a woman like this? You spent three years calling me heartless, and now you&#39;re still—&#34;</p>
+                        
+                        <p>But before he could finish, the elevator doors slid open.</p>
+                        
+                        <p>Standing right outside, wide-eyed, was Lily.</p>
+                        
+                        <p>&#34;Wow!&#34; The little girl gasped, staring at the &#34;mean man&#34; holding her mother. She didn&#39;t even protest.</p>
+                        
+                        <p>&#34;Is Mommy asleep?&#34; Lily asked, tilting her head.</p>
+                        
+                        <p>&#34;Put me down—now!&#34; Sophia hissed, face burning at being caught like this.</p>
+                        
+                        <p>&#34;Mommy! You&#39;re awake!&#34; Lily stretched on her tiptoes, trying to see better. Ethan immediately lowered Sophia to the ground.</p>
+                        
+                        <p>&#34;Mommy, guess what? Kindergarten was so fun today! It&#39;s way bigger than my old one, but...&#34; Her excitement dimmed slightly.</p>
+                        
+                        <p>&#34;What&#39;s wrong, sweetheart?&#34; Sophia knelt to meet her daughter&#39;s eyes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;I don&#39;t know anyone there. No friends yet.&#34; Lily pouted.</p>
+                        
+                        <p>&#34;That&#39;s okay, baby. You&#39;ll make friends soon,&#34; Sophia reassured her gently.</p>
+                        
+                        <p>Lily nodded. &#34;Can I bring treats tomorrow? To share? Maybe then they&#39;ll talk to me.&#34;</p>
+                        
+                        <p>At four and a half, in a new environment, the loneliness was palpable.</p>
+                        
+                        <p>For a child, sharing food was the easiest way to break the ice.</p>
+                        
+                        <p>Yet even this small request twisted Sophia&#39;s heart.</p>
+                        
+                        <p>Every cent she had was seized by Ethan to &#34;repay debts.&#34; She was penniless.</p>
+                        
+                        <p>Swallowing the bitterness, Sophia forced a smile. &#34;Sweetheart, we... can&#39;t afford gifts right now.&#34;</p>
+                        
+                        <p>Maybe never. But she couldn&#39;t say that.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>She cupped Lily&#39;s face. &#34;When things are better, I&#39;ll buy you lots of presents to share, okay? For now, just introduce yourself. You&#39;ll make friends without treats.&#34;</p>
-                    
-                    <p>&#34;Are we poor, Mommy?&#34; Lily asked, too perceptive for her age.</p>
-                    
-                    <p>Sophia nodded silently.</p>
-                    
-                    <p>Lily squeezed her hand. &#34;It&#39;s okay. I don&#39;t need presents. Don&#39;t be sad, Mommy. I&#39;m not sad!&#34;</p>
-                    
-                    <p>&#34;You can bring gifts.&#34; Ethan&#39;s voice cut in, calm but firm.</p>
-                    
-                    <p>Lily&#39;s eyes lit up like stars. &#34;Really? You&#39;ll buy them?&#34;</p>
-                    
-                    <p>&#34;Yes.&#34; His tone was as serious as a boardroom meeting.</p>
-                    
-                    <p>Lily hesitated. &#34;Promise?&#34;</p>
-                    
-                    <p>&#34;My word is final.&#34; He shot her a look.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She cupped Lily&#39;s face. &#34;When things are better, I&#39;ll buy you lots of presents to share, okay? For now, just introduce yourself. You&#39;ll make friends without treats.&#34;</p>
+                        
+                        <p>&#34;Are we poor, Mommy?&#34; Lily asked, too perceptive for her age.</p>
+                        
+                        <p>Sophia nodded silently.</p>
+                        
+                        <p>Lily squeezed her hand. &#34;It&#39;s okay. I don&#39;t need presents. Don&#39;t be sad, Mommy. I&#39;m not sad!&#34;</p>
+                        
+                        <p>&#34;You can bring gifts.&#34; Ethan&#39;s voice cut in, calm but firm.</p>
+                        
+                        <p>Lily&#39;s eyes lit up like stars. &#34;Really? You&#39;ll buy them?&#34;</p>
+                        
+                        <p>&#34;Yes.&#34; His tone was as serious as a boardroom meeting.</p>
+                        
+                        <p>Lily hesitated. &#34;Promise?&#34;</p>
+                        
+                        <p>&#34;My word is final.&#34; He shot her a look.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Still calling him &#34;mean man,&#34; huh?</p>
-                    
-                    <p>He turned on his heel and strode inside, leaving mother and daughter staring after him. Lily tugged Sophia&#39;s sleeve. &#34;Did I make him mad?&#34;</p>
-                    
-                    <p>Sophia sighed, crouching to whisper, &#34;When someone offers you gifts, maybe don&#39;t call them names. Even if just to their face. Understand?&#34;</p>
-                    
-                    <p>Lily beamed. Secretly, she&#39;d only kept up the &#34;mean man&#34; act to cheer her mom.</p>
-                    
-                    <p>&#34;I won&#39;t call him that anymore! Come on, Mommy—Aunt Margaret made dinner! I waited for you!&#34;</p>
-                    
-                    <p>Sophia smiled. Just being with Lily was enough.</p>
-                    
-                    <p>Ethan&#39;s voice rang out from inside. &#34;Toy room. Now.&#34;</p>
-                    
-                    <p>Lily froze.</p>
-                    
-                    <p>Toy room? What toy room?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Still calling him &#34;mean man,&#34; huh?</p>
+                        
+                        <p>He turned on his heel and strode inside, leaving mother and daughter staring after him. Lily tugged Sophia&#39;s sleeve. &#34;Did I make him mad?&#34;</p>
+                        
+                        <p>Sophia sighed, crouching to whisper, &#34;When someone offers you gifts, maybe don&#39;t call them names. Even if just to their face. Understand?&#34;</p>
+                        
+                        <p>Lily beamed. Secretly, she&#39;d only kept up the &#34;mean man&#34; act to cheer her mom.</p>
+                        
+                        <p>&#34;I won&#39;t call him that anymore! Come on, Mommy—Aunt Margaret made dinner! I waited for you!&#34;</p>
+                        
+                        <p>Sophia smiled. Just being with Lily was enough.</p>
+                        
+                        <p>Ethan&#39;s voice rang out from inside. &#34;Toy room. Now.&#34;</p>
+                        
+                        <p>Lily froze.</p>
+                        
+                        <p>Toy room? What toy room?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2546,58 +2595,66 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Before she could panic, Margaret appeared. &#34;This way, little miss.&#34;</p>
-                    
-                    <p>The moment the door swung open, Lily shrieked.</p>
-                    
-                    <p>&#34;MOMMY! LOOK!&#34;</p>
-                    
-                    <p>Sophia rushed over—and gasped.</p>
-                    
-                    <p>In just one day, the plain room had transformed into a wonderland.</p>
-                    
-                    <p>Wall decals of fairy-tale forests. A princess bed. A slide. A playhouse big enough to crawl inside. A tiny bicycle. A ball pit. Even a pretend bus!</p>
-                    
-                    <p>It was bigger than her kindergarten playground.</p>
-                    
-                    <p>Lily dashed inside, giggling as she touched everything.</p>
-                    
-                    <p>Margaret watched, eyes misty. After years of cold silence, the Blackwood mansion finally felt like a home.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Before she could panic, Margaret appeared. &#34;This way, little miss.&#34;</p>
+                        
+                        <p>The moment the door swung open, Lily shrieked.</p>
+                        
+                        <p>&#34;MOMMY! LOOK!&#34;</p>
+                        
+                        <p>Sophia rushed over—and gasped.</p>
+                        
+                        <p>In just one day, the plain room had transformed into a wonderland.</p>
+                        
+                        <p>Wall decals of fairy-tale forests. A princess bed. A slide. A playhouse big enough to crawl inside. A tiny bicycle. A ball pit. Even a pretend bus!</p>
+                        
+                        <p>It was bigger than her kindergarten playground.</p>
+                        
+                        <p>Lily dashed inside, giggling as she touched everything.</p>
+                        
+                        <p>Margaret watched, eyes misty. After years of cold silence, the Blackwood mansion finally felt like a home.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Play here. Alone.&#34; Ethan&#39;s command came from the doorway.</p>
-                    
-                    <p>Lily, now too thrilled to argue, nodded eagerly. Then she glanced at Sophia. &#34;Go eat, Mommy! I&#39;m fine!&#34;</p>
-                    
-                    <p>Smart girl. She knew Ethan wanted her mother to rest.</p>
-                    
-                    <p>Sophia kissed her forehead before heading to the dining room.</p>
-                    
-                    <p>Exhausted, she felt like a puppet after today. But it was past nine, and hunger gnawed at her.</p>
-                    
-                    <p>Margaret served dishes one by one: crisp purple cabbage drizzled with citrus dressing, thinly sliced five-spice beef, and finally, a steaming bowl of rib-and-yam soup. The meat fell off the bone, tender yet rich.</p>
-                    
-                    <p>Her stomach growled.</p>
-                    
-                    <p>For the first time in years, Sophia Blackwood sat down to a meal that felt like... home.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Play here. Alone.&#34; Ethan&#39;s command came from the doorway.</p>
+                        
+                        <p>Lily, now too thrilled to argue, nodded eagerly. Then she glanced at Sophia. &#34;Go eat, Mommy! I&#39;m fine!&#34;</p>
+                        
+                        <p>Smart girl. She knew Ethan wanted her mother to rest.</p>
+                        
+                        <p>Sophia kissed her forehead before heading to the dining room.</p>
+                        
+                        <p>Exhausted, she felt like a puppet after today. But it was past nine, and hunger gnawed at her.</p>
+                        
+                        <p>Margaret served dishes one by one: crisp purple cabbage drizzled with citrus dressing, thinly sliced five-spice beef, and finally, a steaming bowl of rib-and-yam soup. The meat fell off the bone, tender yet rich.</p>
+                        
+                        <p>Her stomach growled.</p>
+                        
+                        <p>For the first time in years, Sophia Blackwood sat down to a meal that felt like... home.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4315,6 +4372,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4401,9 +4538,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4467,7 +4605,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4512,13 +4649,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4575,21 +4709,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

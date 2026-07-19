@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.563022",
-        "dateModified": "2026-07-17T17:08:28.563022",
+        "datePublished": "2026-07-19T13:10:24.369314",
+        "dateModified": "2026-07-19T13:10:24.369314",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,48 +2422,24 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 358</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Jasmine&#39;s eyes turned bloodshot as her body trembled violently. She glared angrily at Joyce as if her eyes could spew venom.</p>
-                    
-                    <p>When she saw the change in Jasmine&#39;s expression, Natalie stopped laughing and put on a serious expression. “That&#39;s enough Joyce, let&#39;s not waste any more time with her. After all, she is now a cripple. In case she sets us up, there&#39;s no way we can wash our hands of it.”</p>
-                    
-                    <p>“You&#39;re absolutely right. In that case, let&#39;s stay away from her.” Just as she spoke, Joyce backed off at once.</p>
-                    
-                    <p>Natalie didn&#39;t know whether to laugh or to cry. “Fine, let&#39;s go and see Mr. Horner now and pass the things to him.”</p>
-                    
-                    <p>“Mmm-hmm.” Joyce nodded. Sidestepping Jasmine, she followed Natalie into Mr. Horner&#39;s office.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>As Jasmine stared coldly at the closed door of the office, she swore to herself. I will never forgive those two!</p>
-                    
-                    <p>Just you wait, I will pay you back for today&#39;s humiliation ten times over.</p>
-                    
-                    <p>With that, she left.</p>
-                    
-                    <p>Before she was gone long, Natalie and Joyce came out of the office after handing over the things Joyce had brought.</p>
-                    
-                    <p>“Nat, I&#39;ll return to the hospital first.” Joyce stretched herself.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Jasmine&#39;s eyes turned bloodshot as her body trembled violently. She glared angrily at Joyce as if her eyes could spew venom.</p>
+                        
+                        <p>When she saw the change in Jasmine&#39;s expression, Natalie stopped laughing and put on a serious expression. “That&#39;s enough Joyce, let&#39;s not waste any more time with her. After all, she is now a cripple. In case she sets us up, there&#39;s no way we can wash our hands of it.”</p>
+                        
+                        <p>“You&#39;re absolutely right. In that case, let&#39;s stay away from her.” Just as she spoke, Joyce backed off at once.</p>
+                        
+                        <p>Natalie didn&#39;t know whether to laugh or to cry. “Fine, let&#39;s go and see Mr. Horner now and pass the things to him.”</p>
+                        
+                        <p>“Mmm-hmm.” Joyce nodded. Sidestepping Jasmine, she followed Natalie into Mr. Horner&#39;s office.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2439,40 +2450,22 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>“Wait, please take both the children with you. I still don&#39;t know how long more the competition will go on. Hence, I don&#39;t feel secure having them stay here. After all, Jasmine is also here and may do</p>
-                    
-                    <p>something to the children,” Natalie explained with a concerned expression while massaging her temples.</p>
-                    
-                    <p>Joyce patted her on the shoulder. “Alright, don&#39;t worry too much. I&#39;ll take them with me. Where are they now?”</p>
-                    
-                    <p>“In the break room. Follow me.” Natalie guided Joyce.</p>
-                    
-                    <p>When they arrived, the children were watching cartoons. At the sight of Natalie and Joyce, they jumped in joy. “Mommy! Aunt Joyce!”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>“Hey, kids!” Natalie and Joyce each hugged one of them.</p>
-                    
-                    <p>Sitting in Natalie&#39;s embrace, Connor asked, “Mommy, has your competition ended?”</p>
-                    
-                    <p>“It&#39;s still early. The reason I came is to let Aunt Joyce take you with her.” Natalie pointed at Joyce.</p>
-                    
-                    <p>Joyce nodded. “That&#39;s right. Your mommy is worried that there&#39;s no one to look after you. Hence, she wants you to come with me.”</p>
-                    
-                    <p>“Alright.” Both Connor and Sharon nodded their heads.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>As Jasmine stared coldly at the closed door of the office, she swore to herself. I will never forgive those two!</p>
+                        
+                        <p>Just you wait, I will pay you back for today&#39;s humiliation ten times over.</p>
+                        
+                        <p>With that, she left.</p>
+                        
+                        <p>Before she was gone long, Natalie and Joyce came out of the office after handing over the things Joyce had brought.</p>
+                        
+                        <p>“Nat, I&#39;ll return to the hospital first.” Joyce stretched herself.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2483,18 +2476,22 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>Although they preferred to stay with Natalie, they also didn&#39;t want her to worry.</p>
-                    
-                    <p>When she saw how disappointed the children were, she let out a guilty sigh. “Don&#39;t worry. Once the competition is over, I&#39;ll pick you up from the hospital. In the meantime, be good and listen to Aunt Joyce and Uncle Stanley.”</p>
-                    
-                    <p>“We know, Mommy,” the children replied in unison.</p>
-                    
-                    <p>After putting Connor down, she pushed him toward Joyce. “Joyce, thanks for watching over them. I&#39;ll need to return to the conference room as the competition is still ongoing.”</p>
-                    
-                    <p>“Just go.” Joyce shooed her away with a smile.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Wait, please take both the children with you. I still don&#39;t know how long more the competition will go on. Hence, I don&#39;t feel secure having them stay here. After all, Jasmine is also here and may do</p>
+                        
+                        <p>something to the children,” Natalie explained with a concerned expression while massaging her temples.</p>
+                        
+                        <p>Joyce patted her on the shoulder. “Alright, don&#39;t worry too much. I&#39;ll take them with me. Where are they now?”</p>
+                        
+                        <p>“In the break room. Follow me.” Natalie guided Joyce.</p>
+                        
+                        <p>When they arrived, the children were watching cartoons. At the sight of Natalie and Joyce, they jumped in joy. “Mommy! Aunt Joyce!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2505,45 +2502,105 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>Acknowledging her, Natalie tousled the children&#39;s heads and left.</p>
-                    
-                    <p>The moment she returned to the conference room, the director declared, “The competition starts now. You have two hours.”</p>
-                    
-                    <p>Liam nodded and started the clock.</p>
-                    
-                    <p>After returning to her seat, Natalie took a deep breath. Unfolding a new piece of design paper, she closed her eyes and tried to let her inspiration flow.</p>
-                    
-                    <p>Meanwhile, Natalie was sitting nearby, separated by two empty seats. She was so nervous that she had broken into a cold sweat.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Hey, kids!” Natalie and Joyce each hugged one of them.</p>
+                        
+                        <p>Sitting in Natalie&#39;s embrace, Connor asked, “Mommy, has your competition ended?”</p>
+                        
+                        <p>“It&#39;s still early. The reason I came is to let Aunt Joyce take you with her.” Natalie pointed at Joyce.</p>
+                        
+                        <p>Joyce nodded. “That&#39;s right. Your mommy is worried that there&#39;s no one to look after you. Hence, she wants you to come with me.”</p>
+                        
+                        <p>“Alright.” Both Connor and Sharon nodded their heads.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Although they preferred to stay with Natalie, they also didn&#39;t want her to worry.</p>
+                        
+                        <p>When she saw how disappointed the children were, she let out a guilty sigh. “Don&#39;t worry. Once the competition is over, I&#39;ll pick you up from the hospital. In the meantime, be good and listen to Aunt Joyce and Uncle Stanley.”</p>
+                        
+                        <p>“We know, Mommy,” the children replied in unison.</p>
+                        
+                        <p>After putting Connor down, she pushed him toward Joyce. “Joyce, thanks for watching over them. I&#39;ll need to return to the conference room as the competition is still ongoing.”</p>
+                        
+                        <p>“Just go.” Joyce shooed her away with a smile.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Acknowledging her, Natalie tousled the children&#39;s heads and left.</p>
+                        
+                        <p>The moment she returned to the conference room, the director declared, “The competition starts now. You have two hours.”</p>
+                        
+                        <p>Liam nodded and started the clock.</p>
+                        
+                        <p>After returning to her seat, Natalie took a deep breath. Unfolding a new piece of design paper, she closed her eyes and tried to let her inspiration flow.</p>
+                        
+                        <p>Meanwhile, Natalie was sitting nearby, separated by two empty seats. She was so nervous that she had broken into a cold sweat.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>At that moment, her mind drew a blank as she simply had zero inspiration. In fact, she couldn&#39;t even think straight as she was unable to focus at all.</p>
-                    
-                    <p>All that filled her mind was her hatred for the director and the fact that he had changed the topic at the last minute. It resulted in her not being able to do anything.</p>
-                    
-                    <p>In contrast to Jasmine&#39;s panic, Natalie looked extremely calm as if she wasn&#39;t in a competition at all.</p>
-                    
-                    <p>Gradually opening her eyes, she let out a confident smile as she picked up her pencil.</p>
-                    
-                    <p>“Shane, Ms. Smith seems to have found her inspiration,” watching the live stream, Jacqueline commented to the man sitting beside her bed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>At that moment, her mind drew a blank as she simply had zero inspiration. In fact, she couldn&#39;t even think straight as she was unable to focus at all.</p>
+                        
+                        <p>All that filled her mind was her hatred for the director and the fact that he had changed the topic at the last minute. It resulted in her not being able to do anything.</p>
+                        
+                        <p>In contrast to Jasmine&#39;s panic, Natalie looked extremely calm as if she wasn&#39;t in a competition at all.</p>
+                        
+                        <p>Gradually opening her eyes, she let out a confident smile as she picked up her pencil.</p>
+                        
+                        <p>“Shane, Ms. Smith seems to have found her inspiration,” watching the live stream, Jacqueline commented to the man sitting beside her bed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
@@ -4261,6 +4318,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4347,9 +4484,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4413,7 +4551,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4458,13 +4595,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4521,21 +4655,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

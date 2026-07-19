@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:33.215011",
-        "dateModified": "2026-07-17T17:08:33.215011",
+        "datePublished": "2026-07-19T13:10:30.207886",
+        "dateModified": "2026-07-19T13:10:30.207886",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,132 +2422,34 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 490</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Isabella paused briefly before accepting the envelope.</p>
-                    
-                    <p>She opened it and pulled out the contents.</p>
-                    
-                    <p>A beautifully crafted card lay inside.</p>
-                    
-                    <p>Her eyes widened in shock.</p>
-                    
-                    <p>It was an admission notice for the international kindergarten Liam would attend.</p>
-                    
-                    <p>The card was elegantly inscribed with the school’s name.</p>
-                    
-                    <p>Detailed enrollment instructions were included.</p>
-                    
-                    <p>As Isabella read, her expression grew darker with each word.</p>
-                    
-                    <p>Her gaze froze on one specific line.</p>
-                    
-                    <p>&#34;Both parents are required to attend the new student orientation at 10 a.m. tomorrow.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>Her heart sank.</p>
-                    
-                    <p>She looked up sharply, meeting Ethan’s cold stare.</p>
-                    
-                    <p>&#34;The school requires it,&#34; he stated flatly. &#34;You can inform Lucas.&#34;</p>
-                    
-                    <p>With that, Ethan turned and ascended the stairs.</p>
-                    
-                    <p>His demeanor was completely detached.</p>
-                    
-                    <p>Isabella stood frozen, the notice trembling in her hand.</p>
-                    
-                    <p>Her mind raced.</p>
-                    
-                    <p>Liam’s parentage… Lucas… Ethan… What should she do now?</p>
-                    
-                    <p>She began retreating toward her room but halted suddenly.</p>
-                    
-                    <p>Someone stood at the base of the stairs.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>It was her grandmother, Eleanor.</p>
-                    
-                    <p>Eleanor held a jacket, pausing as if she had been about to descend.</p>
-                    
-                    <p>Worry and understanding were etched across her features.</p>
-                    
-                    <p>Isabella’s spirits plummeted.</p>
-                    
-                    <p>Clearly, Eleanor had overheard part of her conversation with Ethan.</p>
-                    
-                    <p>Eleanor’s love for her and Liam had always been deep.</p>
-                    
-                    <p>She must be concerned…</p>
-                    
-                    <p>Tears welled in Isabella’s eyes.</p>
-                    
-                    <p>She approached Eleanor and whispered, &#34;Grandma, shouldn’t you be resting?&#34;</p>
-                    
-                    <p>&#34;Isabella…&#34; Eleanor’s sigh was heavy with concern. &#34;You and… Mr. Blackwood, it’s…&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>She hesitated, struggling to find the right words.</p>
-                    
-                    <p>The dynamics between Isabella and Ethan were painfully complex.</p>
-                    
-                    <p>Eleanor recognized Isabella’s strength.</p>
-                    
-                    <p>She had always carried her burdens alone, shielding her family from worry.</p>
-                    
-                    <p>&#34;I’m fine, Grandma,&#34; Isabella reassured her with a forced smile. &#34;Please don’t worry. Ethan and I will handle this.&#34;</p>
-                    
-                    <p>&#34;Isabella, you’ve endured so much,&#34; Eleanor said, pulling her into a gentle embrace.</p>
-                    
-                    <p>The calming scent of essential oils filled the air.</p>
-                    
-                    <p>Soft music played in the background of the luxurious spa.</p>
-                    
-                    <p>Sophia reclined comfortably on a massage bed, eyes closed.</p>
-                    
-                    <p>She savored the skilled touch of the beautician.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Isabella paused briefly before accepting the envelope.</p>
+                        
+                        <p>She opened it and pulled out the contents.</p>
+                        
+                        <p>A beautifully crafted card lay inside.</p>
+                        
+                        <p>Her eyes widened in shock.</p>
+                        
+                        <p>It was an admission notice for the international kindergarten Liam would attend.</p>
+                        
+                        <p>The card was elegantly inscribed with the school’s name.</p>
+                        
+                        <p>Detailed enrollment instructions were included.</p>
+                        
+                        <p>As Isabella read, her expression grew darker with each word.</p>
+                        
+                        <p>Her gaze froze on one specific line.</p>
+                        
+                        <p>&#34;Both parents are required to attend the new student orientation at 10 a.m. tomorrow.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2523,28 +2460,104 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>She had invited Zoe for a spa day to ease the tension.</p>
-                    
-                    <p>The banquet incident and the photo scandal had left her on edge.</p>
-                    
-                    <p>Zoe seemed about to broach a topic when a phone rang.</p>
-                    
-                    <p>Sophia checked the caller ID.</p>
-                    
-                    <p>It was her contact from the legal department at Blackwood Enterprises.</p>
-                    
-                    <p>She answered quickly.</p>
-                    
-                    <p>Her friend’s worried voice filled her ear. &#34;Sophia, something’s happened. Mr. Blackwood has taken action against the Grant Group.&#34;</p>
-                    
-                    <p>&#34;What? Seriously?&#34; Sophia bolted upright from the massage bed, her face pale.</p>
-                    
-                    <p>She was utterly shocked.</p>
-                    
-                    <p>Ethan had actually moved against the Grant family.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Her heart sank.</p>
+                        
+                        <p>She looked up sharply, meeting Ethan’s cold stare.</p>
+                        
+                        <p>&#34;The school requires it,&#34; he stated flatly. &#34;You can inform Lucas.&#34;</p>
+                        
+                        <p>With that, Ethan turned and ascended the stairs.</p>
+                        
+                        <p>His demeanor was completely detached.</p>
+                        
+                        <p>Isabella stood frozen, the notice trembling in her hand.</p>
+                        
+                        <p>Her mind raced.</p>
+                        
+                        <p>Liam’s parentage… Lucas… Ethan… What should she do now?</p>
+                        
+                        <p>She began retreating toward her room but halted suddenly.</p>
+                        
+                        <p>Someone stood at the base of the stairs.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>It was her grandmother, Eleanor.</p>
+                        
+                        <p>Eleanor held a jacket, pausing as if she had been about to descend.</p>
+                        
+                        <p>Worry and understanding were etched across her features.</p>
+                        
+                        <p>Isabella’s spirits plummeted.</p>
+                        
+                        <p>Clearly, Eleanor had overheard part of her conversation with Ethan.</p>
+                        
+                        <p>Eleanor’s love for her and Liam had always been deep.</p>
+                        
+                        <p>She must be concerned…</p>
+                        
+                        <p>Tears welled in Isabella’s eyes.</p>
+                        
+                        <p>She approached Eleanor and whispered, &#34;Grandma, shouldn’t you be resting?&#34;</p>
+                        
+                        <p>&#34;Isabella…&#34; Eleanor’s sigh was heavy with concern. &#34;You and… Mr. Blackwood, it’s…&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She hesitated, struggling to find the right words.</p>
+                        
+                        <p>The dynamics between Isabella and Ethan were painfully complex.</p>
+                        
+                        <p>Eleanor recognized Isabella’s strength.</p>
+                        
+                        <p>She had always carried her burdens alone, shielding her family from worry.</p>
+                        
+                        <p>&#34;I’m fine, Grandma,&#34; Isabella reassured her with a forced smile. &#34;Please don’t worry. Ethan and I will handle this.&#34;</p>
+                        
+                        <p>&#34;Isabella, you’ve endured so much,&#34; Eleanor said, pulling her into a gentle embrace.</p>
+                        
+                        <p>The calming scent of essential oils filled the air.</p>
+                        
+                        <p>Soft music played in the background of the luxurious spa.</p>
+                        
+                        <p>Sophia reclined comfortably on a massage bed, eyes closed.</p>
+                        
+                        <p>She savored the skilled touch of the beautician.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2555,53 +2568,97 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>The Grants had been long-standing allies of the Blackwoods.</p>
-                    
-                    <p>Lucas was once as close to Ethan as a brother.</p>
-                    
-                    <p>&#34;What exactly is going on?&#34; Sophia asked, her voice urgent.</p>
-                    
-                    <p>&#34;I don’t have all the details, but Mr. Blackwood’s approach is unusually aggressive this time,&#34; her friend explained.</p>
-                    
-                    <p>&#34;Why would Ethan do this?&#34; Sophia pressed further.</p>
-                    
-                    <p>&#34;It appears to stem from a business disagreement in their partnership.&#34;</p>
-                    
-                    <p>Zoe, overhearing parts of the conversation, also looked concerned.</p>
-                    
-                    <p>She vividly recalled the confrontation between Lucas’s mother and Isabella.</p>
-                    
-                    <p>What on earth was happening?</p>
-                    
-                    <p>The atmosphere grew thick with tension.</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>She had invited Zoe for a spa day to ease the tension.</p>
+                        
+                        <p>The banquet incident and the photo scandal had left her on edge.</p>
+                        
+                        <p>Zoe seemed about to broach a topic when a phone rang.</p>
+                        
+                        <p>Sophia checked the caller ID.</p>
+                        
+                        <p>It was her contact from the legal department at Blackwood Enterprises.</p>
+                        
+                        <p>She answered quickly.</p>
+                        
+                        <p>Her friend’s worried voice filled her ear. &#34;Sophia, something’s happened. Mr. Blackwood has taken action against the Grant Group.&#34;</p>
+                        
+                        <p>&#34;What? Seriously?&#34; Sophia bolted upright from the massage bed, her face pale.</p>
+                        
+                        <p>She was utterly shocked.</p>
+                        
+                        <p>Ethan had actually moved against the Grant family.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The Grants had been long-standing allies of the Blackwoods.</p>
+                        
+                        <p>Lucas was once as close to Ethan as a brother.</p>
+                        
+                        <p>&#34;What exactly is going on?&#34; Sophia asked, her voice urgent.</p>
+                        
+                        <p>&#34;I don’t have all the details, but Mr. Blackwood’s approach is unusually aggressive this time,&#34; her friend explained.</p>
+                        
+                        <p>&#34;Why would Ethan do this?&#34; Sophia pressed further.</p>
+                        
+                        <p>&#34;It appears to stem from a business disagreement in their partnership.&#34;</p>
+                        
+                        <p>Zoe, overhearing parts of the conversation, also looked concerned.</p>
+                        
+                        <p>She vividly recalled the confrontation between Lucas’s mother and Isabella.</p>
+                        
+                        <p>What on earth was happening?</p>
+                        
+                        <p>The atmosphere grew thick with tension.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Both women were lost in their own thoughts.</p>
-                    
-                    <p>Sophia quickly dressed and shot Zoe an apologetic glance.</p>
-                    
-                    <p>&#34;Zoe, I just remembered something urgent. Please, enjoy the rest of your day here.&#34;</p>
-                    
-                    <p>She rushed off without another word.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Both women were lost in their own thoughts.</p>
+                        
+                        <p>Sophia quickly dressed and shot Zoe an apologetic glance.</p>
+                        
+                        <p>&#34;Zoe, I just remembered something urgent. Please, enjoy the rest of your day here.&#34;</p>
+                        
+                        <p>She rushed off without another word.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
@@ -4319,6 +4376,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4405,9 +4542,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4471,7 +4609,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4516,13 +4653,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4579,21 +4713,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

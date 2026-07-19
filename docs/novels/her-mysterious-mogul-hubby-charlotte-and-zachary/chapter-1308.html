@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.765066",
-        "dateModified": "2026-07-17T17:08:31.765066",
+        "datePublished": "2026-07-19T13:10:28.499224",
+        "dateModified": "2026-07-19T13:10:28.499224",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,32 +2422,62 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1408</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Don&#39;t worry about the children. We will take good care of them,” Ben replied earnestly. “Nevertheless,</p>
-                    
-                    <p>it&#39;s still too dangerous for you to go back to Erihal. I&#39;m sure you know how important you are to Mr.</p>
-                    
-                    <p>Nacht. If anything happens to you, it will be meaningless even if you found Francesco.”</p>
-                    
-                    <p>Charlotte was touched by his words. She never knew how important she was to Zachary.</p>
-                    
-                    <p>“In my opinion, we should try and locate Francesco first,” Ben suggested. “Bruce is now in Erihal, so he</p>
-                    
-                    <p>can take action the moment he receives your instruction. I believe he will be able to bring Francesco</p>
-                    
-                    <p>back to H City very soon.”</p>
-                    
-                    <p>“You don&#39;t know how difficult Francesco is.” Furrowing her eyebrows, Charlotte remarked, “He might</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Don&#39;t worry about the children. We will take good care of them,” Ben replied earnestly. “Nevertheless,</p>
+                        
+                        <p>it&#39;s still too dangerous for you to go back to Erihal. I&#39;m sure you know how important you are to Mr.</p>
+                        
+                        <p>Nacht. If anything happens to you, it will be meaningless even if you found Francesco.”</p>
+                        
+                        <p>Charlotte was touched by his words. She never knew how important she was to Zachary.</p>
+                        
+                        <p>“In my opinion, we should try and locate Francesco first,” Ben suggested. “Bruce is now in Erihal, so he</p>
+                        
+                        <p>can take action the moment he receives your instruction. I believe he will be able to bring Francesco</p>
+                        
+                        <p>back to H City very soon.”</p>
+                        
+                        <p>“You don&#39;t know how difficult Francesco is.” Furrowing her eyebrows, Charlotte remarked, “He might</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>look like a doctor on the surface but is actually a mysterious and massively wealthy man. No one</p>
+                        
+                        <p>knows his true identity. When he was treating me back then, he wore a mask all the time. Hence, even</p>
+                        
+                        <p>I don&#39;t know what he looks like. Furthermore, he&#39;s quite eccentric. Other than my brother, he doesn&#39;t</p>
+                        
+                        <p>respect anyone else. Even if we found him, he may not agree to follow Bruce back to H City.”</p>
+                        
+                        <p>“Huh?” The news unsettled Ben. “That does sound troublesome.”</p>
+                        
+                        <p>“Let&#39;s focus on getting a lead first.” Charlotte sighed. “Actually, he might not agree to help even if I see</p>
+                        
+                        <p>him personally. Unless...”</p>
+                        
+                        <p>“Unless what?” he asked frantically.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2423,24 +2488,92 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>look like a doctor on the surface but is actually a mysterious and massively wealthy man. No one</p>
-                    
-                    <p>knows his true identity. When he was treating me back then, he wore a mask all the time. Hence, even</p>
-                    
-                    <p>I don&#39;t know what he looks like. Furthermore, he&#39;s quite eccentric. Other than my brother, he doesn&#39;t</p>
-                    
-                    <p>respect anyone else. Even if we found him, he may not agree to follow Bruce back to H City.”</p>
-                    
-                    <p>“Huh?” The news unsettled Ben. “That does sound troublesome.”</p>
-                    
-                    <p>“Let&#39;s focus on getting a lead first.” Charlotte sighed. “Actually, he might not agree to help even if I see</p>
-                    
-                    <p>him personally. Unless...”</p>
-                    
-                    <p>“Unless what?” he asked frantically.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Unless Danrique makes the request.” Charlotte held onto a sliver of hope. “As of now, the ideal</p>
+                        
+                        <p>solution would be to find Danrique first and get him to ask Francesco.”</p>
+                        
+                        <p>“But Mr. Lindberg might not be willing to save Zachary.” Ben lacked confidence.</p>
+                        
+                        <p>“Begging him to do it is certainly easier than begging Francesco.” Charlotte was still hopeful. “Danrique</p>
+                        
+                        <p>might seem cold, but he treats me very well, unlike Francesco, who doesn&#39;t have a relationship with</p>
+                        
+                        <p>me. I&#39;m afraid he won&#39;t agree to do it on my account. At the same time, I&#39;m not sure if he will make an</p>
+                        
+                        <p>exception for Dr. Felch&#39;s sake. After all, Dr. Felch was the one who disowned him back then. Moreover,</p>
+                        
+                        <p>they had not been in touch in the last ten years. Anyhow, we still need to find him first.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“That&#39;s true.” Ben sighed. He had assumed that everything would be solved once they located</p>
+                        
+                        <p>Francesco. To his dismay, he only realized then that Francesco might not be willing to cooperate.</p>
+                        
+                        <p>Consequently, the matter was more tricky than he had thought.</p>
+                        
+                        <p>“All right now, you must be exhausted after what had happened in the last few days.” Charlotte</p>
+                        
+                        <p>changed the topic. “You should get some rest while I stay by Zachary&#39;s side.” “Mmh.” Ben nodded at</p>
+                        
+                        <p>her before taking his leave.</p>
+                        
+                        <p>With that, she remained by Zachary&#39;s bedside quietly, grateful that she could still have the chance to do</p>
+                        
+                        <p>so.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>She recalled everything that had happened between them, the ups and downs, the joys and miseries.</p>
+                        
+                        <p>By then, Charlotte came to realize how much their past felt like a story.</p>
+                        
+                        <p>Regardless, it was all water under the bridge. What mattered was appreciating those who were still in</p>
+                        
+                        <p>her life.</p>
+                        
+                        <p>With that thought in mind, Charlotte laid her head beside Zachary and fell asleep.</p>
+                        
+                        <p>Probably because she barely slept over the last four days, including three in which she was kidnapped,</p>
+                        
+                        <p>she was overwhelmed with exhaustion.</p>
+                        
+                        <p>Consequently, she fell into such a deep slumber that she did not even realize Zachary had awoken.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2451,24 +2584,28 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>“Unless Danrique makes the request.” Charlotte held onto a sliver of hope. “As of now, the ideal</p>
-                    
-                    <p>solution would be to find Danrique first and get him to ask Francesco.”</p>
-                    
-                    <p>“But Mr. Lindberg might not be willing to save Zachary.” Ben lacked confidence.</p>
-                    
-                    <p>“Begging him to do it is certainly easier than begging Francesco.” Charlotte was still hopeful. “Danrique</p>
-                    
-                    <p>might seem cold, but he treats me very well, unlike Francesco, who doesn&#39;t have a relationship with</p>
-                    
-                    <p>me. I&#39;m afraid he won&#39;t agree to do it on my account. At the same time, I&#39;m not sure if he will make an</p>
-                    
-                    <p>exception for Dr. Felch&#39;s sake. After all, Dr. Felch was the one who disowned him back then. Moreover,</p>
-                    
-                    <p>they had not been in touch in the last ten years. Anyhow, we still need to find him first.”</p>
-                    
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Jolted awake from his nightmare, Zachary was covered with cold sweat.</p>
+                        
+                        <p>He had dreamt of Charlotte and Louis&#39; wedding. When he ran into the venue to stop it, Charlotte</p>
+                        
+                        <p>pointed a gun at him and ordered him to leave.</p>
+                        
+                        <p>Meanwhile, Louis fanned the flames by urging Charlotte to pull the trigger.</p>
+                        
+                        <p>Nevertheless, Zachary was certain that she would not shoot and tried his best to salvage their</p>
+                        
+                        <p>relationship by bringing up the children and all the wonderful memories they shared. However, all his</p>
+                        
+                        <p>pleas for her to return to his side fell on deaf ears.</p>
+                        
+                        <p>Finally, she vengefully listed all the pain he had brought upon her before proclaiming her love for Louis.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2479,103 +2616,23 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>“That&#39;s true.” Ben sighed. He had assumed that everything would be solved once they located</p>
-                    
-                    <p>Francesco. To his dismay, he only realized then that Francesco might not be willing to cooperate.</p>
-                    
-                    <p>Consequently, the matter was more tricky than he had thought.</p>
-                    
-                    <p>“All right now, you must be exhausted after what had happened in the last few days.” Charlotte</p>
-                    
-                    <p>changed the topic. “You should get some rest while I stay by Zachary&#39;s side.” “Mmh.” Ben nodded at</p>
-                    
-                    <p>her before taking his leave.</p>
-                    
-                    <p>With that, she remained by Zachary&#39;s bedside quietly, grateful that she could still have the chance to do</p>
-                    
-                    <p>so.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>She recalled everything that had happened between them, the ups and downs, the joys and miseries.</p>
-                    
-                    <p>By then, Charlotte came to realize how much their past felt like a story.</p>
-                    
-                    <p>Regardless, it was all water under the bridge. What mattered was appreciating those who were still in</p>
-                    
-                    <p>her life.</p>
-                    
-                    <p>With that thought in mind, Charlotte laid her head beside Zachary and fell asleep.</p>
-                    
-                    <p>Probably because she barely slept over the last four days, including three in which she was kidnapped,</p>
-                    
-                    <p>she was overwhelmed with exhaustion.</p>
-                    
-                    <p>Consequently, she fell into such a deep slumber that she did not even realize Zachary had awoken.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>Jolted awake from his nightmare, Zachary was covered with cold sweat.</p>
-                    
-                    <p>He had dreamt of Charlotte and Louis&#39; wedding. When he ran into the venue to stop it, Charlotte</p>
-                    
-                    <p>pointed a gun at him and ordered him to leave.</p>
-                    
-                    <p>Meanwhile, Louis fanned the flames by urging Charlotte to pull the trigger.</p>
-                    
-                    <p>Nevertheless, Zachary was certain that she would not shoot and tried his best to salvage their</p>
-                    
-                    <p>relationship by bringing up the children and all the wonderful memories they shared. However, all his</p>
-                    
-                    <p>pleas for her to return to his side fell on deaf ears.</p>
-                    
-                    <p>Finally, she vengefully listed all the pain he had brought upon her before proclaiming her love for Louis.</p>
-                    
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She insisted on marrying him and demanded Zachary to get lost.</p>
+                        
+                        <p>In the heat of the moment, she mercilessly fired a shot at his chest.</p>
+                        
+                        <p>And that was the moment he woke up.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="6">
-                    
-                    <p>She insisted on marrying him and demanded Zachary to get lost.</p>
-                    
-                    <p>In the heat of the moment, she mercilessly fired a shot at his chest.</p>
-                    
-                    <p>And that was the moment he woke up.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4293,6 +4350,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4379,9 +4516,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4445,7 +4583,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4490,13 +4627,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4553,21 +4687,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

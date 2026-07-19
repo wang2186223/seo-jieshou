@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.675154",
-        "dateModified": "2026-07-17T17:08:32.675154",
+        "datePublished": "2026-07-19T13:10:29.590053",
+        "dateModified": "2026-07-19T13:10:29.590053",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,30 +2422,28 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2163</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“I&#39;m sorry, Ms. Felch. We didn&#39;t recognize her earlier. Besides, there&#39;s no reason for us not to shoot</p>
-                    
-                    <p>when someone suddenly crawls up the wall outside Mr. Lindberg&#39;s study room at this hour,” Gordon</p>
-                    
-                    <p>explained in a hurry.</p>
-                    
-                    <p>“You—”</p>
-                    
-                    <p>“It&#39;s not their fault, Ms. Felch. Please don&#39;t blame them,” Monica advised.</p>
-                    
-                    <p>“Come on. Let&#39;s go in and get your wound cleaned first.” Francesca hurriedly helped Monica into the</p>
-                    
-                    <p>building, but the latter insisted on seeing Danrique.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“I&#39;m sorry, Ms. Felch. We didn&#39;t recognize her earlier. Besides, there&#39;s no reason for us not to shoot</p>
+                        
+                        <p>when someone suddenly crawls up the wall outside Mr. Lindberg&#39;s study room at this hour,” Gordon</p>
+                        
+                        <p>explained in a hurry.</p>
+                        
+                        <p>“You—”</p>
+                        
+                        <p>“It&#39;s not their fault, Ms. Felch. Please don&#39;t blame them,” Monica advised.</p>
+                        
+                        <p>“Come on. Let&#39;s go in and get your wound cleaned first.” Francesca hurriedly helped Monica into the</p>
+                        
+                        <p>building, but the latter insisted on seeing Danrique.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2422,99 +2455,55 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Please, just let me see Mr. Lindberg. There&#39;s a favor I need to ask of him personally.”</p>
-                    
-                    <p>Gordon said, “You can just talk to me. I&#39;ll help you pass the message to Mr. Lindberg.”</p>
-                    
-                    <p>“No. I need to ask him in person...” Panicking, Monica tugged at Francesca&#39;s hand and pleaded,</p>
-                    
-                    <p>“Please, Ms. Felch. I&#39;m begging you.”</p>
-                    
-                    <p>“Monica...” Francesca wanted to dissuade Monica. Before she could even do that, the latter fell to her</p>
-                    
-                    <p>knees with a thump, ignoring the wound on her leg. “I&#39;m begging you. Please let me see Mr. Lindberg!”</p>
-                    
-                    <p>“Get up quickly. Your leg&#39;s wounded. You&#39;ll be crippled if you kneel like this,” Francesca ordered</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Please, just let me see Mr. Lindberg. There&#39;s a favor I need to ask of him personally.”</p>
+                        
+                        <p>Gordon said, “You can just talk to me. I&#39;ll help you pass the message to Mr. Lindberg.”</p>
+                        
+                        <p>“No. I need to ask him in person...” Panicking, Monica tugged at Francesca&#39;s hand and pleaded,</p>
+                        
+                        <p>“Please, Ms. Felch. I&#39;m begging you.”</p>
+                        
+                        <p>“Monica...” Francesca wanted to dissuade Monica. Before she could even do that, the latter fell to her</p>
+                        
+                        <p>knees with a thump, ignoring the wound on her leg. “I&#39;m begging you. Please let me see Mr. Lindberg!”</p>
+                        
+                        <p>“Get up quickly. Your leg&#39;s wounded. You&#39;ll be crippled if you kneel like this,” Francesca ordered</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>anxiously.</p>
-                    
-                    <p>“Then so be it. I&#39;m willing to sacrifice my legs for His Highness&#39; well-being if that&#39;s possible. I&#39;ll even</p>
-                    
-                    <p>sacrifice my life,” Monica said, tears spilling from her eyes.</p>
-                    
-                    <p>Hearing Monica&#39;s words and seeing her in such a state moved Francesca. Unable to refuse the former,</p>
-                    
-                    <p>she could only promise, “All right. I&#39;ll take you to see him once I&#39;ve bandaged you up.”</p>
-                    
-                    <p>“Ms. Felch—”</p>
-                    
-                    <p>“Surely I have the right to do so?” Francesca cut Gordon off, leading Monica into the front hall.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Gordon did not dare to stop her despite knowing the situation would anger Danrique. Given no choice,</p>
-                    
-                    <p>he could only send someone to report the situation to Danrique.</p>
-                    
-                    <p>Meanwhile, Francesca cleaned Monica&#39;s wound, helped the latter into a wheelchair, and pushed her to</p>
-                    
-                    <p>the study room on the second floor.</p>
-                    
-                    <p>At that time, Sean was guarding the door. He did not stop Francesca from entering; he probably knew</p>
-                    
-                    <p>she was coming. He merely glanced at Monica and lowered his head to open the door.</p>
-                    
-                    <p>Danrique, who was reading some documents at the table, did not look up even when he heard the door</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>opening. He kept working away.</p>
-                    
-                    <p>Feeling slightly nervous, Monica glanced at Francesca before speaking carefully. “I&#39;m sorry for</p>
-                    
-                    <p>disturbing you at this hour, Mr. Lindberg.”</p>
-                    
-                    <p>Suddenly, Danrique looked up from the documents and cast Francesca a meaningful gaze.</p>
-                    
-                    <p>Francesca said defiantly, “She just wants to see you briefly. Can&#39;t she talk to you face to face?”</p>
-                    
-                    <p>Danrique glared at Francesca and questioned Monica, “I only let you recuperate here because of her.</p>
-                    
-                    <p>And now, you&#39;ve sneaked out of the side palace in the middle of the night and tried to break into my</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>anxiously.</p>
+                        
+                        <p>“Then so be it. I&#39;m willing to sacrifice my legs for His Highness&#39; well-being if that&#39;s possible. I&#39;ll even</p>
+                        
+                        <p>sacrifice my life,” Monica said, tears spilling from her eyes.</p>
+                        
+                        <p>Hearing Monica&#39;s words and seeing her in such a state moved Francesca. Unable to refuse the former,</p>
+                        
+                        <p>she could only promise, “All right. I&#39;ll take you to see him once I&#39;ve bandaged you up.”</p>
+                        
+                        <p>“Ms. Felch—”</p>
+                        
+                        <p>“Surely I have the right to do so?” Francesca cut Gordon off, leading Monica into the front hall.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2525,53 +2514,121 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>study room. Are you courting death?”</p>
-                    
-                    <p>Monica lowered her head and apologized, “I&#39;m sorry for offending you. I won&#39;t blame you if you want to</p>
-                    
-                    <p>punish or even kill me, but please save Prince William.”</p>
-                    
-                    <p>“As far as I know, you&#39;re not working for William. Interpol isn&#39;t something anyone can join. You should</p>
-                    
-                    <p>cherish the bright future you have ahead of you.” Danrique leaned back in the chair, glaring coldly at</p>
-                    
-                    <p>Monica.</p>
-                    
-                    <p>“How touching.” Danrique shot Francesca a thoughtful look.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Gordon did not dare to stop her despite knowing the situation would anger Danrique. Given no choice,</p>
+                        
+                        <p>he could only send someone to report the situation to Danrique.</p>
+                        
+                        <p>Meanwhile, Francesca cleaned Monica&#39;s wound, helped the latter into a wheelchair, and pushed her to</p>
+                        
+                        <p>the study room on the second floor.</p>
+                        
+                        <p>At that time, Sean was guarding the door. He did not stop Francesca from entering; he probably knew</p>
+                        
+                        <p>she was coming. He merely glanced at Monica and lowered his head to open the door.</p>
+                        
+                        <p>Danrique, who was reading some documents at the table, did not look up even when he heard the door</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>opening. He kept working away.</p>
+                        
+                        <p>Feeling slightly nervous, Monica glanced at Francesca before speaking carefully. “I&#39;m sorry for</p>
+                        
+                        <p>disturbing you at this hour, Mr. Lindberg.”</p>
+                        
+                        <p>Suddenly, Danrique looked up from the documents and cast Francesca a meaningful gaze.</p>
+                        
+                        <p>Francesca said defiantly, “She just wants to see you briefly. Can&#39;t she talk to you face to face?”</p>
+                        
+                        <p>Danrique glared at Francesca and questioned Monica, “I only let you recuperate here because of her.</p>
+                        
+                        <p>And now, you&#39;ve sneaked out of the side palace in the middle of the night and tried to break into my</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>study room. Are you courting death?”</p>
+                        
+                        <p>Monica lowered her head and apologized, “I&#39;m sorry for offending you. I won&#39;t blame you if you want to</p>
+                        
+                        <p>punish or even kill me, but please save Prince William.”</p>
+                        
+                        <p>“As far as I know, you&#39;re not working for William. Interpol isn&#39;t something anyone can join. You should</p>
+                        
+                        <p>cherish the bright future you have ahead of you.” Danrique leaned back in the chair, glaring coldly at</p>
+                        
+                        <p>Monica.</p>
+                        
+                        <p>“How touching.” Danrique shot Francesca a thoughtful look.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Mr. Lindberg, you&#39;re the only one who can save His Highness now. Please—”</p>
-                    
-                    <p>Danrique interrupted coldly, “Even Francesca failed to convince me. What makes you think you can?”</p>
-                    
-                    <p>Updated at Draмаnоvеls.cоm</p>
-                    
-                    <p>Monica was rendered speechless.</p>
-                    
-                    <p>Francesca, however, was enraged. She snapped, “Danrique, you—”</p>
-                    
-                    <p>“Enough. I need to carry on with my work. Take them out.” Danrique did not want to talk to them</p>
-                    
-                    <p>anymore.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Mr. Lindberg, you&#39;re the only one who can save His Highness now. Please—”</p>
+                        
+                        <p>Danrique interrupted coldly, “Even Francesca failed to convince me. What makes you think you can?”</p>
+                        
+                        <p>Updated at Draмаnоvеls.cоm</p>
+                        
+                        <p>Monica was rendered speechless.</p>
+                        
+                        <p>Francesca, however, was enraged. She snapped, “Danrique, you—”</p>
+                        
+                        <p>“Enough. I need to carry on with my work. Take them out.” Danrique did not want to talk to them</p>
+                        
+                        <p>anymore.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4289,6 +4346,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4375,9 +4512,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4441,7 +4579,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4486,13 +4623,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4549,21 +4683,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

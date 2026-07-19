@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:26.969513",
-        "dateModified": "2026-07-17T17:08:26.969513",
+        "datePublished": "2026-07-19T13:10:22.728656",
+        "dateModified": "2026-07-19T13:10:22.728656",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,70 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 446</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter446</p>
-                    
-                    <p>It’s Been Too Long</p>
-                    
-                    <p>Soon after, Lauren prepared to leave us at the hospital entrance. She smiled weakly and said, “I won&#39;t go with you, Chlo. I should go home and check on things since it’s been almost two days since I returned.”</p>
-                    
-                    <p>I understood she also had a home to return to. I followed Atlas back to the car but realized I hadn&#39;t driven since I returned. He glanced at me with a suggestive smile and asked, “Pleca Park or Amethyst Apartments?”</p>
-                    
-                    <p>“Amethyst Apartment, duh!” I felt embarrassed and couldn&#39;t look at him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter446</p>
+                        
+                        <p>It’s Been Too Long</p>
+                        
+                        <p>Soon after, Lauren prepared to leave us at the hospital entrance. She smiled weakly and said, “I won&#39;t go with you, Chlo. I should go home and check on things since it’s been almost two days since I returned.”</p>
+                        
+                        <p>I understood she also had a home to return to. I followed Atlas back to the car but realized I hadn&#39;t driven since I returned. He glanced at me with a suggestive smile and asked, “Pleca Park or Amethyst Apartments?”</p>
+                        
+                        <p>“Amethyst Apartment, duh!” I felt embarrassed and couldn&#39;t look at him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>After driving me home, he got out and followed me inside. He seemed familiar with the place as he removed his coat and entered the kitchen. I hurried after him and said, “Why don&#39;t you rest? Let’s just make some noodles.”</p>
-                    
-                    <p>He looked back at me, saying, “You should shower and rest. Let me handle this.”</p>
-                    
-                    <p>“Did you get any sleep today?&#34; I remembered to ask. After all, he had also been on the go for over twenty hours.</p>
-                    
-                    <p>He gazed at me tenderly and asked, “Are you worried about me? Let’s go to bed early later.”</p>
-                    
-                    <p>His words made me blush again. Then, he pulled me in and kissed my forehead, saying, “You don&#39;t need to be shy around me. Go on, I&#39;ll make you some food.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>I was a little skeptical because I hadn’t seen Atlas cooking before. He was always too busy when he stayed with me and Ava. Although I was recovering at the time, I did the cooking. I was surprised when he said he would cook for me.</p>
-                    
-                    <p>I asked, “You can cook?”</p>
-                    
-                    <p>“What, you think I can’t do housework?” He washed his hands and put on an apron before taking some ingredients from the fridge. I only had meat left as my vegetables were no longer fresh. He even trashed them for me.</p>
-                    
-                    <p>“Food is essential, so I learned to cook long ago. I even had special training in wilderness survival. Would you like to come with me sometime?” Atlas smiled warmly.</p>
-                    
-                    <p>I never expected the dominant man I knew to cook for me. I provokingly asked, “Who else have you cooked for?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>After driving me home, he got out and followed me inside. He seemed familiar with the place as he removed his coat and entered the kitchen. I hurried after him and said, “Why don&#39;t you rest? Let’s just make some noodles.”</p>
+                        
+                        <p>He looked back at me, saying, “You should shower and rest. Let me handle this.”</p>
+                        
+                        <p>“Did you get any sleep today?&#34; I remembered to ask. After all, he had also been on the go for over twenty hours.</p>
+                        
+                        <p>He gazed at me tenderly and asked, “Are you worried about me? Let’s go to bed early later.”</p>
+                        
+                        <p>His words made me blush again. Then, he pulled me in and kissed my forehead, saying, “You don&#39;t need to be shy around me. Go on, I&#39;ll make you some food.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2461,81 +2476,123 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>“What do you think?” He neither confirmed nor denied it. “ Are you jealous?”</p>
-                    
-                    <p>“I&#39;m not.” I instinctively pouted. “Boyfriends should do these things, shouldn&#39;t they? Still, ‘someone’ seemed to like passing by my house when sending another woman home.”</p>
-                    
-                    <p>Atlas teased, “It seems like you&#39;ve been paying much attention to me. Why are you still playing hard to get?”</p>
-                    
-                    <p>When he saw an onion in the fridge, he took it and raised his brow, saying, “This is good stuff.”</p>
-                    
-                    <p>His contented expression stunned me. Even his rascal gesture was charming, making my heart flutter. I helplessly palmed my forehead, and Atlas probably thought I was tired.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I was a little skeptical because I hadn’t seen Atlas cooking before. He was always too busy when he stayed with me and Ava. Although I was recovering at the time, I did the cooking. I was surprised when he said he would cook for me.</p>
+                        
+                        <p>I asked, “You can cook?”</p>
+                        
+                        <p>“What, you think I can’t do housework?” He washed his hands and put on an apron before taking some ingredients from the fridge. I only had meat left as my vegetables were no longer fresh. He even trashed them for me.</p>
+                        
+                        <p>“Food is essential, so I learned to cook long ago. I even had special training in wilderness survival. Would you like to come with me sometime?” Atlas smiled warmly.</p>
+                        
+                        <p>I never expected the dominant man I knew to cook for me. I provokingly asked, “Who else have you cooked for?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“What do you think?” He neither confirmed nor denied it. “ Are you jealous?”</p>
+                        
+                        <p>“I&#39;m not.” I instinctively pouted. “Boyfriends should do these things, shouldn&#39;t they? Still, ‘someone’ seemed to like passing by my house when sending another woman home.”</p>
+                        
+                        <p>Atlas teased, “It seems like you&#39;ve been paying much attention to me. Why are you still playing hard to get?”</p>
+                        
+                        <p>When he saw an onion in the fridge, he took it and raised his brow, saying, “This is good stuff.”</p>
+                        
+                        <p>His contented expression stunned me. Even his rascal gesture was charming, making my heart flutter. I helplessly palmed my forehead, and Atlas probably thought I was tired.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>He said, “Go and rest. I&#39;ll call you when I finish cooking.”</p>
-                    
-                    <p>I remembered I hadn&#39;t taken a break since returning from</p>
-                    
-                    <p>Celestis Island and had sweated profusely, I felt uncomfortable and even started to smell.</p>
-                    
-                    <p>“I&#39;ll go now,” I said while running upstairs.</p>
-                    
-                    <p>After showering, I walked downstairs and smelled the fragrance from the kitchen. I suddenly felt ravenous from not eating for so long. Atlas saw me coming down and gestured, saying, “I&#39;ll finish cooking soon. Have a seat first.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>He said, “Go and rest. I&#39;ll call you when I finish cooking.”</p>
+                        
+                        <p>I remembered I hadn&#39;t taken a break since returning from</p>
+                        
+                        <p>Celestis Island and had sweated profusely, I felt uncomfortable and even started to smell.</p>
+                        
+                        <p>“I&#39;ll go now,” I said while running upstairs.</p>
+                        
+                        <p>After showering, I walked downstairs and smelled the fragrance from the kitchen. I suddenly felt ravenous from not eating for so long. Atlas saw me coming down and gestured, saying, “I&#39;ll finish cooking soon. Have a seat first.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Soon after, he brought three dishes and a soup. It overturned my perception of him. Even someone as cool as him wore an apron, washed his hands, and made soup. I found myself infatuated.</p>
-                    
-                    <p>He flicked my nose and said, “You like what you see? There’s that look in your eyes again.”</p>
-                    
-                    <p>He always seemed to guess my thoughts, making me feel slightly unsettled. Atlas served two plates of pasta and sat across from me. He looked at me charmingly. “Try it and see if it&#39;s to your taste.”</p>
-                    
-                    <p>I picked up an onion ring among the other dishes and found it was well-fried and crispy. I took a bite and exclaimed, “It&#39;s delicious! It’s been a long time since I had onion rings!”</p>
-                    
-                    <p>He looked at me intently. “Yeah, they should be well-fried, crispy, and bite-sized, too.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Soon after, he brought three dishes and a soup. It overturned my perception of him. Even someone as cool as him wore an apron, washed his hands, and made soup. I found myself infatuated.</p>
+                        
+                        <p>He flicked my nose and said, “You like what you see? There’s that look in your eyes again.”</p>
+                        
+                        <p>He always seemed to guess my thoughts, making me feel slightly unsettled. Atlas served two plates of pasta and sat across from me. He looked at me charmingly. “Try it and see if it&#39;s to your taste.”</p>
+                        
+                        <p>I picked up an onion ring among the other dishes and found it was well-fried and crispy. I took a bite and exclaimed, “It&#39;s delicious! It’s been a long time since I had onion rings!”</p>
+                        
+                        <p>He looked at me intently. “Yeah, they should be well-fried, crispy, and bite-sized, too.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I looked at him in shock, asking, “How’d... you know?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I looked at him in shock, asking, “How’d... you know?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4253,6 +4310,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4339,9 +4476,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4405,7 +4543,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4450,13 +4587,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4513,21 +4647,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

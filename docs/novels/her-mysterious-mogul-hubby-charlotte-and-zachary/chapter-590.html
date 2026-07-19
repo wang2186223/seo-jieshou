@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:30.877747",
-        "dateModified": "2026-07-17T17:08:30.877747",
+        "datePublished": "2026-07-19T13:10:26.737526",
+        "dateModified": "2026-07-19T13:10:26.737526",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,72 +2422,36 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 690</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Marino was the best at driving out of all the bodyguards Zachary had. Hence, he had been put in</p>
-                    
-                    <p>charge of driving Zachary around.</p>
-                    
-                    <p>The Nacht family hired only the best. All their bodyguards were the best in their fields of specialties,</p>
-                    
-                    <p>and all could be considered professionals in their field.</p>
-                    
-                    <p>Marino had yet to meet anyone who could outdrive him. However, he had finally met his match today.</p>
-                    
-                    <p>The silver-colored Rolle-Royce zipped lithely around the other cars like a slippery eel. Threading</p>
-                    
-                    <p>through the crowd confidently, it managed to keep ahead of Zachary&#39;s car despite Marino&#39;s best efforts</p>
-                    
-                    <p>at catching up.</p>
-                    
-                    <p>Soon enough, the silver-colored Rolls-Royce was more than ten meters ahead of them.</p>
-                    
-                    <p>&#34;Marino, what&#39;s wrong with you? Catch up with them immediately!&#34; Ben ordered, sounding rather</p>
-                    
-                    <p>stricken.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>Sweat was beading on Marino&#39;s brows. He stepped down on the accelerator and sped forward, but the</p>
-                    
-                    <p>Rolls-Royce put even more distance between them. He couldn&#39;t catch up with it at all.</p>
-                    
-                    <p>Feeling rather humiliated, he gritted his teeth and stepped down on the accelerator fully, causing the</p>
-                    
-                    <p>car to lunge forward.</p>
-                    
-                    <p>&#34;Come on, you can&#39;t lose to a woman!”</p>
-                    
-                    <p>Recalling how he had suffered at the hands of that female bodyguard yesterday, Ben felt a wave of</p>
-                    
-                    <p>anger wash over him. He had to win this competition today, no matter how petty it</p>
-                    
-                    <p>sounded.</p>
-                    
-                    <p>Inside the silver-colored Rolls-Royce, a female bodyguard adjusted her sunglasses and stepped down</p>
-                    
-                    <p>hard on the accelerator, causing the car to speed along the road so quickly that it nearly flew into the</p>
-                    
-                    <p>air.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Marino was the best at driving out of all the bodyguards Zachary had. Hence, he had been put in</p>
+                        
+                        <p>charge of driving Zachary around.</p>
+                        
+                        <p>The Nacht family hired only the best. All their bodyguards were the best in their fields of specialties,</p>
+                        
+                        <p>and all could be considered professionals in their field.</p>
+                        
+                        <p>Marino had yet to meet anyone who could outdrive him. However, he had finally met his match today.</p>
+                        
+                        <p>The silver-colored Rolle-Royce zipped lithely around the other cars like a slippery eel. Threading</p>
+                        
+                        <p>through the crowd confidently, it managed to keep ahead of Zachary&#39;s car despite Marino&#39;s best efforts</p>
+                        
+                        <p>at catching up.</p>
+                        
+                        <p>Soon enough, the silver-colored Rolls-Royce was more than ten meters ahead of them.</p>
+                        
+                        <p>&#34;Marino, what&#39;s wrong with you? Catch up with them immediately!&#34; Ben ordered, sounding rather</p>
+                        
+                        <p>stricken.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2463,98 +2462,72 @@
                 
                 
                 
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Sweat was beading on Marino&#39;s brows. He stepped down on the accelerator and sped forward, but the</p>
+                        
+                        <p>Rolls-Royce put even more distance between them. He couldn&#39;t catch up with it at all.</p>
+                        
+                        <p>Feeling rather humiliated, he gritted his teeth and stepped down on the accelerator fully, causing the</p>
+                        
+                        <p>car to lunge forward.</p>
+                        
+                        <p>&#34;Come on, you can&#39;t lose to a woman!”</p>
+                        
+                        <p>Recalling how he had suffered at the hands of that female bodyguard yesterday, Ben felt a wave of</p>
+                        
+                        <p>anger wash over him. He had to win this competition today, no matter how petty it</p>
+                        
+                        <p>sounded.</p>
+                        
+                        <p>Inside the silver-colored Rolls-Royce, a female bodyguard adjusted her sunglasses and stepped down</p>
+                        
+                        <p>hard on the accelerator, causing the car to speed along the road so quickly that it nearly flew into the</p>
+                        
+                        <p>air.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="2">
-                    
-                    <p>Lupine, who was riding shotgun, looked in the rearview mirror and laughed with satisfaction. &#34;How</p>
-                    
-                    <p>could they even think of catching up to us?”</p>
-                    
-                    <p>In the backseat, Charlotte shut her eyes to rest. Calmly, she said, &#34;Take note of your own safety.&#34;</p>
-                    
-                    <p>&#34;Yes, Ms. Lindberg!&#34; Lupine responded instantly.</p>
-                    
-                    <p>Morgan, who was driving, shot a look at the rearview mirror. When she spotted the blackcolored Rolls-</p>
-                    
-                    <p>Royce catching up to them, she started frowning in annoyance.</p>
-                    
-                    <p>&#34;Morgan, what&#39;s up with you? Step on it!&#34; Lupine practically screeched.</p>
-                    
-                    <p>&#34;I&#39;m trying!&#34; Morgan replied crossly. &#34;I didn&#39;t think that rascal would have some tricks up his sleeve.&#34;</p>
-                    
-                    <p>&#34;Well, hurry up! Don&#39;t let them catch up to us,&#34; Lupine grumbled.</p>
-                    
-                    <p>Morgan sped up, but the black-colored Rolls-Royce caught up to them eventually.</p>
-                    
-                    <p>The two cars cruised along the road alongside each other, making for a very strange sight indeed.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Try and maintain this speed!&#34; Ben yelped at Marino.</p>
-                    
-                    <p>&#34;Got it!&#34; Marino replied. He could neither speed up nor slow down now-instead, he continued driving at</p>
-                    
-                    <p>the same speed to match that of the silver-colored Rolls-Royce.</p>
-                    
-                    <p>The two cars were only one meter apart now. The distance was getting a little dangerous.</p>
-                    
-                    <p>Zachary jerked his head around to stare at the car next to him, wondering who was inside. However, try</p>
-                    
-                    <p>as he might, all he could make out was a blurry figure.</p>
-                    
-                    <p>He could tell that the person was staring at him, too.</p>
-                    
-                    <p>&#34;That&#39;s Zachary Nacht, you say?&#34;</p>
-                    
-                    <p>Charlotte&#39;s eyes narrowed as she appraised the man in the car next to her. Although she could only</p>
-                    
-                    <p>see the outline of his face, she couldn&#39;t help but feel that it looked rather familiar.</p>
-                    
-                    <p>&#34;Yes, that&#39;s probably him,&#34; Lupine replied, pressing her nose against the glass. &#34;You can&#39;t really see</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>anything through those tinted windows, though.&#34;</p>
-                    
-                    <p>&#34;Slow down a little,&#34; Charlotte ordered.</p>
-                    
-                    <p>&#34;Yes, Ms. Lindberg.&#34; Morgan reduced the speed of the car immediately.</p>
-                    
-                    <p>Next to them, the car slowed down as well. No matter how Morgan controlled the speed of the car, they</p>
-                    
-                    <p>always managed to match her speed.</p>
-                    
-                    <p>&#34;Oh, how annoying!&#34; Morgan snapped, gnashing her teeth.</p>
-                    
-                    <p>As the car slowed down, Charlotte rolled down the windows a little to reveal her pair of bright, dancing</p>
-                    
-                    <p>eyes.</p>
-                    
-                    <p>The man in the other car rolled down his window too, revealing the top half of his face.</p>
-                    
-                    <p>The two of them looked at each other, but the expressions in their eyes were completely different.</p>
-                    
-                    <p>Charlotte&#39;s eyes were cold, arrogant and mocking...</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Lupine, who was riding shotgun, looked in the rearview mirror and laughed with satisfaction. &#34;How</p>
+                        
+                        <p>could they even think of catching up to us?”</p>
+                        
+                        <p>In the backseat, Charlotte shut her eyes to rest. Calmly, she said, &#34;Take note of your own safety.&#34;</p>
+                        
+                        <p>&#34;Yes, Ms. Lindberg!&#34; Lupine responded instantly.</p>
+                        
+                        <p>Morgan, who was driving, shot a look at the rearview mirror. When she spotted the blackcolored Rolls-</p>
+                        
+                        <p>Royce catching up to them, she started frowning in annoyance.</p>
+                        
+                        <p>&#34;Morgan, what&#39;s up with you? Step on it!&#34; Lupine practically screeched.</p>
+                        
+                        <p>&#34;I&#39;m trying!&#34; Morgan replied crossly. &#34;I didn&#39;t think that rascal would have some tricks up his sleeve.&#34;</p>
+                        
+                        <p>&#34;Well, hurry up! Don&#39;t let them catch up to us,&#34; Lupine grumbled.</p>
+                        
+                        <p>Morgan sped up, but the black-colored Rolls-Royce caught up to them eventually.</p>
+                        
+                        <p>The two cars cruised along the road alongside each other, making for a very strange sight indeed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2565,61 +2538,145 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>On the other hand, Zachary&#39;s eyes were flickering with a complicated mix of emotions. As memories of</p>
-                    
-                    <p>past events flooded his mind, his heart started churning with excitement...</p>
-                    
-                    <p>His eyes flashed with yearning, guilt, and deep, passionate love.</p>
-                    
-                    <p>However, he tried to keep his face blank.</p>
-                    
-                    <p>He had to calm his beating heart and keep his composure!</p>
-                    
-                    <p>Those eyes in front of him were so familiar to him that his heart ached a little. They belonged to</p>
-                    
-                    <p>Charlotte herself!</p>
-                    
-                    <p>However, Charlotte never used to look at him with such a cold, aloof expression. Although he had seen</p>
-                    
-                    <p>her haughty side before, this was different...and it scared him a little.</p>
-                    
-                    <p>For some reason, however, Zachary knew he was right-that person in the other car was Charlotte!</p>
-                    
-                    <p>As Charlotte gazed into those eyes, she felt a shiver run down her spine for what seemed like no</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Try and maintain this speed!&#34; Ben yelped at Marino.</p>
+                        
+                        <p>&#34;Got it!&#34; Marino replied. He could neither speed up nor slow down now-instead, he continued driving at</p>
+                        
+                        <p>the same speed to match that of the silver-colored Rolls-Royce.</p>
+                        
+                        <p>The two cars were only one meter apart now. The distance was getting a little dangerous.</p>
+                        
+                        <p>Zachary jerked his head around to stare at the car next to him, wondering who was inside. However, try</p>
+                        
+                        <p>as he might, all he could make out was a blurry figure.</p>
+                        
+                        <p>He could tell that the person was staring at him, too.</p>
+                        
+                        <p>&#34;That&#39;s Zachary Nacht, you say?&#34;</p>
+                        
+                        <p>Charlotte&#39;s eyes narrowed as she appraised the man in the car next to her. Although she could only</p>
+                        
+                        <p>see the outline of his face, she couldn&#39;t help but feel that it looked rather familiar.</p>
+                        
+                        <p>&#34;Yes, that&#39;s probably him,&#34; Lupine replied, pressing her nose against the glass. &#34;You can&#39;t really see</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>anything through those tinted windows, though.&#34;</p>
+                        
+                        <p>&#34;Slow down a little,&#34; Charlotte ordered.</p>
+                        
+                        <p>&#34;Yes, Ms. Lindberg.&#34; Morgan reduced the speed of the car immediately.</p>
+                        
+                        <p>Next to them, the car slowed down as well. No matter how Morgan controlled the speed of the car, they</p>
+                        
+                        <p>always managed to match her speed.</p>
+                        
+                        <p>&#34;Oh, how annoying!&#34; Morgan snapped, gnashing her teeth.</p>
+                        
+                        <p>As the car slowed down, Charlotte rolled down the windows a little to reveal her pair of bright, dancing</p>
+                        
+                        <p>eyes.</p>
+                        
+                        <p>The man in the other car rolled down his window too, revealing the top half of his face.</p>
+                        
+                        <p>The two of them looked at each other, but the expressions in their eyes were completely different.</p>
+                        
+                        <p>Charlotte&#39;s eyes were cold, arrogant and mocking...</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>On the other hand, Zachary&#39;s eyes were flickering with a complicated mix of emotions. As memories of</p>
+                        
+                        <p>past events flooded his mind, his heart started churning with excitement...</p>
+                        
+                        <p>His eyes flashed with yearning, guilt, and deep, passionate love.</p>
+                        
+                        <p>However, he tried to keep his face blank.</p>
+                        
+                        <p>He had to calm his beating heart and keep his composure!</p>
+                        
+                        <p>Those eyes in front of him were so familiar to him that his heart ached a little. They belonged to</p>
+                        
+                        <p>Charlotte herself!</p>
+                        
+                        <p>However, Charlotte never used to look at him with such a cold, aloof expression. Although he had seen</p>
+                        
+                        <p>her haughty side before, this was different...and it scared him a little.</p>
+                        
+                        <p>For some reason, however, Zachary knew he was right-that person in the other car was Charlotte!</p>
+                        
+                        <p>As Charlotte gazed into those eyes, she felt a shiver run down her spine for what seemed like no</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>reason at all. Her heart felt as though it was being pricked by a needle that got lodged just a little</p>
-                    
-                    <p>deeper in her whenever she saw this man.</p>
-                    
-                    <p>She removed her gaze from him coldly and rolled up the windows. &#34;Step on it again!&#34;</p>
-                    
-                    <p>&#34;Yes, Ms. Lindberg.&#34; Morgan sped up the car.</p>
-                    
-                    <p>As expected, the car next to them sped up as well, as though they were extending a challenge to them.</p>
-                    
-                    <p>&#34;Throw them off!&#34; Charlotte ordered.</p>
-                    
-                    <p>&#34;Yes, Ms. Nacht!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>reason at all. Her heart felt as though it was being pricked by a needle that got lodged just a little</p>
+                        
+                        <p>deeper in her whenever she saw this man.</p>
+                        
+                        <p>She removed her gaze from him coldly and rolled up the windows. &#34;Step on it again!&#34;</p>
+                        
+                        <p>&#34;Yes, Ms. Lindberg.&#34; Morgan sped up the car.</p>
+                        
+                        <p>As expected, the car next to them sped up as well, as though they were extending a challenge to them.</p>
+                        
+                        <p>&#34;Throw them off!&#34; Charlotte ordered.</p>
+                        
+                        <p>&#34;Yes, Ms. Nacht!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
@@ -4337,6 +4394,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4423,9 +4560,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4489,7 +4627,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4534,13 +4671,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4597,21 +4731,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

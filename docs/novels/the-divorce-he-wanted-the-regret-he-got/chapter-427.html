@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:33.181142",
-        "dateModified": "2026-07-17T17:08:33.181142",
+        "datePublished": "2026-07-19T13:10:30.164662",
+        "dateModified": "2026-07-19T13:10:30.164662",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,114 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 427</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Zoe studied Sophia with a thoughtful gaze. &#34;I&#39;m surprised you returned from Salzburg so quickly. Mr. Blackwood must still value you highly.&#34;</p>
-                    
-                    <p>Sophia&#39;s expression tightened before she forced a polite smile. &#34;You flatter me, Miss Tremblay.&#34;</p>
-                    
-                    <p>Zoe raised an elegant eyebrow. &#34;Let&#39;s have coffee. There&#39;s something I&#39;d like to discuss.&#34;</p>
-                    
-                    <p>After a brief hesitation, Sophia nodded in agreement.</p>
-                    
-                    <p>They selected a window table at a nearby upscale café.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Zoe studied Sophia with a thoughtful gaze. &#34;I&#39;m surprised you returned from Salzburg so quickly. Mr. Blackwood must still value you highly.&#34;</p>
+                        
+                        <p>Sophia&#39;s expression tightened before she forced a polite smile. &#34;You flatter me, Miss Tremblay.&#34;</p>
+                        
+                        <p>Zoe raised an elegant eyebrow. &#34;Let&#39;s have coffee. There&#39;s something I&#39;d like to discuss.&#34;</p>
+                        
+                        <p>After a brief hesitation, Sophia nodded in agreement.</p>
+                        
+                        <p>They selected a window table at a nearby upscale café.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Two lattes, please,&#34; Zoe told the waiter before turning back to Sophia. &#34;Since you left the city, Isabella has become even more insufferable.&#34;</p>
-                    
-                    <p>Sophia felt her stomach clench. &#34;What has she done now?&#34;</p>
-                    
-                    <p>Zoe gave a light, mocking laugh. &#34;Everyone in elite circles sees her as Ethan&#39;s perfect match. Her influence keeps growing. People fear her. Former chief designer at Apex Design Collective, now Mrs. Blackwood... she&#39;s become quite powerful.&#34;</p>
-                    
-                    <p>Sophia&#39;s fingers tightened around her newly arrived coffee cup, her knuckles pressing white against the porcelain. &#34;What gives her the right to act so superior?&#34;</p>
-                    
-                    <p>&#34;Exactly.&#34; Zoe took a delicate sip of her coffee before setting it down. &#34;Men always chase after new excitement. Once the novelty wears off, Ethan will come back to you.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Sophia hesitated, biting her lip. &#34;But Ethan seems genuinely devoted to her.&#34;</p>
-                    
-                    <p>&#34;Devotion? That&#39;s just an act.&#34; Zoe scoffed dismissively. &#34;Do you actually believe men are capable of true devotion? Look what changing yourself for him has gotten you.&#34;</p>
-                    
-                    <p>Each word struck Sophia like a physical blow, leaving her sitting in painful silence.</p>
-                    
-                    <p>&#34;Will you just stand by while Isabella takes everything?&#34; Zoe&#39;s tone turned coaxing. &#34;Are you willing to lose to her?&#34;</p>
-                    
-                    <p>A fierce fire ignited in Sophia&#39;s eyes as she lifted her head sharply. &#34;No. I won&#39;t let that happen. Ethan belongs to me.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Precisely,&#34; Zoe responded with an approving nod. &#34;We share a common enemy. Perhaps we should join forces again.&#34;</p>
-                    
-                    <p>Sophia stared at Zoe, conflicting emotions flickering across her face.</p>
-                    
-                    <p>&#34;What kind of collaboration did you have in mind?&#34;</p>
-                    
-                    <p>&#34;Are you familiar with the International Jewelry Design Competition?&#34; Zoe asked.</p>
-                    
-                    <p>Sophia remained silent, waiting for her to continue, her grip tightening slightly on her coffee cup.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>&#34;There&#39;s potential for her to shine there... or for us to intervene,&#34; Zoe said, her eyes sparkling with mischief.</p>
-                    
-                    <p>Sophia frowned, perplexed. &#34;What exactly are you suggesting?&#34;</p>
-                    
-                    <p>Zoe leaned closer, lowering her voice. &#34;Imagine if something unexpected happened during the competition. Consider the implications.&#34;</p>
-                    
-                    <p>A chill ran through Sophia as she envisioned scenarios of Isabella&#39;s potential downfall.</p>
-                    
-                    <p>&#34;You mean to suggest...&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Two lattes, please,&#34; Zoe told the waiter before turning back to Sophia. &#34;Since you left the city, Isabella has become even more insufferable.&#34;</p>
+                        
+                        <p>Sophia felt her stomach clench. &#34;What has she done now?&#34;</p>
+                        
+                        <p>Zoe gave a light, mocking laugh. &#34;Everyone in elite circles sees her as Ethan&#39;s perfect match. Her influence keeps growing. People fear her. Former chief designer at Apex Design Collective, now Mrs. Blackwood... she&#39;s become quite powerful.&#34;</p>
+                        
+                        <p>Sophia&#39;s fingers tightened around her newly arrived coffee cup, her knuckles pressing white against the porcelain. &#34;What gives her the right to act so superior?&#34;</p>
+                        
+                        <p>&#34;Exactly.&#34; Zoe took a delicate sip of her coffee before setting it down. &#34;Men always chase after new excitement. Once the novelty wears off, Ethan will come back to you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2505,37 +2476,123 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>Zoe raised her hands defensively, feigning innocence. &#34;I&#39;m merely pointing out that accidents can happen, right?&#34;</p>
-                    
-                    <p>Sophia&#39;s grip on her coffee cup tightened until her knuckles turned white, her mind racing with possibilities.</p>
-                    
-                    <p>Would Ethan stay by Isabella&#39;s side if her reputation was destroyed during the competition?</p>
-                    
-                    <p>The answer seemed obvious.</p>
-                    
-                    <p>&#34;I appreciate your advice, Miss Tremblay.&#34; Sophia exhaled sharply. &#34;I&#39;ve decided what to do next.&#34;</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Sophia hesitated, biting her lip. &#34;But Ethan seems genuinely devoted to her.&#34;</p>
+                        
+                        <p>&#34;Devotion? That&#39;s just an act.&#34; Zoe scoffed dismissively. &#34;Do you actually believe men are capable of true devotion? Look what changing yourself for him has gotten you.&#34;</p>
+                        
+                        <p>Each word struck Sophia like a physical blow, leaving her sitting in painful silence.</p>
+                        
+                        <p>&#34;Will you just stand by while Isabella takes everything?&#34; Zoe&#39;s tone turned coaxing. &#34;Are you willing to lose to her?&#34;</p>
+                        
+                        <p>A fierce fire ignited in Sophia&#39;s eyes as she lifted her head sharply. &#34;No. I won&#39;t let that happen. Ethan belongs to me.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Precisely,&#34; Zoe responded with an approving nod. &#34;We share a common enemy. Perhaps we should join forces again.&#34;</p>
+                        
+                        <p>Sophia stared at Zoe, conflicting emotions flickering across her face.</p>
+                        
+                        <p>&#34;What kind of collaboration did you have in mind?&#34;</p>
+                        
+                        <p>&#34;Are you familiar with the International Jewelry Design Competition?&#34; Zoe asked.</p>
+                        
+                        <p>Sophia remained silent, waiting for her to continue, her grip tightening slightly on her coffee cup.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;There&#39;s potential for her to shine there... or for us to intervene,&#34; Zoe said, her eyes sparkling with mischief.</p>
+                        
+                        <p>Sophia frowned, perplexed. &#34;What exactly are you suggesting?&#34;</p>
+                        
+                        <p>Zoe leaned closer, lowering her voice. &#34;Imagine if something unexpected happened during the competition. Consider the implications.&#34;</p>
+                        
+                        <p>A chill ran through Sophia as she envisioned scenarios of Isabella&#39;s potential downfall.</p>
+                        
+                        <p>&#34;You mean to suggest...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Zoe raised her hands defensively, feigning innocence. &#34;I&#39;m merely pointing out that accidents can happen, right?&#34;</p>
+                        
+                        <p>Sophia&#39;s grip on her coffee cup tightened until her knuckles turned white, her mind racing with possibilities.</p>
+                        
+                        <p>Would Ethan stay by Isabella&#39;s side if her reputation was destroyed during the competition?</p>
+                        
+                        <p>The answer seemed obvious.</p>
+                        
+                        <p>&#34;I appreciate your advice, Miss Tremblay.&#34; Sophia exhaled sharply. &#34;I&#39;ve decided what to do next.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;You&#39;re welcome,&#34; Zoe responded, sipping her coffee with a subtle smile playing on her lips.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;You&#39;re welcome,&#34; Zoe responded, sipping her coffee with a subtle smile playing on her lips.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
@@ -4253,6 +4310,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4339,9 +4476,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4405,7 +4543,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4450,13 +4587,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4513,21 +4647,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

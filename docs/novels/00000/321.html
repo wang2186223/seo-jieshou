@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2387,30 +2422,28 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 321</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Several ladies dabbed their eyes with tissues.</p>
-                    
-                    <p>&#34;Miss Sinclair is quite renowned in journalism,&#34; someone remarked meaningfully.</p>
-                    
-                    <p>Knowing glances were exchanged. Everyone knew her most famous feat—suing Alexander Kingsley and winning.</p>
-                    
-                    <p>&#34;Truly a woman who rivals men,&#34; a guest praised, offering a business card. &#34;I&#39;d love to collaborate.&#34;</p>
-                    
-                    <p>...</p>
-                    
-                    <p>&#34;How attention-seeking,&#34; Mrs. Ashford sniffed. &#34;One would think the Sullivans are welcoming their daughter-in-law.&#34;</p>
-                    
-                    <p>Julian Ashford&#39;s gaze never left Evelyn. His brow furrowed at his mother&#39;s words.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Several ladies dabbed their eyes with tissues.</p>
+                        
+                        <p>&#34;Miss Sinclair is quite renowned in journalism,&#34; someone remarked meaningfully.</p>
+                        
+                        <p>Knowing glances were exchanged. Everyone knew her most famous feat—suing Alexander Kingsley and winning.</p>
+                        
+                        <p>&#34;Truly a woman who rivals men,&#34; a guest praised, offering a business card. &#34;I&#39;d love to collaborate.&#34;</p>
+                        
+                        <p>...</p>
+                        
+                        <p>&#34;How attention-seeking,&#34; Mrs. Ashford sniffed. &#34;One would think the Sullivans are welcoming their daughter-in-law.&#34;</p>
+                        
+                        <p>Julian Ashford&#39;s gaze never left Evelyn. His brow furrowed at his mother&#39;s words.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2422,73 +2455,55 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Julian, ignore her,&#34; Mrs. Ashford tugged his sleeve, gesturing to the girl beside her. &#34;Clarisse canceled her family&#39;s banquet just to see you.&#34;</p>
-                    
-                    <p>Clarisse Choi smiled sweetly, though her eyes darkened.</p>
-                    
-                    <p>She&#39;d done her research on Julian. Behind this aloof man&#39;s demeanor, she knew exactly who occupied his heart.</p>
-                    
-                    <p>When she saw how Julian looked at Evelyn, Clarisse&#39;s nails dug into her palm. The obsession in his eyes chilled her.</p>
-                    
-                    <p>&#34;Excuse me,&#34; Julian turned away.</p>
-                    
-                    <p>Mrs. Ashford hurried to reassure Clarisse. &#34;I&#39;ll bring him back.&#34;</p>
-                    
-                    <p>Once alone, Clarisse picked up her glass and approached Evelyn with her friend in tow.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Julian, ignore her,&#34; Mrs. Ashford tugged his sleeve, gesturing to the girl beside her. &#34;Clarisse canceled her family&#39;s banquet just to see you.&#34;</p>
+                        
+                        <p>Clarisse Choi smiled sweetly, though her eyes darkened.</p>
+                        
+                        <p>She&#39;d done her research on Julian. Behind this aloof man&#39;s demeanor, she knew exactly who occupied his heart.</p>
+                        
+                        <p>When she saw how Julian looked at Evelyn, Clarisse&#39;s nails dug into her palm. The obsession in his eyes chilled her.</p>
+                        
+                        <p>&#34;Excuse me,&#34; Julian turned away.</p>
+                        
+                        <p>Mrs. Ashford hurried to reassure Clarisse. &#34;I&#39;ll bring him back.&#34;</p>
+                        
+                        <p>Once alone, Clarisse picked up her glass and approached Evelyn with her friend in tow.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Miss Sinclair,&#34; she chirped innocently. &#34;I&#39;ve heard so much about you.&#34;</p>
-                    
-                    <p>Her friend played along. &#34;Oh? Like what?&#34;</p>
-                    
-                    <p>&#34;Miss Sinclair is a legend in journalism,&#34; Clarisse trilled. &#34;Not only did she win against Lord Alex...&#34;</p>
-                    
-                    <p>She paused deliberately, letting ears perk up around them.</p>
-                    
-                    <p>&#34;She kept working through her pregnancy,&#34; she blinked. &#34;Though I wonder—who&#39;s the father?&#34;</p>
-                    
-                    <p>The ballroom fell so silent you could hear a pin drop.</p>
-                    
-                    <p>The chandelier&#39;s glow cast an eerie silence around Evelyn Sinclair.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>She could feel dozens of eyes piercing her abdomen like arrows.</p>
-                    
-                    <p>&#34;Oh my!&#34; Chloe Cui&#39;s friend gasped theatrically, covering her mouth. &#34;I never would&#39;ve guessed!&#34;</p>
-                    
-                    <p>The deliberately hushed yet perfectly audible exclamation reached every guest in the ballroom.</p>
-                    
-                    <p>Chloe smirked behind her hand. &#34;Someone as accomplished as Ms. Sinclair surely didn&#39;t sleep her way to the top?&#34;</p>
-                    
-                    <p>The crowd&#39;s expressions shifted instantly.</p>
-                    
-                    <p>Vincent Sullivan&#39;s face darkened. His parents exchanged displeased glances.</p>
-                    
-                    <p>Evelyn&#39;s pregnancy wasn&#39;t meant to be discussed here.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Miss Sinclair,&#34; she chirped innocently. &#34;I&#39;ve heard so much about you.&#34;</p>
+                        
+                        <p>Her friend played along. &#34;Oh? Like what?&#34;</p>
+                        
+                        <p>&#34;Miss Sinclair is a legend in journalism,&#34; Clarisse trilled. &#34;Not only did she win against Lord Alex...&#34;</p>
+                        
+                        <p>She paused deliberately, letting ears perk up around them.</p>
+                        
+                        <p>&#34;She kept working through her pregnancy,&#34; she blinked. &#34;Though I wonder—who&#39;s the father?&#34;</p>
+                        
+                        <p>The ballroom fell so silent you could hear a pin drop.</p>
+                        
+                        <p>The chandelier&#39;s glow cast an eerie silence around Evelyn Sinclair.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2499,22 +2514,56 @@
                 
                 
                 
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She could feel dozens of eyes piercing her abdomen like arrows.</p>
+                        
+                        <p>&#34;Oh my!&#34; Chloe Cui&#39;s friend gasped theatrically, covering her mouth. &#34;I never would&#39;ve guessed!&#34;</p>
+                        
+                        <p>The deliberately hushed yet perfectly audible exclamation reached every guest in the ballroom.</p>
+                        
+                        <p>Chloe smirked behind her hand. &#34;Someone as accomplished as Ms. Sinclair surely didn&#39;t sleep her way to the top?&#34;</p>
+                        
+                        <p>The crowd&#39;s expressions shifted instantly.</p>
+                        
+                        <p>Vincent Sullivan&#39;s face darkened. His parents exchanged displeased glances.</p>
+                        
+                        <p>Evelyn&#39;s pregnancy wasn&#39;t meant to be discussed here.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Such vile gossip these days,&#34; Chloe sighed dramatically. &#34;People actually claim Ms. Sinclair secured deals by bearing some old man&#39;s child—&#34;</p>
-                    
-                    <p>Her friend chimed in: &#34;How ridiculous! Ms. Sinclair would never!&#34;</p>
-                    
-                    <p>Their tag-team performance cornered Evelyn perfectly.</p>
-                    
-                    <p>&#34;Miss Cui.&#34; Evelyn&#39;s lips curved into a serene smile. &#34;Thank you for debunking those rumors.&#34;</p>
-                    
-                    <p>Chloe preened—until Evelyn continued:</p>
-                    
-                    <p>&#34;You seem quite knowledgeable about sugar daddies and mistresses. After all, your father&#39;s illegitimate children could field a soccer team, couldn&#39;t they?&#34;</p>
-                    
-                    <p>Chloe&#39;s face drained of color.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Such vile gossip these days,&#34; Chloe sighed dramatically. &#34;People actually claim Ms. Sinclair secured deals by bearing some old man&#39;s child—&#34;</p>
+                        
+                        <p>Her friend chimed in: &#34;How ridiculous! Ms. Sinclair would never!&#34;</p>
+                        
+                        <p>Their tag-team performance cornered Evelyn perfectly.</p>
+                        
+                        <p>&#34;Miss Cui.&#34; Evelyn&#39;s lips curved into a serene smile. &#34;Thank you for debunking those rumors.&#34;</p>
+                        
+                        <p>Chloe preened—until Evelyn continued:</p>
+                        
+                        <p>&#34;You seem quite knowledgeable about sugar daddies and mistresses. After all, your father&#39;s illegitimate children could field a soccer team, couldn&#39;t they?&#34;</p>
+                        
+                        <p>Chloe&#39;s face drained of color.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2526,45 +2575,53 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;How dare you!&#34; her friend snapped.</p>
-                    
-                    <p>Evelyn sipped champagne, unfazed. &#34;Where is your father tonight? Celebrating his third son&#39;s birthday?&#34;</p>
-                    
-                    <p>Chloe trembled, manicured nails digging into her palms.</p>
-                    
-                    <p>She never imagined Evelyn knew the Cui family&#39;s darkest secret.</p>
-                    
-                    <p>&#34;A journalist&#39;s instincts,&#34; Evelyn said lightly. &#34;Occupational hazard.&#34;</p>
-                    
-                    <p>Only then did Chloe realize she&#39;d picked the wrong opponent.</p>
-                    
-                    <p>She&#39;d meant to humiliate Evelyn and impress Julian Ashford.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;How dare you!&#34; her friend snapped.</p>
+                        
+                        <p>Evelyn sipped champagne, unfazed. &#34;Where is your father tonight? Celebrating his third son&#39;s birthday?&#34;</p>
+                        
+                        <p>Chloe trembled, manicured nails digging into her palms.</p>
+                        
+                        <p>She never imagined Evelyn knew the Cui family&#39;s darkest secret.</p>
+                        
+                        <p>&#34;A journalist&#39;s instincts,&#34; Evelyn said lightly. &#34;Occupational hazard.&#34;</p>
+                        
+                        <p>Only then did Chloe realize she&#39;d picked the wrong opponent.</p>
+                        
+                        <p>She&#39;d meant to humiliate Evelyn and impress Julian Ashford.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Instead, she&#39;d exposed her own family&#39;s disgrace.</p>
-                    
-                    <p>The guests&#39; gazes now brimmed with mocking amusement.</p>
-                    
-                    <p>&#34;Mr. Sullivan.&#34; A waiter approached urgently. &#34;Madeline and Eleanor Kingsley have arrived.&#34;</p>
-                    
-                    <p>The Sullivans stood immediately.</p>
-                    
-                    <p>Madam Zade linked arms with Evelyn. &#34;Come greet our distinguished guests.&#34;</p>
-                    
-                    <p>She didn&#39;t spare Chloe a glance—a dismissal clearer than words.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Instead, she&#39;d exposed her own family&#39;s disgrace.</p>
+                        
+                        <p>The guests&#39; gazes now brimmed with mocking amusement.</p>
+                        
+                        <p>&#34;Mr. Sullivan.&#34; A waiter approached urgently. &#34;Madeline and Eleanor Kingsley have arrived.&#34;</p>
+                        
+                        <p>The Sullivans stood immediately.</p>
+                        
+                        <p>Madam Zade linked arms with Evelyn. &#34;Come greet our distinguished guests.&#34;</p>
+                        
+                        <p>She didn&#39;t spare Chloe a glance—a dismissal clearer than words.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -4287,6 +4344,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4373,9 +4510,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4439,7 +4577,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4484,13 +4621,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4547,21 +4681,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

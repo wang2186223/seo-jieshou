@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.653028",
-        "dateModified": "2026-07-17T17:08:29.653028",
+        "datePublished": "2026-07-19T13:10:25.456725",
+        "dateModified": "2026-07-19T13:10:25.456725",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,48 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1389</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Lina had returned, and she was sitting on the couch in the living room. She held a child in each arm as they happily watched an animated film.</p>
-                    
-                    <p>Lina let go of the children when she heard Shane coming down the stairs. She turned toward him and greeted, “Good morning, Mr. Thompson.”</p>
-                    
-                    <p>Shane merely nodded slightly at her.</p>
-                    
-                    <p>The kids jumped off the couch and rushed toward him. They hugged his legs as they greeted, “Hi, Daddy.”</p>
-                    
-                    <p>“Hey, kids!” Shane smiled and ruffled their hair. “What time did you guys wake up?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Lina had returned, and she was sitting on the couch in the living room. She held a child in each arm as they happily watched an animated film.</p>
+                        
+                        <p>Lina let go of the children when she heard Shane coming down the stairs. She turned toward him and greeted, “Good morning, Mr. Thompson.”</p>
+                        
+                        <p>Shane merely nodded slightly at her.</p>
+                        
+                        <p>The kids jumped off the couch and rushed toward him. They hugged his legs as they greeted, “Hi, Daddy.”</p>
+                        
+                        <p>“Hey, kids!” Shane smiled and ruffled their hair. “What time did you guys wake up?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Some time ago,” Connor answered. “Sharon got hungry, so I brought her down.”</p>
-                    
-                    <p>“That&#39;s right.” Sharon nodded. “After that, Ms. Cohen got the housekeeper to make us breakfast.”</p>
-                    
-                    <p>Upon hearing that, Shane looked at Lina and said, “Thank you.”</p>
-                    
-                    <p>Lina waved her hand dismissively. “It&#39;s nothing. Don&#39;t worry about it. Mr. Thompson, where&#39;s Nat? Is she not coming down yet?”</p>
-                    
-                    <p>“No. She&#39;s drained, so she&#39;s still asleep.” Shane brought the kids to the couch.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Some time ago,” Connor answered. “Sharon got hungry, so I brought her down.”</p>
+                        
+                        <p>“That&#39;s right.” Sharon nodded. “After that, Ms. Cohen got the housekeeper to make us breakfast.”</p>
+                        
+                        <p>Upon hearing that, Shane looked at Lina and said, “Thank you.”</p>
+                        
+                        <p>Lina waved her hand dismissively. “It&#39;s nothing. Don&#39;t worry about it. Mr. Thompson, where&#39;s Nat? Is she not coming down yet?”</p>
+                        
+                        <p>“No. She&#39;s drained, so she&#39;s still asleep.” Shane brought the kids to the couch.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2440,39 +2477,47 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>When Lina heard Natalie was drained, the smile on her face vanished, and she looked at Shane in a disgusted manner. “Mr. Thompson, don&#39;t you think you&#39;re being too much? I know you haven&#39;t seen Nat in a while, so you guys are eager to have a roll in the hay. However, Nat has work today. Don&#39;t you know how to control yourself?”</p>
-                    
-                    <p>“Are you lecturing me?” Shane frowned and looked at her in displeasure.</p>
-                    
-                    <p>Lina quickly shook her head. “No! No. I feel bad for Nat, that&#39;s all. She&#39;s going to be a judge later. What you did was—”</p>
-                    
-                    <p>“The competition in the morning has been postponed.” Shane carried the kids onto the couch and explained flatly, “Hence, you guys don&#39;t have to go there now. Go there in the afternoon instead.”</p>
-                    
-                    <p>“Oh, I see.” The corner of Lina&#39;s lips twitched. She looked at Shane in an ambiguous way and said, “No wonder you went all out with her, Mr. Thompson. You had it all planned out!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>When Lina heard Natalie was drained, the smile on her face vanished, and she looked at Shane in a disgusted manner. “Mr. Thompson, don&#39;t you think you&#39;re being too much? I know you haven&#39;t seen Nat in a while, so you guys are eager to have a roll in the hay. However, Nat has work today. Don&#39;t you know how to control yourself?”</p>
+                        
+                        <p>“Are you lecturing me?” Shane frowned and looked at her in displeasure.</p>
+                        
+                        <p>Lina quickly shook her head. “No! No. I feel bad for Nat, that&#39;s all. She&#39;s going to be a judge later. What you did was—”</p>
+                        
+                        <p>“The competition in the morning has been postponed.” Shane carried the kids onto the couch and explained flatly, “Hence, you guys don&#39;t have to go there now. Go there in the afternoon instead.”</p>
+                        
+                        <p>“Oh, I see.” The corner of Lina&#39;s lips twitched. She looked at Shane in an ambiguous way and said, “No wonder you went all out with her, Mr. Thompson. You had it all planned out!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Shane furrowed his brows and ignored her.</p>
-                    
-                    <p>Right then, Sharon tilted her head and asked innocently, “Daddy, what does it mean to have a roll in the hay? Also, why is Mommy drained?”</p>
-                    
-                    <p>As soon as those words fell, the living room plunged into absolute silence.</p>
-                    
-                    <p>Ultimately, Connor realized what was going on, so he put his hand over Sharon&#39;s mouth and said, “Sharon, stop talking.”</p>
-                    
-                    <p>“Huh?” Sharon widened her eyes in bafflement. Why is Connor asking me to stop talking?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Shane furrowed his brows and ignored her.</p>
+                        
+                        <p>Right then, Sharon tilted her head and asked innocently, “Daddy, what does it mean to have a roll in the hay? Also, why is Mommy drained?”</p>
+                        
+                        <p>As soon as those words fell, the living room plunged into absolute silence.</p>
+                        
+                        <p>Ultimately, Connor realized what was going on, so he put his hand over Sharon&#39;s mouth and said, “Sharon, stop talking.”</p>
+                        
+                        <p>“Huh?” Sharon widened her eyes in bafflement. Why is Connor asking me to stop talking?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2484,59 +2529,71 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Seeing that, Lina stifled a laugh. Goodness! These kids are adorable!</p>
-                    
-                    <p>Shane&#39;s expression, on the other hand, had turned grim, and he was glaring at Lina. This is all this woman&#39;s fault. She talks too much. Great! Now the kids are curious. Once they get curious, they&#39;ll keep asking for answers.</p>
-                    
-                    <p>When Lina saw Shane glaring at her, she knew she had done something wrong. She immediately lowered her head guiltily and shied away from his gaze.</p>
-                    
-                    <p>Shane couldn&#39;t do anything to her, though. After all, she was Natalie&#39;s friend.</p>
-                    
-                    <p>In the end, Shane had to solve the problem his way.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Seeing that, Lina stifled a laugh. Goodness! These kids are adorable!</p>
+                        
+                        <p>Shane&#39;s expression, on the other hand, had turned grim, and he was glaring at Lina. This is all this woman&#39;s fault. She talks too much. Great! Now the kids are curious. Once they get curious, they&#39;ll keep asking for answers.</p>
+                        
+                        <p>When Lina saw Shane glaring at her, she knew she had done something wrong. She immediately lowered her head guiltily and shied away from his gaze.</p>
+                        
+                        <p>Shane couldn&#39;t do anything to her, though. After all, she was Natalie&#39;s friend.</p>
+                        
+                        <p>In the end, Shane had to solve the problem his way.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>He carried Sharon toward him and put her on his lap. After that, he lowered his head to look Sharon in the eyes and said gently, “Mommy is drained because she waited for us for a long time at the airport yesterday. Besides, she had been working hard. That&#39;s why she&#39;s still asleep.”</p>
-                    
-                    <p>“Is that true?” Sharon blinked.</p>
-                    
-                    <p>Shane nodded. “Of course.”</p>
-                    
-                    <p>“I can guarantee that&#39;s the case,” Connor chimed in.</p>
-                    
-                    <p>Sharon smiled. “In that case, Mommy is working too hard.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>He carried Sharon toward him and put her on his lap. After that, he lowered his head to look Sharon in the eyes and said gently, “Mommy is drained because she waited for us for a long time at the airport yesterday. Besides, she had been working hard. That&#39;s why she&#39;s still asleep.”</p>
+                        
+                        <p>“Is that true?” Sharon blinked.</p>
+                        
+                        <p>Shane nodded. “Of course.”</p>
+                        
+                        <p>“I can guarantee that&#39;s the case,” Connor chimed in.</p>
+                        
+                        <p>Sharon smiled. “In that case, Mommy is working too hard.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Since she was just a child, she believed most of the things adults told her.</p>
-                    
-                    <p>Therefore, she believed Shane&#39;s words and thought Natalie was tired because she had waited too long at the airport.</p>
-                    
-                    <p>That prompted Sharon to feel guilty. “This is all my fault, then. If I didn&#39;t vomit, Mommy wouldn&#39;t have had to wait so long.”</p>
-                    
-                    <p>Shane felt bad right away when he saw Sharon blaming herself.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Since she was just a child, she believed most of the things adults told her.</p>
+                        
+                        <p>Therefore, she believed Shane&#39;s words and thought Natalie was tired because she had waited too long at the airport.</p>
+                        
+                        <p>That prompted Sharon to feel guilty. “This is all my fault, then. If I didn&#39;t vomit, Mommy wouldn&#39;t have had to wait so long.”</p>
+                        
+                        <p>Shane felt bad right away when he saw Sharon blaming herself.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -4259,6 +4316,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4345,9 +4482,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4411,7 +4549,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4456,13 +4593,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4519,21 +4653,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

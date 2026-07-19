@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.709929",
-        "dateModified": "2026-07-17T17:08:28.709929",
+        "datePublished": "2026-07-19T13:10:24.517960",
+        "dateModified": "2026-07-19T13:10:24.517960",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,100 +2422,26 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 500</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>A smile fleeted across Shane&#39;s face as he noticed that Natalie was making fun of her father.</p>
-                    
-                    <p>He did not know that she had a playful side to her.</p>
-                    
-                    <p>“Why?” Harrison frowned in response. The crinkles in the corners of his eyes sunk deeper into his face.</p>
-                    
-                    <p>Natalie&#39;s lips curled into a derisive sneer. “Because I hate that Sullivan woman. If you&#39;re willing to divorce her and chase her out the door like how you did us seven years ago, maybe I will consider reconciling with you. What do you think?”</p>
-                    
-                    <p>She cast a glance at Harrison, bidding for answer.</p>
-                    
-                    <p>Harrison clearly had not expected that response and was stumped. “Really?”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>“Yes!” Natalie nodded without hesitation.</p>
-                    
-                    <p>Harrison fell silent as his eyelids drooped. He was contemplating his next move.</p>
-                    
-                    <p>Natalie did not feel triumphant at Harrison&#39;s response. On the other hand, she was rather amused by the irony of it all.</p>
-                    
-                    <p>“Look at how heartless he is.” Natalie cocked her head to one side and whispered to Shane.</p>
-                    
-                    <p>Shane nodded.</p>
-                    
-                    <p>Harrison Smith is indeed a heartless man.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Seven years ago, he abandoned his wife and two children because of Susan and Jasmine while seven years later, he contemplated abandoning Susan for his own interests. This man is really despicable.</p>
-                    
-                    <p>Shane&#39;s phone rang right then.</p>
-                    
-                    <p>He took out his phone to peer at the caller ID, and his face sank at the sight of it. Then, he put down his phone and looked at Natalie. “I&#39;m going out to take this call.”</p>
-                    
-                    <p>“Sure.”</p>
-                    
-                    <p>Shane turned around and headed for the balcony.</p>
-                    
-                    <p>After he left, Harrison sighed as he rubbed against his walking cane. The man cast a glance in Natalie&#39;s direction, and spoke as if he had ruminated over his words, “Will you really come back if I divorce Susan?”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Natalie was about to say something when a silhouette came dashing in. The woman was holding back her tears with bloodshot eyes as she roared at Harrison, “Harrison Smith! You old prick! How dare you even think about divorcing me?”</p>
-                    
-                    <p>Even though she no longer harbored any feelings for that old thing, the woman had never once considered a divorce.</p>
-                    
-                    <p>The Smith Group has gone bankrupt, but the old thing is still holding on to quite an amount of assets, not to mention this villa! I have to get a hold of all these before getting a divorce!</p>
-                    
-                    <p>Harrison had not expected Susan to overhear the previous conversation, and the old man looked troubled.</p>
-                    
-                    <p>The old man could not bear with the crowd&#39;s scrutinizing gaze.</p>
-                    
-                    <p>“Alright, will you stop with this nonsense! When have I said anything about divorcing you?” Harrison&#39;s face sank as he reprimanded Susan.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>A smile fleeted across Shane&#39;s face as he noticed that Natalie was making fun of her father.</p>
+                        
+                        <p>He did not know that she had a playful side to her.</p>
+                        
+                        <p>“Why?” Harrison frowned in response. The crinkles in the corners of his eyes sunk deeper into his face.</p>
+                        
+                        <p>Natalie&#39;s lips curled into a derisive sneer. “Because I hate that Sullivan woman. If you&#39;re willing to divorce her and chase her out the door like how you did us seven years ago, maybe I will consider reconciling with you. What do you think?”</p>
+                        
+                        <p>She cast a glance at Harrison, bidding for answer.</p>
+                        
+                        <p>Harrison clearly had not expected that response and was stumped. “Really?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2491,63 +2452,159 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>Before Susan could say anything, Natalie put on a disappointed look as she said, “Dad, so you have no plans on getting a divorce with Susan. Well, then are you lying about wanting me to come back to the</p>
-                    
-                    <p>Smith family?”</p>
-                    
-                    <p>“No, that&#39;s not it...”</p>
-                    
-                    <p>“I&#39;m not going to have any more of this!” Natalie interrupted the man before he could come up with another excuse. “If you truly want me to come back to the Smith family, then you would have agreed to divorce this Sullivan woman right away! You&#39;re just lying to me!”</p>
-                    
-                    <p>“I...” Harrison was fumbling for words as he cast a furious glance at Susan, blaming her for her untimely appearance.</p>
-                    
-                    <p>The woman grimaced in response. “Harrison Smith, what is that look that you&#39;re giving me? You best be dreaming if you want a divorce from me!”</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Yes!” Natalie nodded without hesitation.</p>
+                        
+                        <p>Harrison fell silent as his eyelids drooped. He was contemplating his next move.</p>
+                        
+                        <p>Natalie did not feel triumphant at Harrison&#39;s response. On the other hand, she was rather amused by the irony of it all.</p>
+                        
+                        <p>“Look at how heartless he is.” Natalie cocked her head to one side and whispered to Shane.</p>
+                        
+                        <p>Shane nodded.</p>
+                        
+                        <p>Harrison Smith is indeed a heartless man.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Seven years ago, he abandoned his wife and two children because of Susan and Jasmine while seven years later, he contemplated abandoning Susan for his own interests. This man is really despicable.</p>
+                        
+                        <p>Shane&#39;s phone rang right then.</p>
+                        
+                        <p>He took out his phone to peer at the caller ID, and his face sank at the sight of it. Then, he put down his phone and looked at Natalie. “I&#39;m going out to take this call.”</p>
+                        
+                        <p>“Sure.”</p>
+                        
+                        <p>Shane turned around and headed for the balcony.</p>
+                        
+                        <p>After he left, Harrison sighed as he rubbed against his walking cane. The man cast a glance in Natalie&#39;s direction, and spoke as if he had ruminated over his words, “Will you really come back if I divorce Susan?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Natalie was about to say something when a silhouette came dashing in. The woman was holding back her tears with bloodshot eyes as she roared at Harrison, “Harrison Smith! You old prick! How dare you even think about divorcing me?”</p>
+                        
+                        <p>Even though she no longer harbored any feelings for that old thing, the woman had never once considered a divorce.</p>
+                        
+                        <p>The Smith Group has gone bankrupt, but the old thing is still holding on to quite an amount of assets, not to mention this villa! I have to get a hold of all these before getting a divorce!</p>
+                        
+                        <p>Harrison had not expected Susan to overhear the previous conversation, and the old man looked troubled.</p>
+                        
+                        <p>The old man could not bear with the crowd&#39;s scrutinizing gaze.</p>
+                        
+                        <p>“Alright, will you stop with this nonsense! When have I said anything about divorcing you?” Harrison&#39;s face sank as he reprimanded Susan.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Before Susan could say anything, Natalie put on a disappointed look as she said, “Dad, so you have no plans on getting a divorce with Susan. Well, then are you lying about wanting me to come back to the</p>
+                        
+                        <p>Smith family?”</p>
+                        
+                        <p>“No, that&#39;s not it...”</p>
+                        
+                        <p>“I&#39;m not going to have any more of this!” Natalie interrupted the man before he could come up with another excuse. “If you truly want me to come back to the Smith family, then you would have agreed to divorce this Sullivan woman right away! You&#39;re just lying to me!”</p>
+                        
+                        <p>“I...” Harrison was fumbling for words as he cast a furious glance at Susan, blaming her for her untimely appearance.</p>
+                        
+                        <p>The woman grimaced in response. “Harrison Smith, what is that look that you&#39;re giving me? You best be dreaming if you want a divorce from me!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Unless you&#39;re giving me all your assets. Otherwise, I am going to haunt you for the rest of your life and beyond!</p>
-                    
-                    <p>“Dad, Susan is not saying yes to the divorce either. Well, then forget it. I think it&#39;s better for us to stay this way. Anyway, I&#39;ve got to go.” Natalie gave her father a bitter smile and made her way over to Shane&#39;s side in a dejected manner.</p>
-                    
-                    <p>Harrison wanted to call out to her but was stopped by Susan. In the end, the old man could only stand idly by as they left.</p>
-                    
-                    <p>What he did not know was, after turning around, Natalie&#39;s face turned into a mocking sneer.</p>
-                    
-                    <p>She could even hear faint noises of Susan and Harrison arguing.</p>
-                    
-                    <p>She did it on purpose—the forlorn, dejected look. Natalie wanted Harrison to think that she did have the intention of going back to the Smith family; that she was still craving fatherly love, and Susan was the</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Unless you&#39;re giving me all your assets. Otherwise, I am going to haunt you for the rest of your life and beyond!</p>
+                        
+                        <p>“Dad, Susan is not saying yes to the divorce either. Well, then forget it. I think it&#39;s better for us to stay this way. Anyway, I&#39;ve got to go.” Natalie gave her father a bitter smile and made her way over to Shane&#39;s side in a dejected manner.</p>
+                        
+                        <p>Harrison wanted to call out to her but was stopped by Susan. In the end, the old man could only stand idly by as they left.</p>
+                        
+                        <p>What he did not know was, after turning around, Natalie&#39;s face turned into a mocking sneer.</p>
+                        
+                        <p>She could even hear faint noises of Susan and Harrison arguing.</p>
+                        
+                        <p>She did it on purpose—the forlorn, dejected look. Natalie wanted Harrison to think that she did have the intention of going back to the Smith family; that she was still craving fatherly love, and Susan was the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>devil who stood in their way.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>devil who stood in their way.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4265,6 +4322,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4351,9 +4488,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4417,7 +4555,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4462,13 +4599,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4525,21 +4659,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.018136",
-        "dateModified": "2026-07-17T17:08:29.018136",
+        "datePublished": "2026-07-19T13:10:24.833441",
+        "dateModified": "2026-07-19T13:10:24.833441",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,92 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 795</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>He looked at her belly in question.</p>
-                    
-                    <p>“A month plus,” answered Natalie.</p>
-                    
-                    <p>Realization dawned on Shane just then. It seemed like he had already recovered more than a month ago.</p>
-                    
-                    <p>“Oh, by the way.” Thinking of something, Natalie abruptly raised her head to look at the man sternly. “Previously on the phone, I heard Dr. Baker saying something about putting you on medication. And I also remember seeing some medicine on the bedside table before. What were they for? What if it ends up affecting the baby?”</p>
-                    
-                    <p>Grasping her meaning, Shane&#39;s expression turned somber. “They were for infertility. I&#39;m not sure if it&#39;ll affect the baby.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>He looked at her belly in question.</p>
+                        
+                        <p>“A month plus,” answered Natalie.</p>
+                        
+                        <p>Realization dawned on Shane just then. It seemed like he had already recovered more than a month ago.</p>
+                        
+                        <p>“Oh, by the way.” Thinking of something, Natalie abruptly raised her head to look at the man sternly. “Previously on the phone, I heard Dr. Baker saying something about putting you on medication. And I also remember seeing some medicine on the bedside table before. What were they for? What if it ends up affecting the baby?”</p>
+                        
+                        <p>Grasping her meaning, Shane&#39;s expression turned somber. “They were for infertility. I&#39;m not sure if it&#39;ll affect the baby.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Infertility? Why were you taking drugs for that?” Natalie asked in surprise.</p>
-                    
-                    <p>Shane cleared his throat awkwardly.</p>
-                    
-                    <p>But his face turned icy the next second, and a trace of hatred appeared in his eyes. “It was Sam. He knew he couldn&#39;t steal Thompson Group from me, so he wanted to ensure I was unable to produce any heirs. This way, Thompson Group would eventually end up in his family&#39;s hands.”</p>
-                    
-                    <p>Natalie gasped in shock. “But he&#39;s your uncle. How could he do something like that to you? First, he killed your parents. Then he did something so horrible to you, his own nephew.”</p>
-                    
-                    <p>At that moment, Natalie&#39;s heart ached for him.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>It was close to a miracle that he managed to survive this far with Sam plotting against him at every turn.</p>
-                    
-                    <p>“It&#39;s fine. I&#39;m alright now. I&#39;m just worried about the baby...” Shane clenched his fists in anger. “I&#39;ll consult Jackson about this.”</p>
-                    
-                    <p>“No, don&#39;t. Let&#39;s go to another hospital.” Natalie tugged on his arm.</p>
-                    
-                    <p>Shane&#39;s brows furrowed at that. “Why?”</p>
-                    
-                    <p>Don&#39;t tell me she wants to go to the hospital where Stanley works at?</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Having no clue of the man&#39;s train of thoughts, Natalie pursed her lips and said, “Dr. Baker is Ms. Graham&#39;s boyfriend. If we tell him I&#39;m pregnant, Ms. Graham would end up knowing as well, and I don&#39;t want her to know. I&#39;m sure you&#39;re aware that I don&#39;t like her. I feel like she&#39;s out to get me.”</p>
-                    
-                    <p>Shane&#39;s mouth twitched, but before he could say anything, Natalie pressed her index finger against his lips.</p>
-                    
-                    <p>“I know you probably think that I&#39;m being paranoid, but listen to this, and you&#39;ll know why.”</p>
-                    
-                    <p>With that, she fished out her phone and played the recording of the conversation she had with Alice at the prison in the afternoon.</p>
-                    
-                    <p>There was apparent surprise written on Shane&#39;s features after he finished listening to the recording.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Infertility? Why were you taking drugs for that?” Natalie asked in surprise.</p>
+                        
+                        <p>Shane cleared his throat awkwardly.</p>
+                        
+                        <p>But his face turned icy the next second, and a trace of hatred appeared in his eyes. “It was Sam. He knew he couldn&#39;t steal Thompson Group from me, so he wanted to ensure I was unable to produce any heirs. This way, Thompson Group would eventually end up in his family&#39;s hands.”</p>
+                        
+                        <p>Natalie gasped in shock. “But he&#39;s your uncle. How could he do something like that to you? First, he killed your parents. Then he did something so horrible to you, his own nephew.”</p>
+                        
+                        <p>At that moment, Natalie&#39;s heart ached for him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2483,18 +2476,74 @@
                 
                 
                 
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>It was close to a miracle that he managed to survive this far with Sam plotting against him at every turn.</p>
+                        
+                        <p>“It&#39;s fine. I&#39;m alright now. I&#39;m just worried about the baby...” Shane clenched his fists in anger. “I&#39;ll consult Jackson about this.”</p>
+                        
+                        <p>“No, don&#39;t. Let&#39;s go to another hospital.” Natalie tugged on his arm.</p>
+                        
+                        <p>Shane&#39;s brows furrowed at that. “Why?”</p>
+                        
+                        <p>Don&#39;t tell me she wants to go to the hospital where Stanley works at?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Having no clue of the man&#39;s train of thoughts, Natalie pursed her lips and said, “Dr. Baker is Ms. Graham&#39;s boyfriend. If we tell him I&#39;m pregnant, Ms. Graham would end up knowing as well, and I don&#39;t want her to know. I&#39;m sure you&#39;re aware that I don&#39;t like her. I feel like she&#39;s out to get me.”</p>
+                        
+                        <p>Shane&#39;s mouth twitched, but before he could say anything, Natalie pressed her index finger against his lips.</p>
+                        
+                        <p>“I know you probably think that I&#39;m being paranoid, but listen to this, and you&#39;ll know why.”</p>
+                        
+                        <p>With that, she fished out her phone and played the recording of the conversation she had with Alice at the prison in the afternoon.</p>
+                        
+                        <p>There was apparent surprise written on Shane&#39;s features after he finished listening to the recording.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="4">
-                    
-                    <p>It took a while before he spoke in a hoarse voice. “You think Jacqueline was behind both attempts on your life, and that Mr. Gunn found out about it but covered up for her by getting Alice to take the fall.”</p>
-                    
-                    <p>“That&#39;s right, but I don&#39;t think this is all Jacqueline has done.” Drawing a deep breath, Natalie continued with an expressionless face, “Connor&#39;s abduction and car accident, Stanley&#39;s car accident, the fire at my warehouse, the fabric switch; this was all Jacqueline&#39;s doing.”</p>
-                    
-                    <p>Shane kept silent, but his heart was in turmoil.</p>
-                    
-                    <p>Natalie studied his face and remarked, “I know this is a lot to take in, and you might have doubts about it. Let&#39;s first ignore whether Jacqueline was responsible for all the things I just mentioned, and just focus on the cat abuse incident Alice talked about. I think you can find out about it easily. Why don&#39;t you look into this first, then decide whether or not to believe that Jacqueline is guilty of all those things?”</p>
-                    
-                    <p>“Alright,” Shane closed his eyes and replied.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>It took a while before he spoke in a hoarse voice. “You think Jacqueline was behind both attempts on your life, and that Mr. Gunn found out about it but covered up for her by getting Alice to take the fall.”</p>
+                        
+                        <p>“That&#39;s right, but I don&#39;t think this is all Jacqueline has done.” Drawing a deep breath, Natalie continued with an expressionless face, “Connor&#39;s abduction and car accident, Stanley&#39;s car accident, the fire at my warehouse, the fabric switch; this was all Jacqueline&#39;s doing.”</p>
+                        
+                        <p>Shane kept silent, but his heart was in turmoil.</p>
+                        
+                        <p>Natalie studied his face and remarked, “I know this is a lot to take in, and you might have doubts about it. Let&#39;s first ignore whether Jacqueline was responsible for all the things I just mentioned, and just focus on the cat abuse incident Alice talked about. I think you can find out about it easily. Why don&#39;t you look into this first, then decide whether or not to believe that Jacqueline is guilty of all those things?”</p>
+                        
+                        <p>“Alright,” Shane closed his eyes and replied.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2506,35 +2555,43 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>If he was being honest with himself, the recording she provided had really given him the shock of his life.</p>
-                    
-                    <p>He knew that Jacqueline wasn&#39;t as kind and innocent as he had once thought, but he never imagined she would be this evil.</p>
-                    
-                    <p>However, for Natalie&#39;s sake, he felt he really needed to get to the bottom of this matter. Hence, this would be the first time he investigated the person he had always regarded as his own sister.</p>
-                    
-                    <p>Just then, there was a knock on the door.</p>
-                    
-                    <p>Natalie looked past the man&#39;s shoulder at the door. “It&#39;s probably Mrs. Wilson calling us for dinner. Let&#39;s go.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>If he was being honest with himself, the recording she provided had really given him the shock of his life.</p>
+                        
+                        <p>He knew that Jacqueline wasn&#39;t as kind and innocent as he had once thought, but he never imagined she would be this evil.</p>
+                        
+                        <p>However, for Natalie&#39;s sake, he felt he really needed to get to the bottom of this matter. Hence, this would be the first time he investigated the person he had always regarded as his own sister.</p>
+                        
+                        <p>Just then, there was a knock on the door.</p>
+                        
+                        <p>Natalie looked past the man&#39;s shoulder at the door. “It&#39;s probably Mrs. Wilson calling us for dinner. Let&#39;s go.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Shane grunted in response. Locking away the unease in his heart, he held her hand and walked toward the door.</p>
-                    
-                    <p>Upon opening the door, Mrs. Wilson immediately spotted their interlaced fingers. Stifling her smile to hide her delight, she asked, “Sir, madam, have you both reconciled?”</p>
-                    
-                    <p>Natalie nodded with a smile.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Shane grunted in response. Locking away the unease in his heart, he held her hand and walked toward the door.</p>
+                        
+                        <p>Upon opening the door, Mrs. Wilson immediately spotted their interlaced fingers. Stifling her smile to hide her delight, she asked, “Sir, madam, have you both reconciled?”</p>
+                        
+                        <p>Natalie nodded with a smile.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -4257,6 +4314,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4343,9 +4480,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4409,7 +4547,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4454,13 +4591,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4517,21 +4651,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

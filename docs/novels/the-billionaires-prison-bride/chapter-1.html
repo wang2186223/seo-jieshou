@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:26.043607",
-        "dateModified": "2026-07-17T17:08:26.043607",
+        "datePublished": "2026-07-19T13:10:21.752335",
+        "dateModified": "2026-07-19T13:10:21.752335",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,30 +2422,118 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Alice Carter stepped through the prison gates as the sun dipped below the horizon.</p>
-                    
-                    <p>She&#39;d been granted a temporary one-day release.</p>
-                    
-                    <p>Clutching a crumpled address in her trembling hand, Alice boarded the bus outside the correctional facility. By nightfall, she arrived at a decaying mansion clinging to the mountainside. A silent guard ushered her into a darkened bedroom.</p>
-                    
-                    <p>The room swallowed all light.</p>
-                    
-                    <p>The metallic tang of blood assaulted her senses before her eyes could adjust.</p>
-                    
-                    <p>Strong arms seized her from the shadows, yanking her against a hard male body. Hot breath scorched her ear. &#34;So you&#39;re my last indulgence before execution? The... paid companion?&#34;</p>
-                    
-                    <p>&#39;Paid... companion?&#39;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Alice Carter stepped through the prison gates as the sun dipped below the horizon.</p>
+                        
+                        <p>She&#39;d been granted a temporary one-day release.</p>
+                        
+                        <p>Clutching a crumpled address in her trembling hand, Alice boarded the bus outside the correctional facility. By nightfall, she arrived at a decaying mansion clinging to the mountainside. A silent guard ushered her into a darkened bedroom.</p>
+                        
+                        <p>The room swallowed all light.</p>
+                        
+                        <p>The metallic tang of blood assaulted her senses before her eyes could adjust.</p>
+                        
+                        <p>Strong arms seized her from the shadows, yanking her against a hard male body. Hot breath scorched her ear. &#34;So you&#39;re my last indulgence before execution? The... paid companion?&#34;</p>
+                        
+                        <p>&#39;Paid... companion?&#39;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Tears streaked Alice&#39;s cheeks.</p>
+                        
+                        <p>Fear clawed at her throat. &#34;Are you... dying?&#34;</p>
+                        
+                        <p>&#34;Does that frighten you?&#34; His mocking laugh sent chills down her spine.</p>
+                        
+                        <p>&#34;I made my choice,&#34; Alice whispered.</p>
+                        
+                        <p>Regret wasn&#39;t a luxury she could afford—not with her mother&#39;s life hanging in the balance. Though she couldn&#39;t see his face, the man radiating lethal energy didn&#39;t feel like someone at death&#39;s door.</p>
+                        
+                        <p>Hours later, his breathing finally steadied.</p>
+                        
+                        <p>&#39;Is it over?&#39;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>No time for fear. Alice fled into the storm-lashed night, sprinting through torrential rain to the Sullivan Estate.</p>
+                        
+                        <p>Midnight approached, yet laughter and music spilled from the locked mansion.</p>
+                        
+                        <p>&#34;Open up! I did what you asked! Give me the money to save my mother!&#34; Her fists pounded the ornate doors. &#34;Please!&#34;</p>
+                        
+                        <p>The door swung open to reveal a sneering face.</p>
+                        
+                        <p>Disgust dripped from their voice. &#34;Save your begging. Your mother&#39;s dead.&#34;</p>
+                        
+                        <p>A framed photograph sailed into the mud at Alice&#39;s feet.</p>
+                        
+                        <p>The world stopped.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;No...&#34; Alice collapsed onto the rain-slicked steps, clutching the portrait to her chest. &#34;Mother... I was too late...&#34;</p>
+                        
+                        <p>Hysteria took hold. She hurled herself at the door. &#34;Liars! You promised! Give her back! May your family rot in hell—&#34;</p>
+                        
+                        <p>Darkness swallowed her screams.</p>
+                        
+                        <p>When consciousness returned three days later, Alice found herself back in prison. Feverish and weak, she&#39;d been hospitalized before being returned to general population.</p>
+                        
+                        <p>A circle of sneering inmates closed in.</p>
+                        
+                        <p>&#34;Thought she got out? Looks like someone had fun playing whore for a night.&#34;</p>
+                        
+                        <p>The gang leader yanked Alice&#39;s hair back. &#34;Let&#39;s teach this pretty thing a lesson.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2421,100 +2544,26 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>Tears streaked Alice&#39;s cheeks.</p>
-                    
-                    <p>Fear clawed at her throat. &#34;Are you... dying?&#34;</p>
-                    
-                    <p>&#34;Does that frighten you?&#34; His mocking laugh sent chills down her spine.</p>
-                    
-                    <p>&#34;I made my choice,&#34; Alice whispered.</p>
-                    
-                    <p>Regret wasn&#39;t a luxury she could afford—not with her mother&#39;s life hanging in the balance. Though she couldn&#39;t see his face, the man radiating lethal energy didn&#39;t feel like someone at death&#39;s door.</p>
-                    
-                    <p>Hours later, his breathing finally steadied.</p>
-                    
-                    <p>&#39;Is it over?&#39;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>No time for fear. Alice fled into the storm-lashed night, sprinting through torrential rain to the Sullivan Estate.</p>
-                    
-                    <p>Midnight approached, yet laughter and music spilled from the locked mansion.</p>
-                    
-                    <p>&#34;Open up! I did what you asked! Give me the money to save my mother!&#34; Her fists pounded the ornate doors. &#34;Please!&#34;</p>
-                    
-                    <p>The door swung open to reveal a sneering face.</p>
-                    
-                    <p>Disgust dripped from their voice. &#34;Save your begging. Your mother&#39;s dead.&#34;</p>
-                    
-                    <p>A framed photograph sailed into the mud at Alice&#39;s feet.</p>
-                    
-                    <p>The world stopped.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>&#34;No...&#34; Alice collapsed onto the rain-slicked steps, clutching the portrait to her chest. &#34;Mother... I was too late...&#34;</p>
-                    
-                    <p>Hysteria took hold. She hurled herself at the door. &#34;Liars! You promised! Give her back! May your family rot in hell—&#34;</p>
-                    
-                    <p>Darkness swallowed her screams.</p>
-                    
-                    <p>When consciousness returned three days later, Alice found herself back in prison. Feverish and weak, she&#39;d been hospitalized before being returned to general population.</p>
-                    
-                    <p>A circle of sneering inmates closed in.</p>
-                    
-                    <p>&#34;Thought she got out? Looks like someone had fun playing whore for a night.&#34;</p>
-                    
-                    <p>The gang leader yanked Alice&#39;s hair back. &#34;Let&#39;s teach this pretty thing a lesson.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="4">
-                    
-                    <p>Alice didn&#39;t resist.</p>
-                    
-                    <p>Let them kill her. Reuniting with her mother sounded like mercy.</p>
-                    
-                    <p>As rough hands tore at her prison uniform, a guard barked from the doorway. &#34;What&#39;s happening here?&#34;</p>
-                    
-                    <p>&#34;Just checking on our sick friend,&#34; the leader simpered.</p>
-                    
-                    <p>The officer ignored her. &#34;Inmate 036—you&#39;re being released.&#34;</p>
-                    
-                    <p>Alice blinked. &#34;What?&#34;</p>
-                    
-                    <p>Only the biting wind outside the gates convinced her it wasn&#39;t a hallucination.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Alice didn&#39;t resist.</p>
+                        
+                        <p>Let them kill her. Reuniting with her mother sounded like mercy.</p>
+                        
+                        <p>As rough hands tore at her prison uniform, a guard barked from the doorway. &#34;What&#39;s happening here?&#34;</p>
+                        
+                        <p>&#34;Just checking on our sick friend,&#34; the leader simpered.</p>
+                        
+                        <p>The officer ignored her. &#34;Inmate 036—you&#39;re being released.&#34;</p>
+                        
+                        <p>Alice blinked. &#34;What?&#34;</p>
+                        
+                        <p>Only the biting wind outside the gates convinced her it wasn&#39;t a hallucination.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2526,46 +2575,54 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;Mother...forgive me,&#34; she whispered to the uncaring sky. &#34;Where do I find you now?&#34;</p>
-                    
-                    <p>A crisp voice cut through her grief. &#34;Miss Carter?&#34;</p>
-                    
-                    <p>A suited man stood before a sleek black car. Through tinted windows, Alice glimpsed a shadowed figure watching her.</p>
-                    
-                    <p>&#34;Yes?&#34;</p>
-                    
-                    <p>The aide turned to the car. &#34;Mr. Knight, it&#39;s her.&#34;</p>
-                    
-                    <p>&#34;Bring her.&#34;</p>
-                    
-                    <p>Before Alice could protest, she was shoved into the luxury vehicle. The air turned glacial beside the sunglasses-clad stranger.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;Mother...forgive me,&#34; she whispered to the uncaring sky. &#34;Where do I find you now?&#34;</p>
+                        
+                        <p>A crisp voice cut through her grief. &#34;Miss Carter?&#34;</p>
+                        
+                        <p>A suited man stood before a sleek black car. Through tinted windows, Alice glimpsed a shadowed figure watching her.</p>
+                        
+                        <p>&#34;Yes?&#34;</p>
+                        
+                        <p>The aide turned to the car. &#34;Mr. Knight, it&#39;s her.&#34;</p>
+                        
+                        <p>&#34;Bring her.&#34;</p>
+                        
+                        <p>Before Alice could protest, she was shoved into the luxury vehicle. The air turned glacial beside the sunglasses-clad stranger.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;I&#39;m Alexander Knight.&#34;</p>
-                    
-                    <p>Alice&#39;s blood froze. That voice—it matched the dying man&#39;s from that horrific night. But that man was dead.</p>
-                    
-                    <p>&#34;You&#39;re...executing me?&#34;</p>
-                    
-                    <p>His lips curled. &#34;We&#39;re getting married.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;I&#39;m Alexander Knight.&#34;</p>
+                        
+                        <p>Alice&#39;s blood froze. That voice—it matched the dying man&#39;s from that horrific night. But that man was dead.</p>
+                        
+                        <p>&#34;You&#39;re...executing me?&#34;</p>
+                        
+                        <p>His lips curled. &#34;We&#39;re getting married.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4283,6 +4340,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4369,9 +4506,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4435,7 +4573,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4480,13 +4617,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4543,21 +4677,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

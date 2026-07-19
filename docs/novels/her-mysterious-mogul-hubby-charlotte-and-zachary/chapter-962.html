@@ -995,7 +995,9 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
@@ -1003,12 +1005,9 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.346852",
-        "dateModified": "2026-07-17T17:08:31.346852",
+        "datePublished": "2026-07-19T13:10:27.725756",
+        "dateModified": "2026-07-19T13:10:27.725756",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,36 +2422,34 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1062</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Those at the mansion walked out as soon as they heard someone closing in.</p>
-                    
-                    <p>Marino stopped everyone from greeting Zachary and signaled them to remain silent in fear of rousing</p>
-                    
-                    <p>Zachary from his sleep.</p>
-                    
-                    <p>Slouching against the backseat, Zachary slept like a log as the pent-up fatigue finally caught up to him.</p>
-                    
-                    <p>Ben was reluctant to rouse the poor man from his sleep. Thus, Mrs. Rawlston whispered, “What&#39;s going</p>
-                    
-                    <p>on? What&#39;s wrong with Mr.</p>
-                    
-                    <p>Zachary?”</p>
-                    
-                    <p>“He&#39;s just tired and in desperate need of sleep! Mrs. Rawlston, can you get his room and shower</p>
-                    
-                    <p>ready? It&#39;s about time for him to take a short break from everything!”</p>
-                    
-                    <p>“Alright, I&#39;ll get going at once!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Those at the mansion walked out as soon as they heard someone closing in.</p>
+                        
+                        <p>Marino stopped everyone from greeting Zachary and signaled them to remain silent in fear of rousing</p>
+                        
+                        <p>Zachary from his sleep.</p>
+                        
+                        <p>Slouching against the backseat, Zachary slept like a log as the pent-up fatigue finally caught up to him.</p>
+                        
+                        <p>Ben was reluctant to rouse the poor man from his sleep. Thus, Mrs. Rawlston whispered, “What&#39;s going</p>
+                        
+                        <p>on? What&#39;s wrong with Mr.</p>
+                        
+                        <p>Zachary?”</p>
+                        
+                        <p>“He&#39;s just tired and in desperate need of sleep! Mrs. Rawlston, can you get his room and shower</p>
+                        
+                        <p>ready? It&#39;s about time for him to take a short break from everything!”</p>
+                        
+                        <p>“Alright, I&#39;ll get going at once!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2428,155 +2461,67 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Mrs. Rawlston marched in the direction of the living room and instructed the maids to make Zachary</p>
-                    
-                    <p>something to eat.</p>
-                    
-                    <p>Zachary roused from his sleep the moment he heard the thunder. He opened his eyes and asked, “Is it</p>
-                    
-                    <p>about to rain?”</p>
-                    
-                    <p>Ben answered in a hushed voice, “Yes, Mr. Nacht. Why don&#39;t you head into the mansion and take a</p>
-                    
-                    <p>bath? I have asked Mrs. Rawlston to get everything ready for you.”</p>
-                    
-                    <p>The exhausted Zachary murmured, “Make a trip to Northridge.”</p>
-                    
-                    <p>“H-Huh? I-It&#39;s—”</p>
-                    
-                    <p>Zachary slapped himself in the face in an attempt to stop himself from sleeping. He</p>
-                    
-                    <p>blurted out the things in mind, “She&#39;s afraid of thunders the most. If I&#39;m around, she&#39;s going to feel</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Mrs. Rawlston marched in the direction of the living room and instructed the maids to make Zachary</p>
+                        
+                        <p>something to eat.</p>
+                        
+                        <p>Zachary roused from his sleep the moment he heard the thunder. He opened his eyes and asked, “Is it</p>
+                        
+                        <p>about to rain?”</p>
+                        
+                        <p>Ben answered in a hushed voice, “Yes, Mr. Nacht. Why don&#39;t you head into the mansion and take a</p>
+                        
+                        <p>bath? I have asked Mrs. Rawlston to get everything ready for you.”</p>
+                        
+                        <p>The exhausted Zachary murmured, “Make a trip to Northridge.”</p>
+                        
+                        <p>“H-Huh? I-It&#39;s—”</p>
+                        
+                        <p>Zachary slapped himself in the face in an attempt to stop himself from sleeping. He</p>
+                        
+                        <p>blurted out the things in mind, “She&#39;s afraid of thunders the most. If I&#39;m around, she&#39;s going to feel</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>better.”</p>
-                    
-                    <p>Zachary raised his volume and repeated himself, “Hurry up!”</p>
-                    
-                    <p>After much hesitation, Ben leaned over and whispered, “If I&#39;m not mistaken, Sir Louis is currently at</p>
-                    
-                    <p>Northridge as well.”</p>
-                    
-                    <p>The exhausted man couldn&#39;t believe his ears and gaped at Ben&#39;s announcement.</p>
-                    
-                    <p>Ben suggested, “I&#39;m afraid we can&#39;t even make it into the residency even if we make our way there.</p>
-                    
-                    <p>Since you&#39;re not feeling well, why don&#39;t you go ahead and take a short nap?”</p>
-                    
-                    <p>Zachary went dead silent and alighted from the car, making his way back to the room he had spent</p>
-                    
-                    <p>countless days with Charlotte.</p>
-                    
-                    <p>His mind was all over the place when he caught a glimpse of their photos in the room. Standing in front</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>of the photos, he lost himself in a train of thought and continued recalling the good old times.</p>
-                    
-                    <p>Mrs. Rawlston knocked on the door and made her way in with a meal. “Mr. Zachary, why don&#39;t you</p>
-                    
-                    <p>finish these? I have just made these for you! These have always been your childhood favorite!”</p>
-                    
-                    <p>“Thanks.” Zachary took a seat and started savoring the food Mrs. Rawlston made him.</p>
-                    
-                    <p>Standing next to the exhausted man, Mrs. Rawlston couldn&#39;t resist the urge to weep and ended up</p>
-                    
-                    <p>sniffling next to Zachary.</p>
-                    
-                    <p>Ironically, Zachary found her hilarious. Thus, he asked, “What&#39;s wrong? Why are you crying when</p>
-                    
-                    <p>everything&#39;s fine?”</p>
-                    
-                    <p>Sniffling, Mrs. Rawlston muttered, “I&#39;m just heartbroken because of the things you have to go through! I</p>
-                    
-                    <p>can&#39;t even imagine the amount of stress you have to deal with! It seems as if you have aged over the</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>night when it has merely been a few days!”</p>
-                    
-                    <p>Zachary caressed his cheek and murmured to himself, “Have I aged overnight?”</p>
-                    
-                    <p>It was then Ben showed up and urged, “Mrs. Rawlston, why don&#39;t you return to your room and leave</p>
-                    
-                    <p>him alone for the time being? He has been staying awake for almost a week.”</p>
-                    
-                    <p>“Are you serious? How can you allow him to neglect his health? If one doesn&#39;t have enough sleep, it&#39;s</p>
-                    
-                    <p>going to take a toll on one&#39;s—”</p>
-                    
-                    <p>When Mrs. Rawlston was about to nag Zachary, Ben stopped and assured her, “That&#39;s precisely the</p>
-                    
-                    <p>reason we need to leave him alone!”</p>
-                    
-                    <p>It took Ben some good effort to persuade Mrs. Rawlston to leave Zachary alone. Once he returned, he</p>
-                    
-                    <p>assured Zachary, “You&#39;re not supposed to take her words seriously since she has exaggerated things</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>to intimidate you.”</p>
-                    
-                    <p>“Well, maybe she&#39;s not wrong because I can feel I&#39;m no longer in my prime. I can&#39;t believe it&#39;s my turn</p>
-                    
-                    <p>to feel useless.”</p>
-                    
-                    <p>“I&#39;m sure you&#39;re just exhausted! Shall I get Raina over to check on you?”</p>
-                    
-                    <p>“That won&#39;t be necessary since there&#39;s nothing she can do when I&#39;m merely exhausted.” “Well, I guess</p>
-                    
-                    <p>you&#39;re right. In fact, we need to get in touch with Dr. Belch if there&#39;s anything wrong</p>
-                    
-                    <p>with you.”</p>
-                    
-                    <p>After the countless incidents they had gone through, Ben couldn&#39;t help but wonder if Raina could</p>
-                    
-                    <p>consider herself a qualified doctor.</p>
-                    
-                    <p>When Zachary heard Ben mentioning Dr. Belch, he recalled the renowned doctor asking him if he had</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>better.”</p>
+                        
+                        <p>Zachary raised his volume and repeated himself, “Hurry up!”</p>
+                        
+                        <p>After much hesitation, Ben leaned over and whispered, “If I&#39;m not mistaken, Sir Louis is currently at</p>
+                        
+                        <p>Northridge as well.”</p>
+                        
+                        <p>The exhausted man couldn&#39;t believe his ears and gaped at Ben&#39;s announcement.</p>
+                        
+                        <p>Ben suggested, “I&#39;m afraid we can&#39;t even make it into the residency even if we make our way there.</p>
+                        
+                        <p>Since you&#39;re not feeling well, why don&#39;t you go ahead and take a short nap?”</p>
+                        
+                        <p>Zachary went dead silent and alighted from the car, making his way back to the room he had spent</p>
+                        
+                        <p>countless days with Charlotte.</p>
+                        
+                        <p>His mind was all over the place when he caught a glimpse of their photos in the room. Standing in front</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2587,23 +2532,135 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>experienced anything odd with his eyes.</p>
-                    
-                    <p>Is something wrong with my eyes?Rumble!</p>
-                    
-                    <p>Zachary was startled by the thunder. He turned around with his brows furrowed. Unable to keep his</p>
-                    
-                    <p>concerns to himself, he reached for his phone and tried calling Charlotte. To his dismay, he couldn&#39;t get</p>
-                    
-                    <p>through since he had been blocked.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>of the photos, he lost himself in a train of thought and continued recalling the good old times.</p>
+                        
+                        <p>Mrs. Rawlston knocked on the door and made her way in with a meal. “Mr. Zachary, why don&#39;t you</p>
+                        
+                        <p>finish these? I have just made these for you! These have always been your childhood favorite!”</p>
+                        
+                        <p>“Thanks.” Zachary took a seat and started savoring the food Mrs. Rawlston made him.</p>
+                        
+                        <p>Standing next to the exhausted man, Mrs. Rawlston couldn&#39;t resist the urge to weep and ended up</p>
+                        
+                        <p>sniffling next to Zachary.</p>
+                        
+                        <p>Ironically, Zachary found her hilarious. Thus, he asked, “What&#39;s wrong? Why are you crying when</p>
+                        
+                        <p>everything&#39;s fine?”</p>
+                        
+                        <p>Sniffling, Mrs. Rawlston muttered, “I&#39;m just heartbroken because of the things you have to go through! I</p>
+                        
+                        <p>can&#39;t even imagine the amount of stress you have to deal with! It seems as if you have aged over the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>night when it has merely been a few days!”</p>
+                        
+                        <p>Zachary caressed his cheek and murmured to himself, “Have I aged overnight?”</p>
+                        
+                        <p>It was then Ben showed up and urged, “Mrs. Rawlston, why don&#39;t you return to your room and leave</p>
+                        
+                        <p>him alone for the time being? He has been staying awake for almost a week.”</p>
+                        
+                        <p>“Are you serious? How can you allow him to neglect his health? If one doesn&#39;t have enough sleep, it&#39;s</p>
+                        
+                        <p>going to take a toll on one&#39;s—”</p>
+                        
+                        <p>When Mrs. Rawlston was about to nag Zachary, Ben stopped and assured her, “That&#39;s precisely the</p>
+                        
+                        <p>reason we need to leave him alone!”</p>
+                        
+                        <p>It took Ben some good effort to persuade Mrs. Rawlston to leave Zachary alone. Once he returned, he</p>
+                        
+                        <p>assured Zachary, “You&#39;re not supposed to take her words seriously since she has exaggerated things</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>to intimidate you.”</p>
+                        
+                        <p>“Well, maybe she&#39;s not wrong because I can feel I&#39;m no longer in my prime. I can&#39;t believe it&#39;s my turn</p>
+                        
+                        <p>to feel useless.”</p>
+                        
+                        <p>“I&#39;m sure you&#39;re just exhausted! Shall I get Raina over to check on you?”</p>
+                        
+                        <p>“That won&#39;t be necessary since there&#39;s nothing she can do when I&#39;m merely exhausted.” “Well, I guess</p>
+                        
+                        <p>you&#39;re right. In fact, we need to get in touch with Dr. Belch if there&#39;s anything wrong</p>
+                        
+                        <p>with you.”</p>
+                        
+                        <p>After the countless incidents they had gone through, Ben couldn&#39;t help but wonder if Raina could</p>
+                        
+                        <p>consider herself a qualified doctor.</p>
+                        
+                        <p>When Zachary heard Ben mentioning Dr. Belch, he recalled the renowned doctor asking him if he had</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>experienced anything odd with his eyes.</p>
+                        
+                        <p>Is something wrong with my eyes?Rumble!</p>
+                        
+                        <p>Zachary was startled by the thunder. He turned around with his brows furrowed. Unable to keep his</p>
+                        
+                        <p>concerns to himself, he reached for his phone and tried calling Charlotte. To his dismay, he couldn&#39;t get</p>
+                        
+                        <p>through since he had been blocked.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
@@ -4321,6 +4378,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4407,9 +4544,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4473,7 +4611,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4518,13 +4655,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4581,21 +4715,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

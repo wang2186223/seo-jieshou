@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:27.137334",
-        "dateModified": "2026-07-17T17:08:27.137334",
+        "datePublished": "2026-07-19T13:10:22.886421",
+        "dateModified": "2026-07-19T13:10:22.886421",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,58 +2422,64 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 581</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter581</p>
-                    
-                    <p>I found it hard to believe and rubbed my eyes. It was really Oliver! How could he be here? Instinctively, I looked back at Lauren.</p>
-                    
-                    <p>Ivanna appeared to be more surprised than we were. &#34;Why are you here?&#34; Oliver ignored Ivanna and focused his attention on Lauren. His eyes looked dark and uncertain, and his lips trembled. He seemed excited.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter581</p>
+                        
+                        <p>I found it hard to believe and rubbed my eyes. It was really Oliver! How could he be here? Instinctively, I looked back at Lauren.</p>
+                        
+                        <p>Ivanna appeared to be more surprised than we were. &#34;Why are you here?&#34; Oliver ignored Ivanna and focused his attention on Lauren. His eyes looked dark and uncertain, and his lips trembled. He seemed excited.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Lauren&#39;s hand on my arm tightened, causingslight pain. My eyes were fixed on Oliver, who had changed a lot. He looked remarkably thin.</p>
-                    
-                    <p>&#34;Lauren, you finally cback.&#34; His voice shook. I could see his hand hanging at his side, tightly clenched in anxiety.</p>
-                    
-                    <p>She looked at him, and her lips twitched. However, she quickly regained her composure.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Lauren&#39;s hand on my arm tightened, causingslight pain. My eyes were fixed on Oliver, who had changed a lot. He looked remarkably thin.</p>
+                        
+                        <p>&#34;Lauren, you finally cback.&#34; His voice shook. I could see his hand hanging at his side, tightly clenched in anxiety.</p>
+                        
+                        <p>She looked at him, and her lips twitched. However, she quickly regained her composure.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Lauren smiled lightly. &#34;It&#39;s you! Have you been good?&#34; &#34;No! No one toldwhere you went!&#34; Oliver sounded like a petulant child who couldn&#39;t find a home.</p>
-                    
-                    <p>Lauren gave a somewhat forced smile. &#34;You can&#39;t blthem. I didn&#39;t even know where I was going. So, I didn&#39;t inform them either. I just told them to pickup before I returned.&#34; Tears welled up in Oliver&#39;s eyes as he gazed at her face. Lauren remained calm, with an unmistakable sense of alienation in her smile.</p>
-                    
-                    <p>Oliver stepped forward and reached out to her. &#34;Lauren, cwith me. Let&#39;s go home.&#34; However, Lauren stepped back slightly and avoided his hand. She was still smiling calmly, but I could see her determination. &#34;I&#39;m sorry, but I have to go home. Goodbye.&#34; She then pulledaway. &#34;Let&#39;s go.&#34; Her face was pale, and her hand was cold. I understood right away that she hadn&#39;t truly moved on. Her calmness was a facade. I glanced at Oliver and nodded slightly. &#34;We&#39;ll head out first.&#34; After all, he was a man with dignity, and I didn&#39;t want to embarrass him too much.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Lauren smiled lightly. &#34;It&#39;s you! Have you been good?&#34; &#34;No! No one toldwhere you went!&#34; Oliver sounded like a petulant child who couldn&#39;t find a home.</p>
+                        
+                        <p>Lauren gave a somewhat forced smile. &#34;You can&#39;t blthem. I didn&#39;t even know where I was going. So, I didn&#39;t inform them either. I just told them to pickup before I returned.&#34; Tears welled up in Oliver&#39;s eyes as he gazed at her face. Lauren remained calm, with an unmistakable sense of alienation in her smile.</p>
+                        
+                        <p>Oliver stepped forward and reached out to her. &#34;Lauren, cwith me. Let&#39;s go home.&#34; However, Lauren stepped back slightly and avoided his hand. She was still smiling calmly, but I could see her determination. &#34;I&#39;m sorry, but I have to go home. Goodbye.&#34; She then pulledaway. &#34;Let&#39;s go.&#34; Her face was pale, and her hand was cold. I understood right away that she hadn&#39;t truly moved on. Her calmness was a facade. I glanced at Oliver and nodded slightly. &#34;We&#39;ll head out first.&#34; After all, he was a man with dignity, and I didn&#39;t want to embarrass him too much.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2450,36 +2491,44 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Then, I pulled Lauren toward the exit.</p>
-                    
-                    <p>Ivanna voiced her displeasure. &#34;Why is he here? The more you avoid meeting someone, the more they appear! Go home? Which home?&#34; &#34;Ivanna!&#34; I reprimanded her, &#34;Can&#39;t you shut up?&#34; Lauren turned pale and murmured, &#34;Finding out about my schedule is easy for him. We should face it eventually, but not now. I just want to go hand have a meal.&#34; She then looked at me. &#34;I heard I have my own hnow.&#34; Lauren had been smiling the whole time, but the smile seemed somewhat strained. She hadn&#39;t truly moved on from this relationship.</p>
-                    
-                    <p>However, it was understandable. After all, it had been over ten years, and she had invested far too much. She had too many grievances and insults to remember.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Then, I pulled Lauren toward the exit.</p>
+                        
+                        <p>Ivanna voiced her displeasure. &#34;Why is he here? The more you avoid meeting someone, the more they appear! Go home? Which home?&#34; &#34;Ivanna!&#34; I reprimanded her, &#34;Can&#39;t you shut up?&#34; Lauren turned pale and murmured, &#34;Finding out about my schedule is easy for him. We should face it eventually, but not now. I just want to go hand have a meal.&#34; She then looked at me. &#34;I heard I have my own hnow.&#34; Lauren had been smiling the whole time, but the smile seemed somewhat strained. She hadn&#39;t truly moved on from this relationship.</p>
+                        
+                        <p>However, it was understandable. After all, it had been over ten years, and she had invested far too much. She had too many grievances and insults to remember.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>I half-hugged her and changed the subject. &#34;Yes, you now have your own home. Ivanna and I have prepared everything for you. You can stay in your place tonight and sleep peacefully until morning.&#34; &#34;That&#39;s great! It&#39;s great to have you both.&#34; She sniffled. Her eyes shimmered with tears, but she held them back.</p>
-                    
-                    <p>&#34;But first, we need to stop by my place,&#34; I said. &#34;As soon as my mom knew you were coming back, she started preparing a bunch of delicious food. She&#39;s been waiting for your return.&#34; Ivanna added, &#34;She even called to make sure you got off the plane and told us to hurry back. We have to catch up, too. Many things have happened in the six months since you left.&#34; &#34;Really? Chlo&#39;s mom did that?&#34; Lauren looked at me, suddenly choking up.</p>
-                    
-                    <p>&#34;Of course! She&#39;s been busy preparing Hmph! I never got this type of treatment,&#34; Ivanna muttered as she dragged the luggage along. &#34;You left for half a year before I was discharged. Don&#39;t you feel bad at aff?&#34; s?.net</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>I half-hugged her and changed the subject. &#34;Yes, you now have your own home. Ivanna and I have prepared everything for you. You can stay in your place tonight and sleep peacefully until morning.&#34; &#34;That&#39;s great! It&#39;s great to have you both.&#34; She sniffled. Her eyes shimmered with tears, but she held them back.</p>
+                        
+                        <p>&#34;But first, we need to stop by my place,&#34; I said. &#34;As soon as my mom knew you were coming back, she started preparing a bunch of delicious food. She&#39;s been waiting for your return.&#34; Ivanna added, &#34;She even called to make sure you got off the plane and told us to hurry back. We have to catch up, too. Many things have happened in the six months since you left.&#34; &#34;Really? Chlo&#39;s mom did that?&#34; Lauren looked at me, suddenly choking up.</p>
+                        
+                        <p>&#34;Of course! She&#39;s been busy preparing Hmph! I never got this type of treatment,&#34; Ivanna muttered as she dragged the luggage along. &#34;You left for half a year before I was discharged. Don&#39;t you feel bad at aff?&#34; s?.net</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4201,6 +4250,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4287,9 +4416,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4353,7 +4483,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4398,13 +4527,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4461,21 +4587,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:26.984105",
-        "dateModified": "2026-07-17T17:08:26.984105",
+        "datePublished": "2026-07-19T13:10:22.741014",
+        "dateModified": "2026-07-19T13:10:22.741014",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,22 +2422,20 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 458</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter458</p>
-                    
-                    <p>Owed Him Too Much Lauren comforted Ivanna, “You shouldn&#39;t worry about such things because it’s his family’s business.</p>
-                    
-                    <p>You&#39;re better off ensuring your safety.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter458</p>
+                        
+                        <p>Owed Him Too Much Lauren comforted Ivanna, “You shouldn&#39;t worry about such things because it’s his family’s business.</p>
+                        
+                        <p>You&#39;re better off ensuring your safety.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2414,49 +2447,17 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>You must learn to put yourself first, which is the best way to support Jared.</p>
-                    
-                    <p>It’s evident he cares about you.” added, “Ivanna, you&#39;re my constant concern because Trinity is formidable.” Suddenly, Ryan called. I quickly realized I never told him what had happened since returning because I was worried about Ivanna. I answered his call softly, “Hey, Ryan.”</p>
-                    
-                    <p>“You&#39;re back?” Ryan sounded calf “Yeah, Ivanna had a little accident, so I rushed back,” I explained, “Have you returned from Solaris?” “What happened to Ivanna?” Ryan became alarmed.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Ivanna gestured for me to keep our conversation discreet, so I said, “She had a minor issue, but we helped her solve it. I&#39;ll return to the office tomorrow.” “perfect. Things went smoothly in Solaris, and I’ve been back for a few days. I&#39;m considering taking Elanor to the construction materials exhibition next week. Before that, we must meet.</p>
-                    
-                    <p>to discuss some matters,” Ryan —-— explained his reason for calling, “Oh, how’s Ava?” “She&#39;s doing much better, but we&#39;re keeping her at Celestis Island a little longer to ensure she has recovered fully. She&#39;ll be home soon, especially since she needs to return to school.” I kept Grace&#39;s condition hidden.</p>
-                    
-                    <p>Ryan took the initiative to ask about my well-being, “What about you?” “p&#39;m all right. Don’t worry about me,” I replied guiltily, knowing I lacked sincerity with Ryan. He always seemed to be a step behind in my life, and I couldn’t compromise.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>“Where&#39;s Ivanna?” Ryan asked, “Are</p>
-                    
-                    <p>you with her?&#34; - 1looked at her and nodded, “Yes, I am.” Ivanna gestured to speak with Ryan, so 1 told him, “She wants to talk to you.” They spoke for a while, and Ivanna tried to act normal. Seeing that reminded me of when he found her barely alive in the tank. Her smile made it easier to breathe now. No matter the challenges ahead, I knew Jared would protect her.</p>
-                    
-                    <p>After they hung up, I took my phone and inwardly decided to clarify things with Ryan. Regardless of what lay ahead with Atlas, 1 didn’t want Ryan to</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>You must learn to put yourself first, which is the best way to support Jared.</p>
+                        
+                        <p>It’s evident he cares about you.” added, “Ivanna, you&#39;re my constant concern because Trinity is formidable.” Suddenly, Ryan called. I quickly realized I never told him what had happened since returning because I was worried about Ivanna. I answered his call softly, “Hey, Ryan.”</p>
+                        
+                        <p>“You&#39;re back?” Ryan sounded calf “Yeah, Ivanna had a little accident, so I rushed back,” I explained, “Have you returned from Solaris?” “What happened to Ivanna?” Ryan became alarmed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2467,53 +2468,109 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>keep waiting for me. a Jaren returned to the ward after lunch, so Lauren and I left them alone. As we left, Lauren sighed, “We can’t control certain things. The three of us are in the same boat.” &#34;Why don&#39;t you come to my place for dinner?&#34; I suggested.</p>
-                    
-                    <p>&#34;No, I&#39;m heading home. Oliver’s wife hasn&#39;t been doing well lately. I fear she won&#39;t last much longer. I want to visit her tonight since she&#39;s been trying to reach me for two days,&#34; Lauren sighed again, &#34;What kind of situation is this? I have to deal with everything.&#34; It was my first time hearing Lauren complaining about Oliver&#39;s situation.</p>
-                    
-                    <p>I couldn&#39;t help but sigh, too, feeling uneasy about Ivanna. I had a hunch Trinity wouldn&#39;t easily back down yet.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Ivanna gestured for me to keep our conversation discreet, so I said, “She had a minor issue, but we helped her solve it. I&#39;ll return to the office tomorrow.” “perfect. Things went smoothly in Solaris, and I’ve been back for a few days. I&#39;m considering taking Elanor to the construction materials exhibition next week. Before that, we must meet.</p>
+                        
+                        <p>to discuss some matters,” Ryan —-— explained his reason for calling, “Oh, how’s Ava?” “She&#39;s doing much better, but we&#39;re keeping her at Celestis Island a little longer to ensure she has recovered fully. She&#39;ll be home soon, especially since she needs to return to school.” I kept Grace&#39;s condition hidden.</p>
+                        
+                        <p>Ryan took the initiative to ask about my well-being, “What about you?” “p&#39;m all right. Don’t worry about me,” I replied guiltily, knowing I lacked sincerity with Ryan. He always seemed to be a step behind in my life, and I couldn’t compromise.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Where&#39;s Ivanna?” Ryan asked, “Are</p>
+                        
+                        <p>you with her?&#34; - 1looked at her and nodded, “Yes, I am.” Ivanna gestured to speak with Ryan, so 1 told him, “She wants to talk to you.” They spoke for a while, and Ivanna tried to act normal. Seeing that reminded me of when he found her barely alive in the tank. Her smile made it easier to breathe now. No matter the challenges ahead, I knew Jared would protect her.</p>
+                        
+                        <p>After they hung up, I took my phone and inwardly decided to clarify things with Ryan. Regardless of what lay ahead with Atlas, 1 didn’t want Ryan to</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>keep waiting for me. a Jaren returned to the ward after lunch, so Lauren and I left them alone. As we left, Lauren sighed, “We can’t control certain things. The three of us are in the same boat.” &#34;Why don&#39;t you come to my place for dinner?&#34; I suggested.</p>
+                        
+                        <p>&#34;No, I&#39;m heading home. Oliver’s wife hasn&#39;t been doing well lately. I fear she won&#39;t last much longer. I want to visit her tonight since she&#39;s been trying to reach me for two days,&#34; Lauren sighed again, &#34;What kind of situation is this? I have to deal with everything.&#34; It was my first time hearing Lauren complaining about Oliver&#39;s situation.</p>
+                        
+                        <p>I couldn&#39;t help but sigh, too, feeling uneasy about Ivanna. I had a hunch Trinity wouldn&#39;t easily back down yet.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Still, we could only await Jared&#39;s decision.</p>
-                    
-                    <p>Lauren and I stood in front of the car for a while. She patted my shoulder, saying, &#34;All right, go home.</p>
-                    
-                    <p>Overthinking won&#39;t help, so let’s take things as they come.&#34; &#34;&#34;Are you sure you don’t want to come for dinner?&#34; I asked again.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Still, we could only await Jared&#39;s decision.</p>
+                        
+                        <p>Lauren and I stood in front of the car for a while. She patted my shoulder, saying, &#34;All right, go home.</p>
+                        
+                        <p>Overthinking won&#39;t help, so let’s take things as they come.&#34; &#34;&#34;Are you sure you don’t want to come for dinner?&#34; I asked again.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;No, I can&#39;t. She&#39;s looking for me, and it&#39;s probably about settling some affairs. I can&#39;t decline that,&#34; Lauren | said calmly.</p>
-                    
-                    <p>We shrugged and got into our cars, driving away from the hospital.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;No, I can&#39;t. She&#39;s looking for me, and it&#39;s probably about settling some affairs. I can&#39;t decline that,&#34; Lauren | said calmly.</p>
+                        
+                        <p>We shrugged and got into our cars, driving away from the hospital.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4231,6 +4288,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4317,9 +4454,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4383,7 +4521,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4428,13 +4565,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4491,21 +4625,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

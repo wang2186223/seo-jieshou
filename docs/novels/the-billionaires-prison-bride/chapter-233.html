@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:26.184080",
-        "dateModified": "2026-07-17T17:08:26.184080",
+        "datePublished": "2026-07-19T13:10:21.868403",
+        "dateModified": "2026-07-19T13:10:21.868403",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,32 +2422,94 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 403</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>She would never allow any woman to trespass on her mother&#39;s domain.</p>
-                    
-                    <p>Sophia remained distracted. &#34;Yeah.&#34;</p>
-                    
-                    <p>While chatting with her daughter, the family of three arrived at the Blackwood Manor.</p>
-                    
-                    <p>This was Sophia&#39;s third visit.</p>
-                    
-                    <p>The first time had been the day she was released from prison, when Ethan had brought her here in a daze.</p>
-                    
-                    <p>She still remembered the servants&#39; quarters in the backyard, and beyond that, the steep ravine where one could descend using vines. The kind that led deep into the heart of the mountain.</p>
-                    
-                    <p>Thinking of this, Sophia couldn’t help but marvel at the Blackwood family’s wealth. Building such an extravagant mansion near the mountain’s peak was no small feat. The view was breathtaking, and the ravine behind ensured no intruder could approach unseen.</p>
-                    
-                    <p>The rich truly lived differently.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>She would never allow any woman to trespass on her mother&#39;s domain.</p>
+                        
+                        <p>Sophia remained distracted. &#34;Yeah.&#34;</p>
+                        
+                        <p>While chatting with her daughter, the family of three arrived at the Blackwood Manor.</p>
+                        
+                        <p>This was Sophia&#39;s third visit.</p>
+                        
+                        <p>The first time had been the day she was released from prison, when Ethan had brought her here in a daze.</p>
+                        
+                        <p>She still remembered the servants&#39; quarters in the backyard, and beyond that, the steep ravine where one could descend using vines. The kind that led deep into the heart of the mountain.</p>
+                        
+                        <p>Thinking of this, Sophia couldn’t help but marvel at the Blackwood family’s wealth. Building such an extravagant mansion near the mountain’s peak was no small feat. The view was breathtaking, and the ravine behind ensured no intruder could approach unseen.</p>
+                        
+                        <p>The rich truly lived differently.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Even the household staff here carried themselves with an air of superiority. Sophia wondered if working as a maid in this house paid thousands per month.</p>
+                        
+                        <p>She still recalled how, six years ago, the young maids had looked down on her with disdain.</p>
+                        
+                        <p>Now, what would they think if they knew she was married to Ethan and had borne his child?</p>
+                        
+                        <p>But glancing down at her plain outfit, Sophia couldn’t help but laugh bitterly.</p>
+                        
+                        <p>She was Ethan’s wife, yet she held no real status.</p>
+                        
+                        <p>A senior maid here probably commanded more respect than she did.</p>
+                        
+                        <p>As she approached the grand entrance of Blackwood Manor with Lily’s small hand in hers, Sophia hesitated.</p>
+                        
+                        <p>The memories of being humiliated by the upper-class crowd six years ago flooded back.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She didn’t have the courage to step inside again.</p>
+                        
+                        <p>&#34;What’s wrong?&#34; Ethan’s sharp gaze landed on her.</p>
+                        
+                        <p>Lily tilted her head. &#34;Mama, why did you stop?&#34;</p>
+                        
+                        <p>&#34;I…&#34; Sophia rarely lied, so she struggled to come up with an excuse. After a pause, inspiration struck. &#34;I just remembered—I need to buy something.&#34;</p>
+                        
+                        <p>Ethan frowned. &#34;What?&#34;</p>
+                        
+                        <p>&#34;My… my period started.&#34; She blushed. &#34;I need to get sanitary pads. There’s a store at the foot of the mountain. I’ll go quickly before it gets worse.&#34;</p>
+                        
+                        <p>She mentally applauded her quick thinking.</p>
+                        
+                        <p>Ethan’s expression darkened, disappointment flashing in his eyes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2423,80 +2520,28 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>Even the household staff here carried themselves with an air of superiority. Sophia wondered if working as a maid in this house paid thousands per month.</p>
-                    
-                    <p>She still recalled how, six years ago, the young maids had looked down on her with disdain.</p>
-                    
-                    <p>Now, what would they think if they knew she was married to Ethan and had borne his child?</p>
-                    
-                    <p>But glancing down at her plain outfit, Sophia couldn’t help but laugh bitterly.</p>
-                    
-                    <p>She was Ethan’s wife, yet she held no real status.</p>
-                    
-                    <p>A senior maid here probably commanded more respect than she did.</p>
-                    
-                    <p>As she approached the grand entrance of Blackwood Manor with Lily’s small hand in hers, Sophia hesitated.</p>
-                    
-                    <p>The memories of being humiliated by the upper-class crowd six years ago flooded back.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>She didn’t have the courage to step inside again.</p>
-                    
-                    <p>&#34;What’s wrong?&#34; Ethan’s sharp gaze landed on her.</p>
-                    
-                    <p>Lily tilted her head. &#34;Mama, why did you stop?&#34;</p>
-                    
-                    <p>&#34;I…&#34; Sophia rarely lied, so she struggled to come up with an excuse. After a pause, inspiration struck. &#34;I just remembered—I need to buy something.&#34;</p>
-                    
-                    <p>Ethan frowned. &#34;What?&#34;</p>
-                    
-                    <p>&#34;My… my period started.&#34; She blushed. &#34;I need to get sanitary pads. There’s a store at the foot of the mountain. I’ll go quickly before it gets worse.&#34;</p>
-                    
-                    <p>She mentally applauded her quick thinking.</p>
-                    
-                    <p>Ethan’s expression darkened, disappointment flashing in his eyes.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="3">
-                    
-                    <p>Why disappointment?</p>
-                    
-                    <p>Did he actually want another child?</p>
-                    
-                    <p>Unbelievable.</p>
-                    
-                    <p>Still, he said coolly, &#34;I’ll call Nathan to take you. He’ll wait outside the store and bring you back discreetly.&#34;</p>
-                    
-                    <p>Sophia sighed inwardly. Even with Nathan escorting her, she couldn’t escape—but at least she could delay facing the Blackwood household.</p>
-                    
-                    <p>Nathan arrived swiftly, drove her to the store, and returned just as fast. Before leaving her at the manor’s gates, he said quietly, &#34;Madam, Mr. Blackwood brought you here today to formally announce your status as his wife to the household.&#34;</p>
-                    
-                    <p>Sophia smiled faintly. &#34;Is that so? Thank you, Nathan. Don’t worry, I won’t run. Lily is here.&#34;</p>
-                    
-                    <p>Nathan nodded. &#34;I’ll wait outside.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Why disappointment?</p>
+                        
+                        <p>Did he actually want another child?</p>
+                        
+                        <p>Unbelievable.</p>
+                        
+                        <p>Still, he said coolly, &#34;I’ll call Nathan to take you. He’ll wait outside the store and bring you back discreetly.&#34;</p>
+                        
+                        <p>Sophia sighed inwardly. Even with Nathan escorting her, she couldn’t escape—but at least she could delay facing the Blackwood household.</p>
+                        
+                        <p>Nathan arrived swiftly, drove her to the store, and returned just as fast. Before leaving her at the manor’s gates, he said quietly, &#34;Madam, Mr. Blackwood brought you here today to formally announce your status as his wife to the household.&#34;</p>
+                        
+                        <p>Sophia smiled faintly. &#34;Is that so? Thank you, Nathan. Don’t worry, I won’t run. Lily is here.&#34;</p>
+                        
+                        <p>Nathan nodded. &#34;I’ll wait outside.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2508,23 +2553,59 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Left alone in the courtyard, Sophia lingered by the flowerbeds, reluctant to enter.</p>
-                    
-                    <p>Suddenly, a shrill voice cut through the air. &#34;Who are you? Why are you skulking around here? You look familiar!&#34;</p>
-                    
-                    <p>Sophia turned to see a middle-aged woman scowling at her.</p>
-                    
-                    <p>&#34;This is private property! How dare you trespass? Do you want to be thrown out?&#34; the woman snapped.</p>
-                    
-                    <p>Dressed in an apron but radiating arrogance, the maid’s disdainful glare made Sophia’s skin crawl.</p>
-                    
-                    <p>It was ironic—a servant in a wealthy household acting more superior than a small business owner.</p>
-                    
-                    <p>Sophia had recently watched a historical drama where a powerless prince was forced to yield to a high-ranking official’s servant.</p>
-                    
-                    <p>The prince had sighed, &#34;A prince without power is inferior to a slave, but a slave in favor can live like royalty.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Left alone in the courtyard, Sophia lingered by the flowerbeds, reluctant to enter.</p>
+                        
+                        <p>Suddenly, a shrill voice cut through the air. &#34;Who are you? Why are you skulking around here? You look familiar!&#34;</p>
+                        
+                        <p>Sophia turned to see a middle-aged woman scowling at her.</p>
+                        
+                        <p>&#34;This is private property! How dare you trespass? Do you want to be thrown out?&#34; the woman snapped.</p>
+                        
+                        <p>Dressed in an apron but radiating arrogance, the maid’s disdainful glare made Sophia’s skin crawl.</p>
+                        
+                        <p>It was ironic—a servant in a wealthy household acting more superior than a small business owner.</p>
+                        
+                        <p>Sophia had recently watched a historical drama where a powerless prince was forced to yield to a high-ranking official’s servant.</p>
+                        
+                        <p>The prince had sighed, &#34;A prince without power is inferior to a slave, but a slave in favor can live like royalty.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The truth of those words struck her now.</p>
+                        
+                        <p>Sophia was Ethan’s wife, yet she held no real authority.</p>
+                        
+                        <p>She couldn’t even choose her own clothes.</p>
+                        
+                        <p>Let alone confront a maid here.</p>
+                        
+                        <p>Clearing her throat, Sophia said, &#34;I’m a guest today.&#34;</p>
+                        
+                        <p>&#34;You?&#34; The maid scoffed. &#34;Do you even know where this is? Look at you—some new temp worker? I’ve never seen you before. If I had, I’d have kicked you out already! Who are you? Speak up, or I’ll have your legs broken!&#34;</p>
+                        
+                        <p>&#34;We’ve met before,&#34; Sophia said calmly.</p>
+                        
+                        <p>The maid froze.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2535,55 +2616,31 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>The truth of those words struck her now.</p>
-                    
-                    <p>Sophia was Ethan’s wife, yet she held no real authority.</p>
-                    
-                    <p>She couldn’t even choose her own clothes.</p>
-                    
-                    <p>Let alone confront a maid here.</p>
-                    
-                    <p>Clearing her throat, Sophia said, &#34;I’m a guest today.&#34;</p>
-                    
-                    <p>&#34;You?&#34; The maid scoffed. &#34;Do you even know where this is? Look at you—some new temp worker? I’ve never seen you before. If I had, I’d have kicked you out already! Who are you? Speak up, or I’ll have your legs broken!&#34;</p>
-                    
-                    <p>&#34;We’ve met before,&#34; Sophia said calmly.</p>
-                    
-                    <p>The maid froze.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="6">
-                    
-                    <p>Then recognition dawned. &#34;Wait—you’re that convict from six years ago! The one our young master brought home fresh out of prison!&#34;</p>
-                    
-                    <p>She sneered. &#34;You’re still alive? Rumor has it he dragged you back from some field. And now you dare show your face here?&#34;</p>
-                    
-                    <p>She stepped closer, voice dripping with malice. &#34;Did you really think bearing his child would make you worthy? Yet here you are—still no status, still a ghost of a woman. What are you even doing here?&#34;</p>
-                    
-                    <p>Her voice rose to a shriek. &#34;Answer me, or I’ll have you beaten and thrown into the gutter!&#34;</p>
-                    
-                    <p>Sophia’s breath caught.</p>
-                    
-                    <p>She was too stunned to speak.</p>
-                    
-                    <p>The maid’s screeching drew others, their curious gazes locking onto Sophia.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Then recognition dawned. &#34;Wait—you’re that convict from six years ago! The one our young master brought home fresh out of prison!&#34;</p>
+                        
+                        <p>She sneered. &#34;You’re still alive? Rumor has it he dragged you back from some field. And now you dare show your face here?&#34;</p>
+                        
+                        <p>She stepped closer, voice dripping with malice. &#34;Did you really think bearing his child would make you worthy? Yet here you are—still no status, still a ghost of a woman. What are you even doing here?&#34;</p>
+                        
+                        <p>Her voice rose to a shriek. &#34;Answer me, or I’ll have you beaten and thrown into the gutter!&#34;</p>
+                        
+                        <p>Sophia’s breath caught.</p>
+                        
+                        <p>She was too stunned to speak.</p>
+                        
+                        <p>The maid’s screeching drew others, their curious gazes locking onto Sophia.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4301,6 +4358,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4387,9 +4524,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4453,7 +4591,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4498,13 +4635,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4561,21 +4695,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

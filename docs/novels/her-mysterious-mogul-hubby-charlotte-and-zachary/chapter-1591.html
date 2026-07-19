@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.107577",
-        "dateModified": "2026-07-17T17:08:32.107577",
+        "datePublished": "2026-07-19T13:10:28.960579",
+        "dateModified": "2026-07-19T13:10:28.960579",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,32 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1691</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>After baring their souls to each other, Zachary and Johann&#39;s bonds were further strengthened.</p>
-                    
-                    <p>Having survived many trials and tribulations together, Zachary and his subordinates deepened the</p>
-                    
-                    <p>camaraderie and loyalty they shared.</p>
-                    
-                    <p>Ever since Henry established Nacht Group, Zachary had managed to prevent the company from falling</p>
-                    
-                    <p>into the hands of others despite the crises it faced throughout the decades.</p>
-                    
-                    <p>Consequently, he had not failed those who came before him.</p>
-                    
-                    <p>In the afternoon, Zachary held a board meeting to streamline all operational matters. He then</p>
-                    
-                    <p>announced that the company would return to its normal functions the very next day.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>After baring their souls to each other, Zachary and Johann&#39;s bonds were further strengthened.</p>
+                        
+                        <p>Having survived many trials and tribulations together, Zachary and his subordinates deepened the</p>
+                        
+                        <p>camaraderie and loyalty they shared.</p>
+                        
+                        <p>Ever since Henry established Nacht Group, Zachary had managed to prevent the company from falling</p>
+                        
+                        <p>into the hands of others despite the crises it faced throughout the decades.</p>
+                        
+                        <p>Consequently, he had not failed those who came before him.</p>
+                        
+                        <p>In the afternoon, Zachary held a board meeting to streamline all operational matters. He then</p>
+                        
+                        <p>announced that the company would return to its normal functions the very next day.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2424,107 +2457,59 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Clapping enthusiastically with tears in their eyes, the board members swore to follow Zachary to death</p>
-                    
-                    <p>and never abandon him.</p>
-                    
-                    <p>After nodding with a slight smile, Zachary instructed Bruce to wheel him out of the room.</p>
-                    
-                    <p>When he checked his phone, he realized he had a missed call from Francesco.</p>
-                    
-                    <p>If I don&#39;t see her now, she will probably hunt me down with her beasts.</p>
-                    
-                    <p>After Zachary got into the car, Bruce reported anxiously, “Ms. Felch gave me a call and threatened to</p>
-                    
-                    <p>lose her temper if she doesn&#39;t see you by sundown.”</p>
-                    
-                    <p>“Haha...” Zachary laughed. “In that case, you had better step on it. If we&#39;re late, she might end up</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Clapping enthusiastically with tears in their eyes, the board members swore to follow Zachary to death</p>
+                        
+                        <p>and never abandon him.</p>
+                        
+                        <p>After nodding with a slight smile, Zachary instructed Bruce to wheel him out of the room.</p>
+                        
+                        <p>When he checked his phone, he realized he had a missed call from Francesco.</p>
+                        
+                        <p>If I don&#39;t see her now, she will probably hunt me down with her beasts.</p>
+                        
+                        <p>After Zachary got into the car, Bruce reported anxiously, “Ms. Felch gave me a call and threatened to</p>
+                        
+                        <p>lose her temper if she doesn&#39;t see you by sundown.”</p>
+                        
+                        <p>“Haha...” Zachary laughed. “In that case, you had better step on it. If we&#39;re late, she might end up</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>burning Rokan Hill down.”</p>
-                    
-                    <p>“I can&#39;t believe how bad her temper is. In contrast to her, I now feel that Ms. Lindberg is kind and</p>
-                    
-                    <p>gentle,” Bruce commented anxiously.</p>
-                    
-                    <p>“Isn&#39;t that obvious?” Zachary shot him a glare. “Even without being compared to the devilish woman,</p>
-                    
-                    <p>Charlotte is inherently a kind and gentle soul.”</p>
-                    
-                    <p>“Yes, yes, of course.” Bruce nodded before urging Marino to drive faster.</p>
-                    
-                    <p>Halfway through the journey, Marino suddenly remarked, “Someone&#39;s tailing us.”</p>
-                    
-                    <p>“Hmm?” Zachary raised his gaze at the rearview mirror. “They&#39;re the Lindberg family&#39;s men.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>“Are they following us in order to find Francesco?” Bruce furrowed his brows. “Considering they are</p>
-                    
-                    <p>family, it would be unwise to be in open conflict.” “Pull up in front,” Zachary ordered.</p>
-                    
-                    <p>“Right away.” Marino slowed the car down to a stop.</p>
-                    
-                    <p>“What&#39;s going on? Have we been noticed?” Sean&#39;s subordinate asked.</p>
-                    
-                    <p>“Looks like it,” Sean responded with a frown. “But since Mr. Nacht has stopped his car instead of trying</p>
-                    
-                    <p>to lose us, he probably wants to talk.”</p>
-                    
-                    <p>“In that case...”</p>
-                    
-                    <p>“Drive over then.” “All right.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Their silver Maybach came to a stop behind Zachary&#39;s black Rolls-Royce.</p>
-                    
-                    <p>After alighting from the car, Sean took the initiative to greet Zachary, “Mr. Nacht, it&#39;s been a while.”</p>
-                    
-                    <p>“Tell Mr. Lindberg that I&#39;ll see him tonight at ten to talk,” Zachary suggested with a smile. “Before that,</p>
-                    
-                    <p>tell him to give me some time.”</p>
-                    
-                    <p>“Erm...” Sean pondered a moment before replying in a conflicted tone, “Please wait for a moment while</p>
-                    
-                    <p>I check with him.’</p>
-                    
-                    <p>Zachary signaled him to go ahead.</p>
-                    
-                    <p>Sean moved to the side and gave Danrique a call to convey Zachary&#39;s message.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>burning Rokan Hill down.”</p>
+                        
+                        <p>“I can&#39;t believe how bad her temper is. In contrast to her, I now feel that Ms. Lindberg is kind and</p>
+                        
+                        <p>gentle,” Bruce commented anxiously.</p>
+                        
+                        <p>“Isn&#39;t that obvious?” Zachary shot him a glare. “Even without being compared to the devilish woman,</p>
+                        
+                        <p>Charlotte is inherently a kind and gentle soul.”</p>
+                        
+                        <p>“Yes, yes, of course.” Bruce nodded before urging Marino to drive faster.</p>
+                        
+                        <p>Halfway through the journey, Marino suddenly remarked, “Someone&#39;s tailing us.”</p>
+                        
+                        <p>“Hmm?” Zachary raised his gaze at the rearview mirror. “They&#39;re the Lindberg family&#39;s men.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2535,24 +2520,92 @@
                 
                 
                 
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Are they following us in order to find Francesco?” Bruce furrowed his brows. “Considering they are</p>
+                        
+                        <p>family, it would be unwise to be in open conflict.” “Pull up in front,” Zachary ordered.</p>
+                        
+                        <p>“Right away.” Marino slowed the car down to a stop.</p>
+                        
+                        <p>“What&#39;s going on? Have we been noticed?” Sean&#39;s subordinate asked.</p>
+                        
+                        <p>“Looks like it,” Sean responded with a frown. “But since Mr. Nacht has stopped his car instead of trying</p>
+                        
+                        <p>to lose us, he probably wants to talk.”</p>
+                        
+                        <p>“In that case...”</p>
+                        
+                        <p>“Drive over then.” “All right.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Their silver Maybach came to a stop behind Zachary&#39;s black Rolls-Royce.</p>
+                        
+                        <p>After alighting from the car, Sean took the initiative to greet Zachary, “Mr. Nacht, it&#39;s been a while.”</p>
+                        
+                        <p>“Tell Mr. Lindberg that I&#39;ll see him tonight at ten to talk,” Zachary suggested with a smile. “Before that,</p>
+                        
+                        <p>tell him to give me some time.”</p>
+                        
+                        <p>“Erm...” Sean pondered a moment before replying in a conflicted tone, “Please wait for a moment while</p>
+                        
+                        <p>I check with him.’</p>
+                        
+                        <p>Zachary signaled him to go ahead.</p>
+                        
+                        <p>Sean moved to the side and gave Danrique a call to convey Zachary&#39;s message.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="5">
-                    
-                    <p>After a momentary silence, Danrique answered, “Back off then.”</p>
-                    
-                    <p>“Right away.” Sean hurried back to Zachary. “Mr. Nacht, Mr. Lindberg will see you at ten.”</p>
-                    
-                    <p>“I&#39;ll be there.”</p>
-                    
-                    <p>“Okay.”</p>
-                    
-                    <p>Sean swiftly left with his men.</p>
-                    
-                    <p>Once their car was nowhere in sight, Zachary ordered Marino to continue their drive to Rokan Hill.</p>
-                    
-                    <p>“It seems Mr. Lindberg is open to negotiations this time,” Bruce speculated. “Has he set aside his bias</p>
-                    
-                    <p>due to Ms. Lindberg and the children?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>After a momentary silence, Danrique answered, “Back off then.”</p>
+                        
+                        <p>“Right away.” Sean hurried back to Zachary. “Mr. Nacht, Mr. Lindberg will see you at ten.”</p>
+                        
+                        <p>“I&#39;ll be there.”</p>
+                        
+                        <p>“Okay.”</p>
+                        
+                        <p>Sean swiftly left with his men.</p>
+                        
+                        <p>Once their car was nowhere in sight, Zachary ordered Marino to continue their drive to Rokan Hill.</p>
+                        
+                        <p>“It seems Mr. Lindberg is open to negotiations this time,” Bruce speculated. “Has he set aside his bias</p>
+                        
+                        <p>due to Ms. Lindberg and the children?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2564,22 +2617,26 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“No.” Zachary smirked. “It&#39;s because of Francesco.”</p>
-                    
-                    <p>“Huh?” Bruce was puzzled.</p>
-                    
-                    <p>“Do you think he doesn&#39;t know that Francesco is at Southridge?” Zachary asked with his eyebrow</p>
-                    
-                    <p>raised. “Given that we&#39;re heading to Rokan Hill, it&#39;s not difficult for him to guess where Francesco is. I’m</p>
-                    
-                    <p>guessing that instead of a confrontation, he wants to persuade her to return in a more subtle manner.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“No.” Zachary smirked. “It&#39;s because of Francesco.”</p>
+                        
+                        <p>“Huh?” Bruce was puzzled.</p>
+                        
+                        <p>“Do you think he doesn&#39;t know that Francesco is at Southridge?” Zachary asked with his eyebrow</p>
+                        
+                        <p>raised. “Given that we&#39;re heading to Rokan Hill, it&#39;s not difficult for him to guess where Francesco is. I’m</p>
+                        
+                        <p>guessing that instead of a confrontation, he wants to persuade her to return in a more subtle manner.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4297,6 +4354,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4383,9 +4520,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4449,7 +4587,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4494,13 +4631,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4557,21 +4691,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

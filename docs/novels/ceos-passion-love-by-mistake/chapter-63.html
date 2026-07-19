@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.252387",
-        "dateModified": "2026-07-17T17:08:28.252387",
+        "datePublished": "2026-07-19T13:10:24.028945",
+        "dateModified": "2026-07-19T13:10:24.028945",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,28 +2422,26 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 64</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Shane furrowed his eyebrows slightly as his eyes dimmed.</p>
-                    
-                    <p>The kids were whispering to each other. Suddenly, Connor grimaced in pain as he clutched his stomach and vomited.</p>
-                    
-                    <p>“Connor!” Sharon was just beside Connor, and it shocked her when she saw her brother vomiting.</p>
-                    
-                    <p>Natalie turned to look at her son, and she was shocked. She inched closer to Connor with an anxious expression, and her voice was trembling. “Baby, are you okay?”</p>
-                    
-                    <p>Connor didn’t reply and continued to vomit.</p>
-                    
-                    <p>Shane walked toward them and crouched down in front of Connor with a tensed look. Touching Connor’s face and forehead, he lowered his voice. “His body is cold, and he’s breaking out in cold sweat. We must take him to the hospital now.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Shane furrowed his eyebrows slightly as his eyes dimmed.</p>
+                        
+                        <p>The kids were whispering to each other. Suddenly, Connor grimaced in pain as he clutched his stomach and vomited.</p>
+                        
+                        <p>“Connor!” Sharon was just beside Connor, and it shocked her when she saw her brother vomiting.</p>
+                        
+                        <p>Natalie turned to look at her son, and she was shocked. She inched closer to Connor with an anxious expression, and her voice was trembling. “Baby, are you okay?”</p>
+                        
+                        <p>Connor didn’t reply and continued to vomit.</p>
+                        
+                        <p>Shane walked toward them and crouched down in front of Connor with a tensed look. Touching Connor’s face and forehead, he lowered his voice. “His body is cold, and he’s breaking out in cold sweat. We must take him to the hospital now.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2420,67 +2453,79 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Shane carried Connor in his arms without hesitation and dashed to the lift.</p>
-                    
-                    <p>Natalie saw that and quickly dragged Sharon to catch up with them.</p>
-                    
-                    <p>Sharon sobbed. “Mommy, will Connor be okay?”</p>
-                    
-                    <p>“Of course. Your brother is a superman. He will be okay.” Natalie forced herself to smile in a bid to comfort her daughter, but the worry in her eyes was painfully clear.</p>
-                    
-                    <p>On the way to the hospital, Connor stopped vomiting, but he was trembling.</p>
-                    
-                    <p>As his trembling intensified, Natalie was worried he would bite his tongue, so she quickly took out a handkerchief and stuffed it into his mouth.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Shane carried Connor in his arms without hesitation and dashed to the lift.</p>
+                        
+                        <p>Natalie saw that and quickly dragged Sharon to catch up with them.</p>
+                        
+                        <p>Sharon sobbed. “Mommy, will Connor be okay?”</p>
+                        
+                        <p>“Of course. Your brother is a superman. He will be okay.” Natalie forced herself to smile in a bid to comfort her daughter, but the worry in her eyes was painfully clear.</p>
+                        
+                        <p>On the way to the hospital, Connor stopped vomiting, but he was trembling.</p>
+                        
+                        <p>As his trembling intensified, Natalie was worried he would bite his tongue, so she quickly took out a handkerchief and stuffed it into his mouth.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“Mr. Shane!” Natalie hugged Connor tightly and screamed at Shane, begging for his help while her eyes were red with tears.</p>
-                    
-                    <p>“I got this.” Shane took a glance in the rearview mirror and focused his eyes on the road. Gripping the steering wheel tightly, he pressed down hard onto the accelerator.</p>
-                    
-                    <p>Soon, they reached the hospital.</p>
-                    
-                    <p>Connor was sent to the emergency room, while Natalie and Sharon waited nervously outside the room.</p>
-                    
-                    <p>After registering Connor’s name at the counter, Shane came to her and waited patiently. “Don’t worry. Connor will be fine.”</p>
-                    
-                    <p>Natalie shook her head as she sobbed. “How can I not worry about him? Connor has never been ill before. But now he’s ill. I...”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“Mr. Shane!” Natalie hugged Connor tightly and screamed at Shane, begging for his help while her eyes were red with tears.</p>
+                        
+                        <p>“I got this.” Shane took a glance in the rearview mirror and focused his eyes on the road. Gripping the steering wheel tightly, he pressed down hard onto the accelerator.</p>
+                        
+                        <p>Soon, they reached the hospital.</p>
+                        
+                        <p>Connor was sent to the emergency room, while Natalie and Sharon waited nervously outside the room.</p>
+                        
+                        <p>After registering Connor’s name at the counter, Shane came to her and waited patiently. “Don’t worry. Connor will be fine.”</p>
+                        
+                        <p>Natalie shook her head as she sobbed. “How can I not worry about him? Connor has never been ill before. But now he’s ill. I...”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>She choked up before she could finish her sentence. Squatting on the ground, she started crying her heart out.</p>
-                    
-                    <p>Looking at her mother’s pained expression, Sharon cried together with her.</p>
-                    
-                    <p>Shane’s heart felt tight after seeing the mother and daughter cried together in front of him.</p>
-                    
-                    <p>Just when he was going to comfort the duo, the light outside the emergency room went off suddenly.</p>
-                    
-                    <p>Shane squinted his eyes and went up to the doctor. He asked in a low voice, “How is the kid?”</p>
-                    
-                    <p>“Doctor, is my son alright?” Natalie immediately stood up and wiped her tears while she dashed toward the doctor.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She choked up before she could finish her sentence. Squatting on the ground, she started crying her heart out.</p>
+                        
+                        <p>Looking at her mother’s pained expression, Sharon cried together with her.</p>
+                        
+                        <p>Shane’s heart felt tight after seeing the mother and daughter cried together in front of him.</p>
+                        
+                        <p>Just when he was going to comfort the duo, the light outside the emergency room went off suddenly.</p>
+                        
+                        <p>Shane squinted his eyes and went up to the doctor. He asked in a low voice, “How is the kid?”</p>
+                        
+                        <p>“Doctor, is my son alright?” Natalie immediately stood up and wiped her tears while she dashed toward the doctor.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2492,43 +2537,51 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“He’s fine now.” The doctor took off his face mask.</p>
-                    
-                    <p>Heaving a sigh of relief, Natalie broke into a smile while Shane’s knitted eyebrows finally relaxed.</p>
-                    
-                    <p>After hearing the good news, Sharon jumped up happily.</p>
-                    
-                    <p>“Doctor, what is wrong with my son?” Natalie wanted to find out what illness was Connor suffering from.</p>
-                    
-                    <p>“Acute gastritis. As his parents, you guys will have to be mindful of this.” With that, the doctor walked past them.</p>
-                    
-                    <p>“Gastritis... But how did he get gastritis?” Natalie was confused, as she had always been mindful of the food she gave her kids.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“He’s fine now.” The doctor took off his face mask.</p>
+                        
+                        <p>Heaving a sigh of relief, Natalie broke into a smile while Shane’s knitted eyebrows finally relaxed.</p>
+                        
+                        <p>After hearing the good news, Sharon jumped up happily.</p>
+                        
+                        <p>“Doctor, what is wrong with my son?” Natalie wanted to find out what illness was Connor suffering from.</p>
+                        
+                        <p>“Acute gastritis. As his parents, you guys will have to be mindful of this.” With that, the doctor walked past them.</p>
+                        
+                        <p>“Gastritis... But how did he get gastritis?” Natalie was confused, as she had always been mindful of the food she gave her kids.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“I’ll ask the nurse at the laboratory.” Shane patted on her shoulders.</p>
-                    
-                    <p>After he left, Connor was sent to a general ward.</p>
-                    
-                    <p>Sharon was tired from all the crying, and she fell asleep. Natalie laid her down beside Connor on the bed.</p>
-                    
-                    <p>She sat on the sofa while staring at the hospital beds and the figures of her kids sleeping soundly, overwhelmed with guilt.</p>
-                    
-                    <p>A few hours ago, she had noticed Connor’s pale expression. However, she thought it was because of the light.</p>
-                    
-                    <p>I have failed as a mother!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“I’ll ask the nurse at the laboratory.” Shane patted on her shoulders.</p>
+                        
+                        <p>After he left, Connor was sent to a general ward.</p>
+                        
+                        <p>Sharon was tired from all the crying, and she fell asleep. Natalie laid her down beside Connor on the bed.</p>
+                        
+                        <p>She sat on the sofa while staring at the hospital beds and the figures of her kids sleeping soundly, overwhelmed with guilt.</p>
+                        
+                        <p>A few hours ago, she had noticed Connor’s pale expression. However, she thought it was because of the light.</p>
+                        
+                        <p>I have failed as a mother!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2540,16 +2593,20 @@
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>While she was deep in her thoughts, the door suddenly opened. Shane walked into the room and handed her a report. “Connor’s gastritis was triggered by seafood.”</p>
-                    
-                    <p>“Seafood? I never fed him seafood.” Natalie froze for a while and frowned.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>While she was deep in her thoughts, the door suddenly opened. Shane walked into the room and handed her a report. “Connor’s gastritis was triggered by seafood.”</p>
+                        
+                        <p>“Seafood? I never fed him seafood.” Natalie froze for a while and frowned.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
@@ -4267,6 +4324,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4353,9 +4490,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4419,7 +4557,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4464,13 +4601,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4527,21 +4661,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.093515",
-        "dateModified": "2026-07-17T17:08:29.093515",
+        "datePublished": "2026-07-19T13:10:24.912672",
+        "dateModified": "2026-07-19T13:10:24.912672",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,48 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 866</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Sam huffed, “Even if he knew about it, it doesn&#39;t mean I did. That person knew of my intention to kill your parents. So when your parents went for an interview, I received a message saying that their car broke down. The person said they would lure your parents down that road and asked me to send my subordinates there quickly. That&#39;s all.”</p>
-                    
-                    <p>Shane stayed silent.</p>
-                    
-                    <p>Sam doesn&#39;t seem to know who the culprit was.</p>
-                    
-                    <p>The only person who knows is Sean.</p>
-                    
-                    <p>But why does Sean know?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Sam huffed, “Even if he knew about it, it doesn&#39;t mean I did. That person knew of my intention to kill your parents. So when your parents went for an interview, I received a message saying that their car broke down. The person said they would lure your parents down that road and asked me to send my subordinates there quickly. That&#39;s all.”</p>
+                        
+                        <p>Shane stayed silent.</p>
+                        
+                        <p>Sam doesn&#39;t seem to know who the culprit was.</p>
+                        
+                        <p>The only person who knows is Sean.</p>
+                        
+                        <p>But why does Sean know?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>A lot of questions crossed Shane&#39;s mind, but there were no answers to those questions.</p>
-                    
-                    <p>Sam and Catherine could feel the tension emanating from Shane, so they remained silent.</p>
-                    
-                    <p>After a long silence, Shane threatened, “I won&#39;t let you nor that person get away with it. I will find Grandpa&#39;s will.”</p>
-                    
-                    <p>Sam&#39;s face paled and his fists were clenched tightly by his sides.</p>
-                    
-                    <p>Shane didn&#39;t want to waste any more time there, so he turned and left.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>A lot of questions crossed Shane&#39;s mind, but there were no answers to those questions.</p>
+                        
+                        <p>Sam and Catherine could feel the tension emanating from Shane, so they remained silent.</p>
+                        
+                        <p>After a long silence, Shane threatened, “I won&#39;t let you nor that person get away with it. I will find Grandpa&#39;s will.”</p>
+                        
+                        <p>Sam&#39;s face paled and his fists were clenched tightly by his sides.</p>
+                        
+                        <p>Shane didn&#39;t want to waste any more time there, so he turned and left.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2440,39 +2477,47 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>When he reached the entrance, he instructed the bodyguards guarding the house, “Watch them closely. Inform me if they make any moves.”</p>
-                    
-                    <p>“Yes, sir,” the bodyguards answered in unison.</p>
-                    
-                    <p>Shane then left in his car.</p>
-                    
-                    <p>Those bodyguards were hired by him when he found out that Sam was the culprit. For the time being, they were there to keep Sam and his family under house arrest.</p>
-                    
-                    <p>Now that Sean had escaped, he must have Sam in his control. Or else it would all be for naught if he managed to find his grandpa&#39;s will, but not Sam.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>When he reached the entrance, he instructed the bodyguards guarding the house, “Watch them closely. Inform me if they make any moves.”</p>
+                        
+                        <p>“Yes, sir,” the bodyguards answered in unison.</p>
+                        
+                        <p>Shane then left in his car.</p>
+                        
+                        <p>Those bodyguards were hired by him when he found out that Sam was the culprit. For the time being, they were there to keep Sam and his family under house arrest.</p>
+                        
+                        <p>Now that Sean had escaped, he must have Sam in his control. Or else it would all be for naught if he managed to find his grandpa&#39;s will, but not Sam.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>This was the reason why he needed to keep a close watch on Sam by putting him under house arrest.</p>
-                    
-                    <p>“Darling, are you all right?” Catherine asked.</p>
-                    
-                    <p>Sam rubbed his abdomen that was throbbing in pain and pushed Catherine away. “I didn&#39;t see you worry about me a while ago. How pretentious.”</p>
-                    
-                    <p>Guilt crossed Catherine&#39;s face. “That was because-”</p>
-                    
-                    <p>“Enough. The reason doesn&#39;t matter. It&#39;s a fact that you weren&#39;t worried about me a while ago,” Sam interrupted her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>This was the reason why he needed to keep a close watch on Sam by putting him under house arrest.</p>
+                        
+                        <p>“Darling, are you all right?” Catherine asked.</p>
+                        
+                        <p>Sam rubbed his abdomen that was throbbing in pain and pushed Catherine away. “I didn&#39;t see you worry about me a while ago. How pretentious.”</p>
+                        
+                        <p>Guilt crossed Catherine&#39;s face. “That was because-”</p>
+                        
+                        <p>“Enough. The reason doesn&#39;t matter. It&#39;s a fact that you weren&#39;t worried about me a while ago,” Sam interrupted her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2484,17 +2529,21 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Catherine pouted and fell silent.</p>
-                    
-                    <p>Sam took a seat and glanced at the mess on the floor. “Seth&#39;s family has always been a pain in my ass.”</p>
-                    
-                    <p>Ever since we&#39;re young, I had to grow up under Seth&#39;s shadow.</p>
-                    
-                    <p>Because he was sickly when young, Mom and Dad always favored him. My friends and relatives also liked him more. They all thought that he was smarter, more good-looking, and obedient than me.</p>
-                    
-                    <p>Dad even named Seth as the Thompson Group successor.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Catherine pouted and fell silent.</p>
+                        
+                        <p>Sam took a seat and glanced at the mess on the floor. “Seth&#39;s family has always been a pain in my ass.”</p>
+                        
+                        <p>Ever since we&#39;re young, I had to grow up under Seth&#39;s shadow.</p>
+                        
+                        <p>Because he was sickly when young, Mom and Dad always favored him. My friends and relatives also liked him more. They all thought that he was smarter, more good-looking, and obedient than me.</p>
+                        
+                        <p>Dad even named Seth as the Thompson Group successor.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2506,37 +2555,45 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>What right does he have to be the successor when I&#39;m the eldest son?</p>
-                    
-                    <p>It was fine my parents had always favored him. But how could they appoint him as the successor to Thompson Group? Unwilling to accept such a prosperous notion, I challenged Dad about his decision, yet he said Seth was better than me, and that Thompson Group could only achieve new heights if it&#39;s under Seth&#39;s management.</p>
-                    
-                    <p>I felt I was treated unfairly. I mean, how could Dad say that Seth was better than me when he didn&#39;t even give me a chance to prove myself? And so, I fought to steal Thompson Group for myself.</p>
-                    
-                    <p>What I didn&#39;t expect was that when Seth and his wife passed away, not only did Dad not hand me the reins to the company, he actually gave it to Seth&#39;s son, Shane instead!</p>
-                    
-                    <p>Sam&#39;s eyes were filled with hatred as he thought about the past. “Despite being dead, that old-timer still manages to spite me.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>What right does he have to be the successor when I&#39;m the eldest son?</p>
+                        
+                        <p>It was fine my parents had always favored him. But how could they appoint him as the successor to Thompson Group? Unwilling to accept such a prosperous notion, I challenged Dad about his decision, yet he said Seth was better than me, and that Thompson Group could only achieve new heights if it&#39;s under Seth&#39;s management.</p>
+                        
+                        <p>I felt I was treated unfairly. I mean, how could Dad say that Seth was better than me when he didn&#39;t even give me a chance to prove myself? And so, I fought to steal Thompson Group for myself.</p>
+                        
+                        <p>What I didn&#39;t expect was that when Seth and his wife passed away, not only did Dad not hand me the reins to the company, he actually gave it to Seth&#39;s son, Shane instead!</p>
+                        
+                        <p>Sam&#39;s eyes were filled with hatred as he thought about the past. “Despite being dead, that old-timer still manages to spite me.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Exactly.” Catherine was furious as well. “Why didn&#39;t David destroy all the evidence all those years ago? Why did he devise a will to restrain you?”</p>
-                    
-                    <p>“Precisely. It&#39;s infuriating. But the good news is that the old-timer didn&#39;t tell Shane about the will&#39;s location as well,” Sam replied.</p>
-                    
-                    <p>Catherine was still worried. “What will happen if Shane finds the will? The only reason he&#39;s letting us be for now is that he doesn&#39;t have any evidence. If he finds the will, we-”</p>
-                    
-                    <p>“That&#39;s enough. Let&#39;s not overthink this. I will find the will before him. As for you, I need you to call Sean and ask him about his plan. Why the hell did he tell Shane about the other culprit?” Sam irritably gestured.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Exactly.” Catherine was furious as well. “Why didn&#39;t David destroy all the evidence all those years ago? Why did he devise a will to restrain you?”</p>
+                        
+                        <p>“Precisely. It&#39;s infuriating. But the good news is that the old-timer didn&#39;t tell Shane about the will&#39;s location as well,” Sam replied.</p>
+                        
+                        <p>Catherine was still worried. “What will happen if Shane finds the will? The only reason he&#39;s letting us be for now is that he doesn&#39;t have any evidence. If he finds the will, we-”</p>
+                        
+                        <p>“That&#39;s enough. Let&#39;s not overthink this. I will find the will before him. As for you, I need you to call Sean and ask him about his plan. Why the hell did he tell Shane about the other culprit?” Sam irritably gestured.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -4259,6 +4316,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4345,9 +4482,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4411,7 +4549,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4456,13 +4593,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4519,21 +4653,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

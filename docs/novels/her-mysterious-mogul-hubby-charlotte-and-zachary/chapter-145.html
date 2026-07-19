@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:30.319345",
-        "dateModified": "2026-07-17T17:08:30.319345",
+        "datePublished": "2026-07-19T13:10:26.215158",
+        "dateModified": "2026-07-19T13:10:26.215158",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,106 +2422,74 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 145</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;What?&#34; Mrs. Berry was bewildered.</p>
-                    
-                    <p>Charlotte gave a terse explanation to her, and she nodded.</p>
-                    
-                    <p>When they arrived at the private children&#39;s hospital, Raina was already standing at the entrance with</p>
-                    
-                    <p>her assistant waiting for them.</p>
-                    
-                    <p>After that, Mrs. Berry carried Ellie to the entrance while Charlotte carried her purse and followed them.</p>
-                    
-                    <p>&#34;What’s wrong with her?&#34;</p>
-                    
-                    <p>Raina saw that the girl was experiencing severe malaise and quickly asked for an explanation.</p>
-                    
-                    <p>After explaining her condition to Raina, Charlotte added, &#34;This little girl is Mrs. Berry’s granddaughter.</p>
-                    
-                    <p>Mrs. Berry’s daughter, along with her husband, are currently working outstation, so she asked for my</p>
-                    
-                    <p>help instead and told me about the little girl&#39;s condition. I accompanied the two of them to the children&#39;s</p>
-                    
-                    <p>hospital, but it was filled with a surfeit amount of people. We had been waiting for too long, so we had</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;What?&#34; Mrs. Berry was bewildered.</p>
+                        
+                        <p>Charlotte gave a terse explanation to her, and she nodded.</p>
+                        
+                        <p>When they arrived at the private children&#39;s hospital, Raina was already standing at the entrance with</p>
+                        
+                        <p>her assistant waiting for them.</p>
+                        
+                        <p>After that, Mrs. Berry carried Ellie to the entrance while Charlotte carried her purse and followed them.</p>
+                        
+                        <p>&#34;What’s wrong with her?&#34;</p>
+                        
+                        <p>Raina saw that the girl was experiencing severe malaise and quickly asked for an explanation.</p>
+                        
+                        <p>After explaining her condition to Raina, Charlotte added, &#34;This little girl is Mrs. Berry’s granddaughter.</p>
+                        
+                        <p>Mrs. Berry’s daughter, along with her husband, are currently working outstation, so she asked for my</p>
+                        
+                        <p>help instead and told me about the little girl&#39;s condition. I accompanied the two of them to the children&#39;s</p>
+                        
+                        <p>hospital, but it was filled with a surfeit amount of people. We had been waiting for too long, so we had</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>no choice but to resort to your help...&#34;</p>
-                    
-                    <p>&#34;It’s okay. Let&#39;s focus on treating the girl first.&#34;</p>
-                    
-                    <p>With Raina tending to Ellie personally, there&#39;s no need for any registration or the other specific</p>
-                    
-                    <p>procedures to be done.</p>
-                    
-                    <p>There were no qualms about Raina&#39;s skill as the exclusive doctor of the Nacht family. She was able to</p>
-                    
-                    <p>identify the problem in the blink of an eye and immediately prescribed medicines for Ellie.</p>
-                    
-                    <p>&#34;It&#39;s just influenza that was messing with her body.</p>
-                    
-                    <p>Anyway, I&#39;ve prescribed some medication for her, and it&#39;s best if she could get some rest. After that,</p>
-                    
-                    <p>she&#39;ll be as good as new.&#34; &#34;Besides, Ms. Windt, since you’re here right now, I might as well help you</p>
-                    
-                    <p>with the wounds on your neck and your shoulders.&#34; Raina prescribed some medication for her.</p>
-                    
-                    <p>&#34;Okay, thanks.” Charlotte then signaled Mrs. Berry with her eyebrows.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>&#34;Dr. Langhan, thank you for everything you&#39;ve done for my granddaughter. I’ll take her home to get</p>
-                    
-                    <p>some rest now,&#34; said Mrs. Berry, after taking the hint.</p>
-                    
-                    <p>&#34;You&#39;re welcome. I&#39;ll get someone to send both of you home safely,&#34; Dr. Langhan offered.</p>
-                    
-                    <p>&#34;It’s fine. There&#39;s no need to trouble you with that. We can take a cab home, but thank you for the</p>
-                    
-                    <p>offer.&#34; Mrs. Berry carried Ellie and hurried towards</p>
-                    
-                    <p>the exit.</p>
-                    
-                    <p>Before they could reach the exit, however, Ellie regained her consciousness and started yelling</p>
-                    
-                    <p>dazedly. &#34;Mommy, mommy...&#34;</p>
-                    
-                    <p>&#34;Ellie, Mommy will be back home soon. Let&#39;s go home first.&#34; Mrs. Berry comforted her.</p>
-                    
-                    <p>Charlotte then sent them off with her gaze.</p>
-                    
-                    <p>&#34;Ms. Windt,&#34; called Raina.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>no choice but to resort to your help...&#34;</p>
+                        
+                        <p>&#34;It’s okay. Let&#39;s focus on treating the girl first.&#34;</p>
+                        
+                        <p>With Raina tending to Ellie personally, there&#39;s no need for any registration or the other specific</p>
+                        
+                        <p>procedures to be done.</p>
+                        
+                        <p>There were no qualms about Raina&#39;s skill as the exclusive doctor of the Nacht family. She was able to</p>
+                        
+                        <p>identify the problem in the blink of an eye and immediately prescribed medicines for Ellie.</p>
+                        
+                        <p>&#34;It&#39;s just influenza that was messing with her body.</p>
+                        
+                        <p>Anyway, I&#39;ve prescribed some medication for her, and it&#39;s best if she could get some rest. After that,</p>
+                        
+                        <p>she&#39;ll be as good as new.&#34; &#34;Besides, Ms. Windt, since you’re here right now, I might as well help you</p>
+                        
+                        <p>with the wounds on your neck and your shoulders.&#34; Raina prescribed some medication for her.</p>
+                        
+                        <p>&#34;Okay, thanks.” Charlotte then signaled Mrs. Berry with her eyebrows.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2497,127 +2500,181 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Coming...&#34; Charlotte walked inside.</p>
-                    
-                    <p>Raina helped her reapply bandages for her wounds and gave her some ointment and medicine. After</p>
-                    
-                    <p>that, she mentioned some important precautions to her and offered to drive her home as well.</p>
-                    
-                    <p>Adamant, Charlotte continuously rejected her offer, and she sidled away when she had the chance.</p>
-                    
-                    <p>Having exited the hospital, she saw Mrs. Berry waiting at the side of the road with Ellie in her arms.</p>
-                    
-                    <p>They called a cab and left as quickly as they could.</p>
-                    
-                    <p>From a distance, Raina witnessed all of it and was baffled by what happened. Charlotte sure is acting</p>
-                    
-                    <p>weird tonight...Everything should be fine. If there was really something Charlotte wanted to hide from</p>
-                    
-                    <p>me, she wouldn&#39;t have come here seeking my help.</p>
-                    
-                    <p>Feeling justified, Raina dropped the thought and continued on with her work.</p>
-                    
-                    <p>It was already half-past three at midnight when Charlotte arrived home. Together with Mrs. Berry, they</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>&#34;Dr. Langhan, thank you for everything you&#39;ve done for my granddaughter. I’ll take her home to get</p>
+                        
+                        <p>some rest now,&#34; said Mrs. Berry, after taking the hint.</p>
+                        
+                        <p>&#34;You&#39;re welcome. I&#39;ll get someone to send both of you home safely,&#34; Dr. Langhan offered.</p>
+                        
+                        <p>&#34;It’s fine. There&#39;s no need to trouble you with that. We can take a cab home, but thank you for the</p>
+                        
+                        <p>offer.&#34; Mrs. Berry carried Ellie and hurried towards</p>
+                        
+                        <p>the exit.</p>
+                        
+                        <p>Before they could reach the exit, however, Ellie regained her consciousness and started yelling</p>
+                        
+                        <p>dazedly. &#34;Mommy, mommy...&#34;</p>
+                        
+                        <p>&#34;Ellie, Mommy will be back home soon. Let&#39;s go home first.&#34; Mrs. Berry comforted her.</p>
+                        
+                        <p>Charlotte then sent them off with her gaze.</p>
+                        
+                        <p>&#34;Ms. Windt,&#34; called Raina.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Coming...&#34; Charlotte walked inside.</p>
+                        
+                        <p>Raina helped her reapply bandages for her wounds and gave her some ointment and medicine. After</p>
+                        
+                        <p>that, she mentioned some important precautions to her and offered to drive her home as well.</p>
+                        
+                        <p>Adamant, Charlotte continuously rejected her offer, and she sidled away when she had the chance.</p>
+                        
+                        <p>Having exited the hospital, she saw Mrs. Berry waiting at the side of the road with Ellie in her arms.</p>
+                        
+                        <p>They called a cab and left as quickly as they could.</p>
+                        
+                        <p>From a distance, Raina witnessed all of it and was baffled by what happened. Charlotte sure is acting</p>
+                        
+                        <p>weird tonight...Everything should be fine. If there was really something Charlotte wanted to hide from</p>
+                        
+                        <p>me, she wouldn&#39;t have come here seeking my help.</p>
+                        
+                        <p>Feeling justified, Raina dropped the thought and continued on with her work.</p>
+                        
+                        <p>It was already half-past three at midnight when Charlotte arrived home. Together with Mrs. Berry, they</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>fed Ellie the medicines and sung her to sleep.</p>
-                    
-                    <p>Even though Mrs. Berry was exhausted, she still made something for Charlotte to sate her appetite.</p>
-                    
-                    <p>After seeing how tired Mrs. Berry was, Charlotte told her to prioritize her body and get some sleep</p>
-                    
-                    <p>while she kept watch over Ellie.</p>
-                    
-                    <p>Dawn came, and Ellie&#39;s fever was finally going down.</p>
-                    
-                    <p>Feeling relieved, Charlotte lay down beside her daughter and fell into a deep slumber until halfpast six</p>
-                    
-                    <p>in the morning.</p>
-                    
-                    <p>The rustling wind and chipping of birds outside then woke her up. &#34;Sh*t, I&#39;m gonna be marked tardy</p>
-                    
-                    <p>again.&#34; Nicole woke up with a jolt and jumped off the bed.</p>
-                    
-                    <p>&#34;Miss, you only had about an hour of sleep last night. I couldn&#39;t bring myself to wake you up...&#34; Mrs.</p>
-                    
-                    <p>Berry said as she prepared breakfast for the kids.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>fed Ellie the medicines and sung her to sleep.</p>
+                        
+                        <p>Even though Mrs. Berry was exhausted, she still made something for Charlotte to sate her appetite.</p>
+                        
+                        <p>After seeing how tired Mrs. Berry was, Charlotte told her to prioritize her body and get some sleep</p>
+                        
+                        <p>while she kept watch over Ellie.</p>
+                        
+                        <p>Dawn came, and Ellie&#39;s fever was finally going down.</p>
+                        
+                        <p>Feeling relieved, Charlotte lay down beside her daughter and fell into a deep slumber until halfpast six</p>
+                        
+                        <p>in the morning.</p>
+                        
+                        <p>The rustling wind and chipping of birds outside then woke her up. &#34;Sh*t, I&#39;m gonna be marked tardy</p>
+                        
+                        <p>again.&#34; Nicole woke up with a jolt and jumped off the bed.</p>
+                        
+                        <p>&#34;Miss, you only had about an hour of sleep last night. I couldn&#39;t bring myself to wake you up...&#34; Mrs.</p>
+                        
+                        <p>Berry said as she prepared breakfast for the kids.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>&#34;You still have to wake me up nonetheless. I&#39;ve got a job I need to be on time for.&#34;</p>
-                    
-                    <p>Not wasting any more time, Charlotte quickly brushed her teeth, washed up, and then headed out to</p>
-                    
-                    <p>work.</p>
-                    
-                    <p>&#34;Mommy, your breakfast.&#34; Jamie ran to her with a bun and a bottle of soy milk.</p>
-                    
-                    <p>&#34;Thank you, Jamie.&#34; Charlotte grabbed her breakfast and darted towards the elevator. &#34;Be a good boy,</p>
-                    
-                    <p>okay?&#34; said Charlotte, without looking back.</p>
-                    
-                    <p>&#34;Affirmative!&#34; Jamie responded.</p>
-                    
-                    <p>&#34;Robbie and Jamie, do finish your breakfast before it gets cold. Later on, I&#39;ll be seeing both of you off</p>
-                    
-                    <p>when the school bus arrives. After that, I need to come back home immediately to look after Ellie since</p>
-                    
-                    <p>she&#39;s still not fully recovered. You two</p>
-                    
-                    <p>behave in school, okay?&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>&#34;You still have to wake me up nonetheless. I&#39;ve got a job I need to be on time for.&#34;</p>
+                        
+                        <p>Not wasting any more time, Charlotte quickly brushed her teeth, washed up, and then headed out to</p>
+                        
+                        <p>work.</p>
+                        
+                        <p>&#34;Mommy, your breakfast.&#34; Jamie ran to her with a bun and a bottle of soy milk.</p>
+                        
+                        <p>&#34;Thank you, Jamie.&#34; Charlotte grabbed her breakfast and darted towards the elevator. &#34;Be a good boy,</p>
+                        
+                        <p>okay?&#34; said Charlotte, without looking back.</p>
+                        
+                        <p>&#34;Affirmative!&#34; Jamie responded.</p>
+                        
+                        <p>&#34;Robbie and Jamie, do finish your breakfast before it gets cold. Later on, I&#39;ll be seeing both of you off</p>
+                        
+                        <p>when the school bus arrives. After that, I need to come back home immediately to look after Ellie since</p>
+                        
+                        <p>she&#39;s still not fully recovered. You two</p>
+                        
+                        <p>behave in school, okay?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;We will, Mrs. Berry...&#34;</p>
-                    
-                    <p>As Charlotte was dashing towards the subway station to catch her train, a blue Lamborghini came out</p>
-                    
-                    <p>of nowhere and stopped beside her.</p>
-                    
-                    <p>Startled, she took a few steps back away from the Lamborghini. A handsome man with a charming</p>
-                    
-                    <p>smile got out of the car and stood before her.</p>
-                    
-                    <p>&#34;Babe, apologies for being late. But I&#39;m here now to escort you to work, shall we?&#34; He said.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;We will, Mrs. Berry...&#34;</p>
+                        
+                        <p>As Charlotte was dashing towards the subway station to catch her train, a blue Lamborghini came out</p>
+                        
+                        <p>of nowhere and stopped beside her.</p>
+                        
+                        <p>Startled, she took a few steps back away from the Lamborghini. A handsome man with a charming</p>
+                        
+                        <p>smile got out of the car and stood before her.</p>
+                        
+                        <p>&#34;Babe, apologies for being late. But I&#39;m here now to escort you to work, shall we?&#34; He said.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
@@ -4335,6 +4392,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4421,9 +4558,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4487,7 +4625,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4532,13 +4669,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4595,21 +4729,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

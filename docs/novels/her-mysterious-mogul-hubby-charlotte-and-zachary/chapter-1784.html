@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.340419",
-        "dateModified": "2026-07-17T17:08:32.340419",
+        "datePublished": "2026-07-19T13:10:29.240038",
+        "dateModified": "2026-07-19T13:10:29.240038",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,60 +2422,94 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1884</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Danrique, that&#39;s your Uncle Atkinson&#39;s daughter, Hazel.”</p>
-                    
-                    <p>Kevin began to introduce her hurriedly. “She just returned from her studies in M Nation. She has two</p>
-                    
-                    <p>PhDs and is fluent in five languages. She&#39;s extremely skilled in many areas.”</p>
-                    
-                    <p>“Do you remember Hazel, Danrique?” Gerard said with a chuckle. “You used to turn down the other</p>
-                    
-                    <p>kids who came to play with you, but you would always talk to Hazel.”</p>
-                    
-                    <p>I vaguely remember that, yes.”</p>
-                    
-                    <p>Danrique looked toward the stage and his cold, indifferent stare became one of admiration.</p>
-                    
-                    <p>Francesca began to feel a little bit unhappy. Before this, when Eva tried to flirt with Danrique, he hadn’t</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Danrique, that&#39;s your Uncle Atkinson&#39;s daughter, Hazel.”</p>
+                        
+                        <p>Kevin began to introduce her hurriedly. “She just returned from her studies in M Nation. She has two</p>
+                        
+                        <p>PhDs and is fluent in five languages. She&#39;s extremely skilled in many areas.”</p>
+                        
+                        <p>“Do you remember Hazel, Danrique?” Gerard said with a chuckle. “You used to turn down the other</p>
+                        
+                        <p>kids who came to play with you, but you would always talk to Hazel.”</p>
+                        
+                        <p>I vaguely remember that, yes.”</p>
+                        
+                        <p>Danrique looked toward the stage and his cold, indifferent stare became one of admiration.</p>
+                        
+                        <p>Francesca began to feel a little bit unhappy. Before this, when Eva tried to flirt with Danrique, he hadn’t</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>even looked at her.</p>
-                    
-                    <p>However, he seemed to feel differently toward this Hazel girl.</p>
-                    
-                    <p>“Hazel just got back, so I wanted to get her into the company as soon as possible,” Gerard said. “I only</p>
-                    
-                    <p>have one daughter, after all. She&#39;s going to take over my place in the company one day. What do you</p>
-                    
-                    <p>think about that?” “It’s your position. You can decide what you want to do with it,” Danrique explained</p>
-                    
-                    <p>mildly.</p>
-                    
-                    <p>“Well, it&#39;s courtesy to run it by you first.” Gerard looked at his daughter with a proud gaze. “Hazel is truly</p>
-                    
-                    <p>the apple of my eye. Apart from work, I do wish she would have a proper home to go to one day.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>even looked at her.</p>
+                        
+                        <p>However, he seemed to feel differently toward this Hazel girl.</p>
+                        
+                        <p>“Hazel just got back, so I wanted to get her into the company as soon as possible,” Gerard said. “I only</p>
+                        
+                        <p>have one daughter, after all. She&#39;s going to take over my place in the company one day. What do you</p>
+                        
+                        <p>think about that?” “It’s your position. You can decide what you want to do with it,” Danrique explained</p>
+                        
+                        <p>mildly.</p>
+                        
+                        <p>“Well, it&#39;s courtesy to run it by you first.” Gerard looked at his daughter with a proud gaze. “Hazel is truly</p>
+                        
+                        <p>the apple of my eye. Apart from work, I do wish she would have a proper home to go to one day.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Perhaps a family of her own.”</p>
+                        
+                        <p>Suddenly, he paused as if he had just remembered something and turned to look at Francesca with an</p>
+                        
+                        <p>awkward smile. “Ah, I forgot that you already have a fiancee. Just forget I said anything.”</p>
+                        
+                        <p>Francesca hadn&#39;t even wrapped her head around whatever Gerard had just said, but at the sight of his</p>
+                        
+                        <p>stare and his reaction, she could get a hint.</p>
+                        
+                        <p>He obviously wanted to set his daughter up with Danrique.</p>
+                        
+                        <p>“Hazel is a fine young woman. She&#39;ll find her Romeo one day.”</p>
+                        
+                        <p>Danrique&#39;s answer didn&#39;t seem simply courteous or polite. Instead, it seemed as if he was being</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2451,108 +2520,60 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>Perhaps a family of her own.”</p>
-                    
-                    <p>Suddenly, he paused as if he had just remembered something and turned to look at Francesca with an</p>
-                    
-                    <p>awkward smile. “Ah, I forgot that you already have a fiancee. Just forget I said anything.”</p>
-                    
-                    <p>Francesca hadn&#39;t even wrapped her head around whatever Gerard had just said, but at the sight of his</p>
-                    
-                    <p>stare and his reaction, she could get a hint.</p>
-                    
-                    <p>He obviously wanted to set his daughter up with Danrique.</p>
-                    
-                    <p>“Hazel is a fine young woman. She&#39;ll find her Romeo one day.”</p>
-                    
-                    <p>Danrique&#39;s answer didn&#39;t seem simply courteous or polite. Instead, it seemed as if he was being</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="3">
-                    
-                    <p>genuine.</p>
-                    
-                    <p>“Has Danrique and Ms. Cece already gotten engaged?” Kevin asked. “I hadn&#39;t even heard about you</p>
-                    
-                    <p>two beforehand, much less the fact that she&#39;s now your fiancee.”</p>
-                    
-                    <p>Kevin smiled at Francesca. In his head, he was thinking, She can&#39;t even understand me, so it doesn&#39;t</p>
-                    
-                    <p>matter.</p>
-                    
-                    <p>“Yes. Don&#39;t let any random person take advantage of you,” Harrier cut in. “You just took over the Epea</p>
-                    
-                    <p>and Adrune market, so they probably hate your guts. That pastor might already have begun laying</p>
-                    
-                    <p>down his trap.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>genuine.</p>
+                        
+                        <p>“Has Danrique and Ms. Cece already gotten engaged?” Kevin asked. “I hadn&#39;t even heard about you</p>
+                        
+                        <p>two beforehand, much less the fact that she&#39;s now your fiancee.”</p>
+                        
+                        <p>Kevin smiled at Francesca. In his head, he was thinking, She can&#39;t even understand me, so it doesn&#39;t</p>
+                        
+                        <p>matter.</p>
+                        
+                        <p>“Yes. Don&#39;t let any random person take advantage of you,” Harrier cut in. “You just took over the Epea</p>
+                        
+                        <p>and Adrune market, so they probably hate your guts. That pastor might already have begun laying</p>
+                        
+                        <p>down his trap.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“You&#39;re really quite full of rubbish today,” Danrique said coldly as he glared at Harrier with a stare full of</p>
-                    
-                    <p>knives.</p>
-                    
-                    <p>Harrier shrugged, finally falling silent.</p>
-                    
-                    <p>The sound of the piano finally drifted to a close. Once the song finished, Hazel took a graceful bow and</p>
-                    
-                    <p>began walking toward Danrique.</p>
-                    
-                    <p>The spotlight shone on her and everyone in the room turned to stare.</p>
-                    
-                    <p>“Hello, L. It&#39;s been awhile. Do you remember me?”</p>
-                    
-                    <p>Hazel automatically greeted Danrique in her honey-like voice.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>“Of course,” Danrique said with a slight smile. “Nice to finally see you again.” “Yes, it is.’ Hazel stared at</p>
-                    
-                    <p>him admiringly and was about to speak when she spotted Francesca next to him.</p>
-                    
-                    <p>“This is...?&#34;</p>
-                    
-                    <p>Francesca&#39;s heart surged with warmth and she smiled graciously.</p>
-                    
-                    <p>“Ah.” Hazel was stunned. She hadn&#39;t known about Danrique&#39;s fiancee at all.</p>
-                    
-                    <p>“Cece, this is Hazel. She&#39;s Mr. Atkinson&#39;s daughter,” Danrique introduced in Ustranasion.</p>
-                    
-                    <p>“Ah, hello!” Francesca greeted Hazel.</p>
-                    
-                    <p>“Hello,” Hazel hurriedly replied, reaching out to shake Francesca&#39;s hand. Reаd at Draмanоvels.com</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“You&#39;re really quite full of rubbish today,” Danrique said coldly as he glared at Harrier with a stare full of</p>
+                        
+                        <p>knives.</p>
+                        
+                        <p>Harrier shrugged, finally falling silent.</p>
+                        
+                        <p>The sound of the piano finally drifted to a close. Once the song finished, Hazel took a graceful bow and</p>
+                        
+                        <p>began walking toward Danrique.</p>
+                        
+                        <p>The spotlight shone on her and everyone in the room turned to stare.</p>
+                        
+                        <p>“Hello, L. It&#39;s been awhile. Do you remember me?”</p>
+                        
+                        <p>Hazel automatically greeted Danrique in her honey-like voice.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2563,17 +2584,53 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>Francesca wasn&#39;t used to such a greeting, but she followed along nonetheless.</p>
-                    
-                    <p>Then, she looked down at her own unassuming slopes.</p>
-                    
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Of course,” Danrique said with a slight smile. “Nice to finally see you again.” “Yes, it is.’ Hazel stared at</p>
+                        
+                        <p>him admiringly and was about to speak when she spotted Francesca next to him.</p>
+                        
+                        <p>“This is...?&#34;</p>
+                        
+                        <p>Francesca&#39;s heart surged with warmth and she smiled graciously.</p>
+                        
+                        <p>“Ah.” Hazel was stunned. She hadn&#39;t known about Danrique&#39;s fiancee at all.</p>
+                        
+                        <p>“Cece, this is Hazel. She&#39;s Mr. Atkinson&#39;s daughter,” Danrique introduced in Ustranasion.</p>
+                        
+                        <p>“Ah, hello!” Francesca greeted Hazel.</p>
+                        
+                        <p>“Hello,” Hazel hurriedly replied, reaching out to shake Francesca&#39;s hand. Reаd at Draмanоvels.com</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Francesca wasn&#39;t used to such a greeting, but she followed along nonetheless.</p>
+                        
+                        <p>Then, she looked down at her own unassuming slopes.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4291,6 +4348,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4377,9 +4514,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4443,7 +4581,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4488,13 +4625,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4551,21 +4685,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

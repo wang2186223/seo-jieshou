@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:30.251870",
-        "dateModified": "2026-07-17T17:08:30.251870",
+        "datePublished": "2026-07-19T13:10:26.144111",
+        "dateModified": "2026-07-19T13:10:26.144111",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,36 +2422,70 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 91</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;It&#39;s exactly because the night has been so eventful that I should treat myself to a present for having a</p>
-                    
-                    <p>hard day,” Luna disagreed. &#34;It&#39;s not every day Hector is so generous. Since he&#39;s allowing me to bid for</p>
-                    
-                    <p>anything I want, I should take the chance to showcase myself in front of everyone.</p>
-                    
-                    <p>Otherwise, those rich ladies will always look down on me at socialites&#39; parties!&#34;</p>
-                    
-                    <p>After hearing her daughter&#39;s perspective, Amanda stopped insisting as well...</p>
-                    
-                    <p>She could understand the reasons for Luna feeling that way. Even though the Sterlings enjoyed a high</p>
-                    
-                    <p>status, her daughter was never popular among the socialites&#39; circle. Whenever she attended one of</p>
-                    
-                    <p>their gatherings, she would always go home feeling hurt and in tears...</p>
-                    
-                    <p>It might actually be a good opportunity for the woman to be seen. That way, those people would stop</p>
-                    
-                    <p>looking down on her in the future.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;It&#39;s exactly because the night has been so eventful that I should treat myself to a present for having a</p>
+                        
+                        <p>hard day,” Luna disagreed. &#34;It&#39;s not every day Hector is so generous. Since he&#39;s allowing me to bid for</p>
+                        
+                        <p>anything I want, I should take the chance to showcase myself in front of everyone.</p>
+                        
+                        <p>Otherwise, those rich ladies will always look down on me at socialites&#39; parties!&#34;</p>
+                        
+                        <p>After hearing her daughter&#39;s perspective, Amanda stopped insisting as well...</p>
+                        
+                        <p>She could understand the reasons for Luna feeling that way. Even though the Sterlings enjoyed a high</p>
+                        
+                        <p>status, her daughter was never popular among the socialites&#39; circle. Whenever she attended one of</p>
+                        
+                        <p>their gatherings, she would always go home feeling hurt and in tears...</p>
+                        
+                        <p>It might actually be a good opportunity for the woman to be seen. That way, those people would stop</p>
+                        
+                        <p>looking down on her in the future.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;The bidding starts now. The starting bid would be nine million with each bid increment being five</p>
+                        
+                        <p>hundred thousand!&#34; the emcee announced.</p>
+                        
+                        <p>The guests started raising their bidding paddles when they were certain that Zachary was not</p>
+                        
+                        <p>interested in the item.</p>
+                        
+                        <p>Luna was one of them. In order to flaunt the Sterlings&#39; generosity, the woman bid in an increment of</p>
+                        
+                        <p>one million instead and managed to catch the attention of the rest of the guests very quickly.</p>
+                        
+                        <p>She was feeling secretly delighted. The time had finally come for her to make a name for herself.</p>
+                        
+                        <p>Charlotte was in no mood to carry on watching the auction and was about to try requesting Zachary</p>
+                        
+                        <p>again to leave...</p>
+                        
+                        <p>However, before she could speak, he had already stood up and offered his hand to her. &#34;Let&#39;s go out</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2427,28 +2496,32 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>&#34;The bidding starts now. The starting bid would be nine million with each bid increment being five</p>
-                    
-                    <p>hundred thousand!&#34; the emcee announced.</p>
-                    
-                    <p>The guests started raising their bidding paddles when they were certain that Zachary was not</p>
-                    
-                    <p>interested in the item.</p>
-                    
-                    <p>Luna was one of them. In order to flaunt the Sterlings&#39; generosity, the woman bid in an increment of</p>
-                    
-                    <p>one million instead and managed to catch the attention of the rest of the guests very quickly.</p>
-                    
-                    <p>She was feeling secretly delighted. The time had finally come for her to make a name for herself.</p>
-                    
-                    <p>Charlotte was in no mood to carry on watching the auction and was about to try requesting Zachary</p>
-                    
-                    <p>again to leave...</p>
-                    
-                    <p>However, before she could speak, he had already stood up and offered his hand to her. &#34;Let&#39;s go out</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>for a walk.&#34;</p>
+                        
+                        <p>&#34;Sure.&#34; She placed her hand on his palm and allowed him to lead her towards the exit of the hall.</p>
+                        
+                        <p>Just like that, they had become the center of attention again. Even the auction was temporarily halted...</p>
+                        
+                        <p>The event only carried on after the two of them left the hall.</p>
+                        
+                        <p>Luna was extremely upset. She had to spend so much money to bid for an item, while Charlotte easily</p>
+                        
+                        <p>grabbed the attention of everyone without doing anything!</p>
+                        
+                        <p>How unfair was that!</p>
+                        
+                        <p>&#34;Don&#39;t let that b*tch ruin your good spirits,&#34; her mother reminded softly. &#34;Let&#39;s leave after you win the bid</p>
+                        
+                        <p>for this item.&#34;</p>
+                        
+                        <p>&#34;The Browns have placed a bid of thirteen million...&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2459,60 +2532,104 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>for a walk.&#34;</p>
-                    
-                    <p>&#34;Sure.&#34; She placed her hand on his palm and allowed him to lead her towards the exit of the hall.</p>
-                    
-                    <p>Just like that, they had become the center of attention again. Even the auction was temporarily halted...</p>
-                    
-                    <p>The event only carried on after the two of them left the hall.</p>
-                    
-                    <p>Luna was extremely upset. She had to spend so much money to bid for an item, while Charlotte easily</p>
-                    
-                    <p>grabbed the attention of everyone without doing anything!</p>
-                    
-                    <p>How unfair was that!</p>
-                    
-                    <p>&#34;Don&#39;t let that b*tch ruin your good spirits,&#34; her mother reminded softly. &#34;Let&#39;s leave after you win the bid</p>
-                    
-                    <p>for this item.&#34;</p>
-                    
-                    <p>&#34;The Browns have placed a bid of thirteen million...&#34;</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Thirty million!&#34;</p>
+                        
+                        <p>Luna raised her bidding paddle and instantly became the focus of attention once again.</p>
+                        
+                        <p>Consecutive bids during an auction would usually be in slight increments. However, Luna had straight</p>
+                        
+                        <p>away increased the bid by more than twofold, which was very generous indeed!</p>
+                        
+                        <p>She had done so not only for the pink diamond ring but also because the person bidding against her</p>
+                        
+                        <p>was Helena, a socialite from the Brown family.</p>
+                        
+                        <p>Everyone knew that Helena had fervently pursued Hector once upon a time.</p>
+                        
+                        <p>Even though Luna did not dare to offend Zachary, she would never allow herself to lose to the</p>
+                        
+                        <p>Browns.</p>
+                        
+                        <p>&#34;Mrs. Sterling has placed a bid of thirty million. Thirty million going once, thirty million going twice, thirty</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Thirty million!&#34;</p>
-                    
-                    <p>Luna raised her bidding paddle and instantly became the focus of attention once again.</p>
-                    
-                    <p>Consecutive bids during an auction would usually be in slight increments. However, Luna had straight</p>
-                    
-                    <p>away increased the bid by more than twofold, which was very generous indeed!</p>
-                    
-                    <p>She had done so not only for the pink diamond ring but also because the person bidding against her</p>
-                    
-                    <p>was Helena, a socialite from the Brown family.</p>
-                    
-                    <p>Everyone knew that Helena had fervently pursued Hector once upon a time.</p>
-                    
-                    <p>Even though Luna did not dare to offend Zachary, she would never allow herself to lose to the</p>
-                    
-                    <p>Browns.</p>
-                    
-                    <p>&#34;Mrs. Sterling has placed a bid of thirty million. Thirty million going once, thirty million going twice, thirty</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>million so...&#34;</p>
+                        
+                        <p>Luna had a conceited smile on her face, thinking that she was finally going to win the bid.</p>
+                        
+                        <p>&#34;Fifty million!&#34; Helena suddenly exclaimed.</p>
+                        
+                        <p>&#34;You...&#34; Fury coursed through Luna&#39;s veins when she heard that and raised her paddle immediately in</p>
+                        
+                        <p>retaliation...</p>
+                        
+                        <p>&#34;Mrs. Sterling!&#34; Owen stopped the woman immediately and said, &#34;Mr. Sterling has given orders that the</p>
+                        
+                        <p>highest we can go is fifty million. If it&#39;s anything above that, we have to give up the item.&#34;</p>
+                        
+                        <p>&#34;Why?&#34; Luna asked, feeling exasperated. &#34;It’s not as if we can’t afford it.&#34;</p>
+                        
+                        <p>&#34;It&#39;s not about money,&#34; Owen lowered his voice as he explained. &#34;It’s mainly because Mr. Sterling had</p>
+                        
+                        <p>considered that if anyone raises the bid to fifty million and above, that would mean that the person</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>really wanted that item. If we outbid them, it might affect business relations.&#34;</p>
+                        
+                        <p>&#34;But...&#34;</p>
+                        
+                        <p>&#34;Fifty million going once, fifty million going twice, fifty million...&#34;</p>
+                        
+                        <p>Seeing that the emcee was about to bang the lectern, Luna turned frantic and immediately raised her</p>
+                        
+                        <p>paddle. However, Owen forcefully pulled her hand down at once. &#34;Mrs. Sterling, you can&#39;t... u</p>
+                        
+                        <p>&#34;Get lost!&#34; Luna pushed the man away furiously and yelled, &#34;How dare you stop me! You lowly servant!”</p>
+                        
+                        <p>Then, she raised her paddle again...</p>
+                        
+                        <p>&#34;Sold!&#34; The emcee banged the lectern to end the second round of auction.</p>
+                        
+                        <p>Her hand was frozen halfway in the air - she had become the butt of the joke once more...</p>
+                        
+                        <p>A round of applause came from the crowd, congratulating Helena for winning the bid.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2523,93 +2640,33 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>million so...&#34;</p>
-                    
-                    <p>Luna had a conceited smile on her face, thinking that she was finally going to win the bid.</p>
-                    
-                    <p>&#34;Fifty million!&#34; Helena suddenly exclaimed.</p>
-                    
-                    <p>&#34;You...&#34; Fury coursed through Luna&#39;s veins when she heard that and raised her paddle immediately in</p>
-                    
-                    <p>retaliation...</p>
-                    
-                    <p>&#34;Mrs. Sterling!&#34; Owen stopped the woman immediately and said, &#34;Mr. Sterling has given orders that the</p>
-                    
-                    <p>highest we can go is fifty million. If it&#39;s anything above that, we have to give up the item.&#34;</p>
-                    
-                    <p>&#34;Why?&#34; Luna asked, feeling exasperated. &#34;It’s not as if we can’t afford it.&#34;</p>
-                    
-                    <p>&#34;It&#39;s not about money,&#34; Owen lowered his voice as he explained. &#34;It’s mainly because Mr. Sterling had</p>
-                    
-                    <p>considered that if anyone raises the bid to fifty million and above, that would mean that the person</p>
-                    
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>The woman smiled graciously at the rest of the guests while accepting their congratulations. At the</p>
+                        
+                        <p>same time, she turned around and shot Luna a provocative look.</p>
+                        
+                        <p>Luna turned enraged, trembling with anger. She had made a fool out of herself even before the auction</p>
+                        
+                        <p>officially began. Then, she was humiliated by Zachary&#39;s subordinate outside the toilet. Now, back in the</p>
+                        
+                        <p>auction hall, all she wanted was to bid for an item to regain some of her lost dignity...</p>
+                        
+                        <p>But she was being oppressed again.</p>
+                        
+                        <p>She scanned the surroundings and saw that the socialites and wives of rich businessmen were all</p>
+                        
+                        <p>staring at her with mocking smiles on their faces. It was as if she was a clown!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>really wanted that item. If we outbid them, it might affect business relations.&#34;</p>
-                    
-                    <p>&#34;But...&#34;</p>
-                    
-                    <p>&#34;Fifty million going once, fifty million going twice, fifty million...&#34;</p>
-                    
-                    <p>Seeing that the emcee was about to bang the lectern, Luna turned frantic and immediately raised her</p>
-                    
-                    <p>paddle. However, Owen forcefully pulled her hand down at once. &#34;Mrs. Sterling, you can&#39;t... u</p>
-                    
-                    <p>&#34;Get lost!&#34; Luna pushed the man away furiously and yelled, &#34;How dare you stop me! You lowly servant!”</p>
-                    
-                    <p>Then, she raised her paddle again...</p>
-                    
-                    <p>&#34;Sold!&#34; The emcee banged the lectern to end the second round of auction.</p>
-                    
-                    <p>Her hand was frozen halfway in the air - she had become the butt of the joke once more...</p>
-                    
-                    <p>A round of applause came from the crowd, congratulating Helena for winning the bid.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="6">
-                    
-                    <p>The woman smiled graciously at the rest of the guests while accepting their congratulations. At the</p>
-                    
-                    <p>same time, she turned around and shot Luna a provocative look.</p>
-                    
-                    <p>Luna turned enraged, trembling with anger. She had made a fool out of herself even before the auction</p>
-                    
-                    <p>officially began. Then, she was humiliated by Zachary&#39;s subordinate outside the toilet. Now, back in the</p>
-                    
-                    <p>auction hall, all she wanted was to bid for an item to regain some of her lost dignity...</p>
-                    
-                    <p>But she was being oppressed again.</p>
-                    
-                    <p>She scanned the surroundings and saw that the socialites and wives of rich businessmen were all</p>
-                    
-                    <p>staring at her with mocking smiles on their faces. It was as if she was a clown!</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4327,6 +4384,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4413,9 +4550,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4479,7 +4617,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4524,13 +4661,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4587,21 +4721,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

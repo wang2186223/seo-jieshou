@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:26.583474",
-        "dateModified": "2026-07-17T17:08:26.583474",
+        "datePublished": "2026-07-19T13:10:22.298102",
+        "dateModified": "2026-07-19T13:10:22.298102",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,108 +2422,58 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 83</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter83</p>
-                    
-                    <p>Malicious Intent I was finally done with my IV drip.</p>
-                    
-                    <p>However, before I could ask Atlas to head back, Ivanna burst into the room.</p>
-                    
-                    <p>“Chlo, what’s going on…” Her words trailed off as she noticed Atlas in the room.</p>
-                    
-                    <p>She fixed her gaze intensely on him with a strange look I could tell what she was thinking, so I quickly changed the topic.</p>
-                    
-                    <p>“Why’d you come back so quickly?” Atlas replied instead, “When you were unconscious, she called to check on you out of concern.</p>
-                    
-                    <p>I told her you were indeed in trouble.” “So, you’re the one who answered the call!” Ivanna looked at him with curiosity.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter83</p>
+                        
+                        <p>Malicious Intent I was finally done with my IV drip.</p>
+                        
+                        <p>However, before I could ask Atlas to head back, Ivanna burst into the room.</p>
+                        
+                        <p>“Chlo, what’s going on…” Her words trailed off as she noticed Atlas in the room.</p>
+                        
+                        <p>She fixed her gaze intensely on him with a strange look I could tell what she was thinking, so I quickly changed the topic.</p>
+                        
+                        <p>“Why’d you come back so quickly?” Atlas replied instead, “When you were unconscious, she called to check on you out of concern.</p>
+                        
+                        <p>I told her you were indeed in trouble.” “So, you’re the one who answered the call!” Ivanna looked at him with curiosity.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Can you tell me who you are?” I blushed as I briefly introduced Atlas to Ivanna.</p>
-                    
-                    <p>They exchanged polite handshakes, and Ivanna asked, “Is that his jacket?” I nodded silently.</p>
-                    
-                    <p>Then I turned to Atlas and told him Ivanna would take me back.</p>
-                    
-                    <p>Atlas gave me some instructions before we left the hospital room.</p>
-                    
-                    <p>Ivanna started questioning me about the whole incident.</p>
-                    
-                    <p>After I told the story, Ivanna was furious and asked why I had not turned my lunatic sister–in–law over to the police.</p>
-                    
-                    <p>After all, I had evidence.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>“That would be too easy on her!” I said calmly, “I need to force her to face the life she should have lived, to know what it’s like to struggle.</p>
-                    
-                    <p>Then she can think about her actions.” I asked Ivanna to drop me off at the office instead of the Murphy Residence.</p>
-                    
-                    <p>It seemed more appropriate.</p>
-                    
-                    <p>Then, I called the Murphy family members and had them all come to Matthew’s office.</p>
-                    
-                    <p>Before leaving the car, Ivanna asked, “Are you sure you’ll be okay alone?” Don’t worry! I’ll be fine.” I reassured her.</p>
-                    
-                    <p>However, as soon as I walked away, Ivanna hurriedly followed me.</p>
-                    
-                    <p>I think I’d better stay with you! Matthew was in high spirits in his office as he celebrated with Johnson and some executives.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>There was glo be a contract elgning with ATL Empire on Tuesday pleased.</p>
-                    
-                    <p>At as had indeed bet the stage for me, sol had to play this role +15 BONUS Matthew froze when he saw my pale face.</p>
-                    
-                    <p>Puzzled, he asked, “Chlo, what is wrong? Weren’t you supposed to be resting at home? Why are you here?” His eyes kept darting around my body.</p>
-                    
-                    <p>I had changed my top, but I must still look disheveled after my recent ordeal, I scanned the room, and everyone present was Matthew’s trusted confidant.</p>
-                    
-                    <p>1 Instead of answering his question, I calmly entered the room and sat on the sofa.</p>
-                    
-                    <p>I waited for the Murphy family members, who had not yet arrived.</p>
-                    
-                    <p>“Honey! What’s wrong?” Matthew might have noticed my odd behavior.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Can you tell me who you are?” I blushed as I briefly introduced Atlas to Ivanna.</p>
+                        
+                        <p>They exchanged polite handshakes, and Ivanna asked, “Is that his jacket?” I nodded silently.</p>
+                        
+                        <p>Then I turned to Atlas and told him Ivanna would take me back.</p>
+                        
+                        <p>Atlas gave me some instructions before we left the hospital room.</p>
+                        
+                        <p>Ivanna started questioning me about the whole incident.</p>
+                        
+                        <p>After I told the story, Ivanna was furious and asked why I had not turned my lunatic sister–in–law over to the police.</p>
+                        
+                        <p>After all, I had evidence.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2499,22 +2484,86 @@
                 
                 
                 
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“That would be too easy on her!” I said calmly, “I need to force her to face the life she should have lived, to know what it’s like to struggle.</p>
+                        
+                        <p>Then she can think about her actions.” I asked Ivanna to drop me off at the office instead of the Murphy Residence.</p>
+                        
+                        <p>It seemed more appropriate.</p>
+                        
+                        <p>Then, I called the Murphy family members and had them all come to Matthew’s office.</p>
+                        
+                        <p>Before leaving the car, Ivanna asked, “Are you sure you’ll be okay alone?” Don’t worry! I’ll be fine.” I reassured her.</p>
+                        
+                        <p>However, as soon as I walked away, Ivanna hurriedly followed me.</p>
+                        
+                        <p>I think I’d better stay with you! Matthew was in high spirits in his office as he celebrated with Johnson and some executives.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>There was glo be a contract elgning with ATL Empire on Tuesday pleased.</p>
+                        
+                        <p>At as had indeed bet the stage for me, sol had to play this role +15 BONUS Matthew froze when he saw my pale face.</p>
+                        
+                        <p>Puzzled, he asked, “Chlo, what is wrong? Weren’t you supposed to be resting at home? Why are you here?” His eyes kept darting around my body.</p>
+                        
+                        <p>I had changed my top, but I must still look disheveled after my recent ordeal, I scanned the room, and everyone present was Matthew’s trusted confidant.</p>
+                        
+                        <p>1 Instead of answering his question, I calmly entered the room and sat on the sofa.</p>
+                        
+                        <p>I waited for the Murphy family members, who had not yet arrived.</p>
+                        
+                        <p>“Honey! What’s wrong?” Matthew might have noticed my odd behavior.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="4">
-                    
-                    <p>However, his question had no gentleness, only a hint of indifference.</p>
-                    
-                    <p>Johnson narrowed his eyes at me, suspecting something big was in the works.</p>
-                    
-                    <p>He quickly declared to the executives, “You can all leave! Tomorrow, we’ll hold a meeting to tell everyone the good news.</p>
-                    
-                    <p>Now, let’s just celebrate!” Johnson tried to smooth things over with me.</p>
-                    
-                    <p>“You came just in time.</p>
-                    
-                    <p>I have good news!” I glanced at him, saying, “Please stay, everyone.</p>
-                    
-                    <p>I have good news to share, too! I’ll talk about it when everyone’s here!” Matthew walked up to the sofa, looking puzzled.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>However, his question had no gentleness, only a hint of indifference.</p>
+                        
+                        <p>Johnson narrowed his eyes at me, suspecting something big was in the works.</p>
+                        
+                        <p>He quickly declared to the executives, “You can all leave! Tomorrow, we’ll hold a meeting to tell everyone the good news.</p>
+                        
+                        <p>Now, let’s just celebrate!” Johnson tried to smooth things over with me.</p>
+                        
+                        <p>“You came just in time.</p>
+                        
+                        <p>I have good news!” I glanced at him, saying, “Please stay, everyone.</p>
+                        
+                        <p>I have good news to share, too! I’ll talk about it when everyone’s here!” Matthew walked up to the sofa, looking puzzled.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2526,37 +2575,45 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>“Chlo, what are you up to? Who else is coming?” “Your family, of course,” I replied calmly, my eyes showing a hint of fire.</p>
-                    
-                    <p>“I want everyone here to stay and listen because we’re all family here.</p>
-                    
-                    <p>You can all witness what’s about to happen.” Matthew’s parents rushed into the room.</p>
-                    
-                    <p>After seeing so many people present, they hesitated at the door.</p>
-                    
-                    <p>Johnson quickly went over to usher them inside.</p>
-                    
-                    <p>Grace looked anxious as she turned to her son.</p>
-                    
-                    <p>“Matthew, who are all these people?” “Mom, please have a seat.” Matthew smiled and reassured her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“Chlo, what are you up to? Who else is coming?” “Your family, of course,” I replied calmly, my eyes showing a hint of fire.</p>
+                        
+                        <p>“I want everyone here to stay and listen because we’re all family here.</p>
+                        
+                        <p>You can all witness what’s about to happen.” Matthew’s parents rushed into the room.</p>
+                        
+                        <p>After seeing so many people present, they hesitated at the door.</p>
+                        
+                        <p>Johnson quickly went over to usher them inside.</p>
+                        
+                        <p>Grace looked anxious as she turned to her son.</p>
+                        
+                        <p>“Matthew, who are all these people?” “Mom, please have a seat.” Matthew smiled and reassured her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Then he waved at everyone else and said, “You can all leave! We’ll talk about it in tomorrow’s meeting.” “Wait a moment, it won’t take long.</p>
-                    
-                    <p>We’re just waiting for Melanie,” I declared, my tone unwavering</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Then he waved at everyone else and said, “You can all leave! We’ll talk about it in tomorrow’s meeting.” “Wait a moment, it won’t take long.</p>
+                        
+                        <p>We’re just waiting for Melanie,” I declared, my tone unwavering</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -4279,6 +4336,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4365,9 +4502,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4431,7 +4569,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4476,13 +4613,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4539,21 +4673,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

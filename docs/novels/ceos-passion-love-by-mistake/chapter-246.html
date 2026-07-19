@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.444330",
-        "dateModified": "2026-07-17T17:08:28.444330",
+        "datePublished": "2026-07-19T13:10:24.232293",
+        "dateModified": "2026-07-19T13:10:24.232293",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,44 +2422,46 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 248</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Natalie pretended not to hear and continued walking forward.</p>
-                    
-                    <p>Bursting with rage, Annie quivered. Having seen how everything unfolded, her two friends were infuriated on behalf of Annie. They gave each other a look before they rushed forward and gave Natalie a push with all their might.</p>
-                    
-                    <p>Given that Natalie was already walking along the perimeter of the deck, the strength of two people was enough to send her flying past the railing and straight into the water. She let out a screech before she plopped right into the ocean.</p>
-                    
-                    <p>All who witnessed her fall were flabbergasted.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Natalie pretended not to hear and continued walking forward.</p>
+                        
+                        <p>Bursting with rage, Annie quivered. Having seen how everything unfolded, her two friends were infuriated on behalf of Annie. They gave each other a look before they rushed forward and gave Natalie a push with all their might.</p>
+                        
+                        <p>Given that Natalie was already walking along the perimeter of the deck, the strength of two people was enough to send her flying past the railing and straight into the water. She let out a screech before she plopped right into the ocean.</p>
+                        
+                        <p>All who witnessed her fall were flabbergasted.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Registering what they had done, Annie’s two friends were trembling in fear and they turned pale.</p>
-                    
-                    <p>Annie, too, realized the gravity of the situation and fled the scene in a fluster.</p>
-                    
-                    <p>At the same time, Stanley was feeling cheery as he just returned from the photography shop. He had barely stepped foot on the deck when he bumped into Annie.</p>
-                    
-                    <p>If it were any other situation, Annie would have pestered him and clung onto him tightly. However, she looked at him in terror and took off at a faster speed. Following closely behind her were her two friends.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Registering what they had done, Annie’s two friends were trembling in fear and they turned pale.</p>
+                        
+                        <p>Annie, too, realized the gravity of the situation and fled the scene in a fluster.</p>
+                        
+                        <p>At the same time, Stanley was feeling cheery as he just returned from the photography shop. He had barely stepped foot on the deck when he bumped into Annie.</p>
+                        
+                        <p>If it were any other situation, Annie would have pestered him and clung onto him tightly. However, she looked at him in terror and took off at a faster speed. Following closely behind her were her two friends.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2436,55 +2473,19 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“What’s going on?” A mystified Stanley adjusted his glasses.</p>
-                    
-                    <p>Before he could figure out what was happening, he heard a cry for help.</p>
-                    
-                    <p>“Nat?” He recognized her voice. Looking around for the source of the cry, his face completely fell when he realized the sound came from the bottom of the ship. He rushed forward to the edge of the railing to take a look.</p>
-                    
-                    <p>The sight that greeted him was Natalie flailing her arms desperately in the deep blue sea.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Perhaps it was because she had been struggling for a long time, she started to show signs of slowing down. The strong currents in the ocean were taking a toll on her.</p>
-                    
-                    <p>Stanley immediately tossed the photographs aside, hopped over the railing, and dived straight into the ocean without thinking.</p>
-                    
-                    <p>“Nat!” When he reached her, he caught hold of her neck and pulled her towards the ship with her face facing upwards.</p>
-                    
-                    <p>The only problem was that the ship was moving forward. Despite it moving at a leisurely pace, it was undoubtedly moving at a faster rate than a swimming human. Stanley swam with all his might but the distance between them and the ship only grew wider. Luckily, someone threw lifebuoys into the ocean. As long as he could seize hold of the lifebuoy, they could be saved.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>However, with the additional weight of Natalie dragging him down, reaching the lifebuoy was an uphill task. Coupled with the fact that he had not swam in a long time, his leg started cramping.</p>
-                    
-                    <p>Natalie took one look at his painful expression and figured out what was happening. She felt deeply sorry and began to apologize, “I’m sorry Stanley, this is all my fault...”</p>
-                    
-                    <p>“Don’t say a word! I’ll save you. Don’t worry,” Stanley attempted a weak smile as he continued swimming ahead.</p>
-                    
-                    <p>But the more he swam, the more his leg started to hurt. In the end, he was in so much pain that he let out a scream and the both of them started to sink.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“What’s going on?” A mystified Stanley adjusted his glasses.</p>
+                        
+                        <p>Before he could figure out what was happening, he heard a cry for help.</p>
+                        
+                        <p>“Nat?” He recognized her voice. Looking around for the source of the cry, his face completely fell when he realized the sound came from the bottom of the ship. He rushed forward to the edge of the railing to take a look.</p>
+                        
+                        <p>The sight that greeted him was Natalie flailing her arms desperately in the deep blue sea.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2495,41 +2496,97 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>The people on the cruise were getting anxious watching them.</p>
-                    
-                    <p>“I think that man is having a bout of cramps. Where’s the lifeguard? Why isn’t the lifeguard here yet?”</p>
-                    
-                    <p>“What happened?” Andre heard the commotion from the tennis court on the second level and came down to investigate.</p>
-                    
-                    <p>With him was Shane, donned in tennis wear. His left hand was bandaged while he held a tennis racket in the other hand. Beads of sweat trickled down the side of his face as he stood beside Andre. He had no interest in whatever others had to say.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Perhaps it was because she had been struggling for a long time, she started to show signs of slowing down. The strong currents in the ocean were taking a toll on her.</p>
+                        
+                        <p>Stanley immediately tossed the photographs aside, hopped over the railing, and dived straight into the ocean without thinking.</p>
+                        
+                        <p>“Nat!” When he reached her, he caught hold of her neck and pulled her towards the ship with her face facing upwards.</p>
+                        
+                        <p>The only problem was that the ship was moving forward. Despite it moving at a leisurely pace, it was undoubtedly moving at a faster rate than a swimming human. Stanley swam with all his might but the distance between them and the ship only grew wider. Luckily, someone threw lifebuoys into the ocean. As long as he could seize hold of the lifebuoy, they could be saved.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>However, with the additional weight of Natalie dragging him down, reaching the lifebuoy was an uphill task. Coupled with the fact that he had not swam in a long time, his leg started cramping.</p>
+                        
+                        <p>Natalie took one look at his painful expression and figured out what was happening. She felt deeply sorry and began to apologize, “I’m sorry Stanley, this is all my fault...”</p>
+                        
+                        <p>“Don’t say a word! I’ll save you. Don’t worry,” Stanley attempted a weak smile as he continued swimming ahead.</p>
+                        
+                        <p>But the more he swam, the more his leg started to hurt. In the end, he was in so much pain that he let out a scream and the both of them started to sink.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>The people on the cruise were getting anxious watching them.</p>
+                        
+                        <p>“I think that man is having a bout of cramps. Where’s the lifeguard? Why isn’t the lifeguard here yet?”</p>
+                        
+                        <p>“What happened?” Andre heard the commotion from the tennis court on the second level and came down to investigate.</p>
+                        
+                        <p>With him was Shane, donned in tennis wear. His left hand was bandaged while he held a tennis racket in the other hand. Beads of sweat trickled down the side of his face as he stood beside Andre. He had no interest in whatever others had to say.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“Mr. Hill, there are people drowning!” Someone called out while pointing to the ocean.</p>
-                    
-                    <p>“Drowning?” Andre’s brows furrowed as he strode over to take a look. When he identified the people in the water, he was startled. “Dr. Quinn and his girlfriend?”</p>
-                    
-                    <p>Upon hearing that, Shane’s nostrils flared and he rushed forward to confirm for himself. When he saw Natalie slowly drowning, he dropped his tennis racket and dived into the water, swimming towards Natalie and Stanley.</p>
-                    
-                    <p>His actions stunned Mr. Hill, who hurriedly instructed his men to save them after recovering from the shock.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“Mr. Hill, there are people drowning!” Someone called out while pointing to the ocean.</p>
+                        
+                        <p>“Drowning?” Andre’s brows furrowed as he strode over to take a look. When he identified the people in the water, he was startled. “Dr. Quinn and his girlfriend?”</p>
+                        
+                        <p>Upon hearing that, Shane’s nostrils flared and he rushed forward to confirm for himself. When he saw Natalie slowly drowning, he dropped his tennis racket and dived into the water, swimming towards Natalie and Stanley.</p>
+                        
+                        <p>His actions stunned Mr. Hill, who hurriedly instructed his men to save them after recovering from the shock.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
@@ -4247,6 +4304,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4333,9 +4470,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4399,7 +4537,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4444,13 +4581,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4507,21 +4641,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

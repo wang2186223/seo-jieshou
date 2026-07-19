@@ -999,16 +999,15 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.892648",
-        "dateModified": "2026-07-17T17:08:31.892648",
+        "datePublished": "2026-07-19T13:10:28.722521",
+        "dateModified": "2026-07-19T13:10:28.722521",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,30 +2422,28 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1515</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Just as “Zachary” spoke, he leaned in to kiss Charlotte&#39;s ear, but she avoided it by reflex and even</p>
-                    
-                    <p>pushed him away. “There&#39;s a huge controversy brewing now. Didn&#39;t you read the news?”</p>
-                    
-                    <p>“Just ignore them,” he reassured her. “They will naturally stop in a couple of days.”</p>
-                    
-                    <p>“Stop?” She narrowed her eyes at him. “Did you actually read the news? Given how haywire the</p>
-                    
-                    <p>speculations have become, how can they stop naturally? When you were missing, an internal conflict</p>
-                    
-                    <p>occurred within the company, with the board of directors trying to remove me. After painstakingly</p>
-                    
-                    <p>suppressing them, we now have another controversy on our hands. Do you really think it will go away</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Just as “Zachary” spoke, he leaned in to kiss Charlotte&#39;s ear, but she avoided it by reflex and even</p>
+                        
+                        <p>pushed him away. “There&#39;s a huge controversy brewing now. Didn&#39;t you read the news?”</p>
+                        
+                        <p>“Just ignore them,” he reassured her. “They will naturally stop in a couple of days.”</p>
+                        
+                        <p>“Stop?” She narrowed her eyes at him. “Did you actually read the news? Given how haywire the</p>
+                        
+                        <p>speculations have become, how can they stop naturally? When you were missing, an internal conflict</p>
+                        
+                        <p>occurred within the company, with the board of directors trying to remove me. After painstakingly</p>
+                        
+                        <p>suppressing them, we now have another controversy on our hands. Do you really think it will go away</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2422,21 +2455,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>by itself if we don&#39;t do anything about it?”</p>
-                    
-                    <p>“I...” The man was taken aback at first. However, he quickly apologized, “I&#39;m sorry. It’s all my fault.”</p>
-                    
-                    <p>“Did Kalium come and see you just now?” she asked candidly. “What did he say?”</p>
-                    
-                    <p>“Nothing much. He came to see for himself whether I was still alive and asked me if the auditor could</p>
-                    
-                    <p>return to the company. Also, he even said...’</p>
-                    
-                    <p>Looking at Charlotte meekly, “Zachary” dared not continue his explanation.</p>
-                    
-                    <p>“What else did he say?” Charlotte pressed on.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>by itself if we don&#39;t do anything about it?”</p>
+                        
+                        <p>“I...” The man was taken aback at first. However, he quickly apologized, “I&#39;m sorry. It’s all my fault.”</p>
+                        
+                        <p>“Did Kalium come and see you just now?” she asked candidly. “What did he say?”</p>
+                        
+                        <p>“Nothing much. He came to see for himself whether I was still alive and asked me if the auditor could</p>
+                        
+                        <p>return to the company. Also, he even said...’</p>
+                        
+                        <p>Looking at Charlotte meekly, “Zachary” dared not continue his explanation.</p>
+                        
+                        <p>“What else did he say?” Charlotte pressed on.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2448,21 +2485,25 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“He said that it&#39;s inappropriate for a lady to be at the helm and that I should return to take control,” he</p>
-                    
-                    <p>answered as he observed her reaction.</p>
-                    
-                    <p>“He’s right.” Not only was Charlotte not angry, but she also lamented, “In the few days in which you</p>
-                    
-                    <p>were missing, I was flooded with accusations from all kinds of people. Now that you’re back, a new</p>
-                    
-                    <p>controversy has been ignited. The last few days have been the most tiring time of my entire life. If I</p>
-                    
-                    <p>could, I really don&#39;t want to do this. Therefore, you&#39;d better receive treatment so that I can hand this</p>
-                    
-                    <p>mess over to you once you&#39;ve recovered. I truly can&#39;t be bothered anymore.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“He said that it&#39;s inappropriate for a lady to be at the helm and that I should return to take control,” he</p>
+                        
+                        <p>answered as he observed her reaction.</p>
+                        
+                        <p>“He’s right.” Not only was Charlotte not angry, but she also lamented, “In the few days in which you</p>
+                        
+                        <p>were missing, I was flooded with accusations from all kinds of people. Now that you’re back, a new</p>
+                        
+                        <p>controversy has been ignited. The last few days have been the most tiring time of my entire life. If I</p>
+                        
+                        <p>could, I really don&#39;t want to do this. Therefore, you&#39;d better receive treatment so that I can hand this</p>
+                        
+                        <p>mess over to you once you&#39;ve recovered. I truly can&#39;t be bothered anymore.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2474,47 +2515,85 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>“Speaking of my health, I have something to share with you,” “Zachary” remarked with an earnest</p>
-                    
-                    <p>expression. “These few days, I can feel my condition improving significantly, and I also feel more</p>
-                    
-                    <p>energetic. In fact, I was wondering if this incident had removed the toxins in my body by accident.”</p>
-                    
-                    <p>“Really?” Charlotte was elated. “I noticed the same about you too. Since the poison came about under</p>
-                    
-                    <p>strange circumstances, it wouldn’t be a surprise if it disappeared in an equally mysterious manner.”</p>
-                    
-                    <p>“In that case—”</p>
-                    
-                    <p>“I&#39;ll get Raina to come over and do a blood test for you. That way, we&#39;ll know for sure.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“Speaking of my health, I have something to share with you,” “Zachary” remarked with an earnest</p>
+                        
+                        <p>expression. “These few days, I can feel my condition improving significantly, and I also feel more</p>
+                        
+                        <p>energetic. In fact, I was wondering if this incident had removed the toxins in my body by accident.”</p>
+                        
+                        <p>“Really?” Charlotte was elated. “I noticed the same about you too. Since the poison came about under</p>
+                        
+                        <p>strange circumstances, it wouldn’t be a surprise if it disappeared in an equally mysterious manner.”</p>
+                        
+                        <p>“In that case—”</p>
+                        
+                        <p>“I&#39;ll get Raina to come over and do a blood test for you. That way, we&#39;ll know for sure.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>While speaking, Charlotte picked up her phone to make the call.</p>
-                    
-                    <p>“Zachary” hastened to stop her. “Wait, I don&#39;t think there&#39;s any need to do so. If she finds out that I&#39;ve</p>
-                    
-                    <p>not healed, it might cause me unnecessary stress.”</p>
-                    
-                    <p>She nodded. “That&#39;s true. Why don’t you continue with the treatment Dr. Felch left behind? We can</p>
-                    
-                    <p>observe the results over a few days.”</p>
-                    
-                    <p>“There&#39;s no need for that. It&#39;s not like I have any symptoms—”</p>
-                    
-                    <p>“What do you mean you don&#39;t?” Charlotte grew concerned suddenly. “Ever since you returned, you&#39;ve</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>While speaking, Charlotte picked up her phone to make the call.</p>
+                        
+                        <p>“Zachary” hastened to stop her. “Wait, I don&#39;t think there&#39;s any need to do so. If she finds out that I&#39;ve</p>
+                        
+                        <p>not healed, it might cause me unnecessary stress.”</p>
+                        
+                        <p>She nodded. “That&#39;s true. Why don’t you continue with the treatment Dr. Felch left behind? We can</p>
+                        
+                        <p>observe the results over a few days.”</p>
+                        
+                        <p>“There&#39;s no need for that. It&#39;s not like I have any symptoms—”</p>
+                        
+                        <p>“What do you mean you don&#39;t?” Charlotte grew concerned suddenly. “Ever since you returned, you&#39;ve</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>been behaving strangely. In fact, many have been wondering what&#39;s wrong with you. If you hadn&#39;t</p>
+                        
+                        <p>intermittently lost your memory before the fire, I would have thought that you weren&#39;t my husband.”</p>
+                        
+                        <p>Her words stunned “Zachary” for a moment, and he quickly explained, “Of course, I’m your husband.</p>
+                        
+                        <p>Fine, you&#39;re right. My sickness is getting to my head. 1 do need to receive the treatment.”</p>
+                        
+                        <p>“That’s the way.” Charlotte nodded in relief. “I&#39;ll get Hayley and Sam to do it later. Recover as soon as</p>
+                        
+                        <p>you can so that you can manage the company again. As of now, I can barely keep it together by</p>
+                        
+                        <p>myself.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2525,49 +2604,27 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>been behaving strangely. In fact, many have been wondering what&#39;s wrong with you. If you hadn&#39;t</p>
-                    
-                    <p>intermittently lost your memory before the fire, I would have thought that you weren&#39;t my husband.”</p>
-                    
-                    <p>Her words stunned “Zachary” for a moment, and he quickly explained, “Of course, I’m your husband.</p>
-                    
-                    <p>Fine, you&#39;re right. My sickness is getting to my head. 1 do need to receive the treatment.”</p>
-                    
-                    <p>“That’s the way.” Charlotte nodded in relief. “I&#39;ll get Hayley and Sam to do it later. Recover as soon as</p>
-                    
-                    <p>you can so that you can manage the company again. As of now, I can barely keep it together by</p>
-                    
-                    <p>myself.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="6">
-                    
-                    <p>“All right, I got it.” “Zachary” forced himself to agree. “But Kalium told me that the board of directors is</p>
-                    
-                    <p>causing trouble again. How are you planning to deal with them?”</p>
-                    
-                    <p>“What else can I do? They don&#39;t respect me at all. On my way home, Johann even called me to get you</p>
-                    
-                    <p>to show your face, even if it’s just to say a word or two. Therefore, receive your treatment tonight and</p>
-                    
-                    <p>follow me to the company tomorrow morning.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“All right, I got it.” “Zachary” forced himself to agree. “But Kalium told me that the board of directors is</p>
+                        
+                        <p>causing trouble again. How are you planning to deal with them?”</p>
+                        
+                        <p>“What else can I do? They don&#39;t respect me at all. On my way home, Johann even called me to get you</p>
+                        
+                        <p>to show your face, even if it’s just to say a word or two. Therefore, receive your treatment tonight and</p>
+                        
+                        <p>follow me to the company tomorrow morning.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
@@ -4285,6 +4342,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4371,9 +4508,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4437,7 +4575,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4482,13 +4619,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4545,21 +4679,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

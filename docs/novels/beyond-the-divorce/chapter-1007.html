@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:27.595577",
-        "dateModified": "2026-07-17T17:08:27.595577",
+        "datePublished": "2026-07-19T13:10:23.391722",
+        "dateModified": "2026-07-19T13:10:23.391722",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,64 +2422,70 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1007</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1007</p>
-                    
-                    <p>After waiting several days, I finally received news about Matthew.</p>
-                    
-                    <p>But what surprised me was his astonishing decision, which truly made me see him in a new light.</p>
-                    
-                    <p>He decided to abandon Ardora and filed for bankruptcy.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1007</p>
+                        
+                        <p>After waiting several days, I finally received news about Matthew.</p>
+                        
+                        <p>But what surprised me was his astonishing decision, which truly made me see him in a new light.</p>
+                        
+                        <p>He decided to abandon Ardora and filed for bankruptcy.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>All ongoing construction projects would enter the auction process to alleviate the burden of high debts, helping him eliminate this baggage. I had not expected him to be so decisive in letting go of Ardora. This meant he was giving up everything from the past, returning to square one. It didn&#39;t seem like his usual style-he always wanted to be successful.</p>
-                    
-                    <p>However, his haste often led to failure, and this time he dug himself into a pit.</p>
-                    
-                    <p>Having lived with him for over a decade, I knew him too well. Since the day he first put on a suit, he had sworn to me that he would become successful in the future.</p>
-                    
-                    <p>But now, by giving up Ardora and returning to the starting point, he was even worse off than before.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>All ongoing construction projects would enter the auction process to alleviate the burden of high debts, helping him eliminate this baggage. I had not expected him to be so decisive in letting go of Ardora. This meant he was giving up everything from the past, returning to square one. It didn&#39;t seem like his usual style-he always wanted to be successful.</p>
+                        
+                        <p>However, his haste often led to failure, and this time he dug himself into a pit.</p>
+                        
+                        <p>Having lived with him for over a decade, I knew him too well. Since the day he first put on a suit, he had sworn to me that he would become successful in the future.</p>
+                        
+                        <p>But now, by giving up Ardora and returning to the starting point, he was even worse off than before.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Back then, the Murphy family was still together and had a house for shelter. But now, he had nothing.</p>
-                    
-                    <p>It was said that his application for the small house we once lived in had been rejected. At least until Melanie&#39;s case was resolved, it couldn&#39;t be settled.</p>
-                    
-                    <p>But the fact that Matthew made such a decision indicated that he had faced reality. At least he wasn&#39;t behaving like a madman, throwing tantrums everywhere.</p>
-                    
-                    <p>After a few days of quiet contemplation, he suddenly made this decision. I wondered if someone knowledgeable guided him because I had asked Johnson to introduce him to Adrian.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Back then, the Murphy family was still together and had a house for shelter. But now, he had nothing.</p>
+                        
+                        <p>It was said that his application for the small house we once lived in had been rejected. At least until Melanie&#39;s case was resolved, it couldn&#39;t be settled.</p>
+                        
+                        <p>But the fact that Matthew made such a decision indicated that he had faced reality. At least he wasn&#39;t behaving like a madman, throwing tantrums everywhere.</p>
+                        
+                        <p>After a few days of quiet contemplation, he suddenly made this decision. I wondered if someone knowledgeable guided him because I had asked Johnson to introduce him to Adrian.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2456,55 +2497,43 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Carol switched on the TV in my office, displaying real-time news. It was the footage of Matthew announcing the news.</p>
-                    
-                    <p>This was his first public appearance since being released in court. Johnson was standing by his side, and he looked reasonably well, albeit thinner.</p>
-                    
-                    <p>Facing a crowd of reporters, he</p>
-                    
-                    <p>remained composed. He solemnly stated, &#34;Abandoning Ardora is to give everyone an explanation. I want more capable companies to quickly complete Ardora&#39;s unfinished projects and allow homeowners to move in as soon as possible. This is my responsibility. I apologize for everything that happened before. Thank you.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Carol switched on the TV in my office, displaying real-time news. It was the footage of Matthew announcing the news.</p>
+                        
+                        <p>This was his first public appearance since being released in court. Johnson was standing by his side, and he looked reasonably well, albeit thinner.</p>
+                        
+                        <p>Facing a crowd of reporters, he</p>
+                        
+                        <p>remained composed. He solemnly stated, &#34;Abandoning Ardora is to give everyone an explanation. I want more capable companies to quickly complete Ardora&#39;s unfinished projects and allow homeowners to move in as soon as possible. This is my responsibility. I apologize for everything that happened before. Thank you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Then, accompanied by Johnson and several former company employees, he left.</p>
-                    
-                    <p>I stared at the screen, lost in thought. It seemed that Matthew wasn&#39;t foolish.</p>
-                    
-                    <p>I wasn&#39;t sure if someone wise had guided him of if he had come to this realization himself. Even if someone guided him, it still required courage on his part. This time, he fell pretty hard. Upon closer consideration, perhaps I bore some responsibility for it.</p>
-                    
-                    <p>I thought I would feel satisfied seeing him face such</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>consequences, but deep down, I knew I wasn&#39;t happy. After all, this man had been a part of my life for a</p>
-                    
-                    <p>decade and was my daughter&#39;s father.</p>
-                    
-                    <p>Seeing me silent, Carol quietly turned off the TV.</p>
-                    
-                    <p>The next moment, my phone rang, and I saw it was Atticus calling. I guessed he called at this time because he was also surprised by the news.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Then, accompanied by Johnson and several former company employees, he left.</p>
+                        
+                        <p>I stared at the screen, lost in thought. It seemed that Matthew wasn&#39;t foolish.</p>
+                        
+                        <p>I wasn&#39;t sure if someone wise had guided him of if he had come to this realization himself. Even if someone guided him, it still required courage on his part. This time, he fell pretty hard. Upon closer consideration, perhaps I bore some responsibility for it.</p>
+                        
+                        <p>I thought I would feel satisfied seeing him face such</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2515,21 +2544,49 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Mr. Atticus,&#34; I answered.</p>
-                    
-                    <p>&#34;I watched the news. Matthew did the only right thing and the most justifiable thing for you. Matthew has cut his losses on time, preventing you from getting involved. It&#39;s his awakening. &#34;Only when Ardora disappears, and everything becomes calm will we find peace. Moreover, Liora has completely given up. It seems Melanie is now the most useless pawn.&#34; &#34;Yes, her mission is accomplished,&#34; I said casually.</p>
-                    
-                    <p>I understood the meaning behind Atticus&#39;s words but didn&#39;t express my stance. I couldn&#39;t let Atticus lead me around by the nose.</p>
-                    
-                    <p>&#34;The next step is to start the settlement. Once all of this is handled, everyone will be relieved,&#34; Atticus said. &#34;The auction of those projects is a big highlight. Are you interested?&#34; I knew Atticus&#39;s question had another meaning. I disdainfully gave him an answer.</p>
-                    
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>consequences, but deep down, I knew I wasn&#39;t happy. After all, this man had been a part of my life for a</p>
+                        
+                        <p>decade and was my daughter&#39;s father.</p>
+                        
+                        <p>Seeing me silent, Carol quietly turned off the TV.</p>
+                        
+                        <p>The next moment, my phone rang, and I saw it was Atticus calling. I guessed he called at this time because he was also surprised by the news.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Mr. Atticus,&#34; I answered.</p>
+                        
+                        <p>&#34;I watched the news. Matthew did the only right thing and the most justifiable thing for you. Matthew has cut his losses on time, preventing you from getting involved. It&#39;s his awakening. &#34;Only when Ardora disappears, and everything becomes calm will we find peace. Moreover, Liora has completely given up. It seems Melanie is now the most useless pawn.&#34; &#34;Yes, her mission is accomplished,&#34; I said casually.</p>
+                        
+                        <p>I understood the meaning behind Atticus&#39;s words but didn&#39;t express my stance. I couldn&#39;t let Atticus lead me around by the nose.</p>
+                        
+                        <p>&#34;The next step is to start the settlement. Once all of this is handled, everyone will be relieved,&#34; Atticus said. &#34;The auction of those projects is a big highlight. Are you interested?&#34; I knew Atticus&#39;s question had another meaning. I disdainfully gave him an answer.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
@@ -4247,6 +4304,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4333,9 +4470,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4399,7 +4537,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4444,13 +4581,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4507,21 +4641,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

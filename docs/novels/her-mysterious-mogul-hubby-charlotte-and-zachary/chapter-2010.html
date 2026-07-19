@@ -997,18 +997,17 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.610521",
-        "dateModified": "2026-07-17T17:08:32.610521",
+        "datePublished": "2026-07-19T13:10:29.526319",
+        "dateModified": "2026-07-19T13:10:29.526319",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,30 +2422,28 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2110</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Federico&#39;s words carried heavy and shocking implications.</p>
-                    
-                    <p>The atmosphere immediately grew tense.</p>
-                    
-                    <p>Even the carefree Francesca froze in shock. She instinctively looked at William as an outrageous</p>
-                    
-                    <p>thought crossed her mind. Could it be true?</p>
-                    
-                    <p>Meanwhile, William raised his head and met the king&#39;s gaze. He declared firmly, “Your Majesty, I have</p>
-                    
-                    <p>nothing to hide nor the courage to manipulate others, especially L!”</p>
-                    
-                    <p>William could not have answered Federico&#39;s question more openly than that.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Federico&#39;s words carried heavy and shocking implications.</p>
+                        
+                        <p>The atmosphere immediately grew tense.</p>
+                        
+                        <p>Even the carefree Francesca froze in shock. She instinctively looked at William as an outrageous</p>
+                        
+                        <p>thought crossed her mind. Could it be true?</p>
+                        
+                        <p>Meanwhile, William raised his head and met the king&#39;s gaze. He declared firmly, “Your Majesty, I have</p>
+                        
+                        <p>nothing to hide nor the courage to manipulate others, especially L!”</p>
+                        
+                        <p>William could not have answered Federico&#39;s question more openly than that.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2422,21 +2455,25 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>The king narrowed his eyes and stared at William. “Then tell me. Did Robin lie?”</p>
-                    
-                    <p>Complex emotions filled the king&#39;s gaze.</p>
-                    
-                    <p>William replied honestly, “Based on the recording I heard, Robin had said nothing but the truth.”</p>
-                    
-                    <p>“Is it?” Federico began to doubt himself.</p>
-                    
-                    <p>“Why don&#39;t I answer you instead? We&#39;re basically talking about my status as someone&#39;s fiancée.”</p>
-                    
-                    <p>Francesca continued impatiently, “I was still Danrique&#39;s fiancée before four this morning, but that is no</p>
-                    
-                    <p>longer the case as we have split up. Then, the media reported on Danrique and Hazel&#39;s engagement.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>The king narrowed his eyes and stared at William. “Then tell me. Did Robin lie?”</p>
+                        
+                        <p>Complex emotions filled the king&#39;s gaze.</p>
+                        
+                        <p>William replied honestly, “Based on the recording I heard, Robin had said nothing but the truth.”</p>
+                        
+                        <p>“Is it?” Federico began to doubt himself.</p>
+                        
+                        <p>“Why don&#39;t I answer you instead? We&#39;re basically talking about my status as someone&#39;s fiancée.”</p>
+                        
+                        <p>Francesca continued impatiently, “I was still Danrique&#39;s fiancée before four this morning, but that is no</p>
+                        
+                        <p>longer the case as we have split up. Then, the media reported on Danrique and Hazel&#39;s engagement.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2448,47 +2485,115 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Simple as that.”</p>
-                    
-                    <p>“Erm...” Stunned, Silas muttered, “That sounds so childish.”</p>
-                    
-                    <p>“Why did you break up so suddenly? Was it because of me?” asked William softly.</p>
-                    
-                    <p>“It has nothing to do with you. Danrique just went crazy.” Furious, Francesca added, “Robin wasn&#39;t</p>
-                    
-                    <p>lying, and nor was William. Though I didn&#39;t want to be involved in this or drag Danrique into this mess,</p>
-                    
-                    <p>things have spiraled to the point where I feel I must explain everything clearly.”</p>
-                    
-                    <p>Francesca launched into a lengthy explanation. “Firstly, I&#39;m not lying about the multiple poisoning</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Simple as that.”</p>
+                        
+                        <p>“Erm...” Stunned, Silas muttered, “That sounds so childish.”</p>
+                        
+                        <p>“Why did you break up so suddenly? Was it because of me?” asked William softly.</p>
+                        
+                        <p>“It has nothing to do with you. Danrique just went crazy.” Furious, Francesca added, “Robin wasn&#39;t</p>
+                        
+                        <p>lying, and nor was William. Though I didn&#39;t want to be involved in this or drag Danrique into this mess,</p>
+                        
+                        <p>things have spiraled to the point where I feel I must explain everything clearly.”</p>
+                        
+                        <p>Francesca launched into a lengthy explanation. “Firstly, I&#39;m not lying about the multiple poisoning</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>attempts on William just because we&#39;re close friends. There&#39;s definitely poison in the castle&#39;s water</p>
-                    
-                    <p>source and the essential oil he was given. He and the eighty-three residents in the castle have all been</p>
-                    
-                    <p>poisoned; no one can deny that. I may not understand your complicated relationships with one another</p>
-                    
-                    <p>or anyone&#39;s reasons for pulling such schemes, but I do know that the perpetrator deserves punishment.</p>
-                    
-                    <p>That&#39;s the enduring law in any country of any era. So why have the facts become something to be</p>
-                    
-                    <p>covered up when it reaches your ears, Your Majesty?”</p>
-                    
-                    <p>She continued, “Are you suspecting William of poisoning himself for the sake of sabotaging someone</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>attempts on William just because we&#39;re close friends. There&#39;s definitely poison in the castle&#39;s water</p>
+                        
+                        <p>source and the essential oil he was given. He and the eighty-three residents in the castle have all been</p>
+                        
+                        <p>poisoned; no one can deny that. I may not understand your complicated relationships with one another</p>
+                        
+                        <p>or anyone&#39;s reasons for pulling such schemes, but I do know that the perpetrator deserves punishment.</p>
+                        
+                        <p>That&#39;s the enduring law in any country of any era. So why have the facts become something to be</p>
+                        
+                        <p>covered up when it reaches your ears, Your Majesty?”</p>
+                        
+                        <p>She continued, “Are you suspecting William of poisoning himself for the sake of sabotaging someone</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>else? Has the harm and humiliation he suffered all these years been nothing but an act? Did he injure</p>
+                        
+                        <p>both his legs to land himself in a wheelchair?”</p>
+                        
+                        <p>Her argument had been delivered with a demanding aura, which instantly steamrolled over the king.</p>
+                        
+                        <p>Federico suddenly looked away as though fearful of meeting William&#39;s gaze.</p>
+                        
+                        <p>Indeed, no one could dispute the facts.</p>
+                        
+                        <p>I can&#39;t fault William for borrowing Danrique&#39;s reputation to make an accusation. Someone had</p>
+                        
+                        <p>sabotaged him first, and he deserves to fight back.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>William knew he had little authority in the royal family. No one would bat an eyelid if all the occupants in</p>
+                        
+                        <p>his castle perished. Sadly, not even the king would have seen fit to punish his other grandchildren for</p>
+                        
+                        <p>harming him.</p>
+                        
+                        <p>That was why William needed to find other ways to convince the king.</p>
+                        
+                        <p>Alas, Federico seemed to think otherwise.</p>
+                        
+                        <p>That was why he chose to sacrifice William.</p>
+                        
+                        <p>“Francesca...” Updated at Dr?manovеls.cоm</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2499,67 +2604,19 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>else? Has the harm and humiliation he suffered all these years been nothing but an act? Did he injure</p>
-                    
-                    <p>both his legs to land himself in a wheelchair?”</p>
-                    
-                    <p>Her argument had been delivered with a demanding aura, which instantly steamrolled over the king.</p>
-                    
-                    <p>Federico suddenly looked away as though fearful of meeting William&#39;s gaze.</p>
-                    
-                    <p>Indeed, no one could dispute the facts.</p>
-                    
-                    <p>I can&#39;t fault William for borrowing Danrique&#39;s reputation to make an accusation. Someone had</p>
-                    
-                    <p>sabotaged him first, and he deserves to fight back.</p>
-                    
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“You!” Federico sputtered with rage. “This is outrageous!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>William knew he had little authority in the royal family. No one would bat an eyelid if all the occupants in</p>
-                    
-                    <p>his castle perished. Sadly, not even the king would have seen fit to punish his other grandchildren for</p>
-                    
-                    <p>harming him.</p>
-                    
-                    <p>That was why William needed to find other ways to convince the king.</p>
-                    
-                    <p>Alas, Federico seemed to think otherwise.</p>
-                    
-                    <p>That was why he chose to sacrifice William.</p>
-                    
-                    <p>“Francesca...” Updated at Dr?manovеls.cоm</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="6">
-                    
-                    <p>“You!” Federico sputtered with rage. “This is outrageous!”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
@@ -4277,6 +4334,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4363,9 +4500,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4429,7 +4567,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4474,13 +4611,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4537,21 +4671,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:27.765220",
-        "dateModified": "2026-07-17T17:08:27.765220",
+        "datePublished": "2026-07-19T13:10:23.539539",
+        "dateModified": "2026-07-19T13:10:23.539539",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,76 +2422,26 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1161</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1161</p>
-                    
-                    <p>All eyes were fixed on the hospital director, and a hush fell over the room.</p>
-                    
-                    <p>The director announced, &#34;We managed to save the patient. Fortunately, the knife missed his heart by only a few millimeters, so we managed to work on his wound. If the knife had been any closer to his heart, it would have been impossible for us to do anything. &#34;He lost a lot of blood as we extracted the knife because it was a risky procedure. The good thing is, we made sure he didn&#39;t suffer from a second injury throughout the surgery.</p>
-                    
-                    <p>&#34;If he had fallen to the ground, he would have died on the spot. He&#39;ll be sent to the Intensive Care Unit for observation in the next 24 hours. If he can get through this, he should be fine after that.&#34;</p>
-                    
-                    <p>Lauren&#39;s body trembled, tears streaming down her face. She murmured, &#34;He did it for me.&#34;</p>
-                    
-                    <p>I quickly tried to reassure her. &#34;Take it easy, Lauren. He&#39;s been saved. Don&#39;t worry. I know you two did it to save me.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>&#34;I want to see him,&#34; Lauren pleaded.</p>
-                    
-                    <p>We went to the Intensive Care Unit. Oliver was wheeled inside shortly after, covered in tubes, lying pale on the bed.</p>
-                    
-                    <p>Lauren broke down and pressed against the large glass window of the ICU, sobbing. &#34;Oliver! You need to pull through. I&#39;ll be here waiting for you.&#34;</p>
-                    
-                    <p>After learning about Oliver&#39;s condition, I told Jared, &#34;Take Ivanna back to get some rest. She shouldn&#39;t be straining herself.&#34;</p>
-                    
-                    <p>Then, I said to Ivanna, &#34;You already know what&#39;s going on here. Go get some rest and don&#39;t worry. You can come back after you get some sleep. He&#39;ll be out by then. We can&#39;t do anything right now.&#34;</p>
-                    
-                    <p>Ivanna nodded. She said, &#34;I&#39;ll head back now, Lauren. Don&#39;t worry too much. I&#39;ll bring you breakfast in the morning.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Jared glanced at Atlas and said, &#34;I&#39;ll take Ivanna home. I&#39;ll be back later.&#34;</p>
-                    
-                    <p>Atlas nodded, and Jared quickly escorted Ivanna away, followed by a few bodyguards.</p>
-                    
-                    <p>I stayed by Lauren&#39;s side, and Atlas spoke to the cops before instructing Cane to get a hospital room.</p>
-                    
-                    <p>In the morning, news of Oliver&#39;s stabbing spread like wildfire. Given Oliver&#39;s significant influence, the authorities confirmed the news, declaring that only they would release official statements about Oliver&#39;s condition. All other media outlets were strictly prohibited from reporting anything, leading to a complete lack of information.</p>
-                    
-                    <p>That drove the media into a frenzy. They flocked to the hospital, eagerly awaiting updates.</p>
-                    
-                    <p>Oliver&#39;s son also arrived. He was a tall and stim young man. When he saw Lauren waiting anxiously</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1161</p>
+                        
+                        <p>All eyes were fixed on the hospital director, and a hush fell over the room.</p>
+                        
+                        <p>The director announced, &#34;We managed to save the patient. Fortunately, the knife missed his heart by only a few millimeters, so we managed to work on his wound. If the knife had been any closer to his heart, it would have been impossible for us to do anything. &#34;He lost a lot of blood as we extracted the knife because it was a risky procedure. The good thing is, we made sure he didn&#39;t suffer from a second injury throughout the surgery.</p>
+                        
+                        <p>&#34;If he had fallen to the ground, he would have died on the spot. He&#39;ll be sent to the Intensive Care Unit for observation in the next 24 hours. If he can get through this, he should be fine after that.&#34;</p>
+                        
+                        <p>Lauren&#39;s body trembled, tears streaming down her face. She murmured, &#34;He did it for me.&#34;</p>
+                        
+                        <p>I quickly tried to reassure her. &#34;Take it easy, Lauren. He&#39;s been saved. Don&#39;t worry. I know you two did it to save me.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
                 <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
@@ -2467,44 +2452,52 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>outside the ICU, he seemed stunned,</p>
-                    
-                    <p>but quickly greeted her politely.</p>
-                    
-                    <p>I found comfort in the fact that this young man seemed sensible.</p>
-                    
-                    <p>When Lauren noticed him, she wiped her tears away and managed a forced smile. &#34;Everything&#39;s fine. Don&#39;t worry.&#34;</p>
-                    
-                    <p>As I watched their silent companionship, I felt a warmth in my heart. It was good to have someone you could rely on in times of crisis.</p>
-                    
-                    <p>Oliver woke up 28 hours after his</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;I want to see him,&#34; Lauren pleaded.</p>
+                        
+                        <p>We went to the Intensive Care Unit. Oliver was wheeled inside shortly after, covered in tubes, lying pale on the bed.</p>
+                        
+                        <p>Lauren broke down and pressed against the large glass window of the ICU, sobbing. &#34;Oliver! You need to pull through. I&#39;ll be here waiting for you.&#34;</p>
+                        
+                        <p>After learning about Oliver&#39;s condition, I told Jared, &#34;Take Ivanna back to get some rest. She shouldn&#39;t be straining herself.&#34;</p>
+                        
+                        <p>Then, I said to Ivanna, &#34;You already know what&#39;s going on here. Go get some rest and don&#39;t worry. You can come back after you get some sleep. He&#39;ll be out by then. We can&#39;t do anything right now.&#34;</p>
+                        
+                        <p>Ivanna nodded. She said, &#34;I&#39;ll head back now, Lauren. Don&#39;t worry too much. I&#39;ll bring you breakfast in the morning.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>surgery. insisted that Lauren take a</p>
-                    
-                    <p>short nap while he was asleep. The</p>
-                    
-                    <p>rest of the time, she stood fixedly by the window, staring at him without blinking.</p>
-                    
-                    <p>She was no longer resentful, but she was unwilling to leave, afraid that if she closed her eyes, she might miss seeing him again.</p>
-                    
-                    <p>Oliver only woke up briefly. The doctors quickly entered to check his indicators. One of the doctors asked him something while gesturing at the window.</p>
-                    
-                    <p>He turned his head weakly, looking toward the window. When he saw Lauren beside his son, he managed a weak smile. Then, he quickly fell back into a deep sleep.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Jared glanced at Atlas and said, &#34;I&#39;ll take Ivanna home. I&#39;ll be back later.&#34;</p>
+                        
+                        <p>Atlas nodded, and Jared quickly escorted Ivanna away, followed by a few bodyguards.</p>
+                        
+                        <p>I stayed by Lauren&#39;s side, and Atlas spoke to the cops before instructing Cane to get a hospital room.</p>
+                        
+                        <p>In the morning, news of Oliver&#39;s stabbing spread like wildfire. Given Oliver&#39;s significant influence, the authorities confirmed the news, declaring that only they would release official statements about Oliver&#39;s condition. All other media outlets were strictly prohibited from reporting anything, leading to a complete lack of information.</p>
+                        
+                        <p>That drove the media into a frenzy. They flocked to the hospital, eagerly awaiting updates.</p>
+                        
+                        <p>Oliver&#39;s son also arrived. He was a tall and stim young man. When he saw Lauren waiting anxiously</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2515,41 +2508,105 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>This sudden development frightened Lauren. She tapped on the window, asking loudly, &#34;What happened? How is he?&#34;</p>
-                    
-                    <p>We were all nervous. No one knew what was going on as the doctors examined him. Soon, one of the doctors left the ICU. Lauren rushed over and anxiously asked, &#34;What happened to him?&#34;</p>
-                    
-                    <p>toFindNovel</p>
-                    
-                    <p>The doctor reassured her, explaining that it was normal for him to go back to sleep again after waking up. Lauren sighed in relief before she fainted.</p>
-                    
-                    <p>The doctor examined her quickly and said, &#34;She&#39;s exhausted. Let her sleep for a while.&#34;</p>
-                    
-                    <p>I got Cane to carry her into the room we had gotten for Oliver. Oliver&#39;s son, Alex, nervously asked, &#34;What happened to her, Chloe?&#34;</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>outside the ICU, he seemed stunned,</p>
+                        
+                        <p>but quickly greeted her politely.</p>
+                        
+                        <p>I found comfort in the fact that this young man seemed sensible.</p>
+                        
+                        <p>When Lauren noticed him, she wiped her tears away and managed a forced smile. &#34;Everything&#39;s fine. Don&#39;t worry.&#34;</p>
+                        
+                        <p>As I watched their silent companionship, I felt a warmth in my heart. It was good to have someone you could rely on in times of crisis.</p>
+                        
+                        <p>Oliver woke up 28 hours after his</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>surgery. insisted that Lauren take a</p>
+                        
+                        <p>short nap while he was asleep. The</p>
+                        
+                        <p>rest of the time, she stood fixedly by the window, staring at him without blinking.</p>
+                        
+                        <p>She was no longer resentful, but she was unwilling to leave, afraid that if she closed her eyes, she might miss seeing him again.</p>
+                        
+                        <p>Oliver only woke up briefly. The doctors quickly entered to check his indicators. One of the doctors asked him something while gesturing at the window.</p>
+                        
+                        <p>He turned his head weakly, looking toward the window. When he saw Lauren beside his son, he managed a weak smile. Then, he quickly fell back into a deep sleep.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>This sudden development frightened Lauren. She tapped on the window, asking loudly, &#34;What happened? How is he?&#34;</p>
+                        
+                        <p>We were all nervous. No one knew what was going on as the doctors examined him. Soon, one of the doctors left the ICU. Lauren rushed over and anxiously asked, &#34;What happened to him?&#34;</p>
+                        
+                        <p>toFindNovel</p>
+                        
+                        <p>The doctor reassured her, explaining that it was normal for him to go back to sleep again after waking up. Lauren sighed in relief before she fainted.</p>
+                        
+                        <p>The doctor examined her quickly and said, &#34;She&#39;s exhausted. Let her sleep for a while.&#34;</p>
+                        
+                        <p>I got Cane to carry her into the room we had gotten for Oliver. Oliver&#39;s son, Alex, nervously asked, &#34;What happened to her, Chloe?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>I explained, &#34;She hasn&#39;t slept in nearly 28 hours and she&#39;s very stressed. She just fainted from exhaustion. Let her sleep. She&#39;ll be fine.&#34;</p>
-                    
-                    <p>Alex&#39;s gaze fixed on Lauren&#39;s face, his expression complex.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I explained, &#34;She hasn&#39;t slept in nearly 28 hours and she&#39;s very stressed. She just fainted from exhaustion. Let her sleep. She&#39;ll be fine.&#34;</p>
+                        
+                        <p>Alex&#39;s gaze fixed on Lauren&#39;s face, his expression complex.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
@@ -4267,6 +4324,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4353,9 +4490,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4419,7 +4557,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4464,13 +4601,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4527,21 +4661,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

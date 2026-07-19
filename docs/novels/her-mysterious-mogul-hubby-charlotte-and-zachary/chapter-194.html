@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:30.378672",
-        "dateModified": "2026-07-17T17:08:30.378672",
+        "datePublished": "2026-07-19T13:10:26.275221",
+        "dateModified": "2026-07-19T13:10:26.275221",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,34 +2422,66 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 194</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>It took Charlotte half an hour before she reached the main gate of the villa. Outside was a greenway</p>
-                    
-                    <p>with trees planted on both sides that had street lights installed on them, illuminating the road to her</p>
-                    
-                    <p>freedom.</p>
-                    
-                    <p>Puffing up her chest, she continued her way out.</p>
-                    
-                    <p>There was a breeze that night, and it enveloped her in a comfortable chill. As she looked at the patchy</p>
-                    
-                    <p>moonlit road and listened to the cacophony of frogs and insects, she felt as if she was in a painting.</p>
-                    
-                    <p>The beautiful scenery calmed Charlotte and also strengthened her determination to stay away from</p>
-                    
-                    <p>Zachary.</p>
-                    
-                    <p>I can&#39;t let him control me... I won’t become a slave of that Devil! Awoo!</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>It took Charlotte half an hour before she reached the main gate of the villa. Outside was a greenway</p>
+                        
+                        <p>with trees planted on both sides that had street lights installed on them, illuminating the road to her</p>
+                        
+                        <p>freedom.</p>
+                        
+                        <p>Puffing up her chest, she continued her way out.</p>
+                        
+                        <p>There was a breeze that night, and it enveloped her in a comfortable chill. As she looked at the patchy</p>
+                        
+                        <p>moonlit road and listened to the cacophony of frogs and insects, she felt as if she was in a painting.</p>
+                        
+                        <p>The beautiful scenery calmed Charlotte and also strengthened her determination to stay away from</p>
+                        
+                        <p>Zachary.</p>
+                        
+                        <p>I can&#39;t let him control me... I won’t become a slave of that Devil! Awoo!</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Just then, a beast could be heard howling in the woods.</p>
+                        
+                        <p>Charlotte paused in her tracks and stood transfixed.</p>
+                        
+                        <p>Is my ears deceiving me?Was that a cry of a wild animal I heard just now?Nah... It can&#39;t be... I must&#39;ve</p>
+                        
+                        <p>misheard.</p>
+                        
+                        <p>Clutching her chest where her racing heart lied beneath, she continued her way.</p>
+                        
+                        <p>Awoo!</p>
+                        
+                        <p>A howl echoed in the empty road again, and it sounded closer this time.</p>
+                        
+                        <p>Charlotte&#39;s eyes widened as her heart thumped loudly.</p>
+                        
+                        <p>No way... There can&#39;t be any wild animals here,</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2425,86 +2492,30 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>Just then, a beast could be heard howling in the woods.</p>
-                    
-                    <p>Charlotte paused in her tracks and stood transfixed.</p>
-                    
-                    <p>Is my ears deceiving me?Was that a cry of a wild animal I heard just now?Nah... It can&#39;t be... I must&#39;ve</p>
-                    
-                    <p>misheard.</p>
-                    
-                    <p>Clutching her chest where her racing heart lied beneath, she continued her way.</p>
-                    
-                    <p>Awoo!</p>
-                    
-                    <p>A howl echoed in the empty road again, and it sounded closer this time.</p>
-                    
-                    <p>Charlotte&#39;s eyes widened as her heart thumped loudly.</p>
-                    
-                    <p>No way... There can&#39;t be any wild animals here,</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="2">
-                    
-                    <p>right?</p>
-                    
-                    <p>Tensing up, her head snapped to the side as she observed her surroundings. However, no other</p>
-                    
-                    <p>sounds seemed to be coming from the woods.</p>
-                    
-                    <p>Yet, she was still afraid.</p>
-                    
-                    <p>Although she went up and down the hill in a vehicle each time, she knew that the distance between</p>
-                    
-                    <p>Zachary&#39;s villa and the main road was at least six miles.</p>
-                    
-                    <p>She would need four hours at the very least to walk on foot for these six miles.</p>
-                    
-                    <p>There was no guarantee that a wild animal would not pounce and feast on her while she was on her</p>
-                    
-                    <p>way down the hill.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>With that thought, cold sweat started beaded on Charlotte&#39;s forehead.</p>
-                    
-                    <p>She twisted her head around to look at the nearby villa. I&#39;ve only walked a mile. If I want to head back</p>
-                    
-                    <p>now, I can still do so...</p>
-                    
-                    <p>Without any hesitation, she started walking back toward the villa.</p>
-                    
-                    <p>However, she only took two steps before she recalled Zachary&#39;s cold gaze and domineering demeanor.</p>
-                    
-                    <p>Charlotte hesitated.</p>
-                    
-                    <p>But if I go back now, I’d have to sign the paper.And from then on, I’d owe him ninety-eight million. When</p>
-                    
-                    <p>will I be able to clear the debt?Not to mention if I can&#39;t clear the debt, I’ll be his slave. I will have to obey</p>
-                    
-                    <p>everything he says.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>right?</p>
+                        
+                        <p>Tensing up, her head snapped to the side as she observed her surroundings. However, no other</p>
+                        
+                        <p>sounds seemed to be coming from the woods.</p>
+                        
+                        <p>Yet, she was still afraid.</p>
+                        
+                        <p>Although she went up and down the hill in a vehicle each time, she knew that the distance between</p>
+                        
+                        <p>Zachary&#39;s villa and the main road was at least six miles.</p>
+                        
+                        <p>She would need four hours at the very least to walk on foot for these six miles.</p>
+                        
+                        <p>There was no guarantee that a wild animal would not pounce and feast on her while she was on her</p>
+                        
+                        <p>way down the hill.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2515,91 +2526,137 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>The thought of being a slave made her hair stood on end.</p>
-                    
-                    <p>No. As long as I breathe, I will not go back.</p>
-                    
-                    <p>She clenched her jaw and continued. At the same time, she fished out her phone to make a call.</p>
-                    
-                    <p>She decided to hail a cab. Once I&#39;m inside the cab, I&#39;ll be safe...</p>
-                    
-                    <p>However, Charlotte was dumbfounded upon taking out her phone.</p>
-                    
-                    <p>Because her phone had fallen into the pool earlier, the screen was now malfunctioning. Not only was</p>
-                    
-                    <p>she unable to swipe on the screen, but it was even flickering.</p>
-                    
-                    <p>As she walked briskly forward, she shook her phone hard, hoping to get the water out.</p>
-                    
-                    <p>Maybe I&#39;ll be able to use it once the water&#39;s out.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>With that thought, cold sweat started beaded on Charlotte&#39;s forehead.</p>
+                        
+                        <p>She twisted her head around to look at the nearby villa. I&#39;ve only walked a mile. If I want to head back</p>
+                        
+                        <p>now, I can still do so...</p>
+                        
+                        <p>Without any hesitation, she started walking back toward the villa.</p>
+                        
+                        <p>However, she only took two steps before she recalled Zachary&#39;s cold gaze and domineering demeanor.</p>
+                        
+                        <p>Charlotte hesitated.</p>
+                        
+                        <p>But if I go back now, I’d have to sign the paper.And from then on, I’d owe him ninety-eight million. When</p>
+                        
+                        <p>will I be able to clear the debt?Not to mention if I can&#39;t clear the debt, I’ll be his slave. I will have to obey</p>
+                        
+                        <p>everything he says.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>The thought of being a slave made her hair stood on end.</p>
+                        
+                        <p>No. As long as I breathe, I will not go back.</p>
+                        
+                        <p>She clenched her jaw and continued. At the same time, she fished out her phone to make a call.</p>
+                        
+                        <p>She decided to hail a cab. Once I&#39;m inside the cab, I&#39;ll be safe...</p>
+                        
+                        <p>However, Charlotte was dumbfounded upon taking out her phone.</p>
+                        
+                        <p>Because her phone had fallen into the pool earlier, the screen was now malfunctioning. Not only was</p>
+                        
+                        <p>she unable to swipe on the screen, but it was even flickering.</p>
+                        
+                        <p>As she walked briskly forward, she shook her phone hard, hoping to get the water out.</p>
+                        
+                        <p>Maybe I&#39;ll be able to use it once the water&#39;s out.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Evidently, she was too naive.</p>
-                    
-                    <p>In order to save money, she had bought the cheapest phone that came with a free electronic fan.</p>
-                    
-                    <p>In other words, it was ludicrous for her to hope that her phone could survive after getting soaked.</p>
-                    
-                    <p>Charlotte felt like crying as a sense of helplessness crashed into her. All she could do now was to pray</p>
-                    
-                    <p>that she could get out of this hellhole safely.</p>
-                    
-                    <p>Other than calling for a gigolo that one time four years ago, she had never done anything bad.</p>
-                    
-                    <p>Good things happen to good people, right?</p>
-                    
-                    <p>Charlotte picked up her pace as she prayed in her heart.</p>
-                    
-                    <p>Seeing that there were no creatures came lunging at her even after she had walked for several</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Evidently, she was too naive.</p>
+                        
+                        <p>In order to save money, she had bought the cheapest phone that came with a free electronic fan.</p>
+                        
+                        <p>In other words, it was ludicrous for her to hope that her phone could survive after getting soaked.</p>
+                        
+                        <p>Charlotte felt like crying as a sense of helplessness crashed into her. All she could do now was to pray</p>
+                        
+                        <p>that she could get out of this hellhole safely.</p>
+                        
+                        <p>Other than calling for a gigolo that one time four years ago, she had never done anything bad.</p>
+                        
+                        <p>Good things happen to good people, right?</p>
+                        
+                        <p>Charlotte picked up her pace as she prayed in her heart.</p>
+                        
+                        <p>Seeing that there were no creatures came lunging at her even after she had walked for several</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>hundred meters, she finally breathed a sigh of relief. At the same time, her pace slowed down. I must</p>
-                    
-                    <p>have misheard it earlier.</p>
-                    
-                    <p>Just as that thought flashed into her mind, however, she noticed a pair of green eyes in the woods</p>
-                    
-                    <p>nearby, watching her.</p>
-                    
-                    <p>Her feet were instantly rooted to the ground as her eyes widened. Staring at the green eyes, she</p>
-                    
-                    <p>thought, It must be an illusion. It must be. It has to be.</p>
-                    
-                    <p>She shut her eyes. When she opened them again, not only did the green eyes not disappear, but they</p>
-                    
-                    <p>had also gotten even closer.</p>
-                    
-                    <p>Under the moonlight, she could see an animal covered in fur slowly stalking toward her.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>hundred meters, she finally breathed a sigh of relief. At the same time, her pace slowed down. I must</p>
+                        
+                        <p>have misheard it earlier.</p>
+                        
+                        <p>Just as that thought flashed into her mind, however, she noticed a pair of green eyes in the woods</p>
+                        
+                        <p>nearby, watching her.</p>
+                        
+                        <p>Her feet were instantly rooted to the ground as her eyes widened. Staring at the green eyes, she</p>
+                        
+                        <p>thought, It must be an illusion. It must be. It has to be.</p>
+                        
+                        <p>She shut her eyes. When she opened them again, not only did the green eyes not disappear, but they</p>
+                        
+                        <p>had also gotten even closer.</p>
+                        
+                        <p>Under the moonlight, she could see an animal covered in fur slowly stalking toward her.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
@@ -4317,6 +4374,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4403,9 +4540,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4469,7 +4607,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4514,13 +4651,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4577,21 +4711,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

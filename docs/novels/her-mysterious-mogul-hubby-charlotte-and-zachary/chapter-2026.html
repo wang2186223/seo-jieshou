@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.628965",
-        "dateModified": "2026-07-17T17:08:32.628965",
+        "datePublished": "2026-07-19T13:10:29.544933",
+        "dateModified": "2026-07-19T13:10:29.544933",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,60 +2422,94 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2126</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>When Danrique heard that, he stopped whatever he was doing. Instead, he narrowed his eyes and</p>
-                    
-                    <p>seemed to be thinking...</p>
-                    
-                    <p>Very soon, he picked up his phone and dialed Francesca&#39;s number.</p>
-                    
-                    <p>The line was busy.</p>
-                    
-                    <p>“Do you think something has happened to Ms. Felch?” asked Sean anxiously.</p>
-                    
-                    <p>“It&#39;s either that, or she has returned to S Nation, or it could be something else...” Danrique gave his</p>
-                    
-                    <p>order. “Find out what happened.”</p>
-                    
-                    <p>“Yes, sir!” Sean got to work immediately.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>When Danrique heard that, he stopped whatever he was doing. Instead, he narrowed his eyes and</p>
+                        
+                        <p>seemed to be thinking...</p>
+                        
+                        <p>Very soon, he picked up his phone and dialed Francesca&#39;s number.</p>
+                        
+                        <p>The line was busy.</p>
+                        
+                        <p>“Do you think something has happened to Ms. Felch?” asked Sean anxiously.</p>
+                        
+                        <p>“It&#39;s either that, or she has returned to S Nation, or it could be something else...” Danrique gave his</p>
+                        
+                        <p>order. “Find out what happened.”</p>
+                        
+                        <p>“Yes, sir!” Sean got to work immediately.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Danrique tried calling Francesca again, but the line was still busy. All of a sudden, he recalled that</p>
-                    
-                    <p>Francesca had blocked his number a while ago.</p>
-                    
-                    <p>Danrique called her again using another phone, only to discover that her phone had been turned off.</p>
-                    
-                    <p>It appeared that she might be on the plane though he had no idea if she was heading back to S Nation</p>
-                    
-                    <p>or Xendale.</p>
-                    
-                    <p>I think she should be flying to Xendale...</p>
-                    
-                    <p>Sean passed the information to Gordon and got him to find out more about Francesca&#39;s situation. He</p>
-                    
-                    <p>even reminded Gordon, “Mr. Lindberg is very anxious. Try your best to locate Ms. Felch as soon as you</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Danrique tried calling Francesca again, but the line was still busy. All of a sudden, he recalled that</p>
+                        
+                        <p>Francesca had blocked his number a while ago.</p>
+                        
+                        <p>Danrique called her again using another phone, only to discover that her phone had been turned off.</p>
+                        
+                        <p>It appeared that she might be on the plane though he had no idea if she was heading back to S Nation</p>
+                        
+                        <p>or Xendale.</p>
+                        
+                        <p>I think she should be flying to Xendale...</p>
+                        
+                        <p>Sean passed the information to Gordon and got him to find out more about Francesca&#39;s situation. He</p>
+                        
+                        <p>even reminded Gordon, “Mr. Lindberg is very anxious. Try your best to locate Ms. Felch as soon as you</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>can.”</p>
+                        
+                        <p>“I&#39;ll get to it right away.” Gordon immediately made the necessary arrangement and asked in confusion,</p>
+                        
+                        <p>“Why does Mr. Lindberg feel that Ms. Felch may be in trouble or that she has traveled somewhere else</p>
+                        
+                        <p>after he finds out that Prince William has been taken to the palace?”</p>
+                        
+                        <p>“With Ms. Felch&#39;s help, Prince William found out about the poisoning incident in the castle. He then</p>
+                        
+                        <p>used Ms. Felch&#39;s relationship with Mr. Lindberg and pressured Federico to investigate the incident. But,</p>
+                        
+                        <p>Mr. Lindberg refuses to cooperate. Federico immediately summoned Prince William and Ms. Felch to</p>
+                        
+                        <p>the palace. A few hours later, Federico captured Prince William and took him back to the palace. Under</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2451,52 +2520,28 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>can.”</p>
-                    
-                    <p>“I&#39;ll get to it right away.” Gordon immediately made the necessary arrangement and asked in confusion,</p>
-                    
-                    <p>“Why does Mr. Lindberg feel that Ms. Felch may be in trouble or that she has traveled somewhere else</p>
-                    
-                    <p>after he finds out that Prince William has been taken to the palace?”</p>
-                    
-                    <p>“With Ms. Felch&#39;s help, Prince William found out about the poisoning incident in the castle. He then</p>
-                    
-                    <p>used Ms. Felch&#39;s relationship with Mr. Lindberg and pressured Federico to investigate the incident. But,</p>
-                    
-                    <p>Mr. Lindberg refuses to cooperate. Federico immediately summoned Prince William and Ms. Felch to</p>
-                    
-                    <p>the palace. A few hours later, Federico captured Prince William and took him back to the palace. Under</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="3">
-                    
-                    <p>these circumstances, there can only be two possibilities. The first one is that Ms. Felch has offended</p>
-                    
-                    <p>Federico. The other one is that she has escaped.”</p>
-                    
-                    <p>After a pause, Sean smiled and asked, “Which scenario do you think is more plausible?”</p>
-                    
-                    <p>Gordon was very decisive in his reply. “I think Ms. Felch must have offended Federico. As a result, she</p>
-                    
-                    <p>ran away. Given her temper, I&#39;m surprised that she didn&#39;t beat Federico up!”</p>
-                    
-                    <p>“Hahaha!” Sean burst out laughing. “That&#39;s true. Then again, since she has left safely before William</p>
-                    
-                    <p>was taken back to the castle, that would mean that Ms. Felch did not lose her temper. If you ask me, I</p>
-                    
-                    <p>think she has run away.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>these circumstances, there can only be two possibilities. The first one is that Ms. Felch has offended</p>
+                        
+                        <p>Federico. The other one is that she has escaped.”</p>
+                        
+                        <p>After a pause, Sean smiled and asked, “Which scenario do you think is more plausible?”</p>
+                        
+                        <p>Gordon was very decisive in his reply. “I think Ms. Felch must have offended Federico. As a result, she</p>
+                        
+                        <p>ran away. Given her temper, I&#39;m surprised that she didn&#39;t beat Federico up!”</p>
+                        
+                        <p>“Hahaha!” Sean burst out laughing. “That&#39;s true. Then again, since she has left safely before William</p>
+                        
+                        <p>was taken back to the castle, that would mean that Ms. Felch did not lose her temper. If you ask me, I</p>
+                        
+                        <p>think she has run away.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2508,23 +2553,27 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>Gordon was curious. “Do you think she has flown back to S Nation or Xendale?”</p>
-                    
-                    <p>“That&#39;s something I want to know too,” replied Sean with a wry smile. “I guess Mr. Lindberg is even</p>
-                    
-                    <p>more eager to find out.”</p>
-                    
-                    <p>“Let us have a bet.” Gordon rubbed his palms and was very enthusiastic. “I bet you that Ms. Felch has</p>
-                    
-                    <p>flown to S Nation. Given her foul temper, she will never take the initiative to come to Xendale.”</p>
-                    
-                    <p>“I think she is flying back to Xendale,” said Sean with utter confidence. “You have no idea how anxious</p>
-                    
-                    <p>she is after Mr. Lindberg announces his engagement...”</p>
-                    
-                    <p>Gordon could not wait to finalize their bet. “Stop wasting time. If I win the bet, I want your gun that&#39;s</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Gordon was curious. “Do you think she has flown back to S Nation or Xendale?”</p>
+                        
+                        <p>“That&#39;s something I want to know too,” replied Sean with a wry smile. “I guess Mr. Lindberg is even</p>
+                        
+                        <p>more eager to find out.”</p>
+                        
+                        <p>“Let us have a bet.” Gordon rubbed his palms and was very enthusiastic. “I bet you that Ms. Felch has</p>
+                        
+                        <p>flown to S Nation. Given her foul temper, she will never take the initiative to come to Xendale.”</p>
+                        
+                        <p>“I think she is flying back to Xendale,” said Sean with utter confidence. “You have no idea how anxious</p>
+                        
+                        <p>she is after Mr. Lindberg announces his engagement...”</p>
+                        
+                        <p>Gordon could not wait to finalize their bet. “Stop wasting time. If I win the bet, I want your gun that&#39;s</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2536,56 +2585,64 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>made of pure gold.”</p>
-                    
-                    <p>“I knew you have been eyeing that gun of mine for a long time...”</p>
-                    
-                    <p>“Mr. Lindberg is biased. He only gives it to you and not me.”</p>
-                    
-                    <p>“And, what if you lose?”</p>
-                    
-                    <p>“What do you want?”</p>
-                    
-                    <p>“If you lose the bet, then you will have to promise me something. I will let you know the details later on</p>
-                    
-                    <p>once I have given it some thought.”</p>
-                    
-                    <p>“Deal!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>made of pure gold.”</p>
+                        
+                        <p>“I knew you have been eyeing that gun of mine for a long time...”</p>
+                        
+                        <p>“Mr. Lindberg is biased. He only gives it to you and not me.”</p>
+                        
+                        <p>“And, what if you lose?”</p>
+                        
+                        <p>“What do you want?”</p>
+                        
+                        <p>“If you lose the bet, then you will have to promise me something. I will let you know the details later on</p>
+                        
+                        <p>once I have given it some thought.”</p>
+                        
+                        <p>“Deal!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>With that, the two men placed their bets on Francesca&#39;s final destination.</p>
-                    
-                    <p>He was worried about Francesca&#39;s safety and wondered what had happened to her.</p>
-                    
-                    <p>After waiting for more than ten minutes, no one came to report to him, so Danrique yelled, “Men!”</p>
-                    
-                    <p>Sean rushed in. “Mr. Lindberg, Gordon has already arranged for someone to see to it.” Co?tent of</p>
-                    
-                    <p>Dr?manovеls.com</p>
-                    
-                    <p>“Get them to keep an eye on this and report to you the moment they receive any information.”</p>
-                    
-                    <p>Danrique did not want to hear about other possibilities. He hoped that Francesca would fly to Xendale</p>
-                    
-                    <p>and look for him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>With that, the two men placed their bets on Francesca&#39;s final destination.</p>
+                        
+                        <p>He was worried about Francesca&#39;s safety and wondered what had happened to her.</p>
+                        
+                        <p>After waiting for more than ten minutes, no one came to report to him, so Danrique yelled, “Men!”</p>
+                        
+                        <p>Sean rushed in. “Mr. Lindberg, Gordon has already arranged for someone to see to it.” Co?tent of</p>
+                        
+                        <p>Dr?manovеls.com</p>
+                        
+                        <p>“Get them to keep an eye on this and report to you the moment they receive any information.”</p>
+                        
+                        <p>Danrique did not want to hear about other possibilities. He hoped that Francesca would fly to Xendale</p>
+                        
+                        <p>and look for him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
@@ -4303,6 +4360,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4389,9 +4526,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4455,7 +4593,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4500,13 +4637,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4563,21 +4697,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

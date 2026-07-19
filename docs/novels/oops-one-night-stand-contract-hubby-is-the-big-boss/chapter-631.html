@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:21.159109",
-        "dateModified": "2026-07-17T17:08:21.159109",
+        "datePublished": "2026-07-19T13:10:17.659059",
+        "dateModified": "2026-07-19T13:10:17.659059",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,76 +2422,38 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 631</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Liam Sullivan suddenly burst into loud laughter, the sound dripping with undisguised mockery.</p>
-                    
-                    <p>He glanced sideways at her, a cold, sharp curve lifting the corner of his mouth.</p>
-                    
-                    <p>&#34;Vivian Bennett, you are truly arrogant,&#34; he said, his voice laced with scorn.</p>
-                    
-                    <p>&#34;How dare you be so certain I will lose to you?&#34;</p>
-                    
-                    <p>&#34;This confidence of yours is utterly laughable.&#34;</p>
-                    
-                    <p>Vivian&#39;s expression remained calm, but her eyes seemed to frost over with a thin layer of ice.</p>
-                    
-                    <p>&#34;Because you still love me,&#34; she stated flatly.</p>
-                    
-                    <p>&#34;Love is your weakness.&#34;</p>
-                    
-                    <p>Liam&#39;s breath hitched.</p>
-                    
-                    <p>His gaze sharpened instantly, cutting into her face like a blade.</p>
-                    
-                    <p>His voice dropped, each word enunciated with heavy emphasis.</p>
-                    
-                    <p>&#34;I, Liam Sullivan, will never be defeated by you.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>Never.</p>
-                    
-                    <p>To lose would mean losing her completely.</p>
-                    
-                    <p>Therefore, no matter what, he could not lose.</p>
-                    
-                    <p>However, the moment her declaration of war left her lips, Vivian found herself facing her first major obstacle.</p>
-                    
-                    <p>The island was picturesque, a pleasant place to stay.</p>
-                    
-                    <p>But she had to return to the mainland to execute her plans.</p>
-                    
-                    <p>Now, even leaving had become a luxury beyond her reach.</p>
-                    
-                    <p>She stood on the island&#39;s sole helicopter landing pad.</p>
-                    
-                    <p>She watched as Liam, dressed in pilot gear, walked casually toward the sleek white helicopter.</p>
-                    
-                    <p>Two black-clad bodyguards stood before her like immovable walls, blocking her path.</p>
-                    
-                    <p>Vivian&#39;s pupils constricted.</p>
-                    
-                    <p>A surge of anger rose in her chest.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Liam Sullivan suddenly burst into loud laughter, the sound dripping with undisguised mockery.</p>
+                        
+                        <p>He glanced sideways at her, a cold, sharp curve lifting the corner of his mouth.</p>
+                        
+                        <p>&#34;Vivian Bennett, you are truly arrogant,&#34; he said, his voice laced with scorn.</p>
+                        
+                        <p>&#34;How dare you be so certain I will lose to you?&#34;</p>
+                        
+                        <p>&#34;This confidence of yours is utterly laughable.&#34;</p>
+                        
+                        <p>Vivian&#39;s expression remained calm, but her eyes seemed to frost over with a thin layer of ice.</p>
+                        
+                        <p>&#34;Because you still love me,&#34; she stated flatly.</p>
+                        
+                        <p>&#34;Love is your weakness.&#34;</p>
+                        
+                        <p>Liam&#39;s breath hitched.</p>
+                        
+                        <p>His gaze sharpened instantly, cutting into her face like a blade.</p>
+                        
+                        <p>His voice dropped, each word enunciated with heavy emphasis.</p>
+                        
+                        <p>&#34;I, Liam Sullivan, will never be defeated by you.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2467,104 +2464,76 @@
                 
                 
                 
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Never.</p>
+                        
+                        <p>To lose would mean losing her completely.</p>
+                        
+                        <p>Therefore, no matter what, he could not lose.</p>
+                        
+                        <p>However, the moment her declaration of war left her lips, Vivian found herself facing her first major obstacle.</p>
+                        
+                        <p>The island was picturesque, a pleasant place to stay.</p>
+                        
+                        <p>But she had to return to the mainland to execute her plans.</p>
+                        
+                        <p>Now, even leaving had become a luxury beyond her reach.</p>
+                        
+                        <p>She stood on the island&#39;s sole helicopter landing pad.</p>
+                        
+                        <p>She watched as Liam, dressed in pilot gear, walked casually toward the sleek white helicopter.</p>
+                        
+                        <p>Two black-clad bodyguards stood before her like immovable walls, blocking her path.</p>
+                        
+                        <p>Vivian&#39;s pupils constricted.</p>
+                        
+                        <p>A surge of anger rose in her chest.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="2">
-                    
-                    <p>She raised her voice, shouting at his retreating back.</p>
-                    
-                    <p>&#34;Liam Sullivan! What is the meaning of this? I need to go back too!&#34;</p>
-                    
-                    <p>Liam had just taken the keys from a security personnel.</p>
-                    
-                    <p>He turned his head at her call.</p>
-                    
-                    <p>He flashed her a brilliant yet utterly malicious smile.</p>
-                    
-                    <p>&#34;Go back? Of course you can.&#34;</p>
-                    
-                    <p>&#34;But since you so confidently declared you would win against me, why should I help you win against myself?&#34;</p>
-                    
-                    <p>He paused, the glee in his tone almost overflowing.</p>
-                    
-                    <p>&#34;Darling wife, if you want to go back, figure it out yourself.&#34;</p>
-                    
-                    <p>With that, he stopped looking at her.</p>
-                    
-                    <p>He deftly put on his flight helmet and bent to climb into the cockpit.</p>
-                    
-                    <p>Vivian&#39;s fingertips trembled with fury.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Trapped on this island, her plans were impossible to execute.</p>
-                    
-                    <p>How could she talk of revenge?</p>
-                    
-                    <p>She had been too impulsive.</p>
-                    
-                    <p>She should have waited until he took her back before declaring war.</p>
-                    
-                    <p>Now, he had her by the throat.</p>
-                    
-                    <p>When this man chose to be shameless, he always followed through.</p>
-                    
-                    <p>He would truly leave her stranded here.</p>
-                    
-                    <p>&#34;Then give me back my phone!&#34; She suppressed her anger, trying to negotiate.</p>
-                    
-                    <p>&#34;Where is my phone? Give it back!&#34;</p>
-                    
-                    <p>If he wouldn&#39;t take her, at least let her contact Sophia Miller to send a helicopter for her.</p>
-                    
-                    <p>Liam had already started the engine.</p>
-                    
-                    <p>The rotor blades began to roar.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Through the cockpit window, he raised an eyebrow at her, his smile wicked.</p>
-                    
-                    <p>&#34;Sorry, I didn&#39;t bring your phone with me.&#34;</p>
-                    
-                    <p>&#34;And now, it seems I have no obligation to fetch it for you either.&#34;</p>
-                    
-                    <p>His voice came through the noisy din, fragmented but crystal clear.</p>
-                    
-                    <p>&#34;The scenery here is lovely. Enjoy your vacation.&#34;</p>
-                    
-                    <p>&#34;Think hard about how to leave.&#34;</p>
-                    
-                    <p>&#34;I&#39;ll come see you tonight.&#34;</p>
-                    
-                    <p>&#34;I hope you&#39;ll have figured out a way by then.&#34;</p>
-                    
-                    <p>&#34;Liam Sullivan! You bastard!&#34; Vivian&#39;s furious shout was swallowed by the deafening roar.</p>
-                    
-                    <p>The white helicopter lifted slowly into the air.</p>
-                    
-                    <p>It flew away from the island, growing smaller and smaller.</p>
-                    
-                    <p>It eventually became a tiny white speck on the horizon before vanishing completely.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>She raised her voice, shouting at his retreating back.</p>
+                        
+                        <p>&#34;Liam Sullivan! What is the meaning of this? I need to go back too!&#34;</p>
+                        
+                        <p>Liam had just taken the keys from a security personnel.</p>
+                        
+                        <p>He turned his head at her call.</p>
+                        
+                        <p>He flashed her a brilliant yet utterly malicious smile.</p>
+                        
+                        <p>&#34;Go back? Of course you can.&#34;</p>
+                        
+                        <p>&#34;But since you so confidently declared you would win against me, why should I help you win against myself?&#34;</p>
+                        
+                        <p>He paused, the glee in his tone almost overflowing.</p>
+                        
+                        <p>&#34;Darling wife, if you want to go back, figure it out yourself.&#34;</p>
+                        
+                        <p>With that, he stopped looking at her.</p>
+                        
+                        <p>He deftly put on his flight helmet and bent to climb into the cockpit.</p>
+                        
+                        <p>Vivian&#39;s fingertips trembled with fury.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2575,69 +2544,157 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>Vivian stood rooted to the spot.</p>
-                    
-                    <p>The sea breeze lifted her long hair, but it couldn&#39;t disperse the anxiety in her heart.</p>
-                    
-                    <p>She took a deep breath and turned to walk back to the luxurious beachfront villa.</p>
-                    
-                    <p>In the living room, she summoned the butler.</p>
-                    
-                    <p>&#34;Prepare a speedboat for me,&#34; she said, her voice icy and commanding.</p>
-                    
-                    <p>&#34;One with enough horsepower to make it back to the mainland.&#34;</p>
-                    
-                    <p>The butler stood with his hands respectfully clasped.</p>
-                    
-                    <p>His words, however, chilled her to the core.</p>
-                    
-                    <p>&#34;Young Madam, the Young Master has given orders.&#34;</p>
-                    
-                    <p>&#34;All speedboats on the island are locked.&#34;</p>
-                    
-                    <p>&#34;No one is to use them without his explicit command.&#34;</p>
-                    
-                    <p>He paused, then added.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Trapped on this island, her plans were impossible to execute.</p>
+                        
+                        <p>How could she talk of revenge?</p>
+                        
+                        <p>She had been too impulsive.</p>
+                        
+                        <p>She should have waited until he took her back before declaring war.</p>
+                        
+                        <p>Now, he had her by the throat.</p>
+                        
+                        <p>When this man chose to be shameless, he always followed through.</p>
+                        
+                        <p>He would truly leave her stranded here.</p>
+                        
+                        <p>&#34;Then give me back my phone!&#34; She suppressed her anger, trying to negotiate.</p>
+                        
+                        <p>&#34;Where is my phone? Give it back!&#34;</p>
+                        
+                        <p>If he wouldn&#39;t take her, at least let her contact Sophia Miller to send a helicopter for her.</p>
+                        
+                        <p>Liam had already started the engine.</p>
+                        
+                        <p>The rotor blades began to roar.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Through the cockpit window, he raised an eyebrow at her, his smile wicked.</p>
+                        
+                        <p>&#34;Sorry, I didn&#39;t bring your phone with me.&#34;</p>
+                        
+                        <p>&#34;And now, it seems I have no obligation to fetch it for you either.&#34;</p>
+                        
+                        <p>His voice came through the noisy din, fragmented but crystal clear.</p>
+                        
+                        <p>&#34;The scenery here is lovely. Enjoy your vacation.&#34;</p>
+                        
+                        <p>&#34;Think hard about how to leave.&#34;</p>
+                        
+                        <p>&#34;I&#39;ll come see you tonight.&#34;</p>
+                        
+                        <p>&#34;I hope you&#39;ll have figured out a way by then.&#34;</p>
+                        
+                        <p>&#34;Liam Sullivan! You bastard!&#34; Vivian&#39;s furious shout was swallowed by the deafening roar.</p>
+                        
+                        <p>The white helicopter lifted slowly into the air.</p>
+                        
+                        <p>It flew away from the island, growing smaller and smaller.</p>
+                        
+                        <p>It eventually became a tiny white speck on the horizon before vanishing completely.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Vivian stood rooted to the spot.</p>
+                        
+                        <p>The sea breeze lifted her long hair, but it couldn&#39;t disperse the anxiety in her heart.</p>
+                        
+                        <p>She took a deep breath and turned to walk back to the luxurious beachfront villa.</p>
+                        
+                        <p>In the living room, she summoned the butler.</p>
+                        
+                        <p>&#34;Prepare a speedboat for me,&#34; she said, her voice icy and commanding.</p>
+                        
+                        <p>&#34;One with enough horsepower to make it back to the mainland.&#34;</p>
+                        
+                        <p>The butler stood with his hands respectfully clasped.</p>
+                        
+                        <p>His words, however, chilled her to the core.</p>
+                        
+                        <p>&#34;Young Madam, the Young Master has given orders.&#34;</p>
+                        
+                        <p>&#34;All speedboats on the island are locked.&#34;</p>
+                        
+                        <p>&#34;No one is to use them without his explicit command.&#34;</p>
+                        
+                        <p>He paused, then added.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Furthermore, the range of these small speedboats is insufficient to get you back to land.&#34;</p>
-                    
-                    <p>&#34;And you... do not seem to possess the qualifications to operate one.&#34;</p>
-                    
-                    <p>Vivian&#39;s fingers tightened on the back of a chair, her knuckles turning white.</p>
-                    
-                    <p>Excellent.</p>
-                    
-                    <p>Liam had blocked every possible escape route.</p>
-                    
-                    <p>He was clearly forbidding her from using any of the island&#39;s resources.</p>
-                    
-                    <p>She fell silent for a moment, her eyes sweeping across the living room.</p>
-                    
-                    <p>Suddenly, her gaze fixed on the golden vintage telephone on the coffee table.</p>
-                    
-                    <p>A glimmer of light flashed in her eyes.</p>
-                    
-                    <p>She walked over quickly, picked up the receiver, and rapidly dialed a number with her fingertip.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Furthermore, the range of these small speedboats is insufficient to get you back to land.&#34;</p>
+                        
+                        <p>&#34;And you... do not seem to possess the qualifications to operate one.&#34;</p>
+                        
+                        <p>Vivian&#39;s fingers tightened on the back of a chair, her knuckles turning white.</p>
+                        
+                        <p>Excellent.</p>
+                        
+                        <p>Liam had blocked every possible escape route.</p>
+                        
+                        <p>He was clearly forbidding her from using any of the island&#39;s resources.</p>
+                        
+                        <p>She fell silent for a moment, her eyes sweeping across the living room.</p>
+                        
+                        <p>Suddenly, her gaze fixed on the golden vintage telephone on the coffee table.</p>
+                        
+                        <p>A glimmer of light flashed in her eyes.</p>
+                        
+                        <p>She walked over quickly, picked up the receiver, and rapidly dialed a number with her fingertip.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
@@ -4355,6 +4412,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4441,9 +4578,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4507,7 +4645,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4552,13 +4689,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4615,21 +4749,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

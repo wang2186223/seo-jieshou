@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.321694",
-        "dateModified": "2026-07-17T17:08:28.321694",
+        "datePublished": "2026-07-19T13:10:24.110310",
+        "dateModified": "2026-07-19T13:10:24.110310",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,28 +2422,54 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 130</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>With a name like Jasminum, I should’ve known it was Jasmine!</p>
-                    
-                    <p>When Connor saw his mother laughing, he could not help asking, “Mommy, is this woman your arch- nemesis?”</p>
-                    
-                    <p>“Why would you say that?”</p>
-                    
-                    <p>“Because she’s everywhere! You’re working at Mr. Shane’s company and she bullies you there. Now, she’s even using her studio to pick on your studio! She’s so despicable!” Connor ranted while shaking his fist angrily.</p>
-                    
-                    <p>“Yeah, she’s so annoying!” Sharon chimed in.</p>
-                    
-                    <p>Natalie stroked her darlings’ heads. She was about to speak when Connor narrowed his eyes and announced, “Mommy, I’ll teach her a lesson for you!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>With a name like Jasminum, I should’ve known it was Jasmine!</p>
+                        
+                        <p>When Connor saw his mother laughing, he could not help asking, “Mommy, is this woman your arch- nemesis?”</p>
+                        
+                        <p>“Why would you say that?”</p>
+                        
+                        <p>“Because she’s everywhere! You’re working at Mr. Shane’s company and she bullies you there. Now, she’s even using her studio to pick on your studio! She’s so despicable!” Connor ranted while shaking his fist angrily.</p>
+                        
+                        <p>“Yeah, she’s so annoying!” Sharon chimed in.</p>
+                        
+                        <p>Natalie stroked her darlings’ heads. She was about to speak when Connor narrowed his eyes and announced, “Mommy, I’ll teach her a lesson for you!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>His cold tone had her knitting her brows. It was then she realized he had an extremely hostile air around him.</p>
+                        
+                        <p>“Connor!” She took his face in her hands and fixed him with a stern look. “Listen to me. This is Mommy’s business, okay? Mommy will handle this matter myself. I don’t need you to help me nor are you allowed to aid me from afar. Do you understand me?”</p>
+                        
+                        <p>She had always been aware of Connor’s high intelligence, which led to him maturing a lot faster. However, that did not mean that his mind was that of an adult’s just yet. She did not want him to experience the darker side of being an adult at such a young age. That would be incredibly detrimental to his mental health and growth.</p>
+                        
+                        <p>In fact, she was even beginning to regret having him investigate who the boss of Jasminum was. Thankfully, she had discovered his less-than-healthy mindset now. She would have to refrain from making a similar mistake in the future.</p>
+                        
+                        <p>Connor did not know what his mother was thinking about to make her so angry. Nevertheless, he nodded obediently since he did not want to piss her off further. “I understand, Mommy!”</p>
+                        
+                        <p>“Good boy!” A smile graced Natalie’s features again.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2419,44 +2480,24 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>His cold tone had her knitting her brows. It was then she realized he had an extremely hostile air around him.</p>
-                    
-                    <p>“Connor!” She took his face in her hands and fixed him with a stern look. “Listen to me. This is Mommy’s business, okay? Mommy will handle this matter myself. I don’t need you to help me nor are you allowed to aid me from afar. Do you understand me?”</p>
-                    
-                    <p>She had always been aware of Connor’s high intelligence, which led to him maturing a lot faster. However, that did not mean that his mind was that of an adult’s just yet. She did not want him to experience the darker side of being an adult at such a young age. That would be incredibly detrimental to his mental health and growth.</p>
-                    
-                    <p>In fact, she was even beginning to regret having him investigate who the boss of Jasminum was. Thankfully, she had discovered his less-than-healthy mindset now. She would have to refrain from making a similar mistake in the future.</p>
-                    
-                    <p>Connor did not know what his mother was thinking about to make her so angry. Nevertheless, he nodded obediently since he did not want to piss her off further. “I understand, Mommy!”</p>
-                    
-                    <p>“Good boy!” A smile graced Natalie’s features again.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="2">
-                    
-                    <p>Sharon cocked her head to the side, a bewildered expression on her face. Her mother and brother seemed to be talking in riddles and she had absolutely no idea what they were saying.</p>
-                    
-                    <p>“Alright. Go outside and play now. Mommy needs to give your Aunt Joyce a call.” Natalie waved her phone at them.</p>
-                    
-                    <p>Connor hopped off his chair and took his sister’s hand. Then, he led her to the living room to watch TV.</p>
-                    
-                    <p>Natalie dialed Joyce’s number and told her about what they had found out.</p>
-                    
-                    <p>When she was done, they discussed what action they would take next. If they were to sue Jasminum for design infringement, Jasmine would probably receive a court summons.</p>
-                    
-                    <p>After a moment of thought, Natalie chuckled and told Joyce her plan.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Sharon cocked her head to the side, a bewildered expression on her face. Her mother and brother seemed to be talking in riddles and she had absolutely no idea what they were saying.</p>
+                        
+                        <p>“Alright. Go outside and play now. Mommy needs to give your Aunt Joyce a call.” Natalie waved her phone at them.</p>
+                        
+                        <p>Connor hopped off his chair and took his sister’s hand. Then, he led her to the living room to watch TV.</p>
+                        
+                        <p>Natalie dialed Joyce’s number and told her about what they had found out.</p>
+                        
+                        <p>When she was done, they discussed what action they would take next. If they were to sue Jasminum for design infringement, Jasmine would probably receive a court summons.</p>
+                        
+                        <p>After a moment of thought, Natalie chuckled and told Joyce her plan.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2468,19 +2509,79 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>She decided she would not personally appear for this court case. Joyce would handle everything on her behalf.</p>
-                    
-                    <p>For now, she had no intention of revealing herself to be the designer that Jasmine wanted to poach.</p>
-                    
-                    <p>The next day.</p>
-                    
-                    <p>Natalie was in her office working on the design draft she had promised Shane. Suddenly, her desk phone rang shrilly.</p>
-                    
-                    <p>Her pencil never stopped moving even as her other hand reached out to pick up the receiver. Placing it against her ear, she stated, “Hello, this is Natalie Smith.”</p>
-                    
-                    <p>“Ms. Natalie, this is the front desk in the lobby,” a woman’s voice sounded out gently.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>She decided she would not personally appear for this court case. Joyce would handle everything on her behalf.</p>
+                        
+                        <p>For now, she had no intention of revealing herself to be the designer that Jasmine wanted to poach.</p>
+                        
+                        <p>The next day.</p>
+                        
+                        <p>Natalie was in her office working on the design draft she had promised Shane. Suddenly, her desk phone rang shrilly.</p>
+                        
+                        <p>Her pencil never stopped moving even as her other hand reached out to pick up the receiver. Placing it against her ear, she stated, “Hello, this is Natalie Smith.”</p>
+                        
+                        <p>“Ms. Natalie, this is the front desk in the lobby,” a woman’s voice sounded out gently.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>She did not pause in her work as she asked, “Yes, what is it?”</p>
+                        
+                        <p>“A woman came looking for you.”</p>
+                        
+                        <p>“A woman?” At last, Natalie stopped her work. “Who is she?”</p>
+                        
+                        <p>“She refused to say. She wanted me to tell you to meet her at the café next door in ten minutes.”</p>
+                        
+                        <p>“Okay, I got it.” Hanging up the call, Natalie nibbled on her lip in thought.</p>
+                        
+                        <p>A woman who refused to give her name. How very mysterious! Just who is she?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>For the next few minutes, she wracked her brain but was unable to think of who it could be. Setting down her pencil, she stood up and grabbed her bag. It was time to meet this unknown woman.</p>
+                        
+                        <p>Since the café was literally next door to the Thompson Group building, it did not take her long to get there.</p>
+                        
+                        <p>The entire café was empty when she arrived. There was only a single woman sitting at a window seat.</p>
+                        
+                        <p>The middle-aged woman sat with her back toward Natalie, so she was unable to see her face. Judging from the way the other woman was dressed lavishly, Natalie guessed that she was from a wealthy family.</p>
+                        
+                        <p>She must be the woman looking for me earlier.</p>
+                        
+                        <p>Natalie moved over to that table and greeted the older woman politely, “Good day, ma’am. Are you the one who wanted to meet with me?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2491,69 +2592,25 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>She did not pause in her work as she asked, “Yes, what is it?”</p>
-                    
-                    <p>“A woman came looking for you.”</p>
-                    
-                    <p>“A woman?” At last, Natalie stopped her work. “Who is she?”</p>
-                    
-                    <p>“She refused to say. She wanted me to tell you to meet her at the café next door in ten minutes.”</p>
-                    
-                    <p>“Okay, I got it.” Hanging up the call, Natalie nibbled on her lip in thought.</p>
-                    
-                    <p>A woman who refused to give her name. How very mysterious! Just who is she?</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>For the next few minutes, she wracked her brain but was unable to think of who it could be. Setting down her pencil, she stood up and grabbed her bag. It was time to meet this unknown woman.</p>
-                    
-                    <p>Since the café was literally next door to the Thompson Group building, it did not take her long to get there.</p>
-                    
-                    <p>The entire café was empty when she arrived. There was only a single woman sitting at a window seat.</p>
-                    
-                    <p>The middle-aged woman sat with her back toward Natalie, so she was unable to see her face. Judging from the way the other woman was dressed lavishly, Natalie guessed that she was from a wealthy family.</p>
-                    
-                    <p>She must be the woman looking for me earlier.</p>
-                    
-                    <p>Natalie moved over to that table and greeted the older woman politely, “Good day, ma’am. Are you the one who wanted to meet with me?”</p>
-                    
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>The woman set down her coffee cup before raising her head to scrutinize Natalie. She did not speak.</p>
+                        
+                        <p>Natalie took this opportunity to take in the older woman as well. She was in her fifties, though she was clearly diligent in caring for her skin. She would be considered quite beautiful if not for her high cheekbones and the way her nose was upturned slightly. They made her look rather snobbish and unapproachable.</p>
+                        
+                        <p>“You’re Natalie Smith?” Finally, the older woman spoke in a cool voice.</p>
+                        
+                        <p>Natalie nodded. “Yes, that’s me.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="6">
-                    
-                    <p>The woman set down her coffee cup before raising her head to scrutinize Natalie. She did not speak.</p>
-                    
-                    <p>Natalie took this opportunity to take in the older woman as well. She was in her fifties, though she was clearly diligent in caring for her skin. She would be considered quite beautiful if not for her high cheekbones and the way her nose was upturned slightly. They made her look rather snobbish and unapproachable.</p>
-                    
-                    <p>“You’re Natalie Smith?” Finally, the older woman spoke in a cool voice.</p>
-                    
-                    <p>Natalie nodded. “Yes, that’s me.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
@@ -4271,6 +4328,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4357,9 +4494,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4423,7 +4561,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4468,13 +4605,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4531,21 +4665,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

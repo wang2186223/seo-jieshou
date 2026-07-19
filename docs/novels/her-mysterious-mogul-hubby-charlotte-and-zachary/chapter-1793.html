@@ -997,18 +997,17 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.351244",
-        "dateModified": "2026-07-17T17:08:32.351244",
+        "datePublished": "2026-07-19T13:10:29.251537",
+        "dateModified": "2026-07-19T13:10:29.251537",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,32 +2422,30 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1893</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Music started to play in the theater. The prelude to the show was a few clowns performing a couple of</p>
-                    
-                    <p>pretty neat tricks. It brought the audience&#39;s emotions in the direction they wanted for the real show that</p>
-                    
-                    <p>would be coming up soon.</p>
-                    
-                    <p>Harrier watched the show as he chatted with Hazel about work.</p>
-                    
-                    <p>When Hazel expressed her thoughts, her new ideas attracted Danrique&#39;s attention. The three of them</p>
-                    
-                    <p>started talking about work again.</p>
-                    
-                    <p>Donald wanted to join a few times but failed because his line of thinking was different from theirs.</p>
-                    
-                    <p>It made him feel exasperated, but there was nothing he could do. So, he changed course and</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Music started to play in the theater. The prelude to the show was a few clowns performing a couple of</p>
+                        
+                        <p>pretty neat tricks. It brought the audience&#39;s emotions in the direction they wanted for the real show that</p>
+                        
+                        <p>would be coming up soon.</p>
+                        
+                        <p>Harrier watched the show as he chatted with Hazel about work.</p>
+                        
+                        <p>When Hazel expressed her thoughts, her new ideas attracted Danrique&#39;s attention. The three of them</p>
+                        
+                        <p>started talking about work again.</p>
+                        
+                        <p>Donald wanted to join a few times but failed because his line of thinking was different from theirs.</p>
+                        
+                        <p>It made him feel exasperated, but there was nothing he could do. So, he changed course and</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2424,23 +2457,27 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>enthusiastically greeted Francesca instead. He even introduced her to the history of the circus.</p>
-                    
-                    <p>She wasn&#39;t at all interested in that as she stared at the audience below with furrowed eyebrows.</p>
-                    
-                    <p>It was her assumption that Danrique booked the entire place. That way, she could summon the animals</p>
-                    
-                    <p>to escape.</p>
-                    
-                    <p>However, with so many people around, she couldn’t do that. Otherwise, she&#39;d be risking hurting</p>
-                    
-                    <p>innocent people.</p>
-                    
-                    <p>So, that idea wasn&#39;t going to work.</p>
-                    
-                    <p>Perhaps she really wouldn&#39;t be able to escape today?</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>enthusiastically greeted Francesca instead. He even introduced her to the history of the circus.</p>
+                        
+                        <p>She wasn&#39;t at all interested in that as she stared at the audience below with furrowed eyebrows.</p>
+                        
+                        <p>It was her assumption that Danrique booked the entire place. That way, she could summon the animals</p>
+                        
+                        <p>to escape.</p>
+                        
+                        <p>However, with so many people around, she couldn’t do that. Otherwise, she&#39;d be risking hurting</p>
+                        
+                        <p>innocent people.</p>
+                        
+                        <p>So, that idea wasn&#39;t going to work.</p>
+                        
+                        <p>Perhaps she really wouldn&#39;t be able to escape today?</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2452,107 +2489,27 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>“All right, all right, let&#39;s stop here.” Harrier smiled. “I think you should spend time with your fiancee,</p>
-                    
-                    <p>Danrique. Look at how bored she is right now.”</p>
-                    
-                    <p>“Are you hungry?” Danrique had no experience in wooing women, so he grabbed a small piece of rib</p>
-                    
-                    <p>for her. “Eat.”</p>
-                    
-                    <p>“Okay.” Francesca grabbed the rib and dug into the it.</p>
-                    
-                    <p>“There&#39;s fork and knife here, Cece,” Eva reminded in a small voice.</p>
-                    
-                    <p>“It&#39;s quite convenient eating it like this.” Francesca didn&#39;t care. She even licked her finger.</p>
-                    
-                    <p>The other ladies were shocked by her unsightly behavior when they saw that.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>They wondered which mountain village she had crawled out of.</p>
-                    
-                    <p>Danrique tenderly wiped the stain on her face away. There wasn&#39;t at all any disdain in his eyes, only</p>
-                    
-                    <p>love.</p>
-                    
-                    <p>Hazel saw that and lowered her head disappointingly. She raised her cup and drank her wine.</p>
-                    
-                    <p>Eva, on the other hand, was jealous.</p>
-                    
-                    <p>Harrier swirled his cup as a mysterious smirk appeared on his face.</p>
-                    
-                    <p>At that moment, the clowns left, and the light turned dark. The music started to sound mysterious.</p>
-                    
-                    <p>A few metal rings of fire had descended upon the big stage.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Two beast tamers walked out of backstage with eight lions.</p>
-                    
-                    <p>The lions roared, causing a wave of screams from the audience.</p>
-                    
-                    <p>Francesca felt uncomfortable when she saw that. The lion, as the king of all animals, should be living a</p>
-                    
-                    <p>free life in the jungle instead of being tortured and tamed by humans to perform stupid shows on the</p>
-                    
-                    <p>stage. This is against the law of nature...</p>
-                    
-                    <p>The music intensified as the beast tamers swung their whips and the lions jumped through the hoops.</p>
-                    
-                    <p>Claps were heard from the audience.</p>
-                    
-                    <p>Hazel, Eva, and the other ladies clapped too.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>“What&#39;s wrong?” Danrique asked caringly. “You don&#39;t like the show?”</p>
-                    
-                    <p>“Why does a circus have a thing like this?” Francesca asked coldly.</p>
-                    
-                    <p>He stared deeply and profoundly at her.</p>
-                    
-                    <p>“That’s right,” Danrique replied plainly. “The strong dominate the weak! It&#39;s the same for people!”</p>
-                    
-                    <p>Content of Draмovels.com</p>
-                    
-                    <p>That sentence sounded light and faint, as though it didn&#39;t leave a trace, yet it also felt oppressive.</p>
-                    
-                    <p>The wine cup in Harrier&#39;s hand shook slightly as he narrowed his eyes.</p>
-                    
-                    <p>It was obvious that Danrique was saying he was the strong while Harrier, the weak, could only ever</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“All right, all right, let&#39;s stop here.” Harrier smiled. “I think you should spend time with your fiancee,</p>
+                        
+                        <p>Danrique. Look at how bored she is right now.”</p>
+                        
+                        <p>“Are you hungry?” Danrique had no experience in wooing women, so he grabbed a small piece of rib</p>
+                        
+                        <p>for her. “Eat.”</p>
+                        
+                        <p>“Okay.” Francesca grabbed the rib and dug into the it.</p>
+                        
+                        <p>“There&#39;s fork and knife here, Cece,” Eva reminded in a small voice.</p>
+                        
+                        <p>“It&#39;s quite convenient eating it like this.” Francesca didn&#39;t care. She even licked her finger.</p>
+                        
+                        <p>The other ladies were shocked by her unsightly behavior when they saw that.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2563,19 +2520,119 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>obey him.</p>
-                    
-                    <p>When Danrique heard that, he was taken aback. Seven years ago, fourteen-year-old Cece said the</p>
-                    
-                    <p>same thing to him.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>They wondered which mountain village she had crawled out of.</p>
+                        
+                        <p>Danrique tenderly wiped the stain on her face away. There wasn&#39;t at all any disdain in his eyes, only</p>
+                        
+                        <p>love.</p>
+                        
+                        <p>Hazel saw that and lowered her head disappointingly. She raised her cup and drank her wine.</p>
+                        
+                        <p>Eva, on the other hand, was jealous.</p>
+                        
+                        <p>Harrier swirled his cup as a mysterious smirk appeared on his face.</p>
+                        
+                        <p>At that moment, the clowns left, and the light turned dark. The music started to sound mysterious.</p>
+                        
+                        <p>A few metal rings of fire had descended upon the big stage.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Two beast tamers walked out of backstage with eight lions.</p>
+                        
+                        <p>The lions roared, causing a wave of screams from the audience.</p>
+                        
+                        <p>Francesca felt uncomfortable when she saw that. The lion, as the king of all animals, should be living a</p>
+                        
+                        <p>free life in the jungle instead of being tortured and tamed by humans to perform stupid shows on the</p>
+                        
+                        <p>stage. This is against the law of nature...</p>
+                        
+                        <p>The music intensified as the beast tamers swung their whips and the lions jumped through the hoops.</p>
+                        
+                        <p>Claps were heard from the audience.</p>
+                        
+                        <p>Hazel, Eva, and the other ladies clapped too.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>“What&#39;s wrong?” Danrique asked caringly. “You don&#39;t like the show?”</p>
+                        
+                        <p>“Why does a circus have a thing like this?” Francesca asked coldly.</p>
+                        
+                        <p>He stared deeply and profoundly at her.</p>
+                        
+                        <p>“That’s right,” Danrique replied plainly. “The strong dominate the weak! It&#39;s the same for people!”</p>
+                        
+                        <p>Content of Draмovels.com</p>
+                        
+                        <p>That sentence sounded light and faint, as though it didn&#39;t leave a trace, yet it also felt oppressive.</p>
+                        
+                        <p>The wine cup in Harrier&#39;s hand shook slightly as he narrowed his eyes.</p>
+                        
+                        <p>It was obvious that Danrique was saying he was the strong while Harrier, the weak, could only ever</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>obey him.</p>
+                        
+                        <p>When Danrique heard that, he was taken aback. Seven years ago, fourteen-year-old Cece said the</p>
+                        
+                        <p>same thing to him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
@@ -4293,6 +4350,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4379,9 +4516,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4445,7 +4583,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4490,13 +4627,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4553,21 +4687,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

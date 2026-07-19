@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.239758",
-        "dateModified": "2026-07-17T17:08:29.239758",
+        "datePublished": "2026-07-19T13:10:25.051215",
+        "dateModified": "2026-07-19T13:10:25.051215",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,28 +2422,26 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 998</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Shane was still waiting at the spot Natalie had left him.</p>
-                    
-                    <p>“Wait, Natalie! Don&#39;t go!” Susan bawled at her departing figure.</p>
-                    
-                    <p>Despite that, Natalie ignored her and continued walking forward until Susan&#39;s cries had faded into nothingness.</p>
-                    
-                    <p>Soon after that, Susan was finally bundled into the police car.</p>
-                    
-                    <p>“All done?” Shane asked when Natalie came near.</p>
-                    
-                    <p>She nodded, “Yeah.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Shane was still waiting at the spot Natalie had left him.</p>
+                        
+                        <p>“Wait, Natalie! Don&#39;t go!” Susan bawled at her departing figure.</p>
+                        
+                        <p>Despite that, Natalie ignored her and continued walking forward until Susan&#39;s cries had faded into nothingness.</p>
+                        
+                        <p>Soon after that, Susan was finally bundled into the police car.</p>
+                        
+                        <p>“All done?” Shane asked when Natalie came near.</p>
+                        
+                        <p>She nodded, “Yeah.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2420,43 +2453,23 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“Let&#39;s go home then.” He held her hand and refrained from asking her about her conversation with Susan.</p>
-                    
-                    <p>If she doesn&#39;t want to say anything about it, I won&#39;t force her to tell me.</p>
-                    
-                    <p>Later that night, Silas came by Shane&#39;s villa with some news. “Mr. Shane, we&#39;ve made the necessary arrangements for Donald Litch.”</p>
-                    
-                    <p>Natalie set down her glass of milk at the news. “Darling, you arranged something for Donald?”</p>
-                    
-                    <p>Shane nodded. “Since Susan and the others are gone, no one&#39;s going to look after that kid. He&#39;s just an innocent boy, and I felt like it was right to do something for him.”</p>
-                    
-                    <p>Realization dawned on Natalie as she exclaimed, “You&#39;re right. I&#39;ve been so busy with Susan&#39;s matters that I forgot about the poor kid. What did you do?”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>“I sent him to an orphanage. Warren can get him after serving his three-year sentence.”</p>
-                    
-                    <p>Natalie nodded in agreement. “That works.”</p>
-                    
-                    <p>Donald was not a member of the Smith family, and neither she nor Jared felt comfortable taking him in.</p>
-                    
-                    <p>Sending Donald to an orphanage as he awaited Warren&#39;s release from prison was perhaps the kindest thing they could do for the boy.</p>
-                    
-                    <p>Susan&#39;s final trial hearing occurred a couple of days later.</p>
-                    
-                    <p>Shane and Natalie attended the hearing while Jared accompanied Harrison in his ward.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“Let&#39;s go home then.” He held her hand and refrained from asking her about her conversation with Susan.</p>
+                        
+                        <p>If she doesn&#39;t want to say anything about it, I won&#39;t force her to tell me.</p>
+                        
+                        <p>Later that night, Silas came by Shane&#39;s villa with some news. “Mr. Shane, we&#39;ve made the necessary arrangements for Donald Litch.”</p>
+                        
+                        <p>Natalie set down her glass of milk at the news. “Darling, you arranged something for Donald?”</p>
+                        
+                        <p>Shane nodded. “Since Susan and the others are gone, no one&#39;s going to look after that kid. He&#39;s just an innocent boy, and I felt like it was right to do something for him.”</p>
+                        
+                        <p>Realization dawned on Natalie as she exclaimed, “You&#39;re right. I&#39;ve been so busy with Susan&#39;s matters that I forgot about the poor kid. What did you do?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2467,20 +2480,80 @@
                 
                 
                 
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>“I sent him to an orphanage. Warren can get him after serving his three-year sentence.”</p>
+                        
+                        <p>Natalie nodded in agreement. “That works.”</p>
+                        
+                        <p>Donald was not a member of the Smith family, and neither she nor Jared felt comfortable taking him in.</p>
+                        
+                        <p>Sending Donald to an orphanage as he awaited Warren&#39;s release from prison was perhaps the kindest thing they could do for the boy.</p>
+                        
+                        <p>Susan&#39;s final trial hearing occurred a couple of days later.</p>
+                        
+                        <p>Shane and Natalie attended the hearing while Jared accompanied Harrison in his ward.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                  </script>
+                </div>
+                
+                
+                
                 <div class="text-block" data-block="3">
-                    
-                    <p>Jared had an iPad in hand, allowing Harrison to watch the trial proceedings from his hospital bed.</p>
-                    
-                    <p>A smug smile appeared on Harrison&#39;s face as he watched a haggard Susan on the screen.</p>
-                    
-                    <p>Natalie was surprised at Susan&#39;s drastic transformation. She looks so disheveled after two days in jail.</p>
-                    
-                    <p>Susan was still dressed to the nines when Natalie saw her last during her arrest. Gone was her impeccable get-up, replaced by handcuffs, shackles, and prison scrubs. Susan&#39;s locks had been snipped off as well, leaving behind messy tufts of hair. She&#39;s even got some white hair now. I guess people do age faster under tragic circumstances.</p>
-                    
-                    <p>After a while, the judge began announcing Susan&#39;s crime from his bench.</p>
-                    
-                    <p>Susan took the stand, flanked by a female police officer on either side. She kept her head lowered as her body trembled. Her demeanor spoke volumes about her fear of her impending verdict.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Jared had an iPad in hand, allowing Harrison to watch the trial proceedings from his hospital bed.</p>
+                        
+                        <p>A smug smile appeared on Harrison&#39;s face as he watched a haggard Susan on the screen.</p>
+                        
+                        <p>Natalie was surprised at Susan&#39;s drastic transformation. She looks so disheveled after two days in jail.</p>
+                        
+                        <p>Susan was still dressed to the nines when Natalie saw her last during her arrest. Gone was her impeccable get-up, replaced by handcuffs, shackles, and prison scrubs. Susan&#39;s locks had been snipped off as well, leaving behind messy tufts of hair. She&#39;s even got some white hair now. I guess people do age faster under tragic circumstances.</p>
+                        
+                        <p>After a while, the judge began announcing Susan&#39;s crime from his bench.</p>
+                        
+                        <p>Susan took the stand, flanked by a female police officer on either side. She kept her head lowered as her body trembled. Her demeanor spoke volumes about her fear of her impending verdict.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Natalie sighed. “Why do such things when you&#39;re terrified of the outcome?”</p>
+                        
+                        <p>At one side, Shane watched on in silence. She deserves it.</p>
+                        
+                        <p>His thoughts drifted to Sam, who would have his final hearing just a few days later. He&#39;ll probably be shivering in fear like Susan now.</p>
+                        
+                        <p>The seconds ticked by, and the judge eventually struck his gavel, marking the end of Susan&#39;s trial.</p>
+                        
+                        <p>Thanks to a wealth of evidence and the Garcia family&#39;s intervention, Susan was sentenced to death.</p>
+                        
+                        <p>She crumpled to the floor in shock when she heard the verdict.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2491,73 +2564,57 @@
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>Natalie sighed. “Why do such things when you&#39;re terrified of the outcome?”</p>
-                    
-                    <p>At one side, Shane watched on in silence. She deserves it.</p>
-                    
-                    <p>His thoughts drifted to Sam, who would have his final hearing just a few days later. He&#39;ll probably be shivering in fear like Susan now.</p>
-                    
-                    <p>The seconds ticked by, and the judge eventually struck his gavel, marking the end of Susan&#39;s trial.</p>
-                    
-                    <p>Thanks to a wealth of evidence and the Garcia family&#39;s intervention, Susan was sentenced to death.</p>
-                    
-                    <p>She crumpled to the floor in shock when she heard the verdict.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="5">
-                    
-                    <p>Natalie shot her a cold glance before leaving the courtroom with Shane.</p>
-                    
-                    <p>Once they were outside, she tilted her face up to the sky.</p>
-                    
-                    <p>The sky that had been gray and cloudy when they arrived for the trial earlier was now exceptionally sunny. Was it because Susan finally got what she deserved?</p>
-                    
-                    <p>Natalie took a deep breath as a single tear of joy trickled down her cheek. “Mom, I did it. I finally brought Susan to justice.”</p>
-                    
-                    <p>Shane patted her back comfortingly. “Mom will be delighted to know this.”</p>
-                    
-                    <p>“I want to visit her,” Natalie sniffed, choking on her tears.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Natalie shot her a cold glance before leaving the courtroom with Shane.</p>
+                        
+                        <p>Once they were outside, she tilted her face up to the sky.</p>
+                        
+                        <p>The sky that had been gray and cloudy when they arrived for the trial earlier was now exceptionally sunny. Was it because Susan finally got what she deserved?</p>
+                        
+                        <p>Natalie took a deep breath as a single tear of joy trickled down her cheek. “Mom, I did it. I finally brought Susan to justice.”</p>
+                        
+                        <p>Shane patted her back comfortingly. “Mom will be delighted to know this.”</p>
+                        
+                        <p>“I want to visit her,” Natalie sniffed, choking on her tears.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Shane nodded and agreed immediately. “Of course.”</p>
-                    
-                    <p>They got a bunch of flowers from a nearby florist before driving to the cemetery.</p>
-                    
-                    <p>When they reached there, Natalie insisted on heading into the cemetery without Shane.</p>
-                    
-                    <p>After all, there were some things she needed to say to her mom alone.</p>
-                    
-                    <p>Shane respected her wishes and did not protest her decision. Thus, he waited in the car patiently for her.</p>
-                    
-                    <p>About an hour later, Natalie returned to the car.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Shane nodded and agreed immediately. “Of course.”</p>
+                        
+                        <p>They got a bunch of flowers from a nearby florist before driving to the cemetery.</p>
+                        
+                        <p>When they reached there, Natalie insisted on heading into the cemetery without Shane.</p>
+                        
+                        <p>After all, there were some things she needed to say to her mom alone.</p>
+                        
+                        <p>Shane respected her wishes and did not protest her decision. Thus, he waited in the car patiently for her.</p>
+                        
+                        <p>About an hour later, Natalie returned to the car.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
@@ -4275,6 +4332,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4361,9 +4498,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4427,7 +4565,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4472,13 +4609,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4535,21 +4669,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

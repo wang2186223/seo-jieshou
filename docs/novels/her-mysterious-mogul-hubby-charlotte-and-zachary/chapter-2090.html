@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.707128",
-        "dateModified": "2026-07-17T17:08:32.707128",
+        "datePublished": "2026-07-19T13:10:29.623827",
+        "dateModified": "2026-07-19T13:10:29.623827",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,30 +2422,88 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2190</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Hahaha!”</p>
-                    
-                    <p>Federico lifted his own cup to clink it against Danrique&#39;s before downing his drink. “Danrique,</p>
-                    
-                    <p>Francesca&#39;s naive, and I like it. Please do inform me when you marry her in the future. I&#39;ll surely send</p>
-                    
-                    <p>you a big gift!”</p>
-                    
-                    <p>“Of course I will.” Danrique nodded, smiling. “But... Prince Charlie has dealt quite a heavy blow.”</p>
-                    
-                    <p>The change in the topic came quickly and suddenly.</p>
-                    
-                    <p>Even Francesca was taken aback by it.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Hahaha!”</p>
+                        
+                        <p>Federico lifted his own cup to clink it against Danrique&#39;s before downing his drink. “Danrique,</p>
+                        
+                        <p>Francesca&#39;s naive, and I like it. Please do inform me when you marry her in the future. I&#39;ll surely send</p>
+                        
+                        <p>you a big gift!”</p>
+                        
+                        <p>“Of course I will.” Danrique nodded, smiling. “But... Prince Charlie has dealt quite a heavy blow.”</p>
+                        
+                        <p>The change in the topic came quickly and suddenly.</p>
+                        
+                        <p>Even Francesca was taken aback by it.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>So Danrique has already made public the news when I was being hunted down. I didn&#39;t know.</p>
+                        
+                        <p>Federico&#39;s expression stiffened, and it took him a while before he recollected himself and said with an</p>
+                        
+                        <p>apologetic smile, “Charlie didn&#39;t know who Francesca was at the start. If he had, he wouldn&#39;t have laid</p>
+                        
+                        <p>a finger on her. Of course, this is partially my fault for not keeping an eye on him. My apologies.”</p>
+                        
+                        <p>“How can I possibly blame you for this, Your Majesty?” A confused look crept upon Danrique&#39;s face.</p>
+                        
+                        <p>“There is one thing I don&#39;t quite understand. I&#39;ve already announced her identity while she was getting</p>
+                        
+                        <p>hunted down. I don&#39;t know why the media in Danontand was so slow with their news coverage. That</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>must be why you didn&#39;t know about her identity.”</p>
+                        
+                        <p>“I really didn&#39;t,” Federico insisted grimly. “If I knew who she was, I wouldn&#39;t have allowed Charlie to do</p>
+                        
+                        <p>this. Most importantly, I heard the news from the outside saying that you were going to get engaged to</p>
+                        
+                        <p>the daughter of the Atkinsons.” Federico sighed. “Do you see the misunderstanding? Pah! The media is</p>
+                        
+                        <p>evil to have spread nonsense as news. I&#39;m old too, and I was slow to realize that there were issues with</p>
+                        
+                        <p>the news coverage.”</p>
+                        
+                        <p>“You&#39;re right, Your Majesty.” Danrique nodded. “It&#39;s understandable that you didn&#39;t understand the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2421,74 +2514,26 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>So Danrique has already made public the news when I was being hunted down. I didn&#39;t know.</p>
-                    
-                    <p>Federico&#39;s expression stiffened, and it took him a while before he recollected himself and said with an</p>
-                    
-                    <p>apologetic smile, “Charlie didn&#39;t know who Francesca was at the start. If he had, he wouldn&#39;t have laid</p>
-                    
-                    <p>a finger on her. Of course, this is partially my fault for not keeping an eye on him. My apologies.”</p>
-                    
-                    <p>“How can I possibly blame you for this, Your Majesty?” A confused look crept upon Danrique&#39;s face.</p>
-                    
-                    <p>“There is one thing I don&#39;t quite understand. I&#39;ve already announced her identity while she was getting</p>
-                    
-                    <p>hunted down. I don&#39;t know why the media in Danontand was so slow with their news coverage. That</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>must be why you didn&#39;t know about her identity.”</p>
-                    
-                    <p>“I really didn&#39;t,” Federico insisted grimly. “If I knew who she was, I wouldn&#39;t have allowed Charlie to do</p>
-                    
-                    <p>this. Most importantly, I heard the news from the outside saying that you were going to get engaged to</p>
-                    
-                    <p>the daughter of the Atkinsons.” Federico sighed. “Do you see the misunderstanding? Pah! The media is</p>
-                    
-                    <p>evil to have spread nonsense as news. I&#39;m old too, and I was slow to realize that there were issues with</p>
-                    
-                    <p>the news coverage.”</p>
-                    
-                    <p>“You&#39;re right, Your Majesty.” Danrique nodded. “It&#39;s understandable that you didn&#39;t understand the</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="3">
-                    
-                    <p>news. However, Prince Charlie seems young, and he has his own account on the internet. It looks like</p>
-                    
-                    <p>a party there too. He can&#39;t have not known about her, can he?”</p>
-                    
-                    <p>“I...”</p>
-                    
-                    <p>“At the end of the day, he just doesn&#39;t have much respect for me.”</p>
-                    
-                    <p>Danrique heaved a deep sigh, seemingly resigned. “Young people nowadays are fearless once they</p>
-                    
-                    <p>have someone backing them up. They are nothing like us, who had to pave a way ourselves with our</p>
-                    
-                    <p>own hands.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>news. However, Prince Charlie seems young, and he has his own account on the internet. It looks like</p>
+                        
+                        <p>a party there too. He can&#39;t have not known about her, can he?”</p>
+                        
+                        <p>“I...”</p>
+                        
+                        <p>“At the end of the day, he just doesn&#39;t have much respect for me.”</p>
+                        
+                        <p>Danrique heaved a deep sigh, seemingly resigned. “Young people nowadays are fearless once they</p>
+                        
+                        <p>have someone backing them up. They are nothing like us, who had to pave a way ourselves with our</p>
+                        
+                        <p>own hands.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2500,76 +2545,88 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>With that, Danrique crushed the teacup in his hand.</p>
-                    
-                    <p>Crunch! The teacup shattered, and the tea sprayed all over him.</p>
-                    
-                    <p>Francesca jumped in fright before whipping her head to the side to stare at him in surprise.</p>
-                    
-                    <p>“It&#39;s true that Charlie wasn&#39;t thinking clearly when he did this,” Federico hastily blurted out. “The lesson</p>
-                    
-                    <p>you&#39;ve taught him today has been a good one. Otherwise, he would have continued being a conceited</p>
-                    
-                    <p>boy.”</p>
-                    
-                    <p>Federico was skillful with his words, too, for he had managed to draw a line between him and Charlie&#39;s</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>With that, Danrique crushed the teacup in his hand.</p>
+                        
+                        <p>Crunch! The teacup shattered, and the tea sprayed all over him.</p>
+                        
+                        <p>Francesca jumped in fright before whipping her head to the side to stare at him in surprise.</p>
+                        
+                        <p>“It&#39;s true that Charlie wasn&#39;t thinking clearly when he did this,” Federico hastily blurted out. “The lesson</p>
+                        
+                        <p>you&#39;ve taught him today has been a good one. Otherwise, he would have continued being a conceited</p>
+                        
+                        <p>boy.”</p>
+                        
+                        <p>Federico was skillful with his words, too, for he had managed to draw a line between him and Charlie&#39;s</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>incident in seconds.</p>
-                    
-                    <p>That lesson Danrique had taught Charlie—that arm he had broken—would take at least three to five</p>
-                    
-                    <p>months before it could fully recover.</p>
-                    
-                    <p>Furthermore, Danrique had broken Charlie&#39;s arm in front of the king and the other princes.</p>
-                    
-                    <p>Federico was already offering Danrique due respect to not have commented on it at all.</p>
-                    
-                    <p>What else does he want?</p>
-                    
-                    <p>He then pointed at Gordon and asked, “Gordon, did I ask you to do anything?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>incident in seconds.</p>
+                        
+                        <p>That lesson Danrique had taught Charlie—that arm he had broken—would take at least three to five</p>
+                        
+                        <p>months before it could fully recover.</p>
+                        
+                        <p>Furthermore, Danrique had broken Charlie&#39;s arm in front of the king and the other princes.</p>
+                        
+                        <p>Federico was already offering Danrique due respect to not have commented on it at all.</p>
+                        
+                        <p>What else does he want?</p>
+                        
+                        <p>He then pointed at Gordon and asked, “Gordon, did I ask you to do anything?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>“No, sir.”</p>
-                    
-                    <p>The king was dumbfounded by that, his eyes as wide as saucers as he stared at Danrique. Content of</p>
-                    
-                    <p>Drаmovels.cоm</p>
-                    
-                    <p>In contrast, Francesca was thrilled.</p>
-                    
-                    <p>“Idiot,” Danrique began cursing at Gordon. “How dare you hurt His Majesty&#39;s grandson? Pay with your</p>
-                    
-                    <p>life!”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>“No, sir.”</p>
+                        
+                        <p>The king was dumbfounded by that, his eyes as wide as saucers as he stared at Danrique. Content of</p>
+                        
+                        <p>Drаmovels.cоm</p>
+                        
+                        <p>In contrast, Francesca was thrilled.</p>
+                        
+                        <p>“Idiot,” Danrique began cursing at Gordon. “How dare you hurt His Majesty&#39;s grandson? Pay with your</p>
+                        
+                        <p>life!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
@@ -4287,6 +4344,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4373,9 +4510,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4439,7 +4577,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4484,13 +4621,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4547,21 +4681,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

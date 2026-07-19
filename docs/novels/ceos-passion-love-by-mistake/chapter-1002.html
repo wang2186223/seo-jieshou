@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.254752",
-        "dateModified": "2026-07-17T17:08:29.254752",
+        "datePublished": "2026-07-19T13:10:25.066528",
+        "dateModified": "2026-07-19T13:10:25.066528",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,48 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1013</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>To Catherine, it wasn&#39;t such a bad idea to divorce Sam and then leave with her dowry, living a free life on her own.</p>
-                    
-                    <p>“There&#39;s something else I want to ask you. Do you know why my mother handed Wells Properties over to Sean?” asked Shane.</p>
-                    
-                    <p>In fact, he was counting on her not knowing a thing about it since she was not close with Sean.</p>
-                    
-                    <p>Despite that, he still thought he would try asking anyway.</p>
-                    
-                    <p>“Wells Properties?” Catherine looked visibly shocked. “Did your mother really give it to Sean?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>To Catherine, it wasn&#39;t such a bad idea to divorce Sam and then leave with her dowry, living a free life on her own.</p>
+                        
+                        <p>“There&#39;s something else I want to ask you. Do you know why my mother handed Wells Properties over to Sean?” asked Shane.</p>
+                        
+                        <p>In fact, he was counting on her not knowing a thing about it since she was not close with Sean.</p>
+                        
+                        <p>Despite that, he still thought he would try asking anyway.</p>
+                        
+                        <p>“Wells Properties?” Catherine looked visibly shocked. “Did your mother really give it to Sean?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Seeing her reaction, Shane instantly clenched his fists, and his voice sounded strained as he went on, “You knew about it, didn&#39;t you?”</p>
-                    
-                    <p>“N-Not really, but years ago, your mother did mention once that she intended to do that. I&#39;d always assumed she wasn&#39;t serious about it, as Wells Properties was her dowry. I can&#39;t believe she actually did it.” A look of jealousy washed over Catherine&#39;s face as she spoke.</p>
-                    
-                    <p>Shane&#39;s fists tightened. “And what was her reason for doing so?”</p>
-                    
-                    <p>“I don&#39;t know for sure, but my guess is that Sean held a special place in her heart.” Catherine looked straight at Shane as she went on, “You grew up with your grandfather, and then you went overseas and received exclusive education there. In other words, you barely spent time with the other Thompsons and weren&#39;t around for over ten years. During those times, it was Sean who had stayed by your mother&#39;s side. She treated him like her own, and he was very close with her...”</p>
-                    
-                    <p>Catherine trailed off, thinking about how Sean used to see Lindsay Loehr as his mother, even though it was Catherine herself who had given birth to him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Seeing her reaction, Shane instantly clenched his fists, and his voice sounded strained as he went on, “You knew about it, didn&#39;t you?”</p>
+                        
+                        <p>“N-Not really, but years ago, your mother did mention once that she intended to do that. I&#39;d always assumed she wasn&#39;t serious about it, as Wells Properties was her dowry. I can&#39;t believe she actually did it.” A look of jealousy washed over Catherine&#39;s face as she spoke.</p>
+                        
+                        <p>Shane&#39;s fists tightened. “And what was her reason for doing so?”</p>
+                        
+                        <p>“I don&#39;t know for sure, but my guess is that Sean held a special place in her heart.” Catherine looked straight at Shane as she went on, “You grew up with your grandfather, and then you went overseas and received exclusive education there. In other words, you barely spent time with the other Thompsons and weren&#39;t around for over ten years. During those times, it was Sean who had stayed by your mother&#39;s side. She treated him like her own, and he was very close with her...”</p>
+                        
+                        <p>Catherine trailed off, thinking about how Sean used to see Lindsay Loehr as his mother, even though it was Catherine herself who had given birth to him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2440,61 +2477,21 @@
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>A dazed expression appeared in Shane&#39;s eyes as he listened to Catherine&#39;s explanation.</p>
-                    
-                    <p>So it was Sean who had stayed by Dad and Mom&#39;s side when I was gone. Did his presence give Mom the chance to experience the joy of being a parent? Is that why she decided to give him Wells Properties?</p>
-                    
-                    <p>Going by this line of logic, the whole matter was beginning to make sense to him.</p>
-                    
-                    <p>Seeing Shane completely lost in his thoughts, Catherine stated, “Well, I think that&#39;s all I have to say, Shane. Now, about my divorce—”</p>
-                    
-                    <p>“I approve of it, and I&#39;ll have Silas send you to the prison to meet Sam soon,” Shane responded in a slightly hoarse voice, lowering his gaze slightly.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Once she heard that, Catherine&#39;s face broke into a smile. “Thank you, Shane. Thank you so much.”</p>
-                    
-                    <p>Without another word, Shane turned and left, heading toward his room.</p>
-                    
-                    <p>The two children were on the carpet, surrounded by their toys, and Silas was having the time of his life playing with them.</p>
-                    
-                    <p>As for Natalie, she was standing at the window with her back toward him, talking on the phone.</p>
-                    
-                    <p>“Daddy!” shouted Connor with a smile, followed by Sharon.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Hearing that, Natalie hung up and turned around, smiling at him. “You&#39;re back.”</p>
-                    
-                    <p>Nodding, Shane strode toward her.</p>
-                    
-                    <p>Silas immediately leaped to his feet. “I&#39;ll make a move, Mr. Shane.”</p>
-                    
-                    <p>“Take the children with you, please,” Shane ordered.</p>
-                    
-                    <p>Knowing Shane wanted a chance to talk to Natalie in private, Silas nodded and left the room with the kids, closing the door behind him.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>A dazed expression appeared in Shane&#39;s eyes as he listened to Catherine&#39;s explanation.</p>
+                        
+                        <p>So it was Sean who had stayed by Dad and Mom&#39;s side when I was gone. Did his presence give Mom the chance to experience the joy of being a parent? Is that why she decided to give him Wells Properties?</p>
+                        
+                        <p>Going by this line of logic, the whole matter was beginning to make sense to him.</p>
+                        
+                        <p>Seeing Shane completely lost in his thoughts, Catherine stated, “Well, I think that&#39;s all I have to say, Shane. Now, about my divorce—”</p>
+                        
+                        <p>“I approve of it, and I&#39;ll have Silas send you to the prison to meet Sam soon,” Shane responded in a slightly hoarse voice, lowering his gaze slightly.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2505,45 +2502,105 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>Natalie and Shane were left alone in the room.</p>
-                    
-                    <p>Walking to his side, Natalie asked, “What&#39;s wrong? Bad mood?”</p>
-                    
-                    <p>Shane remained silent.</p>
-                    
-                    <p>He was indeed in a bad mood, and his heart was heavy with guilt.</p>
-                    
-                    <p>“Did Mrs. Thompson say something?” Pulling his hand, she led him to the bed and sat down with him.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Once she heard that, Catherine&#39;s face broke into a smile. “Thank you, Shane. Thank you so much.”</p>
+                        
+                        <p>Without another word, Shane turned and left, heading toward his room.</p>
+                        
+                        <p>The two children were on the carpet, surrounded by their toys, and Silas was having the time of his life playing with them.</p>
+                        
+                        <p>As for Natalie, she was standing at the window with her back toward him, talking on the phone.</p>
+                        
+                        <p>“Daddy!” shouted Connor with a smile, followed by Sharon.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Hearing that, Natalie hung up and turned around, smiling at him. “You&#39;re back.”</p>
+                        
+                        <p>Nodding, Shane strode toward her.</p>
+                        
+                        <p>Silas immediately leaped to his feet. “I&#39;ll make a move, Mr. Shane.”</p>
+                        
+                        <p>“Take the children with you, please,” Shane ordered.</p>
+                        
+                        <p>Knowing Shane wanted a chance to talk to Natalie in private, Silas nodded and left the room with the kids, closing the door behind him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Natalie and Shane were left alone in the room.</p>
+                        
+                        <p>Walking to his side, Natalie asked, “What&#39;s wrong? Bad mood?”</p>
+                        
+                        <p>Shane remained silent.</p>
+                        
+                        <p>He was indeed in a bad mood, and his heart was heavy with guilt.</p>
+                        
+                        <p>“Did Mrs. Thompson say something?” Pulling his hand, she led him to the bed and sat down with him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Massaging his temples, Shane murmured, “I&#39;ve finally understood why my mother let Sean take over Wells Properties.”</p>
-                    
-                    <p>“And why is that?” Natalie blinked at him quizzically.</p>
-                    
-                    <p>Turning to look at her, Shane explained, “It&#39;s because she saw Sean as her son. Wells Properties was her gift to him from a mother to a son, not from an aunt to a nephew.”</p>
-                    
-                    <p>“What do you mean? Why would Mom have seen Sean as her son?” Natalie was utterly puzzled.</p>
-                    
-                    <p>Shane pursed his lips. “Do you remember I once told you that I didn&#39;t grow up by my parents&#39; side from a young age?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Massaging his temples, Shane murmured, “I&#39;ve finally understood why my mother let Sean take over Wells Properties.”</p>
+                        
+                        <p>“And why is that?” Natalie blinked at him quizzically.</p>
+                        
+                        <p>Turning to look at her, Shane explained, “It&#39;s because she saw Sean as her son. Wells Properties was her gift to him from a mother to a son, not from an aunt to a nephew.”</p>
+                        
+                        <p>“What do you mean? Why would Mom have seen Sean as her son?” Natalie was utterly puzzled.</p>
+                        
+                        <p>Shane pursed his lips. “Do you remember I once told you that I didn&#39;t grow up by my parents&#39; side from a young age?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
@@ -4261,6 +4318,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4347,9 +4484,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4413,7 +4551,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4458,13 +4595,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4521,21 +4655,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

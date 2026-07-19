@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:32.511200",
-        "dateModified": "2026-07-17T17:08:32.511200",
+        "datePublished": "2026-07-19T13:10:29.421010",
+        "dateModified": "2026-07-19T13:10:29.421010",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,64 +2422,32 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 2027</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;I&#39;m sorry. I&#39;ll take the call in the stairwell.&#34;</p>
-                    
-                    <p>Seeing that the call was from Lincoln, Anthony could not let it go unanswered.</p>
-                    
-                    <p>Fortunately, the stairwell was nearby, only several meters away.</p>
-                    
-                    <p>He stood in the stairwell, leaving the door ajar so he could still see the entrance to the operating</p>
-                    
-                    <p>theater.</p>
-                    
-                    <p>Using his foot to prop the door open, he answered the call using his Bluetooth earpiece. &#34;Hello?&#34;</p>
-                    
-                    <p>&#34;Anthony, do you keep a copy of the foundation&#39;s accounts from all these years? Send me an electronic</p>
-                    
-                    <p>copy at once,&#34; Lincoln said, his tone urgent.</p>
-                    
-                    <p>&#34;I do. I&#39;ll send it to you right away.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>Anthony lowered his head to search for the document on his phone, failing to notice that a figure in</p>
-                    
-                    <p>white had seized the chance to slip into the operating theater while he was distracted.</p>
-                    
-                    <p>&#34;Ms. Felch, are you saying that Lacy was poisoned?&#34;</p>
-                    
-                    <p>Inside the operating theater, Matthias was staring at Francesca in shock.</p>
-                    
-                    <p>That was what Francesca concluded after conducting a series of examinations and injury analyses.</p>
-                    
-                    <p>&#34;Yes. Lacy&#39;s condition had already stabilized, but someone poisoned her wound, causing this sudden</p>
-                    
-                    <p>illness.&#34;</p>
-                    
-                    <p>&#34;That can&#39;t be! Lacy has been at our hospital all this time. There are nurses watching over her every</p>
-                    
-                    <p>day, so how could she get poisoned? Who would do that to a child?&#34; Matthias exclaimed in utter</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;I&#39;m sorry. I&#39;ll take the call in the stairwell.&#34;</p>
+                        
+                        <p>Seeing that the call was from Lincoln, Anthony could not let it go unanswered.</p>
+                        
+                        <p>Fortunately, the stairwell was nearby, only several meters away.</p>
+                        
+                        <p>He stood in the stairwell, leaving the door ajar so he could still see the entrance to the operating</p>
+                        
+                        <p>theater.</p>
+                        
+                        <p>Using his foot to prop the door open, he answered the call using his Bluetooth earpiece. &#34;Hello?&#34;</p>
+                        
+                        <p>&#34;Anthony, do you keep a copy of the foundation&#39;s accounts from all these years? Send me an electronic</p>
+                        
+                        <p>copy at once,&#34; Lincoln said, his tone urgent.</p>
+                        
+                        <p>&#34;I do. I&#39;ll send it to you right away.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2455,86 +2458,30 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>disbelief.</p>
-                    
-                    <p>He had no idea that Francesca was the legendary Francesco. Anthony had only told the hospital she</p>
-                    
-                    <p>was a professional surgeon and presented various certificates.</p>
-                    
-                    <p>On top of that, Lacy was one of the children at the orphanage. That was why the hospital had allowed</p>
-                    
-                    <p>Francesca to operate on Lacy.</p>
-                    
-                    <p>In a calm tone, Francesca answered, &#34;I don&#39;t have the answer to those questions. We can only let the</p>
-                    
-                    <p>police investigate. I&#39;m going to treat Lacy now. Could you please ask Anthony to bring my bag here,</p>
-                    
-                    <p>then help me prepare some medicine?”</p>
-                    
-                    <p>&#34;Okay.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Just as one of the nurses was about to go out and look for Anthony, she suddenly noticed a figure</p>
-                    
-                    <p>wearing a white coat, mask, and spectacles at the doors. The person was staring at Francesca</p>
-                    
-                    <p>menacingly.</p>
-                    
-                    <p>There was no nametag on the person&#39;s chest, and the nurse had no idea when the person had</p>
-                    
-                    <p>entered.</p>
-                    
-                    <p>&#34;Are you a doctor? May I know who you are?&#34; the nurse asked subconsciously.</p>
-                    
-                    <p>Everyone turned around when they heard her voice. At that moment, that doctor suddenly whipped out</p>
-                    
-                    <p>a gun with a silencer and fired once directly at the nurse&#39;s chest.</p>
-                    
-                    <p>The nurse collapsed to the floor immediately.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>&#34;Ahh—&#34;</p>
-                    
-                    <p>Before the other nurses could cry out, the person fired multiple consecutive shots at them, each killing</p>
-                    
-                    <p>its target. They did not even have time to struggle before they stopped breathing.</p>
-                    
-                    <p>Matthias&#39; eyes widened in fear as he stood rooted to the spot.</p>
-                    
-                    <p>The attacker was about to shoot Matthias when Francesca suddenly grabbed a scalpel and flung it at</p>
-                    
-                    <p>the assassin.</p>
-                    
-                    <p>The scalpel cut the stranger&#39;s hand, and the person&#39;s arm lowered. However, the gun did not fall to the</p>
-                    
-                    <p>floor.</p>
-                    
-                    <p>Francesca snatched up a pair of scissors at once and prepared to stab the person again.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Anthony lowered his head to search for the document on his phone, failing to notice that a figure in</p>
+                        
+                        <p>white had seized the chance to slip into the operating theater while he was distracted.</p>
+                        
+                        <p>&#34;Ms. Felch, are you saying that Lacy was poisoned?&#34;</p>
+                        
+                        <p>Inside the operating theater, Matthias was staring at Francesca in shock.</p>
+                        
+                        <p>That was what Francesca concluded after conducting a series of examinations and injury analyses.</p>
+                        
+                        <p>&#34;Yes. Lacy&#39;s condition had already stabilized, but someone poisoned her wound, causing this sudden</p>
+                        
+                        <p>illness.&#34;</p>
+                        
+                        <p>&#34;That can&#39;t be! Lacy has been at our hospital all this time. There are nurses watching over her every</p>
+                        
+                        <p>day, so how could she get poisoned? Who would do that to a child?&#34; Matthias exclaimed in utter</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2545,26 +2492,64 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>Alas, the attacker raised the gun again and trained it on Francesca&#39;s head. &#34;I&#39;d like to see whether your</p>
-                    
-                    <p>scissors are faster than my bullet.&#34;</p>
-                    
-                    <p>It was a woman&#39;s voice.</p>
-                    
-                    <p>&#34;You&#39;re not Chrono.&#34;</p>
-                    
-                    <p>Francesca frowned as she fixed her gaze on the woman.</p>
-                    
-                    <p>The latter looked about the same height as Chrono.</p>
-                    
-                    <p>&#34;Follow me!&#34; the woman commanded sharply.</p>
-                    
-                    <p>Realization dawned on Francesca. &#34;You&#39;re his accomplice? What do you want?&#34;</p>
-                    
-                    <p>Furious, the woman growled in a low voice, &#34;I told you to follow me!&#34; Updated at Drаmanovels.com</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>disbelief.</p>
+                        
+                        <p>He had no idea that Francesca was the legendary Francesco. Anthony had only told the hospital she</p>
+                        
+                        <p>was a professional surgeon and presented various certificates.</p>
+                        
+                        <p>On top of that, Lacy was one of the children at the orphanage. That was why the hospital had allowed</p>
+                        
+                        <p>Francesca to operate on Lacy.</p>
+                        
+                        <p>In a calm tone, Francesca answered, &#34;I don&#39;t have the answer to those questions. We can only let the</p>
+                        
+                        <p>police investigate. I&#39;m going to treat Lacy now. Could you please ask Anthony to bring my bag here,</p>
+                        
+                        <p>then help me prepare some medicine?”</p>
+                        
+                        <p>&#34;Okay.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Just as one of the nurses was about to go out and look for Anthony, she suddenly noticed a figure</p>
+                        
+                        <p>wearing a white coat, mask, and spectacles at the doors. The person was staring at Francesca</p>
+                        
+                        <p>menacingly.</p>
+                        
+                        <p>There was no nametag on the person&#39;s chest, and the nurse had no idea when the person had</p>
+                        
+                        <p>entered.</p>
+                        
+                        <p>&#34;Are you a doctor? May I know who you are?&#34; the nurse asked subconsciously.</p>
+                        
+                        <p>Everyone turned around when they heard her voice. At that moment, that doctor suddenly whipped out</p>
+                        
+                        <p>a gun with a silencer and fired once directly at the nurse&#39;s chest.</p>
+                        
+                        <p>The nurse collapsed to the floor immediately.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2575,21 +2560,93 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>The woman ignored Francesca and shifted her aim, pointing the gun directly at Lacy on the hospital</p>
-                    
-                    <p>bed.</p>
-                    
-                    <p>&#34;In that case, get up and follow me while wheeling the kid.&#34;</p>
-                    
-                    <p>The woman spoke Ustranasion fluently, and her tone was firm.</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;Ahh—&#34;</p>
+                        
+                        <p>Before the other nurses could cry out, the person fired multiple consecutive shots at them, each killing</p>
+                        
+                        <p>its target. They did not even have time to struggle before they stopped breathing.</p>
+                        
+                        <p>Matthias&#39; eyes widened in fear as he stood rooted to the spot.</p>
+                        
+                        <p>The attacker was about to shoot Matthias when Francesca suddenly grabbed a scalpel and flung it at</p>
+                        
+                        <p>the assassin.</p>
+                        
+                        <p>The scalpel cut the stranger&#39;s hand, and the person&#39;s arm lowered. However, the gun did not fall to the</p>
+                        
+                        <p>floor.</p>
+                        
+                        <p>Francesca snatched up a pair of scissors at once and prepared to stab the person again.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Alas, the attacker raised the gun again and trained it on Francesca&#39;s head. &#34;I&#39;d like to see whether your</p>
+                        
+                        <p>scissors are faster than my bullet.&#34;</p>
+                        
+                        <p>It was a woman&#39;s voice.</p>
+                        
+                        <p>&#34;You&#39;re not Chrono.&#34;</p>
+                        
+                        <p>Francesca frowned as she fixed her gaze on the woman.</p>
+                        
+                        <p>The latter looked about the same height as Chrono.</p>
+                        
+                        <p>&#34;Follow me!&#34; the woman commanded sharply.</p>
+                        
+                        <p>Realization dawned on Francesca. &#34;You&#39;re his accomplice? What do you want?&#34;</p>
+                        
+                        <p>Furious, the woman growled in a low voice, &#34;I told you to follow me!&#34; Updated at Drаmanovels.com</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>The woman ignored Francesca and shifted her aim, pointing the gun directly at Lacy on the hospital</p>
+                        
+                        <p>bed.</p>
+                        
+                        <p>&#34;In that case, get up and follow me while wheeling the kid.&#34;</p>
+                        
+                        <p>The woman spoke Ustranasion fluently, and her tone was firm.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
@@ -4307,6 +4364,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4393,9 +4530,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4459,7 +4597,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4504,13 +4641,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4567,21 +4701,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

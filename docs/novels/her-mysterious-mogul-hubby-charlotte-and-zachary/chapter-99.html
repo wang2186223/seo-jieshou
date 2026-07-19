@@ -995,20 +995,19 @@
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:30.262542",
-        "dateModified": "2026-07-17T17:08:30.262542",
+        "datePublished": "2026-07-19T13:10:26.153648",
+        "dateModified": "2026-07-19T13:10:26.153648",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,34 +2422,32 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 99</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>&#34;Hey!” Zachary pushed her hand away and shouted, &#34;Don&#39;t touch it!”</p>
-                    
-                    <p>&#34;Why?” Charlotte was yet more suspicious. &#34;Why can&#39;t you let me see your face?&#34;</p>
-                    
-                    <p>&#34;Of course not!&#34; Zachary replied indifferently, &#34;If you see my face, I&#39;ll be threatened by you for a lifetime.</p>
-                    
-                    <p>There&#39;ll be no end to this!&#34;</p>
-                    
-                    <p>&#34;Hmm...&#34; Charlotte was rendered speechless.</p>
-                    
-                    <p>Since she recognized the tattoo on his waist and forced him to sign the debt repayment agreement, he</p>
-                    
-                    <p>had to pay her fifty percent of his income every day.</p>
-                    
-                    <p>Half of the agreed period had passed and he would soon be free.</p>
-                    
-                    <p>After all, since she didn&#39;t know what he looked like, she wouldn&#39;t be able to recognize him even if they</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>&#34;Hey!” Zachary pushed her hand away and shouted, &#34;Don&#39;t touch it!”</p>
+                        
+                        <p>&#34;Why?” Charlotte was yet more suspicious. &#34;Why can&#39;t you let me see your face?&#34;</p>
+                        
+                        <p>&#34;Of course not!&#34; Zachary replied indifferently, &#34;If you see my face, I&#39;ll be threatened by you for a lifetime.</p>
+                        
+                        <p>There&#39;ll be no end to this!&#34;</p>
+                        
+                        <p>&#34;Hmm...&#34; Charlotte was rendered speechless.</p>
+                        
+                        <p>Since she recognized the tattoo on his waist and forced him to sign the debt repayment agreement, he</p>
+                        
+                        <p>had to pay her fifty percent of his income every day.</p>
+                        
+                        <p>Half of the agreed period had passed and he would soon be free.</p>
+                        
+                        <p>After all, since she didn&#39;t know what he looked like, she wouldn&#39;t be able to recognize him even if they</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2426,145 +2459,29 @@
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>did meet each other again the next time.</p>
-                    
-                    <p>However, if she had seen his face, they might be blockaded forever in this tangled mess...</p>
-                    
-                    <p>What he said seems to make sense...Maybe I&#39;m thinking too much.</p>
-                    
-                    <p>&#34;If it wasn&#39;t for that night over four years ago and the fact that I&#39;d caused you to experience a</p>
-                    
-                    <p>miscarriage, I would never get involved with you!&#34; Zachary added genuinely.</p>
-                    
-                    <p>He was drugged that night and had sex with her in a trance-like state. Plus, he was like a beast in bed</p>
-                    
-                    <p>that night, without the slightest tenderness...</p>
-                    
-                    <p>He could still remember the pitiable way she cried for mercy underneath himself. Everytime he thought</p>
-                    
-                    <p>about that, he could feel his blood boiling</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>and he would be incredibly guilty...</p>
-                    
-                    <p>&#34;Well, at least you&#39;ve got some conscience.&#34;</p>
-                    
-                    <p>The doubt within Charlotte was somewhat cleared. On second thought, how could such a prestigious</p>
-                    
-                    <p>man like Zachary pretend to be the gigolo at Sultry Night and cosplayed with her? Furthermore, he just</p>
-                    
-                    <p>chased me off his car. It wasn&#39;t really possible for him to change a car and into another outfit just to pick</p>
-                    
-                    <p>me up. Even if time allowed, his temper wouldn&#39;t.</p>
-                    
-                    <p>&#34;Don&#39;t call me for such matters anymore next time.&#34; Zachary changed the subject. &#34;I&#39;m not your</p>
-                    
-                    <p>bodyguard; why should I come when you ask me to?&#34;</p>
-                    
-                    <p>&#34;I didn&#39;t want to trouble you either but other than you, I have no one else whom I can seek help from.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>Charlotte looked helpless.</p>
-                    
-                    <p>&#34;Where&#39;s your boyfriend?&#34; Zachary asked in a detached manner.</p>
-                    
-                    <p>&#34;I don’t have one.&#34; Charlotte rolled her eyes.</p>
-                    
-                    <p>&#34;No?&#34; Zachary was suspicious. You can never tell truths from lies when it comes to dealing with this</p>
-                    
-                    <p>woman.</p>
-                    
-                    <p>&#34;Your question reminded me...&#34;</p>
-                    
-                    <p>Charlotte remembered that she had lied to Zachary that she had a boyfriend. If he found out that she</p>
-                    
-                    <p>was bluffing, she would be screwed. Hence, I have to make this act a real deal...</p>
-                    
-                    <p>Thinking of that, Charlotte tugged at Zachary and said, &#34;Gigolo, be my boyfriend!&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Zachary was speechless.</p>
-                    
-                    <p>He was utterly baffled. What in the world is happening?Just an hour ago, this ungrateful wretch</p>
-                    
-                    <p>rejected me- The prominent, distinguished man that I amlAnd now she&#39;s taking the initiative and wants</p>
-                    
-                    <p>a gigolo to be her boyfriend?</p>
-                    
-                    <p>Is she crazy or just stupid?</p>
-                    
-                    <p>&#34;Don&#39;t be anxious. I mean &#39;pretend&#39;,” Charlotte explained. &#34;Someone has been pursuing me recently</p>
-                    
-                    <p>and to put him off, I told him that I had a boyfriend...&#34;</p>
-                    
-                    <p>Zachary squinted dangerously. Very well, this ingrate of a woman was bluffing me?</p>
-                    
-                    <p>&#34;Gigolo, do me another favor, won&#39;t you?&#34; Charlotte tugged at his sleeves and fawned. &#34;I&#39;ll buy you</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>more supplements...&#34; &#34;There&#39;s no need!&#34; Zachary cut her off. &#34;Who is courting you?&#34;</p>
-                    
-                    <p>&#34;You don&#39;t need to know the details,&#34; Charlotte answered casually. &#34;You&#39;re only pretending; it isn&#39;t real</p>
-                    
-                    <p>after all.&#34;</p>
-                    
-                    <p>&#34;That&#39;s not fair.&#34; Zachary was taking advantage of the situation and continued, &#34;What if that guy is a</p>
-                    
-                    <p>vicious man and seeks revenge on me?&#34;</p>
-                    
-                    <p>&#34;He&#39;s my boss.&#34; Finally, Charlotte answered honestly.</p>
-                    
-                    <p>&#34;How can that be possible? Your boss likes you?&#34; Zachary shot a scornful glance at her. &#34;With this</p>
-                    
-                    <p>stunted look of yours, is he blind?&#34;</p>
-                    
-                    <p>Charlotte was at a loss for words.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>did meet each other again the next time.</p>
+                        
+                        <p>However, if she had seen his face, they might be blockaded forever in this tangled mess...</p>
+                        
+                        <p>What he said seems to make sense...Maybe I&#39;m thinking too much.</p>
+                        
+                        <p>&#34;If it wasn&#39;t for that night over four years ago and the fact that I&#39;d caused you to experience a</p>
+                        
+                        <p>miscarriage, I would never get involved with you!&#34; Zachary added genuinely.</p>
+                        
+                        <p>He was drugged that night and had sex with her in a trance-like state. Plus, he was like a beast in bed</p>
+                        
+                        <p>that night, without the slightest tenderness...</p>
+                        
+                        <p>He could still remember the pitiable way she cried for mercy underneath himself. Everytime he thought</p>
+                        
+                        <p>about that, he could feel his blood boiling</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2575,29 +2492,169 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>She was convinced then that she had really overthought because Zachary would never give her such a</p>
-                    
-                    <p>remark.</p>
-                    
-                    <p>&#34;Besides, you should be very grateful to have such an exceptional admirer like your boss. Why are you</p>
-                    
-                    <p>rejecting him?&#34; Zachary asked her on purpose.</p>
-                    
-                    <p>&#34;I can’t handle such a big shot...&#34; Charlotte heaved a sigh. &#34;He&#39;s only looking for novelty now. Once the</p>
-                    
-                    <p>glam wears off and he grows tired of me, I&#39;ll be abandoned. To whom should I cry and complain then?</p>
-                    
-                    <p>Plus, with his unpredictable and fickle mood changes, he&#39;s just like a creep. Who knows what kind of</p>
-                    
-                    <p>fetish he&#39;ll have? It&#39;s better that I keep away from him. I&#39;m still too young to die!&#34;</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>and he would be incredibly guilty...</p>
+                        
+                        <p>&#34;Well, at least you&#39;ve got some conscience.&#34;</p>
+                        
+                        <p>The doubt within Charlotte was somewhat cleared. On second thought, how could such a prestigious</p>
+                        
+                        <p>man like Zachary pretend to be the gigolo at Sultry Night and cosplayed with her? Furthermore, he just</p>
+                        
+                        <p>chased me off his car. It wasn&#39;t really possible for him to change a car and into another outfit just to pick</p>
+                        
+                        <p>me up. Even if time allowed, his temper wouldn&#39;t.</p>
+                        
+                        <p>&#34;Don&#39;t call me for such matters anymore next time.&#34; Zachary changed the subject. &#34;I&#39;m not your</p>
+                        
+                        <p>bodyguard; why should I come when you ask me to?&#34;</p>
+                        
+                        <p>&#34;I didn&#39;t want to trouble you either but other than you, I have no one else whom I can seek help from.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Charlotte looked helpless.</p>
+                        
+                        <p>&#34;Where&#39;s your boyfriend?&#34; Zachary asked in a detached manner.</p>
+                        
+                        <p>&#34;I don’t have one.&#34; Charlotte rolled her eyes.</p>
+                        
+                        <p>&#34;No?&#34; Zachary was suspicious. You can never tell truths from lies when it comes to dealing with this</p>
+                        
+                        <p>woman.</p>
+                        
+                        <p>&#34;Your question reminded me...&#34;</p>
+                        
+                        <p>Charlotte remembered that she had lied to Zachary that she had a boyfriend. If he found out that she</p>
+                        
+                        <p>was bluffing, she would be screwed. Hence, I have to make this act a real deal...</p>
+                        
+                        <p>Thinking of that, Charlotte tugged at Zachary and said, &#34;Gigolo, be my boyfriend!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Zachary was speechless.</p>
+                        
+                        <p>He was utterly baffled. What in the world is happening?Just an hour ago, this ungrateful wretch</p>
+                        
+                        <p>rejected me- The prominent, distinguished man that I amlAnd now she&#39;s taking the initiative and wants</p>
+                        
+                        <p>a gigolo to be her boyfriend?</p>
+                        
+                        <p>Is she crazy or just stupid?</p>
+                        
+                        <p>&#34;Don&#39;t be anxious. I mean &#39;pretend&#39;,” Charlotte explained. &#34;Someone has been pursuing me recently</p>
+                        
+                        <p>and to put him off, I told him that I had a boyfriend...&#34;</p>
+                        
+                        <p>Zachary squinted dangerously. Very well, this ingrate of a woman was bluffing me?</p>
+                        
+                        <p>&#34;Gigolo, do me another favor, won&#39;t you?&#34; Charlotte tugged at his sleeves and fawned. &#34;I&#39;ll buy you</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>more supplements...&#34; &#34;There&#39;s no need!&#34; Zachary cut her off. &#34;Who is courting you?&#34;</p>
+                        
+                        <p>&#34;You don&#39;t need to know the details,&#34; Charlotte answered casually. &#34;You&#39;re only pretending; it isn&#39;t real</p>
+                        
+                        <p>after all.&#34;</p>
+                        
+                        <p>&#34;That&#39;s not fair.&#34; Zachary was taking advantage of the situation and continued, &#34;What if that guy is a</p>
+                        
+                        <p>vicious man and seeks revenge on me?&#34;</p>
+                        
+                        <p>&#34;He&#39;s my boss.&#34; Finally, Charlotte answered honestly.</p>
+                        
+                        <p>&#34;How can that be possible? Your boss likes you?&#34; Zachary shot a scornful glance at her. &#34;With this</p>
+                        
+                        <p>stunted look of yours, is he blind?&#34;</p>
+                        
+                        <p>Charlotte was at a loss for words.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>She was convinced then that she had really overthought because Zachary would never give her such a</p>
+                        
+                        <p>remark.</p>
+                        
+                        <p>&#34;Besides, you should be very grateful to have such an exceptional admirer like your boss. Why are you</p>
+                        
+                        <p>rejecting him?&#34; Zachary asked her on purpose.</p>
+                        
+                        <p>&#34;I can’t handle such a big shot...&#34; Charlotte heaved a sigh. &#34;He&#39;s only looking for novelty now. Once the</p>
+                        
+                        <p>glam wears off and he grows tired of me, I&#39;ll be abandoned. To whom should I cry and complain then?</p>
+                        
+                        <p>Plus, with his unpredictable and fickle mood changes, he&#39;s just like a creep. Who knows what kind of</p>
+                        
+                        <p>fetish he&#39;ll have? It&#39;s better that I keep away from him. I&#39;m still too young to die!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
+                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
                   </script>
                 </div>
                 
@@ -4315,6 +4372,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4401,9 +4538,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4467,7 +4605,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4512,13 +4649,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4575,21 +4709,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:31.372397",
-        "dateModified": "2026-07-17T17:08:31.372397",
+        "datePublished": "2026-07-19T13:10:27.755981",
+        "dateModified": "2026-07-19T13:10:27.755981",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,64 +2422,100 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1083</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Charlotte growled through gritted teeth, “That Sharon Blackwood really knows how to pick a place.</p>
-                    
-                    <p>Does she think that I won&#39;t go there because that is a place of misery for me? Is that why she&#39;s taking</p>
-                    
-                    <p>Ellie over?”</p>
-                    
-                    <p>“She probably thinks that the most dangerous place is the most unsuspecting place,” replied Zachary</p>
-                    
-                    <p>while frowning.</p>
-                    
-                    <p>“How did you know which flight they were taking? My team couldn&#39;t learn anything,” said Charlotte</p>
-                    
-                    <p>curiously.</p>
-                    
-                    <p>“Peter called me,” shared Zachary, “Sharon&#39;s subordinates beat him up and locked him up for a month,</p>
-                    
-                    <p>but they released him some time ago. Olivia called him and deliberately leaked the information to him.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Charlotte growled through gritted teeth, “That Sharon Blackwood really knows how to pick a place.</p>
+                        
+                        <p>Does she think that I won&#39;t go there because that is a place of misery for me? Is that why she&#39;s taking</p>
+                        
+                        <p>Ellie over?”</p>
+                        
+                        <p>“She probably thinks that the most dangerous place is the most unsuspecting place,” replied Zachary</p>
+                        
+                        <p>while frowning.</p>
+                        
+                        <p>“How did you know which flight they were taking? My team couldn&#39;t learn anything,” said Charlotte</p>
+                        
+                        <p>curiously.</p>
+                        
+                        <p>“Peter called me,” shared Zachary, “Sharon&#39;s subordinates beat him up and locked him up for a month,</p>
+                        
+                        <p>but they released him some time ago. Olivia called him and deliberately leaked the information to him.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>“It&#39;s as I suspected. That Olivia is such an idiot. Why didn&#39;t she tell me everything right away? I could&#39;ve</p>
-                    
-                    <p>rescued Peter ages ago, and she didn&#39;t need to be threatened like that,” complained Charlotte angrily.</p>
-                    
-                    <p>“She was blinded by her emotions,” commented Zachary, who was more rational. He added, “They&#39;re</p>
-                    
-                    <p>boarding the plane now. We must hurry.”</p>
-                    
-                    <p>“Call the airport and have them stop the plane!” urged Charlotte quickly.</p>
-                    
-                    <p>“They&#39;re still doing the paperwork...”</p>
-                    
-                    <p>“Paperwork? What the f*ck? I will f*cking kill them if anything were to happen to my daughter!” roared</p>
-                    
-                    <p>Charlotte who was about to lose her mind in a fit of anger.</p>
-                    
-                    <p>“We&#39;re not in Erihal, so no special privileges for the rich here,” reminded Zachary, “I&#39;ve contacted the</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>“It&#39;s as I suspected. That Olivia is such an idiot. Why didn&#39;t she tell me everything right away? I could&#39;ve</p>
+                        
+                        <p>rescued Peter ages ago, and she didn&#39;t need to be threatened like that,” complained Charlotte angrily.</p>
+                        
+                        <p>“She was blinded by her emotions,” commented Zachary, who was more rational. He added, “They&#39;re</p>
+                        
+                        <p>boarding the plane now. We must hurry.”</p>
+                        
+                        <p>“Call the airport and have them stop the plane!” urged Charlotte quickly.</p>
+                        
+                        <p>“They&#39;re still doing the paperwork...”</p>
+                        
+                        <p>“Paperwork? What the f*ck? I will f*cking kill them if anything were to happen to my daughter!” roared</p>
+                        
+                        <p>Charlotte who was about to lose her mind in a fit of anger.</p>
+                        
+                        <p>“We&#39;re not in Erihal, so no special privileges for the rich here,” reminded Zachary, “I&#39;ve contacted the</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>police in T Nation since we already know the destination. Don&#39;t worry...”</p>
+                        
+                        <p>Charlotte didn&#39;t bother listening. She hurried toward the boarding gate.</p>
+                        
+                        <p>Sharon and the others had already boarded the plane by then.</p>
+                        
+                        <p>She sighed a breath of relief. The plane is about to depart, and I can finally leave this place safely With</p>
+                        
+                        <p>the girl here, both the Nacht family and the Lindberg family will not dare to come after me.</p>
+                        
+                        <p>Sharon had already planned ahead. She would stay in Coldbridge for a while and go somewhere else</p>
+                        
+                        <p>once the dust settled down.</p>
+                        
+                        <p>“You&#39;ll let us go once we reach T Nation, right?” asked Olivia fearfully.</p>
+                        
+                        <p>“Shut up!”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2455,86 +2526,64 @@
                 
                 
                 
-                <div class="text-block" data-block="2">
-                    
-                    <p>police in T Nation since we already know the destination. Don&#39;t worry...”</p>
-                    
-                    <p>Charlotte didn&#39;t bother listening. She hurried toward the boarding gate.</p>
-                    
-                    <p>Sharon and the others had already boarded the plane by then.</p>
-                    
-                    <p>She sighed a breath of relief. The plane is about to depart, and I can finally leave this place safely With</p>
-                    
-                    <p>the girl here, both the Nacht family and the Lindberg family will not dare to come after me.</p>
-                    
-                    <p>Sharon had already planned ahead. She would stay in Coldbridge for a while and go somewhere else</p>
-                    
-                    <p>once the dust settled down.</p>
-                    
-                    <p>“You&#39;ll let us go once we reach T Nation, right?” asked Olivia fearfully.</p>
-                    
-                    <p>“Shut up!”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="3">
-                    
-                    <p>Sharon scolded angrily, but she soon became alert and scanned her surroundings. She was worried</p>
-                    
-                    <p>that others would overhear her.</p>
-                    
-                    <p>“There is no point in bringing us along,” said Olivia, “If Ellie is with you, both Mr. Nacht and Charlotte</p>
-                    
-                    <p>will not relent and will keep coming after you. You might as well just let us go because then they won&#39;t</p>
-                    
-                    <p>be bothered to look for you anymore.</p>
-                    
-                    <p>“Do you take me as a fool?” scolded Sharon while frowning, “I killed Mrs. Berry, and I humiliated</p>
-                    
-                    <p>Charlotte in the past. There is no way she&#39;d let me go. They&#39;d just kill me if I don&#39;t have the kid as</p>
-                    
-                    <p>leverage.”</p>
-                    
-                    <p>“But...”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Sharon scolded angrily, but she soon became alert and scanned her surroundings. She was worried</p>
+                        
+                        <p>that others would overhear her.</p>
+                        
+                        <p>“There is no point in bringing us along,” said Olivia, “If Ellie is with you, both Mr. Nacht and Charlotte</p>
+                        
+                        <p>will not relent and will keep coming after you. You might as well just let us go because then they won&#39;t</p>
+                        
+                        <p>be bothered to look for you anymore.</p>
+                        
+                        <p>“Do you take me as a fool?” scolded Sharon while frowning, “I killed Mrs. Berry, and I humiliated</p>
+                        
+                        <p>Charlotte in the past. There is no way she&#39;d let me go. They&#39;d just kill me if I don&#39;t have the kid as</p>
+                        
+                        <p>leverage.”</p>
+                        
+                        <p>“But...”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>“Shut up!” threatened Sharon while pointing a finger at Olivia, “I will kill you if you keep bullsh*tting like</p>
-                    
-                    <p>that!”</p>
-                    
-                    <p>Olivia didn&#39;t dare to say another word. She simply held on to Ellie tightly.</p>
-                    
-                    <p>“Miss, is the kid asleep?” asked the stewardess, “Please put her in her seat and buckle her up. The</p>
-                    
-                    <p>plane is about to take off.”</p>
-                    
-                    <p>“Okay, got it,” replied Sharon politely before she put on a skin-deep grin and turn to Olivia, “Do as the</p>
-                    
-                    <p>lady said! Stop hugging her like this.</p>
-                    
-                    <p>You&#39;re getting her all sweaty.”</p>
-                    
-                    <p>Olivia didn&#39;t dare to complain. She slowly set Ellie down on the seat and buckle her up.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>“Shut up!” threatened Sharon while pointing a finger at Olivia, “I will kill you if you keep bullsh*tting like</p>
+                        
+                        <p>that!”</p>
+                        
+                        <p>Olivia didn&#39;t dare to say another word. She simply held on to Ellie tightly.</p>
+                        
+                        <p>“Miss, is the kid asleep?” asked the stewardess, “Please put her in her seat and buckle her up. The</p>
+                        
+                        <p>plane is about to take off.”</p>
+                        
+                        <p>“Okay, got it,” replied Sharon politely before she put on a skin-deep grin and turn to Olivia, “Do as the</p>
+                        
+                        <p>lady said! Stop hugging her like this.</p>
+                        
+                        <p>You&#39;re getting her all sweaty.”</p>
+                        
+                        <p>Olivia didn&#39;t dare to complain. She slowly set Ellie down on the seat and buckle her up.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
                 <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
@@ -2546,50 +2595,58 @@
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Just then, the effects of the sleeping medication started to wear off. Ellie moved about and looked like</p>
-                    
-                    <p>she was about to wake up.</p>
-                    
-                    <p>Sharon&#39;s expression stiffened. She waited until the stewardess had left before she demanded, “What&#39;s</p>
-                    
-                    <p>going on? Didn&#39;t I tell you to give her a heavy dosage? Why is she waking up?”</p>
-                    
-                    <p>“She has been sick, so she can&#39;t take too many sleeping pills,” answered Olivia softly, “The dosage I</p>
-                    
-                    <p>gave her is already beyond the limit.”</p>
-                    
-                    <p>“What the hell am I supposed to do if she wakes up and makes a fuss? Feed her more medicine now!”</p>
-                    
-                    <p>demanded Sharon with a grouchy expression on.</p>
-                    
-                    <p>“No, I can&#39;t. She can&#39;t take it anymore,” replied Olivia while shaking her head nervously.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Just then, the effects of the sleeping medication started to wear off. Ellie moved about and looked like</p>
+                        
+                        <p>she was about to wake up.</p>
+                        
+                        <p>Sharon&#39;s expression stiffened. She waited until the stewardess had left before she demanded, “What&#39;s</p>
+                        
+                        <p>going on? Didn&#39;t I tell you to give her a heavy dosage? Why is she waking up?”</p>
+                        
+                        <p>“She has been sick, so she can&#39;t take too many sleeping pills,” answered Olivia softly, “The dosage I</p>
+                        
+                        <p>gave her is already beyond the limit.”</p>
+                        
+                        <p>“What the hell am I supposed to do if she wakes up and makes a fuss? Feed her more medicine now!”</p>
+                        
+                        <p>demanded Sharon with a grouchy expression on.</p>
+                        
+                        <p>“No, I can&#39;t. She can&#39;t take it anymore,” replied Olivia while shaking her head nervously.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="6">
-                    
-                    <p>Everyone started looking over because they thought that those passengers were weird.</p>
-                    
-                    <p>Sharon glared evilly at Olivia. The former didn&#39;t complain anymore because she didn&#39;t want to attract</p>
-                    
-                    <p>any attention. She simply took two sleeping pills out of her possession and ground them into dust</p>
-                    
-                    <p>before adding them to a bottle of water. After that, she shook the bottle and tried to feed it to Ellie.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Everyone started looking over because they thought that those passengers were weird.</p>
+                        
+                        <p>Sharon glared evilly at Olivia. The former didn&#39;t complain anymore because she didn&#39;t want to attract</p>
+                        
+                        <p>any attention. She simply took two sleeping pills out of her possession and ground them into dust</p>
+                        
+                        <p>before adding them to a bottle of water. After that, she shook the bottle and tried to feed it to Ellie.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
                   </script>
                 </div>
                 
@@ -4307,6 +4364,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4393,9 +4530,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4459,7 +4597,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4504,13 +4641,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4567,21 +4701,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

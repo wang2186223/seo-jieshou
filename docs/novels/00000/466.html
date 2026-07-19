@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2387,160 +2422,58 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 466</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>......</p>
-                    
-                    <p>Evelyn stepped into Tonggowan&#39;s headquarters again.</p>
-                    
-                    <p>Melissa Lee&#39;s threat echoed in her ears: &#34;If you can&#39;t handle even this interview, how dare you call yourself Imperial Media&#39;s top graduate?&#34;</p>
-                    
-                    <p>Nigel&#39;s eyes gleamed with hunger when he saw her. &#34;Reporter Sinclair! At last!&#34;</p>
-                    
-                    <p>He lunged forward.</p>
-                    
-                    <p>Evelyn sidestepped with practiced ease.</p>
-                    
-                    <p>Nigel&#39;s expression suddenly twisted. &#34;You—?!&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>......</p>
+                        
+                        <p>Evelyn stepped into Tonggowan&#39;s headquarters again.</p>
+                        
+                        <p>Melissa Lee&#39;s threat echoed in her ears: &#34;If you can&#39;t handle even this interview, how dare you call yourself Imperial Media&#39;s top graduate?&#34;</p>
+                        
+                        <p>Nigel&#39;s eyes gleamed with hunger when he saw her. &#34;Reporter Sinclair! At last!&#34;</p>
+                        
+                        <p>He lunged forward.</p>
+                        
+                        <p>Evelyn sidestepped with practiced ease.</p>
+                        
+                        <p>Nigel&#39;s expression suddenly twisted. &#34;You—?!&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
+                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>&#34;Surprised to see me?&#34; Scarlet Archer strode into the office in her high heels. Her gaze swept over the ostentatious bouquet of crimson roses on the desk, lips curling in mockery. &#34;My, Nigel. Since when did you learn romance?&#34;</p>
-                    
-                    <p>She settled onto the sofa, crossing her legs. &#34;Miss Sinclair, shall we begin the interview? Where&#39;s your equipment? Bring it all out.&#34;</p>
-                    
-                    <p>&#34;What are you doing here?&#34; Nigel Norton slammed his hands on the desk and stood. &#34;Scarlet, tomorrow is the last day of our cooling-off period. If you want this divorce finalized, don&#39;t cause trouble now!&#34;</p>
-                    
-                    <p>Their marriage had long been dead in all but name. Scarlet couldn&#39;t wait to end it.</p>
-                    
-                    <p>But Nigel had begun having second thoughts.</p>
-                    
-                    <p>Tonggowan Manufacturing was the empire they&#39;d built together from nothing. By law, Scarlet was entitled to half their assets. After months of negotiations, she&#39;d already compromised—settling for just one-third.</p>
-                    
-                    <p>Yet even that concession left Nigel seething with resentment after signing.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
-                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Tomorrow marked the end of the mandatory waiting period, requiring both parties to appear at the civil affairs bureau. But Nigel had already decided to renege.</p>
-                    
-                    <p>He wouldn&#39;t give a single penny to this &#34;haggard old woman.&#34;</p>
-                    
-                    <p>Scarlet had seen through him. She&#39;d been gathering evidence of Nigel&#39;s marital misconduct to file for contested divorce.</p>
-                    
-                    <p>That day she&#39;d intercepted Evelyn outside the office building...</p>
-                    
-                    <p>&#34;Get out!&#34; Nigel roared, face purpling with rage. &#34;You&#39;re not welcome here! We&#39;re divorced—this is my office now!&#34;</p>
-                    
-                    <p>Scarlet smirked. &#34;Even divorced, I own half this company. Or have you forgotten who secured the loans to start this business? Thinking of burning bridges now? Dream on.&#34;</p>
-                    
-                    <p>The words struck a nerve. Nigel hated when Scarlet brought up the past.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="3">
-                    
-                    <p>He grabbed her by the hair, dragging her toward the door.</p>
-                    
-                    <p>&#34;Ah!&#34; Scarlet cried out in pain. &#34;Nigel, let go!&#34;</p>
-                    
-                    <p>Scarlet collapsed to the floor. Still enraged, Nigel kicked her prone form.</p>
-                    
-                    <p>He snatched a marble paperweight from the desk, raising it overhead.</p>
-                    
-                    <p>&#34;Stop!&#34; Evelyn lunged forward, intercepting the weapon. &#34;Are you trying to kill her?&#34;</p>
-                    
-                    <p>Nigel moved with practiced brutality. Evelyn had tried several times to intervene unsuccessfully.</p>
-                    
-                    <p>&#34;Don&#39;t worry, Miss Sinclair,&#34; Nigel&#39;s expression shifted unnaturally to a smile. &#34;Just disciplining my wife. Domestic matter.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Scarlet lay curled on the floor, motionless.</p>
-                    
-                    <p>Evelyn retreated two steps, dialing emergency services. &#34;I&#39;m reporting a domestic violence case at Tonggowan Manufacturing—&#34;</p>
-                    
-                    <p>&#34;What are you doing?&#34; Nigel roared, charging at her.</p>
-                    
-                    <p>Scarlet suddenly wrapped both arms around his leg, anchoring him.</p>
-                    
-                    <p>&#34;I&#39;m now under threat too!&#34; Evelyn shouted into the phone.</p>
-                    
-                    <p>&#34;Who dares touch me in Kingsbury?&#34; Nigel kicked viciously at Scarlet. &#34;Tonggowan is a top taxpayer! Little reporter, you&#39;d better cancel that call now!&#34;</p>
-                    
-                    <p>Hanging up, Evelyn seized her chance—a precise knife-hand strike to Nigel&#39;s throat.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>He crumpled, gagging and clutching his neck.</p>
-                    
-                    <p>Evelyn helped Scarlet up and hurried toward the exit. Her years with the Kingsleys had included self-defense training. A throat strike was lethal force—she&#39;d shown restraint.</p>
-                    
-                    <p>At the door, Evelyn suddenly turned back, retrieving a hidden camera from the filing cabinet.</p>
-                    
-                    <p>&#34;Stop them!&#34; Nigel rasped.</p>
-                    
-                    <p>Tonggowan security blocked them at the main entrance. As tensions mounted, police sirens approached.</p>
-                    
-                    <p>Evelyn handed the camera to the officers. &#34;Evidence is here. We need medical examination now.&#34;</p>
-                    
-                    <p>Nigel actually tried snatching the camera, stopped by police.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>&#34;Surprised to see me?&#34; Scarlet Archer strode into the office in her high heels. Her gaze swept over the ostentatious bouquet of crimson roses on the desk, lips curling in mockery. &#34;My, Nigel. Since when did you learn romance?&#34;</p>
+                        
+                        <p>She settled onto the sofa, crossing her legs. &#34;Miss Sinclair, shall we begin the interview? Where&#39;s your equipment? Bring it all out.&#34;</p>
+                        
+                        <p>&#34;What are you doing here?&#34; Nigel Norton slammed his hands on the desk and stood. &#34;Scarlet, tomorrow is the last day of our cooling-off period. If you want this divorce finalized, don&#39;t cause trouble now!&#34;</p>
+                        
+                        <p>Their marriage had long been dead in all but name. Scarlet couldn&#39;t wait to end it.</p>
+                        
+                        <p>But Nigel had begun having second thoughts.</p>
+                        
+                        <p>Tonggowan Manufacturing was the empire they&#39;d built together from nothing. By law, Scarlet was entitled to half their assets. After months of negotiations, she&#39;d already compromised—settling for just one-third.</p>
+                        
+                        <p>Yet even that concession left Nigel seething with resentment after signing.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2551,23 +2484,147 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>&#34;Officer, this is a family matter,&#34; he forced a smile. &#34;Marital spats happen. But her—&#34; He pointed at Evelyn. &#34;She assaulted me! The footage proves it! I&#39;ll sue for battery!&#34;</p>
-                    
-                    <p>This insignificant reporter had refused his generous offer. As a publicly traded company&#39;s CEO, he&#39;d done her a favor by even considering her. Since she wanted to play hardball, he&#39;d show no mercy.</p>
-                    
-                    <p>&#34;Be careful,&#34; Scarlet Archer whispered from her hospital bed, fingers clutching the sheets. &#34;Nigel Norton is ruthless with connections in both legal and illegal circles. Just accusing him of domestic violence won&#39;t hurt him. But now that you&#39;ve struck him, I fear retaliation...&#34;</p>
-                    
-                    <p>She knew that man too well.</p>
-                    
-                    <p>Every time she&#39;d called the police before, Nigel would play the model husband in front of officers. Then he&#39;d return home and torment her twice as badly while spreading rumors that she was a shrew.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Tomorrow marked the end of the mandatory waiting period, requiring both parties to appear at the civil affairs bureau. But Nigel had already decided to renege.</p>
+                        
+                        <p>He wouldn&#39;t give a single penny to this &#34;haggard old woman.&#34;</p>
+                        
+                        <p>Scarlet had seen through him. She&#39;d been gathering evidence of Nigel&#39;s marital misconduct to file for contested divorce.</p>
+                        
+                        <p>That day she&#39;d intercepted Evelyn outside the office building...</p>
+                        
+                        <p>&#34;Get out!&#34; Nigel roared, face purpling with rage. &#34;You&#39;re not welcome here! We&#39;re divorced—this is my office now!&#34;</p>
+                        
+                        <p>Scarlet smirked. &#34;Even divorced, I own half this company. Or have you forgotten who secured the loans to start this business? Thinking of burning bridges now? Dream on.&#34;</p>
+                        
+                        <p>The words struck a nerve. Nigel hated when Scarlet brought up the past.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>He grabbed her by the hair, dragging her toward the door.</p>
+                        
+                        <p>&#34;Ah!&#34; Scarlet cried out in pain. &#34;Nigel, let go!&#34;</p>
+                        
+                        <p>Scarlet collapsed to the floor. Still enraged, Nigel kicked her prone form.</p>
+                        
+                        <p>He snatched a marble paperweight from the desk, raising it overhead.</p>
+                        
+                        <p>&#34;Stop!&#34; Evelyn lunged forward, intercepting the weapon. &#34;Are you trying to kill her?&#34;</p>
+                        
+                        <p>Nigel moved with practiced brutality. Evelyn had tried several times to intervene unsuccessfully.</p>
+                        
+                        <p>&#34;Don&#39;t worry, Miss Sinclair,&#34; Nigel&#39;s expression shifted unnaturally to a smile. &#34;Just disciplining my wife. Domestic matter.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Scarlet lay curled on the floor, motionless.</p>
+                        
+                        <p>Evelyn retreated two steps, dialing emergency services. &#34;I&#39;m reporting a domestic violence case at Tonggowan Manufacturing—&#34;</p>
+                        
+                        <p>&#34;What are you doing?&#34; Nigel roared, charging at her.</p>
+                        
+                        <p>Scarlet suddenly wrapped both arms around his leg, anchoring him.</p>
+                        
+                        <p>&#34;I&#39;m now under threat too!&#34; Evelyn shouted into the phone.</p>
+                        
+                        <p>&#34;Who dares touch me in Kingsbury?&#34; Nigel kicked viciously at Scarlet. &#34;Tonggowan is a top taxpayer! Little reporter, you&#39;d better cancel that call now!&#34;</p>
+                        
+                        <p>Hanging up, Evelyn seized her chance—a precise knife-hand strike to Nigel&#39;s throat.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>He crumpled, gagging and clutching his neck.</p>
+                        
+                        <p>Evelyn helped Scarlet up and hurried toward the exit. Her years with the Kingsleys had included self-defense training. A throat strike was lethal force—she&#39;d shown restraint.</p>
+                        
+                        <p>At the door, Evelyn suddenly turned back, retrieving a hidden camera from the filing cabinet.</p>
+                        
+                        <p>&#34;Stop them!&#34; Nigel rasped.</p>
+                        
+                        <p>Tonggowan security blocked them at the main entrance. As tensions mounted, police sirens approached.</p>
+                        
+                        <p>Evelyn handed the camera to the officers. &#34;Evidence is here. We need medical examination now.&#34;</p>
+                        
+                        <p>Nigel actually tried snatching the camera, stopped by police.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>&#34;Officer, this is a family matter,&#34; he forced a smile. &#34;Marital spats happen. But her—&#34; He pointed at Evelyn. &#34;She assaulted me! The footage proves it! I&#39;ll sue for battery!&#34;</p>
+                        
+                        <p>This insignificant reporter had refused his generous offer. As a publicly traded company&#39;s CEO, he&#39;d done her a favor by even considering her. Since she wanted to play hardball, he&#39;d show no mercy.</p>
+                        
+                        <p>&#34;Be careful,&#34; Scarlet Archer whispered from her hospital bed, fingers clutching the sheets. &#34;Nigel Norton is ruthless with connections in both legal and illegal circles. Just accusing him of domestic violence won&#39;t hurt him. But now that you&#39;ve struck him, I fear retaliation...&#34;</p>
+                        
+                        <p>She knew that man too well.</p>
+                        
+                        <p>Every time she&#39;d called the police before, Nigel would play the model husband in front of officers. Then he&#39;d return home and torment her twice as badly while spreading rumors that she was a shrew.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
@@ -4285,6 +4342,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4371,9 +4508,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4437,7 +4575,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4482,13 +4619,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4545,21 +4679,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

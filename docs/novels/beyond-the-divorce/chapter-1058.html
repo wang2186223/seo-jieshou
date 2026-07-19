@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:27.656903",
-        "dateModified": "2026-07-17T17:08:27.656903",
+        "datePublished": "2026-07-19T13:10:23.440841",
+        "dateModified": "2026-07-19T13:10:23.440841",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,26 +2422,50 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1058</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>chapter1058</p>
-                    
-                    <p>Back at the hotel, I was too tired to move. Atlas bent down, gave me a quick look, then gently removed my shoes.</p>
-                    
-                    <p>I rolled onto the bed with a grumble, and Atlas softly suggested, &#34;Go take a shower before you sleep, okay?&#34;</p>
-                    
-                    <p>&#34;I don&#39;t want to,&#34; I replied with my eyes closed.</p>
-                    
-                    <p>Ignoring my protests, he lifted me up, undressed me, and carried me into the bathroom. I had no strength to resist, so I quickly showered then hurried back to bed.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>chapter1058</p>
+                        
+                        <p>Back at the hotel, I was too tired to move. Atlas bent down, gave me a quick look, then gently removed my shoes.</p>
+                        
+                        <p>I rolled onto the bed with a grumble, and Atlas softly suggested, &#34;Go take a shower before you sleep, okay?&#34;</p>
+                        
+                        <p>&#34;I don&#39;t want to,&#34; I replied with my eyes closed.</p>
+                        
+                        <p>Ignoring my protests, he lifted me up, undressed me, and carried me into the bathroom. I had no strength to resist, so I quickly showered then hurried back to bed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>After finishing his own shower, Atlas came out with a hairdryer to dry my hair. Looking at him, I asked, &#34;Can&#39;t we get Beatrice out first? I don&#39;t want her to suffer in there anymore.&#34;</p>
+                        
+                        <p>&#34;Don&#39;t get impatient. We need to plan this carefully. If we act hastily, it might lead to a chain reaction. We can&#39;t let them figure out what&#39;s going on. They won&#39;t stay calm for long. What happened today will put Byron on alert. I&#39;ve arranged for someone to monitor him secretly and prevent him from doing anything desperate.&#34;</p>
+                        
+                        <p>Atlas comforted me while blow-drying my hair. &#34;You wouldn&#39;t want your classmate to get out and watch everyone else get away with what they did to her, right?&#34;</p>
+                        
+                        <p>&#34;No way. Everything that belongs to her must be returned. Why does Hazelyn deserve to enjoy the Keller family&#39;s fortune? I won&#39;t agree to it, even if Beatrice does. I&#39;ve seen Beatrice&#39;s condition. She&#39;s suffering inside, chained up like a dog. Those measures are supposed to be reserved for severely ill patients, but she&#39;s just a normal person.&#34; I couldn&#39;t contain my emotions.</p>
+                        
+                        <p>&#34;Don&#39;t worry. I came here to make the authorities take this seriously and investigate it thoroughly. We can&#39;t let someone like Byron go unpunished. That would be unfair. He has no reason to be so arrogant. I believe in the impartiality of the law.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
                 <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
@@ -2417,40 +2476,22 @@
                 
                 
                 
-                <div class="text-block" data-block="1">
-                    
-                    <p>After finishing his own shower, Atlas came out with a hairdryer to dry my hair. Looking at him, I asked, &#34;Can&#39;t we get Beatrice out first? I don&#39;t want her to suffer in there anymore.&#34;</p>
-                    
-                    <p>&#34;Don&#39;t get impatient. We need to plan this carefully. If we act hastily, it might lead to a chain reaction. We can&#39;t let them figure out what&#39;s going on. They won&#39;t stay calm for long. What happened today will put Byron on alert. I&#39;ve arranged for someone to monitor him secretly and prevent him from doing anything desperate.&#34;</p>
-                    
-                    <p>Atlas comforted me while blow-drying my hair. &#34;You wouldn&#39;t want your classmate to get out and watch everyone else get away with what they did to her, right?&#34;</p>
-                    
-                    <p>&#34;No way. Everything that belongs to her must be returned. Why does Hazelyn deserve to enjoy the Keller family&#39;s fortune? I won&#39;t agree to it, even if Beatrice does. I&#39;ve seen Beatrice&#39;s condition. She&#39;s suffering inside, chained up like a dog. Those measures are supposed to be reserved for severely ill patients, but she&#39;s just a normal person.&#34; I couldn&#39;t contain my emotions.</p>
-                    
-                    <p>&#34;Don&#39;t worry. I came here to make the authorities take this seriously and investigate it thoroughly. We can&#39;t let someone like Byron go unpunished. That would be unfair. He has no reason to be so arrogant. I believe in the impartiality of the law.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
-                  </script>
-                </div>
-                
-                
-                
                 <div class="text-block" data-block="2">
-                    
-                    <p>I calmed myself and said, &#34;Speaking of which, we really have to thank Michelle. If it weren&#39;t for her and Theo&#39;s persistence in organizing a reunion, Beatrice would have been in complete darkness. She would have died in that asylum.&#34;</p>
-                    
-                    <p>I mumbled to myself, then sat up abruptly. &#34;We need to find a way for me to see Beatrice again. I need to give her hope, something to look forward to.&#34;</p>
-                    
-                    <p>When I saw Atlas&#39;s lack of response, I grabbed his hand, &#34;She&#39;s in complete darkness in there. She probably feels so helpless right now! I need to give her hope and a reason to hold on.&#34;</p>
-                    
-                    <p>Atlas embraced me and gave me a kiss. &#34;We&#39;ll figure something out. Right now, you need to rest.&#34;</p>
-                    
-                    <p>I looked at him stubbornly, saying, &#34;This is top priority. Forget about resting.&#34;</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I calmed myself and said, &#34;Speaking of which, we really have to thank Michelle. If it weren&#39;t for her and Theo&#39;s persistence in organizing a reunion, Beatrice would have been in complete darkness. She would have died in that asylum.&#34;</p>
+                        
+                        <p>I mumbled to myself, then sat up abruptly. &#34;We need to find a way for me to see Beatrice again. I need to give her hope, something to look forward to.&#34;</p>
+                        
+                        <p>When I saw Atlas&#39;s lack of response, I grabbed his hand, &#34;She&#39;s in complete darkness in there. She probably feels so helpless right now! I need to give her hope and a reason to hold on.&#34;</p>
+                        
+                        <p>Atlas embraced me and gave me a kiss. &#34;We&#39;ll figure something out. Right now, you need to rest.&#34;</p>
+                        
+                        <p>I looked at him stubbornly, saying, &#34;This is top priority. Forget about resting.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2462,39 +2503,21 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>&#34;Okay, I&#39;ll come up with a plan.&#34; Atlas had to compromise.</p>
-                    
-                    <p>He put the hairdryer back in the bathroom and got into bed, where willingly nestled into his arms. J rambled on, &#34;Why does she have a father like that? He&#39;s insane! can&#39;t believe someone like him exists...&#34;</p>
-                    
-                    <p>Soon, I drifted into dreamland.</p>
-                    
-                    <p>The next day, I woke up after 8 a.m. and was surprised when I saw the time. I quickly sat up. &#34;Why didn&#39;t you wake me?&#34; I looked at Atlas, who was in the room looking at his laptop.</p>
-                    
-                    <p>&#34;You were exhausted, and you were sleeping so soundly,&#34; he explained, closing his laptop and turning toward me. &#34;Freshen up. We&#39;re going for breakfast.&#34;</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>&#34;What about that thing I mentioned?&#34; I asked Atlas anxiously, afraid he wouldn&#39;t agree to let me visit Beatrice again.</p>
-                    
-                    <p>&#34;At ten o&#39;clock, there will be a comprehensive inspection by the health department at the hospital,&#34; Atlas said confidently. &#34;You&#39;ll go with them.&#34;</p>
-                    
-                    <p>I jumped up, hugged his neck, and exclaimed, &#34;Baby, you&#39;re amazing! I knew you&#39;d find a way.&#34;</p>
-                    
-                    <p>He smiled charmingly, patted my buttocks, and said, &#34;You little troublemaker. If I hadn&#39;t agreed to this, would you have willingly gone back to Foswood?&#34;</p>
-                    
-                    <p>I laughed, flirtatiously swaying in his arms.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>&#34;Okay, I&#39;ll come up with a plan.&#34; Atlas had to compromise.</p>
+                        
+                        <p>He put the hairdryer back in the bathroom and got into bed, where willingly nestled into his arms. J rambled on, &#34;Why does she have a father like that? He&#39;s insane! can&#39;t believe someone like him exists...&#34;</p>
+                        
+                        <p>Soon, I drifted into dreamland.</p>
+                        
+                        <p>The next day, I woke up after 8 a.m. and was surprised when I saw the time. I quickly sat up. &#34;Why didn&#39;t you wake me?&#34; I looked at Atlas, who was in the room looking at his laptop.</p>
+                        
+                        <p>&#34;You were exhausted, and you were sleeping so soundly,&#34; he explained, closing his laptop and turning toward me. &#34;Freshen up. We&#39;re going for breakfast.&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2505,18 +2528,22 @@
                 
                 
                 
-                <div class="text-block" data-block="5">
-                    
-                    <p>He continued in an indulgent tone, &#34;If you don&#39;t freshen up, we won&#39;t have time for breakfast.&#34;</p>
-                    
-                    <p>I quickly released him and rushed</p>
-                    
-                    <p>into the bathroom to wash up. While</p>
-                    
-                    <p>I was freshening up, I teased, &#34;Fortunately, your wife is a natural beauty and doesn&#39;t need makeup. She can go out without any fuss. Otherwise, how could she enchant everyone around her?&#34;</p>
-                    
-                    <p>He approached, looking at me. &#34;Really? Why don&#39;t you show me just how enchanting you are?&#34;</p>
-                    
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>&#34;What about that thing I mentioned?&#34; I asked Atlas anxiously, afraid he wouldn&#39;t agree to let me visit Beatrice again.</p>
+                        
+                        <p>&#34;At ten o&#39;clock, there will be a comprehensive inspection by the health department at the hospital,&#34; Atlas said confidently. &#34;You&#39;ll go with them.&#34;</p>
+                        
+                        <p>I jumped up, hugged his neck, and exclaimed, &#34;Baby, you&#39;re amazing! I knew you&#39;d find a way.&#34;</p>
+                        
+                        <p>He smiled charmingly, patted my buttocks, and said, &#34;You little troublemaker. If I hadn&#39;t agreed to this, would you have willingly gone back to Foswood?&#34;</p>
+                        
+                        <p>I laughed, flirtatiously swaying in his arms.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
@@ -2527,21 +2554,51 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>I giggled, dodging his gaze, and quickly finished freshening up. Then we went downstairs for breakfast.</p>
-                    
-                    <p>Atlas and Arnold would draw too much attention, so they couldn&#39;t some with me. I went with Eleanor instead.</p>
-                    
-                    <p>Worried that I might wander off, Atlas repeatedly reminded me to be cautious, find an alternative if I couldn&#39;t get close, and not to act recklessly or alert anyone.</p>
-                    
-                    <p>I nodded solemnly and put on the white coat that had been prepared in advance before heading downstairs.</p>
-                    
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>He continued in an indulgent tone, &#34;If you don&#39;t freshen up, we won&#39;t have time for breakfast.&#34;</p>
+                        
+                        <p>I quickly released him and rushed</p>
+                        
+                        <p>into the bathroom to wash up. While</p>
+                        
+                        <p>I was freshening up, I teased, &#34;Fortunately, your wife is a natural beauty and doesn&#39;t need makeup. She can go out without any fuss. Otherwise, how could she enchant everyone around her?&#34;</p>
+                        
+                        <p>He approached, looking at me. &#34;Really? Why don&#39;t you show me just how enchanting you are?&#34;</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>I giggled, dodging his gaze, and quickly finished freshening up. Then we went downstairs for breakfast.</p>
+                        
+                        <p>Atlas and Arnold would draw too much attention, so they couldn&#39;t some with me. I went with Eleanor instead.</p>
+                        
+                        <p>Worried that I might wander off, Atlas repeatedly reminded me to be cautious, find an alternative if I couldn&#39;t get close, and not to act recklessly or alert anyone.</p>
+                        
+                        <p>I nodded solemnly and put on the white coat that had been prepared in advance before heading downstairs.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
+                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
                   </script>
                 </div>
                 
@@ -4259,6 +4316,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4345,9 +4482,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4411,7 +4549,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4456,13 +4593,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4519,21 +4653,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
         
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
+        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:28.984730",
-        "dateModified": "2026-07-17T17:08:28.984730",
+        "datePublished": "2026-07-19T13:10:24.799969",
+        "dateModified": "2026-07-19T13:10:24.799969",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,76 +2422,54 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 762</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>“Natalie is with Stanley now?” Shane questioned coldly.</p>
-                    
-                    <p>Jackson nodded. “Uh-huh. She&#39;s in the hospital where he works. I saw her going to the Neurology Department just now. She should be here for him. Do you want to...”</p>
-                    
-                    <p>However, before he could finish his sentence, the caller on the other side had hung up the call. Staring at the screen of his phone, Jackson&#39;s lips unwittingly twitched.</p>
-                    
-                    <p>He should be here soon.</p>
-                    
-                    <p>Jackson smirked as he could hardly wait for Shane to arrive.</p>
-                    
-                    <p>As Shane was rushing to the hospital, Stanley was sending Natalie to the radiology department for a CT scan of her brain.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>“Natalie is with Stanley now?” Shane questioned coldly.</p>
+                        
+                        <p>Jackson nodded. “Uh-huh. She&#39;s in the hospital where he works. I saw her going to the Neurology Department just now. She should be here for him. Do you want to...”</p>
+                        
+                        <p>However, before he could finish his sentence, the caller on the other side had hung up the call. Staring at the screen of his phone, Jackson&#39;s lips unwittingly twitched.</p>
+                        
+                        <p>He should be here soon.</p>
+                        
+                        <p>Jackson smirked as he could hardly wait for Shane to arrive.</p>
+                        
+                        <p>As Shane was rushing to the hospital, Stanley was sending Natalie to the radiology department for a CT scan of her brain.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>He wanted to read her concealed memories right away, but at the same time, he was worried if she had any cancerous growth in her brain. Therefore, before he hypnotized her, he decided to have a routine examination first.</p>
-                    
-                    <p>After he received the CT film, he went back to his office to take a look at it.</p>
-                    
-                    <p>At that time, Natalie was sitting opposite him with her hands clasped tightly on her lap. “Stanley, how is it? Is there anything wrong with me? Is there a tumor?”</p>
-                    
-                    <p>She had heard that recurrent headaches could be a sign of a brain tumor.</p>
-                    
-                    <p>If it was a benign growth, it could be surgically removed; but if it was malignant, it could grow back after the surgery.</p>
-                    
-                    <p>As the thought of having brain cancer crossed her mind, her heart sank, and her hands turned clammy.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
-                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>I&#39;m not afraid of dying, but how about my kids?</p>
-                    
-                    <p>“Don&#39;t worry. You&#39;re fine. There&#39;s nothing abnormal in your brain,” Stanley said gently, putting down the film in his hands.</p>
-                    
-                    <p>Upon hearing the good news, she could not help but lean closer, her eyes lighting up. “Really? There&#39;s no tumor - zero, nothing, nada?”</p>
-                    
-                    <p>“Yes. Trust me.” He chuckled in amusement.</p>
-                    
-                    <p>“I trust you, of course. I&#39;m just overwhelmed and relieved at the same time now. I thought I had brain cancer.”</p>
-                    
-                    <p>Tears of joy began to well up in her eyes as she said that.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>He wanted to read her concealed memories right away, but at the same time, he was worried if she had any cancerous growth in her brain. Therefore, before he hypnotized her, he decided to have a routine examination first.</p>
+                        
+                        <p>After he received the CT film, he went back to his office to take a look at it.</p>
+                        
+                        <p>At that time, Natalie was sitting opposite him with her hands clasped tightly on her lap. “Stanley, how is it? Is there anything wrong with me? Is there a tumor?”</p>
+                        
+                        <p>She had heard that recurrent headaches could be a sign of a brain tumor.</p>
+                        
+                        <p>If it was a benign growth, it could be surgically removed; but if it was malignant, it could grow back after the surgery.</p>
+                        
+                        <p>As the thought of having brain cancer crossed her mind, her heart sank, and her hands turned clammy.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
                 <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
@@ -2467,68 +2480,24 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>He quickly handed her a piece of tissue. “There&#39;s nothing, Nat. Don&#39;t worry about it.”</p>
-                    
-                    <p>“I know. Hmm, since it looks okay, what are the causes of my headache then?”</p>
-                    
-                    <p>An indecipherable look flashed across his face before he smiled and replied, “I don&#39;t know the specific cause yet, but I suspect it has something to do with your memory.”</p>
-                    
-                    <p>“My memory?” Natalie&#39;s eyes widened in shock as she suddenly recalled Harrison&#39;s words before she came to the hospital. He said that I can&#39;t seem to remember anything at all.</p>
-                    
-                    <p>So, did I really forget something?</p>
-                    
-                    <p>Fear gripped her instantly as the thought of her losing a piece of her memory crossed her mind. “Stanley...”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="4">
-                    
-                    <p>Seeing her anxious expression, he glanced away to hide the excitement in his eyes and comforted her. “Don&#39;t be scared. I know what you want to say. If you&#39;re willing, I plan to hypnotize you and do my best</p>
-                    
-                    <p>to figure out if there is any problem with your memory. What do you think?”</p>
-                    
-                    <p>If it had been before, I would undoubtedly reject his help immediately.</p>
-                    
-                    <p>After all, I don&#39;t have a good feeling about being hypnotized. Who knows what kind of side effects it has?</p>
-                    
-                    <p>However, I couldn&#39;t care less now. I just want to know if I&#39;ve really forgotten something.</p>
-                    
-                    <p>After making up her mind, she nodded determinedly with her reddened eyes. “Okay.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
-                <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329088448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>Her quick agreement took Stanley by surprise.</p>
-                    
-                    <p>Nonetheless, he was fine with it. At least I don&#39;t need to rack my brain for another way to read her memory.</p>
-                    
-                    <p>“Lie down over there then.” He pointed at a couch across the room.</p>
-                    
-                    <p>Taking a deep breath, Natalie rose to her feet, headed toward the couch, and did as he instructed.</p>
-                    
-                    <p>A moment later, he came over to her and glanced down at her. “Are you ready?”</p>
-                    
-                    <p>“Yes,” she replied, curling her fingers into a fist.</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>I&#39;m not afraid of dying, but how about my kids?</p>
+                        
+                        <p>“Don&#39;t worry. You&#39;re fine. There&#39;s nothing abnormal in your brain,” Stanley said gently, putting down the film in his hands.</p>
+                        
+                        <p>Upon hearing the good news, she could not help but lean closer, her eyes lighting up. “Really? There&#39;s no tumor - zero, nothing, nada?”</p>
+                        
+                        <p>“Yes. Trust me.” He chuckled in amusement.</p>
+                        
+                        <p>“I trust you, of course. I&#39;m just overwhelmed and relieved at the same time now. I thought I had brain cancer.”</p>
+                        
+                        <p>Tears of joy began to well up in her eyes as she said that.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
                 <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
@@ -2539,23 +2508,111 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>After getting her approval, he removed his glasses and put them into his pocket. “Okay. Now, keep your eyes on me. Don&#39;t glance elsewhere, and do as I say.”</p>
-                    
-                    <p>She followed his instructions obediently.</p>
-                    
-                    <p>Nodding reassuringly, Stanley said, “Don&#39;t think anything and let your mind go blank. Yes. You&#39;re tired. You want to sleep.”</p>
-                    
-                    <p>“I&#39;m sleepy,” she mumbled, her eyes losing focus gradually.</p>
-                    
-                    <p>“That&#39;s right. Go to sleep. You&#39;re exhausted today. Sleep, my dear.” Eventually, his gentle, soothing voice lulled her to sleep.</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>He quickly handed her a piece of tissue. “There&#39;s nothing, Nat. Don&#39;t worry about it.”</p>
+                        
+                        <p>“I know. Hmm, since it looks okay, what are the causes of my headache then?”</p>
+                        
+                        <p>An indecipherable look flashed across his face before he smiled and replied, “I don&#39;t know the specific cause yet, but I suspect it has something to do with your memory.”</p>
+                        
+                        <p>“My memory?” Natalie&#39;s eyes widened in shock as she suddenly recalled Harrison&#39;s words before she came to the hospital. He said that I can&#39;t seem to remember anything at all.</p>
+                        
+                        <p>So, did I really forget something?</p>
+                        
+                        <p>Fear gripped her instantly as the thought of her losing a piece of her memory crossed her mind. “Stanley...”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
+                <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328919411-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Seeing her anxious expression, he glanced away to hide the excitement in his eyes and comforted her. “Don&#39;t be scared. I know what you want to say. If you&#39;re willing, I plan to hypnotize you and do my best</p>
+                        
+                        <p>to figure out if there is any problem with your memory. What do you think?”</p>
+                        
+                        <p>If it had been before, I would undoubtedly reject his help immediately.</p>
+                        
+                        <p>After all, I don&#39;t have a good feeling about being hypnotized. Who knows what kind of side effects it has?</p>
+                        
+                        <p>However, I couldn&#39;t care less now. I just want to know if I&#39;ve really forgotten something.</p>
+                        
+                        <p>After making up her mind, she nodded determinedly with her reddened eyes. “Okay.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Her quick agreement took Stanley by surprise.</p>
+                        
+                        <p>Nonetheless, he was fine with it. At least I don&#39;t need to rack my brain for another way to read her memory.</p>
+                        
+                        <p>“Lie down over there then.” He pointed at a couch across the room.</p>
+                        
+                        <p>Taking a deep breath, Natalie rose to her feet, headed toward the couch, and did as he instructed.</p>
+                        
+                        <p>A moment later, he came over to her and glanced down at her. “Are you ready?”</p>
+                        
+                        <p>“Yes,” she replied, curling her fingers into a fist.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
                 <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
                     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>After getting her approval, he removed his glasses and put them into his pocket. “Okay. Now, keep your eyes on me. Don&#39;t glance elsewhere, and do as I say.”</p>
+                        
+                        <p>She followed his instructions obediently.</p>
+                        
+                        <p>Nodding reassuringly, Stanley said, “Don&#39;t think anything and let your mind go blank. Yes. You&#39;re tired. You want to sleep.”</p>
+                        
+                        <p>“I&#39;m sleepy,” she mumbled, her eyes losing focus gradually.</p>
+                        
+                        <p>“That&#39;s right. Go to sleep. You&#39;re exhausted today. Sleep, my dear.” Eventually, his gentle, soothing voice lulled her to sleep.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
@@ -4273,6 +4330,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4359,9 +4496,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4425,7 +4563,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4470,13 +4607,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4533,21 +4667,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

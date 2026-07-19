@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_1', [[300, 250], [336, 280]], 'div-gpt-ad-1779328919411-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_6', [[300, 250], [336, 280]], 'div-gpt-ad-1779329061479-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
-        
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:35.788320",
-        "dateModified": "2026-07-17T17:08:35.788320",
+        "datePublished": "2026-07-19T13:10:33.053319",
+        "dateModified": "2026-07-19T13:10:33.053319",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,76 +2422,82 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1501</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Chapter 1501</p>
-                    
-                    <p>Mrs. Watts nudged her husband, who had been awfully silent the whole time.</p>
-                    
-                    <p>However, Mr. Watts only nodded in response.</p>
-                    
-                    <p>“Don’t mind him, Larry. He’s a man of few words,” Mrs. Watts tried to diffuse the awkwardness caused by her husband’s actions.</p>
-                    
-                    <p>“It’s okay, Mr. Watts, I understand.” Larry flashed a controlled smile.</p>
-                    
-                    <p>Although Joan’s mom took to me immediately, I still have my work cut out for me. It won’t be easy to get her dad’s acceptance, it seems.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Chapter 1501</p>
+                        
+                        <p>Mrs. Watts nudged her husband, who had been awfully silent the whole time.</p>
+                        
+                        <p>However, Mr. Watts only nodded in response.</p>
+                        
+                        <p>“Don’t mind him, Larry. He’s a man of few words,” Mrs. Watts tried to diffuse the awkwardness caused by her husband’s actions.</p>
+                        
+                        <p>“It’s okay, Mr. Watts, I understand.” Larry flashed a controlled smile.</p>
+                        
+                        <p>Although Joan’s mom took to me immediately, I still have my work cut out for me. It won’t be easy to get her dad’s acceptance, it seems.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="1">
-                    
-                    <p>Larry leaned into the sofa, pondering his next move.</p>
-                    
-                    <p>“Alright then, you guys have a nice chat while I prepare dinner.” With that, Mrs. Watts turned and started walking in the direction of the kitchen.</p>
-                    
-                    <p>However, in the next moment, she said with a fond look, “Joan, why don’t you help me out, hmm?”</p>
-                    
-                    <p>“Okay, Mom.” Joan stood up and left for the kitchen.</p>
-                    
-                    <p>At this, Mr. Watts rose to his feet and instructed, “let’s head to the study.”</p>
-                    
-                    <p>Larry nodded before following Mr. Watts into the study and shutting the door.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Larry leaned into the sofa, pondering his next move.</p>
+                        
+                        <p>“Alright then, you guys have a nice chat while I prepare dinner.” With that, Mrs. Watts turned and started walking in the direction of the kitchen.</p>
+                        
+                        <p>However, in the next moment, she said with a fond look, “Joan, why don’t you help me out, hmm?”</p>
+                        
+                        <p>“Okay, Mom.” Joan stood up and left for the kitchen.</p>
+                        
+                        <p>At this, Mr. Watts rose to his feet and instructed, “let’s head to the study.”</p>
+                        
+                        <p>Larry nodded before following Mr. Watts into the study and shutting the door.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
-                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
+                <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329114356-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="2">
-                    
-                    <p>Worry nipped at Joan’s chest as she peeked in the direction of the study. She wasn’t sure what her father had in mind for Larry, but she could only pray for the best.</p>
-                    
-                    <p>Meanwhile, Mrs. Watts’ eyes glimmered with excitement once her daughter entered the kitchen. She hurriedly asked, “Joan, tell me about Larry. He doesn’t seem like some random guy.”</p>
-                    
-                    <p>“Well… Larry’s the president of Norton Corporation,” Joan admitted nervously.</p>
-                    
-                    <p>“Norton Corporation? Isn’t that the most dominant company in Marsingfill?”</p>
-                    
-                    <p>Mrs. Watts had never cared about such things, but even she knew about the renowned Norton Corporation.</p>
-                    
-                    <p>“Yeah, that’s the one.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Worry nipped at Joan’s chest as she peeked in the direction of the study. She wasn’t sure what her father had in mind for Larry, but she could only pray for the best.</p>
+                        
+                        <p>Meanwhile, Mrs. Watts’ eyes glimmered with excitement once her daughter entered the kitchen. She hurriedly asked, “Joan, tell me about Larry. He doesn’t seem like some random guy.”</p>
+                        
+                        <p>“Well… Larry’s the president of Norton Corporation,” Joan admitted nervously.</p>
+                        
+                        <p>“Norton Corporation? Isn’t that the most dominant company in Marsingfill?”</p>
+                        
+                        <p>Mrs. Watts had never cared about such things, but even she knew about the renowned Norton Corporation.</p>
+                        
+                        <p>“Yeah, that’s the one.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_1 -->
                 <div id='div-gpt-ad-1779328919411-0' style='min-width: 300px; min-height: 250px;'>
@@ -2468,19 +2509,23 @@
                 
                 
                 <div class="text-block" data-block="3">
-                    
-                    <p>Mrs. Watts froze before gasping enthusiastically, “I knew it! I knew that he wasn’t just some ordinary guy. I can’t believe that he comes from such prestigious background!”</p>
-                    
-                    <p>She wasn’t normally materialistic but having such a reputable son-in-law was undeniably something that she could brag to her friends about.</p>
-                    
-                    <p>The joy was short-lived however when she suddenly realized something. Her eyes snapped back to Joan as she protested, “Won’t people nitpick at you and make your life difficult since your boyfriend’s so wealthy and powerful? If that’s the case… Then, absolutely not! I won’t approve of your relationship if it’s going to put you through hardship!”</p>
-                    
-                    <p>No matter how prestigious he is, I won’t allow my precious daughter to live a life of suffering!</p>
-                    
-                    <p>Warmth spread across Joan’s chest. She was moved by her mother’s concern and hastily explained, “Don’t worry, Mom. Larry treats me well, and I think his parents like me too.”</p>
-                    
-                    <p>“You’ve met his parents?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>Mrs. Watts froze before gasping enthusiastically, “I knew it! I knew that he wasn’t just some ordinary guy. I can’t believe that he comes from such prestigious background!”</p>
+                        
+                        <p>She wasn’t normally materialistic but having such a reputable son-in-law was undeniably something that she could brag to her friends about.</p>
+                        
+                        <p>The joy was short-lived however when she suddenly realized something. Her eyes snapped back to Joan as she protested, “Won’t people nitpick at you and make your life difficult since your boyfriend’s so wealthy and powerful? If that’s the case… Then, absolutely not! I won’t approve of your relationship if it’s going to put you through hardship!”</p>
+                        
+                        <p>No matter how prestigious he is, I won’t allow my precious daughter to live a life of suffering!</p>
+                        
+                        <p>Warmth spread across Joan’s chest. She was moved by her mother’s concern and hastily explained, “Don’t worry, Mom. Larry treats me well, and I think his parents like me too.”</p>
+                        
+                        <p>“You’ve met his parents?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
                 <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2492,48 +2537,56 @@
                 
                 
                 <div class="text-block" data-block="4">
-                    
-                    <p>A sigh of relief slipped out of Mrs. Watts’ lips. “That’s good to hear, then. I had a feeling that your boyfriend is a decent young man. I’m really pleased that you found someone like him.”</p>
-                    
-                    <p>Now that her daughter had found a lovely man whose family also accepted her, Mrs. Watts felt like a weight was finally off her shoulders.</p>
-                    
-                    <p>“Speaking of… Larry proposed to me two days ago in a press conference, and I accepted it.”</p>
-                    
-                    <p>Joan met her mother’s eyes bashfully. “We actually came over to ask for your and Dad’s approval.”</p>
-                    
-                    <p>“He proposed?” Mrs. Watts perked up at this. “Oh my God, that’s great news! There are no ions from me. I’m so pleased!”</p>
-                    
-                    <p>Joan beamed at her mother’s approval, but still couldn’t help but raise her doubts. “But Mom… I don’t think Dad is fond of Larry. What do I do?”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>A sigh of relief slipped out of Mrs. Watts’ lips. “That’s good to hear, then. I had a feeling that your boyfriend is a decent young man. I’m really pleased that you found someone like him.”</p>
+                        
+                        <p>Now that her daughter had found a lovely man whose family also accepted her, Mrs. Watts felt like a weight was finally off her shoulders.</p>
+                        
+                        <p>“Speaking of… Larry proposed to me two days ago in a press conference, and I accepted it.”</p>
+                        
+                        <p>Joan met her mother’s eyes bashfully. “We actually came over to ask for your and Dad’s approval.”</p>
+                        
+                        <p>“He proposed?” Mrs. Watts perked up at this. “Oh my God, that’s great news! There are no ions from me. I’m so pleased!”</p>
+                        
+                        <p>Joan beamed at her mother’s approval, but still couldn’t help but raise her doubts. “But Mom… I don’t think Dad is fond of Larry. What do I do?”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
                   </script>
                 </div>
                 
                 
                 
                 <div class="text-block" data-block="5">
-                    
-                    <p>Mrs. Watts sighed, “I understand. I know how stubborn and foul-tempered your dad can get when his mind is set on something. However, I think he’s just messing with Larry because he’s sad to see his little girl leave her nest. So, there’s really nothing to be worried about.”</p>
-                    
-                    <p>Despite her mother’s comforting words, Joan couldn’t help but still feel worried, if not worse.</p>
-                    
-                    <p>Nonetheless, Joan and Mrs. Watts worked swiftly on preparing dinner. It didn’t take long before they had plated their dishes and set the table.</p>
-                    
-                    <p>“Darling! Larry! Dinner’s ready,” Mrs. Watts called out to the study as she placed the last dish on the table.</p>
-                    
-                    <p>“Coming,” Mr. Watt’s voice sounded.</p>
-                    
-                    <p>He then paced over to the dining room with a wide grin on his face as he chuckled heartily, “Come along, Larry, let’s have a drink.”</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>Mrs. Watts sighed, “I understand. I know how stubborn and foul-tempered your dad can get when his mind is set on something. However, I think he’s just messing with Larry because he’s sad to see his little girl leave her nest. So, there’s really nothing to be worried about.”</p>
+                        
+                        <p>Despite her mother’s comforting words, Joan couldn’t help but still feel worried, if not worse.</p>
+                        
+                        <p>Nonetheless, Joan and Mrs. Watts worked swiftly on preparing dinner. It didn’t take long before they had plated their dishes and set the table.</p>
+                        
+                        <p>“Darling! Larry! Dinner’s ready,” Mrs. Watts called out to the study as she placed the last dish on the table.</p>
+                        
+                        <p>“Coming,” Mr. Watt’s voice sounded.</p>
+                        
+                        <p>He then paced over to the dining room with a wide grin on his face as he chuckled heartily, “Come along, Larry, let’s have a drink.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_6 -->
-                <div id='div-gpt-ad-1779329061479-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329061479-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4253,6 +4306,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4339,9 +4472,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4405,7 +4539,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4450,13 +4583,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4513,21 +4643,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

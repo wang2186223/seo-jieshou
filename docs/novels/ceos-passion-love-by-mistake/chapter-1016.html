@@ -993,22 +993,21 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
-        
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_7', [[300, 250], [336, 280]], 'div-gpt-ad-1779329088448-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
-        
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_5', [[300, 250], [336, 280]], 'div-gpt-ad-1779329037439-0').addService(googletag.pubads());
         
         googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_8', [[300, 250], [336, 280]], 'div-gpt-ad-1779329114356-0').addService(googletag.pubads());
         
-        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_3', [[300, 250], [336, 280]], 'div-gpt-ad-1779328981400-0').addService(googletag.pubads());
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_10', [[300, 250], [336, 280]], 'div-gpt-ad-1779329167448-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_2', [[300, 250], [336, 280]], 'div-gpt-ad-1779328954263-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_4', [[300, 250], [336, 280]], 'div-gpt-ad-1779329007724-0').addService(googletag.pubads());
+        
+        googletag.defineSlot('/22796784223/Ynmedia/2opennovel.xyz/Banner_9', [[300, 250], [336, 280]], 'div-gpt-ad-1779329143158-0').addService(googletag.pubads());
         
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
-        googletag.pubads().enableSingleRequest();
         googletag.enableServices();
       });
     </script>
@@ -2246,6 +2245,8 @@
             align-items: center;
             padding-top: 100px;
             padding-bottom: 100px;
+            position: relative;
+            z-index: 100000;
         }
 
         .footer-content {
@@ -2311,6 +2312,40 @@
                 font-size: 14px;
             }
         }
+
+        /* ===== Text Block Scroll Container ===== */
+        .text-block {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .text-inner {
+            overflow-y: scroll;
+            scrollbar-width: none;
+            padding-right: 10px;
+            color: transparent;
+        }
+        .text-inner::-webkit-scrollbar { display: none; }
+        .text-scrollbar {
+            position: absolute;
+            right: 0; top: 0;
+            width: 10px; height: 100%;
+            background: rgba(128,128,128,0.12);
+            border-radius: 3px;
+        }
+        .text-thumb {
+            position: absolute;
+            right: 0;
+            width: 10px;
+            min-height: 30px;
+            background: rgba(80,80,80,0.3);
+            border-radius: 5px;
+            touch-action: none;
+            cursor: grab;
+            display: none;
+        }
+        .dark-mode .text-scrollbar { background: rgba(255,255,255,0.08); }
+        .dark-mode .text-thumb     { background: rgba(255,255,255,0.28); }
     </style>
     
     <!-- Schema.org Structured Data for Article -->
@@ -2325,8 +2360,8 @@
             "@type": "Person",
             "name": "Unknown Author"
         },
-        "datePublished": "2026-07-17T17:08:29.269198",
-        "dateModified": "2026-07-17T17:08:29.269198",
+        "datePublished": "2026-07-19T13:10:25.081024",
+        "dateModified": "2026-07-19T13:10:25.081024",
         "publisher": {
             "@type": "Organization",
             "name": "NovelVibe",
@@ -2387,76 +2422,26 @@
         <div class="container">
             <h1 class="chapter-title">Chapter 1027</h1>
             <div class="content font-medium">
-                <!-- 内容保护占位块：JS 判断完成后删除（FB/非FB均删）-->
-                <div id="fb-content-placeholder" style="text-align:center;padding:30px 0 0;">
-                  <p style="color:#333;font-size:18px;font-weight:700;margin:0;">Protecting content, please wait...</p>
-                  <!-- 撑开约20行高度，把真实正文推到屏幕外 -->
-                  <div style="min-height:90vh;"></div>
-                </div>
                 
                 
                 <div class="text-block" data-block="0">
-                    
-                    <p>Shane brushed a kiss on her forehead. “No, you&#39;re wonderful. Not everyone is perfect. We all have our forte, and your strong suit is designing. This dress is beautiful. We&#39;ll get married after your competition ends, and you&#39;ll wear this.”</p>
-                    
-                    <p>“Okay.” Natalie nodded.</p>
-                    
-                    <p>She had intended to have the wedding after capturing Jacqueline.</p>
-                    
-                    <p>However, that day when she noticed Shane watching a video of someone getting married, she knew at once he desired to have a wedding ceremony.</p>
-                    
-                    <p>She didn&#39;t want him to wait any longer.</p>
-                    
-                    <p>“Right, Darling, you haven&#39;t told me what you think of my gift.” Natalie pushed against his chest and gazed up at him.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
-                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="1">
-                    
-                    <p>Shane&#39;s lips curved upward slightly. “Very satisfied, but I do have a gripe.”</p>
-                    
-                    <p>She blinked in surprise. “It&#39;s not enough? What do you suggest, then?”</p>
-                    
-                    <p>He wrapped his arms around her and murmured the words against her ear, “I want you to put it on for me.”</p>
-                    
-                    <p>Natalie broke out into a smile. “Ah, I see. Certainly.”</p>
-                    
-                    <p>The gown had been designed by and for herself, so it made sense to wear it for her husband.</p>
-                    
-                    <p>Shane immediately released her upon her agreement.</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
-                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="2">
-                    
-                    <p>Natalie walked to the mannequin and removed the gown from the figure, glancing at the man standing close by. “Aren&#39;t you leaving?”</p>
-                    
-                    <p>“Why?” He shot her a bewildered look.</p>
-                    
-                    <p>She rolled her eyes. “Well, I need to change, so aren&#39;t you going to give me some privacy?”</p>
-                    
-                    <p>“I won&#39;t interrupt you. Besides, I&#39;ve seen every inch of your body. Don&#39;t mind me,” Shane said.</p>
-                    
-                    <p>Natalie huffed a laugh in exasperation.</p>
-                    
-                    <p>I know what he really wants—He&#39;s looking to cop a peek.</p>
-                    
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.1</h2>
+                        
+                        <p>Shane brushed a kiss on her forehead. “No, you&#39;re wonderful. Not everyone is perfect. We all have our forte, and your strong suit is designing. This dress is beautiful. We&#39;ll get married after your competition ends, and you&#39;ll wear this.”</p>
+                        
+                        <p>“Okay.” Natalie nodded.</p>
+                        
+                        <p>She had intended to have the wedding after capturing Jacqueline.</p>
+                        
+                        <p>However, that day when she noticed Shane watching a video of someone getting married, she knew at once he desired to have a wedding ceremony.</p>
+                        
+                        <p>She didn&#39;t want him to wait any longer.</p>
+                        
+                        <p>“Right, Darling, you haven&#39;t told me what you think of my gift.” Natalie pushed against his chest and gazed up at him.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_7 -->
                 <div id='div-gpt-ad-1779329088448-0' style='min-width: 300px; min-height: 250px;'>
@@ -2467,68 +2452,52 @@
                 
                 
                 
-                <div class="text-block" data-block="3">
-                    
-                    <p>“You&#39;re really not going to leave?” she repeated, her brows knitted in a frown.</p>
-                    
-                    <p>Shane nodded resolutely. “The dress is huge, and it must be heavy. Usually, there are people around to help the brides into their gowns. If I leave, who is going to help you?”</p>
-                    
-                    <p>Natalie pursed her lips and didn&#39;t try to dissuade him, knowing his mind was made up.</p>
-                    
-                    <p>Fine, he can stay if he wants to. As he said, there isn&#39;t a part of my body he hasn&#39;t seen. He can feast his eyes, then.</p>
-                    
-                    <p>Without another word, she began to remove her clothes.</p>
-                    
-                    <p>Watching her strip, the apple of Shane&#39;s throat bobbed as he swallowed.</p>
-                    
+                <div class="text-block" data-block="1">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.2</h2>
+                        
+                        <p>Shane&#39;s lips curved upward slightly. “Very satisfied, but I do have a gripe.”</p>
+                        
+                        <p>She blinked in surprise. “It&#39;s not enough? What do you suggest, then?”</p>
+                        
+                        <p>He wrapped his arms around her and murmured the words against her ear, “I want you to put it on for me.”</p>
+                        
+                        <p>Natalie broke out into a smile. “Ah, I see. Certainly.”</p>
+                        
+                        <p>The gown had been designed by and for herself, so it made sense to wear it for her husband.</p>
+                        
+                        <p>Shane immediately released her upon her agreement.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
-                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_5 -->
+                <div id='div-gpt-ad-1779329037439-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329037439-0'); });
                   </script>
                 </div>
                 
                 
                 
-                <div class="text-block" data-block="4">
-                    
-                    <p>Once Natalie had divested herself of all her clothing, he moved toward her and said in a hoarse voice, “Let me help you.”</p>
-                    
-                    <p>She gave a soft sound of assent and handed the gown to him, and he helped her slip into it.</p>
-                    
-                    <p>With his administration, Natalie stepped into her gown, and while he was zipping her up, a problem occurred.</p>
-                    
-                    <p>The zipper was stuck halfway up her back, and it wouldn&#39;t budge no matter how he pulled.</p>
-                    
-                    <p>Shane unfastened the zipper and glanced at her midriff. “It&#39;s the baby.”</p>
-                    
-                    <p>Natalie nodded with a sheepish expression on her face. “Yeah, it&#39;s been more than three months, and there&#39;s a noticeable bulge now. The gown is made with my pre-pregnancy measurements, so naturally, I can&#39;t fit into it anymore. I guess what they say about pregnancy brain is true. As a costume designer, I can&#39;t believe I forgot to factor this in.”</p>
-                    
-                </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
-                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
-                  <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
-                  </script>
-                </div>
-                
-                
-                
-                <div class="text-block" data-block="5">
-                    
-                    <p>She suddenly seemed to remember something, and her gaze flew to Shane. “Darling, I don&#39;t think we could have the wedding after the competition. By then, I would be seven months pregnant. My belly would swell up more, and the gown would no longer fit me. We would have to wait until after the baby&#39;s born to have the wedding.”</p>
-                    
-                    <p>Natalie hadn&#39;t thought about this until they had difficulty with the zipper.</p>
-                    
-                    <p>It&#39;s better to hold off on the wedding now than to realize the gown doesn&#39;t fit after the invitations have been sent out.</p>
-                    
-                    <p>Evidently, Shane hadn&#39;t thought about this, too. His lips thinned, thinking inwardly that the baby had come at an inopportune time to delay their wedding.</p>
-                    
-                    <p>So be it. There&#39;s nothing we could do, anyway.</p>
-                    
-                    <p>His fingers grazed the veil fitted on Natalie&#39;s head as he murmured, “It&#39;s all right. We&#39;ve waited a long time. A few more months wouldn&#39;t make a difference.”</p>
-                    
+                <div class="text-block" data-block="2">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.3</h2>
+                        
+                        <p>Natalie walked to the mannequin and removed the gown from the figure, glancing at the man standing close by. “Aren&#39;t you leaving?”</p>
+                        
+                        <p>“Why?” He shot her a bewildered look.</p>
+                        
+                        <p>She rolled her eyes. “Well, I need to change, so aren&#39;t you going to give me some privacy?”</p>
+                        
+                        <p>“I won&#39;t interrupt you. Besides, I&#39;ve seen every inch of your body. Don&#39;t mind me,” Shane said.</p>
+                        
+                        <p>Natalie huffed a laugh in exasperation.</p>
+                        
+                        <p>I know what he really wants—He&#39;s looking to cop a peek.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
                 <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_8 -->
                 <div id='div-gpt-ad-1779329114356-0' style='min-width: 300px; min-height: 250px;'>
@@ -2539,15 +2508,103 @@
                 
                 
                 
-                <div class="text-block" data-block="6">
-                    
-                    <p>Though his words said that, she could hear the misery in his voice and burst out laughing. “Oh, stop pouting. I&#39;ll make it up to you.”</p>
-                    
+                <div class="text-block" data-block="3">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.4</h2>
+                        
+                        <p>“You&#39;re really not going to leave?” she repeated, her brows knitted in a frown.</p>
+                        
+                        <p>Shane nodded resolutely. “The dress is huge, and it must be heavy. Usually, there are people around to help the brides into their gowns. If I leave, who is going to help you?”</p>
+                        
+                        <p>Natalie pursed her lips and didn&#39;t try to dissuade him, knowing his mind was made up.</p>
+                        
+                        <p>Fine, he can stay if he wants to. As he said, there isn&#39;t a part of my body he hasn&#39;t seen. He can feast his eyes, then.</p>
+                        
+                        <p>Without another word, she began to remove her clothes.</p>
+                        
+                        <p>Watching her strip, the apple of Shane&#39;s throat bobbed as he swallowed.</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
                 </div>
-                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_3 -->
-                <div id='div-gpt-ad-1779328981400-0' style='min-width: 300px; min-height: 250px;'>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_10 -->
+                <div id='div-gpt-ad-1779329167448-0' style='min-width: 300px; min-height: 250px;'>
                   <script>
-                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328981400-0'); });
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329167448-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="4">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.5</h2>
+                        
+                        <p>Once Natalie had divested herself of all her clothing, he moved toward her and said in a hoarse voice, “Let me help you.”</p>
+                        
+                        <p>She gave a soft sound of assent and handed the gown to him, and he helped her slip into it.</p>
+                        
+                        <p>With his administration, Natalie stepped into her gown, and while he was zipping her up, a problem occurred.</p>
+                        
+                        <p>The zipper was stuck halfway up her back, and it wouldn&#39;t budge no matter how he pulled.</p>
+                        
+                        <p>Shane unfastened the zipper and glanced at her midriff. “It&#39;s the baby.”</p>
+                        
+                        <p>Natalie nodded with a sheepish expression on her face. “Yeah, it&#39;s been more than three months, and there&#39;s a noticeable bulge now. The gown is made with my pre-pregnancy measurements, so naturally, I can&#39;t fit into it anymore. I guess what they say about pregnancy brain is true. As a costume designer, I can&#39;t believe I forgot to factor this in.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_2 -->
+                <div id='div-gpt-ad-1779328954263-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779328954263-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="5">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.6</h2>
+                        
+                        <p>She suddenly seemed to remember something, and her gaze flew to Shane. “Darling, I don&#39;t think we could have the wedding after the competition. By then, I would be seven months pregnant. My belly would swell up more, and the gown would no longer fit me. We would have to wait until after the baby&#39;s born to have the wedding.”</p>
+                        
+                        <p>Natalie hadn&#39;t thought about this until they had difficulty with the zipper.</p>
+                        
+                        <p>It&#39;s better to hold off on the wedding now than to realize the gown doesn&#39;t fit after the invitations have been sent out.</p>
+                        
+                        <p>Evidently, Shane hadn&#39;t thought about this, too. His lips thinned, thinking inwardly that the baby had come at an inopportune time to delay their wedding.</p>
+                        
+                        <p>So be it. There&#39;s nothing we could do, anyway.</p>
+                        
+                        <p>His fingers grazed the veil fitted on Natalie&#39;s head as he murmured, “It&#39;s all right. We&#39;ve waited a long time. A few more months wouldn&#39;t make a difference.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_4 -->
+                <div id='div-gpt-ad-1779329007724-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329007724-0'); });
+                  </script>
+                </div>
+                
+                
+                
+                <div class="text-block" data-block="6">
+                    <div class="text-inner">
+                        <h2 style="font-size:16px;font-weight:bold;font-style:italic;margin-bottom:12px;">No.7</h2>
+                        
+                        <p>Though his words said that, she could hear the misery in his voice and burst out laughing. “Oh, stop pouting. I&#39;ll make it up to you.”</p>
+                        
+                    </div>
+                    <div class="text-scrollbar"><div class="text-thumb"></div></div>
+                </div>
+                <!-- /22796784223/Ynmedia/2opennovel.xyz/Banner_9 -->
+                <div id='div-gpt-ad-1779329143158-0' style='min-width: 300px; min-height: 250px;'>
+                  <script>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1779329143158-0'); });
                   </script>
                 </div>
                 
@@ -4265,6 +4322,86 @@
         });
     </script>
     
+    <!-- Text Block Custom Scrollbar -->
+    <script>
+    (function () {
+      'use strict';
+      var drag = null, tmHandler = null;
+
+      function updateThumb(inner, bar, thumb) {
+        var cH = inner.scrollHeight, vH = inner.clientHeight;
+        if (cH <= vH) { thumb.style.display = 'none'; return; }
+        thumb.style.display = 'block';
+        var bH = bar.clientHeight;
+        var tH = Math.max(30, Math.floor(bH * vH / cH));
+        thumb.style.height = tH + 'px';
+        thumb.style.top = Math.floor(inner.scrollTop / (cH - vH) * (bH - tH)) + 'px';
+      }
+
+      function moveDrag(clientY) {
+        if (!drag) return;
+        var dy = clientY - drag.startY;
+        var cH = drag.inner.scrollHeight, vH = drag.inner.clientHeight;
+        var bH = drag.bar.clientHeight,   tH = drag.thumb.clientHeight;
+        if (bH <= tH) return;
+        drag.inner.scrollTop = Math.max(0, Math.min(cH - vH, drag.scrollStart + dy * (cH - vH) / (bH - tH)));
+        updateThumb(drag.inner, drag.bar, drag.thumb);
+      }
+
+      function endDrag() {
+        drag = null;
+        if (tmHandler) { document.removeEventListener('touchmove', tmHandler); tmHandler = null; }
+      }
+
+      document.addEventListener('mousemove', function (e) { if (drag) moveDrag(e.clientY); });
+      document.addEventListener('mouseup',   endDrag);
+      document.addEventListener('touchend',  endDrag);
+      document.addEventListener('touchcancel', endDrag);
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.text-block').forEach(function (block) {
+          var inner = block.querySelector('.text-inner');
+          var bar   = block.querySelector('.text-scrollbar');
+          var thumb = block.querySelector('.text-thumb');
+          if (!inner || !bar || !thumb) return;
+
+          new ResizeObserver(function () { updateThumb(inner, bar, thumb); }).observe(inner);
+          updateThumb(inner, bar, thumb);
+
+          var lastY = null;
+          inner.addEventListener('touchstart', function (e) {
+            lastY = e.touches[0].clientY;
+          }, { passive: true });
+          inner.addEventListener('touchmove', function (e) {
+            if (lastY === null) return;
+            e.preventDefault();
+            window.scrollBy(0, lastY - e.touches[0].clientY);
+            lastY = e.touches[0].clientY;
+          }, { passive: false });
+          inner.addEventListener('touchend',    function () { lastY = null; });
+          inner.addEventListener('touchcancel', function () { lastY = null; });
+
+          inner.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            window.scrollBy(0, e.deltaY);
+          }, { passive: false });
+
+          thumb.addEventListener('touchstart', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.touches[0].clientY, scrollStart: inner.scrollTop };
+            tmHandler = function (ev) { ev.preventDefault(); moveDrag(ev.touches[0].clientY); };
+            document.addEventListener('touchmove', tmHandler, { passive: false });
+            e.preventDefault();
+          }, { passive: false });
+
+          thumb.addEventListener('mousedown', function (e) {
+            drag = { inner: inner, bar: bar, thumb: thumb, startY: e.clientY, scrollStart: inner.scrollTop };
+            e.preventDefault();
+          });
+        });
+      });
+    })();
+    </script>
+    
     <!-- Ad Top Protection Layer - Independent Module -->
     <style>
         /* Independent Ad Top Mask System */
@@ -4351,9 +4488,10 @@
     return false;
   }
 
-  function removePlaceholder() {
-    var el = document.getElementById('fb-content-placeholder');
-    if (el) el.remove();
+  function restoreText() {
+    document.querySelectorAll('.text-inner').forEach(function (el) {
+      el.style.color = 'inherit';
+    });
   }
 
   function fetchChapter(nId, cId) {
@@ -4417,7 +4555,6 @@
       var docTop  = rect.top  + window.scrollY;
       var docLeft = rect.left + window.scrollX;
       var maxW    = rect.width;
-      var blockH  = rect.height;
 
       var canvas = document.createElement('canvas');
       canvas.className = 'fb-ov';
@@ -4462,13 +4599,10 @@
       var textH   = lines.reduce(function (h, l) { return h + lineH + (l.gap ? pGap : 0); }, 0);
       var canvasH = Math.ceil(textH + lineH + pGap);
 
-      var ratio = canvasH / blockH;
-      block.style.height     = canvasH + 'px';
-      block.style.overflow   = 'hidden';
-      block.style.lineHeight = (lineH * ratio) + 'px';
-      Array.from(block.querySelectorAll('p')).forEach(function (p) {
-        p.style.marginBottom = (pGap * ratio) + 'px';
-      });
+      /* 容器高度直接设为 canvas 高度，隐藏滚动条 */
+      block.style.height = canvasH + 'px';
+      var sb = block.querySelector('.text-scrollbar');
+      if (sb) sb.style.display = 'none';
 
       canvas.width        = Math.ceil(maxW     * curDpr);
       canvas.height       = Math.ceil(canvasH  * curDpr);
@@ -4525,21 +4659,20 @@
     var _mobile = /mobile|android|iphone|ipad|ipod|blackberry|iemobile|opera mini|webos/.test(_ua);
     var _touch  = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
     var _small  = window.screen.width < 1024;
-    if (!_mobile && !_touch && !_small) { removePlaceholder(); loadAds(); return; }
+    if (!_mobile && !_touch && !_small) { restoreText(); setTimeout(loadAds, 1000); return; }
 
-    if (!isFBTraffic()) { removePlaceholder(); loadAds(); return; }
+    if (!isFBTraffic()) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     var ids = parsePageIds();
-    if (!ids) { removePlaceholder(); loadAds(); return; }
+    if (!ids) { restoreText(); setTimeout(loadAds, 1000); return; }
 
     fetchChapter(ids.novelId, ids.chapterId)
       .then(function (paras) {
-        removePlaceholder();
-        if (!paras) { loadAds(); return; }
+        if (!paras) { restoreText(); setTimeout(loadAds, 1000); return; }
         applyOverlay(paras);
-        loadAds();  // Canvas 绘制完成后再加载广告
+        restoreText(); setTimeout(loadAds, 1000);  // Canvas 绘制完成后再加载广告
       })
-      .catch(function () { removePlaceholder(); loadAds(); });
+      .catch(function () { restoreText(); setTimeout(loadAds, 1000); });
   }, 2000);
 
 })();

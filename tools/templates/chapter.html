@@ -134,7 +134,7 @@
         // ===== Configuration =====
         const CONFIG = {
             COOLDOWN_HOURS: 3,
-            CHAPTER_LIMIT_BASE: 100,  // 100, 200, 400...
+            CHAPTER_LIMIT_BASE: 200,  // 200, 400, 600...
         };
         
         // ===== Utility Functions =====
@@ -975,7 +975,6 @@
     <title>{% if chapter.title and novel.title %}{{ chapter.title }} - {{ novel.title }} | NovelVibe{% else %}Reading - NovelVibe{% endif %}</title>
     {% if novel_slug == '00000' %}<link rel="canonical" href="https://www.2opennovel.xyz/novels/00000/{{ chapter.number }}" />{% endif %}
     
-    <meta name="robots" content="noindex">
     
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
@@ -993,7 +992,7 @@
       googletag.cmd.push(function() {
         // Define ad slots for the chapter page (randomly selected 7 out of 10)
         {% for ad_unit in selected_ad_units %}
-        googletag.defineSlot('{{ ad_unit.path }}', [[300, 250], [336, 280]], '{{ ad_unit.slot_id }}').addService(googletag.pubads());
+        googletag.defineSlot('{{ ad_unit.path }}', [300, 250], '{{ ad_unit.slot_id }}').addService(googletag.pubads());
         {% endfor %}
         googletag.pubads().disableInitialLoad();  // 禁止立即加载，等 canvas 完成后手动 refresh
         googletag.enableServices();
@@ -2627,8 +2626,8 @@
                 this.MIN_INITIAL_ADS = 1; // Minimum ads for first trigger (only used on very first visit)
                 this.MAX_INITIAL_ADS = 15; // Maximum ads for first trigger (only used on very first visit)
                 this.MIN_RANDOM_ADS = 15; // Minimum random ads for next trigger
-                this.MAX_RANDOM_ADS = 50; // Maximum random ads for next trigger
-                this.TRIGGER_PROBABILITY = 0.60; // 60% trigger probability
+                this.MAX_RANDOM_ADS = 40; // Maximum random ads for next trigger
+                this.TRIGGER_PROBABILITY = 0.80; // 80% trigger probability
                 this.MAX_TRIGGERS_BEFORE_LONG_COOLDOWN = 10; // Enter long cooldown after 3 accumulated triggers
                 this.LONG_COOLDOWN_HOURS = 5; // Long cooldown 5 hours
                 this.INACTIVITY_RESET_MINUTES = 60; // Auto reset after 60 minutes of inactivity

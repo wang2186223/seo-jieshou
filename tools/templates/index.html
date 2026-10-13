@@ -92,64 +92,6 @@
     /></noscript>
     <!-- End Facebook Pixel Code -->
     
-    <!-- Facebook 参数检测跳转逻辑 -->
-    <script>
-    (function() {
-        'use strict';
-        
-        /**
-         * 检测是否有 Facebook 投放参数
-         */
-        function hasFacebookParams() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const storedParams = localStorage.getItem('tracking_params');
-            
-            // 检查当前URL是否有 fbclid
-            if (urlParams.has('fbclid')) {
-                return true;
-            }
-            
-            // 检查是否有 utm_source=facebook
-            if (urlParams.get('utm_source') === 'facebook' || 
-                urlParams.get('utm_source') === 'fb' ||
-                urlParams.get('utm_source') === 'ig' ||
-                urlParams.get('utm_source') === 'instagram') {
-                return true;
-            }
-            
-            // 检查本地存储中是否有保存的 FB 参数
-            if (storedParams) {
-                try {
-                    const params = JSON.parse(storedParams);
-                    if (params.fbclid || params.utm_source === 'facebook') {
-                        return true;
-                    }
-                } catch (e) {
-                    console.error('解析存储参数失败:', e);
-                }
-            }
-            
-            return false;
-        }
-        
-        /**
-         * 跳转到简化版首页
-         */
-        function redirectToCleanVersion() {
-            console.log('检测到非FB用户，跳转到简化版首页');
-            window.location.href = '/index-clean.html';
-        }
-        
-        // 执行检测和跳转
-        if (!hasFacebookParams()) {
-            redirectToCleanVersion();
-        } else {
-            console.log('检测到FB投放用户，保持在完整首页');
-        }
-    })();
-    </script>
-    <!-- End Facebook 参数检测跳转逻辑 -->
-    
     <!-- 浏览器环境检测系统 -->
     <script>
     (function() {
